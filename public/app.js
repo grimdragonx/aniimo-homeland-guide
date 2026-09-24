@@ -58,7 +58,7 @@ async function fetchAniimoData() {
   return [];
 }
 
-// Fetch Stats from Node.js REST API
+// Fetch Stats or Calculate Client-Side
 async function fetchStats() {
   try {
     const res = await fetch('/api/stats');
@@ -70,12 +70,35 @@ async function fetchStats() {
       const elPrismana = document.getElementById('statPrismana');
 
       if (elSpecies) elSpecies.textContent = stats.numberedSpeciesCount || 82;
-      if (elForms) elForms.textContent = stats.totalFormsCount || '200+';
+      if (elForms) elForms.textContent = stats.unnumberedSpeciesCount !== undefined ? stats.unnumberedSpeciesCount : 10;
       if (elRegional) elRegional.textContent = stats.regionalVariantsCount || 88;
       if (elPrismana) elPrismana.textContent = stats.prismanaCount || 24;
+      return;
     }
   } catch (err) {
-    console.warn('Stats fetch error:', err);
+    console.warn('Stats fetch error, calculating client-side:', err);
+  }
+
+  // Fallback: Calculate metrics directly from allAniimo
+  if (allAniimo && allAniimo.length) {
+    const elSpecies = document.getElementById('statSpecies');
+    const elForms = document.getElementById('statForms');
+    const elRegional = document.getElementById('statRegional');
+    const elPrismana = document.getElementById('statPrismana');
+
+    const numbered = allAniimo.filter(i => !i.is_unnumbered).length;
+    const unnumbered = allAniimo.filter(i => i.is_unnumbered).length;
+    let regCount = 0;
+    let prisCount = 0;
+    allAniimo.forEach(i => {
+      if (i.forms.regional) regCount += i.forms.regional.length;
+      if (i.forms.prismana && i.id !== '030') prisCount += 1;
+    });
+
+    if (elSpecies) elSpecies.textContent = numbered || 82;
+    if (elForms) elForms.textContent = unnumbered || 10;
+    if (elRegional) elRegional.textContent = regCount || 88;
+    if (elPrismana) elPrismana.textContent = prisCount || 24;
   }
 }
 
