@@ -2723,65 +2723,59 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Wind 4 / Grass 4",
+        "element_display": "Wind 3",
         "catch_rate": "28%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Wind": 4,
-          "Grass": 4
-        },
-        "image": "images/forms/gracewing-basic-form-base.png",
-        "abilities": {
-          "Wind": 4,
-          "Grass": 4,
-          "Leisure": 4
+          "Wind": 3
         },
         "utilities": {
-          "Leisure": 4
-        }
+          "Leisure": 3
+        },
+        "abilities": {
+          "Wind": 3,
+          "Leisure": 3
+        },
+        "image": "images/forms/gracewing-basic-form-base.png"
       },
       "regional": [
         {
           "form_name": "Sea of Flowers Form",
           "element_display": "Wind 3 / Grass 2",
           "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
+          "region": "Sea of Flowers",
           "elements": {
             "Wind": 3,
             "Grass": 2
           },
-          "image": "images/forms/gracewing-sea-of-flowers-form.png",
+          "utilities": {
+            "Leisure": 3
+          },
           "abilities": {
             "Wind": 3,
             "Grass": 2,
-            "Leisure": 4,
-            "Carry": 1
+            "Leisure": 3
           },
-          "utilities": {
-            "Leisure": 4,
-            "Carry": 1
-          }
+          "image": "images/forms/gracewing-sea-of-flowers-form.png"
         },
         {
           "form_name": "Nighttime Form",
           "element_display": "Wind 3 / Dark 2",
           "catch_rate": "28%",
-          "region": "Idyll Native Habitat",
+          "region": "Idyll (Night)",
           "elements": {
             "Wind": 3,
             "Dark": 2
           },
-          "image": "images/forms/gracewing-nighttime-form.png",
+          "utilities": {
+            "Leisure": 3
+          },
           "abilities": {
             "Wind": 3,
             "Dark": 2,
-            "Leisure": 4,
-            "Carry": 1
+            "Leisure": 3
           },
-          "utilities": {
-            "Leisure": 4,
-            "Carry": 1
-          }
+          "image": "images/forms/gracewing-nighttime-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -2792,19 +2786,15 @@
             "Wind": 3,
             "Earth": 2
           },
-          "image": "images/forms/gracewing-mountain-woods-form.png",
+          "utilities": {
+            "Leisure": 3
+          },
           "abilities": {
             "Wind": 3,
             "Earth": 2,
-            "Leisure": 4,
-            "Artisanship": 1,
-            "Carry": 1
+            "Leisure": 3
           },
-          "utilities": {
-            "Leisure": 4,
-            "Artisanship": 1,
-            "Carry": 1
-          }
+          "image": "images/forms/gracewing-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -6951,20 +6941,20 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Grass 4",
+        "element_display": "Grass 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 4
-        },
-        "image": "images/irisalis.png",
-        "abilities": {
-          "Grass": 4,
-          "Leisure": 4
+          "Grass": 3
         },
         "utilities": {
-          "Leisure": 4
-        }
+          "Leisure": 3
+        },
+        "abilities": {
+          "Grass": 3,
+          "Leisure": 3
+        },
+        "image": "images/irisalis.png"
       },
       "regional": [],
       "weather": [],

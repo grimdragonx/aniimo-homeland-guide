@@ -447,10 +447,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 4 / Grass 4` | 28% | Idyll Native Habitat | 🍃 Wind Lv.4, 🌱 Grass Lv.4, ☕ Leisure Lv.4 |
-| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌱 Grass Lv.2, ☕ Leisure Lv.4, 📦 Carry Lv.1 |
-| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌑 Dark Lv.2, ☕ Leisure Lv.4, 📦 Carry Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.3, ⛰️ Earth Lv.2, ☕ Leisure Lv.4, 🔨 Artisanship Lv.1, 📦 Carry Lv.1 |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, ☕ Leisure Lv.3 |
+| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | Sea of Flowers | 🍃 Wind Lv.3, 🌱 Grass Lv.2, ☕ Leisure Lv.3 |
+| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | Idyll (Night) | 🍃 Wind Lv.3, 🌑 Dark Lv.2, ☕ Leisure Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.3, ⛰️ Earth Lv.2, ☕ Leisure Lv.3 |
 
 ---
 
@@ -1263,6 +1263,6 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Grass 4` | Standard | Idyll Native Habitat | 🌱 Grass Lv.4, ☕ Leisure Lv.4 |
+| **Basic Form** | Base Form | `Grass 3` | Standard | Idyll Native Habitat | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
 
 ---

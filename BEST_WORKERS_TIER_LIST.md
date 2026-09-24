@@ -53,17 +53,17 @@ Workers with **Leisure** project relaxing auras that reduce worker stress, accel
 
 | Aniimo | Dex # | Leisure Level | Complementary Abilities | Best Station |
 | :--- | :--- | :--- | :--- | :--- |
-| **Gracewing** | `#029` | **Lv.4** ☕ | Wind Lv.4, Grass Lv.4 | Hot Springs & Camp Relaxation Square |
 | **Somniwing** | `#030` | **Lv.4** ☕ | Grass Lv.4, Wind Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Irisalis** | `#????` | **Lv.4** ☕ | Grass Lv.4 | Hot Springs & Camp Relaxation Square |
 | **Celestis** | `#005` | **Lv.3** ☕ | Dark Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Stellarys** | `#006` | **Lv.3** ☕ | Dark Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Irisal** | `#012` | **Lv.3** ☕ | Grass Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Turbo** | `#018` | **Lv.3** ☕ | Wind Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Gracewing** | `#029` | **Lv.3** ☕ | Wind Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Fragrancier** | `#039` | **Lv.3** ☕ | Dark Lv.3, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Piopiota** | `#051` | **Lv.3** ☕ | Water Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Panpanta** | `#052` | **Lv.3** ☕ | Water Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Sherro** | `#055` | **Lv.3** ☕ | Water Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Irisalis** | `#????` | **Lv.3** ☕ | Grass Lv.3 | Hot Springs & Camp Relaxation Square |
 | **Dreaple** | `#019` | **Lv.2** ☕ | Dark Lv.2 | Hot Springs & Camp Relaxation Square |
 
 ---
