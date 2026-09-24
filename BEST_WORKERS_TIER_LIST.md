@@ -163,3 +163,4 @@ When your RV worker slots are limited (e.g. RV Tier 2–3), these dual-role Anii
 4. **Waleetle (Earth Lv 3-4 + Artisanship Lv 3):** Mines stone AND sculpts RV upgrade bricks.
 5. **Pomawk (Grass Lv 3-4 + Wind Lv 3-4):** Harvests crops AND operates grain windmills.
 6. **Inferlupa (Fire Lv 3-4 + Dark Lv 2-3):** 24-hour non-stop smelter that never needs to sleep at night.
+

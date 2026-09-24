@@ -1,31 +1,88 @@
-# 🏡 Aniimo Homeland Guide & Abilities Database
+# 🏡 Aniimo Homeland Guide & Abilities Platform (Node.js)
 
 [![Aniimo Version](https://img.shields.io/badge/Aniimo-v1.0-blue.svg)](https://aniimo.com)
-[![Platform Support](https://img.shields.io/badge/Platform-PC%20%7C%20Console%20%7C%20Mobile-orange.svg)](#)
-[![Homeland Abilities](https://img.shields.io/badge/Homeland%20Abilities-13%20Jobs-emerald.svg)](#the-13-homeland-abilities)
-[![Forms Supported](https://img.shields.io/badge/Forms-Basic%20%7C%20Weather%20%7C%20Prismana-purple.svg)](#form-systems--homeland-impact)
+[![Node.js](https://img.shields.io/badge/Node.js-v20%2B-green.svg)](https://nodejs.org)
+[![Express](https://img.shields.io/badge/Express-REST%20API-black.svg)](https://expressjs.com)
+[![Homeland Abilities](https://img.shields.io/badge/Homeland%20Abilities-13%20Jobs-emerald.svg)](#-the-13-homeland-abilities)
+[![Species](https://img.shields.io/badge/Species-89%2B%20Tracked-orange.svg)](#-database-summary)
+[![Forms](https://img.shields.io/badge/Total%20Forms-272%20Cataloged-purple.svg)](#-form-systems--homeland-impact)
 
-A comprehensive guide, interactive database, and optimization handbook for the **Homeland (RV Housing, Base Building & Farming)** system in **Aniimo**.
+A full-stack, modern **Node.js platform**, interactive database, and optimization handbook for the **Homeland (RV Housing, Base Building & Farming)** system in **Aniimo**.
 
-This repository details each Aniimo species across **Basic Forms**, **Weather Forms**, and rare **Prismana Forms**, mapping out their specific **Homeland Abilities (Levels 1 to 5)**, work perks, and optimal facility placements.
+This project provides verified canonical creature profiles for **89+ Aniimo species** across **Basic Forms**, **Weather Variants**, and **Prismana Forms**, detailing visual picture portraits, **Homeland Abilities (Levels 1 to 5)**, workplace perks, and optimal facility placements.
 
 ---
 
-## 📑 Repository Contents
+## 🚀 Quick Start (Node.js Platform)
 
-| Document | Description |
-| :--- | :--- |
-| 📖 [**`HOMELAND_GUIDE.md`**](./HOMELAND_GUIDE.md) | In-depth walkthrough on unlocking Homeland, upgrading the RV, managing worker morale/hunger, Hatchinator incubation, and Bud Tickets. |
-| 🐾 [**`ANIIMO_DATABASE.md`**](./ANIIMO_DATABASE.md) | Full creature encyclopedia listing 32+ Aniimo species, their evolution lines, Basic/Weather/Prismana forms, and exact ability levels. |
-| 🏆 [**`BEST_WORKERS_TIER_LIST.md`**](./BEST_WORKERS_TIER_LIST.md) | S-Tier through B-Tier rankings for all 13 jobs (Smelting, Watering, Farming, Mining, Power, Cooling, Transport, etc.). |
-| 💻 [**`web/index.html`**](./web/index.html) | Modern interactive web dashboard with real-time search, filters by stage/element/ability/level, and tabbed form comparisons. |
-| 📊 [**`data/`**](./data/) | Machine-readable datasets available in both [`aniimo_homeland_data.json`](./data/aniimo_homeland_data.json) and [`aniimo_homeland_data.csv`](./data/aniimo_homeland_data.csv). |
+### 1. Installation
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/grimdragonx/aniimo-homeland-guide.git
+cd aniimo-homeland-guide
+npm install
+```
+
+### 2. Launch Server
+Start the Express server:
+```bash
+npm start
+```
+Open **[http://localhost:3000](http://localhost:3000)** in your browser!
+
+### 3. Developer Mode (Auto-Reload)
+```bash
+npm run dev
+```
+
+---
+
+## 📡 REST API Endpoints
+
+The Node.js server includes a built-in REST API for querying Aniimo data:
+
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `/api/aniimo` | `GET` | Retrieve list of Aniimo. Supports query params: `?search=...&stage=...&element=...&ability=...&minLevel=...&form=...` |
+| `/api/aniimo/:id` | `GET` | Get single Aniimo by ID (`001`, `044`, etc.) or name (`glynsera`, `scorchhowl`) |
+| `/api/abilities` | `GET` | Returns breakdown of all 13 Homeland abilities (Elemental & General Utility) |
+| `/api/stats` | `GET` | High-level statistics on species, stage distribution, and variant counts |
+
+---
+
+## 🖼️ Picture & Portrait System
+
+Every Aniimo in the catalog features visual picture portraits:
+* **High-Res Vector Portraits:** Automatically generated SVG illustrations in `public/images/` reflecting elemental gradients, creature badges, and glowing auras.
+* **Custom Picture Support:** Drop custom `.png` illustrations into `public/images/{id}.png` (e.g. `044.png`) and the app will automatically prioritize them over fallback SVGs!
+* **Dynamic Form Auras:** Shifting tabs between **Basic**, **Weather Form**, and **Prismana Form** dynamically updates visual themes, lighting, and passive perks.
+
+---
+
+## 🧬 Form Systems & Homeland Impact
+
+Every Aniimo can exist in up to three form categories that redefine its productivity at your base:
+
+```
+[Basic Form]           ──►  [Weather Form]          ──►  [Prismana Form]
+Default habitat & stats     Dynamic weather/time shift    Rainbow aura / Prismana Flow
+Baseline abilities (Lv1-3)  Adds elements & +1 skill      Max skills (Lv4-5), -25% stamina
+```
+
+1. **Basic Form:** Standard variants caught under temperate conditions (e.g., *Glynsera* in Beast Fang Ridge with `Ice Lv.3`, `Dark Lv.2`).
+2. **Weather / Environmental Forms:** 
+   * Variants triggered by specific weather or time conditions.
+   * *Example:* **Glynsera (Nighttime Form)** spawns strictly at night in Rosetower Woods, boosting its stats to `Ice Lv.3`, `Dark Lv.3`, and `Artisanship Lv.3` with the *Nighttime Hunter* perk (+30% night shift speed, zero fatigue).
+   * *Example:* **Scorchhowl (Thunderstorm)** gains `Lightning Lv.2` alongside `Fire Lv.3` to power generators while smelting.
+3. **Prismana Forms:** 
+   * Ultra-rare variants with shifting rainbow auras discovered during **Prismana Flow** weather or through the **Prismana Pact**.
+   * Grants **+1 Level Boost** to primary work skills (reaching Lv 4–5), reduces stamina consumption by 25%, and unlocks exclusive passive perks.
 
 ---
 
 ## 🌟 The 13 Homeland Abilities
 
-In *Aniimo*, efficiency at base stations is dictated by an Aniimo's **Homeland Ability Level** (Lv 1 to Lv 5), completely independent from combat stats:
+In *Aniimo*, base station efficiency is dictated strictly by an Aniimo's **Homeland Ability Level** (Lv 1 to Lv 5), completely independent from combat stats:
 
 ### ⚡ Elemental Roles (9 Abilities)
 * **🔥 Fire:** Campfire cooking, smelteries, and blast furnace operations.
@@ -46,49 +103,32 @@ In *Aniimo*, efficiency at base stations is dictated by an Aniimo's **Homeland A
 
 ---
 
-## 🧬 Form Systems & Homeland Impact
+## 📑 Repository Structure
 
-Every Aniimo can exist in up to three form categories that redefine its productivity at your base:
-
+```text
+aniimo-homeland-guide/
+├── server.js                      # Express Node.js web server & REST API
+├── package.json                   # Node.js project configuration
+├── public/                        # Modern Web App Frontend
+│   ├── index.html                 # App layout with search & filter panels
+│   ├── style.css                  # Responsive glassmorphism dark UI
+│   ├── app.js                     # Client logic, SVG portrait generator & modal
+│   └── images/                    # 89+ SVG creature portraits
+├── HOMELAND_GUIDE.md              # In-depth guide: RV progression, Hatchinators, Bud Tickets
+├── ANIIMO_DATABASE.md             # Full encyclopedia of 89+ canonical Aniimo species
+├── BEST_WORKERS_TIER_LIST.md      # Facility-by-facility worker rankings (S-Tier to B-Tier)
+└── data/
+    ├── aniimo_homeland_data.json  # Complete structured JSON dataset
+    └── aniimo_homeland_data.csv   # Spreadsheet-compatible CSV export
 ```
-[Basic Form]           ──►  [Weather Form]          ──►  [Prismana Form]
-Default habitat & stats     Dynamic weather shift         Rainbow aura / Prismana Flow
-Baseline abilities (Lv1-3)  Adds elements & +1 skill      Max skills (Lv4-5), -25% stamina
-```
-
-1. **Basic Form:** The standard variant caught under normal weather. Has baseline abilities suited to its evolution tier (Lumin, Gamma, or Nova).
-2. **Weather Forms:** Variants that trigger in specific weather conditions (Rainstorm, Thunderstorm, Snowfield, Sandstorm, Heatwave). These forms frequently gain **secondary elements** and unlock additional Homeland roles (e.g., *Scorchhowl Thunderstorm* gains Lightning Lv 2 to power machines while retaining Fire Lv 3 for smelting).
-3. **Prismana Forms:** Ultra-rare, shimmering rainbow variants obtained during *Prismana Flow* weather or via the *Prismana Pact*. These variants boast:
-   * **+1 Level Boost** to primary work skills (reaching Lv 4 or Lv 5).
-   * **Unique Prismatic Workplace Traits** (e.g. 50% carry capacity, zero food decay, 25% faster night shifts, and bonus Bud Ticket drops).
 
 ---
 
-## 🚀 Interactive Web Dashboard
+## 📊 Database Summary
 
-To run the interactive Aniimo Homeland Guide locally:
-1. Navigate into the `web/` folder.
-2. Double-click `index.html` to open it in any web browser (no web server required).
-3. Features:
-   * **Instant Search:** Type any name, evolution line, or work role.
-   * **Form Switcher Tabs:** Compare an Aniimo's Basic, Weather, and Prismana abilities side-by-side.
-   * **Skill Level Filtering:** Find all Aniimo with specific abilities (e.g., *Water Lv 3+* or *Carry Lv 4*).
-   * **Clean Responsive Dark Mode UI.**
-
----
-
-## 📊 Sample Data Preview
-
-| Aniimo | Stage | Basic Form Abilities | Weather Form Abilities | Prismana Form Abilities |
-| :--- | :--- | :--- | :--- | :--- |
-| **Scorchhowl** | Nova | `Fire Lv.3`, `Artisanship Lv.2`, `Carry Lv.2` | *Thunderstorm:* `Fire Lv.3`, `Lightning Lv.2`, `Carry Lv.3` | `Fire Lv.4`, `Lightning Lv.2`, `Artisanship Lv.3` (*Blazing Foundry*) |
-| **Inferlupa** | Nova | `Fire Lv.3`, `Dark Lv.2`, `Artisanship Lv.2` | *Eclipse/Night:* `Fire Lv.3`, `Dark Lv.3`, `Artisanship Lv.2` | `Fire Lv.4`, `Dark Lv.3`, `Artisanship Lv.3` (*Prismatic Nether*) |
-| **Leafy** | Nova | `Water Lv.3`, `Grass Lv.3`, `Perfumery Lv.2` | *Rainstorm:* `Water Lv.4`, `Grass Lv.3`, `Perfumery Lv.2` | `Water Lv.4`, `Grass Lv.4`, `Perfumery Lv.3` (*Miracle Bloom*) |
-| **Bouldus** | Nova | `Earth Lv.4`, `Carry Lv.3` | *Sandstorm:* `Earth Lv.4`, `Fire Lv.1`, `Carry Lv.3` | `Earth Lv.5`, `Carry Lv.3` (*Titan Quarry*) |
-| **Tubster** | Nova | `Wind Lv.3`, `Earth Lv.2`, `Carry Lv.3` | *Sandstorm:* `Earth Lv.3`, `Wind Lv.2`, `Carry Lv.3` | `Wind Lv.3`, `Earth Lv.3`, `Carry Lv.4` (*Titan Porter*) |
-| **Melloblum** | Nova | `Grass Lv.3`, `Perfumery Lv.3`, `Leisure Lv.2` | *Sunny Bloom:* `Grass Lv.4`, `Perfumery Lv.3`, `Leisure Lv.3` | `Grass Lv.4`, `Perfumery Lv.4`, `Leisure Lv.3` (*Sweet Nectar*) |
-
-*See [`ANIIMO_DATABASE.md`](./ANIIMO_DATABASE.md) for the full 32+ species encyclopedia.*
+* **89+ Canonical Species** indexed (#001 through #094)
+* **272 Total Forms Cataloged** (Basic, Nighttime/Weather, and Prismana variants)
+* **Fact-Checked Accuracy** verified against in-game dex and official community registries.
 
 ---
 

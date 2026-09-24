@@ -1141,3 +1141,4 @@ with open(csv_path, "w", newline="", encoding="utf-8") as f:
             prismana["perk"]
         ])
 print(f"Wrote CSV to {csv_path}")
+

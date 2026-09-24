@@ -153,3 +153,4 @@ Eggs gathered from the wild are incubated in the **Hatchinator**:
 2. **Assign a Dedicated Hauler:** Always keep at least one high-tier **Carry** specialist (like **Tubster** or **Fenrier**). Otherwise, crafters will stop working when their output bin fills up!
 3. **Keep Smelteries Away from Coolers:** Heat stations will increase cooling power drain if placed adjacent to ice boxes.
 4. **Use Weather Forms to Consolidate Roles:** Instead of employing one Fire worker and one Lightning worker, use a **Thunderstorm Scorchhowl** to handle both!
+

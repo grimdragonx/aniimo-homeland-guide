@@ -1,0 +1,982 @@
+import json
+import csv
+import os
+
+# Comprehensive canonical 94 Aniimo Database
+aniimo_roster = [
+    # 001 - 004: Emberpup Line
+    {
+        "id": "001", "name": "Emberpup", "stage": "Lumin", "element": "Fire", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Emberpup -> Flameruff -> Scorchhowl / Inferlupa",
+        "best_role": "Starter Campfire Cooking & Furnace Ignition",
+        "forms": {
+            "basic": {"name": "Emberpup (Standard)", "element": "Fire", "condition": "Temperate Plains", "abilities": {"Fire": 1, "Carry": 1}, "perk": "Low hunger consumption, reliable starter kitchen helper."},
+            "weather": [{"name": "Emberpup (Heatwave)", "element": "Fire", "condition": "Heatwave / Drought", "abilities": {"Fire": 2, "Artisanship": 1}, "perk": "Cooking speed +20% during intense heat."}],
+            "prismana": {"name": "Prismana Emberpup", "element": "Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Fire": 2, "Light": 1, "Carry": 1}, "perk": "Prismatic Ember: Meals never burn even when unattended."}
+        }
+    },
+    {
+        "id": "002", "name": "Flameruff", "stage": "Gamma", "element": "Fire", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Emberpup -> Flameruff -> Scorchhowl / Inferlupa",
+        "best_role": "Mid-tier Smelting & Ingot Transport",
+        "forms": {
+            "basic": {"name": "Flameruff (Standard)", "element": "Fire", "condition": "Beast Fang Ridge", "abilities": {"Fire": 2, "Carry": 2, "Artisanship": 1}, "perk": "Maintains constant furnace temperature."},
+            "weather": [{"name": "Flameruff (Thunderstorm)", "element": "Fire / Lightning", "condition": "Thunderstorm", "abilities": {"Fire": 2, "Lightning": 1, "Carry": 2}, "perk": "Provides backup spark to generators while smelting."}],
+            "prismana": {"name": "Prismana Flameruff", "element": "Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Fire": 3, "Artisanship": 2, "Carry": 2}, "perk": "Prismatic Flame: +20% bonus ingots per smelt cycle."}
+        }
+    },
+    {
+        "id": "003", "name": "Scorchhowl", "stage": "Nova", "element": "Fire", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Emberpup -> Flameruff -> Scorchhowl",
+        "best_role": "Master Blast Furnace Metallurgy & High-Volume Smelting",
+        "forms": {
+            "basic": {"name": "Scorchhowl (Standard)", "element": "Fire", "condition": "Beast Fang Ridge", "abilities": {"Fire": 3, "Artisanship": 2, "Carry": 2}, "perk": "Master smelter capable of smelting highest tier titanium & obsidian alloys."},
+            "weather": [{"name": "Scorchhowl (Thunderstorm)", "element": "Fire / Lightning", "condition": "Thunderstorm in Beast Fang Ridge", "abilities": {"Fire": 3, "Lightning": 2, "Carry": 3}, "perk": "Dual smelting and high-voltage power output."}],
+            "prismana": {"name": "Prismana Scorchhowl", "element": "Fire / Light", "condition": "Prismana Flow event", "abilities": {"Fire": 4, "Lightning": 2, "Artisanship": 3}, "perk": "Blazing Foundry: +30% smelting speed, -25% stamina drain, chance to double alloy output."}
+        }
+    },
+    {
+        "id": "004", "name": "Inferlupa", "stage": "Nova", "element": "Fire", "secondary_element": "Dark",
+        "role": "Break", "evolution_line": "Emberpup -> Flameruff -> Inferlupa",
+        "best_role": "24/7 Overnight Blast Furnace & Dark Transmutation",
+        "forms": {
+            "basic": {"name": "Inferlupa (Standard)", "element": "Fire / Dark", "condition": "Warrior Journey Quest", "abilities": {"Fire": 3, "Dark": 2, "Artisanship": 2}, "perk": "Nocturnal: Does not sleep or suffer morale penalties during night shifts."},
+            "weather": [{"name": "Inferlupa (Eclipse / Night)", "element": "Fire / Dark", "condition": "Eclipse / Night", "abilities": {"Fire": 3, "Dark": 3, "Artisanship": 2}, "perk": "Shadow Forge: Dark catalyst refining speed increased by 35% at night."}],
+            "prismana": {"name": "Prismana Inferlupa", "element": "Fire / Dark / Prismatic", "condition": "Prismana In-game Event", "abilities": {"Fire": 4, "Dark": 3, "Artisanship": 3}, "perk": "Prismatic Nether: 100% nocturnal uptime; +25% dark material conversion speed; never slacks."}
+        }
+    },
+    # 005 - 006: Celestis Line
+    {
+        "id": "005", "name": "Celestis", "stage": "Lumin", "element": "Dark", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Celestis -> Stellarys",
+        "best_role": "Homeland Rest Area & Night Gathering",
+        "forms": {
+            "basic": {"name": "Celestis (Standard)", "element": "Dark", "condition": "Quiet Meadows", "abilities": {"Dark": 1, "Leisure": 1}, "perk": "Gentle calming presence that reduces nearby worker fatigue."},
+            "weather": [{"name": "Celestis (Moonlit Night)", "element": "Dark", "condition": "Clear Night", "abilities": {"Dark": 2, "Leisure": 2}, "perk": "Moonlight Serenade: Increases worker sanity recovery in beds by 20%."}],
+            "prismana": {"name": "Prismana Celestis", "element": "Dark / Light", "condition": "Prismana Flow weather", "abilities": {"Dark": 2, "Light": 1, "Leisure": 2}, "perk": "Astral Rest: Restores base worker morale +15% and increases Bud Ticket generation."}
+        }
+    },
+    {
+        "id": "006", "name": "Stellarys", "stage": "Gamma", "element": "Dark", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Celestis -> Stellarys",
+        "best_role": "High-Tier Morale Station & Long-Distance Night Hauling",
+        "forms": {
+            "basic": {"name": "Stellarys (Standard)", "element": "Dark", "condition": "Starlit Cliffs", "abilities": {"Dark": 2, "Leisure": 2, "Carry": 1}, "perk": "Gliding courier that quickly transports goods across base at night."},
+            "weather": [{"name": "Stellarys (Rainstorm)", "element": "Dark / Water", "condition": "Rainstorm", "abilities": {"Dark": 2, "Water": 2, "Leisure": 2}, "perk": "Waters crops while maintaining worker morale during storms."}],
+            "prismana": {"name": "Prismana Stellarys", "element": "Dark / Light", "condition": "Prismana Flow weather", "abilities": {"Dark": 3, "Light": 2, "Leisure": 3}, "perk": "Celestial Harmony: Camp-wide +10% passive production speed boost."}
+        }
+    },
+    # 007 - 010: Chirpi Line
+    {
+        "id": "007", "name": "Chirpi", "stage": "Lumin", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Chirpi -> Tromber / Cornet / Tubster",
+        "best_role": "Early Farm Seeding, Seed Storage & Aerial Hauling",
+        "forms": {
+            "basic": {"name": "Chirpi (Standard)", "element": "Wind", "condition": "Breezy Plains", "abilities": {"Wind": 1, "Grass": 1, "Carry": 1}, "perk": "Quick flyer that retrieves stray seeds and deposits them into storage."},
+            "weather": [{"name": "Chirpi (Rainstorm)", "element": "Wind / Water", "condition": "Rainstorm", "abilities": {"Wind": 1, "Water": 1, "Grass": 1}, "perk": "Light rain boosts seed germination when Chirpi tends the soil."}],
+            "prismana": {"name": "Prismana Chirpi", "element": "Wind / Grass", "condition": "Prismana Flow weather", "abilities": {"Wind": 2, "Grass": 2, "Leisure": 2}, "perk": "Breezy Melodies: Speeds up crop growth cycle by 10% on adjacent plots."}
+        }
+    },
+    {
+        "id": "008", "name": "Tromber", "stage": "Nova", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Chirpi -> Tromber",
+        "best_role": "Camp-Wide Morale Anthem & Windmill Power",
+        "forms": {
+            "basic": {"name": "Tromber (Standard)", "element": "Wind", "condition": "Requires Level 18 + Magic Horn", "abilities": {"Wind": 3, "Leisure": 3, "Carry": 2}, "perk": "Sounds resonant chimes that prevent worker slacking across the entire base."},
+            "weather": [{"name": "Tromber (Rainstorm)", "element": "Wind / Water", "condition": "Rainstorm / Thunderstorm", "abilities": {"Wind": 3, "Water": 2, "Leisure": 3}, "perk": "Storm Chime: Prevents negative wet mood debuffs on outdoor workers."}],
+            "prismana": {"name": "Prismana Tromber", "element": "Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 4, "Water": 2, "Leisure": 4}, "perk": "Brass Anthem: +25% morale recovery and doubles Bud Ticket drops."}
+        }
+    },
+    {
+        "id": "009", "name": "Cornet", "stage": "Nova", "element": "Wind", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Chirpi -> Cornet",
+        "best_role": "High-Speed Grain Milling & Textile Spinning",
+        "forms": {
+            "basic": {"name": "Cornet (Standard)", "element": "Wind", "condition": "Requires Level 18", "abilities": {"Wind": 3, "Artisanship": 2, "Carry": 2}, "perk": "Aerodynamic precision that speeds up grain grinding and textile looms."},
+            "weather": [
+                {"name": "Cornet (Highland Gale)", "element": "Wind / Lightning", "condition": "Highland Storm", "abilities": {"Wind": 4, "Lightning": 1, "Artisanship": 2}, "perk": "Windmills produce 50% more flour per minute in high winds."},
+                {"name": "Cornet (Beach Form)", "element": "Wind / Water", "condition": "Coastal Breeze", "abilities": {"Wind": 3, "Water": 2, "Artisanship": 2}, "perk": "Desalinates sea water into fresh irrigation water."}
+            ],
+            "prismana": {"name": "Prismana Cornet", "element": "Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 4, "Light": 2, "Artisanship": 3}, "perk": "Resonant Gust: +30% mill output and +20% bench assembly speed."}
+        }
+    },
+    {
+        "id": "010", "name": "Tubster", "stage": "Nova", "element": "Wind", "secondary_element": "Earth",
+        "role": "Break", "evolution_line": "Chirpi -> Tubster",
+        "best_role": "Heavy Weight Cargo Hauling & Construction Excavation",
+        "forms": {
+            "basic": {"name": "Tubster (Standard)", "element": "Wind / Earth", "condition": "Defeat Alpha Tubster", "abilities": {"Wind": 3, "Earth": 2, "Carry": 3}, "perk": "Heavy Lifter: Transports entire stacks of heavy stone and timber in one go."},
+            "weather": [
+                {"name": "Tubster (Sandstorm)", "element": "Earth / Wind", "condition": "Sandstorm in Arid Bluffs", "abilities": {"Earth": 3, "Wind": 2, "Carry": 3}, "perk": "Immune to environmental slow-downs; quarry hauling +25%."},
+                {"name": "Tubster (Highland Form)", "element": "Wind / Earth", "condition": "Highland Cliffs", "abilities": {"Wind": 3, "Earth": 3, "Carry": 3}, "perk": "Mountain climber: moves effortlessly across vertical Homeland terraces."}
+            ],
+            "prismana": {"name": "Prismana Tubster", "element": "Wind / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Wind": 3, "Earth": 3, "Carry": 4}, "perk": "Titan Porter: +50% carry capacity; clears Homeland transport backlogs instantly."}
+        }
+    },
+    # 011 - 012: Iris Line
+    {
+        "id": "011", "name": "Iris", "stage": "Lumin", "element": "Grass", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Iris -> Irisal",
+        "best_role": "Floral Garden Planting & Fragrant Petal Gathering",
+        "forms": {
+            "basic": {"name": "Iris (Standard)", "element": "Grass", "condition": "Blooming Meadow", "abilities": {"Grass": 1, "Perfumery": 1}, "perk": "Gathers fresh petals with high care, preventing bruised petals."},
+            "weather": [{"name": "Iris (Floral Surge)", "element": "Grass", "condition": "Sunny Bloom", "abilities": {"Grass": 2, "Perfumery": 1}, "perk": "Doubles blossom harvesting speed during sunny weather."}],
+            "prismana": {"name": "Prismana Iris", "element": "Grass / Light", "condition": "Prismana Flow weather", "abilities": {"Grass": 2, "Light": 1, "Perfumery": 2}, "perk": "Glow Petals: Gathers rare iridescent flowers used in luxury perfume."}
+        }
+    },
+    {
+        "id": "012", "name": "Irisal", "stage": "Gamma", "element": "Grass", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Iris -> Irisal",
+        "best_role": "High-Efficiency Herb Gardening & Botanical Oil Extraction",
+        "forms": {
+            "basic": {"name": "Irisal (Standard)", "element": "Grass", "condition": "Evolves from Iris", "abilities": {"Grass": 2, "Perfumery": 2, "Artisanship": 1}, "perk": "Extracts concentrated essences directly from harvested herbs."},
+            "weather": [{"name": "Irisal (Mist)", "element": "Grass / Water", "condition": "Misty Morning", "abilities": {"Grass": 2, "Water": 1, "Perfumery": 2}, "perk": "Dewdrop essence yield increased by 30%."}],
+            "prismana": {"name": "Prismana Irisal", "element": "Grass / Light", "condition": "Prismana Flow weather", "abilities": {"Grass": 3, "Light": 1, "Perfumery": 3}, "perk": "Miracle Blossom: Potion and fertilizer creation speed +25%."}
+        }
+    },
+    # 013 - 016: Skippy Line
+    {
+        "id": "013", "name": "Skippy", "stage": "Lumin", "element": "Water", "secondary_element": "Ice",
+        "role": "Healer", "evolution_line": "Skippy -> Pranky -> Glacy / Leafy",
+        "best_role": "Starter Farmland Watering & Well Operations",
+        "forms": {
+            "basic": {"name": "Skippy (Standard)", "element": "Water / Ice", "condition": "Lakeshore", "abilities": {"Water": 1, "Ice": 1, "Carry": 1}, "perk": "Keeps water basins full and dampens soil beds."},
+            "weather": [{"name": "Skippy (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 2, "Carry": 1}, "perk": "Rain Dance: Extends soil moisture retention by 50%."}],
+            "prismana": {"name": "Prismana Skippy", "element": "Water / Ice / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 2, "Ice": 1, "Carry": 2}, "perk": "Spring Splash: Waters multiple adjacent soil plots simultaneously."}
+        }
+    },
+    {
+        "id": "014", "name": "Pranky", "stage": "Gamma", "element": "Water", "secondary_element": "Ice",
+        "role": "Healer", "evolution_line": "Skippy -> Pranky -> Glacy / Leafy",
+        "best_role": "Mid-tier Automated Irrigation, Brewing & Beverage Vats",
+        "forms": {
+            "basic": {"name": "Pranky (Standard)", "element": "Water / Ice", "condition": "Evolves from Skippy", "abilities": {"Water": 2, "Ice": 1, "Artisanship": 2}, "perk": "Brews stamina juices and ferments nutritious animal feeds."},
+            "weather": [{"name": "Pranky (Thunderstorm)", "element": "Water / Lightning", "condition": "Thunderstorm", "abilities": {"Water": 2, "Lightning": 1, "Artisanship": 2}, "perk": "Electrolyzed Water: Speeds up vegetative crop growth by 25%."}],
+            "prismana": {"name": "Prismana Pranky", "element": "Water / Ice / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Water": 3, "Ice": 2, "Artisanship": 2}, "perk": "Fluid Craft: +20% beverage craft speed and lightens base mood."}
+        }
+    },
+    {
+        "id": "015", "name": "Glacy", "stage": "Nova", "element": "Water", "secondary_element": "Ice",
+        "role": "Healer", "evolution_line": "Skippy -> Pranky -> Glacy",
+        "best_role": "Dual High-Tier Irrigation & Cryo Food Preservation",
+        "forms": {
+            "basic": {"name": "Glacy (Standard)", "element": "Water / Ice", "condition": "Freeze Stone on Pranky", "abilities": {"Water": 3, "Ice": 3, "Leisure": 2}, "perk": "Seamlessly irrigates farm crops and chills food pantries."},
+            "weather": [{"name": "Glacy (Snowfield)", "element": "Ice / Water", "condition": "Snowfield Weather", "abilities": {"Ice": 4, "Water": 2, "Leisure": 2}, "perk": "Permafrost: Freezes storage bins indefinitely without melting."}],
+            "prismana": {"name": "Prismana Glacy", "element": "Water / Ice / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Water": 4, "Ice": 4, "Leisure": 3}, "perk": "Crystal Springs: Irrigation water protects crops against cold snaps."}
+        }
+    },
+    {
+        "id": "016", "name": "Leafy", "stage": "Nova", "element": "Grass", "secondary_element": "Water",
+        "role": "Regen", "evolution_line": "Skippy -> Pranky -> Leafy",
+        "best_role": "All-in-One Automated Farm Overseer (Sowing + Watering)",
+        "forms": {
+            "basic": {"name": "Leafy (Standard)", "element": "Grass / Water", "condition": "Sprout Stone on Pranky", "abilities": {"Grass": 3, "Water": 3, "Perfumery": 2}, "perk": "Single-handedly automates farm plots by planting seeds and irrigating beds."},
+            "weather": [{"name": "Leafy (Rainstorm)", "element": "Water / Grass", "condition": "Rainstorm", "abilities": {"Water": 4, "Grass": 3, "Perfumery": 2}, "perk": "Monsoon Bloom: Crops mature in half the regular time during rain."}],
+            "prismana": {"name": "Prismana Leafy", "element": "Grass / Water / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Grass": 4, "Water": 4, "Perfumery": 3}, "perk": "Miracle Bloom: +50% crop maturation speed and chance for triple rare crop drops."}
+        }
+    },
+    # 017 - 019: Nimbi Line
+    {
+        "id": "017", "name": "Nimbi", "stage": "Lumin", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Nimbi -> Turbo / Dreaple",
+        "best_role": "Light Mist Irrigation & High Shelf Gathering",
+        "forms": {
+            "basic": {"name": "Nimbi (Standard)", "element": "Wind", "condition": "Windy Hills", "abilities": {"Wind": 1, "Water": 1, "Carry": 1}, "perk": "Hovers effortlessly over garden patches to sprinkle gentle mist."},
+            "weather": [{"name": "Nimbi (Rainstorm)", "element": "Water / Wind", "condition": "Rainstorm", "abilities": {"Water": 2, "Wind": 1, "Carry": 1}, "perk": "Soaking Mist: Waters all tiles in a 3x3 radius simultaneously."}],
+            "prismana": {"name": "Prismana Nimbi", "element": "Water / Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 2, "Wind": 2, "Perfumery": 1}, "perk": "Cloud Dew: +20% watering efficiency; crops gain higher quality rating."}
+        }
+    },
+    {
+        "id": "018", "name": "Turbo", "stage": "Gamma", "element": "Wind", "secondary_element": "Lightning",
+        "role": "Support", "evolution_line": "Nimbi -> Turbo",
+        "best_role": "Dynamo Electrical Grid Generation & Sorter Operations",
+        "forms": {
+            "basic": {"name": "Turbo (Standard)", "element": "Wind / Lightning", "condition": "Evolves from Nimbi", "abilities": {"Lightning": 2, "Wind": 2, "Artisanship": 1}, "perk": "High RPM dynamo turning: powers electrical generators and automated sorters."},
+            "weather": [
+                {"name": "Turbo (Thunderstorm)", "element": "Lightning / Wind", "condition": "Thunderstorm", "abilities": {"Lightning": 3, "Wind": 2, "Artisanship": 2}, "perk": "Capacitor Surge: Doubled electrical output during storms; powers grid for free."},
+                {"name": "Turbo (Cloudmist)", "element": "Wind / Water", "condition": "Dense Fog", "abilities": {"Wind": 2, "Water": 2, "Artisanship": 1}, "perk": "Condensation: Automatically collects distilled water from heavy mist."}
+            ],
+            "prismana": {"name": "Prismana Turbo", "element": "Lightning / Wind / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Lightning": 3, "Wind": 3, "Artisanship": 2}, "perk": "Overclock Generator: +35% continuous electricity generation; machines run 15% faster."}
+        }
+    },
+    {
+        "id": "019", "name": "Dreaple", "stage": "Gamma", "element": "Dark", "secondary_element": "Wind",
+        "role": "Support", "evolution_line": "Nimbi -> Dreaple",
+        "best_role": "Perfumery Scent Alchemy & Deep Sleep Buffs",
+        "forms": {
+            "basic": {"name": "Dreaple (Standard)", "element": "Dark / Wind", "condition": "Evolves from Nimbi", "abilities": {"Dark": 2, "Wind": 2, "Perfumery": 2}, "perk": "Distills sleep-inducing mists and aromatic dream oils."},
+            "weather": [{"name": "Dreaple (Misty Fog)", "element": "Dark / Wind", "condition": "Fog / Overcast", "abilities": {"Dark": 2, "Wind": 2, "Perfumery": 3}, "perk": "Dream Vapor: Perfumery brew time shortened by 30% under heavy fog."}],
+            "prismana": {"name": "Prismana Dreaple", "element": "Dark / Wind / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Dark": 3, "Wind": 3, "Perfumery": 3}, "perk": "Dream Essence: +25% potion/incense yield; whole RV work speed +10%."}
+        }
+    },
+    # 020 - 022: Hummin Line
+    {
+        "id": "020", "name": "Hummin", "stage": "Lumin", "element": "Grass", "secondary_element": None,
+        "role": "Break", "evolution_line": "Hummin -> Hexxin / Tuckin",
+        "best_role": "Garden Weeding, Flower Pollination & Light Timber",
+        "forms": {
+            "basic": {"name": "Hummin (Standard)", "element": "Grass", "condition": "Sunlit Valley", "abilities": {"Grass": 1, "Artisanship": 1}, "perk": "Fast vibrating wings clear weeds rapidly without harming crop roots."},
+            "weather": [{"name": "Hummin (Sunny)", "element": "Grass", "condition": "Sunny", "abilities": {"Grass": 2, "Artisanship": 1}, "perk": "Pollination speed doubled in direct sunlight."}],
+            "prismana": {"name": "Prismana Hummin", "element": "Grass / Light", "condition": "Prismana Flow weather", "abilities": {"Grass": 2, "Light": 1, "Perfumery": 1}, "perk": "Radiant Pollen: Increases harvest yield of adjacent flower beds by 25%."}
+        }
+    },
+    {
+        "id": "021", "name": "Hexxin", "stage": "Nova", "element": "Dark", "secondary_element": "Grass",
+        "role": "Energy", "evolution_line": "Hummin -> Hexxin",
+        "best_role": "Nocturnal Alchemy & Shadow Catalyst Refining",
+        "forms": {
+            "basic": {"name": "Hexxin (Standard)", "element": "Dark / Grass", "condition": "Shadow Stone on Hummin", "abilities": {"Dark": 3, "Grass": 2, "Perfumery": 2}, "perk": "Transmutes common herbs into potent dark alchemical tonics."},
+            "weather": [{"name": "Hexxin (Eclipse)", "element": "Dark / Grass", "condition": "Eclipse / Night", "abilities": {"Dark": 3, "Grass": 2, "Perfumery": 3}, "perk": "Night Witch: Potion brewing speed +40% under total darkness."}],
+            "prismana": {"name": "Prismana Hexxin", "element": "Dark / Grass / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Dark": 4, "Grass": 3, "Perfumery": 3}, "perk": "Hex Master: Guaranteed double yield when crafting high-end elixirs."}
+        }
+    },
+    {
+        "id": "022", "name": "Tuckin", "stage": "Nova", "element": "Grass", "secondary_element": "Earth",
+        "role": "Break", "evolution_line": "Hummin -> Tuckin",
+        "best_role": "Heavy Soil Tilling, Root Harvesting & Woodcraft",
+        "forms": {
+            "basic": {"name": "Tuckin (Standard)", "element": "Grass / Earth", "condition": "Earth Stone on Hummin", "abilities": {"Grass": 3, "Earth": 2, "Carry": 2}, "perk": "Digs deep root vegetables and fells mature timber efficiently."},
+            "weather": [{"name": "Tuckin (Sandstorm)", "element": "Earth / Grass", "condition": "Sandstorm", "abilities": {"Earth": 3, "Grass": 2, "Carry": 2}, "perk": "Root Anchoring: Immune to wind storms, maintains consistent digging."}],
+            "prismana": {"name": "Prismana Tuckin", "element": "Grass / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Grass": 4, "Earth": 3, "Carry": 3}, "perk": "Bountiful Soil: Farm plots worked by Tuckin produce 30% more tuber crops."}
+        }
+    },
+    # 023 - 025: Budclaw Line
+    {
+        "id": "023", "name": "Budclaw", "stage": "Lumin", "element": "Earth", "secondary_element": "Grass",
+        "role": "Break", "evolution_line": "Budclaw -> Shrubclaw / Geoclaw",
+        "best_role": "Starter Quarry Digging & Clay Shoveling",
+        "forms": {
+            "basic": {"name": "Budclaw (Standard)", "element": "Earth / Grass", "condition": "Dirt Ridges", "abilities": {"Earth": 1, "Grass": 1, "Carry": 1}, "perk": "Claws through clay deposits and digs irrigation trenches."},
+            "weather": [{"name": "Budclaw (Rainstorm)", "element": "Earth / Water", "condition": "Rainstorm", "abilities": {"Earth": 1, "Water": 1, "Grass": 1}, "perk": "Soft Clay: Collects double clay blocks when ground is soaked."}],
+            "prismana": {"name": "Prismana Budclaw", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 2, "Grass": 2, "Carry": 1}, "perk": "Prismatic Claws: +20% digging and trench preparation speed."}
+        }
+    },
+    {
+        "id": "024", "name": "Shrubclaw", "stage": "Gamma", "element": "Earth", "secondary_element": "Grass",
+        "role": "Break", "evolution_line": "Budclaw -> Shrubclaw",
+        "best_role": "Sturdy Timber Logging & Stone Foundation Masonry",
+        "forms": {
+            "basic": {"name": "Shrubclaw (Standard)", "element": "Earth / Grass", "condition": "Reach Level 21", "abilities": {"Earth": 2, "Grass": 2, "Artisanship": 2}, "perk": "Fells hard timber and carves wooden architectural pillars."},
+            "weather": [{"name": "Shrubclaw (Thunderstorm)", "element": "Earth / Lightning", "condition": "Thunderstorm", "abilities": {"Earth": 2, "Grass": 2, "Artisanship": 2}, "perk": "Bark Shield: Unbothered by lightning strikes while working outside."}],
+            "prismana": {"name": "Prismana Shrubclaw", "element": "Earth / Grass / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Earth": 3, "Grass": 3, "Artisanship": 3}, "perk": "Timber Mason: Wooden furniture crafting speed +35%."}
+        }
+    },
+    {
+        "id": "025", "name": "Geoclaw", "stage": "Nova", "element": "Ice", "secondary_element": "Earth",
+        "role": "Break", "evolution_line": "Budclaw -> Geoclaw",
+        "best_role": "Sub-zero Quarry Excavation & Ice-Tool Crafting",
+        "forms": {
+            "basic": {"name": "Geoclaw (Standard)", "element": "Ice / Earth", "condition": "Freeze Stone + Alpha Geoclaw defeat", "abilities": {"Ice": 3, "Earth": 3, "Carry": 2}, "perk": "Heavy ice claws pulverize frozen rock deposits and ice pillars."},
+            "weather": [{"name": "Geoclaw (Blizzard)", "element": "Ice / Earth", "condition": "Blizzard / Snow", "abilities": {"Ice": 4, "Earth": 3, "Carry": 2}, "perk": "Glacial Strike: +30% mining yield on permafrost veins."}],
+            "prismana": {"name": "Prismana Geoclaw", "element": "Ice / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Ice": 4, "Earth": 4, "Artisanship": 2}, "perk": "Diamond Claws: Chance to unearth rare crystal geodes while quarrying."}
+        }
+    },
+    # 026 - 027: Sparki Line
+    {
+        "id": "026", "name": "Sparki", "stage": "Lumin", "element": "Fire", "secondary_element": None,
+        "role": "Break", "evolution_line": "Sparki -> Flamerion",
+        "best_role": "Torch Maintenance & Camp Cooking",
+        "forms": {
+            "basic": {"name": "Sparki (Standard)", "element": "Fire", "condition": "Cinder Plains", "abilities": {"Fire": 1, "Artisanship": 1}, "perk": "Keep torches and camp cooking pots burning bright."},
+            "weather": [{"name": "Sparki (Heatwave)", "element": "Fire", "condition": "Heatwave", "abilities": {"Fire": 2, "Artisanship": 1}, "perk": "Ignition speed doubled during heatwaves."}],
+            "prismana": {"name": "Prismana Sparki", "element": "Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Fire": 2, "Light": 1, "Carry": 1}, "perk": "Radiant Spark: Keeps RV kitchen heated with 50% less wood."}
+        }
+    },
+    {
+        "id": "027", "name": "Flamerion", "stage": "Gamma", "element": "Fire", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Sparki -> Flamerion",
+        "best_role": "Kiln Ceramic Firing & Metal Tempering",
+        "forms": {
+            "basic": {"name": "Flamerion (Standard)", "element": "Fire", "condition": "Reach Level 21", "abilities": {"Fire": 2, "Artisanship": 2, "Carry": 1}, "perk": "Fires high-strength ceramic bricks and tempered tool blades."},
+            "weather": [{"name": "Flamerion (Thunderstorm)", "element": "Fire / Lightning", "condition": "Thunderstorm", "abilities": {"Fire": 2, "Lightning": 1, "Artisanship": 2}, "perk": "Electro-Kiln: Smelts copper wire 25% faster."}],
+            "prismana": {"name": "Prismana Flamerion", "element": "Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Fire": 3, "Artisanship": 3, "Carry": 2}, "perk": "Solar Kiln: Ingot and brick output increased by +25%."}
+        }
+    },
+    # 028 - 030: Flutternym Line
+    {
+        "id": "028", "name": "Flutternym", "stage": "Lumin", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Flutternym -> Gracewing / Somniwing",
+        "best_role": "Light Grain Milling & Scent Pollination",
+        "forms": {
+            "basic": {"name": "Flutternym (Standard)", "element": "Wind", "condition": "Rosewood", "abilities": {"Wind": 1, "Perfumery": 1, "Leisure": 1}, "perk": "Gentle flutter soothes nearby seedlings and working bees."},
+            "weather": [{"name": "Flutternym (Rainstorm)", "element": "Wind / Water", "condition": "Rainstorm", "abilities": {"Wind": 1, "Water": 1, "Perfumery": 1}, "perk": "Raindrop Nectar: Doubles harvest of rare flower seeds."}],
+            "prismana": {"name": "Prismana Flutternym", "element": "Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 2, "Light": 1, "Leisure": 2}, "perk": "Prismatic Dust: Worker stress recovery rate +20%."}
+        }
+    },
+    {
+        "id": "029", "name": "Gracewing", "stage": "Gamma", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Flutternym -> Gracewing",
+        "best_role": "High-Tier Recreation & Silk Weaving",
+        "forms": {
+            "basic": {"name": "Gracewing (Standard)", "element": "Wind", "condition": "Reach Level 25", "abilities": {"Wind": 2, "Artisanship": 2, "Leisure": 2}, "perk": "Weaves delicate silk cloth and performs relaxing aerial dances."},
+            "weather": [{"name": "Gracewing (Sunny)", "element": "Wind / Light", "condition": "Sunny", "abilities": {"Wind": 2, "Light": 1, "Leisure": 3}, "perk": "Sunlit Waltz: Worker stamina drain reduced by 15% globally."}],
+            "prismana": {"name": "Prismana Gracewing", "element": "Wind / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Wind": 3, "Light": 2, "Leisure": 3}, "perk": "Graceful Breeze: Drops extra Bud Tickets during rest hours."}
+        }
+    },
+    {
+        "id": "030", "name": "Somniwing", "stage": "Nova", "element": "Wind", "secondary_element": "Grass",
+        "role": "Support", "evolution_line": "Flutternym -> Somniwing",
+        "best_role": "Camp-Wide Sleep Restoration & Luxury Aromatherapy",
+        "forms": {
+            "basic": {"name": "Somniwing (Standard)", "element": "Wind / Grass", "condition": "Dream Petal Evolution", "abilities": {"Wind": 3, "Grass": 2, "Perfumery": 3}, "perk": "Scents the night air with restorative mist, halving rest time needed by workers."},
+            "weather": [{"name": "Somniwing (Misty Night)", "element": "Wind / Grass / Dark", "condition": "Foggy Night", "abilities": {"Wind": 3, "Dark": 2, "Perfumery": 3}, "perk": "Restful Slumber: Sick or injured Aniimo heal twice as fast in Homeland beds."}],
+            "prismana": {"name": "Prismana Somniwing", "element": "Wind / Grass / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Wind": 4, "Perfumery": 4, "Leisure": 3}, "perk": "Dreamweaver: Camp workers wake up fully energized with permanent +10% work speed buff."}
+        }
+    },
+    # 031 - 032: Eko Line
+    {
+        "id": "031", "name": "Eko", "stage": "Lumin", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Eko -> Eklue",
+        "best_role": "Seed Sorting & Communication Chime",
+        "forms": {
+            "basic": {"name": "Eko (Standard)", "element": "Wind", "condition": "Whispering Crags", "abilities": {"Wind": 1, "Carry": 1}, "perk": "Small bird that chirps alerting haulers when a crafting bench finishes."},
+            "weather": [{"name": "Eko (Thunderstorm)", "element": "Wind / Lightning", "condition": "Thunderstorm", "abilities": {"Wind": 1, "Lightning": 1, "Carry": 1}, "perk": "Alerts base workers to take shelter before storms hit."}],
+            "prismana": {"name": "Prismana Eko", "element": "Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 2, "Light": 1, "Carry": 2}, "perk": "Echo Call: Hauler response time to full bins increased by 30%."}
+        }
+    },
+    {
+        "id": "032", "name": "Eklue", "stage": "Gamma", "element": "Wind", "secondary_element": None,
+        "role": "Support", "evolution_line": "Eko -> Eklue",
+        "best_role": "Automated Base Transport & Courier Routing",
+        "forms": {
+            "basic": {"name": "Eklue (Standard)", "element": "Wind", "condition": "Reach Level 24", "abilities": {"Wind": 2, "Carry": 2, "Leisure": 1}, "perk": "Organizes sorting bins and speeds up deliveries between distant plots."},
+            "weather": [{"name": "Eklue (Highland Gale)", "element": "Wind", "condition": "Highland Storm", "abilities": {"Wind": 3, "Carry": 2}, "perk": "Tailwind: Move speed of all haulers +20%."}],
+            "prismana": {"name": "Prismana Eklue", "element": "Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 3, "Light": 2, "Carry": 3}, "perk": "Resonant Courier: Never drops items; storage capacity increased by +20%."}
+        }
+    },
+    # 033 - 035: Budsquire Line
+    {
+        "id": "033", "name": "Budsquire", "stage": "Lumin", "element": "Grass", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Budsquire -> Thornblade / Melloblum",
+        "best_role": "Starter Seed Sowing, Weeding & Garden Tending",
+        "forms": {
+            "basic": {"name": "Budsquire (Standard)", "element": "Grass", "condition": "Rosewood", "abilities": {"Grass": 1, "Water": 1, "Artisanship": 1}, "perk": "Carefully sows seeds in straight rows with high germination chance."},
+            "weather": [{"name": "Budsquire (Rainstorm)", "element": "Grass / Water", "condition": "Rainstorm", "abilities": {"Grass": 2, "Water": 2}, "perk": "Sprout Rush: Dual sowing and watering immediately after rainfall."}],
+            "prismana": {"name": "Prismana Budsquire", "element": "Grass / Light", "condition": "Prismana Flow weather", "abilities": {"Grass": 2, "Water": 2, "Artisanship": 2}, "perk": "Budding Sprout: +15% crop harvest yield and faster seedling establishment."}
+        }
+    },
+    {
+        "id": "034", "name": "Thornblade", "stage": "Gamma", "element": "Grass", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Budsquire -> Thornblade",
+        "best_role": "Logging Yard Timber Chopping & Wooden Tool Crafting",
+        "forms": {
+            "basic": {"name": "Thornblade (Standard)", "element": "Grass", "condition": "Reach Level 22", "abilities": {"Grass": 2, "Earth": 1, "Artisanship": 2}, "perk": "Sharp vine blades fell timber trees and trim thick branches."},
+            "weather": [{"name": "Thornblade (Rainstorm)", "element": "Grass / Water", "condition": "Rainstorm", "abilities": {"Grass": 3, "Water": 1, "Artisanship": 2}, "perk": "Wood production from homeland logging stations increased by 30%."}],
+            "prismana": {"name": "Prismana Thornblade", "element": "Grass / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Grass": 3, "Earth": 2, "Artisanship": 3}, "perk": "Rapid Flora: +25% logging output; crafts wooden crates with 20% less wood."}
+        }
+    },
+    {
+        "id": "035", "name": "Melloblum", "stage": "Nova", "element": "Grass", "secondary_element": None,
+        "role": "Support", "evolution_line": "Budsquire -> Melloblum",
+        "best_role": "Master Botanical Farming, Organic Fertilizer & Bud Ticket Drops",
+        "forms": {
+            "basic": {"name": "Melloblum (Standard)", "element": "Grass", "condition": "Sprout Stone on Budsquire", "abilities": {"Grass": 3, "Perfumery": 3, "Leisure": 2}, "perk": "Harvests exquisite flowers and crafts top-tier luxury botanical oils."},
+            "weather": [{"name": "Melloblum (Sunny Bloom)", "element": "Grass", "condition": "Sunny Weather in Rosetower Woods", "abilities": {"Grass": 4, "Perfumery": 3, "Leisure": 3}, "perk": "Pollination Wave: Triples crop mutation chances into high-star gourmet variants."}],
+            "prismana": {"name": "Prismana Melloblum", "element": "Grass / Light / Prismatic", "condition": "Special Prismana In-game Event", "abilities": {"Grass": 4, "Perfumery": 4, "Leisure": 3}, "perk": "Sweet Nectar: Doubles fertilizer efficacy; periodically gifts extra Bud Tickets directly to base inventory."}
+        }
+    },
+    # 036 - 037: Pomegg Line
+    {
+        "id": "036", "name": "Pomegg", "stage": "Lumin", "element": "Grass", "secondary_element": None,
+        "role": "Break", "evolution_line": "Pomegg -> Pomawk",
+        "best_role": "Hatchinator Egg Warming & Morning Fruit Picking",
+        "forms": {
+            "basic": {"name": "Pomegg (Standard)", "element": "Grass", "condition": "Orchard Groves", "abilities": {"Grass": 1, "Light": 1, "Leisure": 1}, "perk": "Incubation warming: accelerates Hatchinator egg progress when nearby."},
+            "weather": [{"name": "Pomegg (Sunny)", "element": "Grass / Light", "condition": "Sunny", "abilities": {"Light": 2, "Grass": 1, "Leisure": 1}, "perk": "Solar Yolk: Egg incubation speed increased by 15% under direct sunlight."}],
+            "prismana": {"name": "Prismana Pomegg", "element": "Grass / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Light": 2, "Grass": 2, "Leisure": 2}, "perk": "Sunshine Warmth: +20% incubation speed and guarantees positive hatchling traits."}
+        }
+    },
+    {
+        "id": "037", "name": "Pomawk", "stage": "Nova", "element": "Grass", "secondary_element": "Wind",
+        "role": "Break", "evolution_line": "Pomegg -> Pomawk",
+        "best_role": "High-Speed Crop Auto-Reaping & Barn Grain Storage",
+        "forms": {
+            "basic": {"name": "Pomawk (Standard)", "element": "Grass / Wind", "condition": "Reach Level 32", "abilities": {"Grass": 3, "Wind": 3, "Carry": 2}, "perk": "Swoops across fields to immediately reap ripe crops and fly them to farm silos."},
+            "weather": [{"name": "Pomawk (Storm)", "element": "Wind / Grass", "condition": "High Wind / Storm", "abilities": {"Wind": 4, "Grass": 2, "Carry": 2}, "perk": "Gale Swoop: Harvest speed doubled when outdoor wind is strong."}],
+            "prismana": {"name": "Prismana Pomawk", "element": "Grass / Wind / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Grass": 4, "Wind": 4, "Carry": 3}, "perk": "Gale Harvest: +30% auto-harvest speed; zero crop waste or drop loss."}
+        }
+    },
+    # 038 - 039: Dewy Line
+    {
+        "id": "038", "name": "Dewy", "stage": "Lumin", "element": "Dark", "secondary_element": None,
+        "role": "Support", "evolution_line": "Dewy -> Fragrancier",
+        "best_role": "Nighttime Scent Extraction & Restful Dew Collection",
+        "forms": {
+            "basic": {"name": "Dewy (Standard)", "element": "Dark", "condition": "Dusk Valleys", "abilities": {"Dark": 1, "Perfumery": 1, "Water": 1}, "perk": "Collects pure dew condensation from nocturnal flower petals."},
+            "weather": [{"name": "Dewy (Rainy Night)", "element": "Dark / Water", "condition": "Rainy Night", "abilities": {"Dark": 1, "Water": 2, "Perfumery": 1}, "perk": "Doubles pure night dew collection."}],
+            "prismana": {"name": "Prismana Dewy", "element": "Dark / Light", "condition": "Prismana Flow weather", "abilities": {"Dark": 2, "Perfumery": 2, "Water": 2}, "perk": "Moon Dew: Purifies water tanks and increases brewing potency."}
+        }
+    },
+    {
+        "id": "039", "name": "Fragrancier", "stage": "Nova", "element": "Dark", "secondary_element": None,
+        "role": "Support", "evolution_line": "Dewy -> Fragrancier",
+        "best_role": "Master Nocturnal Aromatics, Incense Buffs & Scent Vaults",
+        "forms": {
+            "basic": {"name": "Fragrancier (Standard)", "element": "Dark", "condition": "Dusk Stone on Dewy", "abilities": {"Dark": 3, "Perfumery": 3, "Leisure": 2}, "perk": "Master of exotic dusk perfumes that boost base crafting yields by 15%."},
+            "weather": [{"name": "Fragrancier (Eclipse)", "element": "Dark", "condition": "Eclipse / Night", "abilities": {"Dark": 4, "Perfumery": 3, "Leisure": 2}, "perk": "Shadow Incense: Nocturnal worker stamina drain completely neutralized."}],
+            "prismana": {"name": "Prismana Fragrancier", "element": "Dark / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Dark": 4, "Perfumery": 4, "Leisure": 3}, "perk": "Royal Aroma: Scent diffusers last 3x longer and attract rare wandering merchants."}
+        }
+    },
+    # 040 - 041: Wisptis Line
+    {
+        "id": "040", "name": "Wisptis", "stage": "Lumin", "element": "Dark", "secondary_element": "Fire",
+        "role": "DPS", "evolution_line": "Wisptis -> Ignitis",
+        "best_role": "Night Flame Maintenance & Charcoal Firing",
+        "forms": {
+            "basic": {"name": "Wisptis (Standard)", "element": "Dark / Fire", "condition": "Ghost Ridge", "abilities": {"Dark": 1, "Fire": 1}, "perk": "Floating will-o-wisp that keeps campfires stoked all night without wood."},
+            "weather": [{"name": "Wisptis (Foggy Night)", "element": "Dark / Fire", "condition": "Foggy Night", "abilities": {"Dark": 2, "Fire": 1}, "perk": "Spectral Glow: Illuminates dark corners of Homeland automatically."}],
+            "prismana": {"name": "Prismana Wisptis", "element": "Dark / Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Dark": 2, "Fire": 2, "Light": 1}, "perk": "Prismatic Wisp: Cooking pots reach boiling speed in half the normal time."}
+        }
+    },
+    {
+        "id": "041", "name": "Ignitis", "stage": "Nova", "element": "Dark", "secondary_element": "Fire",
+        "role": "DPS", "evolution_line": "Wisptis -> Ignitis",
+        "best_role": "High-Temp Dark Smelting & Spirit Flame Alchemy",
+        "forms": {
+            "basic": {"name": "Ignitis (Standard)", "element": "Dark / Fire", "condition": "Reach Level 29", "abilities": {"Dark": 3, "Fire": 3, "Artisanship": 2}, "perk": "Burns with spectral flame capable of melting cursed ores and dark metals."},
+            "weather": [
+                {"name": "Ignitis (Forest Form)", "element": "Dark / Fire / Grass", "condition": "Deep Forest at Night", "abilities": {"Dark": 3, "Fire": 3, "Grass": 2}, "perk": "Spiritual pyre burns clean with zero smoke pollution."},
+                {"name": "Ignitis (Highland Form)", "element": "Dark / Fire / Wind", "condition": "Highland Storm", "abilities": {"Dark": 3, "Fire": 4, "Wind": 2}, "perk": "Gale Pyre: Smelts double bars during storm winds."}
+            ],
+            "prismana": {"name": "Prismana Ignitis", "element": "Dark / Fire / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Dark": 4, "Fire": 4, "Artisanship": 3}, "perk": "Eternal Soulfire: Furnaces run 24 hours without consuming fuel logs."}
+        }
+    },
+    # 042 - 044: Bonesky Line (FACT CHECKED: Glynsera has Nighttime Form & Prismana Form, NO BLIZZARD FORM)
+    {
+        "id": "042", "name": "Bonesky", "stage": "Lumin", "element": "Ice", "secondary_element": "Dark",
+        "role": "DPS", "evolution_line": "Bonesky -> Fenrier -> Glynsera",
+        "best_role": "Starter Food Cooler Operation & Night Hauling",
+        "forms": {
+            "basic": {"name": "Bonesky (Standard)", "element": "Ice / Dark", "condition": "Beast Fang Ridge", "abilities": {"Ice": 1, "Dark": 1, "Carry": 1}, "perk": "Cold skeleton hound that prevents meat spoilage in early larders."},
+            "weather": [{"name": "Bonesky (Nighttime)", "element": "Ice / Dark", "condition": "Night in Beast Fang Ridge", "abilities": {"Ice": 2, "Dark": 2, "Carry": 1}, "perk": "Night Prowl: Transport speed increased by 25% after sunset."}],
+            "prismana": {"name": "Prismana Bonesky", "element": "Ice / Dark / Light", "condition": "Prismana Flow weather", "abilities": {"Ice": 2, "Dark": 2, "Artisanship": 2}, "perk": "Frost Bone: Preserves food without requiring fresh ice blocks."}
+        }
+    },
+    {
+        "id": "043", "name": "Fenrier", "stage": "Gamma", "element": "Ice", "secondary_element": "Dark",
+        "role": "DPS", "evolution_line": "Bonesky -> Fenrier -> Glynsera",
+        "best_role": "Industrial Freezer Operation & Cold Weather Hauling",
+        "forms": {
+            "basic": {"name": "Fenrier (Standard)", "element": "Ice / Dark", "condition": "Reach Level 24", "abilities": {"Ice": 2, "Dark": 2, "Carry": 2}, "perk": "Keeps multiple walk-in refrigerator units chilled concurrently."},
+            "weather": [{"name": "Fenrier (Nighttime)", "element": "Ice / Dark", "condition": "Night in Rosetower Woods", "abilities": {"Ice": 3, "Dark": 2, "Carry": 2}, "perk": "Shadow Stride: Unfazed by cold temperatures, hauls cargo through snow smoothly."}],
+            "prismana": {"name": "Prismana Fenrier", "element": "Ice / Dark / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Ice": 3, "Dark": 3, "Carry": 3}, "perk": "Glacier Prowl: +25% transport speed and +20% ice crusher throughput."}
+        }
+    },
+    {
+        "id": "044", "name": "Glynsera", "stage": "Nova", "element": "Ice", "secondary_element": "Dark",
+        "role": "DPS", "evolution_line": "Bonesky -> Fenrier -> Glynsera",
+        "best_role": "Apex Cryo Food Preservation & Night Shift Frost Crafting",
+        "forms": {
+            "basic": {"name": "Glynsera (Standard)", "element": "Ice / Dark", "condition": "Level 34 + Freeze Stone (Beast Fang Ridge)", "abilities": {"Ice": 3, "Dark": 2, "Artisanship": 2}, "perk": "Signature Biting Wind: Stops decay timer completely for all food in connected RV coolers."},
+            "weather": [{"name": "Glynsera (Nighttime Form)", "element": "Ice / Dark", "condition": "Spawns specifically at Night in Rosetower Woods", "abilities": {"Ice": 3, "Dark": 3, "Artisanship": 3}, "perk": "Nighttime Hunter: Night shift speed +30%; crafts frost weapons and ice sculptures with zero fatigue."}],
+            "prismana": {"name": "Prismana Glynsera", "element": "Ice / Dark / Prismatic", "condition": "Prismana Flow in Beast Fang Ridge (Nurture Bloom Surge)", "abilities": {"Ice": 4, "Dark": 3, "Artisanship": 3}, "perk": "Prismatic Cryo: Master of frost; never tires or sleeps at cooling stations; global pantry spoilage halted 100%."}
+        }
+    },
+    # 045 - 046: Bolty Line
+    {
+        "id": "045", "name": "Bolty", "stage": "Lumin", "element": "Lightning", "secondary_element": None,
+        "role": "Break", "evolution_line": "Bolty -> Blazen",
+        "best_role": "Starter Battery Charging & Spark Generator",
+        "forms": {
+            "basic": {"name": "Bolty (Standard)", "element": "Lightning", "condition": "Blitzwood", "abilities": {"Lightning": 1, "Carry": 1}, "perk": "Charges starter electric lanterns and mini battery boxes."},
+            "weather": [{"name": "Bolty (Thunderstorm)", "element": "Lightning", "condition": "Thunderstorm", "abilities": {"Lightning": 2, "Carry": 1}, "perk": "Recharges empty batteries instantaneously during lightning storms."}],
+            "prismana": {"name": "Prismana Bolty", "element": "Lightning / Light", "condition": "Prismana Flow weather", "abilities": {"Lightning": 2, "Light": 1, "Artisanship": 1}, "perk": "Static Spark: Electric machinery energy efficiency +15%."}
+        }
+    },
+    {
+        "id": "046", "name": "Blazen", "stage": "Nova", "element": "Lightning", "secondary_element": None,
+        "role": "Break", "evolution_line": "Bolty -> Blazen",
+        "best_role": "High-Voltage Industrial Grid & Electric Furnace",
+        "forms": {
+            "basic": {"name": "Blazen (Standard)", "element": "Lightning", "condition": "Level 33 + Roar Stone under Blitz Tree", "abilities": {"Lightning": 3, "Artisanship": 2, "Carry": 2}, "perk": "High-voltage generator powering industrial smelteries and automated assemblers."},
+            "weather": [{"name": "Blazen (Thunderstorm)", "element": "Lightning", "condition": "Thunderstorm", "abilities": {"Lightning": 4, "Artisanship": 2, "Carry": 2}, "perk": "Grid Overdrive: Powers entire RV base complex without consuming any fuel."}],
+            "prismana": {"name": "Prismana Blazen", "element": "Lightning / Light", "condition": "Prismana Flow weather", "abilities": {"Lightning": 4, "Light": 2, "Artisanship": 3}, "perk": "Thunder Roar: All electronic crafting benches operate at +30% speed."}
+        }
+    },
+    # 047 - 048: Squarrel Line
+    {
+        "id": "047", "name": "Squarrel", "stage": "Lumin", "element": "Fire", "secondary_element": None,
+        "role": "Break", "evolution_line": "Squarrel -> Squashel",
+        "best_role": "Nut Roasting, Campfire Helper & Acorn Gathering",
+        "forms": {
+            "basic": {"name": "Squarrel (Standard)", "element": "Fire", "condition": "Cinder Woods", "abilities": {"Fire": 1, "Grass": 1, "Carry": 1}, "perk": "Roasts nuts and seeds, boosting meal nutrition value."},
+            "weather": [{"name": "Squarrel (Sunny)", "element": "Fire", "condition": "Sunny", "abilities": {"Fire": 2, "Carry": 1}, "perk": "Nut gather rate doubled on warm afternoons."}],
+            "prismana": {"name": "Prismana Squarrel", "element": "Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Fire": 2, "Grass": 1, "Carry": 2}, "perk": "Golden Acorn: Extra snack drops that restore 50 morale to working Aniimo."}
+        }
+    },
+    {
+        "id": "048", "name": "Squashel", "stage": "Gamma", "element": "Fire", "secondary_element": None,
+        "role": "Break", "evolution_line": "Squarrel -> Squashel",
+        "best_role": "Pastry Bakery, Oven Firing & Nut Pantry Storage",
+        "forms": {
+            "basic": {"name": "Squashel (Standard)", "element": "Fire", "condition": "Reach Level 25", "abilities": {"Fire": 2, "Artisanship": 2, "Carry": 2}, "perk": "Bakes pastries and bread rations that keep base workers full longer."},
+            "weather": [{"name": "Squashel (Heatwave)", "element": "Fire", "condition": "Heatwave", "abilities": {"Fire": 3, "Artisanship": 2, "Carry": 2}, "perk": "Bake oven output doubled during hot weather."}],
+            "prismana": {"name": "Prismana Squashel", "element": "Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Fire": 3, "Artisanship": 3, "Carry": 2}, "perk": "Grand Pâtissier: Meals cooked grant +15% work efficiency buff for 12 hours."}
+        }
+    },
+    # 049 - 052: Susuta Line
+    {
+        "id": "049", "name": "Susuta", "stage": "Lumin", "element": "Water", "secondary_element": None,
+        "role": "Break", "evolution_line": "Susuta -> Popota -> Piopiota / Panpanta",
+        "best_role": "Starter Irrigation & River Fish Hatchery",
+        "forms": {
+            "basic": {"name": "Susuta (Standard)", "element": "Water", "condition": "Crescent Bay", "abilities": {"Water": 1, "Carry": 1}, "perk": "Splashes water across mud plots to maintain hydration."},
+            "weather": [{"name": "Susuta (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 2, "Carry": 1}, "perk": "Hydration speed doubled in rainy weather."}],
+            "prismana": {"name": "Prismana Susuta", "element": "Water / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 2, "Light": 1, "Carry": 1}, "perk": "Cleansing Stream: Purifies water vats, boosting brewing clarity."}
+        }
+    },
+    {
+        "id": "050", "name": "Popota", "stage": "Gamma", "element": "Water", "secondary_element": None,
+        "role": "Healer", "evolution_line": "Susuta -> Popota -> Piopiota / Panpanta",
+        "best_role": "Mid-tier Farmland Irrigation & Pond Care",
+        "forms": {
+            "basic": {"name": "Popota (Standard)", "element": "Water", "condition": "Reach Level 22", "abilities": {"Water": 2, "Carry": 2, "Leisure": 1}, "perk": "Fills water ditches rapidly and cleans algal blooms from fish ponds."},
+            "weather": [{"name": "Popota (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 3, "Carry": 2}, "perk": "Floods irrigation trenches with enriched river silt."}],
+            "prismana": {"name": "Prismana Popota", "element": "Water / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 3, "Light": 1, "Carry": 2}, "perk": "Pure Spring: Farm water consumption reduced by 25%."}
+        }
+    },
+    {
+        "id": "051", "name": "Piopiota", "stage": "Nova", "element": "Water", "secondary_element": "Dark",
+        "role": "Support", "evolution_line": "Susuta -> Popota -> Piopiota",
+        "best_role": "Deep Water Brewing, Night Irrigation & Shadow Pearls",
+        "forms": {
+            "basic": {"name": "Piopiota (Standard)", "element": "Water / Dark", "condition": "Night Evolution", "abilities": {"Water": 3, "Dark": 2, "Perfumery": 2}, "perk": "Distills deep-sea pearl extracts and dark essences at night."},
+            "weather": [{"name": "Piopiota (Misty Night)", "element": "Water / Dark", "condition": "Misty Night", "abilities": {"Water": 4, "Dark": 3, "Perfumery": 2}, "perk": "Abyssal Extraction: Potion brewing yields +35% during fog."}],
+            "prismana": {"name": "Prismana Piopiota", "element": "Water / Dark / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Water": 4, "Dark": 3, "Perfumery": 3}, "perk": "Pearl Radiance: Pearls crafted sell for +40% Bud Coins."}
+        }
+    },
+    {
+        "id": "052", "name": "Panpanta", "stage": "Nova", "element": "Water", "secondary_element": None,
+        "role": "Break", "evolution_line": "Susuta -> Popota -> Panpanta",
+        "best_role": "High-Pressure Water Cannon Digging & Quarry Wash",
+        "forms": {
+            "basic": {"name": "Panpanta (Standard)", "element": "Water", "condition": "Day Evolution", "abilities": {"Water": 3, "Earth": 2, "Carry": 3}, "perk": "Uses high-pressure water jets to blast river silt and wash raw minerals."},
+            "weather": [{"name": "Panpanta (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 4, "Earth": 2, "Carry": 3}, "perk": "Silt Sluice: Ore washing produces 30% more refined nuggets."}],
+            "prismana": {"name": "Prismana Panpanta", "element": "Water / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 4, "Earth": 3, "Carry": 3}, "perk": "Hydraulic Master: Mineral washing takes half the usual time."}
+        }
+    },
+    # 053 - 054: Shelly Line
+    {
+        "id": "053", "name": "Shelly", "stage": "Lumin", "element": "Water", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Shelly -> Sheldon",
+        "best_role": "Pearl Grinding & Shell Lime Mortar",
+        "forms": {
+            "basic": {"name": "Shelly (Standard)", "element": "Water", "condition": "Coral Beach", "abilities": {"Water": 1, "Artisanship": 1}, "perk": "Grinds discarded seashells into fine lime mortar for masonry."},
+            "weather": [{"name": "Shelly (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 2, "Artisanship": 1}, "perk": "Mortar mixing speed +25% in wet conditions."}],
+            "prismana": {"name": "Prismana Shelly", "element": "Water / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 2, "Light": 1, "Artisanship": 2}, "perk": "Mother of Pearl: Mortar crafted has +50% building durability."}
+        }
+    },
+    {
+        "id": "054", "name": "Sheldon", "stage": "Gamma", "element": "Water", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Shelly -> Sheldon",
+        "best_role": "Heavy Marine Masonry & Aqueduct Construction",
+        "forms": {
+            "basic": {"name": "Sheldon (Standard)", "element": "Water", "condition": "Reach Level 24", "abilities": {"Water": 2, "Earth": 2, "Artisanship": 2}, "perk": "Constructs waterproof aqueducts, drainage tiles and fountains."},
+            "weather": [{"name": "Sheldon (Rainstorm)", "element": "Water / Earth", "condition": "Rainstorm", "abilities": {"Water": 3, "Earth": 2, "Artisanship": 2}, "perk": "Drainage systems never clog during major storms."}],
+            "prismana": {"name": "Prismana Sheldon", "element": "Water / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Water": 3, "Earth": 3, "Artisanship": 3}, "perk": "Aquatic Architect: Base water piping speed +40%."}
+        }
+    },
+    # 055: Sherro
+    {
+        "id": "055", "name": "Sherro", "stage": "Gamma", "element": "Water", "secondary_element": "Lightning",
+        "role": "DPS", "evolution_line": "Sherro (Unique Line)",
+        "best_role": "Electrolysis Water Cleansing & Dynamo Backup",
+        "forms": {
+            "basic": {"name": "Sherro (Standard)", "element": "Water / Lightning", "condition": "Echoback Landing", "abilities": {"Water": 2, "Lightning": 2, "Carry": 2}, "perk": "Conducts electrolysis to purify irrigation tanks and charge batteries."},
+            "weather": [{"name": "Sherro (Thunderstorm)", "element": "Water / Lightning", "condition": "Thunderstorm in Echoback Landing", "abilities": {"Lightning": 3, "Water": 2, "Carry": 2}, "perk": "Lightning Rod: Absorbs lightning strikes to instantly recharge base batteries."}],
+            "prismana": {"name": "Prismana Sherro", "element": "Water / Lightning / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Lightning": 3, "Water": 3, "Carry": 3}, "perk": "Dynamo Battery: Keeps high-tier RV machines powered for 12 hours without fuel."}
+        }
+    },
+    # 056 - 058: Baleetle Line
+    {
+        "id": "056", "name": "Baleetle", "stage": "Lumin", "element": "Earth", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Baleetle -> Waleetle / Bouldus",
+        "best_role": "Starter Boulder Cracking & Stone Hauling",
+        "forms": {
+            "basic": {"name": "Baleetle (Standard)", "element": "Earth", "condition": "Berylline Vale", "abilities": {"Earth": 1, "Carry": 1, "Artisanship": 1}, "perk": "Horn breaks surface boulders into usable cobblestone chunks."},
+            "weather": [
+                {"name": "Baleetle (Sandstorm)", "element": "Earth", "condition": "Sandstorm", "abilities": {"Earth": 2, "Carry": 1}, "perk": "Mining speed +25% during sandstorms."},
+                {"name": "Baleetle (Snowfield)", "element": "Earth / Ice", "condition": "Snowfield", "abilities": {"Earth": 1, "Ice": 1, "Carry": 1}, "perk": "Frost Shell: Immune to freezing weather slow-down."}
+            ],
+            "prismana": {"name": "Prismana Baleetle", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 2, "Carry": 2, "Artisanship": 2}, "perk": "Sturdy Shell: Mining tool durability doubled; +20% bonus cobblestone."}
+        }
+    },
+    {
+        "id": "057", "name": "Waleetle", "stage": "Nova", "element": "Earth", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Baleetle -> Waleetle",
+        "best_role": "Precision Gem Polishing & Architectural Tile Carving",
+        "forms": {
+            "basic": {"name": "Waleetle (Standard)", "element": "Earth", "condition": "Evolves from Baleetle", "abilities": {"Earth": 3, "Artisanship": 3, "Carry": 2}, "perk": "Artisan stone carver: crafts smooth marble tiles and high-tier RV components."},
+            "weather": [{"name": "Waleetle (Snowfield)", "element": "Earth / Ice", "condition": "Snowfield in Berylline Vale", "abilities": {"Earth": 3, "Ice": 2, "Artisanship": 3}, "perk": "Frost Chiseling: Gemstone polishing yields higher quality jewelry components."}],
+            "prismana": {"name": "Prismana Waleetle", "element": "Earth / Prismatic", "condition": "Special Prismana In-game Event", "abilities": {"Earth": 4, "Artisanship": 3, "Carry": 3}, "perk": "Core Excavator: +40% rare ore extraction rate and +25% building construction speed."}
+        }
+    },
+    {
+        "id": "058", "name": "Bouldus", "stage": "Nova", "element": "Earth", "secondary_element": None,
+        "role": "Support", "evolution_line": "Baleetle -> Bouldus",
+        "best_role": "Apex Heavy Quarry Extraction & Iron Vein Pulverizing",
+        "forms": {
+            "basic": {"name": "Bouldus (Standard)", "element": "Earth", "condition": "Evolves from Baleetle", "abilities": {"Earth": 4, "Carry": 3}, "perk": "Living quarry hammer: shatters large iron and quartz nodes with massive blows."},
+            "weather": [{"name": "Bouldus (Sandstorm)", "element": "Earth / Fire", "condition": "Sandstorm", "abilities": {"Earth": 4, "Fire": 1, "Carry": 3}, "perk": "Friction Crusher: Crushes raw stone into pre-smelted furnace flux."}],
+            "prismana": {"name": "Prismana Bouldus", "element": "Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Earth": 5, "Carry": 3}, "perk": "Titan Quarry: Highest base mining speed in the entire game; unbreakable worker stamina."}
+        }
+    },
+    # 059 - 060: Fentuft Line
+    {
+        "id": "059", "name": "Fentuft", "stage": "Lumin", "element": "Lightning", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Fentuft -> Fenmane",
+        "best_role": "Static Electricity Spinning & Wool Hauling",
+        "forms": {
+            "basic": {"name": "Fentuft (Standard)", "element": "Lightning", "condition": "Thunder Steppes", "abilities": {"Lightning": 1, "Carry": 1, "Artisanship": 1}, "perk": "Generates static electricity to spin wool into shock-resistant yarn."},
+            "weather": [{"name": "Fentuft (Thunderstorm)", "element": "Lightning", "condition": "Thunderstorm", "abilities": {"Lightning": 2, "Carry": 1}, "perk": "Static charge triples yarn spinning speed during storms."}],
+            "prismana": {"name": "Prismana Fentuft", "element": "Lightning / Light", "condition": "Prismana Flow weather", "abilities": {"Lightning": 2, "Light": 1, "Carry": 2}, "perk": "Golden Fleece: Yields high-value golden fleece periodically in pens."}
+        }
+    },
+    {
+        "id": "060", "name": "Fenmane", "stage": "Nova", "element": "Lightning", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Fentuft -> Fenmane",
+        "best_role": "High-Voltage Power Stations & Automated Looms",
+        "forms": {
+            "basic": {"name": "Fenmane (Standard)", "element": "Lightning", "condition": "Reach Level 32", "abilities": {"Lightning": 3, "Artisanship": 2, "Carry": 2}, "perk": "Powers high-draw textile machinery and industrial lighting grids."},
+            "weather": [{"name": "Fenmane (Thunderstorm)", "element": "Lightning", "condition": "Thunderstorm", "abilities": {"Lightning": 4, "Artisanship": 2, "Carry": 2}, "perk": "Overcharge Loom: Weaving speed +40% with zero electrical grid draw."}],
+            "prismana": {"name": "Prismana Fenmane", "element": "Lightning / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Lightning": 4, "Light": 2, "Artisanship": 3}, "perk": "Lightning Mane: Powers machines continuously even through nighttime blackouts."}
+        }
+    },
+    # 061 - 063: Helmut Line
+    {
+        "id": "061", "name": "Helmut", "stage": "Lumin", "element": "Dark", "secondary_element": "Ice",
+        "role": "Break", "evolution_line": "Helmut -> Pawney / Rookey",
+        "best_role": "Starter Armor Forging & Heavy Shield Carving",
+        "forms": {
+            "basic": {"name": "Helmut (Standard)", "element": "Dark / Ice", "condition": "Glacier Pass", "abilities": {"Ice": 1, "Dark": 1, "Artisanship": 1}, "perk": "Sturdy helmet creature that reinforces building barricades and gates."},
+            "weather": [{"name": "Helmut (Blizzard)", "element": "Ice / Dark", "condition": "Blizzard", "abilities": {"Ice": 2, "Dark": 1, "Artisanship": 1}, "perk": "Ice Armor: Immune to freezing weather cold penalties."}],
+            "prismana": {"name": "Prismana Helmut", "element": "Dark / Ice / Light", "condition": "Prismana Flow weather", "abilities": {"Dark": 2, "Ice": 2, "Artisanship": 2}, "perk": "Sturdy Crest: Crafted shields and helmets gain +20% defense rating."}
+        }
+    },
+    {
+        "id": "062", "name": "Pawney", "stage": "Nova", "element": "Dark", "secondary_element": "Ice",
+        "role": "DPS", "evolution_line": "Helmut -> Pawney",
+        "best_role": "Weapon Forging, Blade Sharpening & Night Patrol",
+        "forms": {
+            "basic": {"name": "Pawney (Standard)", "element": "Dark / Ice", "condition": "Pull Sword of Bravery at Lv 45", "abilities": {"Dark": 3, "Ice": 2, "Artisanship": 3}, "perk": "Swordsmith specialist: forges razor-sharp blades and alloy longswords."},
+            "weather": [{"name": "Pawney (Nighttime)", "element": "Dark / Ice", "condition": "Night", "abilities": {"Dark": 3, "Ice": 3, "Artisanship": 3}, "perk": "Moonlit Blade: Forges weapons with +15% bonus critical hit chance."}],
+            "prismana": {"name": "Prismana Pawney", "element": "Dark / Ice / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Dark": 4, "Ice": 3, "Artisanship": 3}, "perk": "Champion's Blade: Weapon craft speed +40%; halves raw ingot consumption."}
+        }
+    },
+    {
+        "id": "063", "name": "Rookey", "stage": "Nova", "element": "Dark", "secondary_element": "Ice",
+        "role": "Break", "evolution_line": "Helmut -> Rookey",
+        "best_role": "Heavy Fortress Masonry, Bastion Gates & Rampart Construction",
+        "forms": {
+            "basic": {"name": "Rookey (Standard)", "element": "Dark / Ice", "condition": "Unwavering Rampart at Lv 45", "abilities": {"Dark": 3, "Earth": 3, "Artisanship": 3}, "perk": "Massive guardian that erects towering stone ramparts and heavy fortress doors."},
+            "weather": [{"name": "Rookey (Snowfield)", "element": "Dark / Ice / Earth", "condition": "Snowfield in Russet Highlands", "abilities": {"Earth": 3, "Ice": 3, "Artisanship": 3}, "perk": "Permafrost Bastion: Stone ramparts crafted gain immunity to siege damage."}],
+            "prismana": {"name": "Prismana Rookey", "element": "Dark / Ice / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 4, "Ice": 3, "Artisanship": 4}, "perk": "Titan Bastion: Homeland construction build time cut in half; 15% material refund."}
+        }
+    },
+    # 064 - 067: Jawling Line
+    {
+        "id": "064", "name": "Jawling", "stage": "Lumin", "element": "Wind", "secondary_element": None,
+        "role": "Break", "evolution_line": "Jawling -> Helmwhelp -> Helgon / Infergon",
+        "best_role": "Starter Wind Mill Cranking & Bone Crushing",
+        "forms": {
+            "basic": {"name": "Jawling (Standard)", "element": "Wind", "condition": "Dragon Spine", "abilities": {"Wind": 1, "Carry": 1}, "perk": "Strong jaws crush hard bones and shells into mineral fertilizers."},
+            "weather": [{"name": "Jawling (Storm)", "element": "Wind", "condition": "Wind Storm", "abilities": {"Wind": 2, "Carry": 1}, "perk": "Gale Jaw: Fertilizer pulverizing speed doubled during wind storms."}],
+            "prismana": {"name": "Prismana Jawling", "element": "Wind / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 2, "Light": 1, "Carry": 2}, "perk": "Dragonet Spark: Organic fertilizer potency boosted by 25%."}
+        }
+    },
+    {
+        "id": "065", "name": "Helmwhelp", "stage": "Gamma", "element": "Wind", "secondary_element": None,
+        "role": "Break", "evolution_line": "Jawling -> Helmwhelp -> Helgon / Infergon",
+        "best_role": "Drafting Forge Bellows & Furnace Air Circulation",
+        "forms": {
+            "basic": {"name": "Helmwhelp (Standard)", "element": "Wind", "condition": "Reach Level 38", "abilities": {"Wind": 2, "Fire": 1, "Carry": 2}, "perk": "Fledgling dragon that pumps forge bellows to increase furnace burn temperatures."},
+            "weather": [{"name": "Helmwhelp (Highland Gale)", "element": "Wind / Lightning", "condition": "Highland Storm", "abilities": {"Wind": 3, "Lightning": 1, "Carry": 2}, "perk": "Drafts strong gusts into smelteries, accelerating alloy melt speed."}],
+            "prismana": {"name": "Prismana Helmwhelp", "element": "Wind / Fire / Light", "condition": "Prismana Flow weather", "abilities": {"Wind": 3, "Fire": 2, "Carry": 2}, "perk": "Dragon Bellows: Smelting fuel lasts 40% longer."}
+        }
+    },
+    {
+        "id": "066", "name": "Helgon", "stage": "Nova", "element": "Wind", "secondary_element": None,
+        "role": "Break", "evolution_line": "Jawling -> Helmwhelp -> Helgon",
+        "best_role": "Apex Windmill Propulsion, Grain Refining & Air Logistics",
+        "forms": {
+            "basic": {"name": "Helgon (Standard)", "element": "Wind", "condition": "Open 30 Chests + Level 48", "abilities": {"Wind": 4, "Carry": 3, "Artisanship": 2}, "perk": "Massive wind dragon whose wingbeats power giant milling centers."},
+            "weather": [{"name": "Helgon (Storm)", "element": "Wind / Lightning", "condition": "Gale Storm", "abilities": {"Wind": 5, "Lightning": 1, "Carry": 3}, "perk": "Hurricane Draft: Windmill production quadrupled in gale conditions."}],
+            "prismana": {"name": "Prismana Helgon", "element": "Wind / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Wind": 5, "Light": 2, "Carry": 4}, "perk": "Tempest King: Halves flight travel time for all airborne haulers across base."}
+        }
+    },
+    {
+        "id": "067", "name": "Infergon", "stage": "Nova", "element": "Fire", "secondary_element": "Wind",
+        "role": "DPS", "evolution_line": "Jawling -> Helmwhelp -> Infergon",
+        "best_role": "Apex Dragonfire Blast Furnace & Titanium Metallurgy",
+        "forms": {
+            "basic": {"name": "Infergon (Standard)", "element": "Fire / Wind", "condition": "Defeat Omega Infergon + Level 48", "abilities": {"Fire": 4, "Wind": 3, "Artisanship": 3}, "perk": "Apex dragonflame melts the densest cosmic ores in seconds."},
+            "weather": [{"name": "Infergon (Heatwave)", "element": "Fire / Wind", "condition": "Volcanic Heatwave", "abilities": {"Fire": 5, "Wind": 3, "Artisanship": 3}, "perk": "Infernal Crucible: Smelting rate +50% under extreme ambient temperatures."}],
+            "prismana": {"name": "Prismana Infergon", "element": "Fire / Wind / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Fire": 5, "Wind": 4, "Artisanship": 4}, "perk": "Dragon God Flame: Instantaneous ore smelting with chance to duplicate refined ingots."}
+        }
+    },
+    # 068 - 069: Cubbo Line
+    {
+        "id": "068", "name": "Cubbo", "stage": "Lumin", "element": "Earth", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Cubbo -> Grizbo",
+        "best_role": "Honey Gathering, Berry Shaking & Stone Moving",
+        "forms": {
+            "basic": {"name": "Cubbo (Standard)", "element": "Earth", "condition": "Rosetower Woods", "abilities": {"Earth": 1, "Grass": 1, "Carry": 1}, "perk": "Playful bear cub that retrieves wild honeycombs and shakes berry bushes."},
+            "weather": [{"name": "Cubbo (Sunny)", "element": "Earth", "condition": "Sunny", "abilities": {"Earth": 1, "Grass": 2, "Carry": 1}, "perk": "Honey and fruit harvest rate +30%."}],
+            "prismana": {"name": "Prismana Cubbo", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 2, "Grass": 2, "Leisure": 2}, "perk": "Golden Honey: Yields rare golden honey that fully restores worker sanity."}
+        }
+    },
+    {
+        "id": "069", "name": "Grizbo", "stage": "Nova", "element": "Earth", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Cubbo -> Grizbo",
+        "best_role": "Heavy Timber Logging, Boulder Shifting & Apiary Master",
+        "forms": {
+            "basic": {"name": "Grizbo (Standard)", "element": "Earth", "condition": "Reach Level 34", "abilities": {"Earth": 3, "Grass": 2, "Carry": 3}, "perk": "Massive grizzly that uproots whole tree stumps and moves colossal boulders."},
+            "weather": [{"name": "Grizbo (Rainstorm)", "element": "Earth / Water", "condition": "Rainstorm", "abilities": {"Earth": 3, "Water": 1, "Carry": 3}, "perk": "Mud Bulldozer: Clears wet ground obstructions without slowing down."}],
+            "prismana": {"name": "Prismana Grizbo", "element": "Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Earth": 4, "Grass": 3, "Carry": 4}, "perk": "Titan Grizzly: +40% logging output and carries giant tree trunks in one carry run."}
+        }
+    },
+    # 070 - 075: Pebbling Line
+    {
+        "id": "070", "name": "Pebbling", "stage": "Lumin", "element": "Earth", "secondary_element": None,
+        "role": "Break", "evolution_line": "Pebbling -> Lavazar / Geodeback",
+        "best_role": "Starter Mineral Washing & Gravel Sifting",
+        "forms": {
+            "basic": {"name": "Pebbling (Standard)", "element": "Earth", "condition": "Rocky Canyons", "abilities": {"Earth": 1, "Carry": 1}, "perk": "Sifts river gravel to isolate copper and tin nuggets."},
+            "weather": [{"name": "Pebbling (Sandstorm)", "element": "Earth", "condition": "Sandstorm", "abilities": {"Earth": 2, "Carry": 1}, "perk": "Gravel sifting speed doubled during dust storms."}],
+            "prismana": {"name": "Prismana Pebbling", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 2, "Light": 1, "Carry": 2}, "perk": "Gem Fleck: Chance to find raw uncut gems in basic gravel piles."}
+        }
+    },
+    {
+        "id": "071", "name": "Lavazar", "stage": "Gamma", "element": "Fire", "secondary_element": "Earth",
+        "role": "DPS", "evolution_line": "Pebbling -> Lavazar -> Magmarex",
+        "best_role": "Lava Kiln Operation & Obsidian Smelting",
+        "forms": {
+            "basic": {"name": "Lavazar (Standard)", "element": "Fire / Earth", "condition": "Level 38 (Lava Branch)", "abilities": {"Fire": 2, "Earth": 2, "Artisanship": 2}, "perk": "Maintains bubbling molten rock channels to heat stone forges."},
+            "weather": [{"name": "Lavazar (Heatwave)", "element": "Fire / Earth", "condition": "Volcanic Heatwave", "abilities": {"Fire": 3, "Earth": 2, "Artisanship": 2}, "perk": "Lava Forge: Obsidian brick crafting speed +35%."}],
+            "prismana": {"name": "Prismana Lavazar", "element": "Fire / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Fire": 3, "Earth": 3, "Artisanship": 3}, "perk": "Molten Core: Never requires coal fuel to maintain forge heat."}
+        }
+    },
+    {
+        "id": "072", "name": "Magmarex", "stage": "Nova", "element": "Fire", "secondary_element": "Earth",
+        "role": "Break", "evolution_line": "Pebbling -> Lavazar -> Magmarex",
+        "best_role": "Apex Volcanic Smeltery & Heavy Crust Pulverizer",
+        "forms": {
+            "basic": {"name": "Magmarex (Standard)", "element": "Fire / Earth", "condition": "Hot Spring Soak + Defeat Alpha Magmarex", "abilities": {"Fire": 4, "Earth": 3, "Artisanship": 3}, "perk": "Colossal volcanic behemoth that powers high-volume foundry crucibles."},
+            "weather": [{"name": "Magmarex (Eclipse)", "element": "Fire / Earth / Dark", "condition": "Night / Eclipse", "abilities": {"Fire": 4, "Dark": 2, "Earth": 3}, "perk": "Dark Magma: Smelts void-infused alloys at 1.5x speed."}],
+            "prismana": {"name": "Prismana Magmarex", "element": "Fire / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Fire": 5, "Earth": 4, "Artisanship": 3}, "perk": "Volcano God: Blast furnaces operate at 2x baseline speed with zero heat loss."}
+        }
+    },
+    {
+        "id": "073", "name": "Geodeback", "stage": "Gamma", "element": "Earth", "secondary_element": None,
+        "role": "Break", "evolution_line": "Pebbling -> Geodeback -> Minespine",
+        "best_role": "Crystal Geode Cracking & Gemstone Assortment",
+        "forms": {
+            "basic": {"name": "Geodeback (Standard)", "element": "Earth", "condition": "Level 38 (Geode Branch)", "abilities": {"Earth": 2, "Carry": 2, "Artisanship": 2}, "perk": "Cracks hollow geodes cleanly, maximizing intact crystal extraction."},
+            "weather": [{"name": "Geodeback (Sandstorm)", "element": "Earth", "condition": "Sandstorm", "abilities": {"Earth": 3, "Carry": 2, "Artisanship": 2}, "perk": "Crystal Resonance: Geode cracking yield +25%."}],
+            "prismana": {"name": "Prismana Geodeback", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 3, "Light": 2, "Artisanship": 3}, "perk": "Radiant Geode: Polished crystals have a chance to turn into pure Prismana gems."}
+        }
+    },
+    {
+        "id": "074", "name": "Minespine", "stage": "Nova", "element": "Earth", "secondary_element": None,
+        "role": "Break", "evolution_line": "Pebbling -> Geodeback -> Minespine",
+        "best_role": "Deep Mine Shaft Excavator & Rare Mineral Extraction",
+        "forms": {
+            "basic": {"name": "Minespine (Standard)", "element": "Earth", "condition": "Defeat Alpha Minespine at Lv 48", "abilities": {"Earth": 4, "Carry": 3, "Artisanship": 2}, "perk": "Spined back tunnels through bedrock to extract deep-strata minerals."},
+            "weather": [{"name": "Minespine (Sandstorm)", "element": "Earth", "condition": "Sandstorm", "abilities": {"Earth": 5, "Carry": 3}, "perk": "Drill Spike: Pulverizes quarry rock veins in single strikes."}],
+            "prismana": {"name": "Prismana Minespine", "element": "Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Earth": 5, "Carry": 3, "Artisanship": 3}, "perk": "Deep Bedrock: Quarry resource generation increased by +40% globally."}
+        }
+    },
+    {
+        "id": "075", "name": "Cozite", "stage": "Lumin", "element": "Earth", "secondary_element": None,
+        "role": "Support", "evolution_line": "Cozite (Standalone Mineral)",
+        "best_role": "Homeland Hearth Warming & Cozy Camp Morale",
+        "forms": {
+            "basic": {"name": "Cozite (Standard)", "element": "Earth", "condition": "Warm Caves", "abilities": {"Earth": 1, "Leisure": 2}, "perk": "Radiates gentle subterranean warmth that keeps worker beds cozy."},
+            "weather": [{"name": "Cozite (Cold Weather)", "element": "Earth / Fire", "condition": "Snow / Cold", "abilities": {"Earth": 1, "Fire": 1, "Leisure": 2}, "perk": "Thermal Shield: Completely protects workers from winter freezing debuffs."}],
+            "prismana": {"name": "Prismana Cozite", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 2, "Light": 1, "Leisure": 3}, "perk": "Cozy Haven: All workers resting near Cozite gain +25% morale regeneration."}
+        }
+    },
+    # 076 - 080: Bailite, Bulbly, Veilfloat, Luminelle, Fahloo
+    {
+        "id": "076", "name": "Bailite", "stage": "Nova", "element": "Earth", "secondary_element": None,
+        "role": "Support", "evolution_line": "Bailite (Sacred Stone)",
+        "best_role": "Homeland Monument Sculpting & Sacred Stone Refining",
+        "forms": {
+            "basic": {"name": "Bailite (Standard)", "element": "Earth", "condition": "Sanctum of Stone", "abilities": {"Earth": 3, "Artisanship": 3, "Leisure": 2}, "perk": "Sculpts sacred monuments that raise overall Homeland comfort level."},
+            "weather": [{"name": "Bailite (Sandstorm)", "element": "Earth", "condition": "Sandstorm", "abilities": {"Earth": 4, "Artisanship": 3}, "perk": "Erects dust barriers protecting crops from wind damage."}],
+            "prismana": {"name": "Prismana Bailite", "element": "Earth / Light", "condition": "Prismana Flow weather", "abilities": {"Earth": 4, "Light": 2, "Artisanship": 4}, "perk": "Monument of Prosperity: Base daily Home Coin revenue +20%."}
+        }
+    },
+    {
+        "id": "077", "name": "Bulbly", "stage": "Lumin", "element": "Lightning", "secondary_element": None,
+        "role": "Support", "evolution_line": "Bulbly -> Veilfloat",
+        "best_role": "Illumination Bulb & Night Shift Lighting",
+        "forms": {
+            "basic": {"name": "Bulbly (Standard)", "element": "Lightning", "condition": "Breezy Marsh", "abilities": {"Lightning": 1, "Light": 1, "Leisure": 1}, "perk": "Floating glowing jellyfish creature that lights dark work stations."},
+            "weather": [{"name": "Bulbly (Thunderstorm)", "element": "Lightning", "condition": "Thunderstorm", "abilities": {"Lightning": 2, "Light": 1}, "perk": "Glows with double luminosity during stormy downpours."}],
+            "prismana": {"name": "Prismana Bulbly", "element": "Lightning / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Lightning": 2, "Light": 2, "Leisure": 2}, "perk": "Prism Glow: Workers under Bulbly light never suffer night work penalties."}
+        }
+    },
+    {
+        "id": "078", "name": "Veilfloat", "stage": "Gamma", "element": "Lightning", "secondary_element": "Water",
+        "role": "Support", "evolution_line": "Bulbly -> Veilfloat",
+        "best_role": "Floating Mist Battery & Aqueduct Sensor",
+        "forms": {
+            "basic": {"name": "Veilfloat (Standard)", "element": "Lightning / Water", "condition": "Reach Level 28", "abilities": {"Lightning": 2, "Water": 2, "Light": 1}, "perk": "Hovers over water pumps, keeping electrical coils and water flow synchronized."},
+            "weather": [{"name": "Veilfloat (Thunderstorm)", "element": "Lightning / Water", "condition": "Thunderstorm", "abilities": {"Lightning": 3, "Water": 2, "Light": 1}, "perk": "Current Flow: Water pumping speed +30% when energized by lightning."}],
+            "prismana": {"name": "Prismana Veilfloat", "element": "Lightning / Water / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Lightning": 3, "Water": 3, "Light": 2}, "perk": "Luminous Cascade: Waters farm beds and charges electrical grid at once."}
+        }
+    },
+    {
+        "id": "079", "name": "Luminelle", "stage": "Nova", "element": "Light", "secondary_element": "Water",
+        "role": "Support", "evolution_line": "Luminelle (Sacred Spirit)",
+        "best_role": "Daylight Amplification, Alchemy Extraction & Luxury Bud Incense",
+        "forms": {
+            "basic": {"name": "Luminelle (Standard)", "element": "Light / Water", "condition": "Sacred Spring", "abilities": {"Light": 3, "Perfumery": 3, "Leisure": 2}, "perk": "Holy glow prevents worker depression, fatigue slumps and stress spirals."},
+            "weather": [{"name": "Luminelle (Aurora / Rainbow Mist)", "element": "Light / Water", "condition": "Aurora / Rainbow Rain", "abilities": {"Light": 4, "Water": 2, "Perfumery": 3}, "perk": "Prism Infusion: Perfumes crafted during aurora give 2x buff duration."}],
+            "prismana": {"name": "Prismana Luminelle", "element": "Light / Water / Prismatic", "condition": "Prismana Flow in Breezy Plains", "abilities": {"Light": 4, "Perfumery": 4, "Leisure": 3}, "perk": "Radiant Aura: Passively generates 50 bonus Bud Tickets each in-game dawn."}
+        }
+    },
+    {
+        "id": "080", "name": "Fahloo", "stage": "Lumin", "element": "Water", "secondary_element": None,
+        "role": "Support", "evolution_line": "Fahloo -> Erlath",
+        "best_role": "Fish Pool Maintenance & Algae Cleaning",
+        "forms": {
+            "basic": {"name": "Fahloo (Standard)", "element": "Water", "condition": "Reef Lagoon", "abilities": {"Water": 1, "Carry": 1}, "perk": "Cleans debris from homeland drainage channels and fish tanks."},
+            "weather": [{"name": "Fahloo (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 2, "Carry": 1}, "perk": "Water circulation speed +30%."}],
+            "prismana": {"name": "Prismana Fahloo", "element": "Water / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 2, "Light": 1, "Carry": 2}, "perk": "Lagoon Dew: Fish pond harvest rate increased by +25%."}
+        }
+    },
+    # 081 - 082: Erlath & Besauce
+    {
+        "id": "081", "name": "Erlath", "stage": "Nova", "element": "Water", "secondary_element": None,
+        "role": "Healer", "evolution_line": "Fahloo -> Erlath",
+        "best_role": "High-Volume Farmland Irrigation & Spring Sanitation",
+        "forms": {
+            "basic": {"name": "Erlath (Standard)", "element": "Water", "condition": "Reach Level 36", "abilities": {"Water": 3, "Leisure": 2, "Carry": 2}, "perk": "Gentle sea leviathan that maintains water clarity across all base facilities."},
+            "weather": [{"name": "Erlath (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 4, "Leisure": 2, "Carry": 2}, "perk": "Pure Tidal Mist: All soil beds remain 100% hydrated for 2 full days."}],
+            "prismana": {"name": "Prismana Erlath", "element": "Water / Light / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Water": 4, "Light": 2, "Leisure": 3}, "perk": "Tidal Grace: Workers drinking from Erlath springs recover 30% more energy."}
+        }
+    },
+    {
+        "id": "082", "name": "Besauce", "stage": "Nova", "element": "Lightning", "secondary_element": "Fire",
+        "role": "DPS", "evolution_line": "Besauce (Standalone Behemoth)",
+        "best_role": "High-Energy Thermal Reactor & Metal Electrolysis",
+        "forms": {
+            "basic": {"name": "Besauce (Standard)", "element": "Lightning / Fire", "condition": "Voltaic Caldera", "abilities": {"Lightning": 3, "Fire": 3, "Artisanship": 2}, "perk": "Fuses electrical current with flame to smelt composite super-alloys."},
+            "weather": [{"name": "Besauce (Thunderstorm)", "element": "Lightning / Fire", "condition": "Thunderstorm", "abilities": {"Lightning": 4, "Fire": 3, "Artisanship": 2}, "perk": "Plasma Forge: Halves alloy smelt time during severe thunderstorms."}],
+            "prismana": {"name": "Prismana Besauce", "element": "Lightning / Fire / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Lightning": 4, "Fire": 4, "Artisanship": 3}, "perk": "Plasma Core: Generates free power for entire base while running blast furnaces."}
+        }
+    },
+    # 088 - 091: Buppeeb, Glameep, Popapus, Gachapus
+    {
+        "id": "088", "name": "Buppeeb", "stage": "Lumin", "element": "Grass", "secondary_element": "Water",
+        "role": "Healer", "evolution_line": "Buppeeb -> Glameep",
+        "best_role": "Gentle Sapling Nurturing & Herb Hydration",
+        "forms": {
+            "basic": {"name": "Buppeeb (Standard)", "element": "Grass / Water", "condition": "Dewdrop Basin", "abilities": {"Grass": 1, "Water": 1, "Leisure": 1}, "perk": "Gentle creature that sings softly to sprouting herb seedlings."},
+            "weather": [{"name": "Buppeeb (Rainstorm)", "element": "Grass / Water", "condition": "Rainstorm", "abilities": {"Grass": 2, "Water": 2}, "perk": "Herb germination speed +25% during downpours."}],
+            "prismana": {"name": "Prismana Buppeeb", "element": "Grass / Water / Light", "condition": "Prismana Flow weather", "abilities": {"Grass": 2, "Water": 2, "Leisure": 2}, "perk": "Dew Song: Healing herbs grown nearby have 20% higher potency."}
+        }
+    },
+    {
+        "id": "089", "name": "Glameep", "stage": "Nova", "element": "Grass", "secondary_element": "Water",
+        "role": "Healer", "evolution_line": "Buppeeb -> Glameep",
+        "best_role": "Master Medicinal Herb Greenhouse & Healing Elixirs",
+        "forms": {
+            "basic": {"name": "Glameep (Standard)", "element": "Grass / Water", "condition": "Reach Level 35", "abilities": {"Grass": 3, "Water": 3, "Perfumery": 2}, "perk": "Cultivates rare medical flora used to create revives and health draughts."},
+            "weather": [{"name": "Glameep (Sunny Bloom)", "element": "Grass / Water", "condition": "Sunny Bloom", "abilities": {"Grass": 4, "Water": 3, "Perfumery": 2}, "perk": "Medicinal herb growth cycle cut by 40% in direct sunshine."}],
+            "prismana": {"name": "Prismana Glameep", "element": "Grass / Water / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Grass": 4, "Water": 4, "Perfumery": 3}, "perk": "Panacea Bloom: Chance to harvest instant full-restore Golden Herbs."}
+        }
+    },
+    {
+        "id": "090", "name": "Popapus", "stage": "Lumin", "element": "Water", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Popapus -> Gachapus",
+        "best_role": "Water Sorting & River Dredging",
+        "forms": {
+            "basic": {"name": "Popapus (Standard)", "element": "Water", "condition": "Tidal Flats", "abilities": {"Water": 1, "Carry": 1}, "perk": "Small octopus that sorts dropped sea materials into storage bins."},
+            "weather": [{"name": "Popapus (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 2, "Carry": 1}, "perk": "Eight-arm sorting speed +30% during rain."}],
+            "prismana": {"name": "Prismana Popapus", "element": "Water / Light", "condition": "Prismana Flow weather", "abilities": {"Water": 2, "Light": 1, "Carry": 2}, "perk": "Lucky Tentacle: Chance to pull bonus materials when hauling."}
+        }
+    },
+    {
+        "id": "091", "name": "Gachapus", "stage": "Nova", "element": "Water", "secondary_element": None,
+        "role": "DPS", "evolution_line": "Popapus -> Gachapus",
+        "best_role": "High-Speed Multi-Item Logistics & Sorter Hub",
+        "forms": {
+            "basic": {"name": "Gachapus (Standard)", "element": "Water", "condition": "Reach Level 36", "abilities": {"Water": 3, "Carry": 3, "Artisanship": 2}, "perk": "Eight arms handle multiple transport orders simultaneously across Homeland."},
+            "weather": [{"name": "Gachapus (Rainstorm)", "element": "Water", "condition": "Rainstorm", "abilities": {"Water": 4, "Carry": 3, "Artisanship": 2}, "perk": "Aquatic Sprint: Hauling speed +35% during heavy rain."}],
+            "prismana": {"name": "Prismana Gachapus", "element": "Water / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Water": 4, "Carry": 4, "Artisanship": 3}, "perk": "Master Sorter: Completely eliminates Homeland inventory overflow bottlenecks."}
+        }
+    },
+    # 092 - 093: Malangel & Malevsera
+    {
+        "id": "092", "name": "Malangel", "stage": "Lumin", "element": "Ice", "secondary_element": "Dark",
+        "role": "DPS", "evolution_line": "Malangel -> Malevsera",
+        "best_role": "Night Cryo Preservation & Shadow Crystal Chipping",
+        "forms": {
+            "basic": {"name": "Malangel (Standard)", "element": "Ice / Dark", "condition": "Crescent Bay (Night)", "abilities": {"Ice": 2, "Dark": 1, "Artisanship": 1}, "perk": "Frozen fallen angel that keeps meat and fish chilled overnight."},
+            "weather": [{"name": "Malangel (Night Blizzard)", "element": "Ice / Dark", "condition": "Snowy Night", "abilities": {"Ice": 3, "Dark": 2}, "perk": "Sub-zero Chill: Cooling stations require zero power during winter nights."}],
+            "prismana": {"name": "Prismana Malangel", "element": "Ice / Dark / Light", "condition": "Prismana Flow weather", "abilities": {"Ice": 3, "Dark": 2, "Artisanship": 2}, "perk": "Frost Halo: Ice tools crafted gain unbreakable sharpness rating."}
+        }
+    },
+    {
+        "id": "093", "name": "Malevsera", "stage": "Nova", "element": "Ice", "secondary_element": "Dark",
+        "role": "DPS", "evolution_line": "Malangel -> Malevsera",
+        "best_role": "Apex Cryo Vault & Demonic State Night Metallurgy",
+        "forms": {
+            "basic": {"name": "Malevsera (Standard)", "element": "Ice / Dark", "condition": "Demonic Awakening at Lv 46", "abilities": {"Ice": 4, "Dark": 3, "Artisanship": 2}, "perk": "Demonic Cryo: Freezes whole base food silos with 0% decay rate permanently."},
+            "weather": [{"name": "Malevsera (Eclipse / Night)", "element": "Ice / Dark", "condition": "Eclipse / Night", "abilities": {"Ice": 4, "Dark": 4, "Artisanship": 3}, "perk": "Demonic State: Overclocks all cold and dark refining stations by +50%."}],
+            "prismana": {"name": "Prismana Malevsera", "element": "Ice / Dark / Prismatic", "condition": "Prismana Flow in Crescent Bay", "abilities": {"Ice": 5, "Dark": 4, "Artisanship": 3}, "perk": "Abyssal Frost: The ultimate cold worker; food stores never spoil, crafting speed +35%."}
+        }
+    },
+    # 094: Dazmand
+    {
+        "id": "094", "name": "Dazmand", "stage": "Nova", "element": "Light", "secondary_element": "Earth",
+        "role": "DPS", "evolution_line": "Rare Prismatic Apex",
+        "best_role": "Master Jeweler, Relic Restoration & Base Illumination",
+        "forms": {
+            "basic": {"name": "Dazmand (Standard)", "element": "Light / Earth", "condition": "Crystal Sanctum", "abilities": {"Light": 3, "Earth": 3, "Artisanship": 3}, "perk": "Master jeweler: polishes mined raw diamonds into high-selling artifacts for Bud Coins."},
+            "weather": [{"name": "Dazmand (Sunny)", "element": "Light / Earth", "condition": "Sunny", "abilities": {"Light": 4, "Earth": 3, "Artisanship": 3}, "perk": "Solar Refraction: Illuminates entire base plot, preventing darkness productivity penalties."}],
+            "prismana": {"name": "Prismana Dazmand", "element": "Light / Earth / Prismatic", "condition": "Prismana Flow weather", "abilities": {"Light": 4, "Earth": 4, "Artisanship": 4}, "perk": "Prismatic Jewel: +35% jewelry crafting speed; relics sell for +25% bonus Bud Coins."}
+        }
+    }
+]
+
+# Write JSON
+out_dir = r"e:\Coding Space\aniimo-homeland-guide\data"
+os.makedirs(out_dir, exist_ok=True)
+json_path = os.path.join(out_dir, "aniimo_homeland_data.json")
+with open(json_path, "w", encoding="utf-8") as f:
+    json.dump(aniimo_roster, f, indent=2, ensure_ascii=False)
+print(f"Generated {len(aniimo_roster)} Aniimo records to {json_path}")
+
+# Write CSV
+csv_path = os.path.join(out_dir, "aniimo_homeland_data.csv")
+with open(csv_path, "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+        "ID", "Name", "Stage", "Evolution Line", "Primary Element", "Role", "Best Homeland Role",
+        "Basic Form Name", "Basic Abilities",
+        "Weather Forms Count", "Weather Form Details",
+        "Prismana Form Name", "Prismana Abilities", "Prismana Trait"
+    ])
+    for item in aniimo_roster:
+        basic = item["forms"]["basic"]
+        b_abils = ", ".join([f"{k} Lv.{v}" for k, v in basic["abilities"].items()])
+        w_forms = item["forms"].get("weather", [])
+        w_details = " | ".join([
+            f"{wf['name']} ({wf['condition']}): " + ", ".join([f"{k} Lv.{v}" for k, v in wf['abilities'].items()])
+            for wf in w_forms
+        ])
+        prismana = item["forms"]["prismana"]
+        p_abils = ", ".join([f"{k} Lv.{v}" for k, v in prismana["abilities"].items()])
+        
+        writer.writerow([
+            item["id"], item["name"], item["stage"], item["evolution_line"],
+            item["element"], item["role"], item["best_role"],
+            basic["name"], b_abils,
+            len(w_forms), w_details,
+            prismana["name"], p_abils, prismana["perk"]
+        ])
+print(f"Generated CSV to {csv_path}")

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniimo Homeland Master Guide | Node.js Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span class="brand-pill">CAMP RV v2.0</span>
+        <h2>🏡 Aniimo Homeland Hub</h2>
+      </div>
+      <div class="nav-actions">
+        <div class="api-status">
+          <span class="status-dot"></span>
+          <span id="apiStatusText">Node.js API Connected</span>
+        </div>
+        <a href="/data/aniimo_homeland_data.json" class="btn-api" target="_blank" title="View Raw JSON API">📡 API JSON</a>
+        <a href="/data/aniimo_homeland_data.csv" class="btn-csv" target="_blank" download title="Download CSV">📥 CSV</a>
+      </div>
+    </nav>
+
+    <!-- Hero / Stats Dashboard -->
+    <header class="hero-section">
+      <div class="hero-text">
+        <h1>Aniimo Homeland Abilities & Form Encyclopedia</h1>
+        <p>Canonical database of all <strong>89+ Aniimo species</strong> across <strong>Basic Forms</strong>, <strong>Weather Variants</strong>, and radiant <strong>Prismana Forms</strong> with verified workplace abilities (Levels 1–5).</p>
+      </div>
+
+      <div class="stats-cards">
+        <div class="stat-card">
+          <span class="stat-num" id="statSpecies">89</span>
+          <span class="stat-label">Species Tracked</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="statForms">180+</span>
+          <span class="stat-label">Forms Cataloged</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">13</span>
+          <span class="stat-label">Homeland Jobs</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="statWeatherCount">45+</span>
+          <span class="stat-label">Weather Variants</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Filter Controls -->
+    <section class="controls-card">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by name, #ID (e.g. 044), trait, role, or evolution line...">
+          <button id="clearSearch" class="btn-clear" title="Clear">✕</button>
+        </div>
+      </div>
+
+      <div class="filters-grid">
+        <div class="filter-col">
+          <label>Evolution Stage</label>
+          <select id="stageFilter">
+            <option value="all">All Stages (Lumin, Gamma, Nova)</option>
+            <option value="Lumin">Lumin (Starter / Tier 1)</option>
+            <option value="Gamma">Gamma (Mid / Tier 2)</option>
+            <option value="Nova">Nova (Apex / Tier 3)</option>
+          </select>
+        </div>
+
+        <div class="filter-col">
+          <label>Primary Element</label>
+          <select id="elementFilter">
+            <option value="all">All Elements</option>
+            <option value="Fire">🔥 Fire</option>
+            <option value="Grass">🌱 Grass</option>
+            <option value="Water">💧 Water</option>
+            <option value="Earth">⛰️ Earth</option>
+            <option value="Lightning">⚡ Lightning</option>
+            <option value="Ice">❄️ Ice</option>
+            <option value="Wind">🍃 Wind</option>
+            <option value="Dark">🌑 Dark</option>
+            <option value="Light">✨ Light</option>
+          </select>
+        </div>
+
+        <div class="filter-col">
+          <label>Homeland Ability</label>
+          <select id="abilityFilter">
+            <option value="all">Any Homeland Ability</option>
+            <optgroup label="Elemental Operations">
+              <option value="Fire">🔥 Fire (Smelting / Cooking)</option>
+              <option value="Grass">🌱 Grass (Planting / Logging)</option>
+              <option value="Water">💧 Water (Irrigation / Brewing)</option>
+              <option value="Earth">⛰️ Earth (Mining / Masonry)</option>
+              <option value="Lightning">⚡ Lightning (Power Grid)</option>
+              <option value="Ice">❄️ Ice (Cold Storage)</option>
+              <option value="Wind">🍃 Wind (Milling / Looms)</option>
+              <option value="Dark">🌑 Dark (Night Shift / Alchemy)</option>
+              <option value="Light">✨ Light (Illumination / Warming)</option>
+            </optgroup>
+            <optgroup label="Base Utilities">
+              <option value="Carry">📦 Carry (Transport & Logistics)</option>
+              <option value="Artisanship">🔨 Artisanship (Crafting & RV)</option>
+              <option value="Leisure">☕ Leisure (Worker Morale)</option>
+              <option value="Perfumery">🌸 Perfumery (Aromatics & Oils)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="filter-col">
+          <label>Min Ability Level</label>
+          <select id="minLevelFilter">
+            <option value="1">Level 1+ (Any)</option>
+            <option value="2">Level 2+ (Skilled)</option>
+            <option value="3">Level 3+ (Expert)</option>
+            <option value="4">Level 4+ (Master)</option>
+            <option value="5">Level 5 (Grandmaster)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Quick Form Buttons -->
+      <div class="form-focus-row">
+        <span class="focus-title">Form Filter:</span>
+        <button class="pill-btn active" data-form="all">All Forms</button>
+        <button class="pill-btn" data-form="basic">Standard Forms</button>
+        <button class="pill-btn" data-form="weather">⚡ Weather Variants</button>
+        <button class="pill-btn" data-form="prismana">🌈 Prismana Forms</button>
+        <div id="resultsBadge" class="results-badge">Showing 89 Aniimo</div>
+      </div>
+    </section>
+
+    <!-- Cards Grid -->
+    <main class="aniimo-grid" id="aniimoGrid">
+      <!-- Injected via JavaScript -->
+    </main>
+
+    <!-- Modal for Detailed Creature View -->
+    <div id="detailModal" class="modal-backdrop hidden">
+      <div class="modal-card">
+        <button id="modalClose" class="modal-close">&times;</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Aniimo Homeland Master Platform • Powered by Node.js & Express REST API • 2026</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
