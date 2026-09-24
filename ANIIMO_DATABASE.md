@@ -233,7 +233,7 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Grass 1 / Water 1` | Standard | Idyll Native Habitat | `Grass Lv.1, Water Lv.1` |
+| **Basic Form** | Base Form | `Water 1 / Grass 1` | Standard | Idyll Native Habitat | `Water Lv.1, Grass Lv.1` |
 
 ### <a id="-017-nimbi"></a>#017 — Nimbi
 
@@ -337,13 +337,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 ### <a id="-025-geoclaw"></a>#025 — Geoclaw
 
-**Slug:** `geoclaw` | **Homeland Tier:** `C-Tier` | **Trait:** **Frostbite Sunder** (*Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff].*)
+**Slug:** `geoclaw` | **Homeland Tier:** `B-Tier` | **Trait:** **Frostbite Sunder** (*Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff].*)
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Ice 2` | Standard | Idyll Native Habitat | `Ice Lv.2` |
 
 ### <a id="-026-sparki"></a>#026 — Sparki
 
@@ -415,17 +415,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Wind 1` | Standard | Idyll Native Habitat | `Wind Lv.1` |
 
 ### <a id="-032-eklue"></a>#032 — Eklue
 
-**Slug:** `eklue` | **Homeland Tier:** `C-Tier` | **Trait:** **Judgment Storm** (*When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.*)
+**Slug:** `eklue` | **Homeland Tier:** `B-Tier` | **Trait:** **Judgment Storm** (*When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.*)
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Wind 2` | Standard | Idyll Native Habitat | `Wind Lv.2` |
 
 ### <a id="-033-budsquire"></a>#033 — Budsquire
 
@@ -496,17 +496,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Dark 1` | Standard | Idyll Native Habitat | `Dark Lv.1` |
 
 ### <a id="-039-fragrancier"></a>#039 — Fragrancier
 
-**Slug:** `fragrancier` | **Homeland Tier:** `C-Tier` | **Trait:** **Dangerous Fragrance** (*When deals damage to a target, reduces the target's Dark Resistance by X for Xs.*)
+**Slug:** `fragrancier` | **Homeland Tier:** `B-Tier` | **Trait:** **Dangerous Fragrance** (*When deals damage to a target, reduces the target's Dark Resistance by X for Xs.*)
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | `Dark Lv.2` |
 
 ### <a id="-040-wisptis"></a>#040 — Wisptis
 
@@ -598,17 +598,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Fire 1` | Standard | Idyll Native Habitat | `Fire Lv.1` |
 
 ### <a id="-048-squashel"></a>#048 — Squashel
 
-**Slug:** `squashel` | **Homeland Tier:** `C-Tier` | **Trait:** **Raging Fire** (*After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.*)
+**Slug:** `squashel` | **Homeland Tier:** `B-Tier` | **Trait:** **Raging Fire** (*After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.*)
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Fire 2` | Standard | Idyll Native Habitat | `Fire Lv.2` |
 
 ### <a id="-049-susuta"></a>#049 — Susuta
 
@@ -669,13 +669,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 ### <a id="-054-sheldon"></a>#054 — Sheldon
 
-**Slug:** `sheldon` | **Homeland Tier:** `C-Tier` | **Trait:** **Tidal Heart** (*While in water terrain or after absorbing water, increases Water damage by X% for 10s.*)
+**Slug:** `sheldon` | **Homeland Tier:** `B-Tier` | **Trait:** **Tidal Heart** (*While in water terrain or after absorbing water, increases Water damage by X% for 10s.*)
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | `Water Lv.2` |
 
 ### <a id="-055-sherro"></a>#055 — Sherro
 
@@ -731,7 +731,7 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | `Lightning Lv.1` |
 
 ### <a id="-060-fenmane"></a>#060 — Fenmane
 
@@ -833,7 +833,7 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | `Earth Lv.1` |
 
 ### <a id="-069-grizbo"></a>#069 — Grizbo
 
@@ -854,17 +854,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | `Earth Lv.1` |
 
 ### <a id="-071-lavazar"></a>#071 — Lavazar
 
-**Slug:** `lavazar` | **Homeland Tier:** `C-Tier` | **Trait:** **Pyro Charge** (*After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.*)
+**Slug:** `lavazar` | **Homeland Tier:** `A-Tier` | **Trait:** **Pyro Charge** (*After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.*)
 
 **Weak To:** Water (2.56×) | **Resists:** Fire (0.391×), Ice (0.391×), Lightning (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Fire 2 / Earth 2` | Standard | Idyll Native Habitat | `Fire Lv.2, Earth Lv.2` |
 
 ### <a id="-072-magmarex"></a>#072 — Magmarex
 
@@ -880,23 +880,23 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 ### <a id="-073-geodeback"></a>#073 — Geodeback
 
-**Slug:** `geodeback` | **Homeland Tier:** `C-Tier` | **Trait:** **Earth Affinity** (*While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.*)
+**Slug:** `geodeback` | **Homeland Tier:** `B-Tier` | **Trait:** **Earth Affinity** (*While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.*)
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | `Earth Lv.2` |
 
 ### <a id="-074-minespine"></a>#074 — Minespine
 
-**Slug:** `minespine` | **Homeland Tier:** `C-Tier` | **Trait:** **Earth Affinity** (*While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.*)
+**Slug:** `minespine` | **Homeland Tier:** `B-Tier` | **Trait:** **Earth Affinity** (*While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.*)
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | `Earth Lv.2` |
 
 ### <a id="-075-cozite"></a>#075 — Cozite
 
@@ -906,17 +906,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | `Earth Lv.1` |
 
 ### <a id="-076-bailite"></a>#076 — Bailite
 
-**Slug:** `bailite` | **Homeland Tier:** `C-Tier` | **Trait:** **Potent Erosion** (*When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.*)
+**Slug:** `bailite` | **Homeland Tier:** `B-Tier` | **Trait:** **Potent Erosion** (*When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.*)
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | `Earth Lv.2` |
 
 ### <a id="-077-bulbly"></a>#077 — Bulbly
 
@@ -926,17 +926,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | `Lightning Lv.1` |
 
 ### <a id="-078-veilfloat"></a>#078 — Veilfloat
 
-**Slug:** `veilfloat` | **Homeland Tier:** `C-Tier` | **Trait:** **Arc Surge** (*Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.*)
+**Slug:** `veilfloat` | **Homeland Tier:** `B-Tier` | **Trait:** **Arc Surge** (*Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.*)
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | `Lightning Lv.2` |
 
 ### <a id="-079-luminelle"></a>#079 — Luminelle
 
@@ -958,27 +958,27 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Water 1` | Standard | Idyll Native Habitat | `Water Lv.1` |
 
 ### <a id="-081-erlath"></a>#081 — Erlath
 
-**Slug:** `erlath` | **Homeland Tier:** `C-Tier` | **Trait:** **Bubble** (*Every 12s, enters Bathing. The next skill cast creates a puddle.*)
+**Slug:** `erlath` | **Homeland Tier:** `B-Tier` | **Trait:** **Bubble** (*Every 12s, enters Bathing. The next skill cast creates a puddle.*)
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | `Water Lv.2` |
 
 ### <a id="-082-besauce"></a>#082 — Besauce
 
-**Slug:** `besauce` | **Homeland Tier:** `C-Tier` | **Trait:** **Power Surge** (*When casting a skill with less than 20 EP, restores X EP.*)
+**Slug:** `besauce` | **Homeland Tier:** `B-Tier` | **Trait:** **Power Surge** (*When casting a skill with less than 20 EP, restores X EP.*)
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
+| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | `Lightning Lv.2` |
 
 ---
 
@@ -1037,11 +1037,11 @@ These 10 species exist in the game and official database, but their official Dex
 
 ### <a id="-unnum-morphling"></a>#???? — Morphling
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `morphling` | **Homeland Tier:** `B-Tier` | **Trait:** **Shape Shift** (*Adapts elemental affinity and forms to assist allied Aniimo.*)
+**Dex Number:** `#????` (Unnumbered) | **Slug:** `morphling` | **Homeland Tier:** `B-Tier` | **Trait:** **Elemental Harmony** (*Enhances productivity when working at element-aligned workstations.*)
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 2 / Earth 1` | Standard | Idyll Native Habitat | `Light Lv.2, Earth Lv.1` |
+| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | `Light Lv.2` |
 
 ### <a id="-unnum-jabster"></a>#???? — Jabster
 

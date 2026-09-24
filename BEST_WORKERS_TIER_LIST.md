@@ -137,5 +137,5 @@
 | 🥇 A-Rank | `#????` | **Soleon** | Basic Form | **Light Lv.3** | **Solar Grace** | Idyll Native Habitat |
 | 🥈 B-Rank | `#????` | **Fennelun** | Basic Form | **Light Lv.2** | **Lunar Power** | Idyll Native Habitat |
 | 🥈 B-Rank | `#????` | **Helion** | Basic Form | **Light Lv.2** | **Solar Grace** | Idyll Native Habitat |
-| 🥈 B-Rank | `#????` | **Morphling** | Basic Form | **Light Lv.2** | Shape Shift | Idyll Native Habitat |
+| 🥈 B-Rank | `#????` | **Morphling** | Basic Form | **Light Lv.2** | Elemental Harmony | Idyll Native Habitat |
 

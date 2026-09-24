@@ -6,7 +6,7 @@
     "name": "Emberpup",
     "slug": "emberpup",
     "is_unnumbered": false,
-    "image": "/images/001.png",
+    "image": "images/emberpup.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-emberpup-handbook.png",
     "tier": "C-Tier",
     "trait": "Scorching Flames",
@@ -31,7 +31,7 @@
         "elements": {
           "Fire": 1
         },
-        "image": "/images/forms/emberpup-basic-form-base.png"
+        "image": "images/forms/emberpup-basic-form-base.png"
       },
       "regional": [
         {
@@ -43,7 +43,7 @@
             "Fire": 1,
             "Earth": 1
           },
-          "image": "/images/forms/emberpup-highland-form.png"
+          "image": "images/forms/emberpup-highland-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -53,7 +53,7 @@
           "elements": {
             "Fire": 1
           },
-          "image": "/images/forms/emberpup-mountain-woods-form.png"
+          "image": "images/forms/emberpup-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -72,7 +72,7 @@
     "name": "Flameruff",
     "slug": "flameruff",
     "is_unnumbered": false,
-    "image": "/images/002.png",
+    "image": "images/flameruff.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flameruff-handbook.png",
     "tier": "B-Tier",
     "trait": "Scorching Flames",
@@ -97,7 +97,7 @@
         "elements": {
           "Fire": 2
         },
-        "image": "/images/forms/flameruff-basic-form-base.png"
+        "image": "images/forms/flameruff-basic-form-base.png"
       },
       "regional": [
         {
@@ -109,7 +109,7 @@
             "Fire": 2,
             "Earth": 1
           },
-          "image": "/images/forms/flameruff-highland-form.png"
+          "image": "images/forms/flameruff-highland-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -119,7 +119,7 @@
           "elements": {
             "Fire": 2
           },
-          "image": "/images/forms/flameruff-mountain-woods-form.png"
+          "image": "images/forms/flameruff-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -138,7 +138,7 @@
     "name": "Scorchhowl",
     "slug": "scorchhowl",
     "is_unnumbered": false,
-    "image": "/images/003.png",
+    "image": "images/scorchhowl.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-handbook.png",
     "tier": "S-Tier",
     "trait": "Scorching Flames",
@@ -163,7 +163,7 @@
         "elements": {
           "Fire": 3
         },
-        "image": "/images/forms/scorchhowl-basic-form-base.png"
+        "image": "images/forms/scorchhowl-basic-form-base.png"
       },
       "regional": [
         {
@@ -175,7 +175,7 @@
             "Fire": 3,
             "Earth": 2
           },
-          "image": "/images/forms/scorchhowl-highland-form.png"
+          "image": "images/forms/scorchhowl-highland-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -185,7 +185,7 @@
           "elements": {
             "Fire": 3
           },
-          "image": "/images/forms/scorchhowl-mountain-woods-form.png"
+          "image": "images/forms/scorchhowl-mountain-woods-form.png"
         }
       ],
       "weather": [
@@ -197,7 +197,7 @@
           "elements": {
             "Fire": 3
           },
-          "image": "/images/forms/scorchhowl-thunderstorm-form.png"
+          "image": "images/forms/scorchhowl-thunderstorm-form.png"
         }
       ],
       "prismana": {
@@ -208,7 +208,7 @@
         "elements": {
           "Fire": 4
         },
-        "image": "/images/forms/scorchhowl-prismana.png"
+        "image": "images/forms/scorchhowl-prismana.png"
       }
     },
     "all_form_names": [
@@ -226,7 +226,7 @@
     "name": "Inferlupa",
     "slug": "inferlupa",
     "is_unnumbered": false,
-    "image": "/images/004.png",
+    "image": "images/inferlupa.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-inferlupa-handbook.png",
     "tier": "S-Tier",
     "trait": "Full Energy",
@@ -251,7 +251,7 @@
           "Dark": 3,
           "Fire": 2
         },
-        "image": "/images/forms/inferlupa-basic-form-base.png"
+        "image": "images/forms/inferlupa-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -264,7 +264,7 @@
           "Dark": 4,
           "Fire": 3
         },
-        "image": "/images/forms/inferlupa-prismana.png"
+        "image": "images/forms/inferlupa-prismana.png"
       }
     },
     "all_form_names": [
@@ -279,7 +279,7 @@
     "name": "Celestis",
     "slug": "celestis",
     "is_unnumbered": false,
-    "image": "/images/005.png",
+    "image": "images/celestis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-celestis-handbook.png",
     "tier": "A-Tier",
     "trait": "Grand Sorcerer",
@@ -302,7 +302,7 @@
         "elements": {
           "Dark": 3
         },
-        "image": "/images/forms/celestis-basic-form.png"
+        "image": "images/forms/celestis-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -319,7 +319,7 @@
     "name": "Stellarys",
     "slug": "stellarys",
     "is_unnumbered": false,
-    "image": "/images/006.png",
+    "image": "images/stellarys.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-stellarys-handbook.png",
     "tier": "S-Tier",
     "trait": "Grand Sorcerer",
@@ -342,7 +342,7 @@
         "elements": {
           "Dark": 3
         },
-        "image": "/images/forms/stellarys-basic-form-base.png"
+        "image": "images/forms/stellarys-basic-form-base.png"
       },
       "regional": [],
       "weather": [
@@ -355,7 +355,7 @@
             "Dark": 3,
             "Water": 2
           },
-          "image": "/images/forms/stellarys-rainstorm-form.png"
+          "image": "images/forms/stellarys-rainstorm-form.png"
         }
       ],
       "prismana": {
@@ -367,7 +367,7 @@
           "Dark": 4,
           "Ice": 3
         },
-        "image": "/images/forms/stellarys-prismana.png"
+        "image": "images/forms/stellarys-prismana.png"
       }
     },
     "all_form_names": [
@@ -383,7 +383,7 @@
     "name": "Chirpi",
     "slug": "chirpi",
     "is_unnumbered": false,
-    "image": "/images/007.png",
+    "image": "images/chirpi.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-chirpi-handbook.png",
     "tier": "C-Tier",
     "trait": "Band Member",
@@ -407,7 +407,7 @@
         "elements": {
           "Wind": 1
         },
-        "image": "/images/forms/chirpi-basic-form-base.png"
+        "image": "images/forms/chirpi-basic-form-base.png"
       },
       "regional": [
         {
@@ -419,7 +419,7 @@
             "Wind": 1,
             "Water": 1
           },
-          "image": "/images/forms/chirpi-beach-form.png"
+          "image": "images/forms/chirpi-beach-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -430,7 +430,7 @@
             "Wind": 1,
             "Grass": 1
           },
-          "image": "/images/forms/chirpi-highland-form.png"
+          "image": "images/forms/chirpi-highland-form.png"
         }
       ],
       "weather": [],
@@ -449,7 +449,7 @@
     "name": "Tromber",
     "slug": "tromber",
     "is_unnumbered": false,
-    "image": "/images/008.png",
+    "image": "images/tromber.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tromber-handbook.png",
     "tier": "A-Tier",
     "trait": "Band Member",
@@ -473,7 +473,7 @@
         "elements": {
           "Wind": 3
         },
-        "image": "/images/forms/tromber-basic-form-base.png"
+        "image": "images/forms/tromber-basic-form-base.png"
       },
       "regional": [
         {
@@ -485,7 +485,7 @@
             "Wind": 3,
             "Water": 2
           },
-          "image": "/images/forms/tromber-beach-form.png"
+          "image": "images/forms/tromber-beach-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -496,7 +496,7 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "/images/forms/tromber-highland-form.png"
+          "image": "images/forms/tromber-highland-form.png"
         }
       ],
       "weather": [],
@@ -515,7 +515,7 @@
     "name": "Cornet",
     "slug": "cornet",
     "is_unnumbered": false,
-    "image": "/images/009.png",
+    "image": "images/cornet.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-handbook.png",
     "tier": "S-Tier",
     "trait": "Air Superiority",
@@ -539,7 +539,7 @@
         "elements": {
           "Wind": 3
         },
-        "image": "/images/forms/cornet-basic-form-base.png"
+        "image": "images/forms/cornet-basic-form-base.png"
       },
       "regional": [
         {
@@ -551,7 +551,7 @@
             "Wind": 3,
             "Water": 2
           },
-          "image": "/images/forms/cornet-beach-form.png"
+          "image": "images/forms/cornet-beach-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -562,7 +562,7 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "/images/forms/cornet-highland-form.png"
+          "image": "images/forms/cornet-highland-form.png"
         }
       ],
       "weather": [],
@@ -575,7 +575,7 @@
           "Wind": 4,
           "Lightning": 3
         },
-        "image": "/images/forms/cornet-prismana.png"
+        "image": "images/forms/cornet-prismana.png"
       }
     },
     "all_form_names": [
@@ -592,7 +592,7 @@
     "name": "Tubster",
     "slug": "tubster",
     "is_unnumbered": false,
-    "image": "/images/010.png",
+    "image": "images/tubster.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tubster-handbook.png",
     "tier": "A-Tier",
     "trait": "Victory Concerto",
@@ -616,7 +616,7 @@
         "elements": {
           "Wind": 3
         },
-        "image": "/images/forms/tubster-basic-form-base.png"
+        "image": "images/forms/tubster-basic-form-base.png"
       },
       "regional": [
         {
@@ -628,7 +628,7 @@
             "Wind": 3,
             "Water": 2
           },
-          "image": "/images/forms/tubster-beach-form.png"
+          "image": "images/forms/tubster-beach-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -639,7 +639,7 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "/images/forms/tubster-highland-form.png"
+          "image": "images/forms/tubster-highland-form.png"
         },
         {
           "form_name": "Basic Form (variant record)",
@@ -649,7 +649,7 @@
           "elements": {
             "Wind": 3
           },
-          "image": "/images/forms/tubster-basic-form-variant-record.png"
+          "image": "images/forms/tubster-basic-form-variant-record.png"
         }
       ],
       "weather": [],
@@ -669,7 +669,7 @@
     "name": "Iris",
     "slug": "iris",
     "is_unnumbered": false,
-    "image": "/images/011.png",
+    "image": "images/iris.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-iris-handbook.png",
     "tier": "C-Tier",
     "trait": "**Disco Aniimo**",
@@ -691,7 +691,7 @@
         "elements": {
           "Grass": 1
         },
-        "image": "/images/forms/iris-basic-form-base.png"
+        "image": "images/forms/iris-basic-form-base.png"
       },
       "regional": [
         {
@@ -702,7 +702,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/iris-highland-form.png"
+          "image": "images/forms/iris-highland-form.png"
         },
         {
           "form_name": "Forest Form",
@@ -712,7 +712,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/iris-forest-form.png"
+          "image": "images/forms/iris-forest-form.png"
         },
         {
           "form_name": "Grassland Form",
@@ -722,7 +722,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/iris-grassland-form.png"
+          "image": "images/forms/iris-grassland-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -732,7 +732,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/iris-mountain-woods-form.png"
+          "image": "images/forms/iris-mountain-woods-form.png"
         }
       ],
       "weather": [
@@ -744,7 +744,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/iris-plateau-form.png"
+          "image": "images/forms/iris-plateau-form.png"
         }
       ],
       "prismana": {
@@ -755,7 +755,7 @@
         "elements": {
           "Grass": 1
         },
-        "image": "/images/forms/iris-prismana.png"
+        "image": "images/forms/iris-prismana.png"
       }
     },
     "all_form_names": [
@@ -775,7 +775,7 @@
     "name": "Irisal",
     "slug": "irisal",
     "is_unnumbered": false,
-    "image": "/images/012.png",
+    "image": "images/irisal.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-handbook.png",
     "tier": "S-Tier",
     "trait": "**Disco Aniimo**",
@@ -797,7 +797,7 @@
         "elements": {
           "Grass": 3
         },
-        "image": "/images/forms/irisal-basic-form-base.png"
+        "image": "images/forms/irisal-basic-form-base.png"
       },
       "regional": [
         {
@@ -808,7 +808,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/irisal-highland-form.png"
+          "image": "images/forms/irisal-highland-form.png"
         },
         {
           "form_name": "Forest Form",
@@ -818,7 +818,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/irisal-forest-form.png"
+          "image": "images/forms/irisal-forest-form.png"
         },
         {
           "form_name": "Grassland Form",
@@ -828,7 +828,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/irisal-grassland-form.png"
+          "image": "images/forms/irisal-grassland-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -838,7 +838,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/irisal-mountain-woods-form.png"
+          "image": "images/forms/irisal-mountain-woods-form.png"
         }
       ],
       "weather": [
@@ -850,7 +850,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/irisal-plateau-form.png"
+          "image": "images/forms/irisal-plateau-form.png"
         }
       ],
       "prismana": {
@@ -861,7 +861,7 @@
         "elements": {
           "Grass": 4
         },
-        "image": "/images/forms/irisal-prismana.png"
+        "image": "images/forms/irisal-prismana.png"
       }
     },
     "all_form_names": [
@@ -881,7 +881,7 @@
     "name": "Skippy",
     "slug": "skippy",
     "is_unnumbered": false,
-    "image": "/images/013.png",
+    "image": "images/skippy.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-skippy-handbook.png",
     "tier": "C-Tier",
     "trait": "Water Spirit",
@@ -906,7 +906,7 @@
         "elements": {
           "Water": 1
         },
-        "image": "/images/forms/skippy-basic-form-base.png"
+        "image": "images/forms/skippy-basic-form-base.png"
       },
       "regional": [
         {
@@ -917,7 +917,7 @@
           "elements": {
             "Water": 1
           },
-          "image": "/images/forms/skippy-sea-of-flowers-form.png"
+          "image": "images/forms/skippy-sea-of-flowers-form.png"
         },
         {
           "form_name": "Snowfield Form",
@@ -928,7 +928,7 @@
             "Water": 1,
             "Ice": 1
           },
-          "image": "/images/forms/skippy-snowfield-form.png"
+          "image": "images/forms/skippy-snowfield-form.png"
         }
       ],
       "weather": [],
@@ -947,7 +947,7 @@
     "name": "Pranky",
     "slug": "pranky",
     "is_unnumbered": false,
-    "image": "/images/014.png",
+    "image": "images/pranky.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pranky-handbook.png",
     "tier": "B-Tier",
     "trait": "Water Spirit",
@@ -972,7 +972,7 @@
         "elements": {
           "Water": 2
         },
-        "image": "/images/forms/pranky-basic-form-base.png"
+        "image": "images/forms/pranky-basic-form-base.png"
       },
       "regional": [
         {
@@ -983,7 +983,7 @@
           "elements": {
             "Water": 2
           },
-          "image": "/images/forms/pranky-sea-of-flowers-form.png"
+          "image": "images/forms/pranky-sea-of-flowers-form.png"
         },
         {
           "form_name": "Snowfield Form",
@@ -994,7 +994,7 @@
             "Water": 2,
             "Ice": 1
           },
-          "image": "/images/forms/pranky-snowfield-form.png"
+          "image": "images/forms/pranky-snowfield-form.png"
         }
       ],
       "weather": [],
@@ -1013,7 +1013,7 @@
     "name": "Glacy",
     "slug": "glacy",
     "is_unnumbered": false,
-    "image": "/images/015.png",
+    "image": "images/glacy.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-glacy-handbook.png",
     "tier": "S-Tier",
     "trait": "Water Spirit",
@@ -1036,7 +1036,7 @@
           "Water": 3,
           "Ice": 2
         },
-        "image": "/images/forms/glacy-basic-form-base.png"
+        "image": "images/forms/glacy-basic-form-base.png"
       },
       "regional": [
         {
@@ -1048,7 +1048,7 @@
             "Water": 3,
             "Ice": 2
           },
-          "image": "/images/forms/glacy-sea-of-flowers-form.png"
+          "image": "images/forms/glacy-sea-of-flowers-form.png"
         },
         {
           "form_name": "Snowfield Form",
@@ -1059,7 +1059,7 @@
             "Water": 3,
             "Ice": 2
           },
-          "image": "/images/forms/glacy-snowfield-form.png"
+          "image": "images/forms/glacy-snowfield-form.png"
         }
       ],
       "weather": [],
@@ -1072,7 +1072,7 @@
           "Water": 4,
           "Ice": 2
         },
-        "image": "/images/forms/glacy-prismana.png"
+        "image": "images/forms/glacy-prismana.png"
       }
     },
     "all_form_names": [
@@ -1089,7 +1089,7 @@
     "name": "Leafy",
     "slug": "leafy",
     "is_unnumbered": false,
-    "image": "/images/016.png",
+    "image": "images/leafy.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-leafy-handbook.png",
     "tier": "C-Tier",
     "trait": "Power of Nature",
@@ -1107,14 +1107,14 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Grass 1 / Water 1",
+        "element_display": "Water 1 / Grass 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 1,
-          "Water": 1
+          "Water": 1,
+          "Grass": 1
         },
-        "image": "/images/forms/leafy-basic-form.png"
+        "image": "images/forms/leafy-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -1131,7 +1131,7 @@
     "name": "Nimbi",
     "slug": "nimbi",
     "is_unnumbered": false,
-    "image": "/images/017.png",
+    "image": "images/nimbi.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi-handbook.png",
     "tier": "C-Tier",
     "trait": "Shrouded in Mist",
@@ -1155,7 +1155,7 @@
         "elements": {
           "Wind": 1
         },
-        "image": "/images/forms/nimbi-basic-form-base.png"
+        "image": "images/forms/nimbi-basic-form-base.png"
       },
       "regional": [],
       "weather": [
@@ -1168,7 +1168,7 @@
             "Wind": 1,
             "Lightning": 1
           },
-          "image": "/images/forms/nimbi-rainstorm-form.png"
+          "image": "images/forms/nimbi-rainstorm-form.png"
         },
         {
           "form_name": "Cloudmist Form",
@@ -1178,7 +1178,7 @@
           "elements": {
             "Wind": 1
           },
-          "image": "/images/forms/nimbi-cloudmist-form.png"
+          "image": "images/forms/nimbi-cloudmist-form.png"
         },
         {
           "form_name": "Plateau Form",
@@ -1189,7 +1189,7 @@
             "Wind": 1,
             "Ice": 1
           },
-          "image": "/images/forms/nimbi-plateau-form.png"
+          "image": "images/forms/nimbi-plateau-form.png"
         }
       ],
       "prismana": null
@@ -1208,7 +1208,7 @@
     "name": "Turbo",
     "slug": "turbo",
     "is_unnumbered": false,
-    "image": "/images/018.png",
+    "image": "images/turbo.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-handbook.png",
     "tier": "S-Tier",
     "trait": "Shrouded in Mist",
@@ -1232,7 +1232,7 @@
         "elements": {
           "Wind": 3
         },
-        "image": "/images/forms/turbo-basic-form-base.png"
+        "image": "images/forms/turbo-basic-form-base.png"
       },
       "regional": [],
       "weather": [
@@ -1245,7 +1245,7 @@
             "Wind": 3,
             "Lightning": 2
           },
-          "image": "/images/forms/turbo-rainstorm-form.png"
+          "image": "images/forms/turbo-rainstorm-form.png"
         },
         {
           "form_name": "Cloudmist Form",
@@ -1255,7 +1255,7 @@
           "elements": {
             "Wind": 3
           },
-          "image": "/images/forms/turbo-cloudmist-form.png"
+          "image": "images/forms/turbo-cloudmist-form.png"
         },
         {
           "form_name": "Plateau Form",
@@ -1266,7 +1266,7 @@
             "Wind": 3,
             "Ice": 2
           },
-          "image": "/images/forms/turbo-plateau-form.png"
+          "image": "images/forms/turbo-plateau-form.png"
         },
         {
           "form_name": "Plateau Form",
@@ -1277,7 +1277,7 @@
             "Wind": 3,
             "Ice": 2
           },
-          "image": "/images/forms/turbo-plateau-form.png"
+          "image": "images/forms/turbo-plateau-form.png"
         }
       ],
       "prismana": {
@@ -1289,7 +1289,7 @@
           "Wind": 4,
           "Dark": 3
         },
-        "image": "/images/forms/turbo-prismana.png"
+        "image": "images/forms/turbo-prismana.png"
       }
     },
     "all_form_names": [
@@ -1308,7 +1308,7 @@
     "name": "Dreaple",
     "slug": "dreaple",
     "is_unnumbered": false,
-    "image": "/images/019.png",
+    "image": "images/dreaple.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dreaple-handbook.png",
     "tier": "B-Tier",
     "trait": "Counting Sheep",
@@ -1331,7 +1331,7 @@
         "elements": {
           "Dark": 2
         },
-        "image": "/images/dreaple.png"
+        "image": "images/dreaple.png"
       },
       "regional": [],
       "weather": [],
@@ -1348,7 +1348,7 @@
     "name": "Hummin",
     "slug": "hummin",
     "is_unnumbered": false,
-    "image": "/images/020.png",
+    "image": "images/hummin.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-hummin-handbook.png",
     "tier": "C-Tier",
     "trait": "Energized",
@@ -1374,7 +1374,7 @@
         "elements": {
           "Grass": 1
         },
-        "image": "/images/forms/hummin-basic-form-base.png"
+        "image": "images/forms/hummin-basic-form-base.png"
       },
       "regional": [
         {
@@ -1385,7 +1385,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/hummin-mountain-form.png"
+          "image": "images/forms/hummin-mountain-form.png"
         }
       ],
       "weather": [],
@@ -1403,7 +1403,7 @@
     "name": "Hexxin",
     "slug": "hexxin",
     "is_unnumbered": false,
-    "image": "/images/021.png",
+    "image": "images/hexxin.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-hexxin-handbook.png",
     "tier": "S-Tier",
     "trait": "Prank",
@@ -1429,7 +1429,7 @@
           "Dark": 2,
           "Grass": 1
         },
-        "image": "/images/forms/hexxin-basic-form-base.png"
+        "image": "images/forms/hexxin-basic-form-base.png"
       },
       "regional": [
         {
@@ -1441,7 +1441,7 @@
             "Dark": 2,
             "Grass": 1
           },
-          "image": "/images/forms/hexxin-mountain-form.png"
+          "image": "images/forms/hexxin-mountain-form.png"
         }
       ],
       "weather": [],
@@ -1454,7 +1454,7 @@
           "Dark": 4,
           "Grass": 3
         },
-        "image": "/images/forms/hexxin-prismana.png"
+        "image": "images/forms/hexxin-prismana.png"
       }
     },
     "all_form_names": [
@@ -1470,7 +1470,7 @@
     "name": "Tuckin",
     "slug": "tuckin",
     "is_unnumbered": false,
-    "image": "/images/022.png",
+    "image": "images/tuckin.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-handbook.png",
     "tier": "S-Tier",
     "trait": "Prank Master",
@@ -1496,7 +1496,7 @@
         "elements": {
           "Grass": 3
         },
-        "image": "/images/forms/tuckin-basic-form-base.png"
+        "image": "images/forms/tuckin-basic-form-base.png"
       },
       "regional": [
         {
@@ -1508,7 +1508,7 @@
             "Grass": 3,
             "Earth": 2
           },
-          "image": "/images/forms/tuckin-mountain-form.png"
+          "image": "images/forms/tuckin-mountain-form.png"
         },
         {
           "form_name": "Basic Form (variant record)",
@@ -1518,7 +1518,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/tuckin-basic-form-variant-record.png"
+          "image": "images/forms/tuckin-basic-form-variant-record.png"
         },
         {
           "form_name": "Unnamed form",
@@ -1528,7 +1528,7 @@
           "elements": {
             "Grass": 4
           },
-          "image": "/images/forms/tuckin-unnamed-form.png"
+          "image": "images/forms/tuckin-unnamed-form.png"
         }
       ],
       "weather": [],
@@ -1548,7 +1548,7 @@
     "name": "Budclaw",
     "slug": "budclaw",
     "is_unnumbered": false,
-    "image": "/images/023.png",
+    "image": "images/budclaw.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw-handbook.png",
     "tier": "C-Tier",
     "trait": "Stealth",
@@ -1574,7 +1574,7 @@
           "Earth": 1,
           "Grass": 1
         },
-        "image": "/images/forms/budclaw-basic-form-base.png"
+        "image": "images/forms/budclaw-basic-form-base.png"
       },
       "regional": [
         {
@@ -1586,7 +1586,7 @@
             "Earth": 1,
             "Grass": 1
           },
-          "image": "/images/forms/budclaw-mudflat-form.png"
+          "image": "images/forms/budclaw-mudflat-form.png"
         },
         {
           "form_name": "Beach Form",
@@ -1596,7 +1596,7 @@
           "elements": {
             "Earth": 1
           },
-          "image": "/images/forms/budclaw-beach-form.png"
+          "image": "images/forms/budclaw-beach-form.png"
         },
         {
           "form_name": "Bay Form",
@@ -1607,7 +1607,7 @@
             "Earth": 1,
             "Grass": 1
           },
-          "image": "/images/forms/budclaw-bay-form.png"
+          "image": "images/forms/budclaw-bay-form.png"
         }
       ],
       "weather": [],
@@ -1627,7 +1627,7 @@
     "name": "Shrubclaw",
     "slug": "shrubclaw",
     "is_unnumbered": false,
-    "image": "/images/024.png",
+    "image": "images/shrubclaw.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-handbook.png",
     "tier": "S-Tier",
     "trait": "Stealth",
@@ -1653,7 +1653,7 @@
           "Earth": 3,
           "Grass": 2
         },
-        "image": "/images/forms/shrubclaw-basic-form-base.png"
+        "image": "images/forms/shrubclaw-basic-form-base.png"
       },
       "regional": [
         {
@@ -1664,7 +1664,7 @@
           "elements": {
             "Earth": 3
           },
-          "image": "/images/forms/shrubclaw-mudflat-form.png"
+          "image": "images/forms/shrubclaw-mudflat-form.png"
         },
         {
           "form_name": "Beach Form",
@@ -1675,7 +1675,7 @@
             "Earth": 3,
             "Grass": 2
           },
-          "image": "/images/forms/shrubclaw-beach-form.png"
+          "image": "images/forms/shrubclaw-beach-form.png"
         },
         {
           "form_name": "Bay Form",
@@ -1686,7 +1686,7 @@
             "Earth": 3,
             "Grass": 2
           },
-          "image": "/images/forms/shrubclaw-bay-form.png"
+          "image": "images/forms/shrubclaw-bay-form.png"
         }
       ],
       "weather": [],
@@ -1706,9 +1706,9 @@
     "name": "Geoclaw",
     "slug": "geoclaw",
     "is_unnumbered": false,
-    "image": "/images/025.png",
+    "image": "images/geoclaw.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geoclaw-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Frostbite Sunder",
     "trait_effect": "Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff].",
     "matchups": {
@@ -1725,11 +1725,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Ice 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/geoclaw.png"
+        "elements": {
+          "Ice": 2
+        },
+        "image": "images/geoclaw.png"
       },
       "regional": [],
       "weather": [],
@@ -1746,7 +1748,7 @@
     "name": "Sparki",
     "slug": "sparki",
     "is_unnumbered": false,
-    "image": "/images/026.png",
+    "image": "images/sparki.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-handbook.png",
     "tier": "C-Tier",
     "trait": "Blazing Flames",
@@ -1771,7 +1773,7 @@
         "elements": {
           "Fire": 1
         },
-        "image": "/images/forms/sparki-basic-form-base.png"
+        "image": "images/forms/sparki-basic-form-base.png"
       },
       "regional": [
         {
@@ -1782,7 +1784,7 @@
           "elements": {
             "Fire": 1
           },
-          "image": "/images/forms/sparki-highland-form.png"
+          "image": "images/forms/sparki-highland-form.png"
         },
         {
           "form_name": "Forest Form",
@@ -1792,7 +1794,7 @@
           "elements": {
             "Fire": 1
           },
-          "image": "/images/forms/sparki-forest-form.png"
+          "image": "images/forms/sparki-forest-form.png"
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -1802,7 +1804,7 @@
           "elements": {
             "Fire": 1
           },
-          "image": "/images/forms/sparki-sea-of-flowers-form.png"
+          "image": "images/forms/sparki-sea-of-flowers-form.png"
         }
       ],
       "weather": [],
@@ -1822,7 +1824,7 @@
     "name": "Flamerion",
     "slug": "flamerion",
     "is_unnumbered": false,
-    "image": "/images/027.png",
+    "image": "images/flamerion.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion-handbook.png",
     "tier": "A-Tier",
     "trait": "Blazing Flames",
@@ -1847,7 +1849,7 @@
         "elements": {
           "Fire": 3
         },
-        "image": "/images/forms/flamerion-basic-form-base.png"
+        "image": "images/forms/flamerion-basic-form-base.png"
       },
       "regional": [
         {
@@ -1858,7 +1860,7 @@
           "elements": {
             "Fire": 3
           },
-          "image": "/images/forms/flamerion-highland-form.png"
+          "image": "images/forms/flamerion-highland-form.png"
         },
         {
           "form_name": "Forest Form",
@@ -1868,7 +1870,7 @@
           "elements": {
             "Fire": 3
           },
-          "image": "/images/forms/flamerion-forest-form.png"
+          "image": "images/forms/flamerion-forest-form.png"
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -1878,7 +1880,7 @@
           "elements": {
             "Fire": 3
           },
-          "image": "/images/forms/flamerion-sea-of-flowers-form.png"
+          "image": "images/forms/flamerion-sea-of-flowers-form.png"
         }
       ],
       "weather": [],
@@ -1898,7 +1900,7 @@
     "name": "Flutternym",
     "slug": "flutternym",
     "is_unnumbered": false,
-    "image": "/images/028.png",
+    "image": "images/flutternym.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym-handbook.png",
     "tier": "C-Tier",
     "trait": "**Flutter Heal**",
@@ -1920,7 +1922,7 @@
         "elements": {
           "Wind": 1
         },
-        "image": "/images/forms/flutternym-basic-form-base.png"
+        "image": "images/forms/flutternym-basic-form-base.png"
       },
       "regional": [
         {
@@ -1932,7 +1934,7 @@
             "Wind": 1,
             "Grass": 1
           },
-          "image": "/images/forms/flutternym-sea-of-flowers-form.png"
+          "image": "images/forms/flutternym-sea-of-flowers-form.png"
         },
         {
           "form_name": "Nighttime Form",
@@ -1943,7 +1945,7 @@
             "Wind": 1,
             "Dark": 1
           },
-          "image": "/images/forms/flutternym-nighttime-form.png"
+          "image": "images/forms/flutternym-nighttime-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -1954,7 +1956,7 @@
             "Wind": 1,
             "Earth": 1
           },
-          "image": "/images/forms/flutternym-mountain-woods-form.png"
+          "image": "images/forms/flutternym-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -1974,7 +1976,7 @@
     "name": "Gracewing",
     "slug": "gracewing",
     "is_unnumbered": false,
-    "image": "/images/029.png",
+    "image": "images/gracewing.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing-handbook.png",
     "tier": "A-Tier",
     "trait": "**Flutter Heal**",
@@ -1996,7 +1998,7 @@
         "elements": {
           "Wind": 3
         },
-        "image": "/images/forms/gracewing-basic-form-base.png"
+        "image": "images/forms/gracewing-basic-form-base.png"
       },
       "regional": [
         {
@@ -2008,7 +2010,7 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "/images/forms/gracewing-sea-of-flowers-form.png"
+          "image": "images/forms/gracewing-sea-of-flowers-form.png"
         },
         {
           "form_name": "Nighttime Form",
@@ -2019,7 +2021,7 @@
             "Wind": 3,
             "Dark": 2
           },
-          "image": "/images/forms/gracewing-nighttime-form.png"
+          "image": "images/forms/gracewing-nighttime-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -2030,7 +2032,7 @@
             "Wind": 3,
             "Earth": 2
           },
-          "image": "/images/forms/gracewing-mountain-woods-form.png"
+          "image": "images/forms/gracewing-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -2050,7 +2052,7 @@
     "name": "Somniwing",
     "slug": "somniwing",
     "is_unnumbered": false,
-    "image": "/images/030.png",
+    "image": "images/somniwing.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-somniwing-handbook.png",
     "tier": "S-Tier",
     "trait": "**Energy Full**",
@@ -2073,7 +2075,7 @@
           "Grass": 3,
           "Wind": 2
         },
-        "image": "/images/030.png"
+        "image": "images/somniwing.png"
       },
       "regional": [],
       "weather": [],
@@ -2086,7 +2088,7 @@
           "Grass": 3,
           "Wind": 2
         },
-        "image": "/images/030.png"
+        "image": "images/somniwing.png"
       }
     },
     "all_form_names": [
@@ -2100,7 +2102,7 @@
     "name": "Eko",
     "slug": "eko",
     "is_unnumbered": false,
-    "image": "/images/031.png",
+    "image": "images/eko.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eko-handbook.png",
     "tier": "C-Tier",
     "trait": "Judgment Storm",
@@ -2118,11 +2120,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Wind 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/eko-basic-form.png"
+        "elements": {
+          "Wind": 1
+        },
+        "image": "images/forms/eko-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -2139,9 +2143,9 @@
     "name": "Eklue",
     "slug": "eklue",
     "is_unnumbered": false,
-    "image": "/images/032.png",
+    "image": "images/eklue.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eklue-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Judgment Storm",
     "trait_effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.",
     "matchups": {
@@ -2157,11 +2161,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Wind 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/eklue-basic-form.png"
+        "elements": {
+          "Wind": 2
+        },
+        "image": "images/forms/eklue-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -2178,7 +2184,7 @@
     "name": "Budsquire",
     "slug": "budsquire",
     "is_unnumbered": false,
-    "image": "/images/033.png",
+    "image": "images/budsquire.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-budsquire-handbook.png",
     "tier": "C-Tier",
     "trait": "Sword Dance",
@@ -2204,7 +2210,7 @@
         "elements": {
           "Grass": 1
         },
-        "image": "/images/forms/budsquire-basic-form-base.png"
+        "image": "images/forms/budsquire-basic-form-base.png"
       },
       "regional": [
         {
@@ -2215,7 +2221,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/budsquire-towerwood-form.png"
+          "image": "images/forms/budsquire-towerwood-form.png"
         }
       ],
       "weather": [],
@@ -2233,7 +2239,7 @@
     "name": "Thornblade",
     "slug": "thornblade",
     "is_unnumbered": false,
-    "image": "/images/034.png",
+    "image": "images/thornblade.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade-handbook.png",
     "tier": "S-Tier",
     "trait": "Sword Dance",
@@ -2259,7 +2265,7 @@
         "elements": {
           "Grass": 3
         },
-        "image": "/images/forms/thornblade-basic-form-base.png"
+        "image": "images/forms/thornblade-basic-form-base.png"
       },
       "regional": [
         {
@@ -2270,7 +2276,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/thornblade-towerwood-form.png"
+          "image": "images/forms/thornblade-towerwood-form.png"
         }
       ],
       "weather": [
@@ -2282,7 +2288,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/thornblade-thunderstorm-form.png"
+          "image": "images/forms/thornblade-thunderstorm-form.png"
         }
       ],
       "prismana": {
@@ -2294,7 +2300,7 @@
           "Grass": 4,
           "Water": 3
         },
-        "image": "/images/forms/thornblade-prismana.png"
+        "image": "images/forms/thornblade-prismana.png"
       }
     },
     "all_form_names": [
@@ -2311,7 +2317,7 @@
     "name": "Melloblum",
     "slug": "melloblum",
     "is_unnumbered": false,
-    "image": "/images/035.png",
+    "image": "images/melloblum.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-melloblum-handbook.png",
     "tier": "S-Tier",
     "trait": "Phantom Opening",
@@ -2337,7 +2343,7 @@
         "elements": {
           "Grass": 3
         },
-        "image": "/images/forms/melloblum-basic-form-base.png"
+        "image": "images/forms/melloblum-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -2349,7 +2355,7 @@
         "elements": {
           "Grass": 4
         },
-        "image": "/images/forms/melloblum-prismana.png"
+        "image": "images/forms/melloblum-prismana.png"
       }
     },
     "all_form_names": [
@@ -2364,7 +2370,7 @@
     "name": "Pomegg",
     "slug": "pomegg",
     "is_unnumbered": false,
-    "image": "/images/036.png",
+    "image": "images/pomegg.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg-handbook.png",
     "tier": "C-Tier",
     "trait": "Tuning",
@@ -2390,7 +2396,7 @@
         "elements": {
           "Grass": 1
         },
-        "image": "/images/forms/pomegg-basic-form-base.png"
+        "image": "images/forms/pomegg-basic-form-base.png"
       },
       "regional": [
         {
@@ -2402,7 +2408,7 @@
             "Grass": 1,
             "Ice": 1
           },
-          "image": "/images/forms/pomegg-snowfield-form.png"
+          "image": "images/forms/pomegg-snowfield-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -2412,7 +2418,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/pomegg-highland-form.png"
+          "image": "images/forms/pomegg-highland-form.png"
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -2422,7 +2428,7 @@
           "elements": {
             "Grass": 1
           },
-          "image": "/images/forms/pomegg-sea-of-flowers-form.png"
+          "image": "images/forms/pomegg-sea-of-flowers-form.png"
         }
       ],
       "weather": [],
@@ -2442,7 +2448,7 @@
     "name": "Pomawk",
     "slug": "pomawk",
     "is_unnumbered": false,
-    "image": "/images/037.png",
+    "image": "images/pomawk.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk-handbook.png",
     "tier": "A-Tier",
     "trait": "Tuning",
@@ -2468,7 +2474,7 @@
         "elements": {
           "Grass": 3
         },
-        "image": "/images/forms/pomawk-basic-form-base.png"
+        "image": "images/forms/pomawk-basic-form-base.png"
       },
       "regional": [
         {
@@ -2480,7 +2486,7 @@
             "Grass": 3,
             "Ice": 2
           },
-          "image": "/images/forms/pomawk-snowfield-form.png"
+          "image": "images/forms/pomawk-snowfield-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -2490,7 +2496,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/pomawk-highland-form.png"
+          "image": "images/forms/pomawk-highland-form.png"
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -2500,7 +2506,7 @@
           "elements": {
             "Grass": 3
           },
-          "image": "/images/forms/pomawk-sea-of-flowers-form.png"
+          "image": "images/forms/pomawk-sea-of-flowers-form.png"
         }
       ],
       "weather": [],
@@ -2520,7 +2526,7 @@
     "name": "Dewy",
     "slug": "dewy",
     "is_unnumbered": false,
-    "image": "/images/038.png",
+    "image": "images/dewy.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dewy-handbook.png",
     "tier": "C-Tier",
     "trait": "Dangerous Fragrance",
@@ -2537,11 +2543,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Dark 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/dewy-basic-form.png"
+        "elements": {
+          "Dark": 1
+        },
+        "image": "images/forms/dewy-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -2558,9 +2566,9 @@
     "name": "Fragrancier",
     "slug": "fragrancier",
     "is_unnumbered": false,
-    "image": "/images/039.png",
+    "image": "images/fragrancier.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fragrancier-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Dangerous Fragrance",
     "trait_effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs.",
     "matchups": {
@@ -2575,11 +2583,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Dark 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/fragrancier-basic-form.png"
+        "elements": {
+          "Dark": 2
+        },
+        "image": "images/forms/fragrancier-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -2596,7 +2606,7 @@
     "name": "Wisptis",
     "slug": "wisptis",
     "is_unnumbered": false,
-    "image": "/images/040.png",
+    "image": "images/wisptis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-wisptis-handbook.png",
     "tier": "C-Tier",
     "trait": "Battle Fervor",
@@ -2619,7 +2629,7 @@
         "elements": {
           "Dark": 1
         },
-        "image": "/images/forms/wisptis-basic-form-base.png"
+        "image": "images/forms/wisptis-basic-form-base.png"
       },
       "regional": [
         {
@@ -2631,7 +2641,7 @@
             "Dark": 1,
             "Grass": 1
           },
-          "image": "/images/forms/wisptis-forest-form.png"
+          "image": "images/forms/wisptis-forest-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -2642,7 +2652,7 @@
             "Dark": 1,
             "Fire": 1
           },
-          "image": "/images/forms/wisptis-highland-form.png"
+          "image": "images/forms/wisptis-highland-form.png"
         }
       ],
       "weather": [],
@@ -2661,7 +2671,7 @@
     "name": "Ignitis",
     "slug": "ignitis",
     "is_unnumbered": false,
-    "image": "/images/041.png",
+    "image": "images/ignitis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis-handbook.png",
     "tier": "S-Tier",
     "trait": "Battle Fervor",
@@ -2684,7 +2694,7 @@
         "elements": {
           "Dark": 3
         },
-        "image": "/images/forms/ignitis-basic-form-base.png"
+        "image": "images/forms/ignitis-basic-form-base.png"
       },
       "regional": [
         {
@@ -2696,7 +2706,7 @@
             "Dark": 3,
             "Grass": 2
           },
-          "image": "/images/forms/ignitis-forest-form.png"
+          "image": "images/forms/ignitis-forest-form.png"
         },
         {
           "form_name": "Highland Form",
@@ -2707,7 +2717,7 @@
             "Dark": 3,
             "Fire": 2
           },
-          "image": "/images/forms/ignitis-highland-form.png"
+          "image": "images/forms/ignitis-highland-form.png"
         }
       ],
       "weather": [],
@@ -2720,7 +2730,7 @@
           "Dark": 4,
           "Fire": 3
         },
-        "image": "/images/forms/ignitis-prismana.png"
+        "image": "images/forms/ignitis-prismana.png"
       }
     },
     "all_form_names": [
@@ -2737,7 +2747,7 @@
     "name": "Bonesky",
     "slug": "bonesky",
     "is_unnumbered": false,
-    "image": "/images/042.png",
+    "image": "images/bonesky.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bonesky-handbook.png",
     "tier": "C-Tier",
     "trait": "Biting Wind",
@@ -2762,7 +2772,7 @@
         "elements": {
           "Ice": 1
         },
-        "image": "/images/forms/bonesky-basic-form-base.png"
+        "image": "images/forms/bonesky-basic-form-base.png"
       },
       "regional": [
         {
@@ -2774,7 +2784,7 @@
             "Ice": 1,
             "Dark": 1
           },
-          "image": "/images/forms/bonesky-nighttime-form.png"
+          "image": "images/forms/bonesky-nighttime-form.png"
         }
       ],
       "weather": [],
@@ -2792,7 +2802,7 @@
     "name": "Fenrier",
     "slug": "fenrier",
     "is_unnumbered": false,
-    "image": "/images/043.png",
+    "image": "images/fenrier.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fenrier-handbook.png",
     "tier": "B-Tier",
     "trait": "Biting Wind",
@@ -2817,7 +2827,7 @@
         "elements": {
           "Ice": 2
         },
-        "image": "/images/forms/fenrier-basic-form-base.png"
+        "image": "images/forms/fenrier-basic-form-base.png"
       },
       "regional": [
         {
@@ -2829,7 +2839,7 @@
             "Ice": 2,
             "Dark": 1
           },
-          "image": "/images/forms/fenrier-nighttime-form.png"
+          "image": "images/forms/fenrier-nighttime-form.png"
         }
       ],
       "weather": [],
@@ -2847,7 +2857,7 @@
     "name": "Glynsera",
     "slug": "glynsera",
     "is_unnumbered": false,
-    "image": "/images/044.png",
+    "image": "images/glynsera.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-glynsera-handbook.png",
     "tier": "S-Tier",
     "trait": "Biting Wind",
@@ -2872,7 +2882,7 @@
         "elements": {
           "Ice": 3
         },
-        "image": "/images/forms/glynsera-basic-form-base.png"
+        "image": "images/forms/glynsera-basic-form-base.png"
       },
       "regional": [
         {
@@ -2884,7 +2894,7 @@
             "Ice": 3,
             "Dark": 2
           },
-          "image": "/images/forms/glynsera-nighttime-form.png"
+          "image": "images/forms/glynsera-nighttime-form.png"
         }
       ],
       "weather": [],
@@ -2896,7 +2906,7 @@
         "elements": {
           "Ice": 4
         },
-        "image": "/images/forms/glynsera-prismana.png"
+        "image": "images/forms/glynsera-prismana.png"
       }
     },
     "all_form_names": [
@@ -2912,7 +2922,7 @@
     "name": "Bolty",
     "slug": "bolty",
     "is_unnumbered": false,
-    "image": "/images/045.png",
+    "image": "images/bolty.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bolty-handbook.png",
     "tier": "C-Tier",
     "trait": "Power Sustain",
@@ -2937,7 +2947,7 @@
         "elements": {
           "Lightning": 1
         },
-        "image": "/images/forms/bolty-basic-form-base.png"
+        "image": "images/forms/bolty-basic-form-base.png"
       },
       "regional": [
         {
@@ -2948,7 +2958,7 @@
           "elements": {
             "Lightning": 1
           },
-          "image": "/images/forms/bolty-mountain-woods-form.png"
+          "image": "images/forms/bolty-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -2966,7 +2976,7 @@
     "name": "Blazen",
     "slug": "blazen",
     "is_unnumbered": false,
-    "image": "/images/046.png",
+    "image": "images/blazen.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-blazen-handbook.png",
     "tier": "S-Tier",
     "trait": "Power Sustain",
@@ -2991,7 +3001,7 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "/images/forms/blazen-basic-form-base.png"
+        "image": "images/forms/blazen-basic-form-base.png"
       },
       "regional": [
         {
@@ -3002,7 +3012,7 @@
           "elements": {
             "Lightning": 3
           },
-          "image": "/images/forms/blazen-mountain-woods-form.png"
+          "image": "images/forms/blazen-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -3014,7 +3024,7 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "/images/forms/blazen-prismana.png"
+        "image": "images/forms/blazen-prismana.png"
       }
     },
     "all_form_names": [
@@ -3030,7 +3040,7 @@
     "name": "Squarrel",
     "slug": "squarrel",
     "is_unnumbered": false,
-    "image": "/images/047.png",
+    "image": "images/squarrel.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-squarrel-handbook.png",
     "tier": "C-Tier",
     "trait": "Raging Fire",
@@ -3049,11 +3059,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Fire 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/squarrel-basic-form.png"
+        "elements": {
+          "Fire": 1
+        },
+        "image": "images/forms/squarrel-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -3070,9 +3082,9 @@
     "name": "Squashel",
     "slug": "squashel",
     "is_unnumbered": false,
-    "image": "/images/048.png",
+    "image": "images/squashel.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-squashel-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Raging Fire",
     "trait_effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.",
     "matchups": {
@@ -3089,11 +3101,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Fire 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/squashel-basic-form.png"
+        "elements": {
+          "Fire": 2
+        },
+        "image": "images/forms/squashel-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -3110,7 +3124,7 @@
     "name": "Susuta",
     "slug": "susuta",
     "is_unnumbered": false,
-    "image": "/images/049.png",
+    "image": "images/susuta.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-susuta-handbook.png",
     "tier": "C-Tier",
     "trait": "Appeal",
@@ -3135,7 +3149,7 @@
         "elements": {
           "Water": 1
         },
-        "image": "/images/forms/susuta-basic-form-base.png"
+        "image": "images/forms/susuta-basic-form-base.png"
       },
       "regional": [
         {
@@ -3146,7 +3160,7 @@
           "elements": {
             "Water": 1
           },
-          "image": "/images/forms/susuta-nighttime-form.png"
+          "image": "images/forms/susuta-nighttime-form.png"
         },
         {
           "form_name": "Basic Form (variant record)",
@@ -3156,7 +3170,7 @@
           "elements": {
             "Water": 1
           },
-          "image": "/images/forms/susuta-basic-form-variant-record.png"
+          "image": "images/forms/susuta-basic-form-variant-record.png"
         }
       ],
       "weather": [],
@@ -3175,7 +3189,7 @@
     "name": "Popota",
     "slug": "popota",
     "is_unnumbered": false,
-    "image": "/images/050.png",
+    "image": "images/popota.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-popota-handbook.png",
     "tier": "B-Tier",
     "trait": "Appeal",
@@ -3200,7 +3214,7 @@
         "elements": {
           "Water": 2
         },
-        "image": "/images/forms/popota-basic-form-base.png"
+        "image": "images/forms/popota-basic-form-base.png"
       },
       "regional": [
         {
@@ -3211,7 +3225,7 @@
           "elements": {
             "Water": 2
           },
-          "image": "/images/forms/popota-nighttime-form.png"
+          "image": "images/forms/popota-nighttime-form.png"
         }
       ],
       "weather": [],
@@ -3229,7 +3243,7 @@
     "name": "Piopiota",
     "slug": "piopiota",
     "is_unnumbered": false,
-    "image": "/images/051.png",
+    "image": "images/piopiota.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-piopiota-handbook.png",
     "tier": "A-Tier",
     "trait": "Radiant Charm",
@@ -3254,7 +3268,7 @@
         "elements": {
           "Water": 3
         },
-        "image": "/images/forms/piopiota-basic-form-base.png"
+        "image": "images/forms/piopiota-basic-form-base.png"
       },
       "regional": [
         {
@@ -3266,7 +3280,7 @@
             "Water": 3,
             "Dark": 2
           },
-          "image": "/images/forms/piopiota-nighttime-form.png"
+          "image": "images/forms/piopiota-nighttime-form.png"
         }
       ],
       "weather": [],
@@ -3284,7 +3298,7 @@
     "name": "Panpanta",
     "slug": "panpanta",
     "is_unnumbered": false,
-    "image": "/images/052.png",
+    "image": "images/panpanta.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-panpanta-handbook.png",
     "tier": "S-Tier",
     "trait": "Appeal",
@@ -3309,7 +3323,7 @@
         "elements": {
           "Water": 3
         },
-        "image": "/images/forms/panpanta-basic-form-base.png"
+        "image": "images/forms/panpanta-basic-form-base.png"
       },
       "regional": [
         {
@@ -3320,7 +3334,7 @@
           "elements": {
             "Water": 3
           },
-          "image": "/images/forms/panpanta-nighttime-form.png"
+          "image": "images/forms/panpanta-nighttime-form.png"
         }
       ],
       "weather": [],
@@ -3332,7 +3346,7 @@
         "elements": {
           "Water": 4
         },
-        "image": "/images/forms/panpanta-prismana.png"
+        "image": "images/forms/panpanta-prismana.png"
       }
     },
     "all_form_names": [
@@ -3348,7 +3362,7 @@
     "name": "Shelly",
     "slug": "shelly",
     "is_unnumbered": false,
-    "image": "/images/053.png",
+    "image": "images/shelly.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shelly-handbook.png",
     "tier": "C-Tier",
     "trait": "Tidal Heart",
@@ -3373,7 +3387,7 @@
         "elements": {
           "Water": 1
         },
-        "image": "/images/forms/shelly-basic-form-base.png"
+        "image": "images/forms/shelly-basic-form-base.png"
       },
       "regional": [
         {
@@ -3384,7 +3398,7 @@
           "elements": {
             "Water": 1
           },
-          "image": "/images/shelly.png"
+          "image": "images/shelly.png"
         }
       ],
       "weather": [],
@@ -3402,9 +3416,9 @@
     "name": "Sheldon",
     "slug": "sheldon",
     "is_unnumbered": false,
-    "image": "/images/054.png",
+    "image": "images/sheldon.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sheldon-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Tidal Heart",
     "trait_effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s.",
     "matchups": {
@@ -3421,11 +3435,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Water 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/sheldon-basic-form.png"
+        "elements": {
+          "Water": 2
+        },
+        "image": "images/forms/sheldon-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -3442,7 +3458,7 @@
     "name": "Sherro",
     "slug": "sherro",
     "is_unnumbered": false,
-    "image": "/images/055.png",
+    "image": "images/sherro.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sherro-handbook.png",
     "tier": "S-Tier",
     "trait": "Tidal Heart",
@@ -3467,7 +3483,7 @@
         "elements": {
           "Water": 3
         },
-        "image": "/images/forms/sherro-basic-form-base.png"
+        "image": "images/forms/sherro-basic-form-base.png"
       },
       "regional": [],
       "weather": [
@@ -3480,7 +3496,7 @@
             "Water": 3,
             "Lightning": 2
           },
-          "image": "/images/forms/sherro-thunderstorm-form.png"
+          "image": "images/forms/sherro-thunderstorm-form.png"
         }
       ],
       "prismana": {
@@ -3491,7 +3507,7 @@
         "elements": {
           "Water": 4
         },
-        "image": "/images/forms/sherro-prismana.png"
+        "image": "images/forms/sherro-prismana.png"
       }
     },
     "all_form_names": [
@@ -3507,7 +3523,7 @@
     "name": "Baleetle",
     "slug": "baleetle",
     "is_unnumbered": false,
-    "image": "/images/056.png",
+    "image": "images/baleetle.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-baleetle-handbook.png",
     "tier": "C-Tier",
     "trait": "Overloaded Engine",
@@ -3533,7 +3549,7 @@
         "elements": {
           "Earth": 1
         },
-        "image": "/images/forms/baleetle-basic-form-base.png"
+        "image": "images/forms/baleetle-basic-form-base.png"
       },
       "regional": [
         {
@@ -3545,7 +3561,7 @@
             "Earth": 1,
             "Ice": 1
           },
-          "image": "/images/forms/baleetle-snowfield-form.png"
+          "image": "images/forms/baleetle-snowfield-form.png"
         }
       ],
       "weather": [],
@@ -3563,7 +3579,7 @@
     "name": "Waleetle",
     "slug": "waleetle",
     "is_unnumbered": false,
-    "image": "/images/057.png",
+    "image": "images/waleetle.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-waleetle-handbook.png",
     "tier": "S-Tier",
     "trait": "Overloaded Engine",
@@ -3589,7 +3605,7 @@
         "elements": {
           "Earth": 3
         },
-        "image": "/images/forms/waleetle-basic-form-base.png"
+        "image": "images/forms/waleetle-basic-form-base.png"
       },
       "regional": [
         {
@@ -3601,7 +3617,7 @@
             "Earth": 3,
             "Ice": 2
           },
-          "image": "/images/forms/waleetle-snowfield-form.png"
+          "image": "images/forms/waleetle-snowfield-form.png"
         }
       ],
       "weather": [],
@@ -3613,7 +3629,7 @@
         "elements": {
           "Earth": 4
         },
-        "image": "/images/forms/waleetle-prismana.png"
+        "image": "images/forms/waleetle-prismana.png"
       }
     },
     "all_form_names": [
@@ -3629,7 +3645,7 @@
     "name": "Bouldus",
     "slug": "bouldus",
     "is_unnumbered": false,
-    "image": "/images/058.png",
+    "image": "images/bouldus.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bouldus-handbook.png",
     "tier": "A-Tier",
     "trait": "Rock Empowerment",
@@ -3655,7 +3671,7 @@
         "elements": {
           "Earth": 3
         },
-        "image": "/images/forms/bouldus-basic-form-base.png"
+        "image": "images/forms/bouldus-basic-form-base.png"
       },
       "regional": [
         {
@@ -3667,7 +3683,7 @@
             "Earth": 3,
             "Ice": 2
           },
-          "image": "/images/forms/bouldus-snowfield-form.png"
+          "image": "images/forms/bouldus-snowfield-form.png"
         }
       ],
       "weather": [],
@@ -3685,7 +3701,7 @@
     "name": "Fentuft",
     "slug": "fentuft",
     "is_unnumbered": false,
-    "image": "/images/059.png",
+    "image": "images/fentuft.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fentuft-handbook.png",
     "tier": "C-Tier",
     "trait": "Thunderbond",
@@ -3704,11 +3720,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Lightning 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/fentuft-basic-form.png"
+        "elements": {
+          "Lightning": 1
+        },
+        "image": "images/forms/fentuft-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -3725,7 +3743,7 @@
     "name": "Fenmane",
     "slug": "fenmane",
     "is_unnumbered": false,
-    "image": "/images/060.png",
+    "image": "images/fenmane.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fenmane-handbook.png",
     "tier": "S-Tier",
     "trait": "Thunderbond",
@@ -3750,7 +3768,7 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "/images/forms/fenmane-basic-form-base.png"
+        "image": "images/forms/fenmane-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -3762,7 +3780,7 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "/images/forms/fenmane-prismana.png"
+        "image": "images/forms/fenmane-prismana.png"
       }
     },
     "all_form_names": [
@@ -3777,7 +3795,7 @@
     "name": "Helmut",
     "slug": "helmut",
     "is_unnumbered": false,
-    "image": "/images/061.png",
+    "image": "images/helmut.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helmut-handbook.png",
     "tier": "C-Tier",
     "trait": "Guardbreak Resonance",
@@ -3800,7 +3818,7 @@
         "elements": {
           "Dark": 1
         },
-        "image": "/images/forms/helmut-basic-form-base.png"
+        "image": "images/forms/helmut-basic-form-base.png"
       },
       "regional": [
         {
@@ -3812,7 +3830,7 @@
             "Dark": 1,
             "Ice": 1
           },
-          "image": "/images/forms/helmut-snowfield-form.png"
+          "image": "images/forms/helmut-snowfield-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -3822,7 +3840,7 @@
           "elements": {
             "Dark": 1
           },
-          "image": "/images/forms/helmut-mountain-woods-form.png"
+          "image": "images/forms/helmut-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -3841,7 +3859,7 @@
     "name": "Pawney",
     "slug": "pawney",
     "is_unnumbered": false,
-    "image": "/images/062.png",
+    "image": "images/pawney.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pawney-handbook.png",
     "tier": "S-Tier",
     "trait": "Pursuit",
@@ -3864,7 +3882,7 @@
         "elements": {
           "Dark": 3
         },
-        "image": "/images/forms/pawney-basic-form-base.png"
+        "image": "images/forms/pawney-basic-form-base.png"
       },
       "regional": [
         {
@@ -3876,7 +3894,7 @@
             "Dark": 3,
             "Ice": 2
           },
-          "image": "/images/forms/pawney-snowfield-form.png"
+          "image": "images/forms/pawney-snowfield-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -3886,7 +3904,7 @@
           "elements": {
             "Dark": 3
           },
-          "image": "/images/forms/pawney-mountain-woods-form.png"
+          "image": "images/forms/pawney-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -3898,7 +3916,7 @@
         "elements": {
           "Dark": 4
         },
-        "image": "/images/forms/pawney-prismana.png"
+        "image": "images/forms/pawney-prismana.png"
       }
     },
     "all_form_names": [
@@ -3915,7 +3933,7 @@
     "name": "Rookey",
     "slug": "rookey",
     "is_unnumbered": false,
-    "image": "/images/063.png",
+    "image": "images/rookey.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-handbook.png",
     "tier": "A-Tier",
     "trait": "Guardbreak Resonance",
@@ -3938,7 +3956,7 @@
         "elements": {
           "Dark": 3
         },
-        "image": "/images/forms/rookey-basic-form-base.png"
+        "image": "images/forms/rookey-basic-form-base.png"
       },
       "regional": [
         {
@@ -3950,7 +3968,7 @@
             "Dark": 3,
             "Ice": 2
           },
-          "image": "/images/forms/rookey-snowfield-form.png"
+          "image": "images/forms/rookey-snowfield-form.png"
         },
         {
           "form_name": "Mountain Woods Form",
@@ -3960,7 +3978,7 @@
           "elements": {
             "Dark": 3
           },
-          "image": "/images/forms/rookey-mountain-woods-form.png"
+          "image": "images/forms/rookey-mountain-woods-form.png"
         }
       ],
       "weather": [],
@@ -3979,7 +3997,7 @@
     "name": "Jawling",
     "slug": "jawling",
     "is_unnumbered": false,
-    "image": "/images/064.png",
+    "image": "images/jawling.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-jawling-handbook.png",
     "tier": "C-Tier",
     "trait": "Counter Strike",
@@ -4003,7 +4021,7 @@
         "elements": {
           "Wind": 1
         },
-        "image": "/images/forms/jawling-basic-form-base.png"
+        "image": "images/forms/jawling-basic-form-base.png"
       },
       "regional": [
         {
@@ -4014,7 +4032,7 @@
           "elements": {
             "Wind": 1
           },
-          "image": "/images/forms/jawling-mountain-form.png"
+          "image": "images/forms/jawling-mountain-form.png"
         }
       ],
       "weather": [],
@@ -4032,7 +4050,7 @@
     "name": "Helmwhelp",
     "slug": "helmwhelp",
     "is_unnumbered": false,
-    "image": "/images/065.png",
+    "image": "images/helmwhelp.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helmwhelp-handbook.png",
     "tier": "B-Tier",
     "trait": "Counter Strike",
@@ -4056,7 +4074,7 @@
         "elements": {
           "Wind": 2
         },
-        "image": "/images/forms/helmwhelp-basic-form-base.png"
+        "image": "images/forms/helmwhelp-basic-form-base.png"
       },
       "regional": [
         {
@@ -4067,7 +4085,7 @@
           "elements": {
             "Wind": 2
           },
-          "image": "/images/forms/helmwhelp-mountain-form.png"
+          "image": "images/forms/helmwhelp-mountain-form.png"
         }
       ],
       "weather": [],
@@ -4085,7 +4103,7 @@
     "name": "Helgon",
     "slug": "helgon",
     "is_unnumbered": false,
-    "image": "/images/066.png",
+    "image": "images/helgon.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helgon-handbook.png",
     "tier": "A-Tier",
     "trait": "Counter Strike",
@@ -4109,7 +4127,7 @@
         "elements": {
           "Wind": 3
         },
-        "image": "/images/forms/helgon-basic-form-base.png"
+        "image": "images/forms/helgon-basic-form-base.png"
       },
       "regional": [
         {
@@ -4120,7 +4138,7 @@
           "elements": {
             "Wind": 3
           },
-          "image": "/images/forms/helgon-mountain-form.png"
+          "image": "images/forms/helgon-mountain-form.png"
         }
       ],
       "weather": [],
@@ -4138,7 +4156,7 @@
     "name": "Infergon",
     "slug": "infergon",
     "is_unnumbered": false,
-    "image": "/images/067.png",
+    "image": "images/infergon.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-infergon-handbook.png",
     "tier": "S-Tier",
     "trait": "Power of Fire",
@@ -4163,7 +4181,7 @@
         "elements": {
           "Fire": 3
         },
-        "image": "/images/forms/infergon-basic-form-base.png"
+        "image": "images/forms/infergon-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -4176,7 +4194,7 @@
           "Fire": 4,
           "Wind": 3
         },
-        "image": "/images/forms/infergon-prismana.png"
+        "image": "images/forms/infergon-prismana.png"
       }
     },
     "all_form_names": [
@@ -4191,7 +4209,7 @@
     "name": "Cubbo",
     "slug": "cubbo",
     "is_unnumbered": false,
-    "image": "/images/068.png",
+    "image": "images/cubbo.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cubbo-handbook.png",
     "tier": "C-Tier",
     "trait": "Raging Rampage",
@@ -4211,11 +4229,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Earth 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/cubbo-basic-form.png"
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/cubbo-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4232,7 +4252,7 @@
     "name": "Grizbo",
     "slug": "grizbo",
     "is_unnumbered": false,
-    "image": "/images/069.png",
+    "image": "images/grizbo.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-grizbo-handbook.png",
     "tier": "S-Tier",
     "trait": "Raging Rampage",
@@ -4258,7 +4278,7 @@
         "elements": {
           "Earth": 3
         },
-        "image": "/images/forms/grizbo-basic-form-base.png"
+        "image": "images/forms/grizbo-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -4270,7 +4290,7 @@
         "elements": {
           "Earth": 4
         },
-        "image": "/images/forms/grizbo-prismana.png"
+        "image": "images/forms/grizbo-prismana.png"
       }
     },
     "all_form_names": [
@@ -4285,7 +4305,7 @@
     "name": "Pebbling",
     "slug": "pebbling",
     "is_unnumbered": false,
-    "image": "/images/070.png",
+    "image": "images/pebbling.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pebbling-handbook.png",
     "tier": "C-Tier",
     "trait": "Earth Affinity",
@@ -4305,11 +4325,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Earth 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/pebbling-basic-form.png"
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/pebbling-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4326,9 +4348,9 @@
     "name": "Lavazar",
     "slug": "lavazar",
     "is_unnumbered": false,
-    "image": "/images/071.png",
+    "image": "images/lavazar.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lavazar-handbook.png",
-    "tier": "C-Tier",
+    "tier": "A-Tier",
     "trait": "Pyro Charge",
     "trait_effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.",
     "matchups": {
@@ -4344,11 +4366,14 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Fire 2 / Earth 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/lavazar-basic-form.png"
+        "elements": {
+          "Fire": 2,
+          "Earth": 2
+        },
+        "image": "images/forms/lavazar-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4365,7 +4390,7 @@
     "name": "Magmarex",
     "slug": "magmarex",
     "is_unnumbered": false,
-    "image": "/images/072.png",
+    "image": "images/magmarex.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-magmarex-handbook.png",
     "tier": "S-Tier",
     "trait": "Pyro Charge",
@@ -4390,7 +4415,7 @@
           "Fire": 3,
           "Earth": 2
         },
-        "image": "/images/forms/magmarex-basic-form-base.png"
+        "image": "images/forms/magmarex-basic-form-base.png"
       },
       "regional": [
         {
@@ -4402,7 +4427,7 @@
             "Fire": 3,
             "Earth": 2
           },
-          "image": "/images/forms/magmarex-basic-form-variant-record.png"
+          "image": "images/forms/magmarex-basic-form-variant-record.png"
         }
       ],
       "weather": [],
@@ -4415,7 +4440,7 @@
           "Fire": 4,
           "Dark": 3
         },
-        "image": "/images/forms/magmarex-prismana.png"
+        "image": "images/forms/magmarex-prismana.png"
       }
     },
     "all_form_names": [
@@ -4431,9 +4456,9 @@
     "name": "Geodeback",
     "slug": "geodeback",
     "is_unnumbered": false,
-    "image": "/images/073.png",
+    "image": "images/geodeback.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geodeback-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Earth Affinity",
     "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
     "matchups": {
@@ -4451,11 +4476,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Earth 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/geodeback.png"
+        "elements": {
+          "Earth": 2
+        },
+        "image": "images/geodeback.png"
       },
       "regional": [],
       "weather": [],
@@ -4472,9 +4499,9 @@
     "name": "Minespine",
     "slug": "minespine",
     "is_unnumbered": false,
-    "image": "/images/074.png",
+    "image": "images/minespine.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-minespine-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Earth Affinity",
     "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
     "matchups": {
@@ -4492,11 +4519,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Earth 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/minespine.png"
+        "elements": {
+          "Earth": 2
+        },
+        "image": "images/minespine.png"
       },
       "regional": [],
       "weather": [],
@@ -4513,7 +4542,7 @@
     "name": "Cozite",
     "slug": "cozite",
     "is_unnumbered": false,
-    "image": "/images/075.png",
+    "image": "images/cozite.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cozite-handbook.png",
     "tier": "C-Tier",
     "trait": "Potent Erosion",
@@ -4533,11 +4562,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Earth 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/cozite-basic-form.png"
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/cozite-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4554,9 +4585,9 @@
     "name": "Bailite",
     "slug": "bailite",
     "is_unnumbered": false,
-    "image": "/images/076.png",
+    "image": "images/bailite.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bailite-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Potent Erosion",
     "trait_effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.",
     "matchups": {
@@ -4574,11 +4605,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Earth 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/bailite-basic-form.png"
+        "elements": {
+          "Earth": 2
+        },
+        "image": "images/forms/bailite-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4595,7 +4628,7 @@
     "name": "Bulbly",
     "slug": "bulbly",
     "is_unnumbered": false,
-    "image": "/images/077.png",
+    "image": "images/bulbly.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bulbly-handbook.png",
     "tier": "C-Tier",
     "trait": "Arc Surge",
@@ -4614,11 +4647,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Lightning 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/bulbly-basic-form.png"
+        "elements": {
+          "Lightning": 1
+        },
+        "image": "images/forms/bulbly-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4635,9 +4670,9 @@
     "name": "Veilfloat",
     "slug": "veilfloat",
     "is_unnumbered": false,
-    "image": "/images/078.png",
+    "image": "images/veilfloat.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-veilfloat-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Arc Surge",
     "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
     "matchups": {
@@ -4654,11 +4689,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Lightning 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/veilfloat-basic-form.png"
+        "elements": {
+          "Lightning": 2
+        },
+        "image": "images/forms/veilfloat-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4675,7 +4712,7 @@
     "name": "Luminelle",
     "slug": "luminelle",
     "is_unnumbered": false,
-    "image": "/images/079.png",
+    "image": "images/luminelle.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-luminelle-handbook.png",
     "tier": "S-Tier",
     "trait": "Arc Surge",
@@ -4700,7 +4737,7 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "/images/forms/luminelle-basic-form-base.png"
+        "image": "images/forms/luminelle-basic-form-base.png"
       },
       "regional": [],
       "weather": [
@@ -4713,7 +4750,7 @@
             "Lightning": 3,
             "Water": 2
           },
-          "image": "/images/forms/luminelle-rainstorm-form.png"
+          "image": "images/forms/luminelle-rainstorm-form.png"
         }
       ],
       "prismana": {
@@ -4724,7 +4761,7 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "/images/forms/luminelle-prismana.png"
+        "image": "images/forms/luminelle-prismana.png"
       }
     },
     "all_form_names": [
@@ -4740,7 +4777,7 @@
     "name": "Fahloo",
     "slug": "fahloo",
     "is_unnumbered": false,
-    "image": "/images/080.png",
+    "image": "images/fahloo.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fahloo-handbook.png",
     "tier": "C-Tier",
     "trait": "Bubble",
@@ -4759,11 +4796,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Water 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/fahloo-basic-form.png"
+        "elements": {
+          "Water": 1
+        },
+        "image": "images/forms/fahloo-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4780,9 +4819,9 @@
     "name": "Erlath",
     "slug": "erlath",
     "is_unnumbered": false,
-    "image": "/images/081.png",
+    "image": "images/erlath.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-erlath-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Bubble",
     "trait_effect": "Every 12s, enters Bathing. The next skill cast creates a puddle.",
     "matchups": {
@@ -4799,11 +4838,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Water 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/forms/erlath-basic-form.png"
+        "elements": {
+          "Water": 2
+        },
+        "image": "images/forms/erlath-basic-form.png"
       },
       "regional": [],
       "weather": [],
@@ -4820,9 +4861,9 @@
     "name": "Besauce",
     "slug": "besauce",
     "is_unnumbered": false,
-    "image": "/images/082.png",
+    "image": "images/besauce.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-besauce-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Power Surge",
     "trait_effect": "When casting a skill with less than 20 EP, restores X EP.",
     "matchups": {
@@ -4839,11 +4880,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Standard",
+        "element_display": "Lightning 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
-        "elements": {},
-        "image": "/images/besauce.png"
+        "elements": {
+          "Lightning": 2
+        },
+        "image": "images/besauce.png"
       },
       "regional": [],
       "weather": [],
@@ -4860,7 +4903,7 @@
     "name": "Dazmand",
     "slug": "dazmand",
     "is_unnumbered": true,
-    "image": "/images/dazmand.png",
+    "image": "images/dazmand.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dazmand-handbook.png",
     "tier": "A-Tier",
     "trait": "Spotlight Moment",
@@ -4885,7 +4928,7 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "/images/dazmand.png"
+        "image": "images/dazmand.png"
       },
       "regional": [],
       "weather": [],
@@ -4902,7 +4945,7 @@
     "name": "Fulmintis",
     "slug": "fulmintis",
     "is_unnumbered": true,
-    "image": "/images/fulmintis.png",
+    "image": "images/fulmintis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fulmintis-handbook.png",
     "tier": "S-Tier",
     "trait": "Electro Stash",
@@ -4927,7 +4970,7 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "/images/forms/fulmintis-basic-form-base.png"
+        "image": "images/forms/fulmintis-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -4939,7 +4982,7 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "/images/forms/fulmintis-prismana.png"
+        "image": "images/forms/fulmintis-prismana.png"
       }
     },
     "all_form_names": [
@@ -4954,7 +4997,7 @@
     "name": "Fennelun",
     "slug": "fennelun",
     "is_unnumbered": true,
-    "image": "/images/fennelun.png",
+    "image": "images/fennelun.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fennelun-handbook.png",
     "tier": "B-Tier",
     "trait": "**Lunar Power**",
@@ -4976,7 +5019,7 @@
         "elements": {
           "Light": 2
         },
-        "image": "/images/fennelun.png"
+        "image": "images/fennelun.png"
       },
       "regional": [],
       "weather": [],
@@ -4993,7 +5036,7 @@
     "name": "Lunara",
     "slug": "lunara",
     "is_unnumbered": true,
-    "image": "/images/lunara.png",
+    "image": "images/lunara.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lunara-handbook.png",
     "tier": "A-Tier",
     "trait": "**Lunar Power**",
@@ -5015,7 +5058,7 @@
         "elements": {
           "Light": 3
         },
-        "image": "/images/lunara.png"
+        "image": "images/lunara.png"
       },
       "regional": [],
       "weather": [],
@@ -5032,7 +5075,7 @@
     "name": "Soleon",
     "slug": "soleon",
     "is_unnumbered": true,
-    "image": "/images/soleon.png",
+    "image": "images/soleon.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-soleon-handbook.png",
     "tier": "A-Tier",
     "trait": "**Solar Grace**",
@@ -5054,7 +5097,7 @@
         "elements": {
           "Light": 3
         },
-        "image": "/images/soleon.png"
+        "image": "images/soleon.png"
       },
       "regional": [],
       "weather": [],
@@ -5071,7 +5114,7 @@
     "name": "Helion",
     "slug": "helion",
     "is_unnumbered": true,
-    "image": "/images/helion.png",
+    "image": "images/helion.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helion-handbook.png",
     "tier": "B-Tier",
     "trait": "**Solar Grace**",
@@ -5093,7 +5136,7 @@
         "elements": {
           "Light": 2
         },
-        "image": "/images/helion.png"
+        "image": "images/helion.png"
       },
       "regional": [],
       "weather": [],
@@ -5110,11 +5153,11 @@
     "name": "Morphling",
     "slug": "morphling",
     "is_unnumbered": true,
-    "image": "/images/morphling.png",
+    "image": "images/morphling.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-morphling-handbook.png",
     "tier": "B-Tier",
-    "trait": "Shape Shift",
-    "trait_effect": "Adapts elemental affinity and forms to assist allied Aniimo.",
+    "trait": "Elemental Harmony",
+    "trait_effect": "Enhances productivity when working at element-aligned workstations.",
     "matchups": {
       "weak_to": [],
       "resists": []
@@ -5122,14 +5165,13 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Light 2 / Earth 1",
+        "element_display": "Light 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Light": 2,
-          "Earth": 1
+          "Light": 2
         },
-        "image": "/images/morphling.png"
+        "image": "images/morphling.png"
       },
       "regional": [],
       "weather": [],
@@ -5146,7 +5188,7 @@
     "name": "Jabster",
     "slug": "jabster",
     "is_unnumbered": true,
-    "image": "/images/jabster.png",
+    "image": "images/jabster.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-jabster-handbook.png",
     "tier": "A-Tier",
     "trait": "Knuckle Burst",
@@ -5171,7 +5213,7 @@
         "elements": {
           "Water": 3
         },
-        "image": "/images/jabster.png"
+        "image": "images/jabster.png"
       },
       "regional": [],
       "weather": [],
@@ -5188,7 +5230,7 @@
     "name": "Sparkelf",
     "slug": "sparkelf",
     "is_unnumbered": true,
-    "image": "/images/sparkelf.png",
+    "image": "images/sparkelf.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-handbook.png",
     "tier": "S-Tier",
     "trait": "Reliable Fire Companion",
@@ -5213,7 +5255,7 @@
         "elements": {
           "Fire": 3
         },
-        "image": "/images/forms/sparkelf-basic-form-base.png"
+        "image": "images/forms/sparkelf-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
@@ -5225,7 +5267,7 @@
         "elements": {
           "Fire": 4
         },
-        "image": "/images/forms/sparkelf-prismana.png"
+        "image": "images/forms/sparkelf-prismana.png"
       }
     },
     "all_form_names": [
@@ -5240,7 +5282,7 @@
     "name": "Irisalis",
     "slug": "irisalis",
     "is_unnumbered": true,
-    "image": "/images/irisalis.png",
+    "image": "images/irisalis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisalis-handbook.png",
     "tier": "A-Tier",
     "trait": "**Bloom Cluster**",
@@ -5262,7 +5304,7 @@
         "elements": {
           "Grass": 3
         },
-        "image": "/images/irisalis.png"
+        "image": "images/irisalis.png"
       },
       "regional": [],
       "weather": [],

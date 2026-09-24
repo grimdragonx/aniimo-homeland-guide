@@ -43,7 +43,7 @@ async function fetchAniimoData() {
   }
 
   try {
-    const res = await fetch('/data/aniimo_homeland_data.json');
+    const res = await fetch('data/aniimo_homeland_data.json');
     if (res.ok) return await res.json();
   } catch (e) {
     console.error('All data loading failed', e);
@@ -156,13 +156,17 @@ function renderCards(list) {
     }).join('');
 
     // Determine current displayed image
-    const currentImg = activeData.image || item.image || `/images/${item.id}.png`;
+    const currentImg = activeData.image || item.image || `images/${item.slug}.png`;
 
     return `
       <div class="card ${isPris ? 'is-prismana-active' : ''} ${item.is_unnumbered ? 'is-unnumbered-card' : ''}" id="aniimo-${item.id}">
         <!-- Picture Portrait Banner -->
         <div class="card-portrait-wrap" onclick="openDetailModal('${item.id}')" style="cursor: pointer;" title="Click for full handbook details">
-          <img src="${currentImg}" class="portrait-img" alt="${item.name}" loading="lazy" onerror="this.onerror=null; this.src='/images/${item.id}.png';">
+          <img src="${currentImg}" 
+               class="portrait-img" 
+               alt="${item.name}" 
+               loading="lazy" 
+               onerror="if (!this.dataset.fallback) { this.dataset.fallback='1'; this.src='images/${item.slug}.png'; } else if (this.dataset.fallback==='1') { this.dataset.fallback='2'; this.src='images/${item.id}.png'; }">
           <div class="portrait-overlay">
             <span class="portrait-badge-id" style="${item.is_unnumbered ? 'background: rgba(234, 88, 12, 0.4); border: 1px solid rgba(234, 88, 12, 0.7);' : ''}">${item.display_id}</span>
             <span class="portrait-badge-stage stage-${item.tier}">${item.tier}</span>
@@ -205,7 +209,7 @@ function renderCards(list) {
 
           <!-- Element Levels -->
           <div class="ability-pill-grid">
-            ${elementsHtml || '<div style="color: #64748b; font-size: 0.85rem;">Standard Base Affinities</div>'}
+            ${elementsHtml}
           </div>
         </div>
       </div>
@@ -235,7 +239,9 @@ window.openDetailModal = function(id) {
     return `
       <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
         <td style="padding: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-          <img src="${f.image || item.image}" style="width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.3);" onerror="this.onerror=null; this.src='${item.image}';">
+          <img src="${f.image || item.image}" 
+               style="width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.3);" 
+               onerror="this.onerror=null; this.src='images/${item.slug}.png';">
           <strong>${f.form_name}</strong>
         </td>
         <td style="padding: 0.75rem; color: ${isPris ? '#ec4899' : '#38bdf8'}; font-weight: 600;">${f.element_display}</td>
@@ -249,7 +255,10 @@ window.openDetailModal = function(id) {
   modalBody.innerHTML = `
     <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
       <div style="width: 180px; height: 180px; border-radius: 12px; overflow: hidden; background: #0f172a; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);">
-        <img src="${item.image}" style="max-width: 90%; max-height: 90%; object-fit: contain;" alt="${item.name}">
+        <img src="${item.image}" 
+             style="max-width: 90%; max-height: 90%; object-fit: contain;" 
+             alt="${item.name}" 
+             onerror="this.onerror=null; this.src='images/${item.slug}.png';">
       </div>
       <div style="flex: 1; min-width: 250px;">
         <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.4rem;">
