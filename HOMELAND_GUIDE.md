@@ -1,58 +1,40 @@
-# 🏡 Aniimo Homeland Comprehensive System Guide
+# 🏡 Aniimo Homeland Elemental System Guide
 
-## 1. Introduction to the Homeland Feature
-In **Aniimo**, the **Homeland** represents your central base of operations, crafting headquarters, and automated production hub. Setting up an efficient Homeland allows you to:
-- Passively extract ores, timber, and agricultural ingredients.
-- Craft advanced Twining gear, high-grade potions, and defensive ammunition.
-- Automate food cooking and cold storage preservation so workers never starve or suffer morale drops.
+## 1. How Homeland Works in Aniimo
+In **Aniimo**, creature assignments at your Homeland camp are determined by **Elemental Affinities**:
+- Every creature's elemental proficiency level (Lv.1 to Lv.4+) determines how fast it completes tasks and which tier of machinery it can operate.
+- **82 basic species** currently form the active catalog (#001–#082).
+- Slots #083–#092 appear as `????` in the in-game Dex awaiting future game expansions.
 
 ---
 
-## 2. Workplace Stations & Production Pipelines
+## 2. Workplace Stations by Element
 
-| Work Station | Essential Worker Skill | Primary Output | Recommended Aniimo |
+| Element | Icon | Homeland Workstations | Primary Outputs |
 | :--- | :--- | :--- | :--- |
-| **Blast Smelter** | `Fire` (Kindling) | Refined Ingots, Hardened Steel, Heat Pellets | **#003 Scorchhowl**, **#072 Magmarex**, **#002 Flameruff** |
-| **Campfire Kitchen** | `Fire` (Cooking) | Stews, Roasted Berries, Stamina Rations | **#001 Emberpup**, **#026 Sparki** |
-| **Crop Plantation** | `Farming` (Planting/Harvesting) | Wheat, Berries, Herbal Extracts, Fiber | **#034 Thornblade**, **#023 Budclaw**, **#020 Hummin** |
-| **Irrigation Aqueduct** | `Water` (Watering) | Fast-Growing Crops, Fresh Water Silos | **#013 Skippy**, **#007 Chirpi (Beach Form)** |
-| **Quarry Mine** | `Mining` (Quarrying) | Stone Blocks, Ore Shards, Prismana Dust | **#058 Bouldus**, **#070 Pebbling**, **#023 Budclaw** |
-| **Dynamo Generator** | `Electricity` (Power Generation) | Electrical Storage, Automated Lighting | **#045 Bolty**, **#084 Fulmintis**, **#018 Turbo (Rainstorm)** |
-| **Cold Storage Cooler** | `Cooling` (Preservation) | Meat & Veg Preservation (Prevents Decaying) | **#044 Glynsera**, **#015 Glacy**, **#025 Geoclaw** |
-| **Grain Windmill** | `Transport` / `Wind` | Flour, Ground Feed, Sugar Grains | **#017 Nimbi**, **#031 Eko**, **#032 Eklue** |
-| **Workshop Bench** | `Artisanship` (Crafting) | RV Camp Upgrades, Tools, Sphere Traps | **#001 Emberpup**, **#056 Baleetle** |
-| **Nocturnal Work Desk**| `Night Labor` | 24/7 Uninterrupted Shift Labor | **#044 Glynsera (Nighttime Form)**, **#004 Inferlupa** |
+| **Fire** | 🔥 | Blast Furnace, Campfire Kitchen, Smelter | Iron/Steel Ingots, Rations, Heated Glass |
+| **Water** | 💧 | Farmland Aqueduct, Water Basin, Brewer | Crop Hydration, Brewed Juices, Purified Water |
+| **Grass** | 🌱 | Farmland Plot, Forestry Logging Grove | Vegetables, Berries, Fiber, Timber Logs |
+| **Earth** | ⛰️ | Stone Quarry, Ore Mine, Masonry Bench | Stone Blocks, Metal Ores, Sculpted Bricks |
+| **Lightning** | ⚡ | Dynamo Generator, Power Grid Terminal | Battery Energy, Electrified Assembly Lines |
+| **Ice** | ❄️ | Walk-in Freezer, Cold Storage Vault | Prevents fresh food and vegetables from decaying |
+| **Wind** | 🍃 | Grain Windmill, Textile Loom, Hauling | Flour, Ground Feed, Weaved Cloth, Fast Logistics |
+| **Dark** | 🌑 | Nocturnal Shift Post, Night Patrol | Uninterrupted 24/7 production during nighttime |
+| **Light** | ✨ | Luminary Hearth, Incubator Warmer | Camp Morale, Base Illumination, Egg Hatching |
 
 ---
 
-## 3. Form Mechanics & Workplace Synergy
+## 3. Notable Form Affinities & Mechanics
 
-### A. Regional Variants
-Creatures caught in specific biomes adapt distinct elemental affinities:
-- **Emberpup (Highland Form)**: Gains `Earth 1` in addition to `Fire 1`, enabling it to help with basic quarry mining alongside kitchen fire-tending!
-- **Budclaw (Beach & Mudflat Forms)**: Shifting between coastal and mudflat areas gives access to combined `Earth 1` and `Grass 1` farming synergy.
-- **Cornet (Beach Form)**: Acquires water-attuned traits ideal for ocean-side base irrigation.
+### Regional Variations
+- **Emberpup (Highland Form)**: Acquires `Earth 1` in addition to `Fire 1`, allowing it to chip stone at the quarry when kitchen tasks are finished.
+- **Budclaw (Beach & Mudflat Forms)**: Transitions between pure `Earth 1` and dual `Earth 1 / Grass 1` for combined farming and stonecraft.
+- **Cornet (Beach Form)**: Obtains water capabilities ideal for coastal crop hydration.
 
-### B. Weather Forms
-Triggered by environmental phenomena or infused weather crystals:
-- **Nimbi (Rainstorm Form)**: Gathers `Lightning 1` alongside `Wind 1`, allowing it to charge dynamic power grids during stormy seasons.
-- **Nimbi (Plateau Form)**: Combines `Wind 1` and `Ice 1` for dual transport and cold preservation duties.
+### Weather Variations
+- **Nimbi (Rainstorm Form)**: Gains `Lightning 1` alongside `Wind 1` during rain/storms, powering dynamic energy accumulators.
+- **Nimbi (Plateau Form)**: Combines `Wind 1` and `Ice 1` for cold storage preservation.
 
-### C. Prismana Forms
-Encountered under rare Aurora / Prismana Flow events:
-- **Prismana Glynsera**: Elevates cooling proficiency to an apex **Ice 4**, keeping entire walk-in industrial freezer warehouses chilled indefinitely.
-- **Prismana Scorchhowl**: Maximizes thermal efficiency to speed up heavy ingot batches by over 40%.
-
----
-
-## 4. Optimal Base Setup (20 Worker Blueprint)
-
-```
-[4x Blast Furnaces] ----> 2x Fire Lv.3+ (#003 Scorchhowl, #072 Magmarex)
-[4x Hydro Farmlands] ---> 2x Farming Lv.3+ (#034 Thornblade) + 2x Water (#013 Skippy)
-[2x Stone Quarries] ----> 3x Mining Lv.2-3 (#058 Bouldus, #070 Pebbling)
-[1x Walk-in Freezer] ---> 1x Cooling Lv.3-4 (#044 Glynsera / #015 Glacy)
-[2x Power Dynamos] -----> 2x Electricity (#045 Bolty, #084 Fulmintis)
-[Logistics & Hauling] --> 4x Transport / Carry (#017 Nimbi, #001 Emberpup)
-[Night Shift Reserve] --> 2x Night Labor (#044 Glynsera Nighttime Form, #004 Inferlupa)
-```
+### Prismana Forms
+- **Somniwing (#030)**: Inherently the radiant **Prismana Form** evolution of the Flutternym/Gracewing line (`Grass 3 / Wind 2`).
+- **Glynsera (Prismana Form)**: Maximizes cooling proficiency to apex **Ice 4**, chilling large walk-in cold storage facilities indefinitely.

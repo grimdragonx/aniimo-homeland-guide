@@ -2,29 +2,35 @@
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Express REST API](https://img.shields.io/badge/express-4.21.2-blue.svg)](https://expressjs.com/)
-[![Verified Aniimo](https://img.shields.io/badge/Aniimodex-92%20Species-orange.svg)](https://www.dexerto.com/wikis/aniimo/aniimodex/)
+[![Verified Species](https://img.shields.io/badge/Aniimodex-82%20Verified%20Species-orange.svg)](https://www.dexerto.com/wikis/aniimo/aniimodex/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, Express, and modern JavaScript**. Contains complete, canonical, fact-checked data for all **92 Aniimo species**, their verified **Basic, Regional, Weather, and Prismana forms**, real creature handbook images, and comprehensive Homeland workplace abilities.
+A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, Express, and modern JavaScript**. Features the canonical catalog of **82 verified basic species** in the current game version (+ 10 unreleased `????` slots), official creature handbook artwork, verified **Basic, Regional, Weather, and Prismana forms**, and elemental workplace proficiencies.
 
 ---
 
-## 🌟 Key Features
+## 🌟 Key Highlights
 
-1. **Strictly Fact-Checked Form Catalog (92 Species):**
-   - No fabricated weather forms (e.g. verified Emberpup has Basic, Highland, and Mountain Woods forms; Glynsera has Basic, Nighttime, and Prismana forms).
-   - Form-specific element affinities (`Fire 1`, `Earth 1`, `Ice 3 / Dark 2`, etc.), catch rates, and native spawn regions.
-2. **Official Creature Artwork:**
-   - Real high-resolution PNG creature handbook portraits and form artwork downloaded and served locally from `/images/`.
-3. **Interactive Modern Web Dashboard:**
-   - Real-time search by ID, name, trait, region, or ability.
-   - Dynamic form tab switcher inside each card that dynamically updates form artwork, stats, and workplace abilities.
-   - Full handbook inspection modal with element matchups (weaknesses/resistances) and verified form comparison tables.
-4. **Node.js REST API:**
-   - `/api/aniimo`: Full catalog with search, tier, element, ability, and form filters.
-   - `/api/aniimo/:id`: Single creature endpoint by Dex number or slug.
-   - `/api/abilities`: Canonical workplace abilities reference.
-   - `/api/stats`: Live statistics on total species, form variants, and tier breakdown.
+1. **82 Verified Basic Species + 10 `????` Slots:**
+   - Accurate to the active in-game Aniimodex (#001 Emberpup to #082 Besauce).
+   - Unreleased slots (#083 to #092) are marked as `????` to match the in-game undiscovered state without confusing players.
+2. **Pure Elemental System:**
+   - Workplace proficiencies are displayed directly as **Elements & Elemental Levels** (`Fire Lv.1`, `Earth Lv.1`, `Ice Lv.3`, `Dark Lv.2`, `Grass Lv.3`, etc.), matching official game mechanics.
+3. **Fact-Checked Forms:**
+   - Zero fictional forms (Emberpup has Basic, Highland, and Mountain Woods; Glynsera has Basic, Nighttime, and Prismana).
+   - **Somniwing (#030)** verified as the authentic Prismana Form evolution of the Flutternym line.
+4. **Official Creature Artwork:**
+   - 296 local high-resolution PNG creature portraits and form images served from `/images/`.
+   - Distinctive `unknown.png` badge for undiscovered `????` slots.
+5. **Interactive Modern Web Dashboard:**
+   - Live search by ID, name, element, trait, or region.
+   - Dynamic form tab switcher that updates artwork, catch rates, and elemental proficiencies in real-time.
+   - Comprehensive creature inspection modal with elemental matchups and complete form comparison tables.
+6. **Express REST API:**
+   - `/api/aniimo`: Query creatures with element, tier, and form filters.
+   - `/api/aniimo/:id`: Retrieve single creature profile.
+   - `/api/elements`: Canonical element reference.
+   - `/api/stats`: Dynamic counts of species, verified forms, and tiers.
 
 ---
 
@@ -57,39 +63,14 @@ The server will boot on `http://localhost:3000`:
 
 ---
 
-## 📁 Project Structure
-
-```
-aniimo-homeland-guide/
-├── data/
-│   ├── aniimo_homeland_data.json   # Master JSON database (92 species)
-│   └── aniimo_homeland_data.csv    # Exported CSV database
-├── public/
-│   ├── images/                     # Official creature PNG artwork
-│   │   ├── forms/                  # Form-specific variant artwork
-│   │   ├── 001.png ... 092.png     # Creature handbook portraits
-│   │   └── emberpup.png ...        # Slug alias images
-│   ├── index.html                  # Modern web application UI
-│   ├── style.css                   # Glassmorphism dark-mode styling
-│   └── app.js                      # Client-side reactivity and filtering
-├── ANIIMO_DATABASE.md              # Full 92-creature Markdown catalog
-├── BEST_WORKERS_TIER_LIST.md       # Workplace station tier list
-├── HOMELAND_GUIDE.md               # Base automation blueprint guide
-├── server.js                       # Express REST API backend
-├── package.json                    # Node.js project manifest
-└── README.md                       # Platform documentation
-```
-
----
-
 ## 📡 REST API Reference
 
 | Endpoint | Method | Query Parameters | Description |
 | :--- | :--- | :--- | :--- |
-| `/api/aniimo` | `GET` | `search`, `tier`, `element`, `ability`, `minLevel`, `form` | Query creatures with multi-faceted filters |
+| `/api/aniimo` | `GET` | `search`, `tier`, `element`, `minLevel`, `form` | Query creatures with elemental filters |
 | `/api/aniimo/:id`| `GET` | `id` (e.g. `001`, `044`, `emberpup`, `glynsera`) | Retrieve single creature profile |
-| `/api/abilities` | `GET` | None | Get list of all Homeland work abilities |
-| `/api/stats` | `GET` | None | Aggregate database statistics |
+| `/api/elements` | `GET` | None | List of elements and Homeland workstations |
+| `/api/stats` | `GET` | None | Live aggregate database statistics |
 
 ---
 

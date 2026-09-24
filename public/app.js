@@ -9,7 +9,6 @@ const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearch');
 const tierFilter = document.getElementById('tierFilter');
 const elementFilter = document.getElementById('elementFilter');
-const abilityFilter = document.getElementById('abilityFilter');
 const minLevelFilter = document.getElementById('minLevelFilter');
 const pillBtns = document.querySelectorAll('.pill-btn');
 const resultsBadge = document.getElementById('resultsBadge');
@@ -29,13 +28,6 @@ const elementMeta = {
   Wind: { emoji: '🍃', color1: '#0d9488', color2: '#14b8a6' },
   Dark: { emoji: '🌑', color1: '#7e22ce', color2: '#a855f7' },
   Light: { emoji: '✨', color1: '#d97706', color2: '#fbbf24' }
-};
-
-const abilityEmoji = {
-  Fire: '🔥', Farming: '🌱', Water: '💧', Mining: '⛰️',
-  Electricity: '⚡', Cooling: '❄️', Transport: '🍃',
-  'Night Labor': '🌑', Illumination: '✨', Carry: '📦',
-  Artisanship: '🔨', Lumbering: '🪓'
 };
 
 // Fetch Data from Node.js REST API
@@ -70,10 +62,10 @@ async function fetchStats() {
       const elRegional = document.getElementById('statRegional');
       const elPrismana = document.getElementById('statPrismana');
 
-      if (elSpecies) elSpecies.textContent = stats.totalSpecies;
-      if (elForms) elForms.textContent = stats.totalFormsCount;
-      if (elRegional) elRegional.textContent = stats.regionalVariantsCount;
-      if (elPrismana) elPrismana.textContent = stats.prismanaCount;
+      if (elSpecies) elSpecies.textContent = stats.verifiedSpeciesCount || 82;
+      if (elForms) elForms.textContent = stats.totalFormsCount || '170+';
+      if (elRegional) elRegional.textContent = stats.regionalVariantsCount || 88;
+      if (elPrismana) elPrismana.textContent = stats.prismanaCount || 25;
     }
   } catch (err) {
     console.warn('Stats fetch error:', err);
@@ -93,9 +85,43 @@ function renderCards(list) {
     return;
   }
 
-  resultsBadge.textContent = `Showing ${list.length} Aniimo`;
+  const verifiedInList = list.filter(i => !i.is_unverified).length;
+  const unverifiedInList = list.filter(i => i.is_unverified).length;
+  resultsBadge.textContent = `Showing ${verifiedInList} Verified Aniimo ${unverifiedInList ? `(+ ${unverifiedInList} ????)` : ''}`;
 
   grid.innerHTML = list.map(item => {
+    // Unverified entry rendering (#083 - #092)
+    if (item.is_unverified) {
+      return `
+        <div class="card is-unverified-card" id="aniimo-${item.id}">
+          <div class="card-portrait-wrap" onclick="openDetailModal('${item.id}')" style="cursor: pointer;" title="Unreleased Slot">
+            <img src="/images/unknown.png" class="portrait-img" alt="Unverified" loading="lazy">
+            <div class="portrait-overlay">
+              <span class="portrait-badge-id">#${item.id}</span>
+              <span class="portrait-badge-stage" style="background: rgba(148, 163, 184, 0.2); color: #94a3b8;">????</span>
+            </div>
+          </div>
+
+          <div class="card-header-row">
+            <h3 class="card-title" style="color: #94a3b8;">???? (Undiscovered)</h3>
+            <div class="element-badges-wrap">
+              <span class="el-badge" style="background: rgba(255,255,255,0.05); color: #64748b;">????</span>
+            </div>
+          </div>
+
+          <div class="card-role-strip" style="background: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.05);">
+            <span class="role-tag">Status</span>
+            <span class="role-desc">Not yet released in basic version (82 species cataloged).</span>
+          </div>
+
+          <div class="active-form-box" style="text-align: center; color: #64748b; padding: 1.5rem 0.5rem;">
+            🔒 Encounter data locked in current game version
+          </div>
+        </div>
+      `;
+    }
+
+    // Verified entry rendering (#001 - #082)
     const basicForm = item.forms.basic;
     const regionalForms = item.forms.regional || [];
     const weatherForms = item.forms.weather || [];
@@ -118,31 +144,40 @@ function renderCards(list) {
     }
 
     // Build form nav buttons
-    let navBtns = `<button class="btn-form-tab ${activeTabKey === 'basic' ? 'active' : ''}" onclick="setCardTab('${item.id}', 'basic')">Basic</button>`;
+    let navBtns = '';
+    
+    // For Somniwing, it's inherently a Prismana form creature
+    if (item.id === '030') {
+      navBtns = `<button class="btn-form-tab is-prismana active">🌈 Prismana Form</button>`;
+      isPris = true;
+    } else {
+      navBtns = `<button class="btn-form-tab ${activeTabKey === 'basic' ? 'active' : ''}" onclick="setCardTab('${item.id}', 'basic')">Basic</button>`;
 
-    regionalForms.forEach((rf, i) => {
-      const sel = activeTabKey === `regional_${i}`;
-      const label = rf.form_name.replace('Form', '').trim();
-      navBtns += `<button class="btn-form-tab ${sel ? 'active' : ''}" onclick="setCardTab('${item.id}', 'regional_${i}')">🗺️ ${label}</button>`;
-    });
+      regionalForms.forEach((rf, i) => {
+        const sel = activeTabKey === `regional_${i}`;
+        const label = rf.form_name.replace('Form', '').trim();
+        navBtns += `<button class="btn-form-tab ${sel ? 'active' : ''}" onclick="setCardTab('${item.id}', 'regional_${i}')">🗺️ ${label}</button>`;
+      });
 
-    weatherForms.forEach((wf, i) => {
-      const sel = activeTabKey === `weather_${i}`;
-      const label = wf.form_name.replace('Form', '').trim();
-      navBtns += `<button class="btn-form-tab ${sel ? 'active' : ''}" onclick="setCardTab('${item.id}', 'weather_${i}')">⚡ ${label}</button>`;
-    });
+      weatherForms.forEach((wf, i) => {
+        const sel = activeTabKey === `weather_${i}`;
+        const label = wf.form_name.replace('Form', '').trim();
+        navBtns += `<button class="btn-form-tab ${sel ? 'active' : ''}" onclick="setCardTab('${item.id}', 'weather_${i}')">⚡ ${label}</button>`;
+      });
 
-    if (prismanaForm) {
-      navBtns += `<button class="btn-form-tab is-prismana ${isPris ? 'active' : ''}" onclick="setCardTab('${item.id}', 'prismana')">🌈 Prismana</button>`;
+      if (prismanaForm) {
+        navBtns += `<button class="btn-form-tab is-prismana ${isPris ? 'active' : ''}" onclick="setCardTab('${item.id}', 'prismana')">🌈 Prismana</button>`;
+      }
     }
 
-    // Build abilities progress pills
-    const abilitiesHtml = Object.entries(activeData.abilities || {}).map(([abil, lvl]) => {
+    // Build element proficiency pills (Elemental Affinities & Levels)
+    const elementsHtml = Object.entries(activeData.elements || {}).map(([elemName, lvl]) => {
+      const meta = elementMeta[elemName] || { emoji: '⭐', color1: '#38bdf8' };
       const pct = Math.min((lvl / 5) * 100, 100);
       return `
         <div class="abil-pill">
           <div class="abil-pill-top">
-            <span class="abil-pill-name">${abilityEmoji[abil] || '⭐'} ${abil}</span>
+            <span class="abil-pill-name">${meta.emoji} ${elemName}</span>
             <span class="abil-pill-lvl">Lv.${lvl}</span>
           </div>
           <div class="abil-progress-bar">
@@ -152,7 +187,7 @@ function renderCards(list) {
       `;
     }).join('');
 
-    // Determine current displayed image (form specific or main creature handbook picture)
+    // Determine current displayed image
     const currentImg = activeData.image || item.image || `/images/${item.id}.png`;
 
     return `
@@ -198,8 +233,9 @@ function renderCards(list) {
             🗺️ <em>${activeData.region || 'Idyll Native Habitat'}</em>
           </div>
 
+          <!-- Element Levels -->
           <div class="ability-pill-grid">
-            ${abilitiesHtml}
+            ${elementsHtml || '<div style="color: #64748b; font-size: 0.85rem;">Standard Base Affinities</div>'}
           </div>
         </div>
       </div>
@@ -216,26 +252,43 @@ window.openDetailModal = function(id) {
   const item = allAniimo.find(a => a.id === id);
   if (!item) return;
 
+  if (item.is_unverified) {
+    modalBody.innerHTML = `
+      <div style="text-align: center; padding: 2rem 1rem;">
+        <img src="/images/unknown.png" style="width: 140px; height: 140px; margin-bottom: 1rem;" alt="Unknown">
+        <h2 style="font-size: 1.8rem; font-weight: 800; color: #94a3b8; margin-bottom: 0.5rem;">Slot #${item.id} — ????</h2>
+        <p style="color: #cbd5e1; max-width: 480px; margin: 0 auto 1.5rem; font-size: 0.95rem;">
+          This creature slot is currently unreleased in the game. The active game version features <strong>82 verified basic species</strong> (from #001 Emberpup to #082 Besauce).
+        </p>
+        <div style="display: inline-block; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.5rem 1rem; border-radius: 999px; color: #38bdf8; font-size: 0.85rem;">
+          🔒 Awaiting official game update
+        </div>
+      </div>
+    `;
+    detailModal.classList.remove('hidden');
+    return;
+  }
+
   const basic = item.forms.basic;
   const regionalList = item.forms.regional || [];
   const weatherList = item.forms.weather || [];
-  const prismana = item.forms.prismana;
+  const prismana = (item.id === '030') ? null : item.forms.prismana;
 
   const allFormsList = [basic, ...regionalList, ...weatherList, prismana].filter(Boolean);
 
   const formsTableHtml = allFormsList.map(f => {
     const isPris = f.form_name.toLowerCase().includes('prismana');
-    const abilStr = Object.entries(f.abilities || {}).map(([k, v]) => `${k} Lv.${v}`).join(', ');
+    const elemStr = Object.entries(f.elements || {}).map(([k, v]) => `${k} Lv.${v}`).join(' / ');
     return `
       <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
         <td style="padding: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
           <img src="${f.image || `/images/${item.id}.png`}" style="width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.3);" onerror="this.onerror=null; this.src='/images/${item.id}.png';">
           <strong>${f.form_name}</strong>
         </td>
-        <td style="padding: 0.75rem; color: ${isPris ? '#ec4899' : '#38bdf8'};">${f.element_display}</td>
+        <td style="padding: 0.75rem; color: ${isPris ? '#ec4899' : '#38bdf8'}; font-weight: 600;">${f.element_display}</td>
         <td style="padding: 0.75rem;">${f.catch_rate || '—'}</td>
         <td style="padding: 0.75rem; font-size: 0.85rem; color: #cbd5e1;">${f.region || '—'}</td>
-        <td style="padding: 0.75rem; font-family: 'JetBrains Mono'; font-size: 0.85rem; color: #facc15;">${abilStr}</td>
+        <td style="padding: 0.75rem; font-family: 'JetBrains Mono'; font-size: 0.85rem; color: #facc15;">${elemStr || 'Standard'}</td>
       </tr>
     `;
   }).join('');
@@ -254,7 +307,7 @@ window.openDetailModal = function(id) {
         <p style="color: #94a3b8; font-family: 'JetBrains Mono'; font-size: 0.9rem; margin-bottom: 0.75rem;">Slug: ${item.slug}</p>
         
         <div style="background: rgba(30, 41, 59, 0.7); padding: 0.75rem 1rem; border-radius: 8px; border-left: 3px solid #38bdf8; margin-bottom: 0.75rem;">
-          <div style="font-size: 0.8rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Passive Homeland Trait</div>
+          <div style="font-size: 0.8rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Passive Trait</div>
           <div style="color: white; font-weight: 700; margin: 0.2rem 0;">${item.trait}</div>
           <div style="color: #cbd5e1; font-size: 0.85rem;">${item.trait_effect}</div>
         </div>
@@ -276,10 +329,10 @@ window.openDetailModal = function(id) {
         <thead>
           <tr style="border-bottom: 2px solid rgba(255,255,255,0.2); color: #94a3b8; font-size: 0.8rem; text-transform: uppercase;">
             <th style="padding: 0.5rem 0.75rem;">Form</th>
-            <th style="padding: 0.5rem 0.75rem;">Element Affinity</th>
+            <th style="padding: 0.5rem 0.75rem;">Elements</th>
             <th style="padding: 0.5rem 0.75rem;">Catch Rate</th>
             <th style="padding: 0.5rem 0.75rem;">Spawn Region</th>
-            <th style="padding: 0.5rem 0.75rem;">Homeland Work Skills</th>
+            <th style="padding: 0.5rem 0.75rem;">Elemental Proficiencies</th>
           </tr>
         </thead>
         <tbody>
@@ -305,7 +358,6 @@ function applyFilters() {
   const query = (searchInput.value || '').toLowerCase().trim();
   const selectedTier = tierFilter ? tierFilter.value : 'all';
   const selectedElement = elementFilter.value;
-  const selectedAbility = abilityFilter.value;
   const minLvl = parseInt(minLevelFilter.value, 10) || 1;
 
   const filtered = allAniimo.filter(item => {
@@ -315,18 +367,16 @@ function applyFilters() {
       if (!matchText.includes(query)) return false;
     }
 
+    // Unverified filter
+    if (currentFormFilter === 'unverified') {
+      return item.is_unverified;
+    } else if (item.is_unverified && (currentFormFilter !== 'all' || selectedElement !== 'all' || selectedTier !== 'all')) {
+      return false; // hide unverified from element/tier specific filters
+    }
+
     // Tier filter
     if (selectedTier !== 'all' && item.tier !== selectedTier) {
       return false;
-    }
-
-    // Element filter
-    if (selectedElement !== 'all') {
-      const basic = item.forms.basic;
-      const elemStr = (basic ? basic.element_display : '') || '';
-      if (!elemStr.toLowerCase().includes(selectedElement.toLowerCase())) {
-        return false;
-      }
     }
 
     // Form filter pill
@@ -340,8 +390,8 @@ function applyFilters() {
       if (!item.forms.basic) return false;
     }
 
-    // Ability filter
-    if (selectedAbility !== 'all') {
+    // Element filter
+    if (selectedElement !== 'all') {
       const allForms = [
         item.forms.basic,
         ...(item.forms.regional || []),
@@ -349,8 +399,15 @@ function applyFilters() {
         item.forms.prismana
       ].filter(Boolean);
 
-      const hasSkill = allForms.some(f => (f.abilities && (f.abilities[selectedAbility] || 0) >= minLvl));
-      if (!hasSkill) return false;
+      const hasElement = allForms.some(f => {
+        if (!f.elements) return false;
+        for (const [k, v] of Object.entries(f.elements)) {
+          if (k.toLowerCase() === selectedElement.toLowerCase() && v >= minLvl) return true;
+        }
+        return false;
+      });
+
+      if (!hasElement) return false;
     }
 
     return true;
@@ -368,7 +425,6 @@ clearSearchBtn.addEventListener('click', () => {
 
 if (tierFilter) tierFilter.addEventListener('change', applyFilters);
 elementFilter.addEventListener('change', applyFilters);
-abilityFilter.addEventListener('change', applyFilters);
 minLevelFilter.addEventListener('change', applyFilters);
 
 pillBtns.forEach(btn => {

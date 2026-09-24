@@ -1,14 +1,15 @@
 # 📖 Aniimo Canonical Homeland Database
 
-> **Status:** Strictly Fact-Checked Canonical Edition  
-> **Total Cataloged Species:** 92 Aniimo  
+> **Status:** Canonical Game Version Edition  
+> **Cataloged Basic Species:** 82 Aniimo (#001–#082)  
+> **Unreleased / Undiscovered Slots:** 10 Aniimo (#083–#092 `????`)  
 > **Data Sources:** Verified In-Game Data & Official Creature Handbooks  
 
-This database provides verified information on every Aniimo species in *Aniimo*, including their **Basic Forms**, **Regional Variants**, **Weather Forms**, and **Prismana Forms**, along with their passive traits, spawn habitats, and Homeland workplace proficiencies.
+In *Aniimo*, Homeland production and workstation assignments are governed directly by **Creature Elements and Elemental Levels** (Fire, Water, Grass, Earth, Lightning, Ice, Wind, Dark, Light).
 
 ---
 
-## 📑 Quick Navigation Index
+## 📑 Quick Navigation Index (82 Basic Species)
 
 | [#001 Emberpup](#-001-emberpup) | [#002 Flameruff](#-002-flameruff) | [#003 Scorchhowl](#-003-scorchhowl) | [#004 Inferlupa](#-004-inferlupa) | [#005 Celestis](#-005-celestis) | [#006 Stellarys](#-006-stellarys) |
 | [#007 Chirpi](#-007-chirpi) | [#008 Tromber](#-008-tromber) | [#009 Cornet](#-009-cornet) | [#010 Tubster](#-010-tubster) | [#011 Iris](#-011-iris) | [#012 Irisal](#-012-irisal) |
@@ -23,9 +24,7 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 | [#061 Helmut](#-061-helmut) | [#062 Pawney](#-062-pawney) | [#063 Rookey](#-063-rookey) | [#064 Jawling](#-064-jawling) | [#065 Helmwhelp](#-065-helmwhelp) | [#066 Helgon](#-066-helgon) |
 | [#067 Infergon](#-067-infergon) | [#068 Cubbo](#-068-cubbo) | [#069 Grizbo](#-069-grizbo) | [#070 Pebbling](#-070-pebbling) | [#071 Lavazar](#-071-lavazar) | [#072 Magmarex](#-072-magmarex) |
 | [#073 Geodeback](#-073-geodeback) | [#074 Minespine](#-074-minespine) | [#075 Cozite](#-075-cozite) | [#076 Bailite](#-076-bailite) | [#077 Bulbly](#-077-bulbly) | [#078 Veilfloat](#-078-veilfloat) |
-| [#079 Luminelle](#-079-luminelle) | [#080 Fahloo](#-080-fahloo) | [#081 Erlath](#-081-erlath) | [#082 Besauce](#-082-besauce) | [#083 Dazmand](#-083-dazmand) | [#084 Fulmintis](#-084-fulmintis) |
-| [#085 Fennelun](#-085-fennelun) | [#086 Lunara](#-086-lunara) | [#087 Soleon](#-087-soleon) | [#088 Helion](#-088-helion) | [#089 Morphling](#-089-morphling) | [#090 Jabster](#-090-jabster) |
-| [#091 Sparkelf](#-091-sparkelf) | [#092 Irisalis](#-092-irisalis) |
+| [#079 Luminelle](#-079-luminelle) | [#080 Fahloo](#-080-fahloo) | [#081 Erlath](#-081-erlath) | [#082 Besauce](#-082-besauce) |
 
 ---
 
@@ -35,11 +34,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge | `Fire Lv.1, Carry Lv.1` |
-| **Highland Form** | Regional Variant | `Fire 1 / Earth 1` | 38% | Zephyrus Landbridge, Russet Highlands | `Fire Lv.1, Mining Lv.1, Carry Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Fire 1` | 50% | Beast Fang Ridge | `Fire Lv.1, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Fire 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge | `Fire Lv.1` |
+| **Highland Form** | Regional Variant | `Fire 1 / Earth 1` | 38% | Zephyrus Landbridge, Russet Highlands | `Fire Lv.1, Earth Lv.1` |
+| **Mountain Woods Form** | Regional Variant | `Fire 1` | 50% | Beast Fang Ridge | `Fire Lv.1` |
 
 ### <a id="-002-flameruff"></a>#002 — Flameruff
 
@@ -47,25 +46,25 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 2` | 42% | Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge | `Fire Lv.2, Artisanship Lv.1` |
-| **Highland Form** | Regional Variant | `Fire 2 / Earth 1` | 29% | Zephyrus Landbridge, Russet Highlands | `Fire Lv.2, Artisanship Lv.1, Mining Lv.1, Carry Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Fire 2` | 38% | Beast Fang Ridge | `Fire Lv.2, Artisanship Lv.1` |
+| **Basic Form (base)** | Base Form | `Fire 2` | 42% | Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge | `Fire Lv.2` |
+| **Highland Form** | Regional Variant | `Fire 2 / Earth 1` | 29% | Zephyrus Landbridge, Russet Highlands | `Fire Lv.2, Earth Lv.1` |
+| **Mountain Woods Form** | Regional Variant | `Fire 2` | 38% | Beast Fang Ridge | `Fire Lv.2` |
 
 ### <a id="-003-scorchhowl"></a>#003 — Scorchhowl
 
-**Slug:** `scorchhowl` | **Homeland Tier:** `A-Tier` | **Trait:** **Scorching Flames** (*Increases damage dealt to elementally countered targets by X%.*)
+**Slug:** `scorchhowl` | **Homeland Tier:** `S-Tier` | **Trait:** **Scorching Flames** (*Increases damage dealt to elementally countered targets by X%.*)
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3, Artisanship Lv.2` |
-| **Highland Form** | Regional Variant | `Fire 3 / Earth 2` | 19% | — | `Fire Lv.3, Artisanship Lv.2, Mining Lv.2, Carry Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Fire 3` | 25% | — | `Fire Lv.3, Artisanship Lv.2` |
-| **Thunderstorm Form** | Weather Variant | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3, Artisanship Lv.2` |
-| **Prismana** | 🌈 Prismana | `Fire 4` | 28% | Beast Fang Ridge | `Fire Lv.4, Artisanship Lv.3` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3` |
+| **Highland Form** | Regional Variant | `Fire 3 / Earth 2` | 19% | — | `Fire Lv.3, Earth Lv.2` |
+| **Mountain Woods Form** | Regional Variant | `Fire 3` | 25% | — | `Fire Lv.3` |
+| **Thunderstorm Form** | Weather Variant | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3` |
+| **Prismana** | 🌈 Prismana | `Fire 4` | 28% | Beast Fang Ridge | `Fire Lv.4` |
 
 ### <a id="-004-inferlupa"></a>#004 — Inferlupa
 
@@ -73,32 +72,32 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 3 / Fire 2` | 28% | — | `Night Labor Lv.3, Fire Lv.2, Artisanship Lv.1` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Fire 3` | 25% | — | `Night Labor Lv.4, Fire Lv.3, Artisanship Lv.2` |
+| **Basic Form (base)** | Base Form | `Dark 3 / Fire 2` | 28% | — | `Dark Lv.3, Fire Lv.2` |
+| **Prismana** | 🌈 Prismana | `Dark 4 / Fire 3` | 25% | — | `Dark Lv.4, Fire Lv.3` |
 
 ### <a id="-005-celestis"></a>#005 — Celestis
 
-**Slug:** `celestis` | **Homeland Tier:** `C-Tier` | **Trait:** **Grand Sorcerer** (*For Xs after using a skill, basic attack hits deal additional damage equal to X Might.*)
+**Slug:** `celestis` | **Homeland Tier:** `A-Tier` | **Trait:** **Grand Sorcerer** (*For Xs after using a skill, basic attack hits deal additional damage equal to X Might.*)
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Dark 3` | Standard | Idyll Native Habitat | `Dark Lv.3` |
 
 ### <a id="-006-stellarys"></a>#006 — Stellarys
 
-**Slug:** `stellarys` | **Homeland Tier:** `A-Tier` | **Trait:** **Grand Sorcerer** (*For Xs after using a skill, basic attack hits deal additional damage equal to X Might.*)
+**Slug:** `stellarys` | **Homeland Tier:** `S-Tier` | **Trait:** **Grand Sorcerer** (*For Xs after using a skill, basic attack hits deal additional damage equal to X Might.*)
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 3` | 28% | Forest of Falling Stars | `Night Labor Lv.3, Carry Lv.1` |
-| **Rainstorm Form** | Weather Variant | `Dark 3 / Water 2` | 28% | Forest of Falling Stars | `Night Labor Lv.3, Water Lv.2, Farming Lv.1` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Ice 3` | 28% | Forest of Falling Stars | `Night Labor Lv.4, Cooling Lv.3` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 28% | Forest of Falling Stars | `Dark Lv.3` |
+| **Rainstorm Form** | Weather Variant | `Dark 3 / Water 2` | 28% | Forest of Falling Stars | `Dark Lv.3, Water Lv.2` |
+| **Prismana** | 🌈 Prismana | `Dark 4 / Ice 3` | 28% | Forest of Falling Stars | `Dark Lv.4, Ice Lv.3` |
 
 ### <a id="-007-chirpi"></a>#007 — Chirpi
 
@@ -106,11 +105,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 1` | 56% | Nimbus Fields, The Argent Strait, Beast Fang Ridge, Blitzwood | `Transport Lv.1, Carry Lv.1` |
-| **Beach Form** | Regional Variant | `Wind 1 / Water 1` | 50% | Echoback Landing, Forest of Falling Stars | `Transport Lv.1, Carry Lv.1, Water Lv.1` |
-| **Highland Form** | Regional Variant | `Wind 1 / Grass 1` | 38% | Zephyrus Landbridge, Russet Highlands | `Transport Lv.1, Carry Lv.1, Farming Lv.1, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait, Beast Fang Ridge, Blitzwood | `Wind Lv.1` |
+| **Beach Form** | Regional Variant | `Wind 1 / Water 1` | 50% | Echoback Landing, Forest of Falling Stars | `Wind Lv.1, Water Lv.1` |
+| **Highland Form** | Regional Variant | `Wind 1 / Grass 1` | 38% | Zephyrus Landbridge, Russet Highlands | `Wind Lv.1, Grass Lv.1` |
 
 ### <a id="-008-tromber"></a>#008 — Tromber
 
@@ -118,24 +117,24 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 3` | 28% | The Argent Strait | `Transport Lv.3, Carry Lv.2` |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Forest of Falling Stars | `Transport Lv.3, Carry Lv.2, Water Lv.2, Farming Lv.1` |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | `Transport Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | `Wind Lv.3` |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Forest of Falling Stars | `Wind Lv.3, Water Lv.2` |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | `Wind Lv.3, Grass Lv.2` |
 
 ### <a id="-009-cornet"></a>#009 — Cornet
 
-**Slug:** `cornet` | **Homeland Tier:** `A-Tier` | **Trait:** **Air Superiority** (*Increases Crit Rate by X% while flying.*)
+**Slug:** `cornet` | **Homeland Tier:** `S-Tier` | **Trait:** **Air Superiority** (*Increases Crit Rate by X% while flying.*)
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 3` | 28% | The Argent Strait | `Transport Lv.3, Carry Lv.2` |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Echoback Landing, Forest of Falling Stars | `Transport Lv.3, Carry Lv.2, Water Lv.2, Farming Lv.1` |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | `Transport Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
-| **Prismana** | 🌈 Prismana | `Wind 4 / Lightning 3` | 28% | The Argent Strait | `Transport Lv.4, Carry Lv.3, Electricity Lv.3, Artisanship Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | `Wind Lv.3` |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Echoback Landing, Forest of Falling Stars | `Wind Lv.3, Water Lv.2` |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | `Wind Lv.3, Grass Lv.2` |
+| **Prismana** | 🌈 Prismana | `Wind 4 / Lightning 3` | 28% | The Argent Strait | `Wind Lv.4, Lightning Lv.3` |
 
 ### <a id="-010-tubster"></a>#010 — Tubster
 
@@ -143,12 +142,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 3` | 28% | The Argent Strait | `Transport Lv.3, Carry Lv.2` |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 28% | Echoback Landing | `Transport Lv.3, Carry Lv.2, Water Lv.2, Farming Lv.1` |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 28% | Zephyrus Landbridge, Russet Highlands | `Transport Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Wind 3` | — | — | `Transport Lv.3, Carry Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | `Wind Lv.3` |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 28% | Echoback Landing | `Wind Lv.3, Water Lv.2` |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 28% | Zephyrus Landbridge, Russet Highlands | `Wind Lv.3, Grass Lv.2` |
+| **Basic Form (variant record)** | Regional Variant | `Wind 3` | — | — | `Wind Lv.3` |
 
 ### <a id="-011-iris"></a>#011 — Iris
 
@@ -156,31 +155,31 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark 1.6× · Fire 1.6× · Wind 1.6× | **Resists:** Grass 0.625× · Earth 0.625× · Water 0.625×
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 1` | 50% | Sea of Flowers | `Farming Lv.1, Lumbering Lv.1` |
-| **Highland Form** | Regional Variant | `Grass 1` | 56% | Russet Highlands | `Farming Lv.1, Lumbering Lv.1` |
-| **Forest Form** | Regional Variant | `Grass 1` | 56% | Forest of Falling Stars | `Farming Lv.1, Lumbering Lv.1` |
-| **Grassland Form** | Regional Variant | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood | `Farming Lv.1, Lumbering Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Grass 1` | 56% | Berylline Vale, Beast Fang Ridge | `Farming Lv.1, Lumbering Lv.1` |
-| **Plateau Form** | Weather Variant | `Grass 1` | 56% | Driftwise Meadow | `Farming Lv.1, Lumbering Lv.1` |
-| **Prismana** | 🌈 Prismana | `Grass 1` | 56% | — | `Farming Lv.1, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers | `Grass Lv.1` |
+| **Highland Form** | Regional Variant | `Grass 1` | 56% | Russet Highlands | `Grass Lv.1` |
+| **Forest Form** | Regional Variant | `Grass 1` | 56% | Forest of Falling Stars | `Grass Lv.1` |
+| **Grassland Form** | Regional Variant | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood | `Grass Lv.1` |
+| **Mountain Woods Form** | Regional Variant | `Grass 1` | 56% | Berylline Vale, Beast Fang Ridge | `Grass Lv.1` |
+| **Plateau Form** | Weather Variant | `Grass 1` | 56% | Driftwise Meadow | `Grass Lv.1` |
+| **Prismana** | 🌈 Prismana | `Grass 1` | 56% | — | `Grass Lv.1` |
 
 ### <a id="-012-irisal"></a>#012 — Irisal
 
-**Slug:** `irisal` | **Homeland Tier:** `A-Tier` | **Trait:** ****Disco Aniimo**** (*While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.*)
+**Slug:** `irisal` | **Homeland Tier:** `S-Tier` | **Trait:** ****Disco Aniimo**** (*While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.*)
 
 **Weak To:** Dark 1.6× · Fire 1.6× · Wind 1.6× | **Resists:** Grass 0.625× · Earth 0.625× · Water 0.625×
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 3` | 28% | Sea of Flowers | `Farming Lv.3, Lumbering Lv.2` |
-| **Highland Form** | Regional Variant | `Grass 3` | — | Russet Highlands | `Farming Lv.3, Lumbering Lv.2` |
-| **Forest Form** | Regional Variant | `Grass 3` | 25% | Forest of Falling Stars | `Farming Lv.3, Lumbering Lv.2` |
-| **Grassland Form** | Regional Variant | `Grass 3` | 28% | Blitzwood | `Farming Lv.3, Lumbering Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Grass 3` | 25% | Berylline Vale | `Farming Lv.3, Lumbering Lv.2` |
-| **Plateau Form** | Weather Variant | `Grass 3` | — | Driftwise Meadow | `Farming Lv.3, Lumbering Lv.2` |
-| **Prismana** | 🌈 Prismana | `Grass 4` | 25% | — | `Farming Lv.4, Lumbering Lv.3` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Sea of Flowers | `Grass Lv.3` |
+| **Highland Form** | Regional Variant | `Grass 3` | — | Russet Highlands | `Grass Lv.3` |
+| **Forest Form** | Regional Variant | `Grass 3` | 25% | Forest of Falling Stars | `Grass Lv.3` |
+| **Grassland Form** | Regional Variant | `Grass 3` | 28% | Blitzwood | `Grass Lv.3` |
+| **Mountain Woods Form** | Regional Variant | `Grass 3` | 25% | Berylline Vale | `Grass Lv.3` |
+| **Plateau Form** | Weather Variant | `Grass 3` | — | Driftwise Meadow | `Grass Lv.3` |
+| **Prismana** | 🌈 Prismana | `Grass 4` | 25% | — | `Grass Lv.4` |
 
 ### <a id="-013-skippy"></a>#013 — Skippy
 
@@ -188,11 +187,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 1` | 56% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | `Water Lv.1, Carry Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Water 1` | 50% | Sea of Flowers | `Water Lv.1, Carry Lv.1` |
-| **Snowfield Form** | Regional Variant | `Water 1 / Ice 1` | 38% | Driftwise Meadow | `Water Lv.1, Cooling Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 1` | 56% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | `Water Lv.1` |
+| **Sea of Flowers Form** | Regional Variant | `Water 1` | 50% | Sea of Flowers | `Water Lv.1` |
+| **Snowfield Form** | Regional Variant | `Water 1 / Ice 1` | 38% | Driftwise Meadow | `Water Lv.1, Ice Lv.1` |
 
 ### <a id="-014-pranky"></a>#014 — Pranky
 
@@ -200,11 +199,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 2` | 42% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | `Water Lv.2, Farming Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Water 2` | 42% | Sea of Flowers | `Water Lv.2, Farming Lv.1` |
-| **Snowfield Form** | Regional Variant | `Water 2 / Ice 1` | 42% | Driftwise Meadow | `Water Lv.2, Farming Lv.1, Cooling Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 2` | 42% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | `Water Lv.2` |
+| **Sea of Flowers Form** | Regional Variant | `Water 2` | 42% | Sea of Flowers | `Water Lv.2` |
+| **Snowfield Form** | Regional Variant | `Water 2 / Ice 1` | 42% | Driftwise Meadow | `Water Lv.2, Ice Lv.1` |
 
 ### <a id="-015-glacy"></a>#015 — Glacy
 
@@ -212,12 +211,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×) | **Resists:** Dark (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 3 / Ice 2` | 28% | — | `Water Lv.3, Farming Lv.2, Cooling Lv.2` |
-| **Sea of Flowers Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Sea of Flowers | `Water Lv.3, Farming Lv.2, Cooling Lv.2` |
-| **Snowfield Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Driftwise Meadow | `Water Lv.3, Farming Lv.2, Cooling Lv.2` |
-| **Prismana** | 🌈 Prismana | `Water 4 / Ice 2` | 28% | Driftwise Meadow | `Water Lv.4, Farming Lv.3, Cooling Lv.2` |
+| **Basic Form (base)** | Base Form | `Water 3 / Ice 2` | 28% | — | `Water Lv.3, Ice Lv.2` |
+| **Sea of Flowers Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Sea of Flowers | `Water Lv.3, Ice Lv.2` |
+| **Snowfield Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Driftwise Meadow | `Water Lv.3, Ice Lv.2` |
+| **Prismana** | 🌈 Prismana | `Water 4 / Ice 2` | 28% | Driftwise Meadow | `Water Lv.4, Ice Lv.2` |
 
 ### <a id="-016-leafy"></a>#016 — Leafy
 
@@ -225,9 +224,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Ice (1.6×), Wind (1.6×) | **Resists:** Earth (0.391×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Grass 1 / Water 1` | Standard | Idyll Native Habitat | `Grass Lv.1, Water Lv.1` |
 
 ### <a id="-017-nimbi"></a>#017 — Nimbi
 
@@ -235,37 +234,37 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 1` | 56% | Nimbus Fields, The Argent Strait | `Transport Lv.1, Carry Lv.1` |
-| **Rainstorm Form** | Weather Variant | `Wind 1 / Lightning 1` | 56% | Nimbus Fields | `Transport Lv.1, Carry Lv.1, Electricity Lv.1, Artisanship Lv.1` |
-| **Cloudmist Form** | Weather Variant | `Wind 1` | — | Nimbus Fields | `Transport Lv.1, Carry Lv.1` |
-| **Plateau Form** | Weather Variant | `Wind 1 / Ice 1` | 56% | Driftwise Meadow | `Transport Lv.1, Carry Lv.1, Cooling Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait | `Wind Lv.1` |
+| **Rainstorm Form** | Weather Variant | `Wind 1 / Lightning 1` | 56% | Nimbus Fields | `Wind Lv.1, Lightning Lv.1` |
+| **Cloudmist Form** | Weather Variant | `Wind 1` | — | Nimbus Fields | `Wind Lv.1` |
+| **Plateau Form** | Weather Variant | `Wind 1 / Ice 1` | 56% | Driftwise Meadow | `Wind Lv.1, Ice Lv.1` |
 
 ### <a id="-018-turbo"></a>#018 — Turbo
 
-**Slug:** `turbo` | **Homeland Tier:** `A-Tier` | **Trait:** **Shrouded in Mist** (*Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects.*)
+**Slug:** `turbo` | **Homeland Tier:** `S-Tier` | **Trait:** **Shrouded in Mist** (*Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects.*)
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 3` | 28% | Nimbus Fields | `Transport Lv.3, Carry Lv.2` |
-| **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | `Transport Lv.3, Carry Lv.2, Electricity Lv.2, Artisanship Lv.1` |
-| **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | — | `Transport Lv.3, Carry Lv.2` |
-| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | `Transport Lv.3, Carry Lv.2, Cooling Lv.2` |
-| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | — | — | `Transport Lv.3, Carry Lv.2, Cooling Lv.2` |
-| **Prismana** | 🌈 Prismana | `Wind 4 / Dark 3` | 28% | Nimbus Fields | `Transport Lv.4, Carry Lv.3, Night Labor Lv.3` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Nimbus Fields | `Wind Lv.3` |
+| **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | `Wind Lv.3, Lightning Lv.2` |
+| **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | — | `Wind Lv.3` |
+| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | `Wind Lv.3, Ice Lv.2` |
+| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | — | — | `Wind Lv.3, Ice Lv.2` |
+| **Prismana** | 🌈 Prismana | `Wind 4 / Dark 3` | 28% | Nimbus Fields | `Wind Lv.4, Dark Lv.3` |
 
 ### <a id="-019-dreaple"></a>#019 — Dreaple
 
-**Slug:** `dreaple` | **Homeland Tier:** `C-Tier` | **Trait:** **Counting Sheep** (*Every Xs, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for Xs. Targets in [Nightmare] have their Dark Resistance reduced by X and cannot move or cast skills for Xs. Taking damage removes the control effect.*)
+**Slug:** `dreaple` | **Homeland Tier:** `B-Tier` | **Trait:** **Counting Sheep** (*Every Xs, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for Xs. Targets in [Nightmare] have their Dark Resistance reduced by X and cannot move or cast skills for Xs. Taking damage removes the control effect.*)
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | `Dark Lv.2` |
 
 ### <a id="-020-hummin"></a>#020 — Hummin
 
@@ -273,48 +272,48 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Forest of Falling Stars, Blitzwood | `Farming Lv.1, Lumbering Lv.1` |
-| **Mountain Form** | Regional Variant | `Grass 1` | 56% | Sea of Flowers, Berylline Vale | `Farming Lv.1, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Forest of Falling Stars, Blitzwood | `Grass Lv.1` |
+| **Mountain Form** | Regional Variant | `Grass 1` | 56% | Sea of Flowers, Berylline Vale | `Grass Lv.1` |
 
 ### <a id="-021-hexxin"></a>#021 — Hexxin
 
-**Slug:** `hexxin` | **Homeland Tier:** `A-Tier` | **Trait:** **Prank** (*Every Xs, the next skill applies [Curse] to enemies hit for Xs. Dark basic attacks restore X EP when hitting enemies with [Curse].*)
+**Slug:** `hexxin` | **Homeland Tier:** `S-Tier` | **Trait:** **Prank** (*Every Xs, the next skill applies [Curse] to enemies hit for Xs. Dark basic attacks restore X EP when hitting enemies with [Curse].*)
 
 **Weak To:** Wind (2.56×), Dark (1.6×), Light (1.6×) | **Resists:** Earth (0.391×), Grass (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 2 / Grass 1` | 28% | The Mistwoods | `Night Labor Lv.2, Farming Lv.1, Lumbering Lv.1` |
-| **Mountain Form** | Regional Variant | `Dark 2 / Grass 1` | 28% | Sea of Flowers, Berylline Vale | `Night Labor Lv.2, Farming Lv.1, Lumbering Lv.1` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Grass 3` | 28% | The Mistwoods | `Night Labor Lv.4, Farming Lv.3, Lumbering Lv.2` |
+| **Basic Form (base)** | Base Form | `Dark 2 / Grass 1` | 28% | The Mistwoods | `Dark Lv.2, Grass Lv.1` |
+| **Mountain Form** | Regional Variant | `Dark 2 / Grass 1` | 28% | Sea of Flowers, Berylline Vale | `Dark Lv.2, Grass Lv.1` |
+| **Prismana** | 🌈 Prismana | `Dark 4 / Grass 3` | 28% | The Mistwoods | `Dark Lv.4, Grass Lv.3` |
 
 ### <a id="-022-tuckin"></a>#022 — Tuckin
 
-**Slug:** `tuckin` | **Homeland Tier:** `A-Tier` | **Trait:** **Prank Master** (*Increases BREAK damage by % for every X1,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every Xs, up to a maximum of 3.*)
+**Slug:** `tuckin` | **Homeland Tier:** `S-Tier` | **Trait:** **Prank Master** (*Increases BREAK damage by % for every X1,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every Xs, up to a maximum of 3.*)
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 3` | 28% | — | `Farming Lv.3, Lumbering Lv.2` |
-| **Mountain Form** | Regional Variant | `Grass 3 / Earth 2` | 28% | — | `Farming Lv.3, Lumbering Lv.2, Mining Lv.2, Carry Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Grass 3` | — | — | `Farming Lv.3, Lumbering Lv.2` |
-| **Unnamed form** | Regional Variant | `Grass 4` | — | — | `Farming Lv.4, Lumbering Lv.3` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 28% | — | `Grass Lv.3` |
+| **Mountain Form** | Regional Variant | `Grass 3 / Earth 2` | 28% | — | `Grass Lv.3, Earth Lv.2` |
+| **Basic Form (variant record)** | Regional Variant | `Grass 3` | — | — | `Grass Lv.3` |
+| **Unnamed form** | Regional Variant | `Grass 4` | — | — | `Grass Lv.4` |
 
 ### <a id="-023-budclaw"></a>#023 — Budclaw
 
-**Slug:** `budclaw` | **Homeland Tier:** `A-Tier` | **Trait:** **Stealth** (*Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.*)
+**Slug:** `budclaw` | **Homeland Tier:** `C-Tier` | **Trait:** **Stealth** (*Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.*)
 
 **Weak To:** Dark (1.6×), Wind (1.6×) | **Resists:** Earth (0.391×), Lightning (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Earth 1 / Grass 1` | 56% | Zephyrus Landbridge, Nimbus Fields, Berylline Vale, Beast Fang Ridge | `Mining Lv.1, Carry Lv.1, Farming Lv.1, Lumbering Lv.1` |
-| **Mudflat Form** | Regional Variant | `Earth 1 / Grass 1` | 32% | Tideblossom Coast | `Mining Lv.1, Carry Lv.1, Farming Lv.1, Lumbering Lv.1` |
-| **Beach Form** | Regional Variant | `Earth 1` | 56% | Echoback Landing | `Mining Lv.1, Carry Lv.1` |
-| **Bay Form** | Regional Variant | `Earth 1 / Grass 1` | 56% | The Argent Strait | `Mining Lv.1, Carry Lv.1, Farming Lv.1, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Earth 1 / Grass 1` | 56% | Zephyrus Landbridge, Nimbus Fields, Berylline Vale, Beast Fang Ridge | `Earth Lv.1, Grass Lv.1` |
+| **Mudflat Form** | Regional Variant | `Earth 1 / Grass 1` | 32% | Tideblossom Coast | `Earth Lv.1, Grass Lv.1` |
+| **Beach Form** | Regional Variant | `Earth 1` | 56% | Echoback Landing | `Earth Lv.1` |
+| **Bay Form** | Regional Variant | `Earth 1 / Grass 1` | 56% | The Argent Strait | `Earth Lv.1, Grass Lv.1` |
 
 ### <a id="-024-shrubclaw"></a>#024 — Shrubclaw
 
@@ -322,12 +321,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Wind (1.6×) | **Resists:** Earth (0.391×), Lightning (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Earth 3 / Grass 2` | 28% | Berylline Vale | `Mining Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
-| **Mudflat Form** | Regional Variant | `Earth 3` | 28% | Tideblossom Coast | `Mining Lv.3, Carry Lv.2` |
-| **Beach Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | Echoback Landing | `Mining Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
-| **Bay Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | The Argent Strait | `Mining Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Earth 3 / Grass 2` | 28% | Berylline Vale | `Earth Lv.3, Grass Lv.2` |
+| **Mudflat Form** | Regional Variant | `Earth 3` | 28% | Tideblossom Coast | `Earth Lv.3` |
+| **Beach Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | Echoback Landing | `Earth Lv.3, Grass Lv.2` |
+| **Bay Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | The Argent Strait | `Earth Lv.3, Grass Lv.2` |
 
 ### <a id="-025-geoclaw"></a>#025 — Geoclaw
 
@@ -335,9 +334,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-026-sparki"></a>#026 — Sparki
 
@@ -345,12 +344,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 1` | 56% | Nimbus Fields, Beast Fang Ridge, Blitzwood | `Fire Lv.1, Carry Lv.1` |
-| **Highland Form** | Regional Variant | `Fire 1` | 56% | Russet Highlands, Berylline Vale | `Fire Lv.1, Carry Lv.1` |
-| **Forest Form** | Regional Variant | `Fire 1` | 50% | The Mistwoods, Berylline Vale, Driftwise Meadow | `Fire Lv.1, Carry Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Fire 1` | 50% | Sea of Flowers | `Fire Lv.1, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Fire 1` | 56% | Nimbus Fields, Beast Fang Ridge, Blitzwood | `Fire Lv.1` |
+| **Highland Form** | Regional Variant | `Fire 1` | 56% | Russet Highlands, Berylline Vale | `Fire Lv.1` |
+| **Forest Form** | Regional Variant | `Fire 1` | 50% | The Mistwoods, Berylline Vale, Driftwise Meadow | `Fire Lv.1` |
+| **Sea of Flowers Form** | Regional Variant | `Fire 1` | 50% | Sea of Flowers | `Fire Lv.1` |
 
 ### <a id="-027-flamerion"></a>#027 — Flamerion
 
@@ -358,12 +357,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3, Artisanship Lv.2` |
-| **Highland Form** | Regional Variant | `Fire 3` | 28% | Berylline Vale | `Fire Lv.3, Artisanship Lv.2` |
-| **Forest Form** | Regional Variant | `Fire 3` | 25% | The Mistwoods, Berylline Vale, Driftwise Meadow | `Fire Lv.3, Artisanship Lv.2` |
-| **Sea of Flowers Form** | Regional Variant | `Fire 3` | 25% | — | `Fire Lv.3, Artisanship Lv.2` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3` |
+| **Highland Form** | Regional Variant | `Fire 3` | 28% | Berylline Vale | `Fire Lv.3` |
+| **Forest Form** | Regional Variant | `Fire 3` | 25% | The Mistwoods, Berylline Vale, Driftwise Meadow | `Fire Lv.3` |
+| **Sea of Flowers Form** | Regional Variant | `Fire 3` | 25% | — | `Fire Lv.3` |
 
 ### <a id="-028-flutternym"></a>#028 — Flutternym
 
@@ -371,12 +370,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning 1.6× · Light 1.6× | **Resists:** Dark 0.625× · Wind 0.625×
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 1` | 56% | Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood | `Transport Lv.1, Carry Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Wind 1 / Grass 1` | 56% | Sea of Flowers | `Transport Lv.1, Carry Lv.1, Farming Lv.1, Lumbering Lv.1` |
-| **Nighttime Form** | Regional Variant | `Wind 1 / Dark 1` | 56% | Sea of Flowers | `Transport Lv.1, Carry Lv.1, Night Labor Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Wind 1 / Earth 1` | 56% | Beast Fang Ridge, Blitzwood | `Transport Lv.1, Carry Lv.1, Mining Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood | `Wind Lv.1` |
+| **Sea of Flowers Form** | Regional Variant | `Wind 1 / Grass 1` | 56% | Sea of Flowers | `Wind Lv.1, Grass Lv.1` |
+| **Nighttime Form** | Regional Variant | `Wind 1 / Dark 1` | 56% | Sea of Flowers | `Wind Lv.1, Dark Lv.1` |
+| **Mountain Woods Form** | Regional Variant | `Wind 1 / Earth 1` | 56% | Beast Fang Ridge, Blitzwood | `Wind Lv.1, Earth Lv.1` |
 
 ### <a id="-029-gracewing"></a>#029 — Gracewing
 
@@ -384,22 +383,22 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning 1.6× · Light 1.6× | **Resists:** Dark 0.625× · Wind 0.625×
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 3` | 28% | — | `Transport Lv.3, Carry Lv.2` |
-| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | — | `Transport Lv.3, Carry Lv.2, Farming Lv.2, Lumbering Lv.1` |
-| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | — | `Transport Lv.3, Carry Lv.2, Night Labor Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | `Transport Lv.3, Carry Lv.1, Mining Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | — | `Wind Lv.3` |
+| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | — | `Wind Lv.3, Grass Lv.2` |
+| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | — | `Wind Lv.3, Dark Lv.2` |
+| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | `Wind Lv.3, Earth Lv.2` |
 
 ### <a id="-030-somniwing"></a>#030 — Somniwing
 
-**Slug:** `somniwing` | **Homeland Tier:** `C-Tier` | **Trait:** ****Energy Full**** (*Increases max EP by X.*)
+**Slug:** `somniwing` | **Homeland Tier:** `S-Tier` | **Trait:** ****Energy Full**** (*Increases max EP by X.*)
 
 **Weak To:** Lightning 1.6× · Light 1.6× | **Resists:** Grass 0.625× · Earth 0.625×
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Prismana Form** | 🌈 Prismana | `Grass 3 / Wind 2` | 28% | Idyll Prismana Flow | `Grass Lv.3, Wind Lv.2` |
 
 ### <a id="-031-eko"></a>#031 — Eko
 
@@ -407,9 +406,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-032-eklue"></a>#032 — Eklue
 
@@ -417,9 +416,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-033-budsquire"></a>#033 — Budsquire
 
@@ -427,34 +426,34 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 1` | 50% | Sea of Flowers, Rosetower Woods | `Farming Lv.1, Lumbering Lv.1` |
-| **Towerwood Form** | Regional Variant | `Grass 1` | 50% | Rosetower Woods | `Farming Lv.1, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers, Rosetower Woods | `Grass Lv.1` |
+| **Towerwood Form** | Regional Variant | `Grass 1` | 50% | Rosetower Woods | `Grass Lv.1` |
 
 ### <a id="-034-thornblade"></a>#034 — Thornblade
 
-**Slug:** `thornblade` | **Homeland Tier:** `A-Tier` | **Trait:** **Sword Dance** (*Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage.*)
+**Slug:** `thornblade` | **Homeland Tier:** `S-Tier` | **Trait:** **Sword Dance** (*Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage.*)
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 3` | 25% | Sea of Flowers | `Farming Lv.3, Lumbering Lv.2` |
-| **Towerwood Form** | Regional Variant | `Grass 3` | 28% | Rosetower Woods | `Farming Lv.3, Lumbering Lv.2` |
-| **Thunderstorm Form** | Weather Variant | `Grass 3` | 25% | Sea of Flowers | `Farming Lv.3, Lumbering Lv.2` |
-| **Prismana** | 🌈 Prismana | `Grass 4 / Water 3` | 25% | Sea of Flowers | `Farming Lv.2, Lumbering Lv.3, Water Lv.3` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Sea of Flowers | `Grass Lv.3` |
+| **Towerwood Form** | Regional Variant | `Grass 3` | 28% | Rosetower Woods | `Grass Lv.3` |
+| **Thunderstorm Form** | Weather Variant | `Grass 3` | 25% | Sea of Flowers | `Grass Lv.3` |
+| **Prismana** | 🌈 Prismana | `Grass 4 / Water 3` | 25% | Sea of Flowers | `Grass Lv.4, Water Lv.3` |
 
 ### <a id="-035-melloblum"></a>#035 — Melloblum
 
-**Slug:** `melloblum` | **Homeland Tier:** `A-Tier` | **Trait:** **Phantom Opening** (*When a party member deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by X.*)
+**Slug:** `melloblum` | **Homeland Tier:** `S-Tier` | **Trait:** **Phantom Opening** (*When a party member deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by X.*)
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 3` | 25% | Rosetower Woods | `Farming Lv.3, Lumbering Lv.2` |
-| **Prismana** | 🌈 Prismana | `Grass 4` | 25% | — | `Farming Lv.4, Lumbering Lv.3` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | `Grass Lv.3` |
+| **Prismana** | 🌈 Prismana | `Grass 4` | 25% | — | `Grass Lv.4` |
 
 ### <a id="-036-pomegg"></a>#036 — Pomegg
 
@@ -462,12 +461,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 1` | 50% | Rosetower Woods | `Farming Lv.1, Lumbering Lv.1` |
-| **Snowfield Form** | Regional Variant | `Grass 1 / Ice 1` | 38% | Rosetower Woods, Driftwise Meadow | `Farming Lv.1, Lumbering Lv.1, Cooling Lv.1` |
-| **Highland Form** | Regional Variant | `Grass 1` | 50% | Zephyrus Landbridge, Beast Fang Ridge | `Farming Lv.1, Lumbering Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Grass 1` | 50% | Tideblossom Coast, Forest of Falling Stars | `Farming Lv.1, Lumbering Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Rosetower Woods | `Grass Lv.1` |
+| **Snowfield Form** | Regional Variant | `Grass 1 / Ice 1` | 38% | Rosetower Woods, Driftwise Meadow | `Grass Lv.1, Ice Lv.1` |
+| **Highland Form** | Regional Variant | `Grass 1` | 50% | Zephyrus Landbridge, Beast Fang Ridge | `Grass Lv.1` |
+| **Sea of Flowers Form** | Regional Variant | `Grass 1` | 50% | Tideblossom Coast, Forest of Falling Stars | `Grass Lv.1` |
 
 ### <a id="-037-pomawk"></a>#037 — Pomawk
 
@@ -475,12 +474,12 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Grass 3` | 25% | Rosetower Woods | `Farming Lv.3, Lumbering Lv.2` |
-| **Snowfield Form** | Regional Variant | `Grass 3 / Ice 2` | 25% | — | `Farming Lv.3, Lumbering Lv.2, Cooling Lv.2` |
-| **Highland Form** | Regional Variant | `Grass 3` | 16% | — | `Farming Lv.3, Lumbering Lv.2` |
-| **Sea of Flowers Form** | Regional Variant | `Grass 3` | 25% | — | `Farming Lv.3, Lumbering Lv.2` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | `Grass Lv.3` |
+| **Snowfield Form** | Regional Variant | `Grass 3 / Ice 2` | 25% | — | `Grass Lv.3, Ice Lv.2` |
+| **Highland Form** | Regional Variant | `Grass 3` | 16% | — | `Grass Lv.3` |
+| **Sea of Flowers Form** | Regional Variant | `Grass 3` | 25% | — | `Grass Lv.3` |
 
 ### <a id="-038-dewy"></a>#038 — Dewy
 
@@ -488,9 +487,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-039-fragrancier"></a>#039 — Fragrancier
 
@@ -498,9 +497,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-040-wisptis"></a>#040 — Wisptis
 
@@ -508,24 +507,24 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 1` | 44% | Berylline Vale | `Night Labor Lv.1, Carry Lv.1` |
-| **Forest Form** | Regional Variant | `Dark 1 / Grass 1` | 50% | The Mistwoods | `Night Labor Lv.1, Farming Lv.1, Lumbering Lv.1` |
-| **Highland Form** | Regional Variant | `Dark 1 / Fire 1` | 44% | Zephyrus Landbridge, Blitzwood | `Night Labor Lv.1, Fire Lv.1` |
+| **Basic Form (base)** | Base Form | `Dark 1` | 44% | Berylline Vale | `Dark Lv.1` |
+| **Forest Form** | Regional Variant | `Dark 1 / Grass 1` | 50% | The Mistwoods | `Dark Lv.1, Grass Lv.1` |
+| **Highland Form** | Regional Variant | `Dark 1 / Fire 1` | 44% | Zephyrus Landbridge, Blitzwood | `Dark Lv.1, Fire Lv.1` |
 
 ### <a id="-041-ignitis"></a>#041 — Ignitis
 
-**Slug:** `ignitis` | **Homeland Tier:** `A-Tier` | **Trait:** **Battle Fervor** (*Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times.*)
+**Slug:** `ignitis` | **Homeland Tier:** `S-Tier` | **Trait:** **Battle Fervor** (*Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times.*)
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 3` | 22% | Berylline Vale | `Night Labor Lv.3, Carry Lv.1` |
-| **Forest Form** | Regional Variant | `Dark 3 / Grass 2` | 25% | The Mistwoods | `Night Labor Lv.3, Farming Lv.2, Lumbering Lv.1` |
-| **Highland Form** | Regional Variant | `Dark 3 / Fire 2` | 22% | Zephyrus Landbridge, Blitzwood | `Night Labor Lv.3, Fire Lv.2, Artisanship Lv.1` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Fire 3` | 22% | Berylline Vale | `Night Labor Lv.4, Fire Lv.3, Artisanship Lv.2` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 22% | Berylline Vale | `Dark Lv.3` |
+| **Forest Form** | Regional Variant | `Dark 3 / Grass 2` | 25% | The Mistwoods | `Dark Lv.3, Grass Lv.2` |
+| **Highland Form** | Regional Variant | `Dark 3 / Fire 2` | 22% | Zephyrus Landbridge, Blitzwood | `Dark Lv.3, Fire Lv.2` |
+| **Prismana** | 🌈 Prismana | `Dark 4 / Fire 3` | 22% | Berylline Vale | `Dark Lv.4, Fire Lv.3` |
 
 ### <a id="-042-bonesky"></a>#042 — Bonesky
 
@@ -533,10 +532,10 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Ice 1` | 50% | Beast Fang Ridge, Driftwise Meadow | `Cooling Lv.1, Carry Lv.1` |
-| **Nighttime Form** | Regional Variant | `Ice 1 / Dark 1` | 50% | Rosetower Woods | `Cooling Lv.1, Night Labor Lv.1` |
+| **Basic Form (base)** | Base Form | `Ice 1` | 50% | Beast Fang Ridge, Driftwise Meadow | `Ice Lv.1` |
+| **Nighttime Form** | Regional Variant | `Ice 1 / Dark 1` | 50% | Rosetower Woods | `Ice Lv.1, Dark Lv.1` |
 
 ### <a id="-043-fenrier"></a>#043 — Fenrier
 
@@ -544,22 +543,22 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Ice 2` | 38% | Beast Fang Ridge, Driftwise Meadow | `Cooling Lv.2, Carry Lv.1` |
-| **Nighttime Form** | Regional Variant | `Ice 2 / Dark 1` | 38% | Rosetower Woods | `Cooling Lv.2, Night Labor Lv.1` |
+| **Basic Form (base)** | Base Form | `Ice 2` | 38% | Beast Fang Ridge, Driftwise Meadow | `Ice Lv.2` |
+| **Nighttime Form** | Regional Variant | `Ice 2 / Dark 1` | 38% | Rosetower Woods | `Ice Lv.2, Dark Lv.1` |
 
 ### <a id="-044-glynsera"></a>#044 — Glynsera
 
-**Slug:** `glynsera` | **Homeland Tier:** `A-Tier` | **Trait:** **Biting Wind** (*When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.*)
+**Slug:** `glynsera` | **Homeland Tier:** `S-Tier` | **Trait:** **Biting Wind** (*When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.*)
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Ice 3` | 25% | Beast Fang Ridge | `Cooling Lv.3, Carry Lv.1` |
-| **Nighttime Form** | Regional Variant | `Ice 3 / Dark 2` | — | Rosetower Woods | `Cooling Lv.3, Night Labor Lv.2` |
-| **Prismana** | 🌈 Prismana | `Ice 4` | 25% | — | `Cooling Lv.4, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Ice 3` | 25% | Beast Fang Ridge | `Ice Lv.3` |
+| **Nighttime Form** | Regional Variant | `Ice 3 / Dark 2` | — | Rosetower Woods | `Ice Lv.3, Dark Lv.2` |
+| **Prismana** | 🌈 Prismana | `Ice 4` | 25% | — | `Ice Lv.4` |
 
 ### <a id="-045-bolty"></a>#045 — Bolty
 
@@ -567,22 +566,22 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Lightning 1` | 44% | Blitzwood | `Electricity Lv.1, Artisanship Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Lightning 1` | 50% | Blitzwood | `Electricity Lv.1, Artisanship Lv.1` |
+| **Basic Form (base)** | Base Form | `Lightning 1` | 44% | Blitzwood | `Lightning Lv.1` |
+| **Mountain Woods Form** | Regional Variant | `Lightning 1` | 50% | Blitzwood | `Lightning Lv.1` |
 
 ### <a id="-046-blazen"></a>#046 — Blazen
 
-**Slug:** `blazen` | **Homeland Tier:** `A-Tier` | **Trait:** **Power Sustain** (*After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs.*)
+**Slug:** `blazen` | **Homeland Tier:** `S-Tier` | **Trait:** **Power Sustain** (*After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs.*)
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Lightning 3` | 22% | Blitzwood | `Electricity Lv.3, Artisanship Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Lightning 3` | 25% | — | `Electricity Lv.3, Artisanship Lv.2` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 25% | Blitzwood | `Electricity Lv.4, Artisanship Lv.3` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Blitzwood | `Lightning Lv.3` |
+| **Mountain Woods Form** | Regional Variant | `Lightning 3` | 25% | — | `Lightning Lv.3` |
+| **Prismana** | 🌈 Prismana | `Lightning 4` | 25% | Blitzwood | `Lightning Lv.4` |
 
 ### <a id="-047-squarrel"></a>#047 — Squarrel
 
@@ -590,9 +589,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-048-squashel"></a>#048 — Squashel
 
@@ -600,9 +599,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-049-susuta"></a>#049 — Susuta
 
@@ -610,11 +609,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 1` | 38% | Echoback Landing | `Water Lv.1, Carry Lv.1` |
-| **Nighttime Form** | Regional Variant | `Water 1` | 44% | Echoback Landing | `Water Lv.1, Carry Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Water 1` | — | — | `Water Lv.1, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | `Water Lv.1` |
+| **Nighttime Form** | Regional Variant | `Water 1` | 44% | Echoback Landing | `Water Lv.1` |
+| **Basic Form (variant record)** | Regional Variant | `Water 1` | — | — | `Water Lv.1` |
 
 ### <a id="-050-popota"></a>#050 — Popota
 
@@ -622,10 +621,10 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 2` | 29% | Echoback Landing | `Water Lv.2, Farming Lv.1` |
-| **Nighttime Form** | Regional Variant | `Water 2` | 33% | — | `Water Lv.2, Farming Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 2` | 29% | Echoback Landing | `Water Lv.2` |
+| **Nighttime Form** | Regional Variant | `Water 2` | 33% | — | `Water Lv.2` |
 
 ### <a id="-051-piopiota"></a>#051 — Piopiota
 
@@ -633,22 +632,22 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 3` | 19% | — | `Water Lv.3, Farming Lv.2` |
-| **Nighttime Form** | Regional Variant | `Water 3 / Dark 2` | 22% | — | `Water Lv.3, Farming Lv.2, Night Labor Lv.2` |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | — | `Water Lv.3` |
+| **Nighttime Form** | Regional Variant | `Water 3 / Dark 2` | 22% | — | `Water Lv.3, Dark Lv.2` |
 
 ### <a id="-052-panpanta"></a>#052 — Panpanta
 
-**Slug:** `panpanta` | **Homeland Tier:** `A-Tier` | **Trait:** **Appeal** (*When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.*)
+**Slug:** `panpanta` | **Homeland Tier:** `S-Tier` | **Trait:** **Appeal** (*When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.*)
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 3` | 19% | Echoback Landing | `Water Lv.3, Farming Lv.2` |
-| **Nighttime Form** | Regional Variant | `Water 3` | 22% | — | `Water Lv.3, Farming Lv.2` |
-| **Prismana** | 🌈 Prismana | `Water 4` | 22% | Echoback Landing | `Water Lv.4, Farming Lv.3` |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Echoback Landing | `Water Lv.3` |
+| **Nighttime Form** | Regional Variant | `Water 3` | 22% | — | `Water Lv.3` |
+| **Prismana** | 🌈 Prismana | `Water 4` | 22% | Echoback Landing | `Water Lv.4` |
 
 ### <a id="-053-shelly"></a>#053 — Shelly
 
@@ -656,10 +655,10 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 1` | 38% | Echoback Landing | `Water Lv.1, Carry Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Water 1` | — | — | `Water Lv.1, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | `Water Lv.1` |
+| **Basic Form (variant record)** | Regional Variant | `Water 1` | — | — | `Water Lv.1` |
 
 ### <a id="-054-sheldon"></a>#054 — Sheldon
 
@@ -667,21 +666,21 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-055-sherro"></a>#055 — Sherro
 
-**Slug:** `sherro` | **Homeland Tier:** `A-Tier` | **Trait:** **Tidal Heart** (*While in water terrain or after absorbing water, increases Water Elemental Boost by X% for Xs.*)
+**Slug:** `sherro` | **Homeland Tier:** `S-Tier` | **Trait:** **Tidal Heart** (*While in water terrain or after absorbing water, increases Water Elemental Boost by X% for Xs.*)
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Water 3` | 19% | — | `Water Lv.3, Farming Lv.2` |
-| **Thunderstorm Form** | Weather Variant | `Water 3 / Lightning 2` | 22% | Echoback Landing | `Water Lv.3, Farming Lv.2, Electricity Lv.2, Artisanship Lv.1` |
-| **Prismana** | 🌈 Prismana | `Water 4` | 22% | — | `Water Lv.4, Farming Lv.3` |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | — | `Water Lv.3` |
+| **Thunderstorm Form** | Weather Variant | `Water 3 / Lightning 2` | 22% | Echoback Landing | `Water Lv.3, Lightning Lv.2` |
+| **Prismana** | 🌈 Prismana | `Water 4` | 22% | — | `Water Lv.4` |
 
 ### <a id="-056-baleetle"></a>#056 — Baleetle
 
@@ -689,22 +688,22 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Earth 1` | 38% | Berylline Vale | `Mining Lv.1, Carry Lv.1` |
-| **Snowfield Form** | Regional Variant | `Earth 1 / Ice 1` | 38% | Russet Highlands | `Mining Lv.1, Carry Lv.1, Cooling Lv.1` |
+| **Basic Form (base)** | Base Form | `Earth 1` | 38% | Berylline Vale | `Earth Lv.1` |
+| **Snowfield Form** | Regional Variant | `Earth 1 / Ice 1` | 38% | Russet Highlands | `Earth Lv.1, Ice Lv.1` |
 
 ### <a id="-057-waleetle"></a>#057 — Waleetle
 
-**Slug:** `waleetle` | **Homeland Tier:** `A-Tier` | **Trait:** **Overloaded Engine** (*Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals X% extra damage and immediately brings [Sandstorm Spin] to maximum speed.*)
+**Slug:** `waleetle` | **Homeland Tier:** `S-Tier` | **Trait:** **Overloaded Engine** (*Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals X% extra damage and immediately brings [Sandstorm Spin] to maximum speed.*)
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Earth 3` | 19% | Berylline Vale | `Mining Lv.3, Carry Lv.2` |
-| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Russet Highlands | `Mining Lv.3, Carry Lv.2, Cooling Lv.2` |
-| **Prismana** | 🌈 Prismana | `Earth 4` | 19% | — | `Mining Lv.4, Carry Lv.3` |
+| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | `Earth Lv.3` |
+| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Russet Highlands | `Earth Lv.3, Ice Lv.2` |
+| **Prismana** | 🌈 Prismana | `Earth 4` | 19% | — | `Earth Lv.4` |
 
 ### <a id="-058-bouldus"></a>#058 — Bouldus
 
@@ -712,10 +711,10 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Earth 3` | 19% | Berylline Vale | `Mining Lv.3, Carry Lv.2` |
-| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | — | `Mining Lv.3, Carry Lv.2, Cooling Lv.2` |
+| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | `Earth Lv.3` |
+| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | — | `Earth Lv.3, Ice Lv.2` |
 
 ### <a id="-059-fentuft"></a>#059 — Fentuft
 
@@ -723,20 +722,20 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-060-fenmane"></a>#060 — Fenmane
 
-**Slug:** `fenmane` | **Homeland Tier:** `A-Tier` | **Trait:** **Thunderbond** (*When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.*)
+**Slug:** `fenmane` | **Homeland Tier:** `S-Tier` | **Trait:** **Thunderbond** (*When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.*)
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Lightning 3` | 22% | Driftwise Meadow | `Electricity Lv.3, Artisanship Lv.2` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | — | `Electricity Lv.4, Artisanship Lv.3` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Driftwise Meadow | `Lightning Lv.3` |
+| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | — | `Lightning Lv.4` |
 
 ### <a id="-061-helmut"></a>#061 — Helmut
 
@@ -744,24 +743,24 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 1` | 56% | Russet Highlands | `Night Labor Lv.1, Carry Lv.1` |
-| **Snowfield Form** | Regional Variant | `Dark 1 / Ice 1` | 32% | Russet Highlands | `Night Labor Lv.1, Cooling Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Dark 1` | 40% | Russet Highlands | `Night Labor Lv.1, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Dark 1` | 56% | Russet Highlands | `Dark Lv.1` |
+| **Snowfield Form** | Regional Variant | `Dark 1 / Ice 1` | 32% | Russet Highlands | `Dark Lv.1, Ice Lv.1` |
+| **Mountain Woods Form** | Regional Variant | `Dark 1` | 40% | Russet Highlands | `Dark Lv.1` |
 
 ### <a id="-062-pawney"></a>#062 — Pawney
 
-**Slug:** `pawney` | **Homeland Tier:** `A-Tier` | **Trait:** **Pursuit** (*When dealing damage to targets in Controlled or Break State, increases an additional X% Damage Amp.*)
+**Slug:** `pawney` | **Homeland Tier:** `S-Tier` | **Trait:** **Pursuit** (*When dealing damage to targets in Controlled or Break State, increases an additional X% Damage Amp.*)
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 3` | 16% | — | `Night Labor Lv.3, Carry Lv.1` |
-| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 28% | — | `Night Labor Lv.3, Cooling Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Dark 3` | 16% | — | `Night Labor Lv.3, Carry Lv.1` |
-| **Prismana** | 🌈 Prismana | `Dark 4` | 28% | Russet Highlands | `Night Labor Lv.4, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 16% | — | `Dark Lv.3` |
+| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 28% | — | `Dark Lv.3, Ice Lv.2` |
+| **Mountain Woods Form** | Regional Variant | `Dark 3` | 16% | — | `Dark Lv.3` |
+| **Prismana** | 🌈 Prismana | `Dark 4` | 28% | Russet Highlands | `Dark Lv.4` |
 
 ### <a id="-063-rookey"></a>#063 — Rookey
 
@@ -769,11 +768,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Dark 3` | 16% | Russet Highlands | `Night Labor Lv.3, Carry Lv.1` |
-| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 19% | Russet Highlands | `Night Labor Lv.3, Cooling Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Dark 3` | 19% | Russet Highlands | `Night Labor Lv.3, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Russet Highlands | `Dark Lv.3` |
+| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 19% | Russet Highlands | `Dark Lv.3, Ice Lv.2` |
+| **Mountain Woods Form** | Regional Variant | `Dark 3` | 19% | Russet Highlands | `Dark Lv.3` |
 
 ### <a id="-064-jawling"></a>#064 — Jawling
 
@@ -781,10 +780,10 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 1` | 32% | Russet Highlands | `Transport Lv.1, Carry Lv.1` |
-| **Mountain Form** | Regional Variant | `Wind 1` | 38% | Russet Highlands | `Transport Lv.1, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 32% | Russet Highlands | `Wind Lv.1` |
+| **Mountain Form** | Regional Variant | `Wind 1` | 38% | Russet Highlands | `Wind Lv.1` |
 
 ### <a id="-065-helmwhelp"></a>#065 — Helmwhelp
 
@@ -792,10 +791,10 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 2` | 42% | Russet Highlands | `Transport Lv.2, Carry Lv.1` |
-| **Mountain Form** | Regional Variant | `Wind 2` | 42% | Russet Highlands | `Transport Lv.2, Carry Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 2` | 42% | Russet Highlands | `Wind Lv.2` |
+| **Mountain Form** | Regional Variant | `Wind 2` | 42% | Russet Highlands | `Wind Lv.2` |
 
 ### <a id="-066-helgon"></a>#066 — Helgon
 
@@ -803,21 +802,21 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Wind 3` | 28% | Russet Highlands | `Transport Lv.3, Carry Lv.2` |
-| **Mountain Form** | Regional Variant | `Wind 3` | 19% | Russet Highlands | `Transport Lv.3, Carry Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Russet Highlands | `Wind Lv.3` |
+| **Mountain Form** | Regional Variant | `Wind 3` | 19% | Russet Highlands | `Wind Lv.3` |
 
 ### <a id="-067-infergon"></a>#067 — Infergon
 
-**Slug:** `infergon` | **Homeland Tier:** `A-Tier` | **Trait:** **Power of Fire** (*Deals X% extra damage to targets with more than 5 stacks of Fire Debuff.*)
+**Slug:** `infergon` | **Homeland Tier:** `S-Tier` | **Trait:** **Power of Fire** (*Deals X% extra damage to targets with more than 5 stacks of Fire Debuff.*)
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 3` | 19% | — | `Fire Lv.3, Artisanship Lv.2` |
-| **Prismana** | 🌈 Prismana | `Fire 4 / Wind 3` | 19% | — | `Fire Lv.4, Artisanship Lv.3, Transport Lv.3, Carry Lv.2` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 19% | — | `Fire Lv.3` |
+| **Prismana** | 🌈 Prismana | `Fire 4 / Wind 3` | 19% | — | `Fire Lv.4, Wind Lv.3` |
 
 ### <a id="-068-cubbo"></a>#068 — Cubbo
 
@@ -825,20 +824,20 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-069-grizbo"></a>#069 — Grizbo
 
-**Slug:** `grizbo` | **Homeland Tier:** `A-Tier` | **Trait:** **Raging Rampage** (*Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s.*)
+**Slug:** `grizbo` | **Homeland Tier:** `S-Tier` | **Trait:** **Raging Rampage** (*Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s.*)
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Earth 3` | 16% | Rosetower Woods | `Mining Lv.3, Carry Lv.2` |
-| **Prismana** | 🌈 Prismana | `Earth 4` | 16% | Rosetower Woods | `Mining Lv.4, Carry Lv.3` |
+| **Basic Form (base)** | Base Form | `Earth 3` | 16% | Rosetower Woods | `Earth Lv.3` |
+| **Prismana** | 🌈 Prismana | `Earth 4` | 16% | Rosetower Woods | `Earth Lv.4` |
 
 ### <a id="-070-pebbling"></a>#070 — Pebbling
 
@@ -846,9 +845,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-071-lavazar"></a>#071 — Lavazar
 
@@ -856,9 +855,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Water (2.56×) | **Resists:** Fire (0.391×), Ice (0.391×), Lightning (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-072-magmarex"></a>#072 — Magmarex
 
@@ -866,11 +865,11 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Water (2.56×) | **Resists:** Fire (0.391×), Ice (0.391×), Lightning (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 3 / Earth 2` | 19% | Zephyrus Landbridge | `Fire Lv.3, Artisanship Lv.2, Mining Lv.2, Carry Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Fire 3 / Earth 2` | — | — | `Fire Lv.3, Artisanship Lv.2, Mining Lv.2, Carry Lv.1` |
-| **Prismana** | 🌈 Prismana | `Fire 4 / Dark 3` | 19% | Zephyrus Landbridge | `Fire Lv.4, Artisanship Lv.3, Night Labor Lv.3` |
+| **Basic Form (base)** | Base Form | `Fire 3 / Earth 2` | 19% | Zephyrus Landbridge | `Fire Lv.3, Earth Lv.2` |
+| **Basic Form (variant record)** | Regional Variant | `Fire 3 / Earth 2` | — | — | `Fire Lv.3, Earth Lv.2` |
+| **Prismana** | 🌈 Prismana | `Fire 4 / Dark 3` | 19% | Zephyrus Landbridge | `Fire Lv.4, Dark Lv.3` |
 
 ### <a id="-073-geodeback"></a>#073 — Geodeback
 
@@ -878,9 +877,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-074-minespine"></a>#074 — Minespine
 
@@ -888,9 +887,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-075-cozite"></a>#075 — Cozite
 
@@ -898,9 +897,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-076-bailite"></a>#076 — Bailite
 
@@ -908,9 +907,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-077-bulbly"></a>#077 — Bulbly
 
@@ -918,9 +917,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-078-veilfloat"></a>#078 — Veilfloat
 
@@ -928,21 +927,21 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-079-luminelle"></a>#079 — Luminelle
 
-**Slug:** `luminelle` | **Homeland Tier:** `A-Tier` | **Trait:** **Arc Surge** (*Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.*)
+**Slug:** `luminelle` | **Homeland Tier:** `S-Tier` | **Trait:** **Arc Surge** (*Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.*)
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Lightning 3` | 22% | Tideblossom Coast | `Electricity Lv.3, Artisanship Lv.2` |
-| **Rainstorm Form** | Weather Variant | `Lightning 3 / Water 2` | 22% | Tideblossom Coast | `Electricity Lv.3, Artisanship Lv.2, Water Lv.2, Farming Lv.1` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | Tideblossom Coast | `Electricity Lv.4, Artisanship Lv.3` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Tideblossom Coast | `Lightning Lv.3` |
+| **Rainstorm Form** | Weather Variant | `Lightning 3 / Water 2` | 22% | Tideblossom Coast | `Lightning Lv.3, Water Lv.2` |
+| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | Tideblossom Coast | `Lightning Lv.4` |
 
 ### <a id="-080-fahloo"></a>#080 — Fahloo
 
@@ -950,9 +949,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-081-erlath"></a>#081 — Erlath
 
@@ -960,9 +959,9 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
 ### <a id="-082-besauce"></a>#082 — Besauce
 
@@ -970,106 +969,25 @@ This database provides verified information on every Aniimo species in *Aniimo*,
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| **Basic Form** | Base Form | `Standard` | Standard | Idyll Native Habitat | `` |
 
-### <a id="-083-dazmand"></a>#083 — Dazmand
+---
 
-**Slug:** `dazmand` | **Homeland Tier:** `C-Tier` | **Trait:** **Spotlight Moment** (*The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.*)
+## 🔒 Unreleased / Undiscovered Slots (#083 to #092)
 
-**Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
+The current game release features **82 cataloged basic Aniimo species**. The slots below appear as `????` in the in-game Dex awaiting future content updates:
 
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-084-fulmintis"></a>#084 — Fulmintis
-
-**Slug:** `fulmintis` | **Homeland Tier:** `A-Tier` | **Trait:** **Electro Stash** (*Restores X EP when a skill lands a critical hit.*)
-
-**Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Lightning 3` | 22% | — | `Electricity Lv.3, Artisanship Lv.2` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | — | `Electricity Lv.4, Artisanship Lv.3` |
-
-### <a id="-085-fennelun"></a>#085 — Fennelun
-
-**Slug:** `fennelun` | **Homeland Tier:** `C-Tier` | **Trait:** ****Lunar Power**** (*When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.*)
-
-**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-086-lunara"></a>#086 — Lunara
-
-**Slug:** `lunara` | **Homeland Tier:** `C-Tier` | **Trait:** ****Lunar Power**** (*When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.*)
-
-**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-087-soleon"></a>#087 — Soleon
-
-**Slug:** `soleon` | **Homeland Tier:** `C-Tier` | **Trait:** ****Solar Grace**** (*When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.*)
-
-**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-088-helion"></a>#088 — Helion
-
-**Slug:** `helion` | **Homeland Tier:** `C-Tier` | **Trait:** ****Solar Grace**** (*When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.*)
-
-**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-089-morphling"></a>#089 — Morphling
-
-**Slug:** `morphling` | **Homeland Tier:** `C-Tier` | **Trait:** **** (**)
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-090-jabster"></a>#090 — Jabster
-
-**Slug:** `jabster` | **Homeland Tier:** `C-Tier` | **Trait:** **Knuckle Burst** (*Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s.*)
-
-**Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
-
-### <a id="-091-sparkelf"></a>#091 — Sparkelf
-
-**Slug:** `sparkelf` | **Homeland Tier:** `A-Tier` | **Trait:** **Reliable Fire Companion** (*When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.*)
-
-**Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base | `Fire 3` | 16% | — | `Fire Lv.3, Artisanship Lv.2` |
-| **Prismana** | 🌈 Prismana | `Fire 4` | 16% | — | `Fire Lv.4, Artisanship Lv.3` |
-
-### <a id="-092-irisalis"></a>#092 — Irisalis
-
-**Slug:** `irisalis` | **Homeland Tier:** `C-Tier` | **Trait:** ****Bloom Cluster**** (*When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.*)
-
-**Weak To:** Dark 1.6× · Fire 1.6× · Wind 1.6× | **Resists:** Grass 0.625× · Earth 0.625× · Water 0.625×
-
-| Form Name | Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base | `Standard` | Standard | Idyll Native Habitat | `Carry Lv.1, Artisanship Lv.1` |
+| Slot | In-Game Name | Status | Encounter Data |
+| :--- | :--- | :--- | :--- |
+| **#083** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#084** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#085** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#086** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#087** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#088** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#089** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#090** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#091** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
+| **#092** | `????` | Locked / Unverified | In-game Dex entry shows `????` |
