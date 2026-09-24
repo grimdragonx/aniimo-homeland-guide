@@ -57,9 +57,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 2` | 42% | Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge | 🔥 Fire Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
+| **Basic Form (base)** | Base Form | `Fire 2` | 42% | Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge | 🔥 Fire Lv.2, 📦 Carry Lv.2 |
 | **Highland Form** | Regional Variant | `Fire 2 / Earth 1` | 29% | Zephyrus Landbridge, Russet Highlands | 🔥 Fire Lv.2, ⛰️ Earth Lv.1, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Fire 2` | 38% | Beast Fang Ridge | 🔥 Fire Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Fire 2` | 38% | Beast Fang Ridge | 🔥 Fire Lv.2, 📦 Carry Lv.2 |
 
 ---
 
@@ -71,11 +71,11 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Highland Form** | Regional Variant | `Fire 3 / Earth 2` | 19% | Idyll Native Habitat | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Mountain Woods Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Thunderstorm Form** | Weather Variant | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Prismana** | Prismana Form | `Fire 4` | 28% | Beast Fang Ridge | 🔥 Fire Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 📦 Carry Lv.3 |
+| **Highland Form** | Regional Variant | `Fire 3 / Earth 2` | 19% | Idyll Native Habitat | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, 📦 Carry Lv.3 |
+| **Thunderstorm Form** | Weather Variant | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Fire 4` | 28% | Beast Fang Ridge | 🔥 Fire Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -87,8 +87,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3 / Fire 2` | 28% | Idyll Native Habitat | 🌑 Dark Lv.3, 🔥 Fire Lv.2, 🔨 Artisanship Lv.2 |
-| **Prismana** | Prismana Form | `Dark 4 / Fire 3` | 25% | Idyll Native Habitat | 🌑 Dark Lv.4, 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Dark 3` | 28% | Idyll Native Habitat | 🌑 Dark Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Dark 4 / Fire 4` | 25% | Idyll Native Habitat | 🌑 Dark Lv.4, 🔥 Fire Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -100,7 +100,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 3` | Standard | Idyll Native Habitat | 🌑 Dark Lv.3, ☕ Leisure Lv.1 |
+| **Basic Form** | Base Form | `Dark 3` | Standard | Idyll Native Habitat | 🌑 Dark Lv.3, ☕ Leisure Lv.3 |
 
 ---
 
@@ -112,9 +112,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 28% | Forest of Falling Stars | 🌑 Dark Lv.3, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
-| **Rainstorm Form** | Weather Variant | `Dark 3 / Water 2` | 28% | Forest of Falling Stars | 🌑 Dark Lv.3, 💧 Water Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
-| **Prismana** | Prismana Form | `Dark 4 / Ice 3` | 28% | Forest of Falling Stars | 🌑 Dark Lv.4, ❄️ Ice Lv.3, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
+| **Basic Form (base)** | Base Form | `Dark 3` | 28% | Forest of Falling Stars | 🌑 Dark Lv.3, ☕ Leisure Lv.3 |
+| **Rainstorm Form** | Weather Variant | `Dark 3 / Water 2` | 28% | Forest of Falling Stars | 🌑 Dark Lv.3, 💧 Water Lv.2, ☕ Leisure Lv.3 |
+| **Prismana** | Prismana Form | `Dark 4 / Ice 4` | 28% | Forest of Falling Stars | 🌑 Dark Lv.4, ❄️ Ice Lv.4, ☕ Leisure Lv.4 |
 
 ---
 
@@ -140,9 +140,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | 🍃 Wind Lv.3, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Forest of Falling Stars | 🍃 Wind Lv.3, 💧 Water Lv.2, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | 🍃 Wind Lv.3, 🌱 Grass Lv.2, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | 🍃 Wind Lv.3, 📦 Carry Lv.2 |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Forest of Falling Stars | 🍃 Wind Lv.3, 💧 Water Lv.2, 📦 Carry Lv.2 |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | 🍃 Wind Lv.3, 🌱 Grass Lv.2, 📦 Carry Lv.2 |
 
 ---
 
@@ -157,7 +157,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 | **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | 🍃 Wind Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
 | **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Echoback Landing, Forest of Falling Stars | 🍃 Wind Lv.3, 💧 Water Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
 | **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | 🍃 Wind Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Prismana** | Prismana Form | `Wind 4 / Lightning 3` | 28% | The Argent Strait | 🍃 Wind Lv.4, ⚡ Lightning Lv.3, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Wind 4 / Lightning 4` | 28% | The Argent Strait | 🍃 Wind Lv.4, ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -184,13 +184,13 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
-| **Highland Form** | Regional Variant | `Grass 1` | 56% | Russet Highlands | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
-| **Forest Form** | Regional Variant | `Grass 1` | 56% | Forest of Falling Stars | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
-| **Grassland Form** | Regional Variant | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Grass 1` | 56% | Berylline Vale, Beast Fang Ridge | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
-| **Plateau Form** | Weather Variant | `Grass 1` | 56% | Driftwise Meadow | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
-| **Prismana** | Prismana Form | `Grass 1` | 56% | Idyll Native Habitat | 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Highland Form** | Regional Variant | `Grass 1` | 56% | Russet Highlands | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Forest Form** | Regional Variant | `Grass 1` | 56% | Forest of Falling Stars | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Grassland Form** | Regional Variant | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Grass 1` | 56% | Berylline Vale, Beast Fang Ridge | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Plateau Form** | Weather Variant | `Grass 1` | 56% | Driftwise Meadow | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Prismana** | Prismana Form | `Grass 2` | 56% | Idyll Native Habitat | 🌱 Grass Lv.2, ☕ Leisure Lv.2 |
 
 ---
 
@@ -202,13 +202,13 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Sea of Flowers | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
-| **Highland Form** | Regional Variant | `Grass 3` | 25% | Russet Highlands | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
-| **Forest Form** | Regional Variant | `Grass 3` | 25% | Forest of Falling Stars | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
-| **Grassland Form** | Regional Variant | `Grass 3` | 28% | Blitzwood | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Grass 3` | 25% | Berylline Vale | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
-| **Plateau Form** | Weather Variant | `Grass 3` | 25% | Driftwise Meadow | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
-| **Prismana** | Prismana Form | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, 🌸 Perfumery Lv.3, 🔨 Artisanship Lv.2 |
+| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Sea of Flowers | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
+| **Highland Form** | Regional Variant | `Grass 3` | 25% | Russet Highlands | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
+| **Forest Form** | Regional Variant | `Grass 3` | 25% | Forest of Falling Stars | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
+| **Grassland Form** | Regional Variant | `Grass 3` | 28% | Blitzwood | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Grass 3` | 25% | Berylline Vale | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
+| **Plateau Form** | Weather Variant | `Grass 3` | 25% | Driftwise Meadow | 🌱 Grass Lv.3, ☕ Leisure Lv.3 |
+| **Prismana** | Prismana Form | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, ☕ Leisure Lv.4 |
 
 ---
 
@@ -234,9 +234,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 2` | 42% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | 💧 Water Lv.2, 🔨 Artisanship Lv.2 |
-| **Sea of Flowers Form** | Regional Variant | `Water 2` | 42% | Sea of Flowers | 💧 Water Lv.2, 🔨 Artisanship Lv.2 |
-| **Snowfield Form** | Regional Variant | `Water 2 / Ice 1` | 42% | Driftwise Meadow | 💧 Water Lv.2, ❄️ Ice Lv.1, 🔨 Artisanship Lv.2 |
+| **Basic Form (base)** | Base Form | `Water 2` | 42% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | 💧 Water Lv.2, 📦 Carry Lv.2 |
+| **Sea of Flowers Form** | Regional Variant | `Water 2` | 42% | Sea of Flowers | 💧 Water Lv.2, 📦 Carry Lv.2 |
+| **Snowfield Form** | Regional Variant | `Water 2 / Ice 1` | 42% | Driftwise Meadow | 💧 Water Lv.2, ❄️ Ice Lv.1, 📦 Carry Lv.2 |
 
 ---
 
@@ -248,10 +248,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3 / Ice 2` | 28% | Idyll Native Habitat | 💧 Water Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.2 |
-| **Sea of Flowers Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Sea of Flowers | 💧 Water Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.2 |
-| **Snowfield Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Driftwise Meadow | 💧 Water Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.2 |
-| **Prismana** | Prismana Form | `Water 4 / Ice 2` | 28% | Driftwise Meadow | 💧 Water Lv.4, ❄️ Ice Lv.2, ☕ Leisure Lv.3 |
+| **Basic Form (base)** | Base Form | `Water 3 / Ice 2` | 28% | Idyll Native Habitat | 💧 Water Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3 |
+| **Sea of Flowers Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Sea of Flowers | 💧 Water Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3 |
+| **Snowfield Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Driftwise Meadow | 💧 Water Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Water 4 / Ice 3` | 28% | Driftwise Meadow | 💧 Water Lv.4, ❄️ Ice Lv.3, 📦 Carry Lv.4 |
 
 ---
 
@@ -263,7 +263,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 1 / Grass 1` | Standard | Idyll Native Habitat | 💧 Water Lv.1, 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
+| **Basic Form** | Base Form | `Grass 1 / Water 1` | Standard | Idyll Native Habitat | 🌱 Grass Lv.1, 💧 Water Lv.1, 📦 Carry Lv.1 |
 
 ---
 
@@ -275,10 +275,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
-| **Rainstorm Form** | Weather Variant | `Wind 1 / Lightning 1` | 56% | Nimbus Fields | 🍃 Wind Lv.1, ⚡ Lightning Lv.1, 📦 Carry Lv.1 |
-| **Cloudmist Form** | Weather Variant | `Wind 1` | 25% | Nimbus Fields | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
-| **Plateau Form** | Weather Variant | `Wind 1 / Ice 1` | 56% | Driftwise Meadow | 🍃 Wind Lv.1, ❄️ Ice Lv.1, 📦 Carry Lv.1 |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait | 🍃 Wind Lv.1, ☕ Leisure Lv.1 |
+| **Rainstorm Form** | Weather Variant | `Wind 1 / Lightning 1` | 56% | Nimbus Fields | 🍃 Wind Lv.1, ⚡ Lightning Lv.1, ☕ Leisure Lv.1 |
+| **Cloudmist Form** | Weather Variant | `Wind 1` | 25% | Nimbus Fields | 🍃 Wind Lv.1, ☕ Leisure Lv.1 |
+| **Plateau Form** | Weather Variant | `Wind 1 / Ice 1` | 56% | Driftwise Meadow | 🍃 Wind Lv.1, ❄️ Ice Lv.1, ☕ Leisure Lv.1 |
 
 ---
 
@@ -290,11 +290,11 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Nimbus Fields | 🍃 Wind Lv.3, 🔨 Artisanship Lv.1 |
-| **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | 🍃 Wind Lv.3, ⚡ Lightning Lv.2, 🔨 Artisanship Lv.1 |
-| **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🔨 Artisanship Lv.1 |
-| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | 🍃 Wind Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.1 |
-| **Prismana** | Prismana Form | `Wind 4 / Dark 3` | 28% | Nimbus Fields | 🍃 Wind Lv.4, 🌑 Dark Lv.3, 🔨 Artisanship Lv.2 |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Nimbus Fields | 🍃 Wind Lv.3, ☕ Leisure Lv.3 |
+| **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | 🍃 Wind Lv.3, ⚡ Lightning Lv.2, ☕ Leisure Lv.3 |
+| **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, ☕ Leisure Lv.3 |
+| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | 🍃 Wind Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.3 |
+| **Prismana** | Prismana Form | `Wind 4 / Dark 4` | 28% | Nimbus Fields | 🍃 Wind Lv.4, 🌑 Dark Lv.4, ☕ Leisure Lv.4 |
 
 ---
 
@@ -306,7 +306,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | 🌑 Dark Lv.2, 🌸 Perfumery Lv.2 |
+| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | 🌑 Dark Lv.2, ☕ Leisure Lv.2 |
 
 ---
 
@@ -331,9 +331,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 2 / Grass 1` | 28% | The Mistwoods | 🌑 Dark Lv.2, 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
-| **Mountain Form** | Regional Variant | `Dark 2 / Grass 1` | 28% | Sea of Flowers, Berylline Vale | 🌑 Dark Lv.2, 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
-| **Prismana** | Prismana Form | `Dark 4 / Grass 3` | 28% | The Mistwoods | 🌑 Dark Lv.4, 🌱 Grass Lv.3, 🌸 Perfumery Lv.3 |
+| **Basic Form (base)** | Base Form | `Grass 1 / Dark 2` | 28% | The Mistwoods | 🌱 Grass Lv.1, 🌑 Dark Lv.2, 🔨 Artisanship Lv.2 |
+| **Mountain Form** | Regional Variant | `Dark 2 / Grass 1` | 28% | Sea of Flowers, Berylline Vale | 🌑 Dark Lv.2, 🌱 Grass Lv.1, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Dark 4 / Grass 4` | 28% | The Mistwoods | 🌑 Dark Lv.4, 🌱 Grass Lv.4, 🔨 Artisanship Lv.3 |
 
 ---
 
@@ -417,10 +417,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
-| **Highland Form** | Regional Variant | `Fire 3` | 28% | Berylline Vale | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
-| **Forest Form** | Regional Variant | `Fire 3` | 25% | The Mistwoods, Berylline Vale, Driftwise Meadow | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
-| **Sea of Flowers Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Highland Form** | Regional Variant | `Fire 3` | 28% | Berylline Vale | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Forest Form** | Regional Variant | `Fire 3` | 25% | The Mistwoods, Berylline Vale, Driftwise Meadow | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Sea of Flowers Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
 
 ---
 
@@ -432,10 +432,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood | 🍃 Wind Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1 |
-| **Sea of Flowers Form** | Regional Variant | `Wind 1 / Grass 1` | 56% | Sea of Flowers | 🍃 Wind Lv.1, 🌱 Grass Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1, 📦 Carry Lv.1 |
-| **Nighttime Form** | Regional Variant | `Wind 1 / Dark 1` | 56% | Sea of Flowers | 🍃 Wind Lv.1, 🌑 Dark Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1, 📦 Carry Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Wind 1 / Earth 1` | 56% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.1, ⛰️ Earth Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1, 🔨 Artisanship Lv.1, 📦 Carry Lv.1 |
+| **Basic Form (base)** | Base Form | `Wind 1 / Grass 1` | 56% | Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood | 🍃 Wind Lv.1, 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Wind 1 / Grass 1` | 56% | Sea of Flowers | 🍃 Wind Lv.1, 🌱 Grass Lv.1, ☕ Leisure Lv.1, 📦 Carry Lv.1 |
+| **Nighttime Form** | Regional Variant | `Wind 1 / Dark 1` | 56% | Sea of Flowers | 🍃 Wind Lv.1, 🌑 Dark Lv.1, ☕ Leisure Lv.1, 📦 Carry Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Wind 1 / Earth 1` | 56% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.1, ⛰️ Earth Lv.1, ☕ Leisure Lv.1, 🔨 Artisanship Lv.1, 📦 Carry Lv.1 |
 
 ---
 
@@ -447,10 +447,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2 |
-| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
-| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌑 Dark Lv.2, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
+| **Basic Form (base)** | Base Form | `Wind 4 / Grass 4` | 28% | Idyll Native Habitat | 🍃 Wind Lv.4, 🌱 Grass Lv.4, ☕ Leisure Lv.4 |
+| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌱 Grass Lv.2, ☕ Leisure Lv.4, 📦 Carry Lv.1 |
+| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌑 Dark Lv.2, ☕ Leisure Lv.4, 📦 Carry Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.3, ⛰️ Earth Lv.2, ☕ Leisure Lv.4, 🔨 Artisanship Lv.1, 📦 Carry Lv.1 |
 
 ---
 
@@ -462,7 +462,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Prismana Form** | 🌈 Prismana | `Grass 3 / Wind 2` | 28% | Idyll Prismana Flow | 🌱 Grass Lv.3, 🍃 Wind Lv.2, 🌸 Perfumery Lv.3, ☕ Leisure Lv.1 |
+| **Prismana Form** | 🌈 Prismana | `Grass 4 / Wind 3` | 28% | Idyll Prismana Flow | 🌱 Grass Lv.4, 🍃 Wind Lv.3, ☕ Leisure Lv.4 |
 
 ---
 
@@ -498,8 +498,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers, Rosetower Woods | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
-| **Towerwood Form** | Regional Variant | `Grass 1` | 50% | Rosetower Woods | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form (base)** | Base Form | `Grass 3` | 50% | Sea of Flowers, Rosetower Woods | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
+| **Towerwood Form** | Regional Variant | `Grass 1` | 50% | Rosetower Woods | 🌱 Grass Lv.1, 🔨 Artisanship Lv.2 |
 
 ---
 
@@ -511,10 +511,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Sea of Flowers | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
-| **Towerwood Form** | Regional Variant | `Grass 3` | 28% | Rosetower Woods | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
-| **Thunderstorm Form** | Weather Variant | `Grass 3` | 25% | Sea of Flowers | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
-| **Prismana** | Prismana Form | `Grass 4 / Water 3` | 25% | Sea of Flowers | 🌱 Grass Lv.4, 💧 Water Lv.3, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Sea of Flowers | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
+| **Towerwood Form** | Regional Variant | `Grass 3` | 28% | Rosetower Woods | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
+| **Thunderstorm Form** | Weather Variant | `Grass 3` | 25% | Sea of Flowers | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Grass 4 / Water 4` | 25% | Sea of Flowers | 🌱 Grass Lv.4, 💧 Water Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -526,8 +526,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | 🌱 Grass Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
-| **Prismana** | Prismana Form | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, 🌸 Perfumery Lv.4, ☕ Leisure Lv.3 |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -539,10 +539,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Rosetower Woods | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
-| **Snowfield Form** | Regional Variant | `Grass 1 / Ice 1` | 38% | Rosetower Woods, Driftwise Meadow | 🌱 Grass Lv.1, ❄️ Ice Lv.1, ☕ Leisure Lv.1 |
-| **Highland Form** | Regional Variant | `Grass 1` | 50% | Zephyrus Landbridge, Beast Fang Ridge | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
-| **Sea of Flowers Form** | Regional Variant | `Grass 1` | 50% | Tideblossom Coast, Forest of Falling Stars | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Rosetower Woods | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+| **Snowfield Form** | Regional Variant | `Grass 1 / Ice 1` | 38% | Rosetower Woods, Driftwise Meadow | 🌱 Grass Lv.1, ❄️ Ice Lv.1, 🔨 Artisanship Lv.1 |
+| **Highland Form** | Regional Variant | `Grass 1` | 50% | Zephyrus Landbridge, Beast Fang Ridge | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Grass 1` | 50% | Tideblossom Coast, Forest of Falling Stars | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
 
 ---
 
@@ -554,10 +554,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
-| **Snowfield Form** | Regional Variant | `Grass 3 / Ice 2` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.2 |
-| **Highland Form** | Regional Variant | `Grass 3` | 16% | Idyll Native Habitat | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
-| **Sea of Flowers Form** | Regional Variant | `Grass 3` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
+| **Snowfield Form** | Regional Variant | `Grass 3 / Ice 2` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3 |
+| **Highland Form** | Regional Variant | `Grass 3` | 16% | Idyll Native Habitat | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
+| **Sea of Flowers Form** | Regional Variant | `Grass 3` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, 🔨 Artisanship Lv.3 |
 
 ---
 
@@ -581,7 +581,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | 🌑 Dark Lv.2, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
+| **Basic Form** | Base Form | `Dark 3` | Standard | Idyll Native Habitat | 🌑 Dark Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.3 |
 
 ---
 
@@ -607,10 +607,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 22% | Berylline Vale | 🌑 Dark Lv.3, 🔨 Artisanship Lv.2 |
-| **Forest Form** | Regional Variant | `Dark 3 / Grass 2` | 25% | The Mistwoods | 🌑 Dark Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2 |
-| **Highland Form** | Regional Variant | `Dark 3 / Fire 2` | 22% | Zephyrus Landbridge, Blitzwood | 🌑 Dark Lv.3, 🔥 Fire Lv.2, 🔨 Artisanship Lv.2 |
-| **Prismana** | Prismana Form | `Dark 4 / Fire 3` | 22% | Berylline Vale | 🌑 Dark Lv.4, 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Dark 3` | 22% | Berylline Vale | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
+| **Forest Form** | Regional Variant | `Dark 3 / Grass 2` | 25% | The Mistwoods | 🌑 Dark Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.3 |
+| **Highland Form** | Regional Variant | `Dark 3 / Fire 2` | 22% | Zephyrus Landbridge, Blitzwood | 🌑 Dark Lv.3, 🔥 Fire Lv.2, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Dark 4 / Fire 4` | 22% | Berylline Vale | 🌑 Dark Lv.4, 🔥 Fire Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -648,9 +648,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Ice 3` | 25% | Beast Fang Ridge | ❄️ Ice Lv.3, 🔨 Artisanship Lv.2 |
-| **Nighttime Form** | Regional Variant | `Ice 3 / Dark 2` | 25% | Rosetower Woods | ❄️ Ice Lv.3, 🌑 Dark Lv.2, 🔨 Artisanship Lv.2 |
-| **Prismana** | Prismana Form | `Ice 4` | 25% | Idyll Native Habitat | ❄️ Ice Lv.4, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Ice 3` | 25% | Beast Fang Ridge | ❄️ Ice Lv.3, 📦 Carry Lv.3 |
+| **Nighttime Form** | Regional Variant | `Ice 3 / Dark 2` | 25% | Rosetower Woods | ❄️ Ice Lv.3, 🌑 Dark Lv.2, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Ice 4` | 25% | Idyll Native Habitat | ❄️ Ice Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -675,9 +675,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Blitzwood | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Mountain Woods Form** | Regional Variant | `Lightning 3` | 25% | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Prismana** | Prismana Form | `Lightning 4` | 25% | Blitzwood | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Blitzwood | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Lightning 3` | 25% | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Lightning 4` | 25% | Blitzwood | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -701,7 +701,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Fire 2` | Standard | Idyll Native Habitat | 🔥 Fire Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Basic Form** | Base Form | `Fire 2` | Standard | Idyll Native Habitat | 🔥 Fire Lv.2, 📦 Carry Lv.2 |
 
 ---
 
@@ -713,9 +713,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | 💧 Water Lv.1, 📦 Carry Lv.1 |
-| **Nighttime Form** | Regional Variant | `Water 1` | 44% | Echoback Landing | 💧 Water Lv.1, 📦 Carry Lv.1 |
-| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | 💧 Water Lv.1, 📦 Carry Lv.1 |
+| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | 💧 Water Lv.1, ☕ Leisure Lv.1 |
+| **Nighttime Form** | Regional Variant | `Water 1` | 44% | Echoback Landing | 💧 Water Lv.1, ☕ Leisure Lv.1 |
+| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | 💧 Water Lv.1, ☕ Leisure Lv.1 |
 
 ---
 
@@ -727,8 +727,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 2` | 29% | Echoback Landing | 💧 Water Lv.2, 📦 Carry Lv.2, ☕ Leisure Lv.1 |
-| **Nighttime Form** | Regional Variant | `Water 2` | 33% | Idyll Native Habitat | 💧 Water Lv.2, 📦 Carry Lv.2, ☕ Leisure Lv.1 |
+| **Basic Form (base)** | Base Form | `Water 2` | 29% | Echoback Landing | 💧 Water Lv.2, ☕ Leisure Lv.2 |
+| **Nighttime Form** | Regional Variant | `Water 2` | 33% | Idyll Native Habitat | 💧 Water Lv.2, ☕ Leisure Lv.2 |
 
 ---
 
@@ -740,8 +740,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | 💧 Water Lv.3, 🌸 Perfumery Lv.2 |
-| **Nighttime Form** | Regional Variant | `Water 3 / Dark 2` | 22% | Idyll Native Habitat | 💧 Water Lv.3, 🌑 Dark Lv.2, 🌸 Perfumery Lv.2 |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | 💧 Water Lv.3, ☕ Leisure Lv.3 |
+| **Nighttime Form** | Regional Variant | `Water 3 / Dark 2` | 22% | Idyll Native Habitat | 💧 Water Lv.3, 🌑 Dark Lv.2, ☕ Leisure Lv.3 |
 
 ---
 
@@ -753,9 +753,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3` | 19% | Echoback Landing | 💧 Water Lv.3, 📦 Carry Lv.3 |
-| **Nighttime Form** | Regional Variant | `Water 3` | 22% | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.3 |
-| **Prismana** | Prismana Form | `Water 4` | 22% | Echoback Landing | 💧 Water Lv.4, 📦 Carry Lv.4 |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Echoback Landing | 💧 Water Lv.3, ☕ Leisure Lv.3 |
+| **Nighttime Form** | Regional Variant | `Water 3` | 22% | Idyll Native Habitat | 💧 Water Lv.3, ☕ Leisure Lv.3 |
+| **Prismana** | Prismana Form | `Water 4` | 22% | Echoback Landing | 💧 Water Lv.4, ☕ Leisure Lv.4 |
 
 ---
 
@@ -767,8 +767,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | 💧 Water Lv.1, 🔨 Artisanship Lv.1 |
-| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | 💧 Water Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | 💧 Water Lv.1, ☕ Leisure Lv.1 |
+| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | 💧 Water Lv.1, ☕ Leisure Lv.1 |
 
 ---
 
@@ -780,7 +780,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | 💧 Water Lv.2, 🔨 Artisanship Lv.2 |
+| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | 💧 Water Lv.2, ☕ Leisure Lv.2 |
 
 ---
 
@@ -792,9 +792,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.2 |
-| **Thunderstorm Form** | Weather Variant | `Water 3 / Lightning 2` | 22% | Echoback Landing | 💧 Water Lv.3, ⚡ Lightning Lv.2, 📦 Carry Lv.2 |
-| **Prismana** | Prismana Form | `Water 4` | 22% | Idyll Native Habitat | 💧 Water Lv.4, 📦 Carry Lv.3 |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | 💧 Water Lv.3, ☕ Leisure Lv.3 |
+| **Thunderstorm Form** | Weather Variant | `Water 3 / Lightning 2` | 22% | Echoback Landing | 💧 Water Lv.3, ⚡ Lightning Lv.2, ☕ Leisure Lv.3 |
+| **Prismana** | Prismana Form | `Water 4` | 22% | Idyll Native Habitat | 💧 Water Lv.4, ☕ Leisure Lv.4 |
 
 ---
 
@@ -806,7 +806,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 1` | 38% | Berylline Vale | ⛰️ Earth Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form (base)** | Base Form | `Earth 1` | 38% | Berylline Vale | ⛰️ Earth Lv.1, 📦 Carry Lv.1 |
 | **Snowfield Form** | Regional Variant | `Earth 1 / Ice 1` | 38% | Russet Highlands | ⛰️ Earth Lv.1, ❄️ Ice Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
 
 ---
@@ -819,9 +819,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | ⛰️ Earth Lv.3, 🔨 Artisanship Lv.3, 📦 Carry Lv.2 |
-| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Russet Highlands | ⛰️ Earth Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3, 📦 Carry Lv.2 |
-| **Prismana** | Prismana Form | `Earth 4` | 19% | Idyll Native Habitat | ⛰️ Earth Lv.4, 🔨 Artisanship Lv.4, 📦 Carry Lv.3 |
+| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | ⛰️ Earth Lv.3, 📦 Carry Lv.3 |
+| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Russet Highlands | ⛰️ Earth Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.1 |
+| **Prismana** | Prismana Form | `Earth 4` | 19% | Idyll Native Habitat | ⛰️ Earth Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -846,7 +846,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.1, 📦 Carry Lv.1 |
 
 ---
 
@@ -858,8 +858,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Driftwise Meadow | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
-| **Prismana** | Prismana Form | `Lightning 4` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Driftwise Meadow | ⚡ Lightning Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Lightning 4` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -871,9 +871,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 1` | 56% | Russet Highlands | 🌑 Dark Lv.1, 🔨 Artisanship Lv.1 |
-| **Snowfield Form** | Regional Variant | `Dark 1 / Ice 1` | 32% | Russet Highlands | 🌑 Dark Lv.1, ❄️ Ice Lv.1, 🔨 Artisanship Lv.1 |
-| **Mountain Woods Form** | Regional Variant | `Dark 1` | 40% | Russet Highlands | 🌑 Dark Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form (base)** | Base Form | `Dark 1` | 56% | Russet Highlands | 🌑 Dark Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Snowfield Form** | Regional Variant | `Dark 1 / Ice 1` | 32% | Russet Highlands | 🌑 Dark Lv.1, ❄️ Ice Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Dark 1` | 40% | Russet Highlands | 🌑 Dark Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
 
 ---
 
@@ -885,10 +885,10 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Idyll Native Habitat | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
-| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 28% | Idyll Native Habitat | 🌑 Dark Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3 |
-| **Mountain Woods Form** | Regional Variant | `Dark 3` | 16% | Idyll Native Habitat | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
-| **Prismana** | Prismana Form | `Dark 4` | 28% | Russet Highlands | 🌑 Dark Lv.4, 🔨 Artisanship Lv.4 |
+| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Idyll Native Habitat | 🌑 Dark Lv.3, 📦 Carry Lv.3 |
+| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 28% | Idyll Native Habitat | 🌑 Dark Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Dark 3` | 16% | Idyll Native Habitat | 🌑 Dark Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Dark 4` | 28% | Russet Highlands | 🌑 Dark Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -900,9 +900,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Russet Highlands | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
-| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 19% | Russet Highlands | 🌑 Dark Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3 |
-| **Mountain Woods Form** | Regional Variant | `Dark 3` | 19% | Russet Highlands | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Russet Highlands | 🌑 Dark Lv.3, 📦 Carry Lv.3, 🔨 Artisanship Lv.3 |
+| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 19% | Russet Highlands | 🌑 Dark Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Dark 3` | 19% | Russet Highlands | 🌑 Dark Lv.3, 📦 Carry Lv.3, 🔨 Artisanship Lv.3 |
 
 ---
 
@@ -940,8 +940,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Russet Highlands | 🍃 Wind Lv.3, 📦 Carry Lv.3, 🔨 Artisanship Lv.2 |
-| **Mountain Form** | Regional Variant | `Wind 3` | 19% | Russet Highlands | 🍃 Wind Lv.3, 📦 Carry Lv.3, 🔨 Artisanship Lv.2 |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Russet Highlands | 🍃 Wind Lv.3, 📦 Carry Lv.3 |
+| **Mountain Form** | Regional Variant | `Wind 3` | 19% | Russet Highlands | 🍃 Wind Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -954,7 +954,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Basic Form (base)** | Base Form | `Fire 3` | 19% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
-| **Prismana** | Prismana Form | `Fire 4 / Wind 3` | 19% | Idyll Native Habitat | 🔥 Fire Lv.4, 🍃 Wind Lv.3, 🔨 Artisanship Lv.4 |
+| **Prismana** | Prismana Form | `Fire 4 / Wind 4` | 19% | Idyll Native Habitat | 🔥 Fire Lv.4, 🍃 Wind Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -1003,7 +1003,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Fire 2 / Earth 2` | Standard | Idyll Native Habitat | 🔥 Fire Lv.2, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.2 |
+| **Basic Form** | Base Form | `Earth 2 / Fire 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 🔥 Fire Lv.2, 📦 Carry Lv.2 |
 
 ---
 
@@ -1015,9 +1015,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3 / Earth 2` | 19% | Zephyrus Landbridge | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.3 |
-| **Basic Form (variant record)** | Regional Variant | `Fire 3 / Earth 2` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.3 |
-| **Prismana** | Prismana Form | `Fire 4 / Dark 3` | 19% | Zephyrus Landbridge | 🔥 Fire Lv.4, 🌑 Dark Lv.3, 🔨 Artisanship Lv.4 |
+| **Basic Form (base)** | Base Form | `Earth 3 / Fire 3` | 19% | Zephyrus Landbridge | ⛰️ Earth Lv.3, 🔥 Fire Lv.3, 📦 Carry Lv.3 |
+| **Basic Form (variant record)** | Regional Variant | `Fire 3 / Earth 2` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.1 |
+| **Prismana** | Prismana Form | `Fire 4 / Dark 4` | 19% | Zephyrus Landbridge | 🔥 Fire Lv.4, 🌑 Dark Lv.4, 📦 Carry Lv.4 |
 
 ---
 
@@ -1029,7 +1029,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.2 |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 📦 Carry Lv.2 |
 
 ---
 
@@ -1041,7 +1041,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.2 |
+| **Basic Form** | Base Form | `Earth 3` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1053,7 +1053,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.1, ☕ Leisure Lv.2 |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.1, 📦 Carry Lv.1 |
 
 ---
 
@@ -1065,7 +1065,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 🔨 Artisanship Lv.3, ☕ Leisure Lv.2 |
+| **Basic Form** | Base Form | `Earth 3` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1077,7 +1077,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.1, ☕ Leisure Lv.1 |
+| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.1, 🔨 Artisanship Lv.1 |
 
 ---
 
@@ -1089,7 +1089,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.2, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.2, 🔨 Artisanship Lv.2 |
 
 ---
 
@@ -1101,9 +1101,9 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Tideblossom Coast | ⚡ Lightning Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
-| **Rainstorm Form** | Weather Variant | `Lightning 3 / Water 2` | 22% | Tideblossom Coast | ⚡ Lightning Lv.3, 💧 Water Lv.2, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
-| **Prismana** | Prismana Form | `Lightning 4` | 22% | Tideblossom Coast | ⚡ Lightning Lv.4, 🌸 Perfumery Lv.4, ☕ Leisure Lv.3 |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Tideblossom Coast | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.3 |
+| **Rainstorm Form** | Weather Variant | `Lightning 3 / Water 2` | 22% | Tideblossom Coast | ⚡ Lightning Lv.3, 💧 Water Lv.2, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Lightning 4` | 22% | Tideblossom Coast | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -1127,7 +1127,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | 💧 Water Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.2 |
+| **Basic Form** | Base Form | `Water 3` | Standard | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.2, ☕ Leisure Lv.2 |
 
 ---
 
@@ -1139,7 +1139,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.2, 🔨 Artisanship Lv.2 |
+| **Basic Form** | Base Form | `Lightning 3` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.1 |
 
 ---
 
@@ -1155,7 +1155,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 3` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.3, 📦 Carry Lv.2, 🔨 Artisanship Lv.2 |
+| **Basic Form** | Base Form | `Lightning 3` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1167,8 +1167,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2 |
-| **Prismana** | Prismana Form | `Lightning 4` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Lightning 4` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -1192,7 +1192,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, ☕ Leisure Lv.3 |
+| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1204,7 +1204,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, ☕ Leisure Lv.3 |
+| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1216,7 +1216,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | ✨ Light Lv.2, ☕ Leisure Lv.2 |
+| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1226,7 +1226,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | ✨ Light Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | ✨ Light Lv.2, 🔨 Artisanship Lv.3, 📦 Carry Lv.2 |
 
 ---
 
@@ -1238,7 +1238,7 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 3` | Standard | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.2 |
+| **Basic Form** | Base Form | `Water 3` | Standard | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.3 |
 
 ---
 
@@ -1250,8 +1250,8 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 16% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2 |
-| **Prismana** | Prismana Form | `Fire 4` | 16% | Idyll Native Habitat | 🔥 Fire Lv.4, 🔨 Artisanship Lv.3 |
+| **Basic Form (base)** | Base Form | `Fire 3` | 16% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Fire 4` | 16% | Idyll Native Habitat | 🔥 Fire Lv.4, 🔨 Artisanship Lv.4 |
 
 ---
 
@@ -1263,6 +1263,6 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 
 | Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Grass 3` | Standard | Idyll Native Habitat | 🌱 Grass Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.1 |
+| **Basic Form** | Base Form | `Grass 4` | Standard | Idyll Native Habitat | 🌱 Grass Lv.4, ☕ Leisure Lv.4 |
 
 ---

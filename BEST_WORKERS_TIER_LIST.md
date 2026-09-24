@@ -11,18 +11,18 @@ Workers assigned to **Carry** automatically gather harvested produce, mined ores
 
 | Aniimo | Dex # | Carry Level | Complementary Abilities | Best Station |
 | :--- | :--- | :--- | :--- | :--- |
+| **Scorchhowl** | `#003` | **Lv.3** 📦 | Fire Lv.3 | Central Warehouse / Field Depot |
+| **Inferlupa** | `#004` | **Lv.3** 📦 | Dark Lv.3 | Central Warehouse / Field Depot |
 | **Tubster** | `#010` | **Lv.3** 📦 | Wind Lv.3 | Central Warehouse / Field Depot |
-| **Panpanta** | `#052` | **Lv.3** 📦 | Water Lv.3 | Central Warehouse / Field Depot |
+| **Glacy** | `#015` | **Lv.3** 📦 | Water Lv.3, Ice Lv.2 | Central Warehouse / Field Depot |
+| **Glynsera** | `#044` | **Lv.3** 📦 | Ice Lv.3 | Central Warehouse / Field Depot |
+| **Waleetle** | `#057` | **Lv.3** 📦 | Earth Lv.3 | Central Warehouse / Field Depot |
 | **Bouldus** | `#058` | **Lv.3** 📦 | Earth Lv.3 | Central Warehouse / Field Depot |
-| **Helgon** | `#066` | **Lv.3** 📦 | Wind Lv.3, Artisanship Lv.2 | Central Warehouse / Field Depot |
+| **Fenmane** | `#060` | **Lv.3** 📦 | Lightning Lv.3 | Central Warehouse / Field Depot |
+| **Pawney** | `#062` | **Lv.3** 📦 | Dark Lv.3 | Central Warehouse / Field Depot |
+| **Rookey** | `#063` | **Lv.3** 📦 | Dark Lv.3, Artisanship Lv.3 | Central Warehouse / Field Depot |
+| **Helgon** | `#066` | **Lv.3** 📦 | Wind Lv.3 | Central Warehouse / Field Depot |
 | **Grizbo** | `#069` | **Lv.3** 📦 | Earth Lv.3 | Central Warehouse / Field Depot |
-| **Minespine** | `#074` | **Lv.3** 📦 | Earth Lv.2, Artisanship Lv.2 | Central Warehouse / Field Depot |
-| **Flameruff** | `#002` | **Lv.2** 📦 | Fire Lv.2, Artisanship Lv.1 | Central Warehouse / Field Depot |
-| **Scorchhowl** | `#003` | **Lv.2** 📦 | Fire Lv.3, Artisanship Lv.2 | Central Warehouse / Field Depot |
-| **Tromber** | `#008` | **Lv.2** 📦 | Wind Lv.3, Leisure Lv.3 | Central Warehouse / Field Depot |
-| **Cornet** | `#009` | **Lv.2** 📦 | Wind Lv.3, Artisanship Lv.2 | Central Warehouse / Field Depot |
-| **Tuckin** | `#022` | **Lv.2** 📦 | Grass Lv.3 | Central Warehouse / Field Depot |
-| **Geoclaw** | `#025` | **Lv.2** 📦 | Ice Lv.2 | Central Warehouse / Field Depot |
 
 ---
 
@@ -32,18 +32,18 @@ Workers with **Artisanship** accelerate crafting speed at workbenches, forge RV 
 
 | Aniimo | Dex # | Artisanship Level | Complementary Abilities | Best Station |
 | :--- | :--- | :--- | :--- | :--- |
-| **Waleetle** | `#057` | **Lv.3** 🔨 | Earth Lv.3, Carry Lv.2 | Mechanical Workbench & RV Forge |
-| **Pawney** | `#062` | **Lv.3** 🔨 | Dark Lv.3 | Mechanical Workbench & RV Forge |
-| **Rookey** | `#063` | **Lv.3** 🔨 | Dark Lv.3 | Mechanical Workbench & RV Forge |
+| **Flamerion** | `#027` | **Lv.3** 🔨 | Fire Lv.3 | Mechanical Workbench & RV Forge |
+| **Thornblade** | `#034` | **Lv.3** 🔨 | Grass Lv.3 | Mechanical Workbench & RV Forge |
+| **Melloblum** | `#035` | **Lv.3** 🔨 | Grass Lv.3 | Mechanical Workbench & RV Forge |
+| **Pomawk** | `#037` | **Lv.3** 🔨 | Grass Lv.3 | Mechanical Workbench & RV Forge |
+| **Ignitis** | `#041` | **Lv.3** 🔨 | Dark Lv.3 | Mechanical Workbench & RV Forge |
+| **Blazen** | `#046` | **Lv.3** 🔨 | Lightning Lv.3 | Mechanical Workbench & RV Forge |
+| **Rookey** | `#063` | **Lv.3** 🔨 | Dark Lv.3, Carry Lv.3 | Mechanical Workbench & RV Forge |
 | **Infergon** | `#067` | **Lv.3** 🔨 | Fire Lv.3 | Mechanical Workbench & RV Forge |
-| **Magmarex** | `#072` | **Lv.3** 🔨 | Fire Lv.3, Earth Lv.2 | Mechanical Workbench & RV Forge |
-| **Bailite** | `#076` | **Lv.3** 🔨 | Earth Lv.2, Leisure Lv.2 | Mechanical Workbench & RV Forge |
-| **Scorchhowl** | `#003` | **Lv.2** 🔨 | Fire Lv.3, Carry Lv.2 | Mechanical Workbench & RV Forge |
-| **Inferlupa** | `#004` | **Lv.2** 🔨 | Dark Lv.3, Fire Lv.2 | Mechanical Workbench & RV Forge |
-| **Cornet** | `#009` | **Lv.2** 🔨 | Wind Lv.3, Carry Lv.2 | Mechanical Workbench & RV Forge |
-| **Pranky** | `#014` | **Lv.2** 🔨 | Water Lv.2 | Mechanical Workbench & RV Forge |
-| **Shrubclaw** | `#024` | **Lv.2** 🔨 | Earth Lv.3, Grass Lv.2 | Mechanical Workbench & RV Forge |
-| **Flamerion** | `#027` | **Lv.2** 🔨 | Fire Lv.3, Carry Lv.1 | Mechanical Workbench & RV Forge |
+| **Luminelle** | `#079` | **Lv.3** 🔨 | Lightning Lv.3 | Mechanical Workbench & RV Forge |
+| **Fulmintis** | `#????` | **Lv.3** 🔨 | Lightning Lv.3 | Mechanical Workbench & RV Forge |
+| **Morphling** | `#????` | **Lv.3** 🔨 | Light Lv.2, Carry Lv.2 | Mechanical Workbench & RV Forge |
+| **Sparkelf** | `#????` | **Lv.3** 🔨 | Fire Lv.3 | Mechanical Workbench & RV Forge |
 
 ---
 
@@ -53,18 +53,18 @@ Workers with **Leisure** project relaxing auras that reduce worker stress, accel
 
 | Aniimo | Dex # | Leisure Level | Complementary Abilities | Best Station |
 | :--- | :--- | :--- | :--- | :--- |
-| **Tromber** | `#008` | **Lv.3** ☕ | Wind Lv.3, Carry Lv.2 | Hot Springs & Camp Relaxation Square |
-| **Lunara** | `#????` | **Lv.3** ☕ | Light Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Soleon** | `#????` | **Lv.3** ☕ | Light Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Stellarys** | `#006` | **Lv.2** ☕ | Dark Lv.3, Carry Lv.1 | Hot Springs & Camp Relaxation Square |
-| **Glacy** | `#015` | **Lv.2** ☕ | Water Lv.3, Ice Lv.2 | Hot Springs & Camp Relaxation Square |
-| **Gracewing** | `#029` | **Lv.2** ☕ | Wind Lv.3, Artisanship Lv.2 | Hot Springs & Camp Relaxation Square |
-| **Melloblum** | `#035` | **Lv.2** ☕ | Grass Lv.3, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Fragrancier** | `#039` | **Lv.2** ☕ | Dark Lv.2, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Cozite** | `#075` | **Lv.2** ☕ | Earth Lv.1 | Hot Springs & Camp Relaxation Square |
-| **Bailite** | `#076` | **Lv.2** ☕ | Earth Lv.2, Artisanship Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Luminelle** | `#079` | **Lv.2** ☕ | Lightning Lv.3, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
-| **Erlath** | `#081` | **Lv.2** ☕ | Water Lv.2, Carry Lv.2 | Hot Springs & Camp Relaxation Square |
+| **Gracewing** | `#029` | **Lv.4** ☕ | Wind Lv.4, Grass Lv.4 | Hot Springs & Camp Relaxation Square |
+| **Somniwing** | `#030` | **Lv.4** ☕ | Grass Lv.4, Wind Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Irisalis** | `#????` | **Lv.4** ☕ | Grass Lv.4 | Hot Springs & Camp Relaxation Square |
+| **Celestis** | `#005` | **Lv.3** ☕ | Dark Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Stellarys** | `#006` | **Lv.3** ☕ | Dark Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Irisal** | `#012` | **Lv.3** ☕ | Grass Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Turbo** | `#018` | **Lv.3** ☕ | Wind Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Fragrancier** | `#039` | **Lv.3** ☕ | Dark Lv.3, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Piopiota** | `#051` | **Lv.3** ☕ | Water Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Panpanta** | `#052` | **Lv.3** ☕ | Water Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Sherro** | `#055` | **Lv.3** ☕ | Water Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Dreaple** | `#019` | **Lv.2** ☕ | Dark Lv.2 | Hot Springs & Camp Relaxation Square |
 
 ---
 
@@ -74,18 +74,8 @@ Workers with **Perfumery** distill rare botanicals into essential oils, produce 
 
 | Aniimo | Dex # | Perfumery Level | Complementary Abilities | Best Station |
 | :--- | :--- | :--- | :--- | :--- |
-| **Somniwing** | `#030` | **Lv.3** 🌸 | Grass Lv.3, Wind Lv.2, Leisure Lv.1 | Distillery & Botanical Greenhouse |
-| **Melloblum** | `#035` | **Lv.3** 🌸 | Grass Lv.3, Leisure Lv.2 | Distillery & Botanical Greenhouse |
-| **Fragrancier** | `#039` | **Lv.3** 🌸 | Dark Lv.2, Leisure Lv.2 | Distillery & Botanical Greenhouse |
-| **Luminelle** | `#079` | **Lv.3** 🌸 | Lightning Lv.3, Leisure Lv.2 | Distillery & Botanical Greenhouse |
-| **Irisalis** | `#????` | **Lv.3** 🌸 | Grass Lv.3, Leisure Lv.1 | Distillery & Botanical Greenhouse |
-| **Irisal** | `#012` | **Lv.2** 🌸 | Grass Lv.3, Artisanship Lv.1 | Distillery & Botanical Greenhouse |
-| **Leafy** | `#016` | **Lv.2** 🌸 | Water Lv.1, Grass Lv.1 | Distillery & Botanical Greenhouse |
-| **Dreaple** | `#019` | **Lv.2** 🌸 | Dark Lv.2 | Distillery & Botanical Greenhouse |
-| **Hexxin** | `#021` | **Lv.2** 🌸 | Dark Lv.2, Grass Lv.1 | Distillery & Botanical Greenhouse |
-| **Piopiota** | `#051` | **Lv.2** 🌸 | Water Lv.3 | Distillery & Botanical Greenhouse |
-| **Iris** | `#011` | **Lv.1** 🌸 | Grass Lv.1 | Distillery & Botanical Greenhouse |
-| **Flutternym** | `#028` | **Lv.1** 🌸 | Wind Lv.1, Leisure Lv.1 | Distillery & Botanical Greenhouse |
+| **Fragrancier** | `#039` | **Lv.3** 🌸 | Dark Lv.3, Leisure Lv.3 | Distillery & Botanical Greenhouse |
+| **Dewy** | `#038` | **Lv.1** 🌸 | Dark Lv.1 | Distillery & Botanical Greenhouse |
 
 ---
 

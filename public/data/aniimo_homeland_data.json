@@ -124,12 +124,10 @@
         "image": "images/forms/flameruff-basic-form-base.png",
         "abilities": {
           "Fire": 2,
-          "Carry": 2,
-          "Artisanship": 1
+          "Carry": 2
         },
         "utilities": {
-          "Carry": 2,
-          "Artisanship": 1
+          "Carry": 2
         }
       },
       "regional": [
@@ -165,12 +163,10 @@
           "image": "images/forms/flameruff-mountain-woods-form.png",
           "abilities": {
             "Fire": 2,
-            "Carry": 2,
-            "Artisanship": 1
+            "Carry": 2
           },
           "utilities": {
-            "Carry": 2,
-            "Artisanship": 1
+            "Carry": 2
           }
         }
       ],
@@ -218,12 +214,10 @@
         "image": "images/forms/scorchhowl-basic-form-base.png",
         "abilities": {
           "Fire": 3,
-          "Artisanship": 2,
-          "Carry": 2
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 2,
-          "Carry": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -240,12 +234,12 @@
           "abilities": {
             "Fire": 3,
             "Earth": 2,
-            "Artisanship": 2,
-            "Carry": 2
+            "Carry": 3,
+            "Artisanship": 1
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 2
+            "Carry": 3,
+            "Artisanship": 1
           }
         },
         {
@@ -259,12 +253,10 @@
           "image": "images/forms/scorchhowl-mountain-woods-form.png",
           "abilities": {
             "Fire": 3,
-            "Artisanship": 2,
-            "Carry": 2
+            "Carry": 3
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 2
+            "Carry": 3
           }
         }
       ],
@@ -280,12 +272,10 @@
           "image": "images/forms/scorchhowl-thunderstorm-form.png",
           "abilities": {
             "Fire": 3,
-            "Artisanship": 2,
-            "Carry": 2
+            "Carry": 3
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 2
+            "Carry": 3
           }
         }
       ],
@@ -300,12 +290,10 @@
         "image": "images/forms/scorchhowl-prismana.png",
         "abilities": {
           "Fire": 4,
-          "Artisanship": 3,
-          "Carry": 3
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 3,
-          "Carry": 3
+          "Carry": 4
         }
       }
     },
@@ -342,42 +330,40 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Dark 3 / Fire 2",
+        "element_display": "Dark 3",
         "catch_rate": "28%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Dark": 3,
-          "Fire": 2
+          "Dark": 3
         },
         "image": "images/forms/inferlupa-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Fire": 2,
-          "Artisanship": 2
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Carry": 3
         }
       },
       "regional": [],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Fire 3",
+        "element_display": "Dark 4 / Fire 4",
         "catch_rate": "25%",
         "region": "Idyll Native Habitat",
         "elements": {
           "Dark": 4,
-          "Fire": 3
+          "Fire": 4
         },
         "image": "images/forms/inferlupa-prismana.png",
         "abilities": {
           "Dark": 4,
-          "Fire": 3,
-          "Artisanship": 3
+          "Fire": 4,
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Carry": 4
         }
       }
     },
@@ -419,10 +405,10 @@
         "image": "images/forms/celestis-basic-form.png",
         "abilities": {
           "Dark": 3,
-          "Leisure": 1
+          "Leisure": 3
         },
         "utilities": {
-          "Leisure": 1
+          "Leisure": 3
         }
       },
       "regional": [],
@@ -466,12 +452,10 @@
         "image": "images/forms/stellarys-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Leisure": 2,
-          "Carry": 1
+          "Leisure": 3
         },
         "utilities": {
-          "Leisure": 2,
-          "Carry": 1
+          "Leisure": 3
         }
       },
       "regional": [],
@@ -489,34 +473,30 @@
           "abilities": {
             "Dark": 3,
             "Water": 2,
-            "Leisure": 2,
-            "Carry": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Leisure": 2,
-            "Carry": 1
+            "Leisure": 3
           }
         }
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Ice 3",
+        "element_display": "Dark 4 / Ice 4",
         "catch_rate": "28%",
         "region": "Forest of Falling Stars",
         "elements": {
           "Dark": 4,
-          "Ice": 3
+          "Ice": 4
         },
         "image": "images/forms/stellarys-prismana.png",
         "abilities": {
           "Dark": 4,
-          "Ice": 3,
-          "Leisure": 3,
-          "Carry": 2
+          "Ice": 4,
+          "Leisure": 4
         },
         "utilities": {
-          "Leisure": 3,
-          "Carry": 2
+          "Leisure": 4
         }
       }
     },
@@ -649,11 +629,9 @@
         "image": "images/forms/tromber-basic-form-base.png",
         "abilities": {
           "Wind": 3,
-          "Leisure": 3,
           "Carry": 2
         },
         "utilities": {
-          "Leisure": 3,
           "Carry": 2
         }
       },
@@ -671,11 +649,9 @@
           "abilities": {
             "Wind": 3,
             "Water": 2,
-            "Leisure": 3,
             "Carry": 2
           },
           "utilities": {
-            "Leisure": 3,
             "Carry": 2
           }
         },
@@ -692,11 +668,9 @@
           "abilities": {
             "Wind": 3,
             "Grass": 2,
-            "Leisure": 3,
             "Carry": 2
           },
           "utilities": {
-            "Leisure": 3,
             "Carry": 2
           }
         }
@@ -799,17 +773,17 @@
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Wind 4 / Lightning 3",
+        "element_display": "Wind 4 / Lightning 4",
         "catch_rate": "28%",
         "region": "The Argent Strait",
         "elements": {
           "Wind": 4,
-          "Lightning": 3
+          "Lightning": 4
         },
         "image": "images/forms/cornet-prismana.png",
         "abilities": {
           "Wind": 4,
-          "Lightning": 3,
+          "Lightning": 4,
           "Artisanship": 3,
           "Carry": 3
         },
@@ -965,10 +939,10 @@
         "image": "images/forms/iris-basic-form-base.png",
         "abilities": {
           "Grass": 1,
-          "Perfumery": 1
+          "Leisure": 1
         },
         "utilities": {
-          "Perfumery": 1
+          "Leisure": 1
         }
       },
       "regional": [
@@ -983,10 +957,10 @@
           "image": "images/forms/iris-highland-form.png",
           "abilities": {
             "Grass": 1,
-            "Perfumery": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Perfumery": 1
+            "Leisure": 1
           }
         },
         {
@@ -1000,10 +974,10 @@
           "image": "images/forms/iris-forest-form.png",
           "abilities": {
             "Grass": 1,
-            "Perfumery": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Perfumery": 1
+            "Leisure": 1
           }
         },
         {
@@ -1017,10 +991,10 @@
           "image": "images/forms/iris-grassland-form.png",
           "abilities": {
             "Grass": 1,
-            "Perfumery": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Perfumery": 1
+            "Leisure": 1
           }
         },
         {
@@ -1034,10 +1008,10 @@
           "image": "images/forms/iris-mountain-woods-form.png",
           "abilities": {
             "Grass": 1,
-            "Perfumery": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Perfumery": 1
+            "Leisure": 1
           }
         }
       ],
@@ -1053,28 +1027,28 @@
           "image": "images/forms/iris-plateau-form.png",
           "abilities": {
             "Grass": 1,
-            "Perfumery": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Perfumery": 1
+            "Leisure": 1
           }
         }
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Grass 1",
+        "element_display": "Grass 2",
         "catch_rate": "56%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 1
+          "Grass": 2
         },
         "image": "images/forms/iris-prismana.png",
         "abilities": {
-          "Grass": 1,
-          "Perfumery": 2
+          "Grass": 2,
+          "Leisure": 2
         },
         "utilities": {
-          "Perfumery": 2
+          "Leisure": 2
         }
       }
     },
@@ -1120,12 +1094,10 @@
         "image": "images/forms/irisal-basic-form-base.png",
         "abilities": {
           "Grass": 3,
-          "Perfumery": 2,
-          "Artisanship": 1
+          "Leisure": 3
         },
         "utilities": {
-          "Perfumery": 2,
-          "Artisanship": 1
+          "Leisure": 3
         }
       },
       "regional": [
@@ -1140,12 +1112,10 @@
           "image": "images/forms/irisal-highland-form.png",
           "abilities": {
             "Grass": 3,
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           }
         },
         {
@@ -1159,12 +1129,10 @@
           "image": "images/forms/irisal-forest-form.png",
           "abilities": {
             "Grass": 3,
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           }
         },
         {
@@ -1178,12 +1146,10 @@
           "image": "images/forms/irisal-grassland-form.png",
           "abilities": {
             "Grass": 3,
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           }
         },
         {
@@ -1197,12 +1163,10 @@
           "image": "images/forms/irisal-mountain-woods-form.png",
           "abilities": {
             "Grass": 3,
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           }
         }
       ],
@@ -1218,12 +1182,10 @@
           "image": "images/forms/irisal-plateau-form.png",
           "abilities": {
             "Grass": 3,
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Perfumery": 2,
-            "Artisanship": 1
+            "Leisure": 3
           }
         }
       ],
@@ -1238,12 +1200,10 @@
         "image": "images/forms/irisal-prismana.png",
         "abilities": {
           "Grass": 4,
-          "Perfumery": 3,
-          "Artisanship": 2
+          "Leisure": 4
         },
         "utilities": {
-          "Perfumery": 3,
-          "Artisanship": 2
+          "Leisure": 4
         }
       }
     },
@@ -1380,10 +1340,10 @@
         "image": "images/forms/pranky-basic-form-base.png",
         "abilities": {
           "Water": 2,
-          "Artisanship": 2
+          "Carry": 2
         },
         "utilities": {
-          "Artisanship": 2
+          "Carry": 2
         }
       },
       "regional": [
@@ -1398,10 +1358,10 @@
           "image": "images/forms/pranky-sea-of-flowers-form.png",
           "abilities": {
             "Water": 2,
-            "Artisanship": 2
+            "Carry": 2
           },
           "utilities": {
-            "Artisanship": 2
+            "Carry": 2
           }
         },
         {
@@ -1417,10 +1377,10 @@
           "abilities": {
             "Water": 2,
             "Ice": 1,
-            "Artisanship": 2
+            "Carry": 2
           },
           "utilities": {
-            "Artisanship": 2
+            "Carry": 2
           }
         }
       ],
@@ -1467,10 +1427,10 @@
         "abilities": {
           "Water": 3,
           "Ice": 2,
-          "Leisure": 2
+          "Carry": 3
         },
         "utilities": {
-          "Leisure": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -1487,10 +1447,10 @@
           "abilities": {
             "Water": 3,
             "Ice": 2,
-            "Leisure": 2
+            "Carry": 3
           },
           "utilities": {
-            "Leisure": 2
+            "Carry": 3
           }
         },
         {
@@ -1506,31 +1466,31 @@
           "abilities": {
             "Water": 3,
             "Ice": 2,
-            "Leisure": 2
+            "Carry": 3
           },
           "utilities": {
-            "Leisure": 2
+            "Carry": 3
           }
         }
       ],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Water 4 / Ice 2",
+        "element_display": "Water 4 / Ice 3",
         "catch_rate": "28%",
         "region": "Driftwise Meadow",
         "elements": {
           "Water": 4,
-          "Ice": 2
+          "Ice": 3
         },
         "image": "images/forms/glacy-prismana.png",
         "abilities": {
           "Water": 4,
-          "Ice": 2,
-          "Leisure": 3
+          "Ice": 3,
+          "Carry": 4
         },
         "utilities": {
-          "Leisure": 3
+          "Carry": 4
         }
       }
     },
@@ -1566,21 +1526,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Water 1 / Grass 1",
+        "element_display": "Grass 1 / Water 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Water": 1,
-          "Grass": 1
+          "Grass": 1,
+          "Water": 1
         },
         "image": "images/forms/leafy-basic-form.png",
         "abilities": {
-          "Water": 1,
           "Grass": 1,
-          "Perfumery": 2
+          "Water": 1,
+          "Carry": 1
         },
         "utilities": {
-          "Perfumery": 2
+          "Carry": 1
         }
       },
       "regional": [],
@@ -1625,10 +1585,10 @@
         "image": "images/forms/nimbi-basic-form-base.png",
         "abilities": {
           "Wind": 1,
-          "Carry": 1
+          "Leisure": 1
         },
         "utilities": {
-          "Carry": 1
+          "Leisure": 1
         }
       },
       "regional": [],
@@ -1646,10 +1606,10 @@
           "abilities": {
             "Wind": 1,
             "Lightning": 1,
-            "Carry": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Carry": 1
+            "Leisure": 1
           }
         },
         {
@@ -1663,10 +1623,10 @@
           "image": "images/forms/nimbi-cloudmist-form.png",
           "abilities": {
             "Wind": 1,
-            "Carry": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Carry": 1
+            "Leisure": 1
           }
         },
         {
@@ -1682,10 +1642,10 @@
           "abilities": {
             "Wind": 1,
             "Ice": 1,
-            "Carry": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Carry": 1
+            "Leisure": 1
           }
         }
       ],
@@ -1732,10 +1692,10 @@
         "image": "images/forms/turbo-basic-form-base.png",
         "abilities": {
           "Wind": 3,
-          "Artisanship": 1
+          "Leisure": 3
         },
         "utilities": {
-          "Artisanship": 1
+          "Leisure": 3
         }
       },
       "regional": [],
@@ -1753,10 +1713,10 @@
           "abilities": {
             "Wind": 3,
             "Lightning": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Artisanship": 1
+            "Leisure": 3
           }
         },
         {
@@ -1770,10 +1730,10 @@
           "image": "images/forms/turbo-cloudmist-form.png",
           "abilities": {
             "Wind": 3,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Artisanship": 1
+            "Leisure": 3
           }
         },
         {
@@ -1789,30 +1749,30 @@
           "abilities": {
             "Wind": 3,
             "Ice": 2,
-            "Artisanship": 1
+            "Leisure": 3
           },
           "utilities": {
-            "Artisanship": 1
+            "Leisure": 3
           }
         }
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Wind 4 / Dark 3",
+        "element_display": "Wind 4 / Dark 4",
         "catch_rate": "28%",
         "region": "Nimbus Fields",
         "elements": {
           "Wind": 4,
-          "Dark": 3
+          "Dark": 4
         },
         "image": "images/forms/turbo-prismana.png",
         "abilities": {
           "Wind": 4,
-          "Dark": 3,
-          "Artisanship": 2
+          "Dark": 4,
+          "Leisure": 4
         },
         "utilities": {
-          "Artisanship": 2
+          "Leisure": 4
         }
       }
     },
@@ -1857,10 +1817,10 @@
         "image": "images/dreaple.png",
         "abilities": {
           "Dark": 2,
-          "Perfumery": 2
+          "Leisure": 2
         },
         "utilities": {
-          "Perfumery": 2
+          "Leisure": 2
         }
       },
       "regional": [],
@@ -1966,21 +1926,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Dark 2 / Grass 1",
+        "element_display": "Grass 1 / Dark 2",
         "catch_rate": "28%",
         "region": "The Mistwoods",
         "elements": {
-          "Dark": 2,
-          "Grass": 1
+          "Grass": 1,
+          "Dark": 2
         },
         "image": "images/forms/hexxin-basic-form-base.png",
         "abilities": {
-          "Dark": 2,
           "Grass": 1,
-          "Perfumery": 2
+          "Dark": 2,
+          "Artisanship": 2
         },
         "utilities": {
-          "Perfumery": 2
+          "Artisanship": 2
         }
       },
       "regional": [
@@ -1997,31 +1957,31 @@
           "abilities": {
             "Dark": 2,
             "Grass": 1,
-            "Perfumery": 2
+            "Artisanship": 2
           },
           "utilities": {
-            "Perfumery": 2
+            "Artisanship": 2
           }
         }
       ],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Grass 3",
+        "element_display": "Dark 4 / Grass 4",
         "catch_rate": "28%",
         "region": "The Mistwoods",
         "elements": {
           "Dark": 4,
-          "Grass": 3
+          "Grass": 4
         },
         "image": "images/forms/hexxin-prismana.png",
         "abilities": {
           "Dark": 4,
-          "Grass": 3,
-          "Perfumery": 3
+          "Grass": 4,
+          "Artisanship": 3
         },
         "utilities": {
-          "Perfumery": 3
+          "Artisanship": 3
         }
       }
     },
@@ -2554,12 +2514,10 @@
         "image": "images/forms/flamerion-basic-form-base.png",
         "abilities": {
           "Fire": 3,
-          "Artisanship": 2,
-          "Carry": 1
+          "Artisanship": 3
         },
         "utilities": {
-          "Artisanship": 2,
-          "Carry": 1
+          "Artisanship": 3
         }
       },
       "regional": [
@@ -2574,12 +2532,10 @@
           "image": "images/forms/flamerion-highland-form.png",
           "abilities": {
             "Fire": 3,
-            "Artisanship": 2,
-            "Carry": 1
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 1
+            "Artisanship": 3
           }
         },
         {
@@ -2593,12 +2549,10 @@
           "image": "images/forms/flamerion-forest-form.png",
           "abilities": {
             "Fire": 3,
-            "Artisanship": 2,
-            "Carry": 1
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 1
+            "Artisanship": 3
           }
         },
         {
@@ -2612,12 +2566,10 @@
           "image": "images/forms/flamerion-sea-of-flowers-form.png",
           "abilities": {
             "Fire": 3,
-            "Artisanship": 2,
-            "Carry": 1
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 1
+            "Artisanship": 3
           }
         }
       ],
@@ -2654,20 +2606,20 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Wind 1",
+        "element_display": "Wind 1 / Grass 1",
         "catch_rate": "56%",
         "region": "Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood",
         "elements": {
-          "Wind": 1
+          "Wind": 1,
+          "Grass": 1
         },
         "image": "images/forms/flutternym-basic-form-base.png",
         "abilities": {
           "Wind": 1,
-          "Perfumery": 1,
+          "Grass": 1,
           "Leisure": 1
         },
         "utilities": {
-          "Perfumery": 1,
           "Leisure": 1
         }
       },
@@ -2685,12 +2637,10 @@
           "abilities": {
             "Wind": 1,
             "Grass": 1,
-            "Perfumery": 1,
             "Leisure": 1,
             "Carry": 1
           },
           "utilities": {
-            "Perfumery": 1,
             "Leisure": 1,
             "Carry": 1
           }
@@ -2708,12 +2658,10 @@
           "abilities": {
             "Wind": 1,
             "Dark": 1,
-            "Perfumery": 1,
             "Leisure": 1,
             "Carry": 1
           },
           "utilities": {
-            "Perfumery": 1,
             "Leisure": 1,
             "Carry": 1
           }
@@ -2731,13 +2679,11 @@
           "abilities": {
             "Wind": 1,
             "Earth": 1,
-            "Perfumery": 1,
             "Leisure": 1,
             "Artisanship": 1,
             "Carry": 1
           },
           "utilities": {
-            "Perfumery": 1,
             "Leisure": 1,
             "Artisanship": 1,
             "Carry": 1
@@ -2777,21 +2723,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Wind 3",
+        "element_display": "Wind 4 / Grass 4",
         "catch_rate": "28%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Wind": 3
+          "Wind": 4,
+          "Grass": 4
         },
         "image": "images/forms/gracewing-basic-form-base.png",
         "abilities": {
-          "Wind": 3,
-          "Artisanship": 2,
-          "Leisure": 2
+          "Wind": 4,
+          "Grass": 4,
+          "Leisure": 4
         },
         "utilities": {
-          "Artisanship": 2,
-          "Leisure": 2
+          "Leisure": 4
         }
       },
       "regional": [
@@ -2808,13 +2754,11 @@
           "abilities": {
             "Wind": 3,
             "Grass": 2,
-            "Artisanship": 2,
-            "Leisure": 2,
+            "Leisure": 4,
             "Carry": 1
           },
           "utilities": {
-            "Artisanship": 2,
-            "Leisure": 2,
+            "Leisure": 4,
             "Carry": 1
           }
         },
@@ -2831,13 +2775,11 @@
           "abilities": {
             "Wind": 3,
             "Dark": 2,
-            "Artisanship": 2,
-            "Leisure": 2,
+            "Leisure": 4,
             "Carry": 1
           },
           "utilities": {
-            "Artisanship": 2,
-            "Leisure": 2,
+            "Leisure": 4,
             "Carry": 1
           }
         },
@@ -2854,13 +2796,13 @@
           "abilities": {
             "Wind": 3,
             "Earth": 2,
-            "Artisanship": 2,
-            "Leisure": 2,
+            "Leisure": 4,
+            "Artisanship": 1,
             "Carry": 1
           },
           "utilities": {
-            "Artisanship": 2,
-            "Leisure": 2,
+            "Leisure": 4,
+            "Artisanship": 1,
             "Carry": 1
           }
         }
@@ -2898,46 +2840,42 @@
     "forms": {
       "basic": {
         "form_name": "Prismana Form",
-        "element_display": "Grass 3 / Wind 2",
+        "element_display": "Grass 4 / Wind 3",
         "catch_rate": "28%",
         "region": "Idyll Prismana Flow",
         "elements": {
-          "Grass": 3,
-          "Wind": 2
+          "Grass": 4,
+          "Wind": 3
         },
         "image": "images/somniwing.png",
         "abilities": {
-          "Grass": 3,
-          "Wind": 2,
-          "Perfumery": 3,
-          "Leisure": 1
+          "Grass": 4,
+          "Wind": 3,
+          "Leisure": 4
         },
         "utilities": {
-          "Perfumery": 3,
-          "Leisure": 1
+          "Leisure": 4
         }
       },
       "regional": [],
       "weather": [],
       "prismana": {
         "form_name": "Prismana Form",
-        "element_display": "Grass 3 / Wind 2",
+        "element_display": "Grass 4 / Wind 3",
         "catch_rate": "28%",
         "region": "Idyll Prismana Flow",
         "elements": {
-          "Grass": 3,
-          "Wind": 2
+          "Grass": 4,
+          "Wind": 3
         },
         "image": "images/somniwing.png",
         "abilities": {
-          "Grass": 3,
-          "Wind": 2,
-          "Perfumery": 4,
-          "Leisure": 2
+          "Grass": 4,
+          "Wind": 3,
+          "Leisure": 4
         },
         "utilities": {
-          "Perfumery": 4,
-          "Leisure": 2
+          "Leisure": 4
         }
       }
     },
@@ -3070,19 +3008,19 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Grass 1",
+        "element_display": "Grass 3",
         "catch_rate": "50%",
         "region": "Sea of Flowers, Rosetower Woods",
         "elements": {
-          "Grass": 1
+          "Grass": 3
         },
         "image": "images/forms/budsquire-basic-form-base.png",
         "abilities": {
-          "Grass": 1,
-          "Artisanship": 1
+          "Grass": 3,
+          "Artisanship": 2
         },
         "utilities": {
-          "Artisanship": 1
+          "Artisanship": 2
         }
       },
       "regional": [
@@ -3097,10 +3035,10 @@
           "image": "images/forms/budsquire-towerwood-form.png",
           "abilities": {
             "Grass": 1,
-            "Artisanship": 1
+            "Artisanship": 2
           },
           "utilities": {
-            "Artisanship": 1
+            "Artisanship": 2
           }
         }
       ],
@@ -3148,10 +3086,10 @@
         "image": "images/forms/thornblade-basic-form-base.png",
         "abilities": {
           "Grass": 3,
-          "Artisanship": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Artisanship": 3
         }
       },
       "regional": [
@@ -3166,10 +3104,10 @@
           "image": "images/forms/thornblade-towerwood-form.png",
           "abilities": {
             "Grass": 3,
-            "Artisanship": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Artisanship": 3
           }
         }
       ],
@@ -3185,30 +3123,30 @@
           "image": "images/forms/thornblade-thunderstorm-form.png",
           "abilities": {
             "Grass": 3,
-            "Artisanship": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Artisanship": 3
           }
         }
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Grass 4 / Water 3",
+        "element_display": "Grass 4 / Water 4",
         "catch_rate": "25%",
         "region": "Sea of Flowers",
         "elements": {
           "Grass": 4,
-          "Water": 3
+          "Water": 4
         },
         "image": "images/forms/thornblade-prismana.png",
         "abilities": {
           "Grass": 4,
-          "Water": 3,
-          "Artisanship": 3
+          "Water": 4,
+          "Artisanship": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Artisanship": 4
         }
       }
     },
@@ -3255,12 +3193,10 @@
         "image": "images/forms/melloblum-basic-form-base.png",
         "abilities": {
           "Grass": 3,
-          "Perfumery": 3,
-          "Leisure": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Perfumery": 3,
-          "Leisure": 2
+          "Artisanship": 3
         }
       },
       "regional": [],
@@ -3276,12 +3212,10 @@
         "image": "images/forms/melloblum-prismana.png",
         "abilities": {
           "Grass": 4,
-          "Perfumery": 4,
-          "Leisure": 3
+          "Artisanship": 4
         },
         "utilities": {
-          "Perfumery": 4,
-          "Leisure": 3
+          "Artisanship": 4
         }
       }
     },
@@ -3326,10 +3260,10 @@
         "image": "images/forms/pomegg-basic-form-base.png",
         "abilities": {
           "Grass": 1,
-          "Leisure": 1
+          "Artisanship": 1
         },
         "utilities": {
-          "Leisure": 1
+          "Artisanship": 1
         }
       },
       "regional": [
@@ -3346,10 +3280,10 @@
           "abilities": {
             "Grass": 1,
             "Ice": 1,
-            "Leisure": 1
+            "Artisanship": 1
           },
           "utilities": {
-            "Leisure": 1
+            "Artisanship": 1
           }
         },
         {
@@ -3363,10 +3297,10 @@
           "image": "images/forms/pomegg-highland-form.png",
           "abilities": {
             "Grass": 1,
-            "Leisure": 1
+            "Artisanship": 1
           },
           "utilities": {
-            "Leisure": 1
+            "Artisanship": 1
           }
         },
         {
@@ -3380,10 +3314,10 @@
           "image": "images/forms/pomegg-sea-of-flowers-form.png",
           "abilities": {
             "Grass": 1,
-            "Leisure": 1
+            "Artisanship": 1
           },
           "utilities": {
-            "Leisure": 1
+            "Artisanship": 1
           }
         }
       ],
@@ -3433,10 +3367,10 @@
         "image": "images/forms/pomawk-basic-form-base.png",
         "abilities": {
           "Grass": 3,
-          "Carry": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Carry": 2
+          "Artisanship": 3
         }
       },
       "regional": [
@@ -3453,10 +3387,10 @@
           "abilities": {
             "Grass": 3,
             "Ice": 2,
-            "Carry": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Carry": 2
+            "Artisanship": 3
           }
         },
         {
@@ -3470,10 +3404,10 @@
           "image": "images/forms/pomawk-highland-form.png",
           "abilities": {
             "Grass": 3,
-            "Carry": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Carry": 2
+            "Artisanship": 3
           }
         },
         {
@@ -3487,10 +3421,10 @@
           "image": "images/forms/pomawk-sea-of-flowers-form.png",
           "abilities": {
             "Grass": 3,
-            "Carry": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Carry": 2
+            "Artisanship": 3
           }
         }
       ],
@@ -3575,21 +3509,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Dark 2",
+        "element_display": "Dark 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Dark": 2
+          "Dark": 3
         },
         "image": "images/forms/fragrancier-basic-form.png",
         "abilities": {
-          "Dark": 2,
+          "Dark": 3,
           "Perfumery": 3,
-          "Leisure": 2
+          "Leisure": 3
         },
         "utilities": {
           "Perfumery": 3,
-          "Leisure": 2
+          "Leisure": 3
         }
       },
       "regional": [],
@@ -3721,10 +3655,10 @@
         "image": "images/forms/ignitis-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Artisanship": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Artisanship": 3
         }
       },
       "regional": [
@@ -3741,10 +3675,10 @@
           "abilities": {
             "Dark": 3,
             "Grass": 2,
-            "Artisanship": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Artisanship": 3
           }
         },
         {
@@ -3760,31 +3694,31 @@
           "abilities": {
             "Dark": 3,
             "Fire": 2,
-            "Artisanship": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Artisanship": 3
           }
         }
       ],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Fire 3",
+        "element_display": "Dark 4 / Fire 4",
         "catch_rate": "22%",
         "region": "Berylline Vale",
         "elements": {
           "Dark": 4,
-          "Fire": 3
+          "Fire": 4
         },
         "image": "images/forms/ignitis-prismana.png",
         "abilities": {
           "Dark": 4,
-          "Fire": 3,
-          "Artisanship": 3
+          "Fire": 4,
+          "Artisanship": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Artisanship": 4
         }
       }
     },
@@ -3970,10 +3904,10 @@
         "image": "images/forms/glynsera-basic-form-base.png",
         "abilities": {
           "Ice": 3,
-          "Artisanship": 2
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -3990,10 +3924,10 @@
           "abilities": {
             "Ice": 3,
             "Dark": 2,
-            "Artisanship": 2
+            "Carry": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Carry": 3
           }
         }
       ],
@@ -4009,10 +3943,10 @@
         "image": "images/forms/glynsera-prismana.png",
         "abilities": {
           "Ice": 4,
-          "Artisanship": 3
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Carry": 4
         }
       }
     },
@@ -4125,12 +4059,10 @@
         "image": "images/forms/blazen-basic-form-base.png",
         "abilities": {
           "Lightning": 3,
-          "Artisanship": 2,
-          "Carry": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Artisanship": 2,
-          "Carry": 2
+          "Artisanship": 3
         }
       },
       "regional": [
@@ -4145,12 +4077,10 @@
           "image": "images/forms/blazen-mountain-woods-form.png",
           "abilities": {
             "Lightning": 3,
-            "Artisanship": 2,
-            "Carry": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Artisanship": 2,
-            "Carry": 2
+            "Artisanship": 3
           }
         }
       ],
@@ -4166,12 +4096,10 @@
         "image": "images/forms/blazen-prismana.png",
         "abilities": {
           "Lightning": 4,
-          "Artisanship": 3,
-          "Carry": 3
+          "Artisanship": 4
         },
         "utilities": {
-          "Artisanship": 3,
-          "Carry": 3
+          "Artisanship": 4
         }
       }
     },
@@ -4265,11 +4193,9 @@
         "image": "images/forms/squashel-basic-form.png",
         "abilities": {
           "Fire": 2,
-          "Artisanship": 2,
           "Carry": 2
         },
         "utilities": {
-          "Artisanship": 2,
           "Carry": 2
         }
       },
@@ -4316,10 +4242,10 @@
         "image": "images/forms/susuta-basic-form-base.png",
         "abilities": {
           "Water": 1,
-          "Carry": 1
+          "Leisure": 1
         },
         "utilities": {
-          "Carry": 1
+          "Leisure": 1
         }
       },
       "regional": [
@@ -4334,10 +4260,10 @@
           "image": "images/forms/susuta-nighttime-form.png",
           "abilities": {
             "Water": 1,
-            "Carry": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Carry": 1
+            "Leisure": 1
           }
         },
         {
@@ -4351,10 +4277,10 @@
           "image": "images/forms/susuta-basic-form-variant-record.png",
           "abilities": {
             "Water": 1,
-            "Carry": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Carry": 1
+            "Leisure": 1
           }
         }
       ],
@@ -4402,12 +4328,10 @@
         "image": "images/forms/popota-basic-form-base.png",
         "abilities": {
           "Water": 2,
-          "Carry": 2,
-          "Leisure": 1
+          "Leisure": 2
         },
         "utilities": {
-          "Carry": 2,
-          "Leisure": 1
+          "Leisure": 2
         }
       },
       "regional": [
@@ -4422,12 +4346,10 @@
           "image": "images/forms/popota-nighttime-form.png",
           "abilities": {
             "Water": 2,
-            "Carry": 2,
-            "Leisure": 1
+            "Leisure": 2
           },
           "utilities": {
-            "Carry": 2,
-            "Leisure": 1
+            "Leisure": 2
           }
         }
       ],
@@ -4474,10 +4396,10 @@
         "image": "images/forms/piopiota-basic-form-base.png",
         "abilities": {
           "Water": 3,
-          "Perfumery": 2
+          "Leisure": 3
         },
         "utilities": {
-          "Perfumery": 2
+          "Leisure": 3
         }
       },
       "regional": [
@@ -4494,10 +4416,10 @@
           "abilities": {
             "Water": 3,
             "Dark": 2,
-            "Perfumery": 2
+            "Leisure": 3
           },
           "utilities": {
-            "Perfumery": 2
+            "Leisure": 3
           }
         }
       ],
@@ -4544,10 +4466,10 @@
         "image": "images/forms/panpanta-basic-form-base.png",
         "abilities": {
           "Water": 3,
-          "Carry": 3
+          "Leisure": 3
         },
         "utilities": {
-          "Carry": 3
+          "Leisure": 3
         }
       },
       "regional": [
@@ -4562,10 +4484,10 @@
           "image": "images/forms/panpanta-nighttime-form.png",
           "abilities": {
             "Water": 3,
-            "Carry": 3
+            "Leisure": 3
           },
           "utilities": {
-            "Carry": 3
+            "Leisure": 3
           }
         }
       ],
@@ -4581,10 +4503,10 @@
         "image": "images/forms/panpanta-prismana.png",
         "abilities": {
           "Water": 4,
-          "Carry": 4
+          "Leisure": 4
         },
         "utilities": {
-          "Carry": 4
+          "Leisure": 4
         }
       }
     },
@@ -4629,10 +4551,10 @@
         "image": "images/forms/shelly-basic-form-base.png",
         "abilities": {
           "Water": 1,
-          "Artisanship": 1
+          "Leisure": 1
         },
         "utilities": {
-          "Artisanship": 1
+          "Leisure": 1
         }
       },
       "regional": [
@@ -4647,10 +4569,10 @@
           "image": "images/shelly.png",
           "abilities": {
             "Water": 1,
-            "Artisanship": 1
+            "Leisure": 1
           },
           "utilities": {
-            "Artisanship": 1
+            "Leisure": 1
           }
         }
       ],
@@ -4697,10 +4619,10 @@
         "image": "images/forms/sheldon-basic-form.png",
         "abilities": {
           "Water": 2,
-          "Artisanship": 2
+          "Leisure": 2
         },
         "utilities": {
-          "Artisanship": 2
+          "Leisure": 2
         }
       },
       "regional": [],
@@ -4746,10 +4668,10 @@
         "image": "images/forms/sherro-basic-form-base.png",
         "abilities": {
           "Water": 3,
-          "Carry": 2
+          "Leisure": 3
         },
         "utilities": {
-          "Carry": 2
+          "Leisure": 3
         }
       },
       "regional": [],
@@ -4767,10 +4689,10 @@
           "abilities": {
             "Water": 3,
             "Lightning": 2,
-            "Carry": 2
+            "Leisure": 3
           },
           "utilities": {
-            "Carry": 2
+            "Leisure": 3
           }
         }
       ],
@@ -4785,10 +4707,10 @@
         "image": "images/forms/sherro-prismana.png",
         "abilities": {
           "Water": 4,
-          "Carry": 3
+          "Leisure": 4
         },
         "utilities": {
-          "Carry": 3
+          "Leisure": 4
         }
       }
     },
@@ -4834,12 +4756,10 @@
         "image": "images/forms/baleetle-basic-form-base.png",
         "abilities": {
           "Earth": 1,
-          "Carry": 1,
-          "Artisanship": 1
+          "Carry": 1
         },
         "utilities": {
-          "Carry": 1,
-          "Artisanship": 1
+          "Carry": 1
         }
       },
       "regional": [
@@ -4909,12 +4829,10 @@
         "image": "images/forms/waleetle-basic-form-base.png",
         "abilities": {
           "Earth": 3,
-          "Artisanship": 3,
-          "Carry": 2
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 3,
-          "Carry": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -4931,12 +4849,12 @@
           "abilities": {
             "Earth": 3,
             "Ice": 2,
-            "Artisanship": 3,
-            "Carry": 2
+            "Carry": 3,
+            "Artisanship": 1
           },
           "utilities": {
-            "Artisanship": 3,
-            "Carry": 2
+            "Carry": 3,
+            "Artisanship": 1
           }
         }
       ],
@@ -4952,12 +4870,10 @@
         "image": "images/forms/waleetle-prismana.png",
         "abilities": {
           "Earth": 4,
-          "Artisanship": 4,
-          "Carry": 3
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 4,
-          "Carry": 3
+          "Carry": 4
         }
       }
     },
@@ -5075,12 +4991,10 @@
         "image": "images/forms/fentuft-basic-form.png",
         "abilities": {
           "Lightning": 1,
-          "Carry": 1,
-          "Artisanship": 1
+          "Carry": 1
         },
         "utilities": {
-          "Carry": 1,
-          "Artisanship": 1
+          "Carry": 1
         }
       },
       "regional": [],
@@ -5126,12 +5040,10 @@
         "image": "images/forms/fenmane-basic-form-base.png",
         "abilities": {
           "Lightning": 3,
-          "Artisanship": 2,
-          "Carry": 2
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 2,
-          "Carry": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -5147,12 +5059,10 @@
         "image": "images/forms/fenmane-prismana.png",
         "abilities": {
           "Lightning": 4,
-          "Artisanship": 3,
-          "Carry": 3
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 3,
-          "Carry": 3
+          "Carry": 4
         }
       }
     },
@@ -5194,9 +5104,11 @@
         "image": "images/forms/helmut-basic-form-base.png",
         "abilities": {
           "Dark": 1,
+          "Carry": 1,
           "Artisanship": 1
         },
         "utilities": {
+          "Carry": 1,
           "Artisanship": 1
         }
       },
@@ -5214,9 +5126,11 @@
           "abilities": {
             "Dark": 1,
             "Ice": 1,
+            "Carry": 1,
             "Artisanship": 1
           },
           "utilities": {
+            "Carry": 1,
             "Artisanship": 1
           }
         },
@@ -5231,9 +5145,11 @@
           "image": "images/forms/helmut-mountain-woods-form.png",
           "abilities": {
             "Dark": 1,
+            "Carry": 1,
             "Artisanship": 1
           },
           "utilities": {
+            "Carry": 1,
             "Artisanship": 1
           }
         }
@@ -5280,10 +5196,10 @@
         "image": "images/forms/pawney-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Artisanship": 3
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 3
+          "Carry": 3
         }
       },
       "regional": [
@@ -5300,10 +5216,10 @@
           "abilities": {
             "Dark": 3,
             "Ice": 2,
-            "Artisanship": 3
+            "Carry": 3
           },
           "utilities": {
-            "Artisanship": 3
+            "Carry": 3
           }
         },
         {
@@ -5317,10 +5233,10 @@
           "image": "images/forms/pawney-mountain-woods-form.png",
           "abilities": {
             "Dark": 3,
-            "Artisanship": 3
+            "Carry": 3
           },
           "utilities": {
-            "Artisanship": 3
+            "Carry": 3
           }
         }
       ],
@@ -5336,10 +5252,10 @@
         "image": "images/forms/pawney-prismana.png",
         "abilities": {
           "Dark": 4,
-          "Artisanship": 4
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 4
+          "Carry": 4
         }
       }
     },
@@ -5383,9 +5299,11 @@
         "image": "images/forms/rookey-basic-form-base.png",
         "abilities": {
           "Dark": 3,
+          "Carry": 3,
           "Artisanship": 3
         },
         "utilities": {
+          "Carry": 3,
           "Artisanship": 3
         }
       },
@@ -5403,9 +5321,11 @@
           "abilities": {
             "Dark": 3,
             "Ice": 2,
+            "Carry": 3,
             "Artisanship": 3
           },
           "utilities": {
+            "Carry": 3,
             "Artisanship": 3
           }
         },
@@ -5420,9 +5340,11 @@
           "image": "images/forms/rookey-mountain-woods-form.png",
           "abilities": {
             "Dark": 3,
+            "Carry": 3,
             "Artisanship": 3
           },
           "utilities": {
+            "Carry": 3,
             "Artisanship": 3
           }
         }
@@ -5604,12 +5526,10 @@
         "image": "images/forms/helgon-basic-form-base.png",
         "abilities": {
           "Wind": 3,
-          "Carry": 3,
-          "Artisanship": 2
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 3,
-          "Artisanship": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -5624,12 +5544,10 @@
           "image": "images/forms/helgon-mountain-form.png",
           "abilities": {
             "Wind": 3,
-            "Carry": 3,
-            "Artisanship": 2
+            "Carry": 3
           },
           "utilities": {
-            "Carry": 3,
-            "Artisanship": 2
+            "Carry": 3
           }
         }
       ],
@@ -5686,17 +5604,17 @@
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Fire 4 / Wind 3",
+        "element_display": "Fire 4 / Wind 4",
         "catch_rate": "19%",
         "region": "Idyll Native Habitat",
         "elements": {
           "Fire": 4,
-          "Wind": 3
+          "Wind": 4
         },
         "image": "images/forms/infergon-prismana.png",
         "abilities": {
           "Fire": 4,
-          "Wind": 3,
+          "Wind": 4,
           "Artisanship": 4
         },
         "utilities": {
@@ -5901,21 +5819,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Fire 2 / Earth 2",
+        "element_display": "Earth 2 / Fire 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Fire": 2,
-          "Earth": 2
+          "Earth": 2,
+          "Fire": 2
         },
         "image": "images/forms/lavazar-basic-form.png",
         "abilities": {
-          "Fire": 2,
           "Earth": 2,
-          "Artisanship": 2
+          "Fire": 2,
+          "Carry": 2
         },
         "utilities": {
-          "Artisanship": 2
+          "Carry": 2
         }
       },
       "regional": [],
@@ -5951,21 +5869,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Fire 3 / Earth 2",
+        "element_display": "Earth 3 / Fire 3",
         "catch_rate": "19%",
         "region": "Zephyrus Landbridge",
         "elements": {
-          "Fire": 3,
-          "Earth": 2
+          "Earth": 3,
+          "Fire": 3
         },
         "image": "images/forms/magmarex-basic-form-base.png",
         "abilities": {
+          "Earth": 3,
           "Fire": 3,
-          "Earth": 2,
-          "Artisanship": 3
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 3
+          "Carry": 3
         }
       },
       "regional": [
@@ -5982,31 +5900,33 @@
           "abilities": {
             "Fire": 3,
             "Earth": 2,
-            "Artisanship": 3
+            "Carry": 3,
+            "Artisanship": 1
           },
           "utilities": {
-            "Artisanship": 3
+            "Carry": 3,
+            "Artisanship": 1
           }
         }
       ],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Fire 4 / Dark 3",
+        "element_display": "Fire 4 / Dark 4",
         "catch_rate": "19%",
         "region": "Zephyrus Landbridge",
         "elements": {
           "Fire": 4,
-          "Dark": 3
+          "Dark": 4
         },
         "image": "images/forms/magmarex-prismana.png",
         "abilities": {
           "Fire": 4,
-          "Dark": 3,
-          "Artisanship": 4
+          "Dark": 4,
+          "Carry": 4
         },
         "utilities": {
-          "Artisanship": 4
+          "Carry": 4
         }
       }
     },
@@ -6052,12 +5972,10 @@
         "image": "images/geodeback.png",
         "abilities": {
           "Earth": 2,
-          "Carry": 2,
-          "Artisanship": 2
+          "Carry": 2
         },
         "utilities": {
-          "Carry": 2,
-          "Artisanship": 2
+          "Carry": 2
         }
       },
       "regional": [],
@@ -6095,21 +6013,19 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Earth 2",
+        "element_display": "Earth 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Earth": 2
+          "Earth": 3
         },
         "image": "images/minespine.png",
         "abilities": {
-          "Earth": 2,
-          "Carry": 3,
-          "Artisanship": 2
+          "Earth": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 3,
-          "Artisanship": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6156,10 +6072,10 @@
         "image": "images/forms/cozite-basic-form.png",
         "abilities": {
           "Earth": 1,
-          "Leisure": 2
+          "Carry": 1
         },
         "utilities": {
-          "Leisure": 2
+          "Carry": 1
         }
       },
       "regional": [],
@@ -6197,21 +6113,19 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Earth 2",
+        "element_display": "Earth 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Earth": 2
+          "Earth": 3
         },
         "image": "images/forms/bailite-basic-form.png",
         "abilities": {
-          "Earth": 2,
-          "Artisanship": 3,
-          "Leisure": 2
+          "Earth": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 3,
-          "Leisure": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6257,10 +6171,10 @@
         "image": "images/forms/bulbly-basic-form.png",
         "abilities": {
           "Lightning": 1,
-          "Leisure": 1
+          "Artisanship": 1
         },
         "utilities": {
-          "Leisure": 1
+          "Artisanship": 1
         }
       },
       "regional": [],
@@ -6306,12 +6220,10 @@
         "image": "images/forms/veilfloat-basic-form.png",
         "abilities": {
           "Lightning": 2,
-          "Carry": 1,
-          "Artisanship": 1
+          "Artisanship": 2
         },
         "utilities": {
-          "Carry": 1,
-          "Artisanship": 1
+          "Artisanship": 2
         }
       },
       "regional": [],
@@ -6357,12 +6269,10 @@
         "image": "images/forms/luminelle-basic-form-base.png",
         "abilities": {
           "Lightning": 3,
-          "Perfumery": 3,
-          "Leisure": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Perfumery": 3,
-          "Leisure": 2
+          "Artisanship": 3
         }
       },
       "regional": [],
@@ -6380,12 +6290,10 @@
           "abilities": {
             "Lightning": 3,
             "Water": 2,
-            "Perfumery": 3,
-            "Leisure": 2
+            "Artisanship": 3
           },
           "utilities": {
-            "Perfumery": 3,
-            "Leisure": 2
+            "Artisanship": 3
           }
         }
       ],
@@ -6400,12 +6308,10 @@
         "image": "images/forms/luminelle-prismana.png",
         "abilities": {
           "Lightning": 4,
-          "Perfumery": 4,
-          "Leisure": 3
+          "Artisanship": 4
         },
         "utilities": {
-          "Perfumery": 4,
-          "Leisure": 3
+          "Artisanship": 4
         }
       }
     },
@@ -6490,21 +6396,21 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Water 2",
+        "element_display": "Water 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Water": 2
+          "Water": 3
         },
         "image": "images/forms/erlath-basic-form.png",
         "abilities": {
-          "Water": 2,
-          "Leisure": 2,
-          "Carry": 2
+          "Water": 3,
+          "Carry": 2,
+          "Leisure": 2
         },
         "utilities": {
-          "Leisure": 2,
-          "Carry": 2
+          "Carry": 2,
+          "Leisure": 2
         }
       },
       "regional": [],
@@ -6541,19 +6447,19 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Lightning 2",
+        "element_display": "Lightning 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Lightning": 2
+          "Lightning": 3
         },
         "image": "images/besauce.png",
         "abilities": {
-          "Lightning": 2,
-          "Artisanship": 2
+          "Lightning": 3,
+          "Artisanship": 1
         },
         "utilities": {
-          "Artisanship": 2
+          "Artisanship": 1
         }
       },
       "regional": [],
@@ -6599,12 +6505,10 @@
         "image": "images/dazmand.png",
         "abilities": {
           "Lightning": 3,
-          "Carry": 2,
-          "Artisanship": 2
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 2,
-          "Artisanship": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6650,10 +6554,10 @@
         "image": "images/forms/fulmintis-basic-form-base.png",
         "abilities": {
           "Lightning": 3,
-          "Artisanship": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Artisanship": 3
         }
       },
       "regional": [],
@@ -6669,10 +6573,10 @@
         "image": "images/forms/fulmintis-prismana.png",
         "abilities": {
           "Lightning": 4,
-          "Artisanship": 3
+          "Artisanship": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Artisanship": 4
         }
       }
     },
@@ -6759,10 +6663,10 @@
         "image": "images/lunara.png",
         "abilities": {
           "Light": 3,
-          "Leisure": 3
+          "Carry": 3
         },
         "utilities": {
-          "Leisure": 3
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6805,10 +6709,10 @@
         "image": "images/soleon.png",
         "abilities": {
           "Light": 3,
-          "Leisure": 3
+          "Carry": 3
         },
         "utilities": {
-          "Leisure": 3
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6842,19 +6746,19 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Light 2",
+        "element_display": "Light 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Light": 2
+          "Light": 3
         },
         "image": "images/helion.png",
         "abilities": {
-          "Light": 2,
-          "Leisure": 2
+          "Light": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Leisure": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6893,12 +6797,12 @@
         "image": "images/morphling.png",
         "abilities": {
           "Light": 2,
-          "Artisanship": 2,
-          "Carry": 1
+          "Artisanship": 3,
+          "Carry": 2
         },
         "utilities": {
-          "Artisanship": 2,
-          "Carry": 1
+          "Artisanship": 3,
+          "Carry": 2
         }
       },
       "regional": [],
@@ -6944,10 +6848,10 @@
         "image": "images/jabster.png",
         "abilities": {
           "Water": 3,
-          "Carry": 2
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6993,10 +6897,10 @@
         "image": "images/forms/sparkelf-basic-form-base.png",
         "abilities": {
           "Fire": 3,
-          "Artisanship": 2
+          "Artisanship": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Artisanship": 3
         }
       },
       "regional": [],
@@ -7012,10 +6916,10 @@
         "image": "images/forms/sparkelf-prismana.png",
         "abilities": {
           "Fire": 4,
-          "Artisanship": 3
+          "Artisanship": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Artisanship": 4
         }
       }
     },
@@ -7047,21 +6951,19 @@
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Grass 3",
+        "element_display": "Grass 4",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 3
+          "Grass": 4
         },
         "image": "images/irisalis.png",
         "abilities": {
-          "Grass": 3,
-          "Perfumery": 3,
-          "Leisure": 1
+          "Grass": 4,
+          "Leisure": 4
         },
         "utilities": {
-          "Perfumery": 3,
-          "Leisure": 1
+          "Leisure": 4
         }
       },
       "regional": [],
