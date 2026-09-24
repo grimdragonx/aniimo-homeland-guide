@@ -1,4198 +1,6929 @@
 window.ANIIMO_DATA = [
   {
     "id": "001",
+    "dex_number": "001",
+    "display_id": "#001",
     "name": "Emberpup",
-    "stage": "Lumin",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Emberpup -> Flameruff -> Scorchhowl / Inferlupa",
-    "best_role": "Starter Campfire Cooking & Furnace Ignition",
+    "slug": "emberpup",
+    "is_unnumbered": false,
+    "image": "images/emberpup.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-emberpup-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Scorching Flames",
+    "trait_effect": "Increases damage dealt to elementally countered targets .",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Emberpup (Standard)",
-        "element": "Fire",
-        "condition": "Temperate Plains",
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 1",
+        "catch_rate": "56%",
+        "region": "Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge",
+        "elements": {
+          "Fire": 1
+        },
+        "image": "images/forms/emberpup-basic-form-base.png",
         "abilities": {
           "Fire": 1,
           "Carry": 1
         },
-        "perk": "Low hunger consumption, reliable starter kitchen helper."
+        "utilities": {
+          "Carry": 1
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Emberpup (Heatwave)",
-          "element": "Fire",
-          "condition": "Heatwave / Drought",
+          "form_name": "Highland Form",
+          "element_display": "Fire 1 / Earth 1",
+          "catch_rate": "38%",
+          "region": "Zephyrus Landbridge, Russet Highlands",
+          "elements": {
+            "Fire": 1,
+            "Earth": 1
+          },
+          "image": "images/forms/emberpup-highland-form.png",
           "abilities": {
-            "Fire": 2,
+            "Fire": 1,
+            "Earth": 1,
+            "Carry": 1,
             "Artisanship": 1
           },
-          "perk": "Cooking speed +20% during intense heat."
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Fire 1",
+          "catch_rate": "50%",
+          "region": "Beast Fang Ridge",
+          "elements": {
+            "Fire": 1
+          },
+          "image": "images/forms/emberpup-mountain-woods-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Emberpup",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 2,
-          "Light": 1,
-          "Carry": 1
-        },
-        "perk": "Prismatic Ember: Meals never burn even when unattended."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Mountain Woods Form"
+    ]
   },
   {
     "id": "002",
+    "dex_number": "002",
+    "display_id": "#002",
     "name": "Flameruff",
-    "stage": "Gamma",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Emberpup -> Flameruff -> Scorchhowl / Inferlupa",
-    "best_role": "Mid-tier Smelting & Ingot Transport",
+    "slug": "flameruff",
+    "is_unnumbered": false,
+    "image": "images/flameruff.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flameruff-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Scorching Flames",
+    "trait_effect": "Increases damage dealt to elementally countered targets by X%.",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Flameruff (Standard)",
-        "element": "Fire",
-        "condition": "Beast Fang Ridge",
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 2",
+        "catch_rate": "42%",
+        "region": "Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge",
+        "elements": {
+          "Fire": 2
+        },
+        "image": "images/forms/flameruff-basic-form-base.png",
         "abilities": {
           "Fire": 2,
-          "Carry": 2,
-          "Artisanship": 1
-        },
-        "perk": "Maintains constant furnace temperature."
-      },
-      "weather": [
-        {
-          "name": "Flameruff (Thunderstorm)",
-          "element": "Fire / Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Fire": 2,
-            "Lightning": 1,
-            "Carry": 2
-          },
-          "perk": "Provides backup spark to generators while smelting."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Flameruff",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 3,
-          "Artisanship": 2,
           "Carry": 2
         },
-        "perk": "Prismatic Flame: +20% bonus ingots per smelt cycle."
-      }
-    }
+        "utilities": {
+          "Carry": 2
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Highland Form",
+          "element_display": "Fire 2 / Earth 1",
+          "catch_rate": "29%",
+          "region": "Zephyrus Landbridge, Russet Highlands",
+          "elements": {
+            "Fire": 2,
+            "Earth": 1
+          },
+          "image": "images/forms/flameruff-highland-form.png",
+          "abilities": {
+            "Fire": 2,
+            "Earth": 1,
+            "Carry": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 2,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Fire 2",
+          "catch_rate": "38%",
+          "region": "Beast Fang Ridge",
+          "elements": {
+            "Fire": 2
+          },
+          "image": "images/forms/flameruff-mountain-woods-form.png",
+          "abilities": {
+            "Fire": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Mountain Woods Form"
+    ]
   },
   {
     "id": "003",
+    "dex_number": "003",
+    "display_id": "#003",
     "name": "Scorchhowl",
-    "stage": "Nova",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Emberpup -> Flameruff -> Scorchhowl",
-    "best_role": "Master Blast Furnace Metallurgy & High-Volume Smelting",
+    "slug": "scorchhowl",
+    "is_unnumbered": false,
+    "image": "images/scorchhowl.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Scorching Flames",
+    "trait_effect": "Increases damage dealt to elementally countered targets by X%.",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Scorchhowl (Standard)",
-        "element": "Fire",
-        "condition": "Beast Fang Ridge",
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 3",
+        "catch_rate": "28%",
+        "region": "Beast Fang Ridge",
+        "elements": {
+          "Fire": 3
+        },
+        "image": "images/forms/scorchhowl-basic-form-base.png",
         "abilities": {
           "Fire": 3,
-          "Artisanship": 2,
-          "Carry": 2
+          "Carry": 3
         },
-        "perk": "Master smelter capable of smelting highest tier titanium & obsidian alloys."
+        "utilities": {
+          "Carry": 3
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Scorchhowl (Thunderstorm)",
-          "element": "Fire / Lightning",
-          "condition": "Thunderstorm in Beast Fang Ridge",
+          "form_name": "Highland Form",
+          "element_display": "Fire 3 / Earth 2",
+          "catch_rate": "19%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Fire": 3,
+            "Earth": 2
+          },
+          "image": "images/forms/scorchhowl-highland-form.png",
           "abilities": {
             "Fire": 3,
-            "Lightning": 2,
+            "Earth": 2,
+            "Carry": 3,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Fire 3",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Fire": 3
+          },
+          "image": "images/forms/scorchhowl-mountain-woods-form.png",
+          "abilities": {
+            "Fire": 3,
             "Carry": 3
           },
-          "perk": "Dual smelting and high-voltage power output."
+          "utilities": {
+            "Carry": 3
+          }
+        }
+      ],
+      "weather": [
+        {
+          "form_name": "Thunderstorm Form",
+          "element_display": "Fire 3",
+          "catch_rate": "28%",
+          "region": "Beast Fang Ridge",
+          "elements": {
+            "Fire": 3
+          },
+          "image": "images/forms/scorchhowl-thunderstorm-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Scorchhowl",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow event",
+        "form_name": "Prismana",
+        "element_display": "Fire 4",
+        "catch_rate": "28%",
+        "region": "Beast Fang Ridge",
+        "elements": {
+          "Fire": 4
+        },
+        "image": "images/forms/scorchhowl-prismana.png",
         "abilities": {
           "Fire": 4,
-          "Lightning": 2,
-          "Artisanship": 3
+          "Carry": 4
         },
-        "perk": "Blazing Foundry: +30% smelting speed, -25% stamina drain, chance to double alloy output."
+        "utilities": {
+          "Carry": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Mountain Woods Form",
+      "Thunderstorm Form",
+      "Prismana"
+    ]
   },
   {
     "id": "004",
+    "dex_number": "004",
+    "display_id": "#004",
     "name": "Inferlupa",
-    "stage": "Nova",
-    "element": "Fire",
-    "secondary_element": "Dark",
-    "role": "Break",
-    "evolution_line": "Emberpup -> Flameruff -> Inferlupa",
-    "best_role": "24/7 Overnight Blast Furnace & Dark Transmutation",
+    "slug": "inferlupa",
+    "is_unnumbered": false,
+    "image": "images/inferlupa.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-inferlupa-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Full Energy",
+    "trait_effect": "After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Inferlupa (Standard)",
-        "element": "Fire / Dark",
-        "condition": "Warrior Journey Quest",
-        "abilities": {
-          "Fire": 3,
-          "Dark": 2,
-          "Artisanship": 2
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 2 / Dark 3",
+        "catch_rate": "28%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 2,
+          "Dark": 3
         },
-        "perk": "Nocturnal: Does not sleep or suffer morale penalties during night shifts."
-      },
-      "weather": [
-        {
-          "name": "Inferlupa (Eclipse / Night)",
-          "element": "Fire / Dark",
-          "condition": "Eclipse / Night",
-          "abilities": {
-            "Fire": 3,
-            "Dark": 3,
-            "Artisanship": 2
-          },
-          "perk": "Shadow Forge: Dark catalyst refining speed increased by 35% at night."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Inferlupa",
-        "element": "Fire / Dark / Prismatic",
-        "condition": "Prismana In-game Event",
+        "image": "images/forms/inferlupa-basic-form-base.png",
         "abilities": {
-          "Fire": 4,
+          "Fire": 2,
           "Dark": 3,
-          "Artisanship": 3
+          "Carry": 3
         },
-        "perk": "Prismatic Nether: 100% nocturnal uptime; +25% dark material conversion speed; never slacks."
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Dark 4 / Fire 4",
+        "catch_rate": "25%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Dark": 4,
+          "Fire": 4
+        },
+        "image": "images/forms/inferlupa-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Fire": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
   },
   {
     "id": "005",
+    "dex_number": "005",
+    "display_id": "#005",
     "name": "Celestis",
-    "stage": "Lumin",
-    "element": "Dark",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Celestis -> Stellarys",
-    "best_role": "Homeland Rest Area & Night Gathering",
+    "slug": "celestis",
+    "is_unnumbered": false,
+    "image": "images/celestis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-celestis-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Grand Sorcerer",
+    "trait_effect": "For Xs after using a skill, basic attack hits deal additional damage equal to X Might.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Celestis (Standard)",
-        "element": "Dark",
-        "condition": "Quiet Meadows",
+        "form_name": "Basic Form",
+        "element_display": "Dark 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Dark": 1
+        },
+        "image": "images/forms/celestis-basic-form.png",
         "abilities": {
           "Dark": 1,
           "Leisure": 1
         },
-        "perk": "Gentle calming presence that reduces nearby worker fatigue."
-      },
-      "weather": [
-        {
-          "name": "Celestis (Moonlit Night)",
-          "element": "Dark",
-          "condition": "Clear Night",
-          "abilities": {
-            "Dark": 2,
-            "Leisure": 2
-          },
-          "perk": "Moonlight Serenade: Increases worker sanity recovery in beds by 20%."
+        "utilities": {
+          "Leisure": 1
         }
-      ],
-      "prismana": {
-        "name": "Prismana Celestis",
-        "element": "Dark / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 2,
-          "Light": 1,
-          "Leisure": 2
-        },
-        "perk": "Astral Rest: Restores base worker morale +15% and increases Bud Ticket generation."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "006",
+    "dex_number": "006",
+    "display_id": "#006",
     "name": "Stellarys",
-    "stage": "Gamma",
-    "element": "Dark",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Celestis -> Stellarys",
-    "best_role": "High-Tier Morale Station & Long-Distance Night Hauling",
+    "slug": "stellarys",
+    "is_unnumbered": false,
+    "image": "images/stellarys.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-stellarys-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Grand Sorcerer",
+    "trait_effect": "For Xs after using a skill, basic attack hits deal additional damage equal to X Might.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Stellarys (Standard)",
-        "element": "Dark",
-        "condition": "Starlit Cliffs",
-        "abilities": {
-          "Dark": 2,
-          "Leisure": 2,
-          "Carry": 1
+        "form_name": "Basic Form (base)",
+        "element_display": "Dark 3",
+        "catch_rate": "28%",
+        "region": "Forest of Falling Stars",
+        "elements": {
+          "Dark": 3
         },
-        "perk": "Gliding courier that quickly transports goods across base at night."
+        "image": "images/forms/stellarys-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
       },
+      "regional": [],
       "weather": [
         {
-          "name": "Stellarys (Rainstorm)",
-          "element": "Dark / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Dark": 2,
-            "Water": 2,
-            "Leisure": 2
+          "form_name": "Rainstorm Form",
+          "element_display": "Dark 3 / Water 2",
+          "catch_rate": "28%",
+          "region": "Forest of Falling Stars",
+          "elements": {
+            "Dark": 3,
+            "Water": 2
           },
-          "perk": "Waters crops while maintaining worker morale during storms."
+          "image": "images/forms/stellarys-rainstorm-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Water": 2,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Stellarys",
-        "element": "Dark / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 3,
-          "Light": 2,
-          "Leisure": 3
+        "form_name": "Prismana",
+        "element_display": "Dark 4 / Ice 4",
+        "catch_rate": "28%",
+        "region": "Forest of Falling Stars",
+        "elements": {
+          "Dark": 4,
+          "Ice": 4
         },
-        "perk": "Celestial Harmony: Camp-wide +10% passive production speed boost."
+        "image": "images/forms/stellarys-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Ice": 4,
+          "Leisure": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Rainstorm Form",
+      "Prismana"
+    ]
   },
   {
     "id": "007",
+    "dex_number": "007",
+    "display_id": "#007",
     "name": "Chirpi",
-    "stage": "Lumin",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Chirpi -> Tromber / Cornet / Tubster",
-    "best_role": "Early Farm Seeding, Seed Storage & Aerial Hauling",
+    "slug": "chirpi",
+    "is_unnumbered": false,
+    "image": "images/chirpi.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-chirpi-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Band Member",
+    "trait_effect": "When switching Aniimo in battle, restores X EP to the next Chirpi family member switched in. Triggers once every Xs at most.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Chirpi (Standard)",
-        "element": "Wind",
-        "condition": "Breezy Plains",
-        "abilities": {
-          "Wind": 1,
-          "Grass": 1,
-          "Carry": 1
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 1",
+        "catch_rate": "56%",
+        "region": "Nimbus Fields, The Argent Strait, Beast Fang Ridge, Blitzwood",
+        "elements": {
+          "Wind": 1
         },
-        "perk": "Quick flyer that retrieves stray seeds and deposits them into storage."
+        "image": "images/forms/chirpi-basic-form-base.png",
+        "abilities": {
+          "Wind": 1
+        },
+        "utilities": {}
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Chirpi (Rainstorm)",
-          "element": "Wind / Water",
-          "condition": "Rainstorm",
+          "form_name": "Beach Form",
+          "element_display": "Wind 1 / Water 1",
+          "catch_rate": "50%",
+          "region": "Echoback Landing, Forest of Falling Stars",
+          "elements": {
+            "Wind": 1,
+            "Water": 1
+          },
+          "image": "images/forms/chirpi-beach-form.png",
           "abilities": {
             "Wind": 1,
             "Water": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Wind 1 / Grass 1",
+          "catch_rate": "38%",
+          "region": "Zephyrus Landbridge, Russet Highlands",
+          "elements": {
+            "Wind": 1,
             "Grass": 1
           },
-          "perk": "Light rain boosts seed germination when Chirpi tends the soil."
+          "image": "images/forms/chirpi-highland-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Grass": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Chirpi",
-        "element": "Wind / Grass",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 2,
-          "Grass": 2,
-          "Leisure": 2
-        },
-        "perk": "Breezy Melodies: Speeds up crop growth cycle by 10% on adjacent plots."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Beach Form",
+      "Highland Form"
+    ]
   },
   {
     "id": "008",
+    "dex_number": "008",
+    "display_id": "#008",
     "name": "Tromber",
-    "stage": "Nova",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Chirpi -> Tromber",
-    "best_role": "Camp-Wide Morale Anthem & Windmill Power",
+    "slug": "tromber",
+    "is_unnumbered": false,
+    "image": "images/tromber.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tromber-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Band Member",
+    "trait_effect": "When switching Aniimo in battle, restores X EP to the next Chirpi family member switched in. Triggers once every Xs at most.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Tromber (Standard)",
-        "element": "Wind",
-        "condition": "Requires Level 18 + Magic Horn",
-        "abilities": {
-          "Wind": 3,
-          "Leisure": 3,
-          "Carry": 2
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 3",
+        "catch_rate": "28%",
+        "region": "The Argent Strait",
+        "elements": {
+          "Wind": 3
         },
-        "perk": "Sounds resonant chimes that prevent worker slacking across the entire base."
+        "image": "images/forms/tromber-basic-form-base.png",
+        "abilities": {
+          "Wind": 3
+        },
+        "utilities": {}
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Tromber (Rainstorm)",
-          "element": "Wind / Water",
-          "condition": "Rainstorm / Thunderstorm",
+          "form_name": "Beach Form",
+          "element_display": "Wind 3 / Water 2",
+          "catch_rate": "25%",
+          "region": "Forest of Falling Stars",
+          "elements": {
+            "Wind": 3,
+            "Water": 2
+          },
+          "image": "images/forms/tromber-beach-form.png",
           "abilities": {
             "Wind": 3,
             "Water": 2,
-            "Leisure": 3
+            "Carry": 2
           },
-          "perk": "Storm Chime: Prevents negative wet mood debuffs on outdoor workers."
+          "utilities": {
+            "Carry": 2
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Wind 3 / Grass 2",
+          "catch_rate": "19%",
+          "region": "Zephyrus Landbridge",
+          "elements": {
+            "Wind": 3,
+            "Grass": 2
+          },
+          "image": "images/forms/tromber-highland-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Tromber",
-        "element": "Wind / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 4,
-          "Water": 2,
-          "Leisure": 4
-        },
-        "perk": "Brass Anthem: +25% morale recovery and doubles Bud Ticket drops."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Beach Form",
+      "Highland Form"
+    ]
   },
   {
     "id": "009",
+    "dex_number": "009",
+    "display_id": "#009",
     "name": "Cornet",
-    "stage": "Nova",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Chirpi -> Cornet",
-    "best_role": "High-Speed Grain Milling & Textile Spinning",
+    "slug": "cornet",
+    "is_unnumbered": false,
+    "image": "images/cornet.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Air Superiority",
+    "trait_effect": "Increases Crit Rate by X% while flying.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Cornet (Standard)",
-        "element": "Wind",
-        "condition": "Requires Level 18",
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 3",
+        "catch_rate": "28%",
+        "region": "The Argent Strait",
+        "elements": {
+          "Wind": 3
+        },
+        "image": "images/forms/cornet-basic-form-base.png",
         "abilities": {
-          "Wind": 3,
-          "Artisanship": 2,
-          "Carry": 2
+          "Wind": 3
         },
-        "perk": "Aerodynamic precision that speeds up grain grinding and textile looms."
+        "utilities": {}
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Cornet (Highland Gale)",
-          "element": "Wind / Lightning",
-          "condition": "Highland Storm",
-          "abilities": {
-            "Wind": 4,
-            "Lightning": 1,
-            "Artisanship": 2
+          "form_name": "Beach Form",
+          "element_display": "Wind 3 / Water 2",
+          "catch_rate": "25%",
+          "region": "Echoback Landing, Forest of Falling Stars",
+          "elements": {
+            "Wind": 3,
+            "Water": 2
           },
-          "perk": "Windmills produce 50% more flour per minute in high winds."
-        },
-        {
-          "name": "Cornet (Beach Form)",
-          "element": "Wind / Water",
-          "condition": "Coastal Breeze",
+          "image": "images/forms/cornet-beach-form.png",
           "abilities": {
             "Wind": 3,
             "Water": 2,
-            "Artisanship": 2
+            "Artisanship": 2,
+            "Carry": 2
           },
-          "perk": "Desalinates sea water into fresh irrigation water."
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Wind 3 / Grass 2",
+          "catch_rate": "19%",
+          "region": "Zephyrus Landbridge",
+          "elements": {
+            "Wind": 3,
+            "Grass": 2
+          },
+          "image": "images/forms/cornet-highland-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         }
       ],
+      "weather": [],
       "prismana": {
-        "name": "Prismana Cornet",
-        "element": "Wind / Light",
-        "condition": "Prismana Flow weather",
+        "form_name": "Prismana",
+        "element_display": "Wind 4 / Lightning 4",
+        "catch_rate": "28%",
+        "region": "The Argent Strait",
+        "elements": {
+          "Wind": 4,
+          "Lightning": 4
+        },
+        "image": "images/forms/cornet-prismana.png",
         "abilities": {
           "Wind": 4,
-          "Light": 2,
-          "Artisanship": 3
+          "Lightning": 4,
+          "Artisanship": 3,
+          "Carry": 3
         },
-        "perk": "Resonant Gust: +30% mill output and +20% bench assembly speed."
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 3
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Beach Form",
+      "Highland Form",
+      "Prismana"
+    ]
   },
   {
     "id": "010",
+    "dex_number": "010",
+    "display_id": "#010",
     "name": "Tubster",
-    "stage": "Nova",
-    "element": "Wind",
-    "secondary_element": "Earth",
-    "role": "Break",
-    "evolution_line": "Chirpi -> Tubster",
-    "best_role": "Heavy Weight Cargo Hauling & Construction Excavation",
+    "slug": "tubster",
+    "is_unnumbered": false,
+    "image": "images/tubster.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tubster-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Victory Concerto",
+    "trait_effect": "While shielded, BREAK efficiency +X%. When triggering BREAK, plays [Concerto], reducing the whole team's stamina cost by X%. When you have 3 Movement-series buffs, increases all Movement effects by X%.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Tubster (Standard)",
-        "element": "Wind / Earth",
-        "condition": "Defeat Alpha Tubster",
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 3",
+        "catch_rate": "28%",
+        "region": "The Argent Strait",
+        "elements": {
+          "Wind": 3
+        },
+        "image": "images/forms/tubster-basic-form-base.png",
         "abilities": {
-          "Wind": 3,
-          "Earth": 2,
-          "Carry": 3
+          "Wind": 3
         },
-        "perk": "Heavy Lifter: Transports entire stacks of heavy stone and timber in one go."
+        "utilities": {}
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Tubster (Sandstorm)",
-          "element": "Earth / Wind",
-          "condition": "Sandstorm in Arid Bluffs",
-          "abilities": {
-            "Earth": 3,
-            "Wind": 2,
-            "Carry": 3
+          "form_name": "Beach Form",
+          "element_display": "Wind 3 / Water 2",
+          "catch_rate": "28%",
+          "region": "Echoback Landing",
+          "elements": {
+            "Wind": 3,
+            "Water": 2
           },
-          "perk": "Immune to environmental slow-downs; quarry hauling +25%."
-        },
-        {
-          "name": "Tubster (Highland Form)",
-          "element": "Wind / Earth",
-          "condition": "Highland Cliffs",
+          "image": "images/forms/tubster-beach-form.png",
           "abilities": {
             "Wind": 3,
-            "Earth": 3,
+            "Water": 2,
             "Carry": 3
           },
-          "perk": "Mountain climber: moves effortlessly across vertical Homeland terraces."
+          "utilities": {
+            "Carry": 3
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Wind 3 / Grass 2",
+          "catch_rate": "28%",
+          "region": "Zephyrus Landbridge, Russet Highlands",
+          "elements": {
+            "Wind": 3,
+            "Grass": 2
+          },
+          "image": "images/forms/tubster-highland-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
+        },
+        {
+          "form_name": "Basic Form (variant record)",
+          "element_display": "Wind 3",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Wind": 3
+          },
+          "image": "images/forms/tubster-basic-form-variant-record.png",
+          "abilities": {
+            "Wind": 3,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Tubster",
-        "element": "Wind / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 3,
-          "Earth": 3,
-          "Carry": 4
-        },
-        "perk": "Titan Porter: +50% carry capacity; clears Homeland transport backlogs instantly."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Beach Form",
+      "Highland Form",
+      "Basic Form (variant record)"
+    ]
   },
   {
     "id": "011",
+    "dex_number": "011",
+    "display_id": "#011",
     "name": "Iris",
-    "stage": "Lumin",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Iris -> Irisal",
-    "best_role": "Floral Garden Planting & Fragrant Petal Gathering",
+    "slug": "iris",
+    "is_unnumbered": false,
+    "image": "images/iris.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-iris-handbook.png",
+    "tier": "C-Tier",
+    "trait": "**Disco Aniimo**",
+    "trait_effect": "While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6× · Fire 1.6× · Wind 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Earth 0.625× · Water 0.625×"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Iris (Standard)",
-        "element": "Grass",
-        "condition": "Blooming Meadow",
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 1",
+        "catch_rate": "50%",
+        "region": "Sea of Flowers",
+        "elements": {
+          "Grass": 1
+        },
+        "image": "images/forms/iris-basic-form-base.png",
         "abilities": {
           "Grass": 1,
-          "Perfumery": 1
+          "Leisure": 1
         },
-        "perk": "Gathers fresh petals with high care, preventing bruised petals."
-      },
-      "weather": [
-        {
-          "name": "Iris (Floral Surge)",
-          "element": "Grass",
-          "condition": "Sunny Bloom",
-          "abilities": {
-            "Grass": 2,
-            "Perfumery": 1
-          },
-          "perk": "Doubles blossom harvesting speed during sunny weather."
+        "utilities": {
+          "Leisure": 1
         }
-      ],
-      "prismana": {
-        "name": "Prismana Iris",
-        "element": "Grass / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 2,
-          "Light": 1,
-          "Perfumery": 2
-        },
-        "perk": "Glow Petals: Gathers rare iridescent flowers used in luxury perfume."
-      }
-    }
-  },
-  {
-    "id": "012",
-    "name": "Irisal",
-    "stage": "Gamma",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Iris -> Irisal",
-    "best_role": "High-Efficiency Herb Gardening & Botanical Oil Extraction",
-    "forms": {
-      "basic": {
-        "name": "Irisal (Standard)",
-        "element": "Grass",
-        "condition": "Evolves from Iris",
-        "abilities": {
-          "Grass": 2,
-          "Perfumery": 2,
-          "Artisanship": 1
-        },
-        "perk": "Extracts concentrated essences directly from harvested herbs."
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Irisal (Mist)",
-          "element": "Grass / Water",
-          "condition": "Misty Morning",
-          "abilities": {
-            "Grass": 2,
-            "Water": 1,
-            "Perfumery": 2
-          },
-          "perk": "Dewdrop essence yield increased by 30%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Irisal",
-        "element": "Grass / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 3,
-          "Light": 1,
-          "Perfumery": 3
-        },
-        "perk": "Miracle Blossom: Potion and fertilizer creation speed +25%."
-      }
-    }
-  },
-  {
-    "id": "013",
-    "name": "Skippy",
-    "stage": "Lumin",
-    "element": "Water",
-    "secondary_element": "Ice",
-    "role": "Healer",
-    "evolution_line": "Skippy -> Pranky -> Glacy / Leafy",
-    "best_role": "Starter Farmland Watering & Well Operations",
-    "forms": {
-      "basic": {
-        "name": "Skippy (Standard)",
-        "element": "Water / Ice",
-        "condition": "Lakeshore",
-        "abilities": {
-          "Water": 1,
-          "Ice": 1,
-          "Carry": 1
-        },
-        "perk": "Keeps water basins full and dampens soil beds."
-      },
-      "weather": [
-        {
-          "name": "Skippy (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 2,
-            "Carry": 1
-          },
-          "perk": "Rain Dance: Extends soil moisture retention by 50%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Skippy",
-        "element": "Water / Ice / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 2,
-          "Ice": 1,
-          "Carry": 2
-        },
-        "perk": "Spring Splash: Waters multiple adjacent soil plots simultaneously."
-      }
-    }
-  },
-  {
-    "id": "014",
-    "name": "Pranky",
-    "stage": "Gamma",
-    "element": "Water",
-    "secondary_element": "Ice",
-    "role": "Healer",
-    "evolution_line": "Skippy -> Pranky -> Glacy / Leafy",
-    "best_role": "Mid-tier Automated Irrigation, Brewing & Beverage Vats",
-    "forms": {
-      "basic": {
-        "name": "Pranky (Standard)",
-        "element": "Water / Ice",
-        "condition": "Evolves from Skippy",
-        "abilities": {
-          "Water": 2,
-          "Ice": 1,
-          "Artisanship": 2
-        },
-        "perk": "Brews stamina juices and ferments nutritious animal feeds."
-      },
-      "weather": [
-        {
-          "name": "Pranky (Thunderstorm)",
-          "element": "Water / Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Water": 2,
-            "Lightning": 1,
-            "Artisanship": 2
-          },
-          "perk": "Electrolyzed Water: Speeds up vegetative crop growth by 25%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Pranky",
-        "element": "Water / Ice / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 3,
-          "Ice": 2,
-          "Artisanship": 2
-        },
-        "perk": "Fluid Craft: +20% beverage craft speed and lightens base mood."
-      }
-    }
-  },
-  {
-    "id": "015",
-    "name": "Glacy",
-    "stage": "Nova",
-    "element": "Water",
-    "secondary_element": "Ice",
-    "role": "Healer",
-    "evolution_line": "Skippy -> Pranky -> Glacy",
-    "best_role": "Dual High-Tier Irrigation & Cryo Food Preservation",
-    "forms": {
-      "basic": {
-        "name": "Glacy (Standard)",
-        "element": "Water / Ice",
-        "condition": "Freeze Stone on Pranky",
-        "abilities": {
-          "Water": 3,
-          "Ice": 3,
-          "Leisure": 2
-        },
-        "perk": "Seamlessly irrigates farm crops and chills food pantries."
-      },
-      "weather": [
-        {
-          "name": "Glacy (Snowfield)",
-          "element": "Ice / Water",
-          "condition": "Snowfield Weather",
-          "abilities": {
-            "Ice": 4,
-            "Water": 2,
-            "Leisure": 2
-          },
-          "perk": "Permafrost: Freezes storage bins indefinitely without melting."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Glacy",
-        "element": "Water / Ice / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 4,
-          "Ice": 4,
-          "Leisure": 3
-        },
-        "perk": "Crystal Springs: Irrigation water protects crops against cold snaps."
-      }
-    }
-  },
-  {
-    "id": "016",
-    "name": "Leafy",
-    "stage": "Nova",
-    "element": "Grass",
-    "secondary_element": "Water",
-    "role": "Regen",
-    "evolution_line": "Skippy -> Pranky -> Leafy",
-    "best_role": "All-in-One Automated Farm Overseer (Sowing + Watering)",
-    "forms": {
-      "basic": {
-        "name": "Leafy (Standard)",
-        "element": "Grass / Water",
-        "condition": "Sprout Stone on Pranky",
-        "abilities": {
-          "Grass": 3,
-          "Water": 3,
-          "Perfumery": 2
-        },
-        "perk": "Single-handedly automates farm plots by planting seeds and irrigating beds."
-      },
-      "weather": [
-        {
-          "name": "Leafy (Rainstorm)",
-          "element": "Water / Grass",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 4,
-            "Grass": 3,
-            "Perfumery": 2
-          },
-          "perk": "Monsoon Bloom: Crops mature in half the regular time during rain."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Leafy",
-        "element": "Grass / Water / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 4,
-          "Water": 4,
-          "Perfumery": 3
-        },
-        "perk": "Miracle Bloom: +50% crop maturation speed and chance for triple rare crop drops."
-      }
-    }
-  },
-  {
-    "id": "017",
-    "name": "Nimbi",
-    "stage": "Lumin",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Nimbi -> Turbo / Dreaple",
-    "best_role": "Light Mist Irrigation & High Shelf Gathering",
-    "forms": {
-      "basic": {
-        "name": "Nimbi (Standard)",
-        "element": "Wind",
-        "condition": "Windy Hills",
-        "abilities": {
-          "Wind": 1,
-          "Water": 1,
-          "Carry": 1
-        },
-        "perk": "Hovers effortlessly over garden patches to sprinkle gentle mist."
-      },
-      "weather": [
-        {
-          "name": "Nimbi (Rainstorm)",
-          "element": "Water / Wind",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 2,
-            "Wind": 1,
-            "Carry": 1
-          },
-          "perk": "Soaking Mist: Waters all tiles in a 3x3 radius simultaneously."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Nimbi",
-        "element": "Water / Wind / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 2,
-          "Wind": 2,
-          "Perfumery": 1
-        },
-        "perk": "Cloud Dew: +20% watering efficiency; crops gain higher quality rating."
-      }
-    }
-  },
-  {
-    "id": "018",
-    "name": "Turbo",
-    "stage": "Gamma",
-    "element": "Wind",
-    "secondary_element": "Lightning",
-    "role": "Support",
-    "evolution_line": "Nimbi -> Turbo",
-    "best_role": "Dynamo Electrical Grid Generation & Sorter Operations",
-    "forms": {
-      "basic": {
-        "name": "Turbo (Standard)",
-        "element": "Wind / Lightning",
-        "condition": "Evolves from Nimbi",
-        "abilities": {
-          "Lightning": 2,
-          "Wind": 2,
-          "Artisanship": 1
-        },
-        "perk": "High RPM dynamo turning: powers electrical generators and automated sorters."
-      },
-      "weather": [
-        {
-          "name": "Turbo (Thunderstorm)",
-          "element": "Lightning / Wind",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 3,
-            "Wind": 2,
-            "Artisanship": 2
-          },
-          "perk": "Capacitor Surge: Doubled electrical output during storms; powers grid for free."
-        },
-        {
-          "name": "Turbo (Cloudmist)",
-          "element": "Wind / Water",
-          "condition": "Dense Fog",
-          "abilities": {
-            "Wind": 2,
-            "Water": 2,
-            "Artisanship": 1
-          },
-          "perk": "Condensation: Automatically collects distilled water from heavy mist."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Turbo",
-        "element": "Lightning / Wind / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 3,
-          "Wind": 3,
-          "Artisanship": 2
-        },
-        "perk": "Overclock Generator: +35% continuous electricity generation; machines run 15% faster."
-      }
-    }
-  },
-  {
-    "id": "019",
-    "name": "Dreaple",
-    "stage": "Gamma",
-    "element": "Dark",
-    "secondary_element": "Wind",
-    "role": "Support",
-    "evolution_line": "Nimbi -> Dreaple",
-    "best_role": "Perfumery Scent Alchemy & Deep Sleep Buffs",
-    "forms": {
-      "basic": {
-        "name": "Dreaple (Standard)",
-        "element": "Dark / Wind",
-        "condition": "Evolves from Nimbi",
-        "abilities": {
-          "Dark": 2,
-          "Wind": 2,
-          "Perfumery": 2
-        },
-        "perk": "Distills sleep-inducing mists and aromatic dream oils."
-      },
-      "weather": [
-        {
-          "name": "Dreaple (Misty Fog)",
-          "element": "Dark / Wind",
-          "condition": "Fog / Overcast",
-          "abilities": {
-            "Dark": 2,
-            "Wind": 2,
-            "Perfumery": 3
-          },
-          "perk": "Dream Vapor: Perfumery brew time shortened by 30% under heavy fog."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Dreaple",
-        "element": "Dark / Wind / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 3,
-          "Wind": 3,
-          "Perfumery": 3
-        },
-        "perk": "Dream Essence: +25% potion/incense yield; whole RV work speed +10%."
-      }
-    }
-  },
-  {
-    "id": "020",
-    "name": "Hummin",
-    "stage": "Lumin",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Hummin -> Hexxin / Tuckin",
-    "best_role": "Garden Weeding, Flower Pollination & Light Timber",
-    "forms": {
-      "basic": {
-        "name": "Hummin (Standard)",
-        "element": "Grass",
-        "condition": "Sunlit Valley",
-        "abilities": {
-          "Grass": 1,
-          "Artisanship": 1
-        },
-        "perk": "Fast vibrating wings clear weeds rapidly without harming crop roots."
-      },
-      "weather": [
-        {
-          "name": "Hummin (Sunny)",
-          "element": "Grass",
-          "condition": "Sunny",
-          "abilities": {
-            "Grass": 2,
-            "Artisanship": 1
-          },
-          "perk": "Pollination speed doubled in direct sunlight."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Hummin",
-        "element": "Grass / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 2,
-          "Light": 1,
-          "Perfumery": 1
-        },
-        "perk": "Radiant Pollen: Increases harvest yield of adjacent flower beds by 25%."
-      }
-    }
-  },
-  {
-    "id": "021",
-    "name": "Hexxin",
-    "stage": "Nova",
-    "element": "Dark",
-    "secondary_element": "Grass",
-    "role": "Energy",
-    "evolution_line": "Hummin -> Hexxin",
-    "best_role": "Nocturnal Alchemy & Shadow Catalyst Refining",
-    "forms": {
-      "basic": {
-        "name": "Hexxin (Standard)",
-        "element": "Dark / Grass",
-        "condition": "Shadow Stone on Hummin",
-        "abilities": {
-          "Dark": 3,
-          "Grass": 2,
-          "Perfumery": 2
-        },
-        "perk": "Transmutes common herbs into potent dark alchemical tonics."
-      },
-      "weather": [
-        {
-          "name": "Hexxin (Eclipse)",
-          "element": "Dark / Grass",
-          "condition": "Eclipse / Night",
-          "abilities": {
-            "Dark": 3,
-            "Grass": 2,
-            "Perfumery": 3
-          },
-          "perk": "Night Witch: Potion brewing speed +40% under total darkness."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Hexxin",
-        "element": "Dark / Grass / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 4,
-          "Grass": 3,
-          "Perfumery": 3
-        },
-        "perk": "Hex Master: Guaranteed double yield when crafting high-end elixirs."
-      }
-    }
-  },
-  {
-    "id": "022",
-    "name": "Tuckin",
-    "stage": "Nova",
-    "element": "Grass",
-    "secondary_element": "Earth",
-    "role": "Break",
-    "evolution_line": "Hummin -> Tuckin",
-    "best_role": "Heavy Soil Tilling, Root Harvesting & Woodcraft",
-    "forms": {
-      "basic": {
-        "name": "Tuckin (Standard)",
-        "element": "Grass / Earth",
-        "condition": "Earth Stone on Hummin",
-        "abilities": {
-          "Grass": 3,
-          "Earth": 2,
-          "Carry": 2
-        },
-        "perk": "Digs deep root vegetables and fells mature timber efficiently."
-      },
-      "weather": [
-        {
-          "name": "Tuckin (Sandstorm)",
-          "element": "Earth / Grass",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 3,
-            "Grass": 2,
-            "Carry": 2
-          },
-          "perk": "Root Anchoring: Immune to wind storms, maintains consistent digging."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Tuckin",
-        "element": "Grass / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 4,
-          "Earth": 3,
-          "Carry": 3
-        },
-        "perk": "Bountiful Soil: Farm plots worked by Tuckin produce 30% more tuber crops."
-      }
-    }
-  },
-  {
-    "id": "023",
-    "name": "Budclaw",
-    "stage": "Lumin",
-    "element": "Earth",
-    "secondary_element": "Grass",
-    "role": "Break",
-    "evolution_line": "Budclaw -> Shrubclaw / Geoclaw",
-    "best_role": "Starter Quarry Digging & Clay Shoveling",
-    "forms": {
-      "basic": {
-        "name": "Budclaw (Standard)",
-        "element": "Earth / Grass",
-        "condition": "Dirt Ridges",
-        "abilities": {
-          "Earth": 1,
-          "Grass": 1,
-          "Carry": 1
-        },
-        "perk": "Claws through clay deposits and digs irrigation trenches."
-      },
-      "weather": [
-        {
-          "name": "Budclaw (Rainstorm)",
-          "element": "Earth / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Earth": 1,
-            "Water": 1,
+          "form_name": "Highland Form",
+          "element_display": "Grass 1",
+          "catch_rate": "56%",
+          "region": "Russet Highlands",
+          "elements": {
             "Grass": 1
           },
-          "perk": "Soft Clay: Collects double clay blocks when ground is soaked."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Budclaw",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 2,
-          "Grass": 2,
-          "Carry": 1
-        },
-        "perk": "Prismatic Claws: +20% digging and trench preparation speed."
-      }
-    }
-  },
-  {
-    "id": "024",
-    "name": "Shrubclaw",
-    "stage": "Gamma",
-    "element": "Earth",
-    "secondary_element": "Grass",
-    "role": "Break",
-    "evolution_line": "Budclaw -> Shrubclaw",
-    "best_role": "Sturdy Timber Logging & Stone Foundation Masonry",
-    "forms": {
-      "basic": {
-        "name": "Shrubclaw (Standard)",
-        "element": "Earth / Grass",
-        "condition": "Reach Level 21",
-        "abilities": {
-          "Earth": 2,
-          "Grass": 2,
-          "Artisanship": 2
-        },
-        "perk": "Fells hard timber and carves wooden architectural pillars."
-      },
-      "weather": [
-        {
-          "name": "Shrubclaw (Thunderstorm)",
-          "element": "Earth / Lightning",
-          "condition": "Thunderstorm",
+          "image": "images/forms/iris-highland-form.png",
           "abilities": {
-            "Earth": 2,
-            "Grass": 2,
-            "Artisanship": 2
-          },
-          "perk": "Bark Shield: Unbothered by lightning strikes while working outside."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Shrubclaw",
-        "element": "Earth / Grass / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 3,
-          "Grass": 3,
-          "Artisanship": 3
-        },
-        "perk": "Timber Mason: Wooden furniture crafting speed +35%."
-      }
-    }
-  },
-  {
-    "id": "025",
-    "name": "Geoclaw",
-    "stage": "Nova",
-    "element": "Ice",
-    "secondary_element": "Earth",
-    "role": "Break",
-    "evolution_line": "Budclaw -> Geoclaw",
-    "best_role": "Sub-zero Quarry Excavation & Ice-Tool Crafting",
-    "forms": {
-      "basic": {
-        "name": "Geoclaw (Standard)",
-        "element": "Ice / Earth",
-        "condition": "Freeze Stone + Alpha Geoclaw defeat",
-        "abilities": {
-          "Ice": 3,
-          "Earth": 3,
-          "Carry": 2
-        },
-        "perk": "Heavy ice claws pulverize frozen rock deposits and ice pillars."
-      },
-      "weather": [
-        {
-          "name": "Geoclaw (Blizzard)",
-          "element": "Ice / Earth",
-          "condition": "Blizzard / Snow",
-          "abilities": {
-            "Ice": 4,
-            "Earth": 3,
-            "Carry": 2
-          },
-          "perk": "Glacial Strike: +30% mining yield on permafrost veins."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Geoclaw",
-        "element": "Ice / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Ice": 4,
-          "Earth": 4,
-          "Artisanship": 2
-        },
-        "perk": "Diamond Claws: Chance to unearth rare crystal geodes while quarrying."
-      }
-    }
-  },
-  {
-    "id": "026",
-    "name": "Sparki",
-    "stage": "Lumin",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Sparki -> Flamerion",
-    "best_role": "Torch Maintenance & Camp Cooking",
-    "forms": {
-      "basic": {
-        "name": "Sparki (Standard)",
-        "element": "Fire",
-        "condition": "Cinder Plains",
-        "abilities": {
-          "Fire": 1,
-          "Artisanship": 1
-        },
-        "perk": "Keep torches and camp cooking pots burning bright."
-      },
-      "weather": [
-        {
-          "name": "Sparki (Heatwave)",
-          "element": "Fire",
-          "condition": "Heatwave",
-          "abilities": {
-            "Fire": 2,
-            "Artisanship": 1
-          },
-          "perk": "Ignition speed doubled during heatwaves."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Sparki",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 2,
-          "Light": 1,
-          "Carry": 1
-        },
-        "perk": "Radiant Spark: Keeps RV kitchen heated with 50% less wood."
-      }
-    }
-  },
-  {
-    "id": "027",
-    "name": "Flamerion",
-    "stage": "Gamma",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Sparki -> Flamerion",
-    "best_role": "Kiln Ceramic Firing & Metal Tempering",
-    "forms": {
-      "basic": {
-        "name": "Flamerion (Standard)",
-        "element": "Fire",
-        "condition": "Reach Level 21",
-        "abilities": {
-          "Fire": 2,
-          "Artisanship": 2,
-          "Carry": 1
-        },
-        "perk": "Fires high-strength ceramic bricks and tempered tool blades."
-      },
-      "weather": [
-        {
-          "name": "Flamerion (Thunderstorm)",
-          "element": "Fire / Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Fire": 2,
-            "Lightning": 1,
-            "Artisanship": 2
-          },
-          "perk": "Electro-Kiln: Smelts copper wire 25% faster."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Flamerion",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 3,
-          "Artisanship": 3,
-          "Carry": 2
-        },
-        "perk": "Solar Kiln: Ingot and brick output increased by +25%."
-      }
-    }
-  },
-  {
-    "id": "028",
-    "name": "Flutternym",
-    "stage": "Lumin",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Flutternym -> Gracewing / Somniwing",
-    "best_role": "Light Grain Milling & Scent Pollination",
-    "forms": {
-      "basic": {
-        "name": "Flutternym (Standard)",
-        "element": "Wind",
-        "condition": "Rosewood",
-        "abilities": {
-          "Wind": 1,
-          "Perfumery": 1,
-          "Leisure": 1
-        },
-        "perk": "Gentle flutter soothes nearby seedlings and working bees."
-      },
-      "weather": [
-        {
-          "name": "Flutternym (Rainstorm)",
-          "element": "Wind / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Wind": 1,
-            "Water": 1,
-            "Perfumery": 1
-          },
-          "perk": "Raindrop Nectar: Doubles harvest of rare flower seeds."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Flutternym",
-        "element": "Wind / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 2,
-          "Light": 1,
-          "Leisure": 2
-        },
-        "perk": "Prismatic Dust: Worker stress recovery rate +20%."
-      }
-    }
-  },
-  {
-    "id": "029",
-    "name": "Gracewing",
-    "stage": "Gamma",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Flutternym -> Gracewing",
-    "best_role": "High-Tier Recreation & Silk Weaving",
-    "forms": {
-      "basic": {
-        "name": "Gracewing (Standard)",
-        "element": "Wind",
-        "condition": "Reach Level 25",
-        "abilities": {
-          "Wind": 2,
-          "Artisanship": 2,
-          "Leisure": 2
-        },
-        "perk": "Weaves delicate silk cloth and performs relaxing aerial dances."
-      },
-      "weather": [
-        {
-          "name": "Gracewing (Sunny)",
-          "element": "Wind / Light",
-          "condition": "Sunny",
-          "abilities": {
-            "Wind": 2,
-            "Light": 1,
-            "Leisure": 3
-          },
-          "perk": "Sunlit Waltz: Worker stamina drain reduced by 15% globally."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Gracewing",
-        "element": "Wind / Light / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 3,
-          "Light": 2,
-          "Leisure": 3
-        },
-        "perk": "Graceful Breeze: Drops extra Bud Tickets during rest hours."
-      }
-    }
-  },
-  {
-    "id": "030",
-    "name": "Somniwing",
-    "stage": "Nova",
-    "element": "Wind",
-    "secondary_element": "Grass",
-    "role": "Support",
-    "evolution_line": "Flutternym -> Somniwing",
-    "best_role": "Camp-Wide Sleep Restoration & Luxury Aromatherapy",
-    "forms": {
-      "basic": {
-        "name": "Somniwing (Standard)",
-        "element": "Wind / Grass",
-        "condition": "Dream Petal Evolution",
-        "abilities": {
-          "Wind": 3,
-          "Grass": 2,
-          "Perfumery": 3
-        },
-        "perk": "Scents the night air with restorative mist, halving rest time needed by workers."
-      },
-      "weather": [
-        {
-          "name": "Somniwing (Misty Night)",
-          "element": "Wind / Grass / Dark",
-          "condition": "Foggy Night",
-          "abilities": {
-            "Wind": 3,
-            "Dark": 2,
-            "Perfumery": 3
-          },
-          "perk": "Restful Slumber: Sick or injured Aniimo heal twice as fast in Homeland beds."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Somniwing",
-        "element": "Wind / Grass / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 4,
-          "Perfumery": 4,
-          "Leisure": 3
-        },
-        "perk": "Dreamweaver: Camp workers wake up fully energized with permanent +10% work speed buff."
-      }
-    }
-  },
-  {
-    "id": "031",
-    "name": "Eko",
-    "stage": "Lumin",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Eko -> Eklue",
-    "best_role": "Seed Sorting & Communication Chime",
-    "forms": {
-      "basic": {
-        "name": "Eko (Standard)",
-        "element": "Wind",
-        "condition": "Whispering Crags",
-        "abilities": {
-          "Wind": 1,
-          "Carry": 1
-        },
-        "perk": "Small bird that chirps alerting haulers when a crafting bench finishes."
-      },
-      "weather": [
-        {
-          "name": "Eko (Thunderstorm)",
-          "element": "Wind / Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Wind": 1,
-            "Lightning": 1,
-            "Carry": 1
-          },
-          "perk": "Alerts base workers to take shelter before storms hit."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Eko",
-        "element": "Wind / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 2,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Echo Call: Hauler response time to full bins increased by 30%."
-      }
-    }
-  },
-  {
-    "id": "032",
-    "name": "Eklue",
-    "stage": "Gamma",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Eko -> Eklue",
-    "best_role": "Automated Base Transport & Courier Routing",
-    "forms": {
-      "basic": {
-        "name": "Eklue (Standard)",
-        "element": "Wind",
-        "condition": "Reach Level 24",
-        "abilities": {
-          "Wind": 2,
-          "Carry": 2,
-          "Leisure": 1
-        },
-        "perk": "Organizes sorting bins and speeds up deliveries between distant plots."
-      },
-      "weather": [
-        {
-          "name": "Eklue (Highland Gale)",
-          "element": "Wind",
-          "condition": "Highland Storm",
-          "abilities": {
-            "Wind": 3,
-            "Carry": 2
-          },
-          "perk": "Tailwind: Move speed of all haulers +20%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Eklue",
-        "element": "Wind / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 3,
-          "Light": 2,
-          "Carry": 3
-        },
-        "perk": "Resonant Courier: Never drops items; storage capacity increased by +20%."
-      }
-    }
-  },
-  {
-    "id": "033",
-    "name": "Budsquire",
-    "stage": "Lumin",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Budsquire -> Thornblade / Melloblum",
-    "best_role": "Starter Seed Sowing, Weeding & Garden Tending",
-    "forms": {
-      "basic": {
-        "name": "Budsquire (Standard)",
-        "element": "Grass",
-        "condition": "Rosewood",
-        "abilities": {
-          "Grass": 1,
-          "Water": 1,
-          "Artisanship": 1
-        },
-        "perk": "Carefully sows seeds in straight rows with high germination chance."
-      },
-      "weather": [
-        {
-          "name": "Budsquire (Rainstorm)",
-          "element": "Grass / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Grass": 2,
-            "Water": 2
-          },
-          "perk": "Sprout Rush: Dual sowing and watering immediately after rainfall."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Budsquire",
-        "element": "Grass / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 2,
-          "Water": 2,
-          "Artisanship": 2
-        },
-        "perk": "Budding Sprout: +15% crop harvest yield and faster seedling establishment."
-      }
-    }
-  },
-  {
-    "id": "034",
-    "name": "Thornblade",
-    "stage": "Gamma",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Budsquire -> Thornblade",
-    "best_role": "Logging Yard Timber Chopping & Wooden Tool Crafting",
-    "forms": {
-      "basic": {
-        "name": "Thornblade (Standard)",
-        "element": "Grass",
-        "condition": "Reach Level 22",
-        "abilities": {
-          "Grass": 2,
-          "Earth": 1,
-          "Artisanship": 2
-        },
-        "perk": "Sharp vine blades fell timber trees and trim thick branches."
-      },
-      "weather": [
-        {
-          "name": "Thornblade (Rainstorm)",
-          "element": "Grass / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Grass": 3,
-            "Water": 1,
-            "Artisanship": 2
-          },
-          "perk": "Wood production from homeland logging stations increased by 30%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Thornblade",
-        "element": "Grass / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 3,
-          "Earth": 2,
-          "Artisanship": 3
-        },
-        "perk": "Rapid Flora: +25% logging output; crafts wooden crates with 20% less wood."
-      }
-    }
-  },
-  {
-    "id": "035",
-    "name": "Melloblum",
-    "stage": "Nova",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Budsquire -> Melloblum",
-    "best_role": "Master Botanical Farming, Organic Fertilizer & Bud Ticket Drops",
-    "forms": {
-      "basic": {
-        "name": "Melloblum (Standard)",
-        "element": "Grass",
-        "condition": "Sprout Stone on Budsquire",
-        "abilities": {
-          "Grass": 3,
-          "Perfumery": 3,
-          "Leisure": 2
-        },
-        "perk": "Harvests exquisite flowers and crafts top-tier luxury botanical oils."
-      },
-      "weather": [
-        {
-          "name": "Melloblum (Sunny Bloom)",
-          "element": "Grass",
-          "condition": "Sunny Weather in Rosetower Woods",
-          "abilities": {
-            "Grass": 4,
-            "Perfumery": 3,
-            "Leisure": 3
-          },
-          "perk": "Pollination Wave: Triples crop mutation chances into high-star gourmet variants."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Melloblum",
-        "element": "Grass / Light / Prismatic",
-        "condition": "Special Prismana In-game Event",
-        "abilities": {
-          "Grass": 4,
-          "Perfumery": 4,
-          "Leisure": 3
-        },
-        "perk": "Sweet Nectar: Doubles fertilizer efficacy; periodically gifts extra Bud Tickets directly to base inventory."
-      }
-    }
-  },
-  {
-    "id": "036",
-    "name": "Pomegg",
-    "stage": "Lumin",
-    "element": "Grass",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Pomegg -> Pomawk",
-    "best_role": "Hatchinator Egg Warming & Morning Fruit Picking",
-    "forms": {
-      "basic": {
-        "name": "Pomegg (Standard)",
-        "element": "Grass",
-        "condition": "Orchard Groves",
-        "abilities": {
-          "Grass": 1,
-          "Light": 1,
-          "Leisure": 1
-        },
-        "perk": "Incubation warming: accelerates Hatchinator egg progress when nearby."
-      },
-      "weather": [
-        {
-          "name": "Pomegg (Sunny)",
-          "element": "Grass / Light",
-          "condition": "Sunny",
-          "abilities": {
-            "Light": 2,
             "Grass": 1,
             "Leisure": 1
           },
-          "perk": "Solar Yolk: Egg incubation speed increased by 15% under direct sunlight."
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Forest Form",
+          "element_display": "Grass 1",
+          "catch_rate": "56%",
+          "region": "Forest of Falling Stars",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/iris-forest-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Grassland Form",
+          "element_display": "Grass 1",
+          "catch_rate": "56%",
+          "region": "Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/iris-grassland-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Grass 1",
+          "catch_rate": "56%",
+          "region": "Berylline Vale, Beast Fang Ridge",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/iris-mountain-woods-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        }
+      ],
+      "weather": [
+        {
+          "form_name": "Plateau Form",
+          "element_display": "Grass 1",
+          "catch_rate": "56%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/iris-plateau-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Pomegg",
-        "element": "Grass / Light / Prismatic",
-        "condition": "Prismana Flow weather",
+        "form_name": "Prismana",
+        "element_display": "Grass 2",
+        "catch_rate": "56%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 2
+        },
+        "image": "images/forms/iris-prismana.png",
         "abilities": {
-          "Light": 2,
           "Grass": 2,
           "Leisure": 2
         },
-        "perk": "Sunshine Warmth: +20% incubation speed and guarantees positive hatchling traits."
+        "utilities": {
+          "Leisure": 2
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Forest Form",
+      "Grassland Form",
+      "Mountain Woods Form",
+      "Plateau Form",
+      "Prismana"
+    ]
   },
   {
-    "id": "037",
-    "name": "Pomawk",
-    "stage": "Nova",
-    "element": "Grass",
-    "secondary_element": "Wind",
-    "role": "Break",
-    "evolution_line": "Pomegg -> Pomawk",
-    "best_role": "High-Speed Crop Auto-Reaping & Barn Grain Storage",
+    "id": "012",
+    "dex_number": "012",
+    "display_id": "#012",
+    "name": "Irisal",
+    "slug": "irisal",
+    "is_unnumbered": false,
+    "image": "images/irisal.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-handbook.png",
+    "tier": "S-Tier",
+    "trait": "**Disco Aniimo**",
+    "trait_effect": "While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6× · Fire 1.6× · Wind 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Earth 0.625× · Water 0.625×"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Pomawk (Standard)",
-        "element": "Grass / Wind",
-        "condition": "Reach Level 32",
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 3",
+        "catch_rate": "28%",
+        "region": "Sea of Flowers",
+        "elements": {
+          "Grass": 3
+        },
+        "image": "images/forms/irisal-basic-form-base.png",
         "abilities": {
           "Grass": 3,
-          "Wind": 3,
-          "Carry": 2
-        },
-        "perk": "Swoops across fields to immediately reap ripe crops and fly them to farm silos."
-      },
-      "weather": [
-        {
-          "name": "Pomawk (Storm)",
-          "element": "Wind / Grass",
-          "condition": "High Wind / Storm",
-          "abilities": {
-            "Wind": 4,
-            "Grass": 2,
-            "Carry": 2
-          },
-          "perk": "Gale Swoop: Harvest speed doubled when outdoor wind is strong."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Pomawk",
-        "element": "Grass / Wind / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 4,
-          "Wind": 4,
-          "Carry": 3
-        },
-        "perk": "Gale Harvest: +30% auto-harvest speed; zero crop waste or drop loss."
-      }
-    }
-  },
-  {
-    "id": "038",
-    "name": "Dewy",
-    "stage": "Lumin",
-    "element": "Dark",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Dewy -> Fragrancier",
-    "best_role": "Nighttime Scent Extraction & Restful Dew Collection",
-    "forms": {
-      "basic": {
-        "name": "Dewy (Standard)",
-        "element": "Dark",
-        "condition": "Dusk Valleys",
-        "abilities": {
-          "Dark": 1,
-          "Perfumery": 1,
-          "Water": 1
-        },
-        "perk": "Collects pure dew condensation from nocturnal flower petals."
-      },
-      "weather": [
-        {
-          "name": "Dewy (Rainy Night)",
-          "element": "Dark / Water",
-          "condition": "Rainy Night",
-          "abilities": {
-            "Dark": 1,
-            "Water": 2,
-            "Perfumery": 1
-          },
-          "perk": "Doubles pure night dew collection."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Dewy",
-        "element": "Dark / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 2,
-          "Perfumery": 2,
-          "Water": 2
-        },
-        "perk": "Moon Dew: Purifies water tanks and increases brewing potency."
-      }
-    }
-  },
-  {
-    "id": "039",
-    "name": "Fragrancier",
-    "stage": "Nova",
-    "element": "Dark",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Dewy -> Fragrancier",
-    "best_role": "Master Nocturnal Aromatics, Incense Buffs & Scent Vaults",
-    "forms": {
-      "basic": {
-        "name": "Fragrancier (Standard)",
-        "element": "Dark",
-        "condition": "Dusk Stone on Dewy",
-        "abilities": {
-          "Dark": 3,
-          "Perfumery": 3,
-          "Leisure": 2
-        },
-        "perk": "Master of exotic dusk perfumes that boost base crafting yields by 15%."
-      },
-      "weather": [
-        {
-          "name": "Fragrancier (Eclipse)",
-          "element": "Dark",
-          "condition": "Eclipse / Night",
-          "abilities": {
-            "Dark": 4,
-            "Perfumery": 3,
-            "Leisure": 2
-          },
-          "perk": "Shadow Incense: Nocturnal worker stamina drain completely neutralized."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Fragrancier",
-        "element": "Dark / Light / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 4,
-          "Perfumery": 4,
           "Leisure": 3
         },
-        "perk": "Royal Aroma: Scent diffusers last 3x longer and attract rare wandering merchants."
-      }
-    }
-  },
-  {
-    "id": "040",
-    "name": "Wisptis",
-    "stage": "Lumin",
-    "element": "Dark",
-    "secondary_element": "Fire",
-    "role": "DPS",
-    "evolution_line": "Wisptis -> Ignitis",
-    "best_role": "Night Flame Maintenance & Charcoal Firing",
-    "forms": {
-      "basic": {
-        "name": "Wisptis (Standard)",
-        "element": "Dark / Fire",
-        "condition": "Ghost Ridge",
-        "abilities": {
-          "Dark": 1,
-          "Fire": 1
-        },
-        "perk": "Floating will-o-wisp that keeps campfires stoked all night without wood."
+        "utilities": {
+          "Leisure": 3
+        }
       },
+      "regional": [
+        {
+          "form_name": "Highland Form",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/irisal-highland-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        },
+        {
+          "form_name": "Forest Form",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Forest of Falling Stars",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/irisal-forest-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        },
+        {
+          "form_name": "Grassland Form",
+          "element_display": "Grass 3",
+          "catch_rate": "28%",
+          "region": "Blitzwood",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/irisal-grassland-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Berylline Vale",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/irisal-mountain-woods-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        }
+      ],
       "weather": [
         {
-          "name": "Wisptis (Foggy Night)",
-          "element": "Dark / Fire",
-          "condition": "Foggy Night",
-          "abilities": {
-            "Dark": 2,
-            "Fire": 1
+          "form_name": "Plateau Form",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Grass": 3
           },
-          "perk": "Spectral Glow: Illuminates dark corners of Homeland automatically."
+          "image": "images/forms/irisal-plateau-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Wisptis",
-        "element": "Dark / Fire / Light",
-        "condition": "Prismana Flow weather",
+        "form_name": "Prismana",
+        "element_display": "Grass 4",
+        "catch_rate": "25%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 4
+        },
+        "image": "images/forms/irisal-prismana.png",
         "abilities": {
-          "Dark": 2,
-          "Fire": 2,
-          "Light": 1
+          "Grass": 4,
+          "Leisure": 4
         },
-        "perk": "Prismatic Wisp: Cooking pots reach boiling speed in half the normal time."
-      }
-    }
-  },
-  {
-    "id": "041",
-    "name": "Ignitis",
-    "stage": "Nova",
-    "element": "Dark",
-    "secondary_element": "Fire",
-    "role": "DPS",
-    "evolution_line": "Wisptis -> Ignitis",
-    "best_role": "High-Temp Dark Smelting & Spirit Flame Alchemy",
-    "forms": {
-      "basic": {
-        "name": "Ignitis (Standard)",
-        "element": "Dark / Fire",
-        "condition": "Reach Level 29",
-        "abilities": {
-          "Dark": 3,
-          "Fire": 3,
-          "Artisanship": 2
-        },
-        "perk": "Burns with spectral flame capable of melting cursed ores and dark metals."
-      },
-      "weather": [
-        {
-          "name": "Ignitis (Forest Form)",
-          "element": "Dark / Fire / Grass",
-          "condition": "Deep Forest at Night",
-          "abilities": {
-            "Dark": 3,
-            "Fire": 3,
-            "Grass": 2
-          },
-          "perk": "Spiritual pyre burns clean with zero smoke pollution."
-        },
-        {
-          "name": "Ignitis (Highland Form)",
-          "element": "Dark / Fire / Wind",
-          "condition": "Highland Storm",
-          "abilities": {
-            "Dark": 3,
-            "Fire": 4,
-            "Wind": 2
-          },
-          "perk": "Gale Pyre: Smelts double bars during storm winds."
+        "utilities": {
+          "Leisure": 4
         }
-      ],
-      "prismana": {
-        "name": "Prismana Ignitis",
-        "element": "Dark / Fire / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 4,
-          "Fire": 4,
-          "Artisanship": 3
-        },
-        "perk": "Eternal Soulfire: Furnaces run 24 hours without consuming fuel logs."
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Forest Form",
+      "Grassland Form",
+      "Mountain Woods Form",
+      "Plateau Form",
+      "Prismana"
+    ]
   },
   {
-    "id": "042",
-    "name": "Bonesky",
-    "stage": "Lumin",
-    "element": "Ice",
-    "secondary_element": "Dark",
-    "role": "DPS",
-    "evolution_line": "Bonesky -> Fenrier -> Glynsera",
-    "best_role": "Starter Food Cooler Operation & Night Hauling",
-    "forms": {
-      "basic": {
-        "name": "Bonesky (Standard)",
-        "element": "Ice / Dark",
-        "condition": "Beast Fang Ridge",
-        "abilities": {
-          "Ice": 1,
-          "Dark": 1,
-          "Carry": 1
-        },
-        "perk": "Cold skeleton hound that prevents meat spoilage in early larders."
-      },
-      "weather": [
-        {
-          "name": "Bonesky (Nighttime)",
-          "element": "Ice / Dark",
-          "condition": "Night in Beast Fang Ridge",
-          "abilities": {
-            "Ice": 2,
-            "Dark": 2,
-            "Carry": 1
-          },
-          "perk": "Night Prowl: Transport speed increased by 25% after sunset."
-        }
+    "id": "013",
+    "dex_number": "013",
+    "display_id": "#013",
+    "name": "Skippy",
+    "slug": "skippy",
+    "is_unnumbered": false,
+    "image": "images/skippy.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-skippy-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Water Spirit",
+    "trait_effect": "While in water terrain, reduces the EP cost of all skills by X.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
-      "prismana": {
-        "name": "Prismana Bonesky",
-        "element": "Ice / Dark / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Ice": 2,
-          "Dark": 2,
-          "Artisanship": 2
-        },
-        "perk": "Frost Bone: Preserves food without requiring fresh ice blocks."
-      }
-    }
-  },
-  {
-    "id": "043",
-    "name": "Fenrier",
-    "stage": "Gamma",
-    "element": "Ice",
-    "secondary_element": "Dark",
-    "role": "DPS",
-    "evolution_line": "Bonesky -> Fenrier -> Glynsera",
-    "best_role": "Industrial Freezer Operation & Cold Weather Hauling",
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Fenrier (Standard)",
-        "element": "Ice / Dark",
-        "condition": "Reach Level 24",
-        "abilities": {
-          "Ice": 2,
-          "Dark": 2,
-          "Carry": 2
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 1",
+        "catch_rate": "56%",
+        "region": "Nimbus Fields, The Mistwoods, Forest of Falling Stars",
+        "elements": {
+          "Water": 1
         },
-        "perk": "Keeps multiple walk-in refrigerator units chilled concurrently."
-      },
-      "weather": [
-        {
-          "name": "Fenrier (Nighttime)",
-          "element": "Ice / Dark",
-          "condition": "Night in Rosetower Woods",
-          "abilities": {
-            "Ice": 3,
-            "Dark": 2,
-            "Carry": 2
-          },
-          "perk": "Shadow Stride: Unfazed by cold temperatures, hauls cargo through snow smoothly."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Fenrier",
-        "element": "Ice / Dark / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Ice": 3,
-          "Dark": 3,
-          "Carry": 3
-        },
-        "perk": "Glacier Prowl: +25% transport speed and +20% ice crusher throughput."
-      }
-    }
-  },
-  {
-    "id": "044",
-    "name": "Glynsera",
-    "stage": "Nova",
-    "element": "Ice",
-    "secondary_element": "Dark",
-    "role": "DPS",
-    "evolution_line": "Bonesky -> Fenrier -> Glynsera",
-    "best_role": "Apex Cryo Food Preservation & Night Shift Frost Crafting",
-    "forms": {
-      "basic": {
-        "name": "Glynsera (Standard)",
-        "element": "Ice / Dark",
-        "condition": "Level 34 + Freeze Stone (Beast Fang Ridge)",
-        "abilities": {
-          "Ice": 3,
-          "Dark": 2,
-          "Artisanship": 2
-        },
-        "perk": "Signature Biting Wind: Stops decay timer completely for all food in connected RV coolers."
-      },
-      "weather": [
-        {
-          "name": "Glynsera (Nighttime Form)",
-          "element": "Ice / Dark",
-          "condition": "Spawns specifically at Night in Rosetower Woods",
-          "abilities": {
-            "Ice": 3,
-            "Dark": 3,
-            "Artisanship": 3
-          },
-          "perk": "Nighttime Hunter: Night shift speed +30%; crafts frost weapons and ice sculptures with zero fatigue."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Glynsera",
-        "element": "Ice / Dark / Prismatic",
-        "condition": "Prismana Flow in Beast Fang Ridge (Nurture Bloom Surge)",
-        "abilities": {
-          "Ice": 4,
-          "Dark": 3,
-          "Artisanship": 3
-        },
-        "perk": "Prismatic Cryo: Master of frost; never tires or sleeps at cooling stations; global pantry spoilage halted 100%."
-      }
-    }
-  },
-  {
-    "id": "045",
-    "name": "Bolty",
-    "stage": "Lumin",
-    "element": "Lightning",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Bolty -> Blazen",
-    "best_role": "Starter Battery Charging & Spark Generator",
-    "forms": {
-      "basic": {
-        "name": "Bolty (Standard)",
-        "element": "Lightning",
-        "condition": "Blitzwood",
-        "abilities": {
-          "Lightning": 1,
-          "Carry": 1
-        },
-        "perk": "Charges starter electric lanterns and mini battery boxes."
-      },
-      "weather": [
-        {
-          "name": "Bolty (Thunderstorm)",
-          "element": "Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 2,
-            "Carry": 1
-          },
-          "perk": "Recharges empty batteries instantaneously during lightning storms."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Bolty",
-        "element": "Lightning / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 2,
-          "Light": 1,
-          "Artisanship": 1
-        },
-        "perk": "Static Spark: Electric machinery energy efficiency +15%."
-      }
-    }
-  },
-  {
-    "id": "046",
-    "name": "Blazen",
-    "stage": "Nova",
-    "element": "Lightning",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Bolty -> Blazen",
-    "best_role": "High-Voltage Industrial Grid & Electric Furnace",
-    "forms": {
-      "basic": {
-        "name": "Blazen (Standard)",
-        "element": "Lightning",
-        "condition": "Level 33 + Roar Stone under Blitz Tree",
-        "abilities": {
-          "Lightning": 3,
-          "Artisanship": 2,
-          "Carry": 2
-        },
-        "perk": "High-voltage generator powering industrial smelteries and automated assemblers."
-      },
-      "weather": [
-        {
-          "name": "Blazen (Thunderstorm)",
-          "element": "Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 4,
-            "Artisanship": 2,
-            "Carry": 2
-          },
-          "perk": "Grid Overdrive: Powers entire RV base complex without consuming any fuel."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Blazen",
-        "element": "Lightning / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 4,
-          "Light": 2,
-          "Artisanship": 3
-        },
-        "perk": "Thunder Roar: All electronic crafting benches operate at +30% speed."
-      }
-    }
-  },
-  {
-    "id": "047",
-    "name": "Squarrel",
-    "stage": "Lumin",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Squarrel -> Squashel",
-    "best_role": "Nut Roasting, Campfire Helper & Acorn Gathering",
-    "forms": {
-      "basic": {
-        "name": "Squarrel (Standard)",
-        "element": "Fire",
-        "condition": "Cinder Woods",
-        "abilities": {
-          "Fire": 1,
-          "Grass": 1,
-          "Carry": 1
-        },
-        "perk": "Roasts nuts and seeds, boosting meal nutrition value."
-      },
-      "weather": [
-        {
-          "name": "Squarrel (Sunny)",
-          "element": "Fire",
-          "condition": "Sunny",
-          "abilities": {
-            "Fire": 2,
-            "Carry": 1
-          },
-          "perk": "Nut gather rate doubled on warm afternoons."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Squarrel",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 2,
-          "Grass": 1,
-          "Carry": 2
-        },
-        "perk": "Golden Acorn: Extra snack drops that restore 50 morale to working Aniimo."
-      }
-    }
-  },
-  {
-    "id": "048",
-    "name": "Squashel",
-    "stage": "Gamma",
-    "element": "Fire",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Squarrel -> Squashel",
-    "best_role": "Pastry Bakery, Oven Firing & Nut Pantry Storage",
-    "forms": {
-      "basic": {
-        "name": "Squashel (Standard)",
-        "element": "Fire",
-        "condition": "Reach Level 25",
-        "abilities": {
-          "Fire": 2,
-          "Artisanship": 2,
-          "Carry": 2
-        },
-        "perk": "Bakes pastries and bread rations that keep base workers full longer."
-      },
-      "weather": [
-        {
-          "name": "Squashel (Heatwave)",
-          "element": "Fire",
-          "condition": "Heatwave",
-          "abilities": {
-            "Fire": 3,
-            "Artisanship": 2,
-            "Carry": 2
-          },
-          "perk": "Bake oven output doubled during hot weather."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Squashel",
-        "element": "Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 3,
-          "Artisanship": 3,
-          "Carry": 2
-        },
-        "perk": "Grand Pâtissier: Meals cooked grant +15% work efficiency buff for 12 hours."
-      }
-    }
-  },
-  {
-    "id": "049",
-    "name": "Susuta",
-    "stage": "Lumin",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Susuta -> Popota -> Piopiota / Panpanta",
-    "best_role": "Starter Irrigation & River Fish Hatchery",
-    "forms": {
-      "basic": {
-        "name": "Susuta (Standard)",
-        "element": "Water",
-        "condition": "Crescent Bay",
+        "image": "images/forms/skippy-basic-form-base.png",
         "abilities": {
           "Water": 1,
           "Carry": 1
         },
-        "perk": "Splashes water across mud plots to maintain hydration."
-      },
-      "weather": [
-        {
-          "name": "Susuta (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 2,
-            "Carry": 1
-          },
-          "perk": "Hydration speed doubled in rainy weather."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Susuta",
-        "element": "Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 2,
-          "Light": 1,
+        "utilities": {
           "Carry": 1
-        },
-        "perk": "Cleansing Stream: Purifies water vats, boosting brewing clarity."
-      }
-    }
-  },
-  {
-    "id": "050",
-    "name": "Popota",
-    "stage": "Gamma",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "Healer",
-    "evolution_line": "Susuta -> Popota -> Piopiota / Panpanta",
-    "best_role": "Mid-tier Farmland Irrigation & Pond Care",
-    "forms": {
-      "basic": {
-        "name": "Popota (Standard)",
-        "element": "Water",
-        "condition": "Reach Level 22",
-        "abilities": {
-          "Water": 2,
-          "Carry": 2,
-          "Leisure": 1
-        },
-        "perk": "Fills water ditches rapidly and cleans algal blooms from fish ponds."
-      },
-      "weather": [
-        {
-          "name": "Popota (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 3,
-            "Carry": 2
-          },
-          "perk": "Floods irrigation trenches with enriched river silt."
         }
-      ],
-      "prismana": {
-        "name": "Prismana Popota",
-        "element": "Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 3,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Pure Spring: Farm water consumption reduced by 25%."
-      }
-    }
-  },
-  {
-    "id": "051",
-    "name": "Piopiota",
-    "stage": "Nova",
-    "element": "Water",
-    "secondary_element": "Dark",
-    "role": "Support",
-    "evolution_line": "Susuta -> Popota -> Piopiota",
-    "best_role": "Deep Water Brewing, Night Irrigation & Shadow Pearls",
-    "forms": {
-      "basic": {
-        "name": "Piopiota (Standard)",
-        "element": "Water / Dark",
-        "condition": "Night Evolution",
-        "abilities": {
-          "Water": 3,
-          "Dark": 2,
-          "Perfumery": 2
-        },
-        "perk": "Distills deep-sea pearl extracts and dark essences at night."
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Piopiota (Misty Night)",
-          "element": "Water / Dark",
-          "condition": "Misty Night",
-          "abilities": {
-            "Water": 4,
-            "Dark": 3,
-            "Perfumery": 2
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Water 1",
+          "catch_rate": "50%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Water": 1
           },
-          "perk": "Abyssal Extraction: Potion brewing yields +35% during fog."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Piopiota",
-        "element": "Water / Dark / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 4,
-          "Dark": 3,
-          "Perfumery": 3
-        },
-        "perk": "Pearl Radiance: Pearls crafted sell for +40% Bud Coins."
-      }
-    }
-  },
-  {
-    "id": "052",
-    "name": "Panpanta",
-    "stage": "Nova",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Susuta -> Popota -> Panpanta",
-    "best_role": "High-Pressure Water Cannon Digging & Quarry Wash",
-    "forms": {
-      "basic": {
-        "name": "Panpanta (Standard)",
-        "element": "Water",
-        "condition": "Day Evolution",
-        "abilities": {
-          "Water": 3,
-          "Earth": 2,
-          "Carry": 3
-        },
-        "perk": "Uses high-pressure water jets to blast river silt and wash raw minerals."
-      },
-      "weather": [
-        {
-          "name": "Panpanta (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
+          "image": "images/forms/skippy-sea-of-flowers-form.png",
           "abilities": {
-            "Water": 4,
-            "Earth": 2,
-            "Carry": 3
-          },
-          "perk": "Silt Sluice: Ore washing produces 30% more refined nuggets."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Panpanta",
-        "element": "Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 4,
-          "Earth": 3,
-          "Carry": 3
-        },
-        "perk": "Hydraulic Master: Mineral washing takes half the usual time."
-      }
-    }
-  },
-  {
-    "id": "053",
-    "name": "Shelly",
-    "stage": "Lumin",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Shelly -> Sheldon",
-    "best_role": "Pearl Grinding & Shell Lime Mortar",
-    "forms": {
-      "basic": {
-        "name": "Shelly (Standard)",
-        "element": "Water",
-        "condition": "Coral Beach",
-        "abilities": {
-          "Water": 1,
-          "Artisanship": 1
-        },
-        "perk": "Grinds discarded seashells into fine lime mortar for masonry."
-      },
-      "weather": [
-        {
-          "name": "Shelly (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 2,
-            "Artisanship": 1
-          },
-          "perk": "Mortar mixing speed +25% in wet conditions."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Shelly",
-        "element": "Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 2,
-          "Light": 1,
-          "Artisanship": 2
-        },
-        "perk": "Mother of Pearl: Mortar crafted has +50% building durability."
-      }
-    }
-  },
-  {
-    "id": "054",
-    "name": "Sheldon",
-    "stage": "Gamma",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Shelly -> Sheldon",
-    "best_role": "Heavy Marine Masonry & Aqueduct Construction",
-    "forms": {
-      "basic": {
-        "name": "Sheldon (Standard)",
-        "element": "Water",
-        "condition": "Reach Level 24",
-        "abilities": {
-          "Water": 2,
-          "Earth": 2,
-          "Artisanship": 2
-        },
-        "perk": "Constructs waterproof aqueducts, drainage tiles and fountains."
-      },
-      "weather": [
-        {
-          "name": "Sheldon (Rainstorm)",
-          "element": "Water / Earth",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 3,
-            "Earth": 2,
-            "Artisanship": 2
-          },
-          "perk": "Drainage systems never clog during major storms."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Sheldon",
-        "element": "Water / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 3,
-          "Earth": 3,
-          "Artisanship": 3
-        },
-        "perk": "Aquatic Architect: Base water piping speed +40%."
-      }
-    }
-  },
-  {
-    "id": "055",
-    "name": "Sherro",
-    "stage": "Gamma",
-    "element": "Water",
-    "secondary_element": "Lightning",
-    "role": "DPS",
-    "evolution_line": "Sherro (Unique Line)",
-    "best_role": "Electrolysis Water Cleansing & Dynamo Backup",
-    "forms": {
-      "basic": {
-        "name": "Sherro (Standard)",
-        "element": "Water / Lightning",
-        "condition": "Echoback Landing",
-        "abilities": {
-          "Water": 2,
-          "Lightning": 2,
-          "Carry": 2
-        },
-        "perk": "Conducts electrolysis to purify irrigation tanks and charge batteries."
-      },
-      "weather": [
-        {
-          "name": "Sherro (Thunderstorm)",
-          "element": "Water / Lightning",
-          "condition": "Thunderstorm in Echoback Landing",
-          "abilities": {
-            "Lightning": 3,
-            "Water": 2,
-            "Carry": 2
-          },
-          "perk": "Lightning Rod: Absorbs lightning strikes to instantly recharge base batteries."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Sherro",
-        "element": "Water / Lightning / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 3,
-          "Water": 3,
-          "Carry": 3
-        },
-        "perk": "Dynamo Battery: Keeps high-tier RV machines powered for 12 hours without fuel."
-      }
-    }
-  },
-  {
-    "id": "056",
-    "name": "Baleetle",
-    "stage": "Lumin",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Baleetle -> Waleetle / Bouldus",
-    "best_role": "Starter Boulder Cracking & Stone Hauling",
-    "forms": {
-      "basic": {
-        "name": "Baleetle (Standard)",
-        "element": "Earth",
-        "condition": "Berylline Vale",
-        "abilities": {
-          "Earth": 1,
-          "Carry": 1,
-          "Artisanship": 1
-        },
-        "perk": "Horn breaks surface boulders into usable cobblestone chunks."
-      },
-      "weather": [
-        {
-          "name": "Baleetle (Sandstorm)",
-          "element": "Earth",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 2,
+            "Water": 1,
             "Carry": 1
           },
-          "perk": "Mining speed +25% during sandstorms."
+          "utilities": {
+            "Carry": 1
+          }
         },
         {
-          "name": "Baleetle (Snowfield)",
-          "element": "Earth / Ice",
-          "condition": "Snowfield",
+          "form_name": "Snowfield Form",
+          "element_display": "Water 1 / Ice 1",
+          "catch_rate": "38%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Water": 1,
+            "Ice": 1
+          },
+          "image": "images/forms/skippy-snowfield-form.png",
           "abilities": {
-            "Earth": 1,
+            "Water": 1,
             "Ice": 1,
             "Carry": 1
           },
-          "perk": "Frost Shell: Immune to freezing weather slow-down."
+          "utilities": {
+            "Carry": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Sea of Flowers Form",
+      "Snowfield Form"
+    ]
+  },
+  {
+    "id": "014",
+    "dex_number": "014",
+    "display_id": "#014",
+    "name": "Pranky",
+    "slug": "pranky",
+    "is_unnumbered": false,
+    "image": "images/pranky.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pranky-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Water Spirit",
+    "trait_effect": "While in water terrain, reduces the EP cost of all skills by X.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 2",
+        "catch_rate": "42%",
+        "region": "Nimbus Fields, The Mistwoods, Forest of Falling Stars",
+        "elements": {
+          "Water": 2
+        },
+        "image": "images/forms/pranky-basic-form-base.png",
+        "abilities": {
+          "Water": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Water 2",
+          "catch_rate": "42%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Water": 2
+          },
+          "image": "images/forms/pranky-sea-of-flowers-form.png",
+          "abilities": {
+            "Water": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
+        },
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Water 2 / Ice 1",
+          "catch_rate": "42%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Water": 2,
+            "Ice": 1
+          },
+          "image": "images/forms/pranky-snowfield-form.png",
+          "abilities": {
+            "Water": 2,
+            "Ice": 1,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Sea of Flowers Form",
+      "Snowfield Form"
+    ]
+  },
+  {
+    "id": "015",
+    "dex_number": "015",
+    "display_id": "#015",
+    "name": "Glacy",
+    "slug": "glacy",
+    "is_unnumbered": false,
+    "image": "images/glacy.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-glacy-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Water Spirit",
+    "trait_effect": "While in water terrain, reduces the EP cost of all skills by X.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 3 / Ice 2",
+        "catch_rate": "28%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 3,
+          "Ice": 2
+        },
+        "image": "images/forms/glacy-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Ice": 2,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Water 3 / Ice 2",
+          "catch_rate": "28%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Water": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/glacy-sea-of-flowers-form.png",
+          "abilities": {
+            "Water": 3,
+            "Ice": 2,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
+        },
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Water 3 / Ice 2",
+          "catch_rate": "28%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Water": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/glacy-snowfield-form.png",
+          "abilities": {
+            "Water": 3,
+            "Ice": 2,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Water 4 / Ice 3",
+        "catch_rate": "28%",
+        "region": "Driftwise Meadow",
+        "elements": {
+          "Water": 4,
+          "Ice": 3
+        },
+        "image": "images/forms/glacy-prismana.png",
+        "abilities": {
+          "Water": 4,
+          "Ice": 3,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Sea of Flowers Form",
+      "Snowfield Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "016",
+    "dex_number": "016",
+    "display_id": "#016",
+    "name": "Leafy",
+    "slug": "leafy",
+    "is_unnumbered": false,
+    "image": "images/leafy.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-leafy-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Power of Nature",
+    "trait_effect": "While off field, creates a patch of Turf under a teammate after they cast 3 skills.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Ice (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.391×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Grass 3 / Water 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 3,
+          "Water": 2
+        },
+        "image": "images/forms/leafy-basic-form.png",
+        "abilities": {
+          "Grass": 3,
+          "Water": 2,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "017",
+    "dex_number": "017",
+    "display_id": "#017",
+    "name": "Nimbi",
+    "slug": "nimbi",
+    "is_unnumbered": false,
+    "image": "images/nimbi.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Shrouded in Mist",
+    "trait_effect": "Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 1",
+        "catch_rate": "56%",
+        "region": "Nimbus Fields, The Argent Strait",
+        "elements": {
+          "Wind": 1
+        },
+        "image": "images/forms/nimbi-basic-form-base.png",
+        "abilities": {
+          "Wind": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
+      },
+      "regional": [],
+      "weather": [
+        {
+          "form_name": "Rainstorm Form",
+          "element_display": "Wind 1 / Lightning 1",
+          "catch_rate": "56%",
+          "region": "Nimbus Fields",
+          "elements": {
+            "Wind": 1,
+            "Lightning": 1
+          },
+          "image": "images/forms/nimbi-rainstorm-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Lightning": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Cloudmist Form",
+          "element_display": "Wind 1",
+          "catch_rate": "25%",
+          "region": "Nimbus Fields",
+          "elements": {
+            "Wind": 1
+          },
+          "image": "images/forms/nimbi-cloudmist-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Plateau Form",
+          "element_display": "Wind 1 / Ice 1",
+          "catch_rate": "56%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Wind": 1,
+            "Ice": 1
+          },
+          "image": "images/forms/nimbi-plateau-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Ice": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        }
+      ],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Rainstorm Form",
+      "Cloudmist Form",
+      "Plateau Form"
+    ]
+  },
+  {
+    "id": "018",
+    "dex_number": "018",
+    "display_id": "#018",
+    "name": "Turbo",
+    "slug": "turbo",
+    "is_unnumbered": false,
+    "image": "images/turbo.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Shrouded in Mist",
+    "trait_effect": "Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 3",
+        "catch_rate": "28%",
+        "region": "Nimbus Fields",
+        "elements": {
+          "Wind": 3
+        },
+        "image": "images/forms/turbo-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
+      },
+      "regional": [],
+      "weather": [
+        {
+          "form_name": "Rainstorm Form",
+          "element_display": "Wind 3 / Lightning 2",
+          "catch_rate": "28%",
+          "region": "Nimbus Fields",
+          "elements": {
+            "Wind": 3,
+            "Lightning": 2
+          },
+          "image": "images/forms/turbo-rainstorm-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Lightning": 2,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        },
+        {
+          "form_name": "Cloudmist Form",
+          "element_display": "Wind 3",
+          "catch_rate": "28%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Wind": 3
+          },
+          "image": "images/forms/turbo-cloudmist-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        },
+        {
+          "form_name": "Plateau Form",
+          "element_display": "Wind 3 / Ice 2",
+          "catch_rate": "28%",
+          "region": "Driftwise Meadow",
+          "elements": {
+            "Wind": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/turbo-plateau-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Ice": 2,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Baleetle",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 2,
-          "Carry": 2,
-          "Artisanship": 2
+        "form_name": "Prismana",
+        "element_display": "Wind 4 / Dark 4",
+        "catch_rate": "28%",
+        "region": "Nimbus Fields",
+        "elements": {
+          "Wind": 4,
+          "Dark": 4
         },
-        "perk": "Sturdy Shell: Mining tool durability doubled; +20% bonus cobblestone."
+        "image": "images/forms/turbo-prismana.png",
+        "abilities": {
+          "Wind": 4,
+          "Dark": 4,
+          "Leisure": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Rainstorm Form",
+      "Cloudmist Form",
+      "Plateau Form",
+      "Prismana"
+    ]
   },
   {
-    "id": "057",
-    "name": "Waleetle",
-    "stage": "Nova",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Baleetle -> Waleetle",
-    "best_role": "Precision Gem Polishing & Architectural Tile Carving",
+    "id": "019",
+    "dex_number": "019",
+    "display_id": "#019",
+    "name": "Dreaple",
+    "slug": "dreaple",
+    "is_unnumbered": false,
+    "image": "images/dreaple.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dreaple-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Counting Sheep",
+    "trait_effect": "Every Xs, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for Xs. Targets in [Nightmare] have their Dark Resistance reduced by X and cannot move or cast skills for Xs. Taking damage removes the control effect.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Waleetle (Standard)",
-        "element": "Earth",
-        "condition": "Evolves from Baleetle",
-        "abilities": {
-          "Earth": 3,
-          "Artisanship": 3,
-          "Carry": 2
+        "form_name": "Basic Form",
+        "element_display": "Dark 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Dark": 3
         },
-        "perk": "Artisan stone carver: crafts smooth marble tiles and high-tier RV components."
+        "image": "images/dreaple.png",
+        "abilities": {
+          "Dark": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
       },
-      "weather": [
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "020",
+    "dex_number": "020",
+    "display_id": "#020",
+    "name": "Hummin",
+    "slug": "hummin",
+    "is_unnumbered": false,
+    "image": "images/hummin.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-hummin-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Energized",
+    "trait_effect": "For every 1,000 max HP, increases BREAK damage by X%.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 1",
+        "catch_rate": "56%",
+        "region": "Nimbus Fields, The Mistwoods, The Argent Strait, Forest of Falling Stars, Blitzwood",
+        "elements": {
+          "Grass": 1
+        },
+        "image": "images/forms/hummin-basic-form-base.png",
+        "abilities": {
+          "Grass": 1
+        },
+        "utilities": {}
+      },
+      "regional": [
         {
-          "name": "Waleetle (Snowfield)",
-          "element": "Earth / Ice",
-          "condition": "Snowfield in Berylline Vale",
+          "form_name": "Mountain Form",
+          "element_display": "Grass 1",
+          "catch_rate": "56%",
+          "region": "Sea of Flowers, Berylline Vale",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/hummin-mountain-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Form"
+    ]
+  },
+  {
+    "id": "021",
+    "dex_number": "021",
+    "display_id": "#021",
+    "name": "Hexxin",
+    "slug": "hexxin",
+    "is_unnumbered": false,
+    "image": "images/hexxin.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-hexxin-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Prank",
+    "trait_effect": "Every Xs, the next skill applies [Curse] to enemies hit for Xs. Dark basic attacks restore X EP when hitting enemies with [Curse].",
+    "matchups": {
+      "weak_to": [
+        "Wind (2.56×)",
+        "Dark (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.391×)",
+        "Grass (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 1 / Dark 2",
+        "catch_rate": "28%",
+        "region": "The Mistwoods",
+        "elements": {
+          "Grass": 1,
+          "Dark": 2
+        },
+        "image": "images/forms/hexxin-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Dark": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Mountain Form",
+          "element_display": "Dark 2 / Grass 1",
+          "catch_rate": "28%",
+          "region": "Sea of Flowers, Berylline Vale",
+          "elements": {
+            "Dark": 2,
+            "Grass": 1
+          },
+          "image": "images/forms/hexxin-mountain-form.png",
+          "abilities": {
+            "Dark": 2,
+            "Grass": 1,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Dark 4 / Grass 4",
+        "catch_rate": "28%",
+        "region": "The Mistwoods",
+        "elements": {
+          "Dark": 4,
+          "Grass": 4
+        },
+        "image": "images/forms/hexxin-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Grass": 4,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "022",
+    "dex_number": "022",
+    "display_id": "#022",
+    "name": "Tuckin",
+    "slug": "tuckin",
+    "is_unnumbered": false,
+    "image": "images/tuckin.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Prank Master",
+    "trait_effect": "Increases BREAK damage by % for every X1,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every Xs, up to a maximum of 3.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 3",
+        "catch_rate": "28%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 3
+        },
+        "image": "images/forms/tuckin-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Mountain Form",
+          "element_display": "Grass 3 / Earth 2",
+          "catch_rate": "28%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Grass": 3,
+            "Earth": 2
+          },
+          "image": "images/forms/tuckin-mountain-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Earth": 2,
+            "Carry": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 2,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Basic Form (variant record)",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/tuckin-basic-form-variant-record.png",
+          "abilities": {
+            "Grass": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
+        },
+        {
+          "form_name": "Unnamed form",
+          "element_display": "Grass 4",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Grass": 4
+          },
+          "image": "images/forms/tuckin-unnamed-form.png",
+          "abilities": {
+            "Grass": 4,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Form",
+      "Basic Form (variant record)",
+      "Unnamed form"
+    ]
+  },
+  {
+    "id": "023",
+    "dex_number": "023",
+    "display_id": "#023",
+    "name": "Budclaw",
+    "slug": "budclaw",
+    "is_unnumbered": false,
+    "image": "images/budclaw.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Stealth",
+    "trait_effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.391×)",
+        "Lightning (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Earth 1 / Grass 1",
+        "catch_rate": "56%",
+        "region": "Zephyrus Landbridge, Nimbus Fields, Berylline Vale, Beast Fang Ridge",
+        "elements": {
+          "Earth": 1,
+          "Grass": 1
+        },
+        "image": "images/forms/budclaw-basic-form-base.png",
+        "abilities": {
+          "Earth": 1,
+          "Grass": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Mudflat Form",
+          "element_display": "Earth 1 / Grass 1",
+          "catch_rate": "32%",
+          "region": "Tideblossom Coast",
+          "elements": {
+            "Earth": 1,
+            "Grass": 1
+          },
+          "image": "images/forms/budclaw-mudflat-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Grass": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Beach Form",
+          "element_display": "Earth 1",
+          "catch_rate": "56%",
+          "region": "Echoback Landing",
+          "elements": {
+            "Earth": 1
+          },
+          "image": "images/forms/budclaw-beach-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Bay Form",
+          "element_display": "Earth 1 / Grass 1",
+          "catch_rate": "56%",
+          "region": "The Argent Strait",
+          "elements": {
+            "Earth": 1,
+            "Grass": 1
+          },
+          "image": "images/forms/budclaw-bay-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Grass": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mudflat Form",
+      "Beach Form",
+      "Bay Form"
+    ]
+  },
+  {
+    "id": "024",
+    "dex_number": "024",
+    "display_id": "#024",
+    "name": "Shrubclaw",
+    "slug": "shrubclaw",
+    "is_unnumbered": false,
+    "image": "images/shrubclaw.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Stealth",
+    "trait_effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.391×)",
+        "Lightning (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 2 / Earth 3",
+        "catch_rate": "28%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Grass": 2,
+          "Earth": 3
+        },
+        "image": "images/forms/shrubclaw-basic-form-base.png",
+        "abilities": {
+          "Grass": 2,
+          "Earth": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Mudflat Form",
+          "element_display": "Earth 3",
+          "catch_rate": "28%",
+          "region": "Tideblossom Coast",
+          "elements": {
+            "Earth": 3
+          },
+          "image": "images/forms/shrubclaw-mudflat-form.png",
           "abilities": {
             "Earth": 3,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
+        },
+        {
+          "form_name": "Beach Form",
+          "element_display": "Earth 3 / Grass 2",
+          "catch_rate": "28%",
+          "region": "Echoback Landing",
+          "elements": {
+            "Earth": 3,
+            "Grass": 2
+          },
+          "image": "images/forms/shrubclaw-beach-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Grass": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
+        },
+        {
+          "form_name": "Bay Form",
+          "element_display": "Earth 3 / Grass 2",
+          "catch_rate": "28%",
+          "region": "The Argent Strait",
+          "elements": {
+            "Earth": 3,
+            "Grass": 2
+          },
+          "image": "images/forms/shrubclaw-bay-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Grass": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mudflat Form",
+      "Beach Form",
+      "Bay Form"
+    ]
+  },
+  {
+    "id": "025",
+    "dex_number": "025",
+    "display_id": "#025",
+    "name": "Geoclaw",
+    "slug": "geoclaw",
+    "is_unnumbered": false,
+    "image": "images/geoclaw.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geoclaw-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Frostbite Sunder",
+    "trait_effect": "Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff].",
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6×)",
+        "Earth (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Ice 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Ice": 3
+        },
+        "image": "images/geoclaw.png",
+        "abilities": {
+          "Ice": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "026",
+    "dex_number": "026",
+    "display_id": "#026",
+    "name": "Sparki",
+    "slug": "sparki",
+    "is_unnumbered": false,
+    "image": "images/sparki.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Blazing Flames",
+    "trait_effect": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff].",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 2",
+        "catch_rate": "56%",
+        "region": "Nimbus Fields, Beast Fang Ridge, Blitzwood",
+        "elements": {
+          "Fire": 2
+        },
+        "image": "images/forms/sparki-basic-form-base.png",
+        "abilities": {
+          "Fire": 2
+        },
+        "utilities": {}
+      },
+      "regional": [
+        {
+          "form_name": "Highland Form",
+          "element_display": "Fire 1",
+          "catch_rate": "56%",
+          "region": "Russet Highlands, Berylline Vale",
+          "elements": {
+            "Fire": 1
+          },
+          "image": "images/forms/sparki-highland-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Forest Form",
+          "element_display": "Fire 1",
+          "catch_rate": "50%",
+          "region": "The Mistwoods, Berylline Vale, Driftwise Meadow",
+          "elements": {
+            "Fire": 1
+          },
+          "image": "images/forms/sparki-forest-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Fire 1",
+          "catch_rate": "50%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Fire": 1
+          },
+          "image": "images/forms/sparki-sea-of-flowers-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Forest Form",
+      "Sea of Flowers Form"
+    ]
+  },
+  {
+    "id": "027",
+    "dex_number": "027",
+    "display_id": "#027",
+    "name": "Flamerion",
+    "slug": "flamerion",
+    "is_unnumbered": false,
+    "image": "images/flamerion.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Blazing Flames",
+    "trait_effect": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff].",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 3",
+        "catch_rate": "28%",
+        "region": "Beast Fang Ridge",
+        "elements": {
+          "Fire": 3
+        },
+        "image": "images/forms/flamerion-basic-form-base.png",
+        "abilities": {
+          "Fire": 3
+        },
+        "utilities": {}
+      },
+      "regional": [
+        {
+          "form_name": "Highland Form",
+          "element_display": "Fire 3",
+          "catch_rate": "28%",
+          "region": "Berylline Vale",
+          "elements": {
+            "Fire": 3
+          },
+          "image": "images/forms/flamerion-highland-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        },
+        {
+          "form_name": "Forest Form",
+          "element_display": "Fire 3",
+          "catch_rate": "25%",
+          "region": "The Mistwoods, Berylline Vale, Driftwise Meadow",
+          "elements": {
+            "Fire": 3
+          },
+          "image": "images/forms/flamerion-forest-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        },
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Fire 3",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Fire": 3
+          },
+          "image": "images/forms/flamerion-sea-of-flowers-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Highland Form",
+      "Forest Form",
+      "Sea of Flowers Form"
+    ]
+  },
+  {
+    "id": "028",
+    "dex_number": "028",
+    "display_id": "#028",
+    "name": "Flutternym",
+    "slug": "flutternym",
+    "is_unnumbered": false,
+    "image": "images/flutternym.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym-handbook.png",
+    "tier": "C-Tier",
+    "trait": "**Flutter Heal**",
+    "trait_effect": "When entering battle as the active Aniimo, increases healing by X%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to X% of max HP.",
+    "matchups": {
+      "weak_to": [
+        "Lightning 1.6× · Light 1.6×"
+      ],
+      "resists": [
+        "Dark 0.625× · Wind 0.625×"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 1",
+        "catch_rate": "56%",
+        "region": "Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood",
+        "elements": {
+          "Wind": 1
+        },
+        "image": "images/forms/flutternym-basic-form-base.png",
+        "abilities": {
+          "Wind": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Wind 1 / Grass 1",
+          "catch_rate": "56%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Wind": 1,
+            "Grass": 1
+          },
+          "image": "images/forms/flutternym-sea-of-flowers-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Grass": 1,
+            "Leisure": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Leisure": 1,
+            "Carry": 1
+          }
+        },
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Wind 1 / Dark 1",
+          "catch_rate": "56%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Wind": 1,
+            "Dark": 1
+          },
+          "image": "images/forms/flutternym-nighttime-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Dark": 1,
+            "Leisure": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Leisure": 1,
+            "Carry": 1
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Wind 1 / Earth 1",
+          "catch_rate": "56%",
+          "region": "Beast Fang Ridge, Blitzwood",
+          "elements": {
+            "Wind": 1,
+            "Earth": 1
+          },
+          "image": "images/forms/flutternym-mountain-woods-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Earth": 1,
+            "Leisure": 1,
+            "Artisanship": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Leisure": 1,
+            "Artisanship": 1,
+            "Carry": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Sea of Flowers Form",
+      "Nighttime Form",
+      "Mountain Woods Form"
+    ]
+  },
+  {
+    "id": "029",
+    "dex_number": "029",
+    "display_id": "#029",
+    "name": "Gracewing",
+    "slug": "gracewing",
+    "is_unnumbered": false,
+    "image": "images/gracewing.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Flutter Heal**",
+    "trait_effect": "When entering battle as the active Aniimo, increases healing by X%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to X% of max HP.",
+    "matchups": {
+      "weak_to": [
+        "Lightning 1.6× · Light 1.6×"
+      ],
+      "resists": [
+        "Dark 0.625× · Wind 0.625×"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 3",
+        "catch_rate": "28%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Wind": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        },
+        "abilities": {
+          "Wind": 3,
+          "Leisure": 3
+        },
+        "image": "images/forms/gracewing-basic-form-base.png"
+      },
+      "regional": [
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Wind 3 / Grass 2",
+          "catch_rate": "25%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Wind": 3,
+            "Grass": 2
+          },
+          "utilities": {
+            "Leisure": 3
+          },
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Leisure": 3
+          },
+          "image": "images/forms/gracewing-sea-of-flowers-form.png"
+        },
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Wind 3 / Dark 2",
+          "catch_rate": "28%",
+          "region": "Idyll (Night)",
+          "elements": {
+            "Wind": 3,
+            "Dark": 2
+          },
+          "utilities": {
+            "Leisure": 3
+          },
+          "abilities": {
+            "Wind": 3,
+            "Dark": 2,
+            "Leisure": 3
+          },
+          "image": "images/forms/gracewing-nighttime-form.png"
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Wind 3 / Earth 2",
+          "catch_rate": "25%",
+          "region": "Beast Fang Ridge, Blitzwood",
+          "elements": {
+            "Wind": 3,
+            "Earth": 2
+          },
+          "utilities": {
+            "Leisure": 3
+          },
+          "abilities": {
+            "Wind": 3,
+            "Earth": 2,
+            "Leisure": 3
+          },
+          "image": "images/forms/gracewing-mountain-woods-form.png"
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Sea of Flowers Form",
+      "Nighttime Form",
+      "Mountain Woods Form"
+    ]
+  },
+  {
+    "id": "030",
+    "dex_number": "030",
+    "display_id": "#030",
+    "name": "Somniwing",
+    "slug": "somniwing",
+    "is_unnumbered": false,
+    "image": "images/somniwing.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-somniwing-handbook.png",
+    "tier": "S-Tier",
+    "trait": "**Energy Full**",
+    "trait_effect": "Increases max EP by X.",
+    "matchups": {
+      "weak_to": [
+        "Lightning 1.6× · Light 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Earth 0.625×"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Prismana Form",
+        "element_display": "Grass 4 / Wind 3",
+        "catch_rate": "28%",
+        "region": "Idyll Prismana Flow",
+        "elements": {
+          "Grass": 4,
+          "Wind": 3
+        },
+        "image": "images/somniwing.png",
+        "abilities": {
+          "Grass": 4,
+          "Wind": 3,
+          "Leisure": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana Form",
+        "element_display": "Grass 4 / Wind 3",
+        "catch_rate": "28%",
+        "region": "Idyll Prismana Flow",
+        "elements": {
+          "Grass": 4,
+          "Wind": 3
+        },
+        "image": "images/somniwing.png",
+        "abilities": {
+          "Grass": 4,
+          "Wind": 3,
+          "Leisure": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Prismana Form"
+    ]
+  },
+  {
+    "id": "031",
+    "dex_number": "031",
+    "display_id": "#031",
+    "name": "Eko",
+    "slug": "eko",
+    "is_unnumbered": false,
+    "image": "images/eko.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eko-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Judgment Storm",
+    "trait_effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Wind 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Wind": 1
+        },
+        "image": "images/forms/eko-basic-form.png",
+        "abilities": {
+          "Wind": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "032",
+    "dex_number": "032",
+    "display_id": "#032",
+    "name": "Eklue",
+    "slug": "eklue",
+    "is_unnumbered": false,
+    "image": "images/eklue.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eklue-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Judgment Storm",
+    "trait_effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Wind 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Wind": 3
+        },
+        "image": "images/forms/eklue-basic-form.png",
+        "abilities": {
+          "Wind": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "033",
+    "dex_number": "033",
+    "display_id": "#033",
+    "name": "Budsquire",
+    "slug": "budsquire",
+    "is_unnumbered": false,
+    "image": "images/budsquire.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-budsquire-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Sword Dance",
+    "trait_effect": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 1",
+        "catch_rate": "50%",
+        "region": "Sea of Flowers, Rosetower Woods",
+        "elements": {
+          "Grass": 1
+        },
+        "image": "images/forms/budsquire-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Towerwood Form",
+          "element_display": "Grass 1",
+          "catch_rate": "50%",
+          "region": "Rosetower Woods",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/budsquire-towerwood-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Towerwood Form"
+    ]
+  },
+  {
+    "id": "034",
+    "dex_number": "034",
+    "display_id": "#034",
+    "name": "Thornblade",
+    "slug": "thornblade",
+    "is_unnumbered": false,
+    "image": "images/thornblade.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Sword Dance",
+    "trait_effect": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 3",
+        "catch_rate": "25%",
+        "region": "Sea of Flowers",
+        "elements": {
+          "Grass": 3
+        },
+        "image": "images/forms/thornblade-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Towerwood Form",
+          "element_display": "Grass 3",
+          "catch_rate": "28%",
+          "region": "Rosetower Woods",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/thornblade-towerwood-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        }
+      ],
+      "weather": [
+        {
+          "form_name": "Thunderstorm Form",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Sea of Flowers",
+          "elements": {
+            "Grass": 3
+          },
+          "image": "images/forms/thornblade-thunderstorm-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        }
+      ],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Grass 4 / Water 4",
+        "catch_rate": "25%",
+        "region": "Sea of Flowers",
+        "elements": {
+          "Grass": 4,
+          "Water": 4
+        },
+        "image": "images/forms/thornblade-prismana.png",
+        "abilities": {
+          "Grass": 4,
+          "Water": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Towerwood Form",
+      "Thunderstorm Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "035",
+    "dex_number": "035",
+    "display_id": "#035",
+    "name": "Melloblum",
+    "slug": "melloblum",
+    "is_unnumbered": false,
+    "image": "images/melloblum.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-melloblum-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Phantom Opening",
+    "trait_effect": "When a party member deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by X.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 3",
+        "catch_rate": "25%",
+        "region": "Rosetower Woods",
+        "elements": {
+          "Grass": 3
+        },
+        "image": "images/forms/melloblum-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Grass 4",
+        "catch_rate": "25%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 4
+        },
+        "image": "images/forms/melloblum-prismana.png",
+        "abilities": {
+          "Grass": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "036",
+    "dex_number": "036",
+    "display_id": "#036",
+    "name": "Pomegg",
+    "slug": "pomegg",
+    "is_unnumbered": false,
+    "image": "images/pomegg.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Tuning",
+    "trait_effect": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases Crit Rate by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 1",
+        "catch_rate": "50%",
+        "region": "Rosetower Woods",
+        "elements": {
+          "Grass": 1
+        },
+        "image": "images/forms/pomegg-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Grass 1 / Ice 1",
+          "catch_rate": "38%",
+          "region": "Rosetower Woods, Driftwise Meadow",
+          "elements": {
+            "Grass": 1,
+            "Ice": 1
+          },
+          "image": "images/forms/pomegg-snowfield-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Ice": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Grass 1",
+          "catch_rate": "50%",
+          "region": "Zephyrus Landbridge, Beast Fang Ridge",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/pomegg-highland-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Grass 1",
+          "catch_rate": "50%",
+          "region": "Tideblossom Coast, Forest of Falling Stars",
+          "elements": {
+            "Grass": 1
+          },
+          "image": "images/forms/pomegg-sea-of-flowers-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form",
+      "Highland Form",
+      "Sea of Flowers Form"
+    ]
+  },
+  {
+    "id": "037",
+    "dex_number": "037",
+    "display_id": "#037",
+    "name": "Pomawk",
+    "slug": "pomawk",
+    "is_unnumbered": false,
+    "image": "images/pomawk.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Tuning",
+    "trait_effect": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases Crit Rate by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Grass 3",
+        "catch_rate": "25%",
+        "region": "Rosetower Woods",
+        "elements": {
+          "Grass": 3
+        },
+        "image": "images/forms/pomawk-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Grass 3 / Ice 2",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Grass": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/pomawk-snowfield-form.png",
+          "abilities": {
+            "Grass": 3,
             "Ice": 2,
             "Artisanship": 3
           },
-          "perk": "Frost Chiseling: Gemstone polishing yields higher quality jewelry components."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Waleetle",
-        "element": "Earth / Prismatic",
-        "condition": "Special Prismana In-game Event",
-        "abilities": {
-          "Earth": 4,
-          "Artisanship": 3,
-          "Carry": 3
+          "utilities": {
+            "Artisanship": 3
+          }
         },
-        "perk": "Core Excavator: +40% rare ore extraction rate and +25% building construction speed."
-      }
-    }
-  },
-  {
-    "id": "058",
-    "name": "Bouldus",
-    "stage": "Nova",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Baleetle -> Bouldus",
-    "best_role": "Apex Heavy Quarry Extraction & Iron Vein Pulverizing",
-    "forms": {
-      "basic": {
-        "name": "Bouldus (Standard)",
-        "element": "Earth",
-        "condition": "Evolves from Baleetle",
-        "abilities": {
-          "Earth": 4,
-          "Carry": 3
-        },
-        "perk": "Living quarry hammer: shatters large iron and quartz nodes with massive blows."
-      },
-      "weather": [
         {
-          "name": "Bouldus (Sandstorm)",
-          "element": "Earth / Fire",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 4,
-            "Fire": 1,
-            "Carry": 3
+          "form_name": "Highland Form",
+          "element_display": "Grass 3",
+          "catch_rate": "16%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Grass": 3
           },
-          "perk": "Friction Crusher: Crushes raw stone into pre-smelted furnace flux."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Bouldus",
-        "element": "Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 5,
-          "Carry": 3
+          "image": "images/forms/pomawk-highland-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         },
-        "perk": "Titan Quarry: Highest base mining speed in the entire game; unbreakable worker stamina."
-      }
-    }
-  },
-  {
-    "id": "059",
-    "name": "Fentuft",
-    "stage": "Lumin",
-    "element": "Lightning",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Fentuft -> Fenmane",
-    "best_role": "Static Electricity Spinning & Wool Hauling",
-    "forms": {
-      "basic": {
-        "name": "Fentuft (Standard)",
-        "element": "Lightning",
-        "condition": "Thunder Steppes",
-        "abilities": {
-          "Lightning": 1,
-          "Carry": 1,
-          "Artisanship": 1
-        },
-        "perk": "Generates static electricity to spin wool into shock-resistant yarn."
-      },
-      "weather": [
         {
-          "name": "Fentuft (Thunderstorm)",
-          "element": "Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 2,
-            "Carry": 1
+          "form_name": "Sea of Flowers Form",
+          "element_display": "Grass 3",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Grass": 3
           },
-          "perk": "Static charge triples yarn spinning speed during storms."
+          "image": "images/forms/pomawk-sea-of-flowers-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Fentuft",
-        "element": "Lightning / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 2,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Golden Fleece: Yields high-value golden fleece periodically in pens."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form",
+      "Highland Form",
+      "Sea of Flowers Form"
+    ]
   },
   {
-    "id": "060",
-    "name": "Fenmane",
-    "stage": "Nova",
-    "element": "Lightning",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Fentuft -> Fenmane",
-    "best_role": "High-Voltage Power Stations & Automated Looms",
+    "id": "038",
+    "dex_number": "038",
+    "display_id": "#038",
+    "name": "Dewy",
+    "slug": "dewy",
+    "is_unnumbered": false,
+    "image": "images/dewy.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dewy-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Dangerous Fragrance",
+    "trait_effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Fenmane (Standard)",
-        "element": "Lightning",
-        "condition": "Reach Level 32",
-        "abilities": {
-          "Lightning": 3,
-          "Artisanship": 2,
-          "Carry": 2
+        "form_name": "Basic Form",
+        "element_display": "Dark 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Dark": 1
         },
-        "perk": "Powers high-draw textile machinery and industrial lighting grids."
+        "image": "images/forms/dewy-basic-form.png",
+        "abilities": {
+          "Dark": 1,
+          "Leisure": 1,
+          "Perfumery": 1
+        },
+        "utilities": {
+          "Leisure": 1,
+          "Perfumery": 1
+        }
       },
-      "weather": [
-        {
-          "name": "Fenmane (Thunderstorm)",
-          "element": "Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 4,
-            "Artisanship": 2,
-            "Carry": 2
-          },
-          "perk": "Overcharge Loom: Weaving speed +40% with zero electrical grid draw."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Fenmane",
-        "element": "Lightning / Light / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 4,
-          "Light": 2,
-          "Artisanship": 3
-        },
-        "perk": "Lightning Mane: Powers machines continuously even through nighttime blackouts."
-      }
-    }
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
-    "id": "061",
-    "name": "Helmut",
-    "stage": "Lumin",
-    "element": "Dark",
-    "secondary_element": "Ice",
-    "role": "Break",
-    "evolution_line": "Helmut -> Pawney / Rookey",
-    "best_role": "Starter Armor Forging & Heavy Shield Carving",
+    "id": "039",
+    "dex_number": "039",
+    "display_id": "#039",
+    "name": "Fragrancier",
+    "slug": "fragrancier",
+    "is_unnumbered": false,
+    "image": "images/fragrancier.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fragrancier-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Dangerous Fragrance",
+    "trait_effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Helmut (Standard)",
-        "element": "Dark / Ice",
-        "condition": "Glacier Pass",
+        "form_name": "Basic Form",
+        "element_display": "Dark 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Dark": 3
+        },
+        "image": "images/forms/fragrancier-basic-form.png",
         "abilities": {
-          "Ice": 1,
+          "Dark": 3,
+          "Perfumery": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Leisure": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "040",
+    "dex_number": "040",
+    "display_id": "#040",
+    "name": "Wisptis",
+    "slug": "wisptis",
+    "is_unnumbered": false,
+    "image": "images/wisptis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-wisptis-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Battle Fervor",
+    "trait_effect": "Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Dark 1",
+        "catch_rate": "44%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Dark": 1
+        },
+        "image": "images/forms/wisptis-basic-form-base.png",
+        "abilities": {
           "Dark": 1,
           "Artisanship": 1
         },
-        "perk": "Sturdy helmet creature that reinforces building barricades and gates."
+        "utilities": {
+          "Artisanship": 1
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Helmut (Blizzard)",
-          "element": "Ice / Dark",
-          "condition": "Blizzard",
+          "form_name": "Forest Form",
+          "element_display": "Dark 1 / Grass 1",
+          "catch_rate": "50%",
+          "region": "The Mistwoods",
+          "elements": {
+            "Dark": 1,
+            "Grass": 1
+          },
+          "image": "images/forms/wisptis-forest-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Dark 1 / Fire 1",
+          "catch_rate": "44%",
+          "region": "Zephyrus Landbridge, Blitzwood",
+          "elements": {
+            "Dark": 1,
+            "Fire": 1
+          },
+          "image": "images/forms/wisptis-highland-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Fire": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Forest Form",
+      "Highland Form"
+    ]
+  },
+  {
+    "id": "041",
+    "dex_number": "041",
+    "display_id": "#041",
+    "name": "Ignitis",
+    "slug": "ignitis",
+    "is_unnumbered": false,
+    "image": "images/ignitis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Battle Fervor",
+    "trait_effect": "Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Dark 3",
+        "catch_rate": "22%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Dark": 3
+        },
+        "image": "images/forms/ignitis-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Forest Form",
+          "element_display": "Dark 3 / Grass 2",
+          "catch_rate": "25%",
+          "region": "The Mistwoods",
+          "elements": {
+            "Dark": 3,
+            "Grass": 2
+          },
+          "image": "images/forms/ignitis-forest-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Grass": 2,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        },
+        {
+          "form_name": "Highland Form",
+          "element_display": "Dark 3 / Fire 2",
+          "catch_rate": "22%",
+          "region": "Zephyrus Landbridge, Blitzwood",
+          "elements": {
+            "Dark": 3,
+            "Fire": 2
+          },
+          "image": "images/forms/ignitis-highland-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Fire": 2,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Dark 4 / Fire 4",
+        "catch_rate": "22%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Dark": 4,
+          "Fire": 4
+        },
+        "image": "images/forms/ignitis-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Fire": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Forest Form",
+      "Highland Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "042",
+    "dex_number": "042",
+    "display_id": "#042",
+    "name": "Bonesky",
+    "slug": "bonesky",
+    "is_unnumbered": false,
+    "image": "images/bonesky.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bonesky-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Biting Wind",
+    "trait_effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.",
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6×)",
+        "Earth (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Ice 1",
+        "catch_rate": "50%",
+        "region": "Beast Fang Ridge, Driftwise Meadow",
+        "elements": {
+          "Ice": 1
+        },
+        "image": "images/forms/bonesky-basic-form-base.png",
+        "abilities": {
+          "Ice": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Ice 1 / Dark 1",
+          "catch_rate": "50%",
+          "region": "Rosetower Woods",
+          "elements": {
+            "Ice": 1,
+            "Dark": 1
+          },
+          "image": "images/forms/bonesky-nighttime-form.png",
+          "abilities": {
+            "Ice": 1,
+            "Dark": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form"
+    ]
+  },
+  {
+    "id": "043",
+    "dex_number": "043",
+    "display_id": "#043",
+    "name": "Fenrier",
+    "slug": "fenrier",
+    "is_unnumbered": false,
+    "image": "images/fenrier.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fenrier-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Biting Wind",
+    "trait_effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.",
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6×)",
+        "Earth (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Ice 2",
+        "catch_rate": "38%",
+        "region": "Beast Fang Ridge, Driftwise Meadow",
+        "elements": {
+          "Ice": 2
+        },
+        "image": "images/forms/fenrier-basic-form-base.png",
+        "abilities": {
+          "Ice": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Ice 2 / Dark 1",
+          "catch_rate": "38%",
+          "region": "Rosetower Woods",
+          "elements": {
+            "Ice": 2,
+            "Dark": 1
+          },
+          "image": "images/forms/fenrier-nighttime-form.png",
           "abilities": {
             "Ice": 2,
             "Dark": 1,
-            "Artisanship": 1
+            "Carry": 2
           },
-          "perk": "Ice Armor: Immune to freezing weather cold penalties."
+          "utilities": {
+            "Carry": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form"
+    ]
+  },
+  {
+    "id": "044",
+    "dex_number": "044",
+    "display_id": "#044",
+    "name": "Glynsera",
+    "slug": "glynsera",
+    "is_unnumbered": false,
+    "image": "images/glynsera.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-glynsera-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Biting Wind",
+    "trait_effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.",
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6×)",
+        "Earth (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Ice 3",
+        "catch_rate": "25%",
+        "region": "Beast Fang Ridge",
+        "elements": {
+          "Ice": 3
+        },
+        "image": "images/forms/glynsera-basic-form-base.png",
+        "abilities": {
+          "Ice": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Ice 3 / Dark 2",
+          "catch_rate": "25%",
+          "region": "Rosetower Woods",
+          "elements": {
+            "Ice": 3,
+            "Dark": 2
+          },
+          "image": "images/forms/glynsera-nighttime-form.png",
+          "abilities": {
+            "Ice": 3,
+            "Dark": 2,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Ice 4",
+        "catch_rate": "25%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Ice": 4
+        },
+        "image": "images/forms/glynsera-prismana.png",
+        "abilities": {
+          "Ice": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "045",
+    "dex_number": "045",
+    "display_id": "#045",
+    "name": "Bolty",
+    "slug": "bolty",
+    "is_unnumbered": false,
+    "image": "images/bolty.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bolty-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Power Sustain",
+    "trait_effect": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Lightning 1",
+        "catch_rate": "44%",
+        "region": "Blitzwood",
+        "elements": {
+          "Lightning": 1
+        },
+        "image": "images/forms/bolty-basic-form-base.png",
+        "abilities": {
+          "Lightning": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Lightning 1",
+          "catch_rate": "50%",
+          "region": "Blitzwood",
+          "elements": {
+            "Lightning": 1
+          },
+          "image": "images/forms/bolty-mountain-woods-form.png",
+          "abilities": {
+            "Lightning": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Woods Form"
+    ]
+  },
+  {
+    "id": "046",
+    "dex_number": "046",
+    "display_id": "#046",
+    "name": "Blazen",
+    "slug": "blazen",
+    "is_unnumbered": false,
+    "image": "images/blazen.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-blazen-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Power Sustain",
+    "trait_effect": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Lightning 3",
+        "catch_rate": "22%",
+        "region": "Blitzwood",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "images/forms/blazen-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Lightning 3",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Lightning": 3
+          },
+          "image": "images/forms/blazen-mountain-woods-form.png",
+          "abilities": {
+            "Lightning": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Lightning 4",
+        "catch_rate": "25%",
+        "region": "Blitzwood",
+        "elements": {
+          "Lightning": 4
+        },
+        "image": "images/forms/blazen-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Woods Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "047",
+    "dex_number": "047",
+    "display_id": "#047",
+    "name": "Squarrel",
+    "slug": "squarrel",
+    "is_unnumbered": false,
+    "image": "images/squarrel.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-squarrel-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Raging Fire",
+    "trait_effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Fire 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 1
+        },
+        "image": "images/forms/squarrel-basic-form.png",
+        "abilities": {
+          "Fire": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "048",
+    "dex_number": "048",
+    "display_id": "#048",
+    "name": "Squashel",
+    "slug": "squashel",
+    "is_unnumbered": false,
+    "image": "images/squashel.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-squashel-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Raging Fire",
+    "trait_effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Fire 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 2
+        },
+        "image": "images/forms/squashel-basic-form.png",
+        "abilities": {
+          "Fire": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "049",
+    "dex_number": "049",
+    "display_id": "#049",
+    "name": "Susuta",
+    "slug": "susuta",
+    "is_unnumbered": false,
+    "image": "images/susuta.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-susuta-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Appeal",
+    "trait_effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 1",
+        "catch_rate": "38%",
+        "region": "Echoback Landing",
+        "elements": {
+          "Water": 1
+        },
+        "image": "images/forms/susuta-basic-form-base.png",
+        "abilities": {
+          "Water": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Water 1",
+          "catch_rate": "44%",
+          "region": "Echoback Landing",
+          "elements": {
+            "Water": 1
+          },
+          "image": "images/forms/susuta-nighttime-form.png",
+          "abilities": {
+            "Water": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        },
+        {
+          "form_name": "Basic Form (variant record)",
+          "element_display": "Water 1",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Water": 1
+          },
+          "image": "images/forms/susuta-basic-form-variant-record.png",
+          "abilities": {
+            "Water": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form",
+      "Basic Form (variant record)"
+    ]
+  },
+  {
+    "id": "050",
+    "dex_number": "050",
+    "display_id": "#050",
+    "name": "Popota",
+    "slug": "popota",
+    "is_unnumbered": false,
+    "image": "images/popota.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-popota-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Appeal",
+    "trait_effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 2",
+        "catch_rate": "29%",
+        "region": "Echoback Landing",
+        "elements": {
+          "Water": 2
+        },
+        "image": "images/forms/popota-basic-form-base.png",
+        "abilities": {
+          "Water": 2,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Leisure": 2
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Water 2",
+          "catch_rate": "33%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Water": 2
+          },
+          "image": "images/forms/popota-nighttime-form.png",
+          "abilities": {
+            "Water": 2,
+            "Leisure": 2
+          },
+          "utilities": {
+            "Leisure": 2
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form"
+    ]
+  },
+  {
+    "id": "051",
+    "dex_number": "051",
+    "display_id": "#051",
+    "name": "Piopiota",
+    "slug": "piopiota",
+    "is_unnumbered": false,
+    "image": "images/piopiota.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-piopiota-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Radiant Charm",
+    "trait_effect": "Increases Water damage byX for all opposite-sex Aniimo in the party.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 3",
+        "catch_rate": "19%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 3
+        },
+        "image": "images/forms/piopiota-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Water 3 / Dark 2",
+          "catch_rate": "22%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Water": 3,
+            "Dark": 2
+          },
+          "image": "images/forms/piopiota-nighttime-form.png",
+          "abilities": {
+            "Water": 3,
+            "Dark": 2,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form"
+    ]
+  },
+  {
+    "id": "052",
+    "dex_number": "052",
+    "display_id": "#052",
+    "name": "Panpanta",
+    "slug": "panpanta",
+    "is_unnumbered": false,
+    "image": "images/panpanta.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-panpanta-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Appeal",
+    "trait_effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 3",
+        "catch_rate": "19%",
+        "region": "Echoback Landing",
+        "elements": {
+          "Water": 3
+        },
+        "image": "images/forms/panpanta-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Nighttime Form",
+          "element_display": "Water 3",
+          "catch_rate": "22%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Water": 3
+          },
+          "image": "images/forms/panpanta-nighttime-form.png",
+          "abilities": {
+            "Water": 3,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Water 4",
+        "catch_rate": "22%",
+        "region": "Echoback Landing",
+        "elements": {
+          "Water": 4
+        },
+        "image": "images/forms/panpanta-prismana.png",
+        "abilities": {
+          "Water": 4,
+          "Leisure": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Nighttime Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "053",
+    "dex_number": "053",
+    "display_id": "#053",
+    "name": "Shelly",
+    "slug": "shelly",
+    "is_unnumbered": false,
+    "image": "images/shelly.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shelly-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Tidal Heart",
+    "trait_effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 1",
+        "catch_rate": "38%",
+        "region": "Echoback Landing",
+        "elements": {
+          "Water": 1
+        },
+        "image": "images/forms/shelly-basic-form-base.png",
+        "abilities": {
+          "Water": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Basic Form (variant record)",
+          "element_display": "Water 1",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Water": 1
+          },
+          "image": "images/shelly.png",
+          "abilities": {
+            "Water": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Basic Form (variant record)"
+    ]
+  },
+  {
+    "id": "054",
+    "dex_number": "054",
+    "display_id": "#054",
+    "name": "Sheldon",
+    "slug": "sheldon",
+    "is_unnumbered": false,
+    "image": "images/sheldon.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sheldon-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Tidal Heart",
+    "trait_effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Water 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 2
+        },
+        "image": "images/forms/sheldon-basic-form.png",
+        "abilities": {
+          "Water": 2,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Leisure": 2
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "055",
+    "dex_number": "055",
+    "display_id": "#055",
+    "name": "Sherro",
+    "slug": "sherro",
+    "is_unnumbered": false,
+    "image": "images/sherro.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sherro-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Tidal Heart",
+    "trait_effect": "While in water terrain or after absorbing water, increases Water Elemental Boost by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Water 3",
+        "catch_rate": "19%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 3
+        },
+        "image": "images/forms/sherro-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
+      },
+      "regional": [],
+      "weather": [
+        {
+          "form_name": "Thunderstorm Form",
+          "element_display": "Water 3 / Lightning 2",
+          "catch_rate": "22%",
+          "region": "Echoback Landing",
+          "elements": {
+            "Water": 3,
+            "Lightning": 2
+          },
+          "image": "images/forms/sherro-thunderstorm-form.png",
+          "abilities": {
+            "Water": 3,
+            "Lightning": 2,
+            "Leisure": 3
+          },
+          "utilities": {
+            "Leisure": 3
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Helmut",
-        "element": "Dark / Ice / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Dark": 2,
-          "Ice": 2,
-          "Artisanship": 2
+        "form_name": "Prismana",
+        "element_display": "Water 4",
+        "catch_rate": "22%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 4
         },
-        "perk": "Sturdy Crest: Crafted shields and helmets gain +20% defense rating."
+        "image": "images/forms/sherro-prismana.png",
+        "abilities": {
+          "Water": 4,
+          "Leisure": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Thunderstorm Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "056",
+    "dex_number": "056",
+    "display_id": "#056",
+    "name": "Baleetle",
+    "slug": "baleetle",
+    "is_unnumbered": false,
+    "image": "images/baleetle.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-baleetle-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Overloaded Engine",
+    "trait_effect": "Moving and using skills builds [Overload Energy]. When [Overload Energy] is full, the next skill gains X% bonus damage.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Earth 1",
+        "catch_rate": "38%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/baleetle-basic-form-base.png",
+        "abilities": {
+          "Earth": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Earth 1 / Ice 1",
+          "catch_rate": "38%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Earth": 1,
+            "Ice": 1
+          },
+          "image": "images/forms/baleetle-snowfield-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Ice": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form"
+    ]
+  },
+  {
+    "id": "057",
+    "dex_number": "057",
+    "display_id": "#057",
+    "name": "Waleetle",
+    "slug": "waleetle",
+    "is_unnumbered": false,
+    "image": "images/waleetle.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-waleetle-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Overloaded Engine",
+    "trait_effect": "Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals X% extra damage and immediately brings [Sandstorm Spin] to maximum speed.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Earth 3",
+        "catch_rate": "19%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Earth": 3
+        },
+        "image": "images/forms/waleetle-basic-form-base.png",
+        "abilities": {
+          "Earth": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Earth 3 / Ice 2",
+          "catch_rate": "19%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Earth": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/waleetle-snowfield-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Ice": 2,
+            "Carry": 3,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Earth 4",
+        "catch_rate": "19%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 4
+        },
+        "image": "images/forms/waleetle-prismana.png",
+        "abilities": {
+          "Earth": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "058",
+    "dex_number": "058",
+    "display_id": "#058",
+    "name": "Bouldus",
+    "slug": "bouldus",
+    "is_unnumbered": false,
+    "image": "images/bouldus.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bouldus-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Rock Empowerment",
+    "trait_effect": "[Rock Piles] created by Bouldus can be destroyed by Waleetle's [Stone Ball Drift], releasing shock waves and applying [Disintegration] to the target.[Disintegration]: Each stack reduces Earth Resistance by X and Movement Speed by X% for Xs, up to 6 stacks.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Earth 3",
+        "catch_rate": "19%",
+        "region": "Berylline Vale",
+        "elements": {
+          "Earth": 3
+        },
+        "image": "images/forms/bouldus-basic-form-base.png",
+        "abilities": {
+          "Earth": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Earth 3 / Ice 2",
+          "catch_rate": "19%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Earth": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/bouldus-snowfield-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Ice": 2,
+            "Carry": 3,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form"
+    ]
+  },
+  {
+    "id": "059",
+    "dex_number": "059",
+    "display_id": "#059",
+    "name": "Fentuft",
+    "slug": "fentuft",
+    "is_unnumbered": false,
+    "image": "images/fentuft.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fentuft-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Thunderbond",
+    "trait_effect": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Lightning 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 1
+        },
+        "image": "images/forms/fentuft-basic-form.png",
+        "abilities": {
+          "Lightning": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "060",
+    "dex_number": "060",
+    "display_id": "#060",
+    "name": "Fenmane",
+    "slug": "fenmane",
+    "is_unnumbered": false,
+    "image": "images/fenmane.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fenmane-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Thunderbond",
+    "trait_effect": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Lightning 3",
+        "catch_rate": "22%",
+        "region": "Driftwise Meadow",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "images/forms/fenmane-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Lightning 4",
+        "catch_rate": "22%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 4
+        },
+        "image": "images/forms/fenmane-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
+      }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "061",
+    "dex_number": "061",
+    "display_id": "#061",
+    "name": "Helmut",
+    "slug": "helmut",
+    "is_unnumbered": false,
+    "image": "images/helmut.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helmut-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Guardbreak Resonance",
+    "trait_effect": "Increases BREAK by X.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Dark 1",
+        "catch_rate": "56%",
+        "region": "Russet Highlands",
+        "elements": {
+          "Dark": 1
+        },
+        "image": "images/forms/helmut-basic-form-base.png",
+        "abilities": {
+          "Dark": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
+      },
+      "regional": [
+        {
+          "form_name": "Snowfield Form",
+          "element_display": "Dark 1 / Ice 1",
+          "catch_rate": "32%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Dark": 1,
+            "Ice": 1
+          },
+          "image": "images/forms/helmut-snowfield-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Ice": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Dark 1",
+          "catch_rate": "40%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Dark": 1
+          },
+          "image": "images/forms/helmut-mountain-woods-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
+        }
+      ],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form",
+      "Mountain Woods Form"
+    ]
   },
   {
     "id": "062",
+    "dex_number": "062",
+    "display_id": "#062",
     "name": "Pawney",
-    "stage": "Nova",
-    "element": "Dark",
-    "secondary_element": "Ice",
-    "role": "DPS",
-    "evolution_line": "Helmut -> Pawney",
-    "best_role": "Weapon Forging, Blade Sharpening & Night Patrol",
+    "slug": "pawney",
+    "is_unnumbered": false,
+    "image": "images/pawney.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pawney-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Pursuit",
+    "trait_effect": "When dealing damage to targets in Controlled or Break State, increases an additional X% Damage Amp.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Pawney (Standard)",
-        "element": "Dark / Ice",
-        "condition": "Pull Sword of Bravery at Lv 45",
+        "form_name": "Basic Form (base)",
+        "element_display": "Dark 3",
+        "catch_rate": "16%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Dark": 3
+        },
+        "image": "images/forms/pawney-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Ice": 2,
-          "Artisanship": 3
+          "Carry": 3
         },
-        "perk": "Swordsmith specialist: forges razor-sharp blades and alloy longswords."
+        "utilities": {
+          "Carry": 3
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Pawney (Nighttime)",
-          "element": "Dark / Ice",
-          "condition": "Night",
+          "form_name": "Snowfield Form",
+          "element_display": "Dark 3 / Ice 2",
+          "catch_rate": "28%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Dark": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/pawney-snowfield-form.png",
           "abilities": {
             "Dark": 3,
-            "Ice": 3,
-            "Artisanship": 3
+            "Ice": 2,
+            "Carry": 3
           },
-          "perk": "Moonlit Blade: Forges weapons with +15% bonus critical hit chance."
+          "utilities": {
+            "Carry": 3
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Dark 3",
+          "catch_rate": "16%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Dark": 3
+          },
+          "image": "images/forms/pawney-mountain-woods-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         }
       ],
+      "weather": [],
       "prismana": {
-        "name": "Prismana Pawney",
-        "element": "Dark / Ice / Prismatic",
-        "condition": "Prismana Flow weather",
+        "form_name": "Prismana",
+        "element_display": "Dark 4",
+        "catch_rate": "28%",
+        "region": "Russet Highlands",
+        "elements": {
+          "Dark": 4
+        },
+        "image": "images/forms/pawney-prismana.png",
         "abilities": {
           "Dark": 4,
-          "Ice": 3,
-          "Artisanship": 3
+          "Carry": 4
         },
-        "perk": "Champion's Blade: Weapon craft speed +40%; halves raw ingot consumption."
+        "utilities": {
+          "Carry": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form",
+      "Mountain Woods Form",
+      "Prismana"
+    ]
   },
   {
     "id": "063",
+    "dex_number": "063",
+    "display_id": "#063",
     "name": "Rookey",
-    "stage": "Nova",
-    "element": "Dark",
-    "secondary_element": "Ice",
-    "role": "Break",
-    "evolution_line": "Helmut -> Rookey",
-    "best_role": "Heavy Fortress Masonry, Bastion Gates & Rampart Construction",
+    "slug": "rookey",
+    "is_unnumbered": false,
+    "image": "images/rookey.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Guardbreak Resonance",
+    "trait_effect": "Increases BREAK by X.",
+    "matchups": {
+      "weak_to": [
+        "Light (1.6×)",
+        "Wind (1.6×)"
+      ],
+      "resists": [
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Rookey (Standard)",
-        "element": "Dark / Ice",
-        "condition": "Unwavering Rampart at Lv 45",
+        "form_name": "Basic Form (base)",
+        "element_display": "Dark 3",
+        "catch_rate": "16%",
+        "region": "Russet Highlands",
+        "elements": {
+          "Dark": 3
+        },
+        "image": "images/forms/rookey-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Earth": 3,
-          "Artisanship": 3
+          "Carry": 3
         },
-        "perk": "Massive guardian that erects towering stone ramparts and heavy fortress doors."
+        "utilities": {
+          "Carry": 3
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Rookey (Snowfield)",
-          "element": "Dark / Ice / Earth",
-          "condition": "Snowfield in Russet Highlands",
+          "form_name": "Snowfield Form",
+          "element_display": "Dark 3 / Ice 2",
+          "catch_rate": "19%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Dark": 3,
+            "Ice": 2
+          },
+          "image": "images/forms/rookey-snowfield-form.png",
           "abilities": {
-            "Earth": 3,
-            "Ice": 3,
+            "Dark": 3,
+            "Ice": 2,
+            "Carry": 3,
             "Artisanship": 3
           },
-          "perk": "Permafrost Bastion: Stone ramparts crafted gain immunity to siege damage."
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 3
+          }
+        },
+        {
+          "form_name": "Mountain Woods Form",
+          "element_display": "Dark 3",
+          "catch_rate": "19%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Dark": 3
+          },
+          "image": "images/forms/rookey-mountain-woods-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Carry": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 3
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Rookey",
-        "element": "Dark / Ice / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 4,
-          "Ice": 3,
-          "Artisanship": 4
-        },
-        "perk": "Titan Bastion: Homeland construction build time cut in half; 15% material refund."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Snowfield Form",
+      "Mountain Woods Form"
+    ]
   },
   {
     "id": "064",
+    "dex_number": "064",
+    "display_id": "#064",
     "name": "Jawling",
-    "stage": "Lumin",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Jawling -> Helmwhelp -> Helgon / Infergon",
-    "best_role": "Starter Wind Mill Cranking & Bone Crushing",
+    "slug": "jawling",
+    "is_unnumbered": false,
+    "image": "images/jawling.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-jawling-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Counter Strike",
+    "trait_effect": "After being attacked, increases BREAK efficiency by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Jawling (Standard)",
-        "element": "Wind",
-        "condition": "Dragon Spine",
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 1",
+        "catch_rate": "32%",
+        "region": "Russet Highlands",
+        "elements": {
+          "Wind": 1
+        },
+        "image": "images/forms/jawling-basic-form-base.png",
         "abilities": {
           "Wind": 1,
           "Carry": 1
         },
-        "perk": "Strong jaws crush hard bones and shells into mineral fertilizers."
+        "utilities": {
+          "Carry": 1
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Jawling (Storm)",
-          "element": "Wind",
-          "condition": "Wind Storm",
+          "form_name": "Mountain Form",
+          "element_display": "Wind 1",
+          "catch_rate": "38%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Wind": 1
+          },
+          "image": "images/forms/jawling-mountain-form.png",
           "abilities": {
-            "Wind": 2,
+            "Wind": 1,
             "Carry": 1
           },
-          "perk": "Gale Jaw: Fertilizer pulverizing speed doubled during wind storms."
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Jawling",
-        "element": "Wind / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 2,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Dragonet Spark: Organic fertilizer potency boosted by 25%."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Form"
+    ]
   },
   {
     "id": "065",
+    "dex_number": "065",
+    "display_id": "#065",
     "name": "Helmwhelp",
-    "stage": "Gamma",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Jawling -> Helmwhelp -> Helgon / Infergon",
-    "best_role": "Drafting Forge Bellows & Furnace Air Circulation",
+    "slug": "helmwhelp",
+    "is_unnumbered": false,
+    "image": "images/helmwhelp.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helmwhelp-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Counter Strike",
+    "trait_effect": "After being attacked, increases BREAK efficiency by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Helmwhelp (Standard)",
-        "element": "Wind",
-        "condition": "Reach Level 38",
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 2",
+        "catch_rate": "42%",
+        "region": "Russet Highlands",
+        "elements": {
+          "Wind": 2
+        },
+        "image": "images/forms/helmwhelp-basic-form-base.png",
         "abilities": {
           "Wind": 2,
-          "Fire": 1,
           "Carry": 2
         },
-        "perk": "Fledgling dragon that pumps forge bellows to increase furnace burn temperatures."
+        "utilities": {
+          "Carry": 2
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Helmwhelp (Highland Gale)",
-          "element": "Wind / Lightning",
-          "condition": "Highland Storm",
+          "form_name": "Mountain Form",
+          "element_display": "Wind 2",
+          "catch_rate": "42%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Wind": 2
+          },
+          "image": "images/forms/helmwhelp-mountain-form.png",
           "abilities": {
-            "Wind": 3,
-            "Lightning": 1,
+            "Wind": 2,
             "Carry": 2
           },
-          "perk": "Drafts strong gusts into smelteries, accelerating alloy melt speed."
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Helmwhelp",
-        "element": "Wind / Fire / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 3,
-          "Fire": 2,
-          "Carry": 2
-        },
-        "perk": "Dragon Bellows: Smelting fuel lasts 40% longer."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Form"
+    ]
   },
   {
     "id": "066",
+    "dex_number": "066",
+    "display_id": "#066",
     "name": "Helgon",
-    "stage": "Nova",
-    "element": "Wind",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Jawling -> Helmwhelp -> Helgon",
-    "best_role": "Apex Windmill Propulsion, Grain Refining & Air Logistics",
+    "slug": "helgon",
+    "is_unnumbered": false,
+    "image": "images/helgon.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helgon-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Counter Strike",
+    "trait_effect": "After being attacked, increases BREAK efficiency by X% for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Light (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Helgon (Standard)",
-        "element": "Wind",
-        "condition": "Open 30 Chests + Level 48",
-        "abilities": {
-          "Wind": 4,
-          "Carry": 3,
-          "Artisanship": 2
+        "form_name": "Basic Form (base)",
+        "element_display": "Wind 3",
+        "catch_rate": "28%",
+        "region": "Russet Highlands",
+        "elements": {
+          "Wind": 3
         },
-        "perk": "Massive wind dragon whose wingbeats power giant milling centers."
+        "image": "images/forms/helgon-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Helgon (Storm)",
-          "element": "Wind / Lightning",
-          "condition": "Gale Storm",
+          "form_name": "Mountain Form",
+          "element_display": "Wind 3",
+          "catch_rate": "19%",
+          "region": "Russet Highlands",
+          "elements": {
+            "Wind": 3
+          },
+          "image": "images/forms/helgon-mountain-form.png",
           "abilities": {
-            "Wind": 5,
-            "Lightning": 1,
+            "Wind": 3,
             "Carry": 3
           },
-          "perk": "Hurricane Draft: Windmill production quadrupled in gale conditions."
+          "utilities": {
+            "Carry": 3
+          }
         }
       ],
-      "prismana": {
-        "name": "Prismana Helgon",
-        "element": "Wind / Light / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Wind": 5,
-          "Light": 2,
-          "Carry": 4
-        },
-        "perk": "Tempest King: Halves flight travel time for all airborne haulers across base."
-      }
-    }
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Mountain Form"
+    ]
   },
   {
     "id": "067",
+    "dex_number": "067",
+    "display_id": "#067",
     "name": "Infergon",
-    "stage": "Nova",
-    "element": "Fire",
-    "secondary_element": "Wind",
-    "role": "DPS",
-    "evolution_line": "Jawling -> Helmwhelp -> Infergon",
-    "best_role": "Apex Dragonfire Blast Furnace & Titanium Metallurgy",
+    "slug": "infergon",
+    "is_unnumbered": false,
+    "image": "images/infergon.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-infergon-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Power of Fire",
+    "trait_effect": "Deals X% extra damage to targets with more than 5 stacks of Fire Debuff.",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Infergon (Standard)",
-        "element": "Fire / Wind",
-        "condition": "Defeat Omega Infergon + Level 48",
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 3",
+        "catch_rate": "19%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 3
+        },
+        "image": "images/forms/infergon-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Fire 4 / Wind 4",
+        "catch_rate": "19%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 4,
+          "Wind": 4
+        },
+        "image": "images/forms/infergon-prismana.png",
         "abilities": {
           "Fire": 4,
-          "Wind": 3,
-          "Artisanship": 3
-        },
-        "perk": "Apex dragonflame melts the densest cosmic ores in seconds."
-      },
-      "weather": [
-        {
-          "name": "Infergon (Heatwave)",
-          "element": "Fire / Wind",
-          "condition": "Volcanic Heatwave",
-          "abilities": {
-            "Fire": 5,
-            "Wind": 3,
-            "Artisanship": 3
-          },
-          "perk": "Infernal Crucible: Smelting rate +50% under extreme ambient temperatures."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Infergon",
-        "element": "Fire / Wind / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 5,
           "Wind": 4,
           "Artisanship": 4
         },
-        "perk": "Dragon God Flame: Instantaneous ore smelting with chance to duplicate refined ingots."
+        "utilities": {
+          "Artisanship": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
   },
   {
     "id": "068",
+    "dex_number": "068",
+    "display_id": "#068",
     "name": "Cubbo",
-    "stage": "Lumin",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Cubbo -> Grizbo",
-    "best_role": "Honey Gathering, Berry Shaking & Stone Moving",
+    "slug": "cubbo",
+    "is_unnumbered": false,
+    "image": "images/cubbo.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cubbo-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Raging Rampage",
+    "trait_effect": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Cubbo (Standard)",
-        "element": "Earth",
-        "condition": "Rosetower Woods",
+        "form_name": "Basic Form",
+        "element_display": "Earth 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/cubbo-basic-form.png",
         "abilities": {
           "Earth": 1,
-          "Grass": 1,
           "Carry": 1
         },
-        "perk": "Playful bear cub that retrieves wild honeycombs and shakes berry bushes."
-      },
-      "weather": [
-        {
-          "name": "Cubbo (Sunny)",
-          "element": "Earth",
-          "condition": "Sunny",
-          "abilities": {
-            "Earth": 1,
-            "Grass": 2,
-            "Carry": 1
-          },
-          "perk": "Honey and fruit harvest rate +30%."
+        "utilities": {
+          "Carry": 1
         }
-      ],
-      "prismana": {
-        "name": "Prismana Cubbo",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 2,
-          "Grass": 2,
-          "Leisure": 2
-        },
-        "perk": "Golden Honey: Yields rare golden honey that fully restores worker sanity."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "069",
+    "dex_number": "069",
+    "display_id": "#069",
     "name": "Grizbo",
-    "stage": "Nova",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Cubbo -> Grizbo",
-    "best_role": "Heavy Timber Logging, Boulder Shifting & Apiary Master",
+    "slug": "grizbo",
+    "is_unnumbered": false,
+    "image": "images/grizbo.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-grizbo-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Raging Rampage",
+    "trait_effect": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Grizbo (Standard)",
-        "element": "Earth",
-        "condition": "Reach Level 34",
+        "form_name": "Basic Form (base)",
+        "element_display": "Earth 3",
+        "catch_rate": "16%",
+        "region": "Rosetower Woods",
+        "elements": {
+          "Earth": 3
+        },
+        "image": "images/forms/grizbo-basic-form-base.png",
         "abilities": {
           "Earth": 3,
-          "Grass": 2,
           "Carry": 3
         },
-        "perk": "Massive grizzly that uproots whole tree stumps and moves colossal boulders."
-      },
-      "weather": [
-        {
-          "name": "Grizbo (Rainstorm)",
-          "element": "Earth / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Earth": 3,
-            "Water": 1,
-            "Carry": 3
-          },
-          "perk": "Mud Bulldozer: Clears wet ground obstructions without slowing down."
+        "utilities": {
+          "Carry": 3
         }
-      ],
+      },
+      "regional": [],
+      "weather": [],
       "prismana": {
-        "name": "Prismana Grizbo",
-        "element": "Earth / Prismatic",
-        "condition": "Prismana Flow weather",
+        "form_name": "Prismana",
+        "element_display": "Earth 4",
+        "catch_rate": "16%",
+        "region": "Rosetower Woods",
+        "elements": {
+          "Earth": 4
+        },
+        "image": "images/forms/grizbo-prismana.png",
         "abilities": {
           "Earth": 4,
-          "Grass": 3,
           "Carry": 4
         },
-        "perk": "Titan Grizzly: +40% logging output and carries giant tree trunks in one carry run."
+        "utilities": {
+          "Carry": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
   },
   {
     "id": "070",
+    "dex_number": "070",
+    "display_id": "#070",
     "name": "Pebbling",
-    "stage": "Lumin",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Pebbling -> Lavazar / Geodeback",
-    "best_role": "Starter Mineral Washing & Gravel Sifting",
+    "slug": "pebbling",
+    "is_unnumbered": false,
+    "image": "images/pebbling.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pebbling-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Earth Affinity",
+    "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Pebbling (Standard)",
-        "element": "Earth",
-        "condition": "Rocky Canyons",
+        "form_name": "Basic Form",
+        "element_display": "Earth 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/pebbling-basic-form.png",
         "abilities": {
           "Earth": 1,
           "Carry": 1
         },
-        "perk": "Sifts river gravel to isolate copper and tin nuggets."
-      },
-      "weather": [
-        {
-          "name": "Pebbling (Sandstorm)",
-          "element": "Earth",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 2,
-            "Carry": 1
-          },
-          "perk": "Gravel sifting speed doubled during dust storms."
+        "utilities": {
+          "Carry": 1
         }
-      ],
-      "prismana": {
-        "name": "Prismana Pebbling",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 2,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Gem Fleck: Chance to find raw uncut gems in basic gravel piles."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "071",
+    "dex_number": "071",
+    "display_id": "#071",
     "name": "Lavazar",
-    "stage": "Gamma",
-    "element": "Fire",
-    "secondary_element": "Earth",
-    "role": "DPS",
-    "evolution_line": "Pebbling -> Lavazar -> Magmarex",
-    "best_role": "Lava Kiln Operation & Obsidian Smelting",
+    "slug": "lavazar",
+    "is_unnumbered": false,
+    "image": "images/lavazar.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lavazar-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Pyro Charge",
+    "trait_effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.",
+    "matchups": {
+      "weak_to": [
+        "Water (2.56×)"
+      ],
+      "resists": [
+        "Fire (0.391×)",
+        "Ice (0.391×)",
+        "Lightning (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Lavazar (Standard)",
-        "element": "Fire / Earth",
-        "condition": "Level 38 (Lava Branch)",
+        "form_name": "Basic Form",
+        "element_display": "Fire 2 / Earth 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 2,
+          "Earth": 1
+        },
+        "image": "images/forms/lavazar-basic-form.png",
         "abilities": {
           "Fire": 2,
-          "Earth": 2,
-          "Artisanship": 2
+          "Earth": 1,
+          "Carry": 2
         },
-        "perk": "Maintains bubbling molten rock channels to heat stone forges."
-      },
-      "weather": [
-        {
-          "name": "Lavazar (Heatwave)",
-          "element": "Fire / Earth",
-          "condition": "Volcanic Heatwave",
-          "abilities": {
-            "Fire": 3,
-            "Earth": 2,
-            "Artisanship": 2
-          },
-          "perk": "Lava Forge: Obsidian brick crafting speed +35%."
+        "utilities": {
+          "Carry": 2
         }
-      ],
-      "prismana": {
-        "name": "Prismana Lavazar",
-        "element": "Fire / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 3,
-          "Earth": 3,
-          "Artisanship": 3
-        },
-        "perk": "Molten Core: Never requires coal fuel to maintain forge heat."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "072",
+    "dex_number": "072",
+    "display_id": "#072",
     "name": "Magmarex",
-    "stage": "Nova",
-    "element": "Fire",
-    "secondary_element": "Earth",
-    "role": "Break",
-    "evolution_line": "Pebbling -> Lavazar -> Magmarex",
-    "best_role": "Apex Volcanic Smeltery & Heavy Crust Pulverizer",
+    "slug": "magmarex",
+    "is_unnumbered": false,
+    "image": "images/magmarex.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-magmarex-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Pyro Charge",
+    "trait_effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.",
+    "matchups": {
+      "weak_to": [
+        "Water (2.56×)"
+      ],
+      "resists": [
+        "Fire (0.391×)",
+        "Ice (0.391×)",
+        "Lightning (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Magmarex (Standard)",
-        "element": "Fire / Earth",
-        "condition": "Hot Spring Soak + Defeat Alpha Magmarex",
-        "abilities": {
-          "Fire": 4,
-          "Earth": 3,
-          "Artisanship": 3
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 3 / Earth 2",
+        "catch_rate": "19%",
+        "region": "Zephyrus Landbridge",
+        "elements": {
+          "Fire": 3,
+          "Earth": 2
         },
-        "perk": "Colossal volcanic behemoth that powers high-volume foundry crucibles."
+        "image": "images/forms/magmarex-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Earth": 2,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       },
-      "weather": [
+      "regional": [
         {
-          "name": "Magmarex (Eclipse)",
-          "element": "Fire / Earth / Dark",
-          "condition": "Night / Eclipse",
-          "abilities": {
-            "Fire": 4,
-            "Dark": 2,
-            "Earth": 3
+          "form_name": "Basic Form (variant record)",
+          "element_display": "Fire 3 / Earth 2",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
+          "elements": {
+            "Fire": 3,
+            "Earth": 2
           },
-          "perk": "Dark Magma: Smelts void-infused alloys at 1.5x speed."
+          "image": "images/forms/magmarex-basic-form-variant-record.png",
+          "abilities": {
+            "Fire": 3,
+            "Earth": 2,
+            "Carry": 3,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 1
+          }
         }
       ],
+      "weather": [],
       "prismana": {
-        "name": "Prismana Magmarex",
-        "element": "Fire / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Fire": 5,
-          "Earth": 4,
-          "Artisanship": 3
+        "form_name": "Prismana",
+        "element_display": "Fire 4 / Dark 4",
+        "catch_rate": "19%",
+        "region": "Zephyrus Landbridge",
+        "elements": {
+          "Fire": 4,
+          "Dark": 4
         },
-        "perk": "Volcano God: Blast furnaces operate at 2x baseline speed with zero heat loss."
+        "image": "images/forms/magmarex-prismana.png",
+        "abilities": {
+          "Fire": 4,
+          "Dark": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Basic Form (variant record)",
+      "Prismana"
+    ]
   },
   {
     "id": "073",
+    "dex_number": "073",
+    "display_id": "#073",
     "name": "Geodeback",
-    "stage": "Gamma",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Pebbling -> Geodeback -> Minespine",
-    "best_role": "Crystal Geode Cracking & Gemstone Assortment",
+    "slug": "geodeback",
+    "is_unnumbered": false,
+    "image": "images/geodeback.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geodeback-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Earth Affinity",
+    "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Geodeback (Standard)",
-        "element": "Earth",
-        "condition": "Level 38 (Geode Branch)",
+        "form_name": "Basic Form",
+        "element_display": "Earth 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 2
+        },
+        "image": "images/geodeback.png",
         "abilities": {
           "Earth": 2,
-          "Carry": 2,
-          "Artisanship": 2
+          "Carry": 2
         },
-        "perk": "Cracks hollow geodes cleanly, maximizing intact crystal extraction."
-      },
-      "weather": [
-        {
-          "name": "Geodeback (Sandstorm)",
-          "element": "Earth",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 3,
-            "Carry": 2,
-            "Artisanship": 2
-          },
-          "perk": "Crystal Resonance: Geode cracking yield +25%."
+        "utilities": {
+          "Carry": 2
         }
-      ],
-      "prismana": {
-        "name": "Prismana Geodeback",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 3,
-          "Light": 2,
-          "Artisanship": 3
-        },
-        "perk": "Radiant Geode: Polished crystals have a chance to turn into pure Prismana gems."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "074",
+    "dex_number": "074",
+    "display_id": "#074",
     "name": "Minespine",
-    "stage": "Nova",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "Break",
-    "evolution_line": "Pebbling -> Geodeback -> Minespine",
-    "best_role": "Deep Mine Shaft Excavator & Rare Mineral Extraction",
+    "slug": "minespine",
+    "is_unnumbered": false,
+    "image": "images/minespine.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-minespine-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Earth Affinity",
+    "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Minespine (Standard)",
-        "element": "Earth",
-        "condition": "Defeat Alpha Minespine at Lv 48",
-        "abilities": {
-          "Earth": 4,
-          "Carry": 3,
-          "Artisanship": 2
+        "form_name": "Basic Form",
+        "element_display": "Earth 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 3
         },
-        "perk": "Spined back tunnels through bedrock to extract deep-strata minerals."
-      },
-      "weather": [
-        {
-          "name": "Minespine (Sandstorm)",
-          "element": "Earth",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 5,
-            "Carry": 3
-          },
-          "perk": "Drill Spike: Pulverizes quarry rock veins in single strikes."
+        "image": "images/minespine.png",
+        "abilities": {
+          "Earth": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
         }
-      ],
-      "prismana": {
-        "name": "Prismana Minespine",
-        "element": "Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 5,
-          "Carry": 3,
-          "Artisanship": 3
-        },
-        "perk": "Deep Bedrock: Quarry resource generation increased by +40% globally."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "075",
+    "dex_number": "075",
+    "display_id": "#075",
     "name": "Cozite",
-    "stage": "Lumin",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Cozite (Standalone Mineral)",
-    "best_role": "Homeland Hearth Warming & Cozy Camp Morale",
+    "slug": "cozite",
+    "is_unnumbered": false,
+    "image": "images/cozite.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cozite-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Potent Erosion",
+    "trait_effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Cozite (Standard)",
-        "element": "Earth",
-        "condition": "Warm Caves",
+        "form_name": "Basic Form",
+        "element_display": "Earth 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 1
+        },
+        "image": "images/forms/cozite-basic-form.png",
         "abilities": {
           "Earth": 1,
-          "Leisure": 2
+          "Carry": 1
         },
-        "perk": "Radiates gentle subterranean warmth that keeps worker beds cozy."
-      },
-      "weather": [
-        {
-          "name": "Cozite (Cold Weather)",
-          "element": "Earth / Fire",
-          "condition": "Snow / Cold",
-          "abilities": {
-            "Earth": 1,
-            "Fire": 1,
-            "Leisure": 2
-          },
-          "perk": "Thermal Shield: Completely protects workers from winter freezing debuffs."
+        "utilities": {
+          "Carry": 1
         }
-      ],
-      "prismana": {
-        "name": "Prismana Cozite",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 2,
-          "Light": 1,
-          "Leisure": 3
-        },
-        "perk": "Cozy Haven: All workers resting near Cozite gain +25% morale regeneration."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "076",
+    "dex_number": "076",
+    "display_id": "#076",
     "name": "Bailite",
-    "stage": "Nova",
-    "element": "Earth",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Bailite (Sacred Stone)",
-    "best_role": "Homeland Monument Sculpting & Sacred Stone Refining",
+    "slug": "bailite",
+    "is_unnumbered": false,
+    "image": "images/bailite.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bailite-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Potent Erosion",
+    "trait_effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.",
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Bailite (Standard)",
-        "element": "Earth",
-        "condition": "Sanctum of Stone",
+        "form_name": "Basic Form",
+        "element_display": "Earth 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Earth": 3
+        },
+        "image": "images/forms/bailite-basic-form.png",
         "abilities": {
           "Earth": 3,
-          "Artisanship": 3,
-          "Leisure": 2
+          "Carry": 3
         },
-        "perk": "Sculpts sacred monuments that raise overall Homeland comfort level."
-      },
-      "weather": [
-        {
-          "name": "Bailite (Sandstorm)",
-          "element": "Earth",
-          "condition": "Sandstorm",
-          "abilities": {
-            "Earth": 4,
-            "Artisanship": 3
-          },
-          "perk": "Erects dust barriers protecting crops from wind damage."
+        "utilities": {
+          "Carry": 3
         }
-      ],
-      "prismana": {
-        "name": "Prismana Bailite",
-        "element": "Earth / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Earth": 4,
-          "Light": 2,
-          "Artisanship": 4
-        },
-        "perk": "Monument of Prosperity: Base daily Home Coin revenue +20%."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "077",
+    "dex_number": "077",
+    "display_id": "#077",
     "name": "Bulbly",
-    "stage": "Lumin",
-    "element": "Lightning",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Bulbly -> Veilfloat",
-    "best_role": "Illumination Bulb & Night Shift Lighting",
+    "slug": "bulbly",
+    "is_unnumbered": false,
+    "image": "images/bulbly.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bulbly-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Arc Surge",
+    "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Bulbly (Standard)",
-        "element": "Lightning",
-        "condition": "Breezy Marsh",
+        "form_name": "Basic Form",
+        "element_display": "Lightning 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 1
+        },
+        "image": "images/forms/bulbly-basic-form.png",
         "abilities": {
           "Lightning": 1,
-          "Light": 1,
-          "Leisure": 1
+          "Artisanship": 1
         },
-        "perk": "Floating glowing jellyfish creature that lights dark work stations."
-      },
-      "weather": [
-        {
-          "name": "Bulbly (Thunderstorm)",
-          "element": "Lightning",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 2,
-            "Light": 1
-          },
-          "perk": "Glows with double luminosity during stormy downpours."
+        "utilities": {
+          "Artisanship": 1
         }
-      ],
-      "prismana": {
-        "name": "Prismana Bulbly",
-        "element": "Lightning / Light / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 2,
-          "Light": 2,
-          "Leisure": 2
-        },
-        "perk": "Prism Glow: Workers under Bulbly light never suffer night work penalties."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "078",
+    "dex_number": "078",
+    "display_id": "#078",
     "name": "Veilfloat",
-    "stage": "Gamma",
-    "element": "Lightning",
-    "secondary_element": "Water",
-    "role": "Support",
-    "evolution_line": "Bulbly -> Veilfloat",
-    "best_role": "Floating Mist Battery & Aqueduct Sensor",
+    "slug": "veilfloat",
+    "is_unnumbered": false,
+    "image": "images/veilfloat.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-veilfloat-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Arc Surge",
+    "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Veilfloat (Standard)",
-        "element": "Lightning / Water",
-        "condition": "Reach Level 28",
+        "form_name": "Basic Form",
+        "element_display": "Lightning 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 2
+        },
+        "image": "images/forms/veilfloat-basic-form.png",
         "abilities": {
           "Lightning": 2,
-          "Water": 2,
-          "Light": 1
+          "Artisanship": 2
         },
-        "perk": "Hovers over water pumps, keeping electrical coils and water flow synchronized."
-      },
-      "weather": [
-        {
-          "name": "Veilfloat (Thunderstorm)",
-          "element": "Lightning / Water",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 3,
-            "Water": 2,
-            "Light": 1
-          },
-          "perk": "Current Flow: Water pumping speed +30% when energized by lightning."
+        "utilities": {
+          "Artisanship": 2
         }
-      ],
-      "prismana": {
-        "name": "Prismana Veilfloat",
-        "element": "Lightning / Water / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Lightning": 3,
-          "Water": 3,
-          "Light": 2
-        },
-        "perk": "Luminous Cascade: Waters farm beds and charges electrical grid at once."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "079",
+    "dex_number": "079",
+    "display_id": "#079",
     "name": "Luminelle",
-    "stage": "Nova",
-    "element": "Light",
-    "secondary_element": "Water",
-    "role": "Support",
-    "evolution_line": "Luminelle (Sacred Spirit)",
-    "best_role": "Daylight Amplification, Alchemy Extraction & Luxury Bud Incense",
+    "slug": "luminelle",
+    "is_unnumbered": false,
+    "image": "images/luminelle.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-luminelle-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Arc Surge",
+    "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Luminelle (Standard)",
-        "element": "Light / Water",
-        "condition": "Sacred Spring",
-        "abilities": {
-          "Light": 3,
-          "Perfumery": 3,
-          "Leisure": 2
+        "form_name": "Basic Form (base)",
+        "element_display": "Lightning 3",
+        "catch_rate": "22%",
+        "region": "Tideblossom Coast",
+        "elements": {
+          "Lightning": 3
         },
-        "perk": "Holy glow prevents worker depression, fatigue slumps and stress spirals."
+        "image": "images/forms/luminelle-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       },
+      "regional": [],
       "weather": [
         {
-          "name": "Luminelle (Aurora / Rainbow Mist)",
-          "element": "Light / Water",
-          "condition": "Aurora / Rainbow Rain",
-          "abilities": {
-            "Light": 4,
-            "Water": 2,
-            "Perfumery": 3
+          "form_name": "Rainstorm Form",
+          "element_display": "Lightning 3 / Water 2",
+          "catch_rate": "22%",
+          "region": "Tideblossom Coast",
+          "elements": {
+            "Lightning": 3,
+            "Water": 2
           },
-          "perk": "Prism Infusion: Perfumes crafted during aurora give 2x buff duration."
+          "image": "images/forms/luminelle-rainstorm-form.png",
+          "abilities": {
+            "Lightning": 3,
+            "Water": 2,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         }
       ],
       "prismana": {
-        "name": "Prismana Luminelle",
-        "element": "Light / Water / Prismatic",
-        "condition": "Prismana Flow in Breezy Plains",
-        "abilities": {
-          "Light": 4,
-          "Perfumery": 4,
-          "Leisure": 3
+        "form_name": "Prismana",
+        "element_display": "Lightning 4",
+        "catch_rate": "22%",
+        "region": "Tideblossom Coast",
+        "elements": {
+          "Lightning": 4
         },
-        "perk": "Radiant Aura: Passively generates 50 bonus Bud Tickets each in-game dawn."
+        "image": "images/forms/luminelle-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Rainstorm Form",
+      "Prismana"
+    ]
   },
   {
     "id": "080",
+    "dex_number": "080",
+    "display_id": "#080",
     "name": "Fahloo",
-    "stage": "Lumin",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "Support",
-    "evolution_line": "Fahloo -> Erlath",
-    "best_role": "Fish Pool Maintenance & Algae Cleaning",
+    "slug": "fahloo",
+    "is_unnumbered": false,
+    "image": "images/fahloo.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fahloo-handbook.png",
+    "tier": "C-Tier",
+    "trait": "Bubble",
+    "trait_effect": "Every 12s, enters Bathing. The next skill cast creates a puddle.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Fahloo (Standard)",
-        "element": "Water",
-        "condition": "Reef Lagoon",
-        "abilities": {
-          "Water": 1,
-          "Carry": 1
+        "form_name": "Basic Form",
+        "element_display": "Water 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 1
         },
-        "perk": "Cleans debris from homeland drainage channels and fish tanks."
+        "image": "images/forms/fahloo-basic-form.png",
+        "abilities": {
+          "Water": 1
+        },
+        "utilities": {}
       },
-      "weather": [
-        {
-          "name": "Fahloo (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 2,
-            "Carry": 1
-          },
-          "perk": "Water circulation speed +30%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Fahloo",
-        "element": "Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 2,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Lagoon Dew: Fish pond harvest rate increased by +25%."
-      }
-    }
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "081",
+    "dex_number": "081",
+    "display_id": "#081",
     "name": "Erlath",
-    "stage": "Nova",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "Healer",
-    "evolution_line": "Fahloo -> Erlath",
-    "best_role": "High-Volume Farmland Irrigation & Spring Sanitation",
+    "slug": "erlath",
+    "is_unnumbered": false,
+    "image": "images/erlath.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-erlath-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Bubble",
+    "trait_effect": "Every 12s, enters Bathing. The next skill cast creates a puddle.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Erlath (Standard)",
-        "element": "Water",
-        "condition": "Reach Level 36",
-        "abilities": {
-          "Water": 3,
-          "Leisure": 2,
-          "Carry": 2
+        "form_name": "Basic Form",
+        "element_display": "Water 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 3
         },
-        "perk": "Gentle sea leviathan that maintains water clarity across all base facilities."
+        "image": "images/forms/erlath-basic-form.png",
+        "abilities": {
+          "Water": 3
+        },
+        "utilities": {}
       },
-      "weather": [
-        {
-          "name": "Erlath (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 4,
-            "Leisure": 2,
-            "Carry": 2
-          },
-          "perk": "Pure Tidal Mist: All soil beds remain 100% hydrated for 2 full days."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Erlath",
-        "element": "Water / Light / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 4,
-          "Light": 2,
-          "Leisure": 3
-        },
-        "perk": "Tidal Grace: Workers drinking from Erlath springs recover 30% more energy."
-      }
-    }
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "082",
+    "dex_number": "082",
+    "display_id": "#082",
     "name": "Besauce",
-    "stage": "Nova",
-    "element": "Lightning",
-    "secondary_element": "Fire",
-    "role": "DPS",
-    "evolution_line": "Besauce (Standalone Behemoth)",
-    "best_role": "High-Energy Thermal Reactor & Metal Electrolysis",
+    "slug": "besauce",
+    "is_unnumbered": false,
+    "image": "images/besauce.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-besauce-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Power Surge",
+    "trait_effect": "When casting a skill with less than 20 EP, restores X EP.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Besauce (Standard)",
-        "element": "Lightning / Fire",
-        "condition": "Voltaic Caldera",
+        "form_name": "Basic Form",
+        "element_display": "Lightning 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "images/besauce.png",
         "abilities": {
           "Lightning": 3,
-          "Fire": 3,
-          "Artisanship": 2
+          "Artisanship": 1
         },
-        "perk": "Fuses electrical current with flame to smelt composite super-alloys."
-      },
-      "weather": [
-        {
-          "name": "Besauce (Thunderstorm)",
-          "element": "Lightning / Fire",
-          "condition": "Thunderstorm",
-          "abilities": {
-            "Lightning": 4,
-            "Fire": 3,
-            "Artisanship": 2
-          },
-          "perk": "Plasma Forge: Halves alloy smelt time during severe thunderstorms."
+        "utilities": {
+          "Artisanship": 1
         }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "083",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Dazmand",
+    "slug": "dazmand",
+    "is_unnumbered": true,
+    "image": "images/dazmand.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dazmand-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Spotlight Moment",
+    "trait_effect": "The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
-      "prismana": {
-        "name": "Prismana Besauce",
-        "element": "Lightning / Fire / Prismatic",
-        "condition": "Prismana Flow weather",
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Lightning 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "images/dazmand.png",
         "abilities": {
-          "Lightning": 4,
-          "Fire": 4,
+          "Lightning": 3,
           "Artisanship": 3
         },
-        "perk": "Plasma Core: Generates free power for entire base while running blast furnaces."
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "084",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Fulmintis",
+    "slug": "fulmintis",
+    "is_unnumbered": true,
+    "image": "images/fulmintis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fulmintis-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Electro Stash",
+    "trait_effect": "Restores X EP when a skill lands a critical hit.",
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form (base)",
+        "element_display": "Lightning 3",
+        "catch_rate": "22%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "images/forms/fulmintis-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Lightning 4",
+        "catch_rate": "22%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 4
+        },
+        "image": "images/forms/fulmintis-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
+  },
+  {
+    "id": "085",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Fennelun",
+    "slug": "fennelun",
+    "is_unnumbered": true,
+    "image": "images/fennelun.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fennelun-handbook.png",
+    "tier": "S-Tier",
+    "trait": "**Lunar Power**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Light 0.625×"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Light 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 3
+        },
+        "image": "images/fennelun.png",
+        "abilities": {
+          "Light": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "086",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Lunara",
+    "slug": "lunara",
+    "is_unnumbered": true,
+    "image": "images/lunara.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lunara-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Lunar Power**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Light 0.625×"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Light 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 3
+        },
+        "image": "images/lunara.png",
+        "abilities": {
+          "Light": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
+  },
+  {
+    "id": "087",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Soleon",
+    "slug": "soleon",
+    "is_unnumbered": true,
+    "image": "images/soleon.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-soleon-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Solar Grace**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Light 0.625×"
+      ]
+    },
+    "forms": {
+      "basic": {
+        "form_name": "Basic Form",
+        "element_display": "Light 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 3
+        },
+        "image": "images/soleon.png",
+        "abilities": {
+          "Light": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "088",
-    "name": "Buppeeb",
-    "stage": "Lumin",
-    "element": "Grass",
-    "secondary_element": "Water",
-    "role": "Healer",
-    "evolution_line": "Buppeeb -> Glameep",
-    "best_role": "Gentle Sapling Nurturing & Herb Hydration",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Helion",
+    "slug": "helion",
+    "is_unnumbered": true,
+    "image": "images/helion.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helion-handbook.png",
+    "tier": "B-Tier",
+    "trait": "**Solar Grace**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Light 0.625×"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Buppeeb (Standard)",
-        "element": "Grass / Water",
-        "condition": "Dewdrop Basin",
-        "abilities": {
-          "Grass": 1,
-          "Water": 1,
-          "Leisure": 1
+        "form_name": "Basic Form",
+        "element_display": "Light 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 3
         },
-        "perk": "Gentle creature that sings softly to sprouting herb seedlings."
-      },
-      "weather": [
-        {
-          "name": "Buppeeb (Rainstorm)",
-          "element": "Grass / Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Grass": 2,
-            "Water": 2
-          },
-          "perk": "Herb germination speed +25% during downpours."
+        "image": "images/helion.png",
+        "abilities": {
+          "Light": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
         }
-      ],
-      "prismana": {
-        "name": "Prismana Buppeeb",
-        "element": "Grass / Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 2,
-          "Water": 2,
-          "Leisure": 2
-        },
-        "perk": "Dew Song: Healing herbs grown nearby have 20% higher potency."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "089",
-    "name": "Glameep",
-    "stage": "Nova",
-    "element": "Grass",
-    "secondary_element": "Water",
-    "role": "Healer",
-    "evolution_line": "Buppeeb -> Glameep",
-    "best_role": "Master Medicinal Herb Greenhouse & Healing Elixirs",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Morphling",
+    "slug": "morphling",
+    "is_unnumbered": true,
+    "image": "images/morphling.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-morphling-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Elemental Harmony",
+    "trait_effect": "Enhances productivity when working at element-aligned workstations.",
+    "matchups": {
+      "weak_to": [],
+      "resists": []
+    },
     "forms": {
       "basic": {
-        "name": "Glameep (Standard)",
-        "element": "Grass / Water",
-        "condition": "Reach Level 35",
-        "abilities": {
-          "Grass": 3,
-          "Water": 3,
-          "Perfumery": 2
+        "form_name": "Basic Form",
+        "element_display": "Light 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 2
         },
-        "perk": "Cultivates rare medical flora used to create revives and health draughts."
-      },
-      "weather": [
-        {
-          "name": "Glameep (Sunny Bloom)",
-          "element": "Grass / Water",
-          "condition": "Sunny Bloom",
-          "abilities": {
-            "Grass": 4,
-            "Water": 3,
-            "Perfumery": 2
-          },
-          "perk": "Medicinal herb growth cycle cut by 40% in direct sunshine."
+        "image": "images/morphling.png",
+        "abilities": {
+          "Light": 2,
+          "Artisanship": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 2
         }
-      ],
-      "prismana": {
-        "name": "Prismana Glameep",
-        "element": "Grass / Water / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Grass": 4,
-          "Water": 4,
-          "Perfumery": 3
-        },
-        "perk": "Panacea Bloom: Chance to harvest instant full-restore Golden Herbs."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "090",
-    "name": "Popapus",
-    "stage": "Lumin",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Popapus -> Gachapus",
-    "best_role": "Water Sorting & River Dredging",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Jabster",
+    "slug": "jabster",
+    "is_unnumbered": true,
+    "image": "images/jabster.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-jabster-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Knuckle Burst",
+    "trait_effect": "Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s.",
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
+      ],
+      "resists": [
+        "Dark (0.625×)",
+        "Earth (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Popapus (Standard)",
-        "element": "Water",
-        "condition": "Tidal Flats",
-        "abilities": {
-          "Water": 1,
-          "Carry": 1
+        "form_name": "Basic Form",
+        "element_display": "Water 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 3
         },
-        "perk": "Small octopus that sorts dropped sea materials into storage bins."
-      },
-      "weather": [
-        {
-          "name": "Popapus (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 2,
-            "Carry": 1
-          },
-          "perk": "Eight-arm sorting speed +30% during rain."
+        "image": "images/jabster.png",
+        "abilities": {
+          "Water": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
         }
-      ],
-      "prismana": {
-        "name": "Prismana Popapus",
-        "element": "Water / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 2,
-          "Light": 1,
-          "Carry": 2
-        },
-        "perk": "Lucky Tentacle: Chance to pull bonus materials when hauling."
-      }
-    }
+      },
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   },
   {
     "id": "091",
-    "name": "Gachapus",
-    "stage": "Nova",
-    "element": "Water",
-    "secondary_element": null,
-    "role": "DPS",
-    "evolution_line": "Popapus -> Gachapus",
-    "best_role": "High-Speed Multi-Item Logistics & Sorter Hub",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Sparkelf",
+    "slug": "sparkelf",
+    "is_unnumbered": true,
+    "image": "images/sparkelf.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Reliable Fire Companion",
+    "trait_effect": "When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.",
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6×)",
+        "Water (1.6×)"
+      ],
+      "resists": [
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Gachapus (Standard)",
-        "element": "Water",
-        "condition": "Reach Level 36",
-        "abilities": {
-          "Water": 3,
-          "Carry": 3,
-          "Artisanship": 2
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 3",
+        "catch_rate": "16%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 3
         },
-        "perk": "Eight arms handle multiple transport orders simultaneously across Homeland."
+        "image": "images/forms/sparkelf-basic-form-base.png",
+        "abilities": {
+          "Fire": 3
+        },
+        "utilities": {}
       },
-      "weather": [
-        {
-          "name": "Gachapus (Rainstorm)",
-          "element": "Water",
-          "condition": "Rainstorm",
-          "abilities": {
-            "Water": 4,
-            "Carry": 3,
-            "Artisanship": 2
-          },
-          "perk": "Aquatic Sprint: Hauling speed +35% during heavy rain."
-        }
-      ],
+      "regional": [],
+      "weather": [],
       "prismana": {
-        "name": "Prismana Gachapus",
-        "element": "Water / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Water": 4,
-          "Carry": 4,
-          "Artisanship": 3
+        "form_name": "Prismana",
+        "element_display": "Fire 4",
+        "catch_rate": "16%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 4
         },
-        "perk": "Master Sorter: Completely eliminates Homeland inventory overflow bottlenecks."
+        "image": "images/forms/sparkelf-prismana.png",
+        "abilities": {
+          "Fire": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
       }
-    }
+    },
+    "all_form_names": [
+      "Basic Form (base)",
+      "Prismana"
+    ]
   },
   {
     "id": "092",
-    "name": "Malangel",
-    "stage": "Lumin",
-    "element": "Ice",
-    "secondary_element": "Dark",
-    "role": "DPS",
-    "evolution_line": "Malangel -> Malevsera",
-    "best_role": "Night Cryo Preservation & Shadow Crystal Chipping",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Irisalis",
+    "slug": "irisalis",
+    "is_unnumbered": true,
+    "image": "images/irisalis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisalis-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Bloom Cluster**",
+    "trait_effect": "When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.",
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6× · Fire 1.6× · Wind 1.6×"
+      ],
+      "resists": [
+        "Grass 0.625× · Earth 0.625× · Water 0.625×"
+      ]
+    },
     "forms": {
       "basic": {
-        "name": "Malangel (Standard)",
-        "element": "Ice / Dark",
-        "condition": "Crescent Bay (Night)",
-        "abilities": {
-          "Ice": 2,
-          "Dark": 1,
-          "Artisanship": 1
+        "form_name": "Basic Form",
+        "element_display": "Grass 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 3
         },
-        "perk": "Frozen fallen angel that keeps meat and fish chilled overnight."
+        "utilities": {
+          "Leisure": 3
+        },
+        "abilities": {
+          "Grass": 3,
+          "Leisure": 3
+        },
+        "image": "images/irisalis.png"
       },
-      "weather": [
-        {
-          "name": "Malangel (Night Blizzard)",
-          "element": "Ice / Dark",
-          "condition": "Snowy Night",
-          "abilities": {
-            "Ice": 3,
-            "Dark": 2
-          },
-          "perk": "Sub-zero Chill: Cooling stations require zero power during winter nights."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Malangel",
-        "element": "Ice / Dark / Light",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Ice": 3,
-          "Dark": 2,
-          "Artisanship": 2
-        },
-        "perk": "Frost Halo: Ice tools crafted gain unbreakable sharpness rating."
-      }
-    }
-  },
-  {
-    "id": "093",
-    "name": "Malevsera",
-    "stage": "Nova",
-    "element": "Ice",
-    "secondary_element": "Dark",
-    "role": "DPS",
-    "evolution_line": "Malangel -> Malevsera",
-    "best_role": "Apex Cryo Vault & Demonic State Night Metallurgy",
-    "forms": {
-      "basic": {
-        "name": "Malevsera (Standard)",
-        "element": "Ice / Dark",
-        "condition": "Demonic Awakening at Lv 46",
-        "abilities": {
-          "Ice": 4,
-          "Dark": 3,
-          "Artisanship": 2
-        },
-        "perk": "Demonic Cryo: Freezes whole base food silos with 0% decay rate permanently."
-      },
-      "weather": [
-        {
-          "name": "Malevsera (Eclipse / Night)",
-          "element": "Ice / Dark",
-          "condition": "Eclipse / Night",
-          "abilities": {
-            "Ice": 4,
-            "Dark": 4,
-            "Artisanship": 3
-          },
-          "perk": "Demonic State: Overclocks all cold and dark refining stations by +50%."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Malevsera",
-        "element": "Ice / Dark / Prismatic",
-        "condition": "Prismana Flow in Crescent Bay",
-        "abilities": {
-          "Ice": 5,
-          "Dark": 4,
-          "Artisanship": 3
-        },
-        "perk": "Abyssal Frost: The ultimate cold worker; food stores never spoil, crafting speed +35%."
-      }
-    }
-  },
-  {
-    "id": "094",
-    "name": "Dazmand",
-    "stage": "Nova",
-    "element": "Light",
-    "secondary_element": "Earth",
-    "role": "DPS",
-    "evolution_line": "Rare Prismatic Apex",
-    "best_role": "Master Jeweler, Relic Restoration & Base Illumination",
-    "forms": {
-      "basic": {
-        "name": "Dazmand (Standard)",
-        "element": "Light / Earth",
-        "condition": "Crystal Sanctum",
-        "abilities": {
-          "Light": 3,
-          "Earth": 3,
-          "Artisanship": 3
-        },
-        "perk": "Master jeweler: polishes mined raw diamonds into high-selling artifacts for Bud Coins."
-      },
-      "weather": [
-        {
-          "name": "Dazmand (Sunny)",
-          "element": "Light / Earth",
-          "condition": "Sunny",
-          "abilities": {
-            "Light": 4,
-            "Earth": 3,
-            "Artisanship": 3
-          },
-          "perk": "Solar Refraction: Illuminates entire base plot, preventing darkness productivity penalties."
-        }
-      ],
-      "prismana": {
-        "name": "Prismana Dazmand",
-        "element": "Light / Earth / Prismatic",
-        "condition": "Prismana Flow weather",
-        "abilities": {
-          "Light": 4,
-          "Earth": 4,
-          "Artisanship": 4
-        },
-        "perk": "Prismatic Jewel: +35% jewelry crafting speed; relics sell for +25% bonus Bud Coins."
-      }
-    }
+      "regional": [],
+      "weather": [],
+      "prismana": null
+    },
+    "all_form_names": [
+      "Basic Form"
+    ]
   }
 ];

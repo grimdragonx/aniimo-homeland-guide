@@ -13,13 +13,13 @@
     "trait_effect": "Increases damage dealt to elementally countered targets .",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -103,13 +103,13 @@
     "trait_effect": "Increases damage dealt to elementally countered targets by X%.",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -193,13 +193,13 @@
     "trait_effect": "Increases damage dealt to elementally countered targets by X%.",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -319,25 +319,27 @@
     "trait_effect": "After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Dark 3",
+        "element_display": "Fire 2 / Dark 3",
         "catch_rate": "28%",
         "region": "Idyll Native Habitat",
         "elements": {
+          "Fire": 2,
           "Dark": 3
         },
         "image": "images/forms/inferlupa-basic-form-base.png",
         "abilities": {
+          "Fire": 2,
           "Dark": 3,
           "Carry": 3
         },
@@ -381,34 +383,34 @@
     "is_unnumbered": false,
     "image": "images/celestis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-celestis-handbook.png",
-    "tier": "A-Tier",
+    "tier": "C-Tier",
     "trait": "Grand Sorcerer",
     "trait_effect": "For Xs after using a skill, basic attack hits deal additional damage equal to X Might.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Dark 3",
+        "element_display": "Dark 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Dark": 3
+          "Dark": 1
         },
         "image": "images/forms/celestis-basic-form.png",
         "abilities": {
-          "Dark": 3,
-          "Leisure": 3
+          "Dark": 1,
+          "Leisure": 1
         },
         "utilities": {
-          "Leisure": 3
+          "Leisure": 1
         }
       },
       "regional": [],
@@ -433,11 +435,11 @@
     "trait_effect": "For Xs after using a skill, basic attack hits deal additional damage equal to X Might.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -520,12 +522,12 @@
     "trait_effect": "When switching Aniimo in battle, restores X EP to the next Chirpi family member switched in. Triggers once every Xs at most.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -539,12 +541,9 @@
         },
         "image": "images/forms/chirpi-basic-form-base.png",
         "abilities": {
-          "Wind": 1,
-          "Carry": 1
+          "Wind": 1
         },
-        "utilities": {
-          "Carry": 1
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -609,12 +608,12 @@
     "trait_effect": "When switching Aniimo in battle, restores X EP to the next Chirpi family member switched in. Triggers once every Xs at most.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -628,12 +627,9 @@
         },
         "image": "images/forms/tromber-basic-form-base.png",
         "abilities": {
-          "Wind": 3,
-          "Carry": 2
+          "Wind": 3
         },
-        "utilities": {
-          "Carry": 2
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -693,17 +689,17 @@
     "is_unnumbered": false,
     "image": "images/cornet.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Air Superiority",
     "trait_effect": "Increases Crit Rate by X% while flying.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -717,14 +713,9 @@
         },
         "image": "images/forms/cornet-basic-form-base.png",
         "abilities": {
-          "Wind": 3,
-          "Artisanship": 2,
-          "Carry": 2
+          "Wind": 3
         },
-        "utilities": {
-          "Artisanship": 2,
-          "Carry": 2
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -814,12 +805,12 @@
     "trait_effect": "While shielded, BREAK efficiency +X%. When triggering BREAK, plays [Concerto], reducing the whole team's stamina cost by X%. When you have 3 Movement-series buffs, increases all Movement effects by X%.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -833,12 +824,9 @@
         },
         "image": "images/forms/tubster-basic-form-base.png",
         "abilities": {
-          "Wind": 3,
-          "Carry": 3
+          "Wind": 3
         },
-        "utilities": {
-          "Carry": 3
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -921,10 +909,10 @@
     "trait_effect": "While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+        "Dark 1.6× · Fire 1.6× · Wind 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+        "Grass 0.625× · Earth 0.625× · Water 0.625×"
       ]
     },
     "forms": {
@@ -1076,10 +1064,10 @@
     "trait_effect": "While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+        "Dark 1.6× · Fire 1.6× · Wind 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+        "Grass 0.625× · Earth 0.625× · Water 0.625×"
       ]
     },
     "forms": {
@@ -1231,13 +1219,13 @@
     "trait_effect": "While in water terrain, reduces the EP cost of all skills by X.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -1319,13 +1307,13 @@
     "trait_effect": "While in water terrain, reduces the EP cost of all skills by X.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -1407,10 +1395,10 @@
     "trait_effect": "While in water terrain, reduces the EP cost of all skills by X.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)"
+        "Grass (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)"
+        "Dark (0.625×)"
       ]
     },
     "forms": {
@@ -1510,37 +1498,37 @@
     "is_unnumbered": false,
     "image": "images/leafy.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-leafy-handbook.png",
-    "tier": "C-Tier",
+    "tier": "S-Tier",
     "trait": "Power of Nature",
     "trait_effect": "While off field, creates a patch of Turf under a teammate after they cast 3 skills.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Ice (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Ice (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.391\u00d7)"
+        "Earth (0.391×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Grass 1 / Water 1",
+        "element_display": "Grass 3 / Water 2",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 1,
-          "Water": 1
+          "Grass": 3,
+          "Water": 2
         },
         "image": "images/forms/leafy-basic-form.png",
         "abilities": {
-          "Grass": 1,
-          "Water": 1,
-          "Carry": 1
+          "Grass": 3,
+          "Water": 2,
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 1
+          "Carry": 3
         }
       },
       "regional": [],
@@ -1565,12 +1553,12 @@
     "trait_effect": "Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -1672,12 +1660,12 @@
     "trait_effect": "Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -1793,34 +1781,34 @@
     "is_unnumbered": false,
     "image": "images/dreaple.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dreaple-handbook.png",
-    "tier": "B-Tier",
+    "tier": "S-Tier",
     "trait": "Counting Sheep",
     "trait_effect": "Every Xs, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for Xs. Targets in [Nightmare] have their Dark Resistance reduced by X and cannot move or cast skills for Xs. Taking damage removes the control effect.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Dark 2",
+        "element_display": "Dark 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Dark": 2
+          "Dark": 3
         },
         "image": "images/dreaple.png",
         "abilities": {
-          "Dark": 2,
-          "Leisure": 2
+          "Dark": 3,
+          "Leisure": 3
         },
         "utilities": {
-          "Leisure": 2
+          "Leisure": 3
         }
       },
       "regional": [],
@@ -1845,14 +1833,14 @@
     "trait_effect": "For every 1,000 max HP, increases BREAK damage by X%.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -1866,12 +1854,9 @@
         },
         "image": "images/forms/hummin-basic-form-base.png",
         "abilities": {
-          "Grass": 1,
-          "Artisanship": 1
+          "Grass": 1
         },
-        "utilities": {
-          "Artisanship": 1
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -1914,13 +1899,13 @@
     "trait_effect": "Every Xs, the next skill applies [Curse] to enemies hit for Xs. Dark basic attacks restore X EP when hitting enemies with [Curse].",
     "matchups": {
       "weak_to": [
-        "Wind (2.56\u00d7)",
-        "Dark (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Wind (2.56×)",
+        "Dark (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Earth (0.391\u00d7)",
-        "Grass (0.625\u00d7)"
+        "Earth (0.391×)",
+        "Grass (0.625×)"
       ]
     },
     "forms": {
@@ -2005,14 +1990,14 @@
     "trait_effect": "Increases BREAK damage by % for every X1,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every Xs, up to a maximum of 3.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -2027,10 +2012,10 @@
         "image": "images/forms/tuckin-basic-form-base.png",
         "abilities": {
           "Grass": 3,
-          "Carry": 2
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -2114,13 +2099,13 @@
     "trait_effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.391\u00d7)",
-        "Lightning (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Earth (0.391×)",
+        "Lightning (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -2230,33 +2215,33 @@
     "trait_effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.391\u00d7)",
-        "Lightning (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Earth (0.391×)",
+        "Lightning (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Earth 3 / Grass 2",
+        "element_display": "Grass 2 / Earth 3",
         "catch_rate": "28%",
         "region": "Berylline Vale",
         "elements": {
-          "Earth": 3,
-          "Grass": 2
+          "Grass": 2,
+          "Earth": 3
         },
         "image": "images/forms/shrubclaw-basic-form-base.png",
         "abilities": {
-          "Earth": 3,
           "Grass": 2,
-          "Artisanship": 2
+          "Earth": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 2
+          "Carry": 3
         }
       },
       "regional": [
@@ -2335,36 +2320,36 @@
     "is_unnumbered": false,
     "image": "images/geoclaw.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geoclaw-handbook.png",
-    "tier": "B-Tier",
+    "tier": "S-Tier",
     "trait": "Frostbite Sunder",
     "trait_effect": "Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff].",
     "matchups": {
       "weak_to": [
-        "Fire (1.6\u00d7)",
-        "Earth (1.6\u00d7)"
+        "Fire (1.6×)",
+        "Earth (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Ice 2",
+        "element_display": "Ice 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Ice": 2
+          "Ice": 3
         },
         "image": "images/geoclaw.png",
         "abilities": {
-          "Ice": 2,
-          "Carry": 2
+          "Ice": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -2384,37 +2369,34 @@
     "is_unnumbered": false,
     "image": "images/sparki.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-handbook.png",
-    "tier": "C-Tier",
+    "tier": "B-Tier",
     "trait": "Blazing Flames",
     "trait_effect": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff].",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Fire 1",
+        "element_display": "Fire 2",
         "catch_rate": "56%",
         "region": "Nimbus Fields, Beast Fang Ridge, Blitzwood",
         "elements": {
-          "Fire": 1
+          "Fire": 2
         },
         "image": "images/forms/sparki-basic-form-base.png",
         "abilities": {
-          "Fire": 1,
-          "Artisanship": 1
+          "Fire": 2
         },
-        "utilities": {
-          "Artisanship": 1
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -2493,13 +2475,13 @@
     "trait_effect": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff].",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -2513,12 +2495,9 @@
         },
         "image": "images/forms/flamerion-basic-form-base.png",
         "abilities": {
-          "Fire": 3,
-          "Artisanship": 3
+          "Fire": 3
         },
-        "utilities": {
-          "Artisanship": 3
-        }
+        "utilities": {}
       },
       "regional": [
         {
@@ -2597,26 +2576,24 @@
     "trait_effect": "When entering battle as the active Aniimo, increases healing by X%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to X% of max HP.",
     "matchups": {
       "weak_to": [
-        "Lightning 1.6\u00d7 \u00b7 Light 1.6\u00d7"
+        "Lightning 1.6× · Light 1.6×"
       ],
       "resists": [
-        "Dark 0.625\u00d7 \u00b7 Wind 0.625\u00d7"
+        "Dark 0.625× · Wind 0.625×"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Wind 1 / Grass 1",
+        "element_display": "Wind 1",
         "catch_rate": "56%",
         "region": "Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood",
         "elements": {
-          "Wind": 1,
-          "Grass": 1
+          "Wind": 1
         },
         "image": "images/forms/flutternym-basic-form-base.png",
         "abilities": {
           "Wind": 1,
-          "Grass": 1,
           "Leisure": 1
         },
         "utilities": {
@@ -2714,10 +2691,10 @@
     "trait_effect": "When entering battle as the active Aniimo, increases healing by X%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to X% of max HP.",
     "matchups": {
       "weak_to": [
-        "Lightning 1.6\u00d7 \u00b7 Light 1.6\u00d7"
+        "Lightning 1.6× · Light 1.6×"
       ],
       "resists": [
-        "Dark 0.625\u00d7 \u00b7 Wind 0.625\u00d7"
+        "Dark 0.625× · Wind 0.625×"
       ]
     },
     "forms": {
@@ -2821,10 +2798,10 @@
     "trait_effect": "Increases max EP by X.",
     "matchups": {
       "weak_to": [
-        "Lightning 1.6\u00d7 \u00b7 Light 1.6\u00d7"
+        "Lightning 1.6× · Light 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7"
+        "Grass 0.625× · Earth 0.625×"
       ]
     },
     "forms": {
@@ -2887,12 +2864,12 @@
     "trait_effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -2907,10 +2884,10 @@
         "image": "images/forms/eko-basic-form.png",
         "abilities": {
           "Wind": 1,
-          "Carry": 1
+          "Artisanship": 1
         },
         "utilities": {
-          "Carry": 1
+          "Artisanship": 1
         }
       },
       "regional": [],
@@ -2930,37 +2907,35 @@
     "is_unnumbered": false,
     "image": "images/eklue.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eklue-handbook.png",
-    "tier": "B-Tier",
+    "tier": "S-Tier",
     "trait": "Judgment Storm",
     "trait_effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Wind 2",
+        "element_display": "Wind 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Wind": 2
+          "Wind": 3
         },
         "image": "images/forms/eklue-basic-form.png",
         "abilities": {
-          "Wind": 2,
-          "Carry": 2,
-          "Leisure": 1
+          "Wind": 3,
+          "Artisanship": 3
         },
         "utilities": {
-          "Carry": 2,
-          "Leisure": 1
+          "Artisanship": 3
         }
       },
       "regional": [],
@@ -2985,32 +2960,32 @@
     "trait_effect": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Grass 3",
+        "element_display": "Grass 1",
         "catch_rate": "50%",
         "region": "Sea of Flowers, Rosetower Woods",
         "elements": {
-          "Grass": 3
+          "Grass": 1
         },
         "image": "images/forms/budsquire-basic-form-base.png",
         "abilities": {
-          "Grass": 3,
-          "Artisanship": 2
+          "Grass": 1,
+          "Artisanship": 1
         },
         "utilities": {
-          "Artisanship": 2
+          "Artisanship": 1
         }
       },
       "regional": [
@@ -3054,14 +3029,14 @@
     "trait_effect": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3161,14 +3136,14 @@
     "trait_effect": "When a party member deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by X.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3228,14 +3203,14 @@
     "trait_effect": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases Crit Rate by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3335,14 +3310,14 @@
     "trait_effect": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases Crit Rate by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Fire (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Fire (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Grass (0.625\u00d7)",
-        "Earth (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Grass (0.625×)",
+        "Earth (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3442,11 +3417,11 @@
     "trait_effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -3461,9 +3436,11 @@
         "image": "images/forms/dewy-basic-form.png",
         "abilities": {
           "Dark": 1,
+          "Leisure": 1,
           "Perfumery": 1
         },
         "utilities": {
+          "Leisure": 1,
           "Perfumery": 1
         }
       },
@@ -3489,11 +3466,11 @@
     "trait_effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -3538,11 +3515,11 @@
     "trait_effect": "Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -3557,10 +3534,10 @@
         "image": "images/forms/wisptis-basic-form-base.png",
         "abilities": {
           "Dark": 1,
-          "Leisure": 1
+          "Artisanship": 1
         },
         "utilities": {
-          "Leisure": 1
+          "Artisanship": 1
         }
       },
       "regional": [
@@ -3626,11 +3603,11 @@
     "trait_effect": "Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -3733,13 +3710,13 @@
     "trait_effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.",
     "matchups": {
       "weak_to": [
-        "Fire (1.6\u00d7)",
-        "Earth (1.6\u00d7)"
+        "Fire (1.6×)",
+        "Earth (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3803,13 +3780,13 @@
     "trait_effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.",
     "matchups": {
       "weak_to": [
-        "Fire (1.6\u00d7)",
-        "Earth (1.6\u00d7)"
+        "Fire (1.6×)",
+        "Earth (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3873,13 +3850,13 @@
     "trait_effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%.",
     "matchups": {
       "weak_to": [
-        "Fire (1.6\u00d7)",
-        "Earth (1.6\u00d7)"
+        "Fire (1.6×)",
+        "Earth (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Water (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Ice (0.625×)",
+        "Water (0.625×)"
       ]
     },
     "forms": {
@@ -3960,13 +3937,13 @@
     "trait_effect": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -3981,10 +3958,10 @@
         "image": "images/forms/bolty-basic-form-base.png",
         "abilities": {
           "Lightning": 1,
-          "Carry": 1
+          "Artisanship": 1
         },
         "utilities": {
-          "Carry": 1
+          "Artisanship": 1
         }
       },
       "regional": [
@@ -4028,13 +4005,13 @@
     "trait_effect": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -4113,13 +4090,13 @@
     "trait_effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -4134,10 +4111,10 @@
         "image": "images/forms/squarrel-basic-form.png",
         "abilities": {
           "Fire": 1,
-          "Carry": 1
+          "Artisanship": 1
         },
         "utilities": {
-          "Carry": 1
+          "Artisanship": 1
         }
       },
       "regional": [],
@@ -4162,13 +4139,13 @@
     "trait_effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25.",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -4183,10 +4160,10 @@
         "image": "images/forms/squashel-basic-form.png",
         "abilities": {
           "Fire": 2,
-          "Carry": 2
+          "Artisanship": 2
         },
         "utilities": {
-          "Carry": 2
+          "Artisanship": 2
         }
       },
       "regional": [],
@@ -4211,13 +4188,13 @@
     "trait_effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4297,13 +4274,13 @@
     "trait_effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4365,13 +4342,13 @@
     "trait_effect": "Increases Water damage byX for all opposite-sex Aniimo in the party.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4435,13 +4412,13 @@
     "trait_effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4520,13 +4497,13 @@
     "trait_effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4588,13 +4565,13 @@
     "trait_effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4637,13 +4614,13 @@
     "trait_effect": "While in water terrain or after absorbing water, increases Water Elemental Boost by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4724,14 +4701,14 @@
     "trait_effect": "Moving and using skills builds [Overload Energy]. When [Overload Energy] is full, the next skill gains X% bonus damage.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4797,14 +4774,14 @@
     "trait_effect": "Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals X% extra damage and immediately brings [Sandstorm Spin] to maximum speed.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4887,14 +4864,14 @@
     "trait_effect": "[Rock Piles] created by Bouldus can be destroyed by Waleetle's [Stone Ball Drift], releasing shock waves and applying [Disintegration] to the target.[Disintegration]: Each stack reduces Earth Resistance by X and Movement Speed by X% for Xs, up to 6 stacks.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -4960,13 +4937,13 @@
     "trait_effect": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -5009,13 +4986,13 @@
     "trait_effect": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -5075,11 +5052,11 @@
     "trait_effect": "Increases BREAK by X.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5094,12 +5071,10 @@
         "image": "images/forms/helmut-basic-form-base.png",
         "abilities": {
           "Dark": 1,
-          "Carry": 1,
-          "Artisanship": 1
+          "Carry": 1
         },
         "utilities": {
-          "Carry": 1,
-          "Artisanship": 1
+          "Carry": 1
         }
       },
       "regional": [
@@ -5167,11 +5142,11 @@
     "trait_effect": "When dealing damage to targets in Controlled or Break State, increases an additional X% Damage Amp.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5265,16 +5240,16 @@
     "is_unnumbered": false,
     "image": "images/rookey.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-handbook.png",
-    "tier": "A-Tier",
+    "tier": "S-Tier",
     "trait": "Guardbreak Resonance",
     "trait_effect": "Increases BREAK by X.",
     "matchups": {
       "weak_to": [
-        "Light (1.6\u00d7)",
-        "Wind (1.6\u00d7)"
+        "Light (1.6×)",
+        "Wind (1.6×)"
       ],
       "resists": [
-        "Earth (0.625\u00d7)"
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5289,12 +5264,10 @@
         "image": "images/forms/rookey-basic-form-base.png",
         "abilities": {
           "Dark": 3,
-          "Carry": 3,
-          "Artisanship": 3
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 3,
-          "Artisanship": 3
+          "Carry": 3
         }
       },
       "regional": [
@@ -5362,12 +5335,12 @@
     "trait_effect": "After being attacked, increases BREAK efficiency by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -5429,12 +5402,12 @@
     "trait_effect": "After being attacked, increases BREAK efficiency by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -5496,12 +5469,12 @@
     "trait_effect": "After being attacked, increases BREAK efficiency by X% for Xs.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Light (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Light (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -5563,13 +5536,13 @@
     "trait_effect": "Deals X% extra damage to targets with more than 5 stacks of Fire Debuff.",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -5584,10 +5557,10 @@
         "image": "images/forms/infergon-basic-form-base.png",
         "abilities": {
           "Fire": 3,
-          "Artisanship": 3
+          "Carry": 3
         },
         "utilities": {
-          "Artisanship": 3
+          "Carry": 3
         }
       },
       "regional": [],
@@ -5631,14 +5604,14 @@
     "trait_effect": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5681,14 +5654,14 @@
     "trait_effect": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5748,14 +5721,14 @@
     "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5793,33 +5766,33 @@
     "is_unnumbered": false,
     "image": "images/lavazar.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lavazar-handbook.png",
-    "tier": "A-Tier",
+    "tier": "B-Tier",
     "trait": "Pyro Charge",
     "trait_effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.",
     "matchups": {
       "weak_to": [
-        "Water (2.56\u00d7)"
+        "Water (2.56×)"
       ],
       "resists": [
-        "Fire (0.391\u00d7)",
-        "Ice (0.391\u00d7)",
-        "Lightning (0.625\u00d7)"
+        "Fire (0.391×)",
+        "Ice (0.391×)",
+        "Lightning (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Earth 2 / Fire 2",
+        "element_display": "Fire 2 / Earth 1",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Earth": 2,
-          "Fire": 2
+          "Fire": 2,
+          "Earth": 1
         },
         "image": "images/forms/lavazar-basic-form.png",
         "abilities": {
-          "Earth": 2,
           "Fire": 2,
+          "Earth": 1,
           "Carry": 2
         },
         "utilities": {
@@ -5848,28 +5821,28 @@
     "trait_effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.",
     "matchups": {
       "weak_to": [
-        "Water (2.56\u00d7)"
+        "Water (2.56×)"
       ],
       "resists": [
-        "Fire (0.391\u00d7)",
-        "Ice (0.391\u00d7)",
-        "Lightning (0.625\u00d7)"
+        "Fire (0.391×)",
+        "Ice (0.391×)",
+        "Lightning (0.625×)"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form (base)",
-        "element_display": "Earth 3 / Fire 3",
+        "element_display": "Fire 3 / Earth 2",
         "catch_rate": "19%",
         "region": "Zephyrus Landbridge",
         "elements": {
-          "Earth": 3,
-          "Fire": 3
+          "Fire": 3,
+          "Earth": 2
         },
         "image": "images/forms/magmarex-basic-form-base.png",
         "abilities": {
-          "Earth": 3,
           "Fire": 3,
+          "Earth": 2,
           "Carry": 3
         },
         "utilities": {
@@ -5940,14 +5913,14 @@
     "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -5990,14 +5963,14 @@
     "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -6040,14 +6013,14 @@
     "trait_effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -6090,14 +6063,14 @@
     "trait_effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.",
     "matchups": {
       "weak_to": [
-        "Grass (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Grass (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Fire (0.625\u00d7)",
-        "Ice (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Fire (0.625×)",
+        "Ice (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -6140,13 +6113,13 @@
     "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -6189,13 +6162,13 @@
     "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -6238,13 +6211,13 @@
     "trait_effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -6325,13 +6298,13 @@
     "trait_effect": "Every 12s, enters Bathing. The next skill cast creates a puddle.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -6345,12 +6318,9 @@
         },
         "image": "images/forms/fahloo-basic-form.png",
         "abilities": {
-          "Water": 1,
-          "Carry": 1
+          "Water": 1
         },
-        "utilities": {
-          "Carry": 1
-        }
+        "utilities": {}
       },
       "regional": [],
       "weather": [],
@@ -6369,18 +6339,18 @@
     "is_unnumbered": false,
     "image": "images/erlath.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-erlath-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "Bubble",
     "trait_effect": "Every 12s, enters Bathing. The next skill cast creates a puddle.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -6394,14 +6364,9 @@
         },
         "image": "images/forms/erlath-basic-form.png",
         "abilities": {
-          "Water": 3,
-          "Carry": 2,
-          "Leisure": 2
+          "Water": 3
         },
-        "utilities": {
-          "Carry": 2,
-          "Leisure": 2
-        }
+        "utilities": {}
       },
       "regional": [],
       "weather": [],
@@ -6425,13 +6390,13 @@
     "trait_effect": "When casting a skill with less than 20 EP, restores X EP.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -6469,18 +6434,18 @@
     "is_unnumbered": true,
     "image": "images/dazmand.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dazmand-handbook.png",
-    "tier": "A-Tier",
+    "tier": "S-Tier",
     "trait": "Spotlight Moment",
     "trait_effect": "The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -6495,10 +6460,10 @@
         "image": "images/dazmand.png",
         "abilities": {
           "Lightning": 3,
-          "Carry": 3
+          "Artisanship": 3
         },
         "utilities": {
-          "Carry": 3
+          "Artisanship": 3
         }
       },
       "regional": [],
@@ -6523,13 +6488,13 @@
     "trait_effect": "Restores X EP when a skill lands a critical hit.",
     "matchups": {
       "weak_to": [
-        "Dark (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Dark (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Lightning (0.625\u00d7)",
-        "Light (0.625\u00d7)",
-        "Wind (0.625\u00d7)"
+        "Lightning (0.625×)",
+        "Light (0.625×)",
+        "Wind (0.625×)"
       ]
     },
     "forms": {
@@ -6584,33 +6549,33 @@
     "is_unnumbered": true,
     "image": "images/fennelun.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fennelun-handbook.png",
-    "tier": "B-Tier",
+    "tier": "S-Tier",
     "trait": "**Lunar Power**",
     "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7"
+        "Dark 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+        "Grass 0.625× · Light 0.625×"
       ]
     },
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Light 2",
+        "element_display": "Light 3",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Light": 2
+          "Light": 3
         },
         "image": "images/fennelun.png",
         "abilities": {
-          "Light": 2,
-          "Leisure": 2
+          "Light": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Leisure": 2
+          "Carry": 3
         }
       },
       "regional": [],
@@ -6635,10 +6600,10 @@
     "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7"
+        "Dark 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+        "Grass 0.625× · Light 0.625×"
       ]
     },
     "forms": {
@@ -6681,10 +6646,10 @@
     "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7"
+        "Dark 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+        "Grass 0.625× · Light 0.625×"
       ]
     },
     "forms": {
@@ -6727,10 +6692,10 @@
     "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7"
+        "Dark 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+        "Grass 0.625× · Light 0.625×"
       ]
     },
     "forms": {
@@ -6817,13 +6782,13 @@
     "trait_effect": "Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s.",
     "matchups": {
       "weak_to": [
-        "Lightning (1.6\u00d7)",
-        "Grass (1.6\u00d7)",
-        "Ice (1.6\u00d7)"
+        "Lightning (1.6×)",
+        "Grass (1.6×)",
+        "Ice (1.6×)"
       ],
       "resists": [
-        "Dark (0.625\u00d7)",
-        "Earth (0.625\u00d7)"
+        "Dark (0.625×)",
+        "Earth (0.625×)"
       ]
     },
     "forms": {
@@ -6861,18 +6826,18 @@
     "is_unnumbered": true,
     "image": "images/sparkelf.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Reliable Fire Companion",
     "trait_effect": "When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.",
     "matchups": {
       "weak_to": [
-        "Earth (1.6\u00d7)",
-        "Water (1.6\u00d7)"
+        "Earth (1.6×)",
+        "Water (1.6×)"
       ],
       "resists": [
-        "Fire (0.625\u00d7)",
-        "Grass (0.625\u00d7)",
-        "Ice (0.625\u00d7)"
+        "Fire (0.625×)",
+        "Grass (0.625×)",
+        "Ice (0.625×)"
       ]
     },
     "forms": {
@@ -6886,12 +6851,9 @@
         },
         "image": "images/forms/sparkelf-basic-form-base.png",
         "abilities": {
-          "Fire": 3,
-          "Artisanship": 3
+          "Fire": 3
         },
-        "utilities": {
-          "Artisanship": 3
-        }
+        "utilities": {}
       },
       "regional": [],
       "weather": [],
@@ -6932,10 +6894,10 @@
     "trait_effect": "When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.",
     "matchups": {
       "weak_to": [
-        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+        "Dark 1.6× · Fire 1.6× · Wind 1.6×"
       ],
       "resists": [
-        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+        "Grass 0.625× · Earth 0.625× · Water 0.625×"
       ]
     },
     "forms": {
