@@ -7,14 +7,23 @@
 
 ## 🎯 1. Overview of Homeland Base Building
 
-In *Aniimo*, your Homeland acts as your operational sanctuary, crafting hub, and resource generation engine. Aniimo assigned to your Homeland automate tasks based on two complementary systems:
+In *Aniimo*, your Homeland acts as your housing, production, and resource management base. Aniimo assigned to your Homeland automate tasks based on two complementary systems:
 
-1. **Elemental Affinities:** Drive workstation functions such as furnaces (Fire), irrigation sprinklers (Water), lumber mills (Grass), quarries (Earth), generators (Lightning), and food freezers (Ice).
-2. **Homeland Utility Roles:** Specialize in operational labor:
-   - 📦 **Carry:** Automatically moves materials from work sites and farms into designated storage chests.
-   - 🔨 **Artisanship:** Crafts gear, machines RV parts, and constructs base blueprints.
-   - ☕ **Leisure:** Generates comforting auras that restore worker sanity and prevent exhaustion.
-   - 🌸 **Perfumery:** Synthesizes botanical fertilizers, essential oils, and therapeutic fragrances.
+1. **Elemental Roles (9 Types):**
+   - 🔥 **Fire:** Cooking, smelting, and supplying heat.
+   - 💧 **Water:** Brewing, fetching water, and watering crops.
+   - 🌱 **Grass:** Planting seeds and gathering resources.
+   - ⛰️ **Earth:** Reclaiming land and mining resources.
+   - ⚡ **Lightning:** Manipulating electricity to power facilities.
+   - ❄️ **Ice:** Cooling the Homeland environment.
+   - 🍃 **Wind:** Controlling wind to process products.
+   - 🌑 **Dark:** Harvesting crops, cutting plants, and drying items.
+   - ✨ **Light:** Illuminating the Homeland.
+2. **Facility Jobs (4 Types):**
+   - 📦 **Carry:** Transports finished goods from production facilities into Home Storage.
+   - 🔨 **Artisanship:** Crafts furniture, appearance items, and Home goods.
+   - ☕ **Leisure:** Produces items while engaging in playful, recreational activities.
+   - 🌸 **Perfumery:** Works effectively at the perfume bench to craft scented goods and incense.
 
 ---
 

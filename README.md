@@ -12,12 +12,12 @@
 - **Comprehensive 92-Species Roster:**
   - **82 Numbered Species (`#001`–`#082`):** Fact-checked with official in-game Pokédex / Aniimodex ordering.
   - **10 Discovered Species (`#????`):** Discovered species (Dazmand, Fulmintis, Fennelun, Lunara, Soleon, Helion, Morphling, Jabster, Sparkelf, Irisalis) displayed with real handbook artwork, traits, and abilities under `#????`.
-- **Homeland Utility Roles & Elemental Affinities:**
-  - **📦 Carry:** Logistics hauling, material transport, and depot stocking.
-  - **🔨 Artisanship:** Workbench assembly, RV chassis fabrication, and construction.
-  - **☕ Leisure:** Camp morale preservation and worker sanity recovery.
-  - **🌸 Perfumery:** Botanical distillation, scent dispersion, and fertilizer creation.
-  - **Elemental Affinities:** Fire, Water, Grass, Earth, Lightning, Ice, Wind, Dark, Light.
+- **Facility Jobs & Elemental Roles:**
+  - **📦 Carry:** Transporting stockpiled produce and materials from facilities to Home Storage.
+  - **🔨 Artisanship:** Crafting furniture, appearance items, and base decorative goods.
+  - **☕ Leisure:** Producing valuable items while playing and engaging in leisurely activities.
+  - **🌸 Perfumery:** Working effectively at the perfume bench to craft scented goods and incense.
+  - **Elemental Roles:** Fire (Cooking/Smelting/Heat), Water (Brewing/Watering), Grass (Planting/Gathering), Earth (Land Reclamation/Mining), Lightning (Electricity), Ice (Cooling), Wind (Wind Control/Processing), Dark (Harvesting/Plant Cutting/Drying), Light (Illumination).
 - **High-Resolution Official Artwork:**
   - 290+ official creature handbook and form illustrations in `public/images/`.
   - Automatic resilient fallback mechanism (`slug.png` ➔ `id.png` ➔ `unknown.png`).

@@ -128,22 +128,22 @@ app.get('/api/aniimo/:id', (req, res) => {
   res.json(item);
 });
 
-// Elements & Homeland Utilities reference
+// Elements & Facility Jobs reference
 app.get('/api/elements', (req, res) => {
   res.json([
-    { name: 'Fire', emoji: '🔥', type: 'element', homelandRole: 'Smelting, Campfire Cooking & Kindling' },
-    { name: 'Water', emoji: '💧', type: 'element', homelandRole: 'Farmland Irrigation, Aquaculture & Beverage Brewing' },
-    { name: 'Grass', emoji: '🌱', type: 'element', homelandRole: 'Crop Planting, Harvesting & Timber Logging' },
-    { name: 'Earth', emoji: '⛰️', type: 'element', homelandRole: 'Quarry Mining, Masonry Sculpting & Construction' },
-    { name: 'Lightning', emoji: '⚡', type: 'element', homelandRole: 'Dynamo Power Generation & Electrical Grid' },
-    { name: 'Ice', emoji: '❄️', type: 'element', homelandRole: 'Cold Storage, Food Preservation & Freezing' },
-    { name: 'Wind', emoji: '🍃', type: 'element', homelandRole: 'Grain Windmills, Hauling & Material Logistics' },
-    { name: 'Dark', emoji: '🌑', type: 'element', homelandRole: 'Night Operations & 24/7 Uninterrupted Shift Labor' },
-    { name: 'Light', emoji: '✨', type: 'element', homelandRole: 'Base Illumination, Morale Radiant Warming & Hatching' },
-    { name: 'Carry', emoji: '📦', type: 'utility', homelandRole: 'Logistics Hauling, Item Transport & Depot Storage' },
-    { name: 'Artisanship', emoji: '🔨', type: 'utility', homelandRole: 'Workbench Crafting, RV Construction & Gear Assembly' },
-    { name: 'Leisure', emoji: '☕', type: 'utility', homelandRole: 'Camp Morale, Hot Spring Resting & Worker Sanity Recovery' },
-    { name: 'Perfumery', emoji: '🌸', type: 'utility', homelandRole: 'Botanical Distillation, Scent Diffusers & Herbal Alchemy' }
+    { name: 'Fire', emoji: '🔥', type: 'element', category: 'Elemental Roles', homelandRole: 'Cooking, smelting, and supplying heat' },
+    { name: 'Water', emoji: '💧', type: 'element', category: 'Elemental Roles', homelandRole: 'Brewing, fetching water, and watering plants' },
+    { name: 'Grass', emoji: '🌱', type: 'element', category: 'Elemental Roles', homelandRole: 'Planting seeds and gathering resources' },
+    { name: 'Earth', emoji: '⛰️', type: 'element', category: 'Elemental Roles', homelandRole: 'Reclaiming land and mining resources' },
+    { name: 'Lightning', emoji: '⚡', type: 'element', category: 'Elemental Roles', homelandRole: 'Manipulating electricity' },
+    { name: 'Ice', emoji: '❄️', type: 'element', category: 'Elemental Roles', homelandRole: 'Cooling the Homeland environment' },
+    { name: 'Wind', emoji: '🍃', type: 'element', category: 'Elemental Roles', homelandRole: 'Controlling wind to process products' },
+    { name: 'Dark', emoji: '🌑', type: 'element', category: 'Elemental Roles', homelandRole: 'Harvesting crops, cutting down plants, and drying items' },
+    { name: 'Light', emoji: '✨', type: 'element', category: 'Elemental Roles', homelandRole: 'Illuminating the Homeland' },
+    { name: 'Carry', emoji: '📦', type: 'facility_job', category: 'Facility Jobs', homelandRole: 'Transporting stockpiled produce to Home Storage' },
+    { name: 'Artisanship', emoji: '🔨', type: 'facility_job', category: 'Facility Jobs', homelandRole: 'Crafting furniture, appearance items, and Home goods' },
+    { name: 'Leisure', emoji: '☕', type: 'facility_job', category: 'Facility Jobs', homelandRole: 'Producing items while playing and engaging in leisure activities' },
+    { name: 'Perfumery', emoji: '🌸', type: 'facility_job', category: 'Facility Jobs', homelandRole: 'Working effectively at the perfume bench to craft scented goods' }
   ]);
 });
 

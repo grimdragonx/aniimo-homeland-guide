@@ -17,23 +17,23 @@ const detailModal = document.getElementById('detailModal');
 const modalClose = document.getElementById('modalClose');
 const modalBody = document.getElementById('modalBody');
 
-// Element & Homeland Utility colors and icons
+// Element & Homeland Utility colors, icons, and official definitions
 const abilityMeta = {
-  // Elements
-  Fire: { emoji: '🔥', color1: '#ea580c', color2: '#f97316' },
-  Grass: { emoji: '🌱', color1: '#16a34a', color2: '#22c55e' },
-  Water: { emoji: '💧', color1: '#0284c7', color2: '#0ea5e9' },
-  Earth: { emoji: '⛰️', color1: '#b45309', color2: '#d97706' },
-  Lightning: { emoji: '⚡', color1: '#ca8a04', color2: '#eab308' },
-  Ice: { emoji: '❄️', color1: '#0284c7', color2: '#38bdf8' },
-  Wind: { emoji: '🍃', color1: '#0d9488', color2: '#14b8a6' },
-  Dark: { emoji: '🌑', color1: '#7e22ce', color2: '#a855f7' },
-  Light: { emoji: '✨', color1: '#d97706', color2: '#fbbf24' },
-  // Homeland Utilities
-  Carry: { emoji: '📦', color1: '#d97706', color2: '#f59e0b' },
-  Artisanship: { emoji: '🔨', color1: '#475569', color2: '#94a3b8' },
-  Leisure: { emoji: '☕', color1: '#059669', color2: '#10b981' },
-  Perfumery: { emoji: '🌸', color1: '#db2777', color2: '#f43f5e' }
+  // Elemental Roles
+  Fire: { emoji: '🔥', color1: '#ea580c', color2: '#f97316', desc: 'Cooking, smelting, and supplying heat' },
+  Grass: { emoji: '🌱', color1: '#16a34a', color2: '#22c55e', desc: 'Planting seeds and gathering resources' },
+  Water: { emoji: '💧', color1: '#0284c7', color2: '#0ea5e9', desc: 'Brewing, fetching water, and watering plants' },
+  Earth: { emoji: '⛰️', color1: '#b45309', color2: '#d97706', desc: 'Reclaiming land and mining resources' },
+  Lightning: { emoji: '⚡', color1: '#ca8a04', color2: '#eab308', desc: 'Manipulating electricity' },
+  Ice: { emoji: '❄️', color1: '#0284c7', color2: '#38bdf8', desc: 'Cooling the Homeland environment' },
+  Wind: { emoji: '🍃', color1: '#0d9488', color2: '#14b8a6', desc: 'Controlling wind to process products' },
+  Dark: { emoji: '🌑', color1: '#7e22ce', color2: '#a855f7', desc: 'Harvesting crops, cutting down plants, and drying items' },
+  Light: { emoji: '✨', color1: '#d97706', color2: '#fbbf24', desc: 'Illuminating the Homeland' },
+  // Facility Jobs
+  Carry: { emoji: '📦', color1: '#d97706', color2: '#f59e0b', desc: 'Transporting stockpiled produce to Home Storage' },
+  Artisanship: { emoji: '🔨', color1: '#475569', color2: '#94a3b8', desc: 'Crafting furniture, appearance items, and Home goods' },
+  Leisure: { emoji: '☕', color1: '#059669', color2: '#10b981', desc: 'Producing items while playing and engaging in leisure activities' },
+  Perfumery: { emoji: '🌸', color1: '#db2777', color2: '#f43f5e', desc: 'Working effectively at the perfume bench to craft scented goods' }
 };
 const elementMeta = abilityMeta;
 
@@ -183,7 +183,7 @@ function renderCards(list) {
       const pct = Math.min((lvl / 5) * 100, 100);
       const isUtility = ['Carry', 'Artisanship', 'Leisure', 'Perfumery'].includes(abilName);
       return `
-        <div class="abil-pill ${isUtility ? 'is-utility-pill' : 'is-element-pill'}">
+        <div class="abil-pill ${isUtility ? 'is-utility-pill' : 'is-element-pill'}" title="${meta.desc || abilName}">
           <div class="abil-pill-top">
             <span class="abil-pill-name" style="${isUtility ? 'color: #f8fafc; font-weight: 700;' : ''}">${meta.emoji} ${abilName}</span>
             <span class="abil-pill-lvl" style="${isUtility ? 'color: #f59e0b;' : ''}">Lv.${lvl}</span>
