@@ -62,10 +62,10 @@ async function fetchStats() {
       const elRegional = document.getElementById('statRegional');
       const elPrismana = document.getElementById('statPrismana');
 
-      if (elSpecies) elSpecies.textContent = stats.verifiedSpeciesCount || 82;
-      if (elForms) elForms.textContent = stats.totalFormsCount || '170+';
+      if (elSpecies) elSpecies.textContent = stats.numberedSpeciesCount || 82;
+      if (elForms) elForms.textContent = stats.totalFormsCount || '200+';
       if (elRegional) elRegional.textContent = stats.regionalVariantsCount || 88;
-      if (elPrismana) elPrismana.textContent = stats.prismanaCount || 25;
+      if (elPrismana) elPrismana.textContent = stats.prismanaCount || 24;
     }
   } catch (err) {
     console.warn('Stats fetch error:', err);
@@ -85,43 +85,11 @@ function renderCards(list) {
     return;
   }
 
-  const verifiedInList = list.filter(i => !i.is_unverified).length;
-  const unverifiedInList = list.filter(i => i.is_unverified).length;
-  resultsBadge.textContent = `Showing ${verifiedInList} Verified Aniimo ${unverifiedInList ? `(+ ${unverifiedInList} ????)` : ''}`;
+  const numberedInList = list.filter(i => !i.is_unnumbered).length;
+  const unnumberedInList = list.filter(i => i.is_unnumbered).length;
+  resultsBadge.textContent = `Showing ${list.length} Aniimo (${numberedInList} numbered + ${unnumberedInList} #????)`;
 
   grid.innerHTML = list.map(item => {
-    // Unverified entry rendering (#083 - #092)
-    if (item.is_unverified) {
-      return `
-        <div class="card is-unverified-card" id="aniimo-${item.id}">
-          <div class="card-portrait-wrap" onclick="openDetailModal('${item.id}')" style="cursor: pointer;" title="Unreleased Slot">
-            <img src="/images/unknown.png" class="portrait-img" alt="Unverified" loading="lazy">
-            <div class="portrait-overlay">
-              <span class="portrait-badge-id">#${item.id}</span>
-              <span class="portrait-badge-stage" style="background: rgba(148, 163, 184, 0.2); color: #94a3b8;">????</span>
-            </div>
-          </div>
-
-          <div class="card-header-row">
-            <h3 class="card-title" style="color: #94a3b8;">???? (Undiscovered)</h3>
-            <div class="element-badges-wrap">
-              <span class="el-badge" style="background: rgba(255,255,255,0.05); color: #64748b;">????</span>
-            </div>
-          </div>
-
-          <div class="card-role-strip" style="background: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.05);">
-            <span class="role-tag">Status</span>
-            <span class="role-desc">Not yet released in basic version (82 species cataloged).</span>
-          </div>
-
-          <div class="active-form-box" style="text-align: center; color: #64748b; padding: 1.5rem 0.5rem;">
-            🔒 Encounter data locked in current game version
-          </div>
-        </div>
-      `;
-    }
-
-    // Verified entry rendering (#001 - #082)
     const basicForm = item.forms.basic;
     const regionalForms = item.forms.regional || [];
     const weatherForms = item.forms.weather || [];
@@ -146,7 +114,7 @@ function renderCards(list) {
     // Build form nav buttons
     let navBtns = '';
     
-    // For Somniwing, it's inherently a Prismana form creature
+    // For Somniwing (#030), inherently a Prismana form creature
     if (item.id === '030') {
       navBtns = `<button class="btn-form-tab is-prismana active">🌈 Prismana Form</button>`;
       isPris = true;
@@ -170,7 +138,7 @@ function renderCards(list) {
       }
     }
 
-    // Build element proficiency pills (Elemental Affinities & Levels)
+    // Build element proficiency pills
     const elementsHtml = Object.entries(activeData.elements || {}).map(([elemName, lvl]) => {
       const meta = elementMeta[elemName] || { emoji: '⭐', color1: '#38bdf8' };
       const pct = Math.min((lvl / 5) * 100, 100);
@@ -191,19 +159,21 @@ function renderCards(list) {
     const currentImg = activeData.image || item.image || `/images/${item.id}.png`;
 
     return `
-      <div class="card ${isPris ? 'is-prismana-active' : ''}" id="aniimo-${item.id}">
+      <div class="card ${isPris ? 'is-prismana-active' : ''} ${item.is_unnumbered ? 'is-unnumbered-card' : ''}" id="aniimo-${item.id}">
         <!-- Picture Portrait Banner -->
         <div class="card-portrait-wrap" onclick="openDetailModal('${item.id}')" style="cursor: pointer;" title="Click for full handbook details">
           <img src="${currentImg}" class="portrait-img" alt="${item.name}" loading="lazy" onerror="this.onerror=null; this.src='/images/${item.id}.png';">
           <div class="portrait-overlay">
-            <span class="portrait-badge-id">#${item.id}</span>
+            <span class="portrait-badge-id" style="${item.is_unnumbered ? 'background: rgba(234, 88, 12, 0.4); border: 1px solid rgba(234, 88, 12, 0.7);' : ''}">${item.display_id}</span>
             <span class="portrait-badge-stage stage-${item.tier}">${item.tier}</span>
           </div>
         </div>
 
         <!-- Title & Elements -->
         <div class="card-header-row">
-          <h3 class="card-title" onclick="openDetailModal('${item.id}')" style="cursor: pointer;">${item.name}</h3>
+          <h3 class="card-title" onclick="openDetailModal('${item.id}')" style="cursor: pointer;">
+            ${item.name}
+          </h3>
           <div class="element-badges-wrap">
             <span class="el-badge">
               ${activeData.element_display || 'Standard'}
@@ -249,25 +219,8 @@ window.setCardTab = function(id, tab) {
 };
 
 window.openDetailModal = function(id) {
-  const item = allAniimo.find(a => a.id === id);
+  const item = allAniimo.find(a => a.id === id || a.slug === id);
   if (!item) return;
-
-  if (item.is_unverified) {
-    modalBody.innerHTML = `
-      <div style="text-align: center; padding: 2rem 1rem;">
-        <img src="/images/unknown.png" style="width: 140px; height: 140px; margin-bottom: 1rem;" alt="Unknown">
-        <h2 style="font-size: 1.8rem; font-weight: 800; color: #94a3b8; margin-bottom: 0.5rem;">Slot #${item.id} — ????</h2>
-        <p style="color: #cbd5e1; max-width: 480px; margin: 0 auto 1.5rem; font-size: 0.95rem;">
-          This creature slot is currently unreleased in the game. The active game version features <strong>82 verified basic species</strong> (from #001 Emberpup to #082 Besauce).
-        </p>
-        <div style="display: inline-block; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.5rem 1rem; border-radius: 999px; color: #38bdf8; font-size: 0.85rem;">
-          🔒 Awaiting official game update
-        </div>
-      </div>
-    `;
-    detailModal.classList.remove('hidden');
-    return;
-  }
 
   const basic = item.forms.basic;
   const regionalList = item.forms.regional || [];
@@ -282,7 +235,7 @@ window.openDetailModal = function(id) {
     return `
       <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
         <td style="padding: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-          <img src="${f.image || `/images/${item.id}.png`}" style="width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.3);" onerror="this.onerror=null; this.src='/images/${item.id}.png';">
+          <img src="${f.image || item.image}" style="width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.3);" onerror="this.onerror=null; this.src='${item.image}';">
           <strong>${f.form_name}</strong>
         </td>
         <td style="padding: 0.75rem; color: ${isPris ? '#ec4899' : '#38bdf8'}; font-weight: 600;">${f.element_display}</td>
@@ -296,12 +249,13 @@ window.openDetailModal = function(id) {
   modalBody.innerHTML = `
     <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
       <div style="width: 180px; height: 180px; border-radius: 12px; overflow: hidden; background: #0f172a; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);">
-        <img src="/images/${item.id}.png" style="max-width: 90%; max-height: 90%; object-fit: contain;" alt="${item.name}">
+        <img src="${item.image}" style="max-width: 90%; max-height: 90%; object-fit: contain;" alt="${item.name}">
       </div>
       <div style="flex: 1; min-width: 250px;">
         <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.4rem;">
-          <span class="portrait-badge-id">#${item.id}</span>
+          <span class="portrait-badge-id" style="${item.is_unnumbered ? 'background: rgba(234, 88, 12, 0.4); border: 1px solid rgba(234, 88, 12, 0.7);' : ''}">${item.display_id}</span>
           <span class="portrait-badge-stage stage-${item.tier}">${item.tier}</span>
+          ${item.is_unnumbered ? '<span style="font-size: 0.75rem; color: #fb923c; background: rgba(234,88,12,0.15); padding: 0.2rem 0.5rem; border-radius: 4px;">Unnumbered in Current Dex</span>' : ''}
         </div>
         <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 0.25rem;">${item.name}</h2>
         <p style="color: #94a3b8; font-family: 'JetBrains Mono'; font-size: 0.9rem; margin-bottom: 0.75rem;">Slug: ${item.slug}</p>
@@ -363,23 +317,11 @@ function applyFilters() {
   const filtered = allAniimo.filter(item => {
     // Search query
     if (query) {
-      const matchText = `${item.id} ${item.name} ${item.slug} ${item.tier} ${item.trait} ${item.trait_effect} ${JSON.stringify(item.forms)}`.toLowerCase();
+      const matchText = `${item.id} ${item.display_id} ${item.name} ${item.slug} ${item.tier} ${item.trait} ${item.trait_effect} ${JSON.stringify(item.forms)}`.toLowerCase();
       if (!matchText.includes(query)) return false;
     }
 
-    // Unverified filter
-    if (currentFormFilter === 'unverified') {
-      return item.is_unverified;
-    } else if (item.is_unverified && (currentFormFilter !== 'all' || selectedElement !== 'all' || selectedTier !== 'all')) {
-      return false; // hide unverified from element/tier specific filters
-    }
-
-    // Tier filter
-    if (selectedTier !== 'all' && item.tier !== selectedTier) {
-      return false;
-    }
-
-    // Form filter pill
+    // Quick Form pill
     if (currentFormFilter === 'regional') {
       if (!item.forms.regional || item.forms.regional.length === 0) return false;
     } else if (currentFormFilter === 'weather') {
@@ -388,6 +330,13 @@ function applyFilters() {
       if (!item.forms.prismana) return false;
     } else if (currentFormFilter === 'basic') {
       if (!item.forms.basic) return false;
+    } else if (currentFormFilter === 'unnumbered') {
+      if (!item.is_unnumbered) return false;
+    }
+
+    // Tier filter
+    if (selectedTier !== 'all' && item.tier !== selectedTier) {
+      return false;
     }
 
     // Element filter

@@ -1,9 +1,11 @@
 [
   {
     "id": "001",
+    "dex_number": "001",
+    "display_id": "#001",
     "name": "Emberpup",
     "slug": "emberpup",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/001.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-emberpup-handbook.png",
     "tier": "C-Tier",
@@ -65,9 +67,11 @@
   },
   {
     "id": "002",
+    "dex_number": "002",
+    "display_id": "#002",
     "name": "Flameruff",
     "slug": "flameruff",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/002.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flameruff-handbook.png",
     "tier": "B-Tier",
@@ -129,9 +133,11 @@
   },
   {
     "id": "003",
+    "dex_number": "003",
+    "display_id": "#003",
     "name": "Scorchhowl",
     "slug": "scorchhowl",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/003.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-handbook.png",
     "tier": "S-Tier",
@@ -164,7 +170,7 @@
           "form_name": "Highland Form",
           "element_display": "Fire 3 / Earth 2",
           "catch_rate": "19%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Fire": 3,
             "Earth": 2
@@ -175,7 +181,7 @@
           "form_name": "Mountain Woods Form",
           "element_display": "Fire 3",
           "catch_rate": "25%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Fire": 3
           },
@@ -215,9 +221,11 @@
   },
   {
     "id": "004",
+    "dex_number": "004",
+    "display_id": "#004",
     "name": "Inferlupa",
     "slug": "inferlupa",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/004.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-inferlupa-handbook.png",
     "tier": "S-Tier",
@@ -238,7 +246,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Dark 3 / Fire 2",
         "catch_rate": "28%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Dark": 3,
           "Fire": 2
@@ -251,7 +259,7 @@
         "form_name": "Prismana",
         "element_display": "Dark 4 / Fire 3",
         "catch_rate": "25%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Dark": 4,
           "Fire": 3
@@ -266,9 +274,11 @@
   },
   {
     "id": "005",
+    "dex_number": "005",
+    "display_id": "#005",
     "name": "Celestis",
     "slug": "celestis",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/005.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-celestis-handbook.png",
     "tier": "A-Tier",
@@ -304,9 +314,11 @@
   },
   {
     "id": "006",
+    "dex_number": "006",
+    "display_id": "#006",
     "name": "Stellarys",
     "slug": "stellarys",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/006.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-stellarys-handbook.png",
     "tier": "S-Tier",
@@ -366,9 +378,11 @@
   },
   {
     "id": "007",
+    "dex_number": "007",
+    "display_id": "#007",
     "name": "Chirpi",
     "slug": "chirpi",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/007.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-chirpi-handbook.png",
     "tier": "C-Tier",
@@ -430,9 +444,11 @@
   },
   {
     "id": "008",
+    "dex_number": "008",
+    "display_id": "#008",
     "name": "Tromber",
     "slug": "tromber",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/008.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tromber-handbook.png",
     "tier": "A-Tier",
@@ -494,9 +510,11 @@
   },
   {
     "id": "009",
+    "dex_number": "009",
+    "display_id": "#009",
     "name": "Cornet",
     "slug": "cornet",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/009.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-handbook.png",
     "tier": "S-Tier",
@@ -569,9 +587,11 @@
   },
   {
     "id": "010",
+    "dex_number": "010",
+    "display_id": "#010",
     "name": "Tubster",
     "slug": "tubster",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/010.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tubster-handbook.png",
     "tier": "A-Tier",
@@ -624,8 +644,8 @@
         {
           "form_name": "Basic Form (variant record)",
           "element_display": "Wind 3",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Wind": 3
           },
@@ -644,9 +664,11 @@
   },
   {
     "id": "011",
+    "dex_number": "011",
+    "display_id": "#011",
     "name": "Iris",
     "slug": "iris",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/011.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-iris-handbook.png",
     "tier": "C-Tier",
@@ -729,7 +751,7 @@
         "form_name": "Prismana",
         "element_display": "Grass 1",
         "catch_rate": "56%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Grass": 1
         },
@@ -748,9 +770,11 @@
   },
   {
     "id": "012",
+    "dex_number": "012",
+    "display_id": "#012",
     "name": "Irisal",
     "slug": "irisal",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/012.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-handbook.png",
     "tier": "S-Tier",
@@ -779,7 +803,7 @@
         {
           "form_name": "Highland Form",
           "element_display": "Grass 3",
-          "catch_rate": "\u2014",
+          "catch_rate": "25%",
           "region": "Russet Highlands",
           "elements": {
             "Grass": 3
@@ -821,7 +845,7 @@
         {
           "form_name": "Plateau Form",
           "element_display": "Grass 3",
-          "catch_rate": "\u2014",
+          "catch_rate": "25%",
           "region": "Driftwise Meadow",
           "elements": {
             "Grass": 3
@@ -833,7 +857,7 @@
         "form_name": "Prismana",
         "element_display": "Grass 4",
         "catch_rate": "25%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Grass": 4
         },
@@ -852,9 +876,11 @@
   },
   {
     "id": "013",
+    "dex_number": "013",
+    "display_id": "#013",
     "name": "Skippy",
     "slug": "skippy",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/013.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-skippy-handbook.png",
     "tier": "C-Tier",
@@ -916,9 +942,11 @@
   },
   {
     "id": "014",
+    "dex_number": "014",
+    "display_id": "#014",
     "name": "Pranky",
     "slug": "pranky",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/014.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pranky-handbook.png",
     "tier": "B-Tier",
@@ -980,9 +1008,11 @@
   },
   {
     "id": "015",
+    "dex_number": "015",
+    "display_id": "#015",
     "name": "Glacy",
     "slug": "glacy",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/015.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-glacy-handbook.png",
     "tier": "S-Tier",
@@ -1001,7 +1031,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Water 3 / Ice 2",
         "catch_rate": "28%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Water": 3,
           "Ice": 2
@@ -1054,9 +1084,11 @@
   },
   {
     "id": "016",
+    "dex_number": "016",
+    "display_id": "#016",
     "name": "Leafy",
     "slug": "leafy",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/016.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-leafy-handbook.png",
     "tier": "C-Tier",
@@ -1094,9 +1126,11 @@
   },
   {
     "id": "017",
+    "dex_number": "017",
+    "display_id": "#017",
     "name": "Nimbi",
     "slug": "nimbi",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/017.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi-handbook.png",
     "tier": "C-Tier",
@@ -1139,7 +1173,7 @@
         {
           "form_name": "Cloudmist Form",
           "element_display": "Wind 1",
-          "catch_rate": "\u2014",
+          "catch_rate": "25%",
           "region": "Nimbus Fields",
           "elements": {
             "Wind": 1
@@ -1169,9 +1203,11 @@
   },
   {
     "id": "018",
+    "dex_number": "018",
+    "display_id": "#018",
     "name": "Turbo",
     "slug": "turbo",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/018.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-handbook.png",
     "tier": "S-Tier",
@@ -1215,7 +1251,7 @@
           "form_name": "Cloudmist Form",
           "element_display": "Wind 3",
           "catch_rate": "28%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Wind": 3
           },
@@ -1235,8 +1271,8 @@
         {
           "form_name": "Plateau Form",
           "element_display": "Wind 3 / Ice 2",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Wind": 3,
             "Ice": 2
@@ -1261,14 +1297,17 @@
       "Rainstorm Form",
       "Cloudmist Form",
       "Plateau Form",
+      "Plateau Form",
       "Prismana"
     ]
   },
   {
     "id": "019",
+    "dex_number": "019",
+    "display_id": "#019",
     "name": "Dreaple",
     "slug": "dreaple",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/019.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dreaple-handbook.png",
     "tier": "B-Tier",
@@ -1292,7 +1331,7 @@
         "elements": {
           "Dark": 2
         },
-        "image": "/images/019.png"
+        "image": "/images/dreaple.png"
       },
       "regional": [],
       "weather": [],
@@ -1304,9 +1343,11 @@
   },
   {
     "id": "020",
+    "dex_number": "020",
+    "display_id": "#020",
     "name": "Hummin",
     "slug": "hummin",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/020.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-hummin-handbook.png",
     "tier": "C-Tier",
@@ -1357,9 +1398,11 @@
   },
   {
     "id": "021",
+    "dex_number": "021",
+    "display_id": "#021",
     "name": "Hexxin",
     "slug": "hexxin",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/021.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-hexxin-handbook.png",
     "tier": "S-Tier",
@@ -1422,9 +1465,11 @@
   },
   {
     "id": "022",
+    "dex_number": "022",
+    "display_id": "#022",
     "name": "Tuckin",
     "slug": "tuckin",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/022.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-handbook.png",
     "tier": "S-Tier",
@@ -1447,7 +1492,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Grass 3",
         "catch_rate": "28%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Grass": 3
         },
@@ -1458,7 +1503,7 @@
           "form_name": "Mountain Form",
           "element_display": "Grass 3 / Earth 2",
           "catch_rate": "28%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Grass": 3,
             "Earth": 2
@@ -1468,8 +1513,8 @@
         {
           "form_name": "Basic Form (variant record)",
           "element_display": "Grass 3",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Grass": 3
           },
@@ -1478,8 +1523,8 @@
         {
           "form_name": "Unnamed form",
           "element_display": "Grass 4",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Grass": 4
           },
@@ -1498,9 +1543,11 @@
   },
   {
     "id": "023",
+    "dex_number": "023",
+    "display_id": "#023",
     "name": "Budclaw",
     "slug": "budclaw",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/023.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw-handbook.png",
     "tier": "C-Tier",
@@ -1575,9 +1622,11 @@
   },
   {
     "id": "024",
+    "dex_number": "024",
+    "display_id": "#024",
     "name": "Shrubclaw",
     "slug": "shrubclaw",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/024.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-handbook.png",
     "tier": "S-Tier",
@@ -1652,9 +1701,11 @@
   },
   {
     "id": "025",
+    "dex_number": "025",
+    "display_id": "#025",
     "name": "Geoclaw",
     "slug": "geoclaw",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/025.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geoclaw-handbook.png",
     "tier": "C-Tier",
@@ -1678,7 +1729,7 @@
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {},
-        "image": "/images/025.png"
+        "image": "/images/geoclaw.png"
       },
       "regional": [],
       "weather": [],
@@ -1690,9 +1741,11 @@
   },
   {
     "id": "026",
+    "dex_number": "026",
+    "display_id": "#026",
     "name": "Sparki",
     "slug": "sparki",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/026.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-handbook.png",
     "tier": "C-Tier",
@@ -1764,9 +1817,11 @@
   },
   {
     "id": "027",
+    "dex_number": "027",
+    "display_id": "#027",
     "name": "Flamerion",
     "slug": "flamerion",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/027.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion-handbook.png",
     "tier": "A-Tier",
@@ -1819,7 +1874,7 @@
           "form_name": "Sea of Flowers Form",
           "element_display": "Fire 3",
           "catch_rate": "25%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Fire": 3
           },
@@ -1838,9 +1893,11 @@
   },
   {
     "id": "028",
+    "dex_number": "028",
+    "display_id": "#028",
     "name": "Flutternym",
     "slug": "flutternym",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/028.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym-handbook.png",
     "tier": "C-Tier",
@@ -1912,9 +1969,11 @@
   },
   {
     "id": "029",
+    "dex_number": "029",
+    "display_id": "#029",
     "name": "Gracewing",
     "slug": "gracewing",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/029.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing-handbook.png",
     "tier": "A-Tier",
@@ -1933,7 +1992,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Wind 3",
         "catch_rate": "28%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Wind": 3
         },
@@ -1944,7 +2003,7 @@
           "form_name": "Sea of Flowers Form",
           "element_display": "Wind 3 / Grass 2",
           "catch_rate": "25%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Wind": 3,
             "Grass": 2
@@ -1955,7 +2014,7 @@
           "form_name": "Nighttime Form",
           "element_display": "Wind 3 / Dark 2",
           "catch_rate": "28%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Wind": 3,
             "Dark": 2
@@ -1986,9 +2045,11 @@
   },
   {
     "id": "030",
+    "dex_number": "030",
+    "display_id": "#030",
     "name": "Somniwing",
     "slug": "somniwing",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/030.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-somniwing-handbook.png",
     "tier": "S-Tier",
@@ -2034,9 +2095,11 @@
   },
   {
     "id": "031",
+    "dex_number": "031",
+    "display_id": "#031",
     "name": "Eko",
     "slug": "eko",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/031.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eko-handbook.png",
     "tier": "C-Tier",
@@ -2071,9 +2134,11 @@
   },
   {
     "id": "032",
+    "dex_number": "032",
+    "display_id": "#032",
     "name": "Eklue",
     "slug": "eklue",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/032.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eklue-handbook.png",
     "tier": "C-Tier",
@@ -2108,9 +2173,11 @@
   },
   {
     "id": "033",
+    "dex_number": "033",
+    "display_id": "#033",
     "name": "Budsquire",
     "slug": "budsquire",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/033.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-budsquire-handbook.png",
     "tier": "C-Tier",
@@ -2161,9 +2228,11 @@
   },
   {
     "id": "034",
+    "dex_number": "034",
+    "display_id": "#034",
     "name": "Thornblade",
     "slug": "thornblade",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/034.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade-handbook.png",
     "tier": "S-Tier",
@@ -2237,9 +2306,11 @@
   },
   {
     "id": "035",
+    "dex_number": "035",
+    "display_id": "#035",
     "name": "Melloblum",
     "slug": "melloblum",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/035.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-melloblum-handbook.png",
     "tier": "S-Tier",
@@ -2274,7 +2345,7 @@
         "form_name": "Prismana",
         "element_display": "Grass 4",
         "catch_rate": "25%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Grass": 4
         },
@@ -2288,9 +2359,11 @@
   },
   {
     "id": "036",
+    "dex_number": "036",
+    "display_id": "#036",
     "name": "Pomegg",
     "slug": "pomegg",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/036.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg-handbook.png",
     "tier": "C-Tier",
@@ -2364,9 +2437,11 @@
   },
   {
     "id": "037",
+    "dex_number": "037",
+    "display_id": "#037",
     "name": "Pomawk",
     "slug": "pomawk",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/037.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk-handbook.png",
     "tier": "A-Tier",
@@ -2400,7 +2475,7 @@
           "form_name": "Snowfield Form",
           "element_display": "Grass 3 / Ice 2",
           "catch_rate": "25%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Grass": 3,
             "Ice": 2
@@ -2411,7 +2486,7 @@
           "form_name": "Highland Form",
           "element_display": "Grass 3",
           "catch_rate": "16%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Grass": 3
           },
@@ -2421,7 +2496,7 @@
           "form_name": "Sea of Flowers Form",
           "element_display": "Grass 3",
           "catch_rate": "25%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Grass": 3
           },
@@ -2440,9 +2515,11 @@
   },
   {
     "id": "038",
+    "dex_number": "038",
+    "display_id": "#038",
     "name": "Dewy",
     "slug": "dewy",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/038.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dewy-handbook.png",
     "tier": "C-Tier",
@@ -2476,9 +2553,11 @@
   },
   {
     "id": "039",
+    "dex_number": "039",
+    "display_id": "#039",
     "name": "Fragrancier",
     "slug": "fragrancier",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/039.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fragrancier-handbook.png",
     "tier": "C-Tier",
@@ -2512,9 +2591,11 @@
   },
   {
     "id": "040",
+    "dex_number": "040",
+    "display_id": "#040",
     "name": "Wisptis",
     "slug": "wisptis",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/040.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-wisptis-handbook.png",
     "tier": "C-Tier",
@@ -2575,9 +2656,11 @@
   },
   {
     "id": "041",
+    "dex_number": "041",
+    "display_id": "#041",
     "name": "Ignitis",
     "slug": "ignitis",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/041.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis-handbook.png",
     "tier": "S-Tier",
@@ -2649,9 +2732,11 @@
   },
   {
     "id": "042",
+    "dex_number": "042",
+    "display_id": "#042",
     "name": "Bonesky",
     "slug": "bonesky",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/042.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bonesky-handbook.png",
     "tier": "C-Tier",
@@ -2702,9 +2787,11 @@
   },
   {
     "id": "043",
+    "dex_number": "043",
+    "display_id": "#043",
     "name": "Fenrier",
     "slug": "fenrier",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/043.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fenrier-handbook.png",
     "tier": "B-Tier",
@@ -2755,9 +2842,11 @@
   },
   {
     "id": "044",
+    "dex_number": "044",
+    "display_id": "#044",
     "name": "Glynsera",
     "slug": "glynsera",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/044.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-glynsera-handbook.png",
     "tier": "S-Tier",
@@ -2789,7 +2878,7 @@
         {
           "form_name": "Nighttime Form",
           "element_display": "Ice 3 / Dark 2",
-          "catch_rate": "\u2014",
+          "catch_rate": "25%",
           "region": "Rosetower Woods",
           "elements": {
             "Ice": 3,
@@ -2803,7 +2892,7 @@
         "form_name": "Prismana",
         "element_display": "Ice 4",
         "catch_rate": "25%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Ice": 4
         },
@@ -2818,9 +2907,11 @@
   },
   {
     "id": "045",
+    "dex_number": "045",
+    "display_id": "#045",
     "name": "Bolty",
     "slug": "bolty",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/045.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bolty-handbook.png",
     "tier": "C-Tier",
@@ -2870,9 +2961,11 @@
   },
   {
     "id": "046",
+    "dex_number": "046",
+    "display_id": "#046",
     "name": "Blazen",
     "slug": "blazen",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/046.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-blazen-handbook.png",
     "tier": "S-Tier",
@@ -2905,7 +2998,7 @@
           "form_name": "Mountain Woods Form",
           "element_display": "Lightning 3",
           "catch_rate": "25%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Lightning": 3
           },
@@ -2932,9 +3025,11 @@
   },
   {
     "id": "047",
+    "dex_number": "047",
+    "display_id": "#047",
     "name": "Squarrel",
     "slug": "squarrel",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/047.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-squarrel-handbook.png",
     "tier": "C-Tier",
@@ -2970,9 +3065,11 @@
   },
   {
     "id": "048",
+    "dex_number": "048",
+    "display_id": "#048",
     "name": "Squashel",
     "slug": "squashel",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/048.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-squashel-handbook.png",
     "tier": "C-Tier",
@@ -3008,9 +3105,11 @@
   },
   {
     "id": "049",
+    "dex_number": "049",
+    "display_id": "#049",
     "name": "Susuta",
     "slug": "susuta",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/049.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-susuta-handbook.png",
     "tier": "C-Tier",
@@ -3052,8 +3151,8 @@
         {
           "form_name": "Basic Form (variant record)",
           "element_display": "Water 1",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Water": 1
           },
@@ -3071,9 +3170,11 @@
   },
   {
     "id": "050",
+    "dex_number": "050",
+    "display_id": "#050",
     "name": "Popota",
     "slug": "popota",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/050.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-popota-handbook.png",
     "tier": "B-Tier",
@@ -3106,7 +3207,7 @@
           "form_name": "Nighttime Form",
           "element_display": "Water 2",
           "catch_rate": "33%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Water": 2
           },
@@ -3123,9 +3224,11 @@
   },
   {
     "id": "051",
+    "dex_number": "051",
+    "display_id": "#051",
     "name": "Piopiota",
     "slug": "piopiota",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/051.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-piopiota-handbook.png",
     "tier": "A-Tier",
@@ -3147,7 +3250,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Water 3",
         "catch_rate": "19%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Water": 3
         },
@@ -3158,7 +3261,7 @@
           "form_name": "Nighttime Form",
           "element_display": "Water 3 / Dark 2",
           "catch_rate": "22%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Water": 3,
             "Dark": 2
@@ -3176,9 +3279,11 @@
   },
   {
     "id": "052",
+    "dex_number": "052",
+    "display_id": "#052",
     "name": "Panpanta",
     "slug": "panpanta",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/052.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-panpanta-handbook.png",
     "tier": "S-Tier",
@@ -3211,7 +3316,7 @@
           "form_name": "Nighttime Form",
           "element_display": "Water 3",
           "catch_rate": "22%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Water": 3
           },
@@ -3238,9 +3343,11 @@
   },
   {
     "id": "053",
+    "dex_number": "053",
+    "display_id": "#053",
     "name": "Shelly",
     "slug": "shelly",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/053.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shelly-handbook.png",
     "tier": "C-Tier",
@@ -3272,12 +3379,12 @@
         {
           "form_name": "Basic Form (variant record)",
           "element_display": "Water 1",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Water": 1
           },
-          "image": "/images/053.png"
+          "image": "/images/shelly.png"
         }
       ],
       "weather": [],
@@ -3290,9 +3397,11 @@
   },
   {
     "id": "054",
+    "dex_number": "054",
+    "display_id": "#054",
     "name": "Sheldon",
     "slug": "sheldon",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/054.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sheldon-handbook.png",
     "tier": "C-Tier",
@@ -3328,9 +3437,11 @@
   },
   {
     "id": "055",
+    "dex_number": "055",
+    "display_id": "#055",
     "name": "Sherro",
     "slug": "sherro",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/055.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sherro-handbook.png",
     "tier": "S-Tier",
@@ -3352,7 +3463,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Water 3",
         "catch_rate": "19%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Water": 3
         },
@@ -3376,7 +3487,7 @@
         "form_name": "Prismana",
         "element_display": "Water 4",
         "catch_rate": "22%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Water": 4
         },
@@ -3391,9 +3502,11 @@
   },
   {
     "id": "056",
+    "dex_number": "056",
+    "display_id": "#056",
     "name": "Baleetle",
     "slug": "baleetle",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/056.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-baleetle-handbook.png",
     "tier": "C-Tier",
@@ -3445,9 +3558,11 @@
   },
   {
     "id": "057",
+    "dex_number": "057",
+    "display_id": "#057",
     "name": "Waleetle",
     "slug": "waleetle",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/057.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-waleetle-handbook.png",
     "tier": "S-Tier",
@@ -3494,7 +3609,7 @@
         "form_name": "Prismana",
         "element_display": "Earth 4",
         "catch_rate": "19%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Earth": 4
         },
@@ -3509,9 +3624,11 @@
   },
   {
     "id": "058",
+    "dex_number": "058",
+    "display_id": "#058",
     "name": "Bouldus",
     "slug": "bouldus",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/058.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bouldus-handbook.png",
     "tier": "A-Tier",
@@ -3545,7 +3662,7 @@
           "form_name": "Snowfield Form",
           "element_display": "Earth 3 / Ice 2",
           "catch_rate": "19%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Earth": 3,
             "Ice": 2
@@ -3563,9 +3680,11 @@
   },
   {
     "id": "059",
+    "dex_number": "059",
+    "display_id": "#059",
     "name": "Fentuft",
     "slug": "fentuft",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/059.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fentuft-handbook.png",
     "tier": "C-Tier",
@@ -3601,9 +3720,11 @@
   },
   {
     "id": "060",
+    "dex_number": "060",
+    "display_id": "#060",
     "name": "Fenmane",
     "slug": "fenmane",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/060.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fenmane-handbook.png",
     "tier": "S-Tier",
@@ -3637,7 +3758,7 @@
         "form_name": "Prismana",
         "element_display": "Lightning 4",
         "catch_rate": "22%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Lightning": 4
         },
@@ -3651,9 +3772,11 @@
   },
   {
     "id": "061",
+    "dex_number": "061",
+    "display_id": "#061",
     "name": "Helmut",
     "slug": "helmut",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/061.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helmut-handbook.png",
     "tier": "C-Tier",
@@ -3713,9 +3836,11 @@
   },
   {
     "id": "062",
+    "dex_number": "062",
+    "display_id": "#062",
     "name": "Pawney",
     "slug": "pawney",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/062.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pawney-handbook.png",
     "tier": "S-Tier",
@@ -3735,7 +3860,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Dark 3",
         "catch_rate": "16%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Dark": 3
         },
@@ -3746,7 +3871,7 @@
           "form_name": "Snowfield Form",
           "element_display": "Dark 3 / Ice 2",
           "catch_rate": "28%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Dark": 3,
             "Ice": 2
@@ -3757,7 +3882,7 @@
           "form_name": "Mountain Woods Form",
           "element_display": "Dark 3",
           "catch_rate": "16%",
-          "region": "\u2014",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Dark": 3
           },
@@ -3785,9 +3910,11 @@
   },
   {
     "id": "063",
+    "dex_number": "063",
+    "display_id": "#063",
     "name": "Rookey",
     "slug": "rookey",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/063.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-handbook.png",
     "tier": "A-Tier",
@@ -3847,9 +3974,11 @@
   },
   {
     "id": "064",
+    "dex_number": "064",
+    "display_id": "#064",
     "name": "Jawling",
     "slug": "jawling",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/064.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-jawling-handbook.png",
     "tier": "C-Tier",
@@ -3898,9 +4027,11 @@
   },
   {
     "id": "065",
+    "dex_number": "065",
+    "display_id": "#065",
     "name": "Helmwhelp",
     "slug": "helmwhelp",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/065.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helmwhelp-handbook.png",
     "tier": "B-Tier",
@@ -3949,9 +4080,11 @@
   },
   {
     "id": "066",
+    "dex_number": "066",
+    "display_id": "#066",
     "name": "Helgon",
     "slug": "helgon",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/066.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helgon-handbook.png",
     "tier": "A-Tier",
@@ -4000,9 +4133,11 @@
   },
   {
     "id": "067",
+    "dex_number": "067",
+    "display_id": "#067",
     "name": "Infergon",
     "slug": "infergon",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/067.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-infergon-handbook.png",
     "tier": "S-Tier",
@@ -4024,7 +4159,7 @@
         "form_name": "Basic Form (base)",
         "element_display": "Fire 3",
         "catch_rate": "19%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Fire": 3
         },
@@ -4036,7 +4171,7 @@
         "form_name": "Prismana",
         "element_display": "Fire 4 / Wind 3",
         "catch_rate": "19%",
-        "region": "\u2014",
+        "region": "Idyll Native Habitat",
         "elements": {
           "Fire": 4,
           "Wind": 3
@@ -4051,9 +4186,11 @@
   },
   {
     "id": "068",
+    "dex_number": "068",
+    "display_id": "#068",
     "name": "Cubbo",
     "slug": "cubbo",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/068.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cubbo-handbook.png",
     "tier": "C-Tier",
@@ -4090,9 +4227,11 @@
   },
   {
     "id": "069",
+    "dex_number": "069",
+    "display_id": "#069",
     "name": "Grizbo",
     "slug": "grizbo",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/069.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-grizbo-handbook.png",
     "tier": "S-Tier",
@@ -4141,9 +4280,11 @@
   },
   {
     "id": "070",
+    "dex_number": "070",
+    "display_id": "#070",
     "name": "Pebbling",
     "slug": "pebbling",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/070.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-pebbling-handbook.png",
     "tier": "C-Tier",
@@ -4180,9 +4321,11 @@
   },
   {
     "id": "071",
+    "dex_number": "071",
+    "display_id": "#071",
     "name": "Lavazar",
     "slug": "lavazar",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/071.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lavazar-handbook.png",
     "tier": "C-Tier",
@@ -4217,9 +4360,11 @@
   },
   {
     "id": "072",
+    "dex_number": "072",
+    "display_id": "#072",
     "name": "Magmarex",
     "slug": "magmarex",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/072.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-magmarex-handbook.png",
     "tier": "S-Tier",
@@ -4251,8 +4396,8 @@
         {
           "form_name": "Basic Form (variant record)",
           "element_display": "Fire 3 / Earth 2",
-          "catch_rate": "\u2014",
-          "region": "\u2014",
+          "catch_rate": "25%",
+          "region": "Idyll Native Habitat",
           "elements": {
             "Fire": 3,
             "Earth": 2
@@ -4281,9 +4426,11 @@
   },
   {
     "id": "073",
+    "dex_number": "073",
+    "display_id": "#073",
     "name": "Geodeback",
     "slug": "geodeback",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/073.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geodeback-handbook.png",
     "tier": "C-Tier",
@@ -4308,7 +4455,7 @@
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {},
-        "image": "/images/073.png"
+        "image": "/images/geodeback.png"
       },
       "regional": [],
       "weather": [],
@@ -4320,9 +4467,11 @@
   },
   {
     "id": "074",
+    "dex_number": "074",
+    "display_id": "#074",
     "name": "Minespine",
     "slug": "minespine",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/074.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-minespine-handbook.png",
     "tier": "C-Tier",
@@ -4347,7 +4496,7 @@
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {},
-        "image": "/images/074.png"
+        "image": "/images/minespine.png"
       },
       "regional": [],
       "weather": [],
@@ -4359,9 +4508,11 @@
   },
   {
     "id": "075",
+    "dex_number": "075",
+    "display_id": "#075",
     "name": "Cozite",
     "slug": "cozite",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/075.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cozite-handbook.png",
     "tier": "C-Tier",
@@ -4398,9 +4549,11 @@
   },
   {
     "id": "076",
+    "dex_number": "076",
+    "display_id": "#076",
     "name": "Bailite",
     "slug": "bailite",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/076.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bailite-handbook.png",
     "tier": "C-Tier",
@@ -4437,9 +4590,11 @@
   },
   {
     "id": "077",
+    "dex_number": "077",
+    "display_id": "#077",
     "name": "Bulbly",
     "slug": "bulbly",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/077.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bulbly-handbook.png",
     "tier": "C-Tier",
@@ -4475,9 +4630,11 @@
   },
   {
     "id": "078",
+    "dex_number": "078",
+    "display_id": "#078",
     "name": "Veilfloat",
     "slug": "veilfloat",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/078.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-veilfloat-handbook.png",
     "tier": "C-Tier",
@@ -4513,9 +4670,11 @@
   },
   {
     "id": "079",
+    "dex_number": "079",
+    "display_id": "#079",
     "name": "Luminelle",
     "slug": "luminelle",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/079.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-luminelle-handbook.png",
     "tier": "S-Tier",
@@ -4576,9 +4735,11 @@
   },
   {
     "id": "080",
+    "dex_number": "080",
+    "display_id": "#080",
     "name": "Fahloo",
     "slug": "fahloo",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/080.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fahloo-handbook.png",
     "tier": "C-Tier",
@@ -4614,9 +4775,11 @@
   },
   {
     "id": "081",
+    "dex_number": "081",
+    "display_id": "#081",
     "name": "Erlath",
     "slug": "erlath",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/081.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-erlath-handbook.png",
     "tier": "C-Tier",
@@ -4652,9 +4815,11 @@
   },
   {
     "id": "082",
+    "dex_number": "082",
+    "display_id": "#082",
     "name": "Besauce",
     "slug": "besauce",
-    "is_unverified": false,
+    "is_unnumbered": false,
     "image": "/images/082.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-besauce-handbook.png",
     "tier": "C-Tier",
@@ -4678,7 +4843,7 @@
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {},
-        "image": "/images/082.png"
+        "image": "/images/besauce.png"
       },
       "regional": [],
       "weather": [],
@@ -4690,312 +4855,421 @@
   },
   {
     "id": "083",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Dazmand",
     "slug": "dazmand",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/dazmand.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dazmand-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Spotlight Moment",
+    "trait_effect": "The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Lightning 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "/images/dazmand.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "084",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Fulmintis",
     "slug": "fulmintis",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/fulmintis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fulmintis-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Electro Stash",
+    "trait_effect": "Restores X EP when a skill lands a critical hit.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form (base)",
+        "element_display": "Lightning 3",
+        "catch_rate": "22%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 3
+        },
+        "image": "/images/forms/fulmintis-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
-      "prismana": null
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Lightning 4",
+        "catch_rate": "22%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Lightning": 4
+        },
+        "image": "/images/forms/fulmintis-prismana.png"
+      }
     },
     "all_form_names": [
-      "????"
+      "Basic Form (base)",
+      "Prismana"
     ]
   },
   {
     "id": "085",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Fennelun",
     "slug": "fennelun",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/fennelun.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fennelun-handbook.png",
+    "tier": "B-Tier",
+    "trait": "**Lunar Power**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Light 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 2
+        },
+        "image": "/images/fennelun.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "086",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Lunara",
     "slug": "lunara",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/lunara.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-lunara-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Lunar Power**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Light 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 3
+        },
+        "image": "/images/lunara.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "087",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Soleon",
     "slug": "soleon",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/soleon.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-soleon-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Solar Grace**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Light 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 3
+        },
+        "image": "/images/soleon.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "088",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Helion",
     "slug": "helion",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/helion.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helion-handbook.png",
+    "tier": "B-Tier",
+    "trait": "**Solar Grace**",
+    "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Light 2",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 2
+        },
+        "image": "/images/helion.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "089",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Morphling",
     "slug": "morphling",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/morphling.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-morphling-handbook.png",
+    "tier": "B-Tier",
+    "trait": "Shape Shift",
+    "trait_effect": "Adapts elemental affinity and forms to assist allied Aniimo.",
     "matchups": {
       "weak_to": [],
       "resists": []
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Light 2 / Earth 1",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Light": 2,
+          "Earth": 1
+        },
+        "image": "/images/morphling.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "090",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Jabster",
     "slug": "jabster",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/jabster.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-jabster-handbook.png",
+    "tier": "A-Tier",
+    "trait": "Knuckle Burst",
+    "trait_effect": "Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Water 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Water": 3
+        },
+        "image": "/images/jabster.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   },
   {
     "id": "091",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Sparkelf",
     "slug": "sparkelf",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/sparkelf.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-handbook.png",
+    "tier": "S-Tier",
+    "trait": "Reliable Fire Companion",
+    "trait_effect": "When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form (base)",
+        "element_display": "Fire 3",
+        "catch_rate": "16%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 3
+        },
+        "image": "/images/forms/sparkelf-basic-form-base.png"
       },
       "regional": [],
       "weather": [],
-      "prismana": null
+      "prismana": {
+        "form_name": "Prismana",
+        "element_display": "Fire 4",
+        "catch_rate": "16%",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Fire": 4
+        },
+        "image": "/images/forms/sparkelf-prismana.png"
+      }
     },
     "all_form_names": [
-      "????"
+      "Basic Form (base)",
+      "Prismana"
     ]
   },
   {
     "id": "092",
-    "name": "????",
+    "dex_number": "????",
+    "display_id": "#????",
+    "name": "Irisalis",
     "slug": "irisalis",
-    "is_unverified": true,
-    "image": "/images/unknown.png",
-    "handbook_image_url": null,
-    "tier": "????",
-    "trait": "????",
-    "trait_effect": "Unverified / Undiscovered in current version (Basic Dex contains 82 Aniimo).",
+    "is_unnumbered": true,
+    "image": "/images/irisalis.png",
+    "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisalis-handbook.png",
+    "tier": "A-Tier",
+    "trait": "**Bloom Cluster**",
+    "trait_effect": "When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+      ]
     },
     "forms": {
       "basic": {
-        "form_name": "????",
-        "element_display": "????",
-        "catch_rate": "????",
-        "region": "????",
-        "elements": {},
-        "image": "/images/unknown.png"
+        "form_name": "Basic Form",
+        "element_display": "Grass 3",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 3
+        },
+        "image": "/images/irisalis.png"
       },
       "regional": [],
       "weather": [],
       "prismana": null
     },
     "all_form_names": [
-      "????"
+      "Basic Form"
     ]
   }
 ]

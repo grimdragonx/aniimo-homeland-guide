@@ -2,18 +2,18 @@
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Express REST API](https://img.shields.io/badge/express-4.21.2-blue.svg)](https://expressjs.com/)
-[![Verified Species](https://img.shields.io/badge/Aniimodex-82%20Verified%20Species-orange.svg)](https://www.dexerto.com/wikis/aniimo/aniimodex/)
+[![Verified Species](https://img.shields.io/badge/Aniimodex-92%20Total%20Aniimo-orange.svg)](https://www.dexerto.com/wikis/aniimo/aniimodex/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, Express, and modern JavaScript**. Features the canonical catalog of **82 verified basic species** in the current game version (+ 10 unreleased `????` slots), official creature handbook artwork, verified **Basic, Regional, Weather, and Prismana forms**, and elemental workplace proficiencies.
+A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, Express, and modern JavaScript**. Features the complete canonical catalog of all **92 Aniimo species** (82 numbered `#001`–`#082` in active Dex + 10 unnumbered `#????` species), official creature handbook artwork, verified **Basic, Regional, Weather, and Prismana forms**, and elemental workplace proficiencies.
 
 ---
 
 ## 🌟 Key Highlights
 
-1. **82 Verified Basic Species + 10 `????` Slots:**
-   - Accurate to the active in-game Aniimodex (#001 Emberpup to #082 Besauce).
-   - Unreleased slots (#083 to #092) are marked as `????` to match the in-game undiscovered state without confusing players.
+1. **All 92 Aniimo with Real Data (82 Numbered + 10 `#????`):**
+   - Numbered species `#001 Emberpup` to `#082 Besauce` match the current in-game numbered Dex.
+   - Species whose Dex number has not yet been assigned in the release Dex (Dazmand, Fulmintis, Fennelun, Lunara, Soleon, Helion, Morphling, Jabster, Sparkelf, Irisalis) are displayed with their authentic names, images, traits, and forms, marked as **`#????`** so players won't be confused.
 2. **Pure Elemental System:**
    - Workplace proficiencies are displayed directly as **Elements & Elemental Levels** (`Fire Lv.1`, `Earth Lv.1`, `Ice Lv.3`, `Dark Lv.2`, `Grass Lv.3`, etc.), matching official game mechanics.
 3. **Fact-Checked Forms:**
@@ -21,16 +21,15 @@ A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, E
    - **Somniwing (#030)** verified as the authentic Prismana Form evolution of the Flutternym line.
 4. **Official Creature Artwork:**
    - 296 local high-resolution PNG creature portraits and form images served from `/images/`.
-   - Distinctive `unknown.png` badge for undiscovered `????` slots.
 5. **Interactive Modern Web Dashboard:**
    - Live search by ID, name, element, trait, or region.
    - Dynamic form tab switcher that updates artwork, catch rates, and elemental proficiencies in real-time.
    - Comprehensive creature inspection modal with elemental matchups and complete form comparison tables.
 6. **Express REST API:**
    - `/api/aniimo`: Query creatures with element, tier, and form filters.
-   - `/api/aniimo/:id`: Retrieve single creature profile.
+   - `/api/aniimo/:id`: Retrieve single creature profile (by ID, slug, or name).
    - `/api/elements`: Canonical element reference.
-   - `/api/stats`: Dynamic counts of species, verified forms, and tiers.
+   - `/api/stats`: Live aggregate database statistics.
 
 ---
 
@@ -67,8 +66,8 @@ The server will boot on `http://localhost:3000`:
 
 | Endpoint | Method | Query Parameters | Description |
 | :--- | :--- | :--- | :--- |
-| `/api/aniimo` | `GET` | `search`, `tier`, `element`, `minLevel`, `form` | Query creatures with elemental filters |
-| `/api/aniimo/:id`| `GET` | `id` (e.g. `001`, `044`, `emberpup`, `glynsera`) | Retrieve single creature profile |
+| `/api/aniimo` | `GET` | `search`, `tier`, `element`, `minLevel`, `form`, `dexStatus` | Query creatures with elemental filters |
+| `/api/aniimo/:id`| `GET` | `id` (e.g. `001`, `044`, `dazmand`, `fulmintis`) | Retrieve single creature profile |
 | `/api/elements` | `GET` | None | List of elements and Homeland workstations |
 | `/api/stats` | `GET` | None | Live aggregate database statistics |
 

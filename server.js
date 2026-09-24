@@ -24,9 +24,18 @@ try {
 // REST API Endpoints
 app.get('/api/aniimo', (req, res) => {
   let results = [...aniimoData];
-  const { search, element, minLevel, form, tier, showUnverified } = req.query;
+  const { search, element, minLevel, form, tier, dexStatus } = req.query;
 
-  // Filter by Tier (S-Tier, A-Tier, B-Tier, C-Tier, or ????)
+  // Filter by Dex Status (numbered, unnumbered)
+  if (dexStatus && dexStatus !== 'all') {
+    if (dexStatus === 'numbered') {
+      results = results.filter(item => !item.is_unnumbered);
+    } else if (dexStatus === 'unnumbered') {
+      results = results.filter(item => item.is_unnumbered);
+    }
+  }
+
+  // Filter by Tier (S-Tier, A-Tier, B-Tier, C-Tier)
   if (tier && tier !== 'all') {
     results = results.filter(item => item.tier && item.tier.toLowerCase() === tier.toLowerCase());
   }
@@ -36,7 +45,6 @@ app.get('/api/aniimo', (req, res) => {
     const elLower = element.toLowerCase();
     const minLvl = parseInt(minLevel, 10) || 1;
     results = results.filter(item => {
-      if (item.is_unverified) return false;
       const allForms = [
         item.forms.basic,
         ...(item.forms.regional || []),
@@ -57,31 +65,31 @@ app.get('/api/aniimo', (req, res) => {
   // Filter by Form Type
   if (form && form !== 'all') {
     if (form === 'regional') {
-      results = results.filter(item => !item.is_unverified && item.forms.regional && item.forms.regional.length > 0);
+      results = results.filter(item => item.forms.regional && item.forms.regional.length > 0);
     } else if (form === 'weather') {
-      results = results.filter(item => !item.is_unverified && item.forms.weather && item.forms.weather.length > 0);
+      results = results.filter(item => item.forms.weather && item.forms.weather.length > 0);
     } else if (form === 'prismana') {
-      results = results.filter(item => !item.is_unverified && item.forms.prismana !== null && item.forms.prismana !== undefined);
+      results = results.filter(item => item.forms.prismana !== null && item.forms.prismana !== undefined);
     } else if (form === 'basic') {
-      results = results.filter(item => !item.is_unverified && item.forms.basic);
-    } else if (form === 'unverified') {
-      results = results.filter(item => item.is_unverified);
+      results = results.filter(item => item.forms.basic);
+    } else if (form === 'unnumbered') {
+      results = results.filter(item => item.is_unnumbered);
     }
   }
 
-  // Search across name, id, slug, trait, region, elements
+  // Search across name, id, slug, display_id, trait, region, elements
   if (search) {
     const q = search.toLowerCase().trim();
     results = results.filter(item => {
-      const textToSearch = `${item.id} ${item.name} ${item.slug} ${item.tier} ${item.trait} ${item.trait_effect} ${JSON.stringify(item.forms)}`.toLowerCase();
+      const textToSearch = `${item.id} ${item.display_id} ${item.name} ${item.slug} ${item.tier} ${item.trait} ${item.trait_effect} ${JSON.stringify(item.forms)}`.toLowerCase();
       return textToSearch.includes(q);
     });
   }
 
   res.json({
     total: results.length,
-    verifiedCount: results.filter(r => !r.is_unverified).length,
-    unverifiedCount: results.filter(r => r.is_unverified).length,
+    numberedCount: results.filter(r => !r.is_unnumbered).length,
+    unnumberedCount: results.filter(r => r.is_unnumbered).length,
     data: results
   });
 });
@@ -91,7 +99,8 @@ app.get('/api/aniimo/:id', (req, res) => {
   const item = aniimoData.find(a => 
     a.id === req.params.id || 
     a.slug === param || 
-    a.name.toLowerCase() === param
+    a.name.toLowerCase() === param ||
+    (param === '????' && a.is_unnumbered)
   );
 
   if (!item) {
@@ -100,7 +109,7 @@ app.get('/api/aniimo/:id', (req, res) => {
   res.json(item);
 });
 
-// Elements endpoint
+// Elements reference
 app.get('/api/elements', (req, res) => {
   res.json([
     { name: 'Fire', emoji: '🔥', homelandRole: 'Smelting, Campfire Cooking & Kindling' },
@@ -117,17 +126,17 @@ app.get('/api/elements', (req, res) => {
 
 // Stats endpoint
 app.get('/api/stats', (req, res) => {
-  const verifiedList = aniimoData.filter(i => !i.is_unverified);
-  const unverifiedList = aniimoData.filter(i => i.is_unverified);
+  const numberedList = aniimoData.filter(i => !i.is_unnumbered);
+  const unnumberedList = aniimoData.filter(i => i.is_unnumbered);
 
   let regionalVariantsCount = 0;
   let weatherVariantsCount = 0;
   let prismanaCount = 0;
   let totalFormsCount = 0;
-  const tiers = { 'S-Tier': 0, 'A-Tier': 0, 'B-Tier': 0, 'C-Tier': 0, '????': unverifiedList.length };
+  const tiers = { 'S-Tier': 0, 'A-Tier': 0, 'B-Tier': 0, 'C-Tier': 0 };
 
-  verifiedList.forEach(item => {
-    tiers[item.tier] = (tiers[item.tier] || 0) + 1;
+  aniimoData.forEach(item => {
+    if (item.tier in tiers) tiers[item.tier] = (tiers[item.tier] || 0) + 1;
     totalFormsCount += 1; // Basic Form
     if (item.forms.regional) {
       regionalVariantsCount += item.forms.regional.length;
@@ -137,16 +146,16 @@ app.get('/api/stats', (req, res) => {
       weatherVariantsCount += item.forms.weather.length;
       totalFormsCount += item.forms.weather.length;
     }
-    if (item.forms.prismana) {
+    if (item.forms.prismana && item.id !== '030') {
       prismanaCount += 1;
       totalFormsCount += 1;
     }
   });
 
   res.json({
-    verifiedSpeciesCount: verifiedList.length,
-    unverifiedSpeciesCount: unverifiedList.length,
-    totalRecords: aniimoData.length,
+    numberedSpeciesCount: numberedList.length,
+    unnumberedSpeciesCount: unnumberedList.length,
+    totalSpeciesCount: aniimoData.length,
     tiers,
     regionalVariantsCount,
     weatherVariantsCount,
@@ -164,7 +173,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// If process wasn't already started, start server
+// Start server
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`====================================================`);
