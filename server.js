@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Load data
+// Load canonical data
 const dataPath = path.join(__dirname, 'data', 'aniimo_homeland_data.json');
 let aniimoData = [];
 
@@ -24,32 +24,43 @@ try {
 // REST API Endpoints
 app.get('/api/aniimo', (req, res) => {
   let results = [...aniimoData];
-  const { search, stage, element, ability, minLevel, form } = req.query;
+  const { search, element, ability, minLevel, form, tier } = req.query;
 
-  if (stage && stage !== 'all') {
-    results = results.filter(item => item.stage.toLowerCase() === stage.toLowerCase());
+  // Filter by Tier (S-Tier, A-Tier, B-Tier, C-Tier)
+  if (tier && tier !== 'all') {
+    results = results.filter(item => item.tier && item.tier.toLowerCase() === tier.toLowerCase());
   }
 
+  // Filter by Element
   if (element && element !== 'all') {
-    results = results.filter(item => 
-      (item.element && item.element.toLowerCase() === element.toLowerCase()) ||
-      (item.secondary_element && item.secondary_element.toLowerCase() === element.toLowerCase())
-    );
+    const elLower = element.toLowerCase();
+    results = results.filter(item => {
+      const basic = item.forms && item.forms.basic;
+      const elemStr = (basic ? basic.element_display : '') || '';
+      return elemStr.toLowerCase().includes(elLower);
+    });
   }
 
+  // Filter by Form Type
   if (form && form !== 'all') {
-    if (form === 'weather') {
+    if (form === 'regional') {
+      results = results.filter(item => item.forms.regional && item.forms.regional.length > 0);
+    } else if (form === 'weather') {
       results = results.filter(item => item.forms.weather && item.forms.weather.length > 0);
     } else if (form === 'prismana') {
-      results = results.filter(item => item.forms.prismana);
+      results = results.filter(item => item.forms.prismana !== null && item.forms.prismana !== undefined);
+    } else if (form === 'basic') {
+      results = results.filter(item => item.forms.basic);
     }
   }
 
+  // Filter by Homeland Ability
   if (ability && ability !== 'all') {
     const minLvl = parseInt(minLevel, 10) || 1;
     results = results.filter(item => {
       const allForms = [
         item.forms.basic,
+        ...(item.forms.regional || []),
         ...(item.forms.weather || []),
         item.forms.prismana
       ].filter(Boolean);
@@ -58,11 +69,12 @@ app.get('/api/aniimo', (req, res) => {
     });
   }
 
+  // Search across name, id, slug, trait, habitat, abilities
   if (search) {
     const q = search.toLowerCase().trim();
     results = results.filter(item => {
-      const fullText = `${item.id} ${item.name} ${item.evolution_line} ${item.best_role} ${item.element} ${JSON.stringify(item.forms)}`.toLowerCase();
-      return fullText.includes(q);
+      const textToSearch = `${item.id} ${item.name} ${item.slug} ${item.tier} ${item.trait} ${item.trait_effect} ${JSON.stringify(item.forms)}`.toLowerCase();
+      return textToSearch.includes(q);
     });
   }
 
@@ -73,7 +85,13 @@ app.get('/api/aniimo', (req, res) => {
 });
 
 app.get('/api/aniimo/:id', (req, res) => {
-  const item = aniimoData.find(a => a.id === req.params.id || a.name.toLowerCase() === req.params.id.toLowerCase());
+  const param = req.params.id.toLowerCase();
+  const item = aniimoData.find(a => 
+    a.id === req.params.id || 
+    a.slug === param || 
+    a.name.toLowerCase() === param
+  );
+
   if (!item) {
     return res.status(404).json({ error: 'Aniimo not found' });
   }
@@ -84,44 +102,54 @@ app.get('/api/abilities', (req, res) => {
   res.json({
     elemental: [
       { name: 'Fire', emoji: '🔥', description: 'Cooking, Smeltery & Blast Furnaces' },
-      { name: 'Grass', emoji: '🌱', description: 'Planting, Weeding & Timber Logging' },
+      { name: 'Farming', emoji: '🌱', description: 'Crop Planting, Irrigation & Harvesting' },
       { name: 'Water', emoji: '💧', description: 'Farmland Irrigation & Beverage Brewing' },
-      { name: 'Earth', emoji: '⛰️', description: 'Quarry Mining & Masonry Sculpting' },
-      { name: 'Lightning', emoji: '⚡', description: 'Dynamo Generators & Electrical Grids' },
-      { name: 'Ice', emoji: '❄️', description: 'Cold Storage & Food Preservation' },
-      { name: 'Wind', emoji: '🍃', description: 'Grain Windmills & Textile Looms' },
-      { name: 'Dark', emoji: '🌑', description: 'Night Shift Operations & Shadow Alchemy' },
-      { name: 'Light', emoji: '✨', description: 'Base Illumination & Hatchinator Warming' }
+      { name: 'Mining', emoji: '⛰️', description: 'Quarry Mining & Masonry Sculpting' },
+      { name: 'Electricity', emoji: '⚡', description: 'Dynamo Generators & Electrical Grids' },
+      { name: 'Cooling', emoji: '❄️', description: 'Cold Storage & Food Preservation' },
+      { name: 'Transport', emoji: '🍃', description: 'Hauling, Grain Windmills & Dispersal' },
+      { name: 'Night Labor', emoji: '🌑', description: 'Night Shift Operations & Shadow Crafting' },
+      { name: 'Illumination', emoji: '✨', description: 'Base Lighting & Radiant Blessing' }
     ],
     utility: [
-      { name: 'Carry', emoji: '📦', description: 'Item Hauling, Silo Sorting & Logistics' },
-      { name: 'Artisanship', emoji: '🔨', description: 'Workbench Handiwork & RV Upgrades' },
-      { name: 'Leisure', emoji: '☕', description: 'Worker Morale, Sanity & Recreation' },
-      { name: 'Perfumery', emoji: '🌸', description: 'Botanical Oils, Incense & Fertilizers' }
+      { name: 'Carry', emoji: '📦', description: 'Item Transport, Silo Logistics & Hauling' },
+      { name: 'Artisanship', emoji: '🔨', description: 'Workbench Crafting, Assembly & RV Upgrades' },
+      { name: 'Lumbering', emoji: '🪓', description: 'Timber Logging & Wood Processing' }
     ]
   });
 });
 
 app.get('/api/stats', (req, res) => {
+  let regionalVariantsCount = 0;
   let weatherVariantsCount = 0;
-  const elements = {};
-  const stages = { Lumin: 0, Gamma: 0, Nova: 0 };
+  let prismanaCount = 0;
+  let totalFormsCount = 0;
+  const tiers = { 'S-Tier': 0, 'A-Tier': 0, 'B-Tier': 0, 'C-Tier': 0 };
 
   aniimoData.forEach(item => {
-    stages[item.stage] = (stages[item.stage] || 0) + 1;
-    elements[item.element] = (elements[item.element] || 0) + 1;
+    tiers[item.tier] = (tiers[item.tier] || 0) + 1;
+    totalFormsCount += 1; // Basic Form
+    if (item.forms.regional) {
+      regionalVariantsCount += item.forms.regional.length;
+      totalFormsCount += item.forms.regional.length;
+    }
     if (item.forms.weather) {
       weatherVariantsCount += item.forms.weather.length;
+      totalFormsCount += item.forms.weather.length;
+    }
+    if (item.forms.prismana) {
+      prismanaCount += 1;
+      totalFormsCount += 1;
     }
   });
 
   res.json({
     totalSpecies: aniimoData.length,
-    stages,
-    elements,
+    tiers,
+    regionalVariantsCount,
     weatherVariantsCount,
-    prismanaVariantsCount: aniimoData.length,
-    totalForms: aniimoData.length * 2 + weatherVariantsCount
+    prismanaCount,
+    totalFormsCount
   });
 });
 

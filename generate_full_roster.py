@@ -980,3 +980,4 @@ with open(csv_path, "w", newline="", encoding="utf-8") as f:
             prismana["name"], p_abils, prismana["perk"]
         ])
 print(f"Generated CSV to {csv_path}")
+

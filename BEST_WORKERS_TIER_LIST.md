@@ -1,166 +1,140 @@
-# 🏆 Aniimo Homeland Worker Tier List & Role Recommendations
+# 🏆 Best Workers Tier List for Aniimo Homeland
 
-Discover the most optimal workers for every facility, station, and task in your **Homeland**.
-
----
-
-## 🌟 Station-by-Station Rankings
-
-### 1. 🔥 Smelting & Cooking (Fire)
-*Stations: Campfire, Cooking Pot, Stone Kiln, Blast Furnace*
-* **S-Tier:**
-  * **Prismana Scorchhowl** (Fire Lv 4, Lightning Lv 2) - *Blazing Foundry trait speeds up metal smelting by 30% and reduces fuel usage.*
-  * **Prismana Inferlupa** (Fire Lv 4, Dark Lv 3) - *Unbeatable for 24/7 overnight furnace shifts.*
-* **A-Tier:**
-  * **Scorchhowl (Standard / Thunderstorm)** (Fire Lv 3) - *Consistent high-tier metal and alloy forging.*
-  * **Inferlupa (Standard)** (Fire Lv 3) - *Zero morale penalty when smelting at night.*
-* **B-Tier (Early/Mid Game):**
-  * **Flameruff** (Fire Lv 2) & **Emberpup** (Fire Lv 1-2) - *Low hunger, great for campfires and basic food prep.*
+> **Platform:** Aniimo Homeland Management Guide  
+> **Criteria:** Workplace skill levels (Lv.1 to Lv.5), versatility across forms, passive perk synergy, and availability.
 
 ---
 
-### 2. 🌱 Planting & Farming (Grass)
-*Stations: Seed Beds, Crop Plots, Hydroponics, Greenhouses*
-* **S-Tier:**
-  * **Prismana Melloblum** (Grass Lv 4, Perfumery Lv 4) - *Doubles fertilizer power, gives bonus harvest yields, drops Bud Tickets.*
-  * **Prismana Leafy** (Grass Lv 4, Water Lv 4) - *Miracle Bloom: Sows and waters crops simultaneously at 1.5x speed.*
-* **A-Tier:**
-  * **Melloblum (Sunny Form)** (Grass Lv 4) - *Triples crop mutation chances into high-star gourmet crops.*
-  * **Leafy (Standard / Rainstorm)** (Grass Lv 3-4) - *Single-handedly automates farm plots.*
-  * **Pomawk** (Grass Lv 3-4, Wind Lv 3-4) - *High-speed aerial harvester.*
-* **B-Tier (Early Game):**
-  * **Budsquire** (Grass Lv 1-2) & **Chirpi** (Grass Lv 1) - *Reliable early garden plot seeders.*
+## 🛠️ Homeland Station Specialists
 
----
+### 🔥 Smelting & Kitchen (Kindling / Cooking)
+*Required for blast furnaces, metal ingot smelting, campfire cooking, and food processing.*
 
-### 3. 💧 Watering & Irrigation (Water)
-*Stations: Farmland Irrigation Trenches, Water Wells, Fermentation Vats*
-* **S-Tier:**
-  * **Prismana Leafy** (Water Lv 4, Grass Lv 4) - *Waters entire fields in seconds without stalling.*
-  * **Prismana Glacy** (Water Lv 4, Ice Lv 4) - *Waters farm fields and immediately keeps adjacent cold storage chilled.*
-* **A-Tier:**
-  * **Leafy (Rainstorm)** (Water Lv 4) - *Monsoon Bloom doubles soil moisture retention.*
-  * **Glacy (Standard)** (Water Lv 3) - *Top-tier dual irrigation and cooler operator.*
-  * **Pranky** (Water Lv 2-3) - *Efficient vat brewer and irrigation helper.*
-* **B-Tier (Early Game):**
-  * **Nimbi (Rainstorm)** (Water Lv 2) & **Skippy** (Water Lv 1-2) - *Area-of-effect mist watering.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#003 Scorchhowl** | Prismana | **Lv.4** | Scorching Flames |
+| **S-Rank** | **#067 Infergon** | Prismana | **Lv.4** | Power of Fire |
+| **S-Rank** | **#072 Magmarex** | Prismana | **Lv.4** | Pyro Charge |
+| **S-Rank** | **#091 Sparkelf** | Prismana | **Lv.4** | Reliable Fire Companion |
+| **A-Rank** | **#003 Scorchhowl** | Basic Form (base) | **Lv.3** | Scorching Flames |
+| **A-Rank** | **#003 Scorchhowl** | Highland Form | **Lv.3** | Scorching Flames |
+| **A-Rank** | **#003 Scorchhowl** | Mountain Woods Form | **Lv.3** | Scorching Flames |
+| **A-Rank** | **#003 Scorchhowl** | Thunderstorm Form | **Lv.3** | Scorching Flames |
 
----
+### 💧 Farmland Irrigation & Aquaculture
+*Powers crop hydration, aquatic ponds, beverage brewing, and moisture management.*
 
-### 4. ⛰️ Mining & Quarrying (Earth)
-*Stations: Stone Quarry, Ore Excavation Pits, Mineral Washers*
-* **S-Tier:**
-  * **Prismana Bouldus** (Earth Lv 5) - *Titan Quarry: The fastest boulder and ore vein miner in the entire game.*
-  * **Prismana Waleetle** (Earth Lv 4, Artisanship Lv 3) - *Core Excavator: +40% rare gem and metal ore drop rate.*
-* **A-Tier:**
-  * **Bouldus (Standard / Sandstorm)** (Earth Lv 4) - *Heavy quarrying machine that breaks rocks in few hits.*
-  * **Waleetle (Standard)** (Earth Lv 3) - *Precision miner and stone carver.*
-  * **Dazmand** (Earth Lv 3-4) - *Mines gemstone deposits with high finesse.*
-* **B-Tier (Early Game):**
-  * **Baleetle** (Earth Lv 1-2) & **Rookey** (Earth Lv 1-2) - *Sturdy starter mining beetles.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#015 Glacy** | Prismana | **Lv.4** | Water Spirit |
+| **S-Rank** | **#052 Panpanta** | Prismana | **Lv.4** | Appeal |
+| **S-Rank** | **#055 Sherro** | Prismana | **Lv.4** | Tidal Heart |
+| **A-Rank** | **#015 Glacy** | Basic Form (base) | **Lv.3** | Water Spirit |
+| **A-Rank** | **#015 Glacy** | Sea of Flowers Form | **Lv.3** | Water Spirit |
+| **A-Rank** | **#015 Glacy** | Snowfield Form | **Lv.3** | Water Spirit |
+| **A-Rank** | **#034 Thornblade** | Prismana | **Lv.3** | Sword Dance |
+| **A-Rank** | **#051 Piopiota** | Basic Form (base) | **Lv.3** | Radiant Charm |
 
----
+### 🌱 Crop Planting & Forestry Harvesting
+*Essential for agricultural fields, herbal gathering, berry cultivation, and greenhouse growth.*
 
-### 5. ⚡ Power Generation (Lightning)
-*Stations: Dynamo Turbines, Battery Banks, Power Grid Pylons*
-* **S-Tier:**
-  * **Prismana Turbo** (Lightning Lv 3, Wind Lv 3) - *Overclock Generator: Powers entire RV grid + accelerates machine craft speed by 15%.*
-  * **Prismana Sherro** (Lightning Lv 3, Earth Lv 3) - *Dynamo Battery: Keeps high-tier machines humming for 12 hours without fuel.*
-* **A-Tier:**
-  * **Turbo (Thunderstorm)** (Lightning Lv 3) - *Surge capacity during bad weather; zero fuel cost.*
-  * **Sherro (Thunderstorm)** (Lightning Lv 3) - *Lightning rod passive recharges battery storage instantaneously.*
-* **B-Tier (Dual Duty):**
-  * **Scorchhowl (Thunderstorm)** (Lightning Lv 2) - *Smelts metal and supplies auxiliary current.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#012 Irisal** | Prismana | **Lv.4** | **Disco Aniimo** |
+| **S-Rank** | **#022 Tuckin** | Unnamed form | **Lv.4** | Prank Master |
+| **S-Rank** | **#035 Melloblum** | Prismana | **Lv.4** | Phantom Opening |
+| **A-Rank** | **#012 Irisal** | Basic Form (base) | **Lv.3** | **Disco Aniimo** |
+| **A-Rank** | **#012 Irisal** | Highland Form | **Lv.3** | **Disco Aniimo** |
+| **A-Rank** | **#012 Irisal** | Forest Form | **Lv.3** | **Disco Aniimo** |
+| **A-Rank** | **#012 Irisal** | Grassland Form | **Lv.3** | **Disco Aniimo** |
+| **A-Rank** | **#012 Irisal** | Mountain Woods Form | **Lv.3** | **Disco Aniimo** |
 
----
+### ⛰️ Quarrying & Masonry Sculpting
+*Harvests stone, quartz, ore boulders, sulfur deposits, and masonry shaping.*
 
-### 6. ❄️ Cold Storage & Preservation (Ice)
-*Stations: Ice Boxes, Food Pantries, Cryo Preservation Pods*
-* **S-Tier:**
-  * **Prismana Glynsera** (Ice Lv 4, Light Lv 2) - *Prismatic Cryo: Completely stops decay of all stored food without consuming ice blocks.*
-  * **Prismana Glacy** (Ice Lv 4, Water Lv 4) - *Sub-zero cooling paired with agricultural irrigation.*
-* **A-Tier:**
-  * **Glynsera (Blizzard Form)** (Ice Lv 4) - *Arctic Domain: Freezes whole base food supplies automatically.*
-  * **Fenrier (Snowfield)** (Ice Lv 3) - *Reliable heavy ice-maker with cold transport agility.*
-* **B-Tier (Early Game):**
-  * **Bonesky** (Ice Lv 1-2) - *Keeps starter perishables from rotting during night hours.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#057 Waleetle** | Prismana | **Lv.4** | Overloaded Engine |
+| **S-Rank** | **#069 Grizbo** | Prismana | **Lv.4** | Raging Rampage |
+| **A-Rank** | **#024 Shrubclaw** | Basic Form (base) | **Lv.3** | Stealth |
+| **A-Rank** | **#024 Shrubclaw** | Mudflat Form | **Lv.3** | Stealth |
+| **A-Rank** | **#024 Shrubclaw** | Beach Form | **Lv.3** | Stealth |
+| **A-Rank** | **#024 Shrubclaw** | Bay Form | **Lv.3** | Stealth |
+| **A-Rank** | **#057 Waleetle** | Basic Form (base) | **Lv.3** | Overloaded Engine |
+| **A-Rank** | **#057 Waleetle** | Snowfield Form | **Lv.3** | Overloaded Engine |
 
----
+### ⚡ Dynamo Power Generation
+*Charges automated defense turrets, electric lights, incubators, and factory assembly lines.*
 
-### 7. 🍃 Grain Milling & Ventilation (Wind)
-*Stations: Windmills, Flour Mills, Seed Sorters, Seed Bins*
-* **S-Tier:**
-  * **Prismana Cornet** (Wind Lv 4, Artisanship Lv 3) - *Resonant Gust: +30% flour output and rapid seed refinement.*
-  * **Prismana Pomawk** (Wind Lv 4, Grass Lv 4) - *Gale Harvest: Sweeps crops off fields and processes grain instantly.*
-* **A-Tier:**
-  * **Tromber** (Wind Lv 3-4, Leisure Lv 3-4) - *Powers windmills while buffing camp-wide morale with chimes.*
-  * **Cornet (Highland Gale)** (Wind Lv 4) - *Fastest textile loom operation in game.*
-* **B-Tier (Early Game):**
-  * **Nimbi** (Wind Lv 1-2) & **Chirpi** (Wind Lv 1-2) - *Lightweight wind draft creators.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#046 Blazen** | Prismana | **Lv.4** | Power Sustain |
+| **S-Rank** | **#060 Fenmane** | Prismana | **Lv.4** | Thunderbond |
+| **S-Rank** | **#079 Luminelle** | Prismana | **Lv.4** | Arc Surge |
+| **S-Rank** | **#084 Fulmintis** | Prismana | **Lv.4** | Electro Stash |
+| **A-Rank** | **#009 Cornet** | Prismana | **Lv.3** | Air Superiority |
+| **A-Rank** | **#046 Blazen** | Basic Form (base) | **Lv.3** | Power Sustain |
+| **A-Rank** | **#046 Blazen** | Mountain Woods Form | **Lv.3** | Power Sustain |
+| **A-Rank** | **#060 Fenmane** | Basic Form (base) | **Lv.3** | Thunderbond |
 
----
+### ❄️ Cold Storage & Meat Preservation
+*Prevents fresh vegetables, meats, and dairy from spoiling in refrigeration units.*
 
-### 8. 📦 Logistics & Transport (Carry)
-*Stations: Field Delivery, Silo Transport, RV Storage Bins*
-* **S-Tier:**
-  * **Prismana Tubster** (Carry Lv 4, Earth Lv 3) - *Titan Porter: +50% carry capacity, moves full 999 stacks in 1 trip.*
-  * **Tubster (Standard)** (Carry Lv 3) - *Best bulk cargo hauler for timber and ore.*
-* **A-Tier:**
-  * **Bouldus** (Carry Lv 3) - *Moves heavy boulders and metal bars directly from quarry to forge.*
-  * **Pomawk** (Carry Lv 2-3) - *Aerial flyer that moves crops over fences and obstacles.*
-  * **Fenrier** (Carry Lv 2-3) - *High move-speed ground hauler.*
-* **B-Tier (Early Game):**
-  * **Emberpup / Bonesky / Chirpi** (Carry Lv 1) - *Clears small piles around workbenches.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#044 Glynsera** | Prismana | **Lv.4** | Biting Wind |
+| **A-Rank** | **#006 Stellarys** | Prismana | **Lv.3** | Grand Sorcerer |
+| **A-Rank** | **#044 Glynsera** | Basic Form (base) | **Lv.3** | Biting Wind |
+| **A-Rank** | **#044 Glynsera** | Nighttime Form | **Lv.3** | Biting Wind |
+| **B-Rank** | **#015 Glacy** | Basic Form (base) | **Lv.2** | Water Spirit |
+| **B-Rank** | **#015 Glacy** | Sea of Flowers Form | **Lv.2** | Water Spirit |
+| **B-Rank** | **#015 Glacy** | Snowfield Form | **Lv.2** | Water Spirit |
+| **B-Rank** | **#015 Glacy** | Prismana | **Lv.2** | Water Spirit |
 
----
+### 🍃 Hauling & Wind Logistics
+*Pours grain into windmills, carries materials between resource chests, and automates silo delivery.*
 
-### 9. 🔨 Crafting & Artisanship (Artisanship)
-*Stations: Tool Benches, RV Modification Stations, Gear Assembly Lines*
-* **S-Tier:**
-  * **Prismana Waleetle** (Artisanship Lv 3, Earth Lv 4) - *Architectural specialist; builds RV upgrades 25% faster.*
-  * **Prismana Dazmand** (Artisanship Lv 3, Light Lv 4) - *Jewelry & luxury relic craftsman.*
-* **A-Tier:**
-  * **Scorchhowl / Inferlupa** (Artisanship Lv 2-3) - *Heavy machinery forging and tool fabrication.*
-  * **Thornblade** (Artisanship Lv 2-3) - *Woodcraft and crate assembly.*
-* **B-Tier (Early Game):**
-  * **Rookey** (Artisanship Lv 1-2) & **Baleetle** (Artisanship Lv 1-2) - *Foundation and masonry blocks.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#009 Cornet** | Prismana | **Lv.4** | Air Superiority |
+| **S-Rank** | **#018 Turbo** | Prismana | **Lv.4** | Shrouded in Mist |
+| **A-Rank** | **#008 Tromber** | Basic Form (base) | **Lv.3** | Band Member |
+| **A-Rank** | **#008 Tromber** | Beach Form | **Lv.3** | Band Member |
+| **A-Rank** | **#008 Tromber** | Highland Form | **Lv.3** | Band Member |
+| **A-Rank** | **#009 Cornet** | Basic Form (base) | **Lv.3** | Air Superiority |
+| **A-Rank** | **#009 Cornet** | Beach Form | **Lv.3** | Air Superiority |
+| **A-Rank** | **#009 Cornet** | Highland Form | **Lv.3** | Air Superiority |
 
----
+### 📦 Base Logistics & General Labor
+*High-capacity transport of crafted tools, construction blocks, and warehouse sorting.*
 
-### 10. ☕ Worker Morale & Sanity (Leisure)
-*Stations: Hot Springs, Musical Horn Gazebo, Campfire Rings*
-* **S-Tier:**
-  * **Prismana Tromber** (Leisure Lv 4, Wind Lv 4) - *Brass Anthem: +25% morale recovery and doubles Bud Ticket drops.*
-  * **Prismana Stellarys** (Leisure Lv 3, Dark Lv 3) - *Celestial Harmony: Camp-wide +10% passive production speed boost.*
-* **A-Tier:**
-  * **Tromber (Standard)** (Leisure Lv 3) - *Completely prevents worker nervous breakdowns and slacking.*
-  * **Melloblum** (Leisure Lv 2-3) - *Aromatherapy relaxation that restores stamina.*
-* **B-Tier (Early Game):**
-  * **Celestis** (Leisure Lv 1-2) - *Quiet nighttime rest provider.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **A-Rank** | **#009 Cornet** | Prismana | **Lv.3** | Air Superiority |
+| **A-Rank** | **#018 Turbo** | Prismana | **Lv.3** | Shrouded in Mist |
+| **A-Rank** | **#057 Waleetle** | Prismana | **Lv.3** | Overloaded Engine |
+| **A-Rank** | **#069 Grizbo** | Prismana | **Lv.3** | Raging Rampage |
+| **B-Rank** | **#008 Tromber** | Basic Form (base) | **Lv.2** | Band Member |
+| **B-Rank** | **#008 Tromber** | Beach Form | **Lv.2** | Band Member |
+| **B-Rank** | **#008 Tromber** | Highland Form | **Lv.2** | Band Member |
+| **B-Rank** | **#009 Cornet** | Basic Form (base) | **Lv.2** | Air Superiority |
 
----
+### 🌑 Night Operations & Security
+*Active during nighttime when diurnal creatures sleep, preventing production downtime.*
 
-### 11. 🌸 Perfumery & Alchemy (Perfumery)
-*Stations: Essential Oil Stills, Incense Burners, Fertilizer Kettles*
-* **S-Tier:**
-  * **Prismana Melloblum** (Perfumery Lv 4, Grass Lv 4) - *Master of botanical elixirs, miracle fertilizers, and Bud Ticket generation.*
-  * **Prismana Luminelle** (Perfumery Lv 4, Light Lv 4) - *Radiant incense distillations that grant 2x duration buffs.*
-* **A-Tier:**
-  * **Dreaple** (Perfumery Lv 2-3) - *Specializes in nighttime sleep mists and dark alchemy catalysts.*
-  * **Luminelle (Aurora)** (Perfumery Lv 3) - *Rainbow mist essence extraction.*
-* **B-Tier (Early Game):**
-  * **Nimbi (Prismana)** (Perfumery Lv 1) - *Dewdrop essences.*
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |
+| **S-Rank** | **#004 Inferlupa** | Prismana | **Lv.4** | Full Energy |
+| **S-Rank** | **#006 Stellarys** | Prismana | **Lv.4** | Grand Sorcerer |
+| **S-Rank** | **#021 Hexxin** | Prismana | **Lv.4** | Prank |
+| **S-Rank** | **#041 Ignitis** | Prismana | **Lv.4** | Battle Fervor |
+| **S-Rank** | **#062 Pawney** | Prismana | **Lv.4** | Pursuit |
+| **A-Rank** | **#004 Inferlupa** | Basic Form (base) | **Lv.3** | Full Energy |
+| **A-Rank** | **#006 Stellarys** | Basic Form (base) | **Lv.3** | Grand Sorcerer |
+| **A-Rank** | **#006 Stellarys** | Rainstorm Form | **Lv.3** | Grand Sorcerer |
 
----
+### ✨ Base Lighting & Radiant Comfort
+*Illuminates dark workstations, increases camp morale, and accelerates hatching.*
 
-## 🌟 Top Dual-Role Specialists (Consolidating Worker Slots)
-
-When your RV worker slots are limited (e.g. RV Tier 2–3), these dual-role Aniimo allow you to accomplish two tasks with a single creature:
-
-1. **Leafy (Grass Lv 3-4 + Water Lv 3-4):** Sows AND waters your entire farm.
-2. **Scorchhowl Thunderstorm (Fire Lv 3 + Lightning Lv 2):** Smelts metal AND powers electric stations.
-3. **Glacy (Water Lv 3-4 + Ice Lv 3-4):** Irrigates crops during the day AND chills food pantries.
-4. **Waleetle (Earth Lv 3-4 + Artisanship Lv 3):** Mines stone AND sculpts RV upgrade bricks.
-5. **Pomawk (Grass Lv 3-4 + Wind Lv 3-4):** Harvests crops AND operates grain windmills.
-6. **Inferlupa (Fire Lv 3-4 + Dark Lv 2-3):** 24-hour non-stop smelter that never needs to sleep at night.
-
+| Tier | Aniimo | Best Form for Task | Skill Level | Notable Trait / Advantage |
+| :--- | :--- | :--- | :--- | :--- |

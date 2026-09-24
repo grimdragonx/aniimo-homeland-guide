@@ -63,3 +63,4 @@ for item in data:
         f.write(svg)
 
 print(f"Generated {len(data)} SVG portraits in {img_dir}")
+

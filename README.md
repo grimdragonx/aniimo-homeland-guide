@@ -1,136 +1,97 @@
-# 🏡 Aniimo Homeland Guide & Abilities Platform (Node.js)
+# 🏡 Aniimo Homeland Master Platform
 
-[![Aniimo Version](https://img.shields.io/badge/Aniimo-v1.0-blue.svg)](https://aniimo.com)
-[![Node.js](https://img.shields.io/badge/Node.js-v20%2B-green.svg)](https://nodejs.org)
-[![Express](https://img.shields.io/badge/Express-REST%20API-black.svg)](https://expressjs.com)
-[![Homeland Abilities](https://img.shields.io/badge/Homeland%20Abilities-13%20Jobs-emerald.svg)](#-the-13-homeland-abilities)
-[![Species](https://img.shields.io/badge/Species-89%2B%20Tracked-orange.svg)](#-database-summary)
-[![Forms](https://img.shields.io/badge/Total%20Forms-272%20Cataloged-purple.svg)](#-form-systems--homeland-impact)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
+[![Express REST API](https://img.shields.io/badge/express-4.21.2-blue.svg)](https://expressjs.com/)
+[![Verified Aniimo](https://img.shields.io/badge/Aniimodex-92%20Species-orange.svg)](https://www.dexerto.com/wikis/aniimo/aniimodex/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A full-stack, modern **Node.js platform**, interactive database, and optimization handbook for the **Homeland (RV Housing, Base Building & Farming)** system in **Aniimo**.
-
-This project provides verified canonical creature profiles for **89+ Aniimo species** across **Basic Forms**, **Weather Variants**, and **Prismana Forms**, detailing visual picture portraits, **Homeland Abilities (Levels 1 to 5)**, workplace perks, and optimal facility placements.
+A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, Express, and modern JavaScript**. Contains complete, canonical, fact-checked data for all **92 Aniimo species**, their verified **Basic, Regional, Weather, and Prismana forms**, real creature handbook images, and comprehensive Homeland workplace abilities.
 
 ---
 
-## 🚀 Quick Start (Node.js Platform)
+## 🌟 Key Features
 
-### 1. Installation
-Clone the repository and install dependencies:
+1. **Strictly Fact-Checked Form Catalog (92 Species):**
+   - No fabricated weather forms (e.g. verified Emberpup has Basic, Highland, and Mountain Woods forms; Glynsera has Basic, Nighttime, and Prismana forms).
+   - Form-specific element affinities (`Fire 1`, `Earth 1`, `Ice 3 / Dark 2`, etc.), catch rates, and native spawn regions.
+2. **Official Creature Artwork:**
+   - Real high-resolution PNG creature handbook portraits and form artwork downloaded and served locally from `/images/`.
+3. **Interactive Modern Web Dashboard:**
+   - Real-time search by ID, name, trait, region, or ability.
+   - Dynamic form tab switcher inside each card that dynamically updates form artwork, stats, and workplace abilities.
+   - Full handbook inspection modal with element matchups (weaknesses/resistances) and verified form comparison tables.
+4. **Node.js REST API:**
+   - `/api/aniimo`: Full catalog with search, tier, element, ability, and form filters.
+   - `/api/aniimo/:id`: Single creature endpoint by Dex number or slug.
+   - `/api/abilities`: Canonical workplace abilities reference.
+   - `/api/stats`: Live statistics on total species, form variants, and tier breakdown.
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Requirements
+- Node.js (v18.0.0 or higher)
+- npm (v9.0.0 or higher)
+
+### 2. Installation
 ```bash
+# Clone the repository
 git clone https://github.com/grimdragonx/aniimo-homeland-guide.git
+
+# Navigate to project folder
 cd aniimo-homeland-guide
+
+# Install dependencies
 npm install
 ```
 
-### 2. Launch Server
-Start the Express server:
+### 3. Launch Server
 ```bash
 npm start
 ```
-Open **[http://localhost:3000](http://localhost:3000)** in your browser!
-
-### 3. Developer Mode (Auto-Reload)
-```bash
-npm run dev
-```
+The server will boot on `http://localhost:3000`:
+- **Web UI:** [http://localhost:3000](http://localhost:3000)
+- **REST API:** [http://localhost:3000/api/aniimo](http://localhost:3000/api/aniimo)
+- **Live Stats:** [http://localhost:3000/api/stats](http://localhost:3000/api/stats)
 
 ---
 
-## 📡 REST API Endpoints
-
-The Node.js server includes a built-in REST API for querying Aniimo data:
-
-| Endpoint | Method | Description |
-| :--- | :--- | :--- |
-| `/api/aniimo` | `GET` | Retrieve list of Aniimo. Supports query params: `?search=...&stage=...&element=...&ability=...&minLevel=...&form=...` |
-| `/api/aniimo/:id` | `GET` | Get single Aniimo by ID (`001`, `044`, etc.) or name (`glynsera`, `scorchhowl`) |
-| `/api/abilities` | `GET` | Returns breakdown of all 13 Homeland abilities (Elemental & General Utility) |
-| `/api/stats` | `GET` | High-level statistics on species, stage distribution, and variant counts |
-
----
-
-## 🖼️ Picture & Portrait System
-
-Every Aniimo in the catalog features visual picture portraits:
-* **High-Res Vector Portraits:** Automatically generated SVG illustrations in `public/images/` reflecting elemental gradients, creature badges, and glowing auras.
-* **Custom Picture Support:** Drop custom `.png` illustrations into `public/images/{id}.png` (e.g. `044.png`) and the app will automatically prioritize them over fallback SVGs!
-* **Dynamic Form Auras:** Shifting tabs between **Basic**, **Weather Form**, and **Prismana Form** dynamically updates visual themes, lighting, and passive perks.
-
----
-
-## 🧬 Form Systems & Homeland Impact
-
-Every Aniimo can exist in up to three form categories that redefine its productivity at your base:
+## 📁 Project Structure
 
 ```
-[Basic Form]           ──►  [Weather Form]          ──►  [Prismana Form]
-Default habitat & stats     Dynamic weather/time shift    Rainbow aura / Prismana Flow
-Baseline abilities (Lv1-3)  Adds elements & +1 skill      Max skills (Lv4-5), -25% stamina
-```
-
-1. **Basic Form:** Standard variants caught under temperate conditions (e.g., *Glynsera* in Beast Fang Ridge with `Ice Lv.3`, `Dark Lv.2`).
-2. **Weather / Environmental Forms:** 
-   * Variants triggered by specific weather or time conditions.
-   * *Example:* **Glynsera (Nighttime Form)** spawns strictly at night in Rosetower Woods, boosting its stats to `Ice Lv.3`, `Dark Lv.3`, and `Artisanship Lv.3` with the *Nighttime Hunter* perk (+30% night shift speed, zero fatigue).
-   * *Example:* **Scorchhowl (Thunderstorm)** gains `Lightning Lv.2` alongside `Fire Lv.3` to power generators while smelting.
-3. **Prismana Forms:** 
-   * Ultra-rare variants with shifting rainbow auras discovered during **Prismana Flow** weather or through the **Prismana Pact**.
-   * Grants **+1 Level Boost** to primary work skills (reaching Lv 4–5), reduces stamina consumption by 25%, and unlocks exclusive passive perks.
-
----
-
-## 🌟 The 13 Homeland Abilities
-
-In *Aniimo*, base station efficiency is dictated strictly by an Aniimo's **Homeland Ability Level** (Lv 1 to Lv 5), completely independent from combat stats:
-
-### ⚡ Elemental Roles (9 Abilities)
-* **🔥 Fire:** Campfire cooking, smelteries, and blast furnace operations.
-* **🌱 Grass:** Crop seeding, weeding, greenhouse farming, and timber logging.
-* **💧 Water:** Irrigation trenches, water tanks, brewing vats, and well filling.
-* **⛰️ Earth:** Quarrying boulders, ore excavation, and masonry sculpting.
-* **⚡ Lightning:** Dynamo turbines, industrial battery banks, and electric automation.
-* **❄️ Ice:** Chilling food pantries, cold storage preservation, and cryo vaults.
-* **🍃 Wind:** Windmill flour grinding, seed separation, and fabric looms.
-* **🌑 Dark:** Shadow alchemy, transmutation altars, and 24/7 night-shift coverage.
-* **✨ Light:** Illumination beacons, relic polishing, and Hatchinator warming.
-
-### 🛠️ General Utility Roles (4 Abilities)
-* **📦 Carry:** Automated hauling of harvested crops, minerals, and crafted goods into storage bins.
-* **🔨 Artisanship:** Handiwork at workbenches, furniture construction, and RV upgrades.
-* **☕ Leisure:** Entertaining workers in recreational areas to recover morale and prevent slacking.
-* **🌸 Perfumery:** Distilling botanical elixirs, incense buffs, and organic crop growth stimulants.
-
----
-
-## 📑 Repository Structure
-
-```text
 aniimo-homeland-guide/
-├── server.js                      # Express Node.js web server & REST API
-├── package.json                   # Node.js project configuration
-├── public/                        # Modern Web App Frontend
-│   ├── index.html                 # App layout with search & filter panels
-│   ├── style.css                  # Responsive glassmorphism dark UI
-│   ├── app.js                     # Client logic, SVG portrait generator & modal
-│   └── images/                    # 89+ SVG creature portraits
-├── HOMELAND_GUIDE.md              # In-depth guide: RV progression, Hatchinators, Bud Tickets
-├── ANIIMO_DATABASE.md             # Full encyclopedia of 89+ canonical Aniimo species
-├── BEST_WORKERS_TIER_LIST.md      # Facility-by-facility worker rankings (S-Tier to B-Tier)
-└── data/
-    ├── aniimo_homeland_data.json  # Complete structured JSON dataset
-    └── aniimo_homeland_data.csv   # Spreadsheet-compatible CSV export
+├── data/
+│   ├── aniimo_homeland_data.json   # Master JSON database (92 species)
+│   └── aniimo_homeland_data.csv    # Exported CSV database
+├── public/
+│   ├── images/                     # Official creature PNG artwork
+│   │   ├── forms/                  # Form-specific variant artwork
+│   │   ├── 001.png ... 092.png     # Creature handbook portraits
+│   │   └── emberpup.png ...        # Slug alias images
+│   ├── index.html                  # Modern web application UI
+│   ├── style.css                   # Glassmorphism dark-mode styling
+│   └── app.js                      # Client-side reactivity and filtering
+├── ANIIMO_DATABASE.md              # Full 92-creature Markdown catalog
+├── BEST_WORKERS_TIER_LIST.md       # Workplace station tier list
+├── HOMELAND_GUIDE.md               # Base automation blueprint guide
+├── server.js                       # Express REST API backend
+├── package.json                    # Node.js project manifest
+└── README.md                       # Platform documentation
 ```
 
 ---
 
-## 📊 Database Summary
+## 📡 REST API Reference
 
-* **89+ Canonical Species** indexed (#001 through #094)
-* **272 Total Forms Cataloged** (Basic, Nighttime/Weather, and Prismana variants)
-* **Fact-Checked Accuracy** verified against in-game dex and official community registries.
+| Endpoint | Method | Query Parameters | Description |
+| :--- | :--- | :--- | :--- |
+| `/api/aniimo` | `GET` | `search`, `tier`, `element`, `ability`, `minLevel`, `form` | Query creatures with multi-faceted filters |
+| `/api/aniimo/:id`| `GET` | `id` (e.g. `001`, `044`, `emberpup`, `glynsera`) | Retrieve single creature profile |
+| `/api/abilities` | `GET` | None | Get list of all Homeland work abilities |
+| `/api/stats` | `GET` | None | Aggregate database statistics |
 
 ---
 
-## 🛠️ Contributing & Data Updates
-Feel free to open an issue or pull request as new Aniimo patches, seasonal weather forms, or Prismana events are discovered!
+## 📜 License
+Distributed under the MIT License. Data credited to Pawprint Studio and Dexerto Aniimo Wiki.

@@ -1,0 +1,5065 @@
+[
+  {
+    "slug": "emberpup",
+    "dex_num": "001",
+    "name": "Emberpup",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-emberpup-handbook.png",
+    "trait": {
+      "name": "Scorching Flames",
+      "effect": "Increases damage dealt to elementally countered targets ."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-emberpup.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Fire 1 / Earth 1",
+        "catch_rate": "38%",
+        "regions": "Zephyrus Landbridge, Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-emberpup-highland-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Fire 1",
+        "catch_rate": "50%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-emberpup-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "flameruff",
+    "dex_num": "002",
+    "name": "Flameruff",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-flameruff-handbook.png",
+    "trait": {
+      "name": "Scorching Flames",
+      "effect": "Increases damage dealt to elementally countered targets by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 2",
+        "catch_rate": "42%",
+        "regions": "Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flameruff.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Fire 2 / Earth 1",
+        "catch_rate": "29%",
+        "regions": "Zephyrus Landbridge, Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flameruff-highland-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Fire 2",
+        "catch_rate": "38%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flameruff-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "scorchhowl",
+    "dex_num": "003",
+    "name": "Scorchhowl",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-handbook.png",
+    "trait": {
+      "name": "Scorching Flames",
+      "effect": "Increases damage dealt to elementally countered targets by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 3",
+        "catch_rate": "28%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Fire 3 / Earth 2",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-highland-form.png"
+      },
+      {
+        "form_name": "Thunderstorm Form",
+        "elements": "Fire 3",
+        "catch_rate": "28%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-thunderstorm-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Fire 4",
+        "catch_rate": "28%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-prismana.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Fire 3",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-scorchhowl-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Thunderstorm Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "Thunder"
+      },
+      {
+        "form": "Prismana",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "inferlupa",
+    "dex_num": "004",
+    "name": "Inferlupa",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-inferlupa-handbook.png",
+    "trait": {
+      "name": "Full Energy",
+      "effect": "After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 3 / Fire 2",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-inferlupa.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Dark 4 / Fire 3",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-inferlupa-prismana.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "celestis",
+    "dex_num": "005",
+    "name": "Celestis",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-celestis-handbook.png",
+    "trait": {
+      "name": "Grand Sorcerer",
+      "effect": "For Xs after using a skill, basic attack hits deal additional damage equal to X Might."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-celestis.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "stellarys",
+    "dex_num": "006",
+    "name": "Stellarys",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-stellarys-handbook.png",
+    "trait": {
+      "name": "Grand Sorcerer",
+      "effect": "For Xs after using a skill, basic attack hits deal additional damage equal to X Might."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 3",
+        "catch_rate": "28%",
+        "regions": "Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-stellarys.png"
+      },
+      {
+        "form_name": "Rainstorm Form",
+        "elements": "Dark 3 / Water 2",
+        "catch_rate": "28%",
+        "regions": "Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-stellarys-rainstorm-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Dark 4 / Ice 3",
+        "catch_rate": "28%",
+        "regions": "Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-stellarys-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Rainstorm Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "Rainy, Thunder"
+      },
+      {
+        "form": "Prismana",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "chirpi",
+    "dex_num": "007",
+    "name": "Chirpi",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-chirpi-handbook.png",
+    "trait": {
+      "name": "Band Member",
+      "effect": "When switching Aniimo in battle, restores X EP to the next Chirpi family member switched in. Triggers once every Xs at most."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, The Argent Strait, Beast Fang Ridge, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-chirpi.png"
+      },
+      {
+        "form_name": "Beach Form",
+        "elements": "Wind 1 / Water 1",
+        "catch_rate": "50%",
+        "regions": "Echoback Landing, Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-chirpi-beach-form.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Wind 1 / Grass 1",
+        "catch_rate": "38%",
+        "regions": "Zephyrus Landbridge, Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-chirpi-highland-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "tromber",
+    "dex_num": "008",
+    "name": "Tromber",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-tromber-handbook.png",
+    "trait": {
+      "name": "Band Member",
+      "effect": "When switching Aniimo in battle, restores X EP to the next Chirpi family member switched in. Triggers once every Xs at most."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tromber.png"
+      },
+      {
+        "form_name": "Beach Form",
+        "elements": "Wind 3 / Water 2",
+        "catch_rate": "25%",
+        "regions": "Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tromber-beach-form.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Wind 3 / Grass 2",
+        "catch_rate": "19%",
+        "regions": "Zephyrus Landbridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tromber-highland-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "Rainy, Thunder"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "cornet",
+    "dex_num": "009",
+    "name": "Cornet",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-cornet-handbook.png",
+    "trait": {
+      "name": "Air Superiority",
+      "effect": "Increases Crit Rate by X% while flying."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-cornet.png"
+      },
+      {
+        "form_name": "Beach Form",
+        "elements": "Wind 3 / Water 2",
+        "catch_rate": "25%",
+        "regions": "Echoback Landing, Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-beach-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Wind 4 / Lightning 3",
+        "catch_rate": "28%",
+        "regions": "The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-prismana.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Wind 3 / Grass 2",
+        "catch_rate": "19%",
+        "regions": "Zephyrus Landbridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-highland-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "Aurora"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "tubster",
+    "dex_num": "010",
+    "name": "Tubster",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-tubster-handbook.png",
+    "trait": {
+      "name": "Victory Concerto",
+      "effect": "While shielded, BREAK efficiency +X%. When triggering BREAK, plays [Concerto], reducing the whole team's stamina cost by X%. When you have 3 Movement-series buffs, increases all Movement effects by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tubster.png"
+      },
+      {
+        "form_name": "Beach Form",
+        "elements": "Wind 3 / Water 2",
+        "catch_rate": "28%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tubster-beach-form.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Wind 3 / Grass 2",
+        "catch_rate": "28%",
+        "regions": "Zephyrus Landbridge, Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tubster-highland-form.png"
+      },
+      {
+        "form_name": "Basic Form (variant record)",
+        "elements": "Wind 3",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tubster-basic-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "iris",
+    "dex_num": "011",
+    "name": "Iris",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-iris-handbook.png",
+    "trait": {
+      "name": "**Disco Aniimo**",
+      "effect": "While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 1",
+        "catch_rate": "50%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris-highland-form.png"
+      },
+      {
+        "form_name": "Forest Form",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris-forest-form.png"
+      },
+      {
+        "form_name": "Grassland Form",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris-grassland-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris-prismana.png"
+      },
+      {
+        "form_name": "Plateau Form",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris-plateau-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Berylline Vale, Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-iris-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Grassland Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Grassland Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Grassland Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Grassland Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Plateau Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "irisal",
+    "dex_num": "012",
+    "name": "Irisal",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-irisal-handbook.png",
+    "trait": {
+      "name": "**Disco Aniimo**",
+      "effect": "While on Turf, Damage Amp increases by X%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 3",
+        "catch_rate": "28%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Grass 3",
+        "catch_rate": "\u2014",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-highland-form.png"
+      },
+      {
+        "form_name": "Forest Form",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-forest-form.png"
+      },
+      {
+        "form_name": "Grassland Form",
+        "elements": "Grass 3",
+        "catch_rate": "28%",
+        "regions": "Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-grassland-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Grass 4",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-prismana.png"
+      },
+      {
+        "form_name": "Plateau Form",
+        "elements": "Grass 3",
+        "catch_rate": "\u2014",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-plateau-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisal-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Grassland Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Plateau Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "skippy",
+    "dex_num": "013",
+    "name": "Skippy",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-skippy-handbook.png",
+    "trait": {
+      "name": "Water Spirit",
+      "effect": "While in water terrain, reduces the EP cost of all skills by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, The Mistwoods, Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-skippy.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Water 1",
+        "catch_rate": "50%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-skippy-sea-of-flowers-form.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Water 1 / Ice 1",
+        "catch_rate": "38%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-skippy-snowfield-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "pranky",
+    "dex_num": "014",
+    "name": "Pranky",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-pranky-handbook.png",
+    "trait": {
+      "name": "Water Spirit",
+      "effect": "While in water terrain, reduces the EP cost of all skills by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 2",
+        "catch_rate": "42%",
+        "regions": "Nimbus Fields, The Mistwoods, Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pranky.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Water 2",
+        "catch_rate": "42%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pranky-sea-of-flowers-form.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Water 2 / Ice 1",
+        "catch_rate": "42%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pranky-snowfield-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "glacy",
+    "dex_num": "015",
+    "name": "Glacy",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-glacy-handbook.png",
+    "trait": {
+      "name": "Water Spirit",
+      "effect": "While in water terrain, reduces the EP cost of all skills by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 3 / Ice 2",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glacy.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Water 3 / Ice 2",
+        "catch_rate": "28%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glacy-sea-of-flowers-form.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Water 3 / Ice 2",
+        "catch_rate": "28%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glacy-snowfield-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Water 4 / Ice 2",
+        "catch_rate": "28%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glacy-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "leafy",
+    "dex_num": "016",
+    "name": "Leafy",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-leafy-handbook.png",
+    "trait": {
+      "name": "Power of Nature",
+      "effect": "While off field, creates a patch of Turf under a teammate after they cast 3 skills."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Ice (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.391\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-leafy.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "nimbi",
+    "dex_num": "017",
+    "name": "Nimbi",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-nimbi-handbook.png",
+    "trait": {
+      "name": "Shrouded in Mist",
+      "effect": "Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi.png"
+      },
+      {
+        "form_name": "Rainstorm Form",
+        "elements": "Wind 1 / Lightning 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi-rainstorm-form.png"
+      },
+      {
+        "form_name": "Cloudmist Form",
+        "elements": "Wind 1",
+        "catch_rate": "\u2014",
+        "regions": "Nimbus Fields",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi-cloudmist-form.png"
+      },
+      {
+        "form_name": "Plateau Form",
+        "elements": "Wind 1 / Ice 1",
+        "catch_rate": "56%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-nimbi-plateau-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Rainstorm Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "Rainy, Thunder"
+      },
+      {
+        "form": "Cloudmist Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Plateau Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "turbo",
+    "dex_num": "018",
+    "name": "Turbo",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-turbo-handbook.png",
+    "trait": {
+      "name": "Shrouded in Mist",
+      "effect": "Gains 1 stack after being off the field for Xs or casting a basic attack. At X stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "Nimbus Fields",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-turbo.png"
+      },
+      {
+        "form_name": "Rainstorm Form",
+        "elements": "Wind 3 / Lightning 2",
+        "catch_rate": "28%",
+        "regions": "Nimbus Fields",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-rainstorm-form.png"
+      },
+      {
+        "form_name": "Cloudmist Form",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-cloudmist-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Wind 4 / Dark 3",
+        "catch_rate": "28%",
+        "regions": "Nimbus Fields",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-prismana.png"
+      },
+      {
+        "form_name": "Plateau Form",
+        "elements": "Wind 3 / Ice 2",
+        "catch_rate": "28%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-plateau-form.png"
+      },
+      {
+        "form_name": "Plateau Form",
+        "elements": "Wind 3 / Ice 2",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-turbo-wind.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Rainstorm Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "Rainy, Thunder"
+      },
+      {
+        "form": "Prismana",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "Aurora"
+      },
+      {
+        "form": "Plateau Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "dreaple",
+    "dex_num": "019",
+    "name": "Dreaple",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-dreaple-handbook.png",
+    "trait": {
+      "name": "Counting Sheep",
+      "effect": "Every Xs, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for Xs. Targets in [Nightmare] have their Dark Resistance reduced by X and cannot move or cast skills for Xs. Taking damage removes the control effect."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-dreaple.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "hummin",
+    "dex_num": "020",
+    "name": "Hummin",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-hummin-handbook.png",
+    "trait": {
+      "name": "Energized",
+      "effect": "For every 1,000 max HP, increases BREAK damage by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, The Mistwoods, The Argent Strait, Forest of Falling Stars, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-hummin.png"
+      },
+      {
+        "form_name": "Mountain Form",
+        "elements": "Grass 1",
+        "catch_rate": "56%",
+        "regions": "Sea of Flowers, Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-hummin-mountain-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "hexxin",
+    "dex_num": "021",
+    "name": "Hexxin",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-hexxin-handbook.png",
+    "trait": {
+      "name": "Prank",
+      "effect": "Every Xs, the next skill applies [Curse] to enemies hit for Xs. Dark basic attacks restore X EP when hitting enemies with [Curse]."
+    },
+    "matchups": {
+      "weak_to": [
+        "Wind (2.56\u00d7)",
+        "Dark (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.391\u00d7)",
+        "Grass (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 2 / Grass 1",
+        "catch_rate": "28%",
+        "regions": "The Mistwoods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-hexxin.png"
+      },
+      {
+        "form_name": "Mountain Form",
+        "elements": "Dark 2 / Grass 1",
+        "catch_rate": "28%",
+        "regions": "Sea of Flowers, Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-hexxin-mountain-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Dark 4 / Grass 3",
+        "catch_rate": "28%",
+        "regions": "The Mistwoods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-hexxin-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "tuckin",
+    "dex_num": "022",
+    "name": "Tuckin",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-tuckin-handbook.png",
+    "trait": {
+      "name": "Prank Master",
+      "effect": "Increases BREAK damage by % for every X1,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every Xs, up to a maximum of 3."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 3",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin.png"
+      },
+      {
+        "form_name": "Mountain Form",
+        "elements": "Grass 3 / Earth 2",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-mountain-form.png"
+      },
+      {
+        "form_name": "Basic Form (variant record)",
+        "elements": "Grass 3",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-basic-form.png"
+      },
+      {
+        "form_name": "Unnamed form",
+        "elements": "Grass 4",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-grass.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "budclaw",
+    "dex_num": "023",
+    "name": "Budclaw",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-budclaw-handbook.png",
+    "trait": {
+      "name": "Stealth",
+      "effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.391\u00d7)",
+        "Lightning (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Earth 1 / Grass 1",
+        "catch_rate": "56%",
+        "regions": "Zephyrus Landbridge, Nimbus Fields, Berylline Vale, Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw.png"
+      },
+      {
+        "form_name": "Mudflat Form",
+        "elements": "Earth 1 / Grass 1",
+        "catch_rate": "32%",
+        "regions": "Tideblossom Coast",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw-mudflat-form.png"
+      },
+      {
+        "form_name": "Beach Form",
+        "elements": "Earth 1",
+        "catch_rate": "56%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw-beach-form.png"
+      },
+      {
+        "form_name": "Bay Form",
+        "elements": "Earth 1 / Grass 1",
+        "catch_rate": "56%",
+        "regions": "The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-budclaw-bay-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mudflat Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Bay Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "shrubclaw",
+    "dex_num": "024",
+    "name": "Shrubclaw",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-handbook.png",
+    "trait": {
+      "name": "Stealth",
+      "effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.391\u00d7)",
+        "Lightning (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Earth 3 / Grass 2",
+        "catch_rate": "28%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw.png"
+      },
+      {
+        "form_name": "Mudflat Form",
+        "elements": "Earth 3",
+        "catch_rate": "28%",
+        "regions": "Tideblossom Coast",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-mudflat-form.png"
+      },
+      {
+        "form_name": "Beach Form",
+        "elements": "Earth 3 / Grass 2",
+        "catch_rate": "28%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-beach-form.png"
+      },
+      {
+        "form_name": "Bay Form",
+        "elements": "Earth 3 / Grass 2",
+        "catch_rate": "28%",
+        "regions": "The Argent Strait",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-bay-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mudflat Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Beach Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Bay Form",
+        "region": "The Argent Strait",
+        "level_range": "28\u201332",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "geoclaw",
+    "dex_num": "025",
+    "name": "Geoclaw",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-geoclaw-handbook.png",
+    "trait": {
+      "name": "Frostbite Sunder",
+      "effect": "Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff]."
+    },
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6\u00d7)",
+        "Earth (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-geoclaw.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "sparki",
+    "dex_num": "026",
+    "name": "Sparki",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-sparki-handbook.png",
+    "trait": {
+      "name": "Blazing Flames",
+      "effect": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 1",
+        "catch_rate": "56%",
+        "regions": "Nimbus Fields, Beast Fang Ridge, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sparki.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Fire 1",
+        "catch_rate": "56%",
+        "regions": "Russet Highlands, Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-highland-form.png"
+      },
+      {
+        "form_name": "Forest Form",
+        "elements": "Fire 1",
+        "catch_rate": "50%",
+        "regions": "The Mistwoods, Berylline Vale, Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-forest-form.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Fire 1",
+        "catch_rate": "50%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sparki-sea-of-flowers-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "flamerion",
+    "dex_num": "027",
+    "name": "Flamerion",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-flamerion-handbook.png",
+    "trait": {
+      "name": "Blazing Flames",
+      "effect": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 3",
+        "catch_rate": "28%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Fire 3",
+        "catch_rate": "28%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion-highland-form.png"
+      },
+      {
+        "form_name": "Forest Form",
+        "elements": "Fire 3",
+        "catch_rate": "25%",
+        "regions": "The Mistwoods, Berylline Vale, Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion-forest-form.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Fire 3",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flamerion-sea-of-flowers-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "flutternym",
+    "dex_num": "028",
+    "name": "Flutternym",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-flutternym-handbook.png",
+    "trait": {
+      "name": "**Flutter Heal**",
+      "effect": "When entering battle as the active Aniimo, increases healing by X%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to X% of max HP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning 1.6\u00d7 \u00b7 Light 1.6\u00d7"
+      ],
+      "resists": [
+        "Dark 0.625\u00d7 \u00b7 Wind 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 1",
+        "catch_rate": "56%",
+        "regions": "Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Wind 1 / Grass 1",
+        "catch_rate": "56%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym-sea-of-flowers-form.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Wind 1 / Dark 1",
+        "catch_rate": "56%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym-nighttime-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Wind 1 / Earth 1",
+        "catch_rate": "56%",
+        "regions": "Beast Fang Ridge, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-flutternym-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Nimbus Fields",
+        "level_range": "5\u201315",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Nighttime Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "gracewing",
+    "dex_num": "029",
+    "name": "Gracewing",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-gracewing-handbook.png",
+    "trait": {
+      "name": "**Flutter Heal**",
+      "effect": "When entering battle as the active Aniimo, increases healing by X%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to X% of max HP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning 1.6\u00d7 \u00b7 Light 1.6\u00d7"
+      ],
+      "resists": [
+        "Dark 0.625\u00d7 \u00b7 Wind 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Wind 3 / Grass 2",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing-sea-of-flowers-form.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Wind 3 / Dark 2",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing-nighttime-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Wind 3 / Earth 2",
+        "catch_rate": "25%",
+        "regions": "Beast Fang Ridge, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-gracewing-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Mountain Woods Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "somniwing",
+    "dex_num": "030",
+    "name": "Somniwing",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-somniwing-handbook.png",
+    "trait": {
+      "name": "**Energy Full**",
+      "effect": "Increases max EP by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning 1.6\u00d7 \u00b7 Light 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-somniwing.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "eko",
+    "dex_num": "031",
+    "name": "Eko",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-eko-handbook.png",
+    "trait": {
+      "name": "Judgment Storm",
+      "effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-eko.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "eklue",
+    "dex_num": "032",
+    "name": "Eklue",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-eklue-handbook.png",
+    "trait": {
+      "name": "Judgment Storm",
+      "effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-eklue.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "budsquire",
+    "dex_num": "033",
+    "name": "Budsquire",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-budsquire-handbook.png",
+    "trait": {
+      "name": "Sword Dance",
+      "effect": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 1",
+        "catch_rate": "50%",
+        "regions": "Sea of Flowers, Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-budsquire.png"
+      },
+      {
+        "form_name": "Towerwood Form",
+        "elements": "Grass 1",
+        "catch_rate": "50%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-budsquire-towerwood-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Towerwood Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "thornblade",
+    "dex_num": "034",
+    "name": "Thornblade",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-thornblade-handbook.png",
+    "trait": {
+      "name": "Sword Dance",
+      "effect": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting Xs. Each basic attack costs 1 stack of [Sword Dance] to deal X% extra damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade.png"
+      },
+      {
+        "form_name": "Thunderstorm Form",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade-thunderstorm-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Grass 4 / Water 3",
+        "catch_rate": "25%",
+        "regions": "Sea of Flowers",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade-prismana.png"
+      },
+      {
+        "form_name": "Towerwood Form",
+        "elements": "Grass 3",
+        "catch_rate": "28%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-thornblade-towerwood-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Thunderstorm Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "Rainy, Thunder"
+      },
+      {
+        "form": "Prismana",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "Aurora"
+      },
+      {
+        "form": "Towerwood Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "melloblum",
+    "dex_num": "035",
+    "name": "Melloblum",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-melloblum-handbook.png",
+    "trait": {
+      "name": "Phantom Opening",
+      "effect": "When a party member deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-melloblum.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Grass 4",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-melloblum-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "pomegg",
+    "dex_num": "036",
+    "name": "Pomegg",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-pomegg-handbook.png",
+    "trait": {
+      "name": "Tuning",
+      "effect": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases Crit Rate by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 1",
+        "catch_rate": "50%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Grass 1 / Ice 1",
+        "catch_rate": "38%",
+        "regions": "Rosetower Woods, Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg-snowfield-form.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Grass 1",
+        "catch_rate": "50%",
+        "regions": "Zephyrus Landbridge, Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg-highland-form.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Grass 1",
+        "catch_rate": "50%",
+        "regions": "Tideblossom Coast, Forest of Falling Stars",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomegg-sea-of-flowers-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "Snowy"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "Snowy"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Sea of Flowers Form",
+        "region": "Forest of Falling Stars",
+        "level_range": "20\u201325",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "pomawk",
+    "dex_num": "037",
+    "name": "Pomawk",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-pomawk-handbook.png",
+    "trait": {
+      "name": "Tuning",
+      "effect": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases Crit Rate by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Fire (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Grass (0.625\u00d7)",
+        "Earth (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Grass 3 / Ice 2",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk-snowfield-form.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Grass 3",
+        "catch_rate": "16%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk-highland-form.png"
+      },
+      {
+        "form_name": "Sea of Flowers Form",
+        "elements": "Grass 3",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pomawk-sea-of-flowers-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "dewy",
+    "dex_num": "038",
+    "name": "Dewy",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-dewy-handbook.png",
+    "trait": {
+      "name": "Dangerous Fragrance",
+      "effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-dewy.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "fragrancier",
+    "dex_num": "039",
+    "name": "Fragrancier",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fragrancier-handbook.png",
+    "trait": {
+      "name": "Dangerous Fragrance",
+      "effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fragrancier.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Sea of Flowers",
+        "level_range": "19\u201328",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "wisptis",
+    "dex_num": "040",
+    "name": "Wisptis",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-wisptis-handbook.png",
+    "trait": {
+      "name": "Battle Fervor",
+      "effect": "Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 1",
+        "catch_rate": "44%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-wisptis.png"
+      },
+      {
+        "form_name": "Forest Form",
+        "elements": "Dark 1 / Grass 1",
+        "catch_rate": "50%",
+        "regions": "The Mistwoods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-wisptis-forest-form.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Dark 1 / Fire 1",
+        "catch_rate": "44%",
+        "regions": "Zephyrus Landbridge, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-wisptis-highland-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "ignitis",
+    "dex_num": "041",
+    "name": "Ignitis",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-ignitis-handbook.png",
+    "trait": {
+      "name": "Battle Fervor",
+      "effect": "Defeating a target grants 1 stack of Battlelust, increasing damage by X% for 20s. Stacks up to 2 times."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 3",
+        "catch_rate": "22%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis.png"
+      },
+      {
+        "form_name": "Forest Form",
+        "elements": "Dark 3 / Grass 2",
+        "catch_rate": "25%",
+        "regions": "The Mistwoods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis-forest-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Dark 4 / Fire 3",
+        "catch_rate": "22%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis-prismana.png"
+      },
+      {
+        "form_name": "Highland Form",
+        "elements": "Dark 3 / Fire 2",
+        "catch_rate": "22%",
+        "regions": "Zephyrus Landbridge, Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-ignitis-highland-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Forest Form",
+        "region": "The Mistwoods",
+        "level_range": "35\u201337",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "Aurora"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Highland Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "bonesky",
+    "dex_num": "042",
+    "name": "Bonesky",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-bonesky-handbook.png",
+    "trait": {
+      "name": "Biting Wind",
+      "effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6\u00d7)",
+        "Earth (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Ice 1",
+        "catch_rate": "50%",
+        "regions": "Beast Fang Ridge, Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bonesky.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Ice 1 / Dark 1",
+        "catch_rate": "50%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bonesky-nighttime-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Nighttime Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "fenrier",
+    "dex_num": "043",
+    "name": "Fenrier",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fenrier-handbook.png",
+    "trait": {
+      "name": "Biting Wind",
+      "effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6\u00d7)",
+        "Earth (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Ice 2",
+        "catch_rate": "38%",
+        "regions": "Beast Fang Ridge, Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fenrier.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Ice 2 / Dark 1",
+        "catch_rate": "38%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fenrier-nighttime-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Basic Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Nighttime Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "glynsera",
+    "dex_num": "044",
+    "name": "Glynsera",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-glynsera-handbook.png",
+    "trait": {
+      "name": "Biting Wind",
+      "effect": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by X%."
+    },
+    "matchups": {
+      "weak_to": [
+        "Fire (1.6\u00d7)",
+        "Earth (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Water (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Ice 3",
+        "catch_rate": "25%",
+        "regions": "Beast Fang Ridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glynsera.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Ice 4",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glynsera-prismana.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Ice 3 / Dark 2",
+        "catch_rate": "\u2014",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-glynsera-nighttime-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Beast Fang Ridge",
+        "level_range": "30\u201335",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Nighttime Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "bolty",
+    "dex_num": "045",
+    "name": "Bolty",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-bolty-handbook.png",
+    "trait": {
+      "name": "Power Sustain",
+      "effect": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Lightning 1",
+        "catch_rate": "44%",
+        "regions": "Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bolty.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Lightning 1",
+        "catch_rate": "50%",
+        "regions": "Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bolty-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "blazen",
+    "dex_num": "046",
+    "name": "Blazen",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-blazen-handbook.png",
+    "trait": {
+      "name": "Power Sustain",
+      "effect": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to X% HP. All skills cost X less EP, but UP cannot be gained. Lasts Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Lightning 3",
+        "catch_rate": "22%",
+        "regions": "Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-blazen.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Lightning 4",
+        "catch_rate": "25%",
+        "regions": "Blitzwood",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-blazen-prismana.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Lightning 3",
+        "catch_rate": "25%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-blazen-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "squarrel",
+    "dex_num": "047",
+    "name": "Squarrel",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-squarrel-handbook.png",
+    "trait": {
+      "name": "Raging Fire",
+      "effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-squarrel.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "squashel",
+    "dex_num": "048",
+    "name": "Squashel",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-squashel-handbook.png",
+    "trait": {
+      "name": "Raging Fire",
+      "effect": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-squashel.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Blitzwood",
+        "level_range": "40\u201345",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "susuta",
+    "dex_num": "049",
+    "name": "Susuta",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-susuta-handbook.png",
+    "trait": {
+      "name": "Appeal",
+      "effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 1",
+        "catch_rate": "38%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-susuta.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Water 1",
+        "catch_rate": "44%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-susuta-nighttime-form.png"
+      },
+      {
+        "form_name": "Basic Form (variant record)",
+        "elements": "Water 1",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-susuta-basic-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Nighttime Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "popota",
+    "dex_num": "050",
+    "name": "Popota",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-popota-handbook.png",
+    "trait": {
+      "name": "Appeal",
+      "effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 2",
+        "catch_rate": "29%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-popota.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Water 2",
+        "catch_rate": "33%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-popota-nighttime-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "piopiota",
+    "dex_num": "051",
+    "name": "Piopiota",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-piopiota-handbook.png",
+    "trait": {
+      "name": "Radiant Charm",
+      "effect": "Increases Water damage byX for all opposite-sex Aniimo in the party."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 3",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-piopiota.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Water 3 / Dark 2",
+        "catch_rate": "22%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-piopiota-nighttime-form.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "panpanta",
+    "dex_num": "052",
+    "name": "Panpanta",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-panpanta-handbook.png",
+    "trait": {
+      "name": "Appeal",
+      "effect": "When entering battle, if the party has an opposite-sex Susuta family member, increases own BREAK efficiency by X% for Xs. Cooldown: 20s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 3",
+        "catch_rate": "19%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-panpanta.png"
+      },
+      {
+        "form_name": "Nighttime Form",
+        "elements": "Water 3",
+        "catch_rate": "22%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-panpanta-nighttime-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Water 4",
+        "catch_rate": "22%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-panpanta-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "shelly",
+    "dex_num": "053",
+    "name": "Shelly",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-shelly-handbook.png",
+    "trait": {
+      "name": "Tidal Heart",
+      "effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 1",
+        "catch_rate": "38%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-shelly.png"
+      },
+      {
+        "form_name": "Basic Form (variant record)",
+        "elements": "Water 1",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": null
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "sheldon",
+    "dex_num": "054",
+    "name": "Sheldon",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-sheldon-handbook.png",
+    "trait": {
+      "name": "Tidal Heart",
+      "effect": "While in water terrain or after absorbing water, increases Water damage by X% for 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sheldon.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "sherro",
+    "dex_num": "055",
+    "name": "Sherro",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-sherro-handbook.png",
+    "trait": {
+      "name": "Tidal Heart",
+      "effect": "While in water terrain or after absorbing water, increases Water Elemental Boost by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Water 3",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sherro.png"
+      },
+      {
+        "form_name": "Thunderstorm Form",
+        "elements": "Water 3 / Lightning 2",
+        "catch_rate": "22%",
+        "regions": "Echoback Landing",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sherro-thunderstorm-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Water 4",
+        "catch_rate": "22%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sherro-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Thunderstorm Form",
+        "region": "Echoback Landing",
+        "level_range": "36\u201340",
+        "weather": "Thunder"
+      }
+    ]
+  },
+  {
+    "slug": "baleetle",
+    "dex_num": "056",
+    "name": "Baleetle",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-baleetle-handbook.png",
+    "trait": {
+      "name": "Overloaded Engine",
+      "effect": "Moving and using skills builds [Overload Energy]. When [Overload Energy] is full, the next skill gains X% bonus damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Earth 1",
+        "catch_rate": "38%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-baleetle.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Earth 1 / Ice 1",
+        "catch_rate": "38%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-baleetle-snowfield-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "Snowy"
+      }
+    ]
+  },
+  {
+    "slug": "waleetle",
+    "dex_num": "057",
+    "name": "Waleetle",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-waleetle-handbook.png",
+    "trait": {
+      "name": "Overloaded Engine",
+      "effect": "Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals X% extra damage and immediately brings [Sandstorm Spin] to maximum speed."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Earth 3",
+        "catch_rate": "19%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-waleetle.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Earth 3 / Ice 2",
+        "catch_rate": "19%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-waleetle-snowfield-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Earth 4",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-waleetle-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "Snowy"
+      }
+    ]
+  },
+  {
+    "slug": "bouldus",
+    "dex_num": "058",
+    "name": "Bouldus",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-bouldus-handbook.png",
+    "trait": {
+      "name": "Rock Empowerment",
+      "effect": "[Rock Piles] created by Bouldus can be destroyed by Waleetle's [Stone Ball Drift], releasing shock waves and applying [Disintegration] to the target.[Disintegration]: Each stack reduces Earth Resistance by X and Movement Speed by X% for Xs, up to 6 stacks."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Earth 3",
+        "catch_rate": "19%",
+        "regions": "Berylline Vale",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bouldus.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Earth 3 / Ice 2",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bouldus-snowfield-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Berylline Vale",
+        "level_range": "40\u201347",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "fentuft",
+    "dex_num": "059",
+    "name": "Fentuft",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fentuft-handbook.png",
+    "trait": {
+      "name": "Thunderbond",
+      "effect": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fentuft.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "fenmane",
+    "dex_num": "060",
+    "name": "Fenmane",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fenmane-handbook.png",
+    "trait": {
+      "name": "Thunderbond",
+      "effect": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Lightning 3",
+        "catch_rate": "22%",
+        "regions": "Driftwise Meadow",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fenmane.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Lightning 4",
+        "catch_rate": "22%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fenmane-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Driftwise Meadow",
+        "level_range": "50\u201355",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "helmut",
+    "dex_num": "061",
+    "name": "Helmut",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-helmut-handbook.png",
+    "trait": {
+      "name": "Guardbreak Resonance",
+      "effect": "Increases BREAK by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 1",
+        "catch_rate": "56%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helmut.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Dark 1 / Ice 1",
+        "catch_rate": "32%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helmut-snowfield-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Dark 1",
+        "catch_rate": "40%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helmut-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "Snowy"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "pawney",
+    "dex_num": "062",
+    "name": "Pawney",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-pawney-handbook.png",
+    "trait": {
+      "name": "Pursuit",
+      "effect": "When dealing damage to targets in Controlled or Break State, increases an additional X% Damage Amp."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 3",
+        "catch_rate": "16%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pawney.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Dark 3 / Ice 2",
+        "catch_rate": "28%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pawney-snowfield-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Dark 3",
+        "catch_rate": "16%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pawney-mountain-woods-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Dark 4",
+        "catch_rate": "28%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pawney-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Prismana",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "rookey",
+    "dex_num": "063",
+    "name": "Rookey",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-rookey-handbook.png",
+    "trait": {
+      "name": "Guardbreak Resonance",
+      "effect": "Increases BREAK by X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Light (1.6\u00d7)",
+        "Wind (1.6\u00d7)"
+      ],
+      "resists": [
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Dark 3",
+        "catch_rate": "16%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-rookey.png"
+      },
+      {
+        "form_name": "Snowfield Form",
+        "elements": "Dark 3 / Ice 2",
+        "catch_rate": "19%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-snowfield-form.png"
+      },
+      {
+        "form_name": "Mountain Woods Form",
+        "elements": "Dark 3",
+        "catch_rate": "19%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-mountain-woods-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Snowfield Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "Snowy"
+      },
+      {
+        "form": "Mountain Woods Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "jawling",
+    "dex_num": "064",
+    "name": "Jawling",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-jawling-handbook.png",
+    "trait": {
+      "name": "Counter Strike",
+      "effect": "After being attacked, increases BREAK efficiency by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 1",
+        "catch_rate": "32%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-jawling.png"
+      },
+      {
+        "form_name": "Mountain Form",
+        "elements": "Wind 1",
+        "catch_rate": "38%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-jawling-mountain-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "helmwhelp",
+    "dex_num": "065",
+    "name": "Helmwhelp",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-helmwhelp-handbook.png",
+    "trait": {
+      "name": "Counter Strike",
+      "effect": "After being attacked, increases BREAK efficiency by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 2",
+        "catch_rate": "42%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helmwhelp.png"
+      },
+      {
+        "form_name": "Mountain Form",
+        "elements": "Wind 2",
+        "catch_rate": "42%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helmwhelp-mountain-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "helgon",
+    "dex_num": "066",
+    "name": "Helgon",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-helgon-handbook.png",
+    "trait": {
+      "name": "Counter Strike",
+      "effect": "After being attacked, increases BREAK efficiency by X% for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Light (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Wind 3",
+        "catch_rate": "28%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helgon.png"
+      },
+      {
+        "form_name": "Mountain Form",
+        "elements": "Wind 3",
+        "catch_rate": "19%",
+        "regions": "Russet Highlands",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helgon-mountain-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Mountain Form",
+        "region": "Russet Highlands",
+        "level_range": "45\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "infergon",
+    "dex_num": "067",
+    "name": "Infergon",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-infergon-handbook.png",
+    "trait": {
+      "name": "Power of Fire",
+      "effect": "Deals X% extra damage to targets with more than 5 stacks of Fire Debuff."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 3",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-infergon.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Fire 4 / Wind 3",
+        "catch_rate": "19%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-infergon-prismana.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "cubbo",
+    "dex_num": "068",
+    "name": "Cubbo",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-cubbo-handbook.png",
+    "trait": {
+      "name": "Raging Rampage",
+      "effect": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-cubbo.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "grizbo",
+    "dex_num": "069",
+    "name": "Grizbo",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-grizbo-handbook.png",
+    "trait": {
+      "name": "Raging Rampage",
+      "effect": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state. [Enraged] increases own skill damage by 30%, increases the EP recovery rate by X%, and prevents [Rage] gain. Lasts 20s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Earth 3",
+        "catch_rate": "16%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-grizbo.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Earth 4",
+        "catch_rate": "16%",
+        "regions": "Rosetower Woods",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-grizbo-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Rosetower Woods",
+        "level_range": "43\u201350",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "pebbling",
+    "dex_num": "070",
+    "name": "Pebbling",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-pebbling-handbook.png",
+    "trait": {
+      "name": "Earth Affinity",
+      "effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-pebbling.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "lavazar",
+    "dex_num": "071",
+    "name": "Lavazar",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-lavazar-handbook.png",
+    "trait": {
+      "name": "Pyro Charge",
+      "effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Water (2.56\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.391\u00d7)",
+        "Ice (0.391\u00d7)",
+        "Lightning (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-lavazar.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "magmarex",
+    "dex_num": "072",
+    "name": "Magmarex",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-magmarex-handbook.png",
+    "trait": {
+      "name": "Pyro Charge",
+      "effect": "After spending a total of X EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Water (2.56\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.391\u00d7)",
+        "Ice (0.391\u00d7)",
+        "Lightning (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 3 / Earth 2",
+        "catch_rate": "19%",
+        "regions": "Zephyrus Landbridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-magmarex.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Fire 4 / Dark 3",
+        "catch_rate": "19%",
+        "regions": "Zephyrus Landbridge",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-magmarex-prismana.png"
+      },
+      {
+        "form_name": "Basic Form (variant record)",
+        "elements": "Fire 3 / Earth 2",
+        "catch_rate": "\u2014",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-magmarex-basic-form.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "geodeback",
+    "dex_num": "073",
+    "name": "Geodeback",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-geodeback-handbook.png",
+    "trait": {
+      "name": "Earth Affinity",
+      "effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-geodeback.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "minespine",
+    "dex_num": "074",
+    "name": "Minespine",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-minespine-handbook.png",
+    "trait": {
+      "name": "Earth Affinity",
+      "effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-minespine.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "cozite",
+    "dex_num": "075",
+    "name": "Cozite",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-cozite-handbook.png",
+    "trait": {
+      "name": "Potent Erosion",
+      "effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-cozite.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "bailite",
+    "dex_num": "076",
+    "name": "Bailite",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-bailite-handbook.png",
+    "trait": {
+      "name": "Potent Erosion",
+      "effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times."
+    },
+    "matchups": {
+      "weak_to": [
+        "Grass (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Fire (0.625\u00d7)",
+        "Ice (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bailite.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Zephyrus Landbridge",
+        "level_range": "47\u201357",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "bulbly",
+    "dex_num": "077",
+    "name": "Bulbly",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-bulbly-handbook.png",
+    "trait": {
+      "name": "Arc Surge",
+      "effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-bulbly.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "veilfloat",
+    "dex_num": "078",
+    "name": "Veilfloat",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-veilfloat-handbook.png",
+    "trait": {
+      "name": "Arc Surge",
+      "effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-veilfloat.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "luminelle",
+    "dex_num": "079",
+    "name": "Luminelle",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-luminelle-handbook.png",
+    "trait": {
+      "name": "Arc Surge",
+      "effect": "Teammates who receive this Aniimo's skill buff also gain a X Lightning boost for Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Lightning 3",
+        "catch_rate": "22%",
+        "regions": "Tideblossom Coast",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-luminelle.png"
+      },
+      {
+        "form_name": "Rainstorm Form",
+        "elements": "Lightning 3 / Water 2",
+        "catch_rate": "22%",
+        "regions": "Tideblossom Coast",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-luminelle-rainstorm-form.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Lightning 4",
+        "catch_rate": "22%",
+        "regions": "Tideblossom Coast",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-luminelle-prismana.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Rainstorm Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      },
+      {
+        "form": "Prismana",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "Aurora"
+      }
+    ]
+  },
+  {
+    "slug": "fahloo",
+    "dex_num": "080",
+    "name": "Fahloo",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fahloo-handbook.png",
+    "trait": {
+      "name": "Bubble",
+      "effect": "Every 12s, enters Bathing. The next skill cast creates a puddle."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fahloo.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "erlath",
+    "dex_num": "081",
+    "name": "Erlath",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-erlath-handbook.png",
+    "trait": {
+      "name": "Bubble",
+      "effect": "Every 12s, enters Bathing. The next skill cast creates a puddle."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-erlath.png"
+      }
+    ],
+    "spawns": [
+      {
+        "form": "Basic Form",
+        "region": "Tideblossom Coast",
+        "level_range": "53\u201360",
+        "weather": "\u2014"
+      }
+    ]
+  },
+  {
+    "slug": "besauce",
+    "dex_num": "082",
+    "name": "Besauce",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-besauce-handbook.png",
+    "trait": {
+      "name": "Power Surge",
+      "effect": "When casting a skill with less than 20 EP, restores X EP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-besauce.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "dazmand",
+    "dex_num": "000",
+    "name": "Dazmand",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-dazmand-handbook.png",
+    "trait": {
+      "name": "Spotlight Moment",
+      "effect": "The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-dazmand.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "fennelun",
+    "dex_num": "000",
+    "name": "Fennelun",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fennelun-handbook.png",
+    "trait": {
+      "name": "**Lunar Power**",
+      "effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fennelun.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "fulmintis",
+    "dex_num": "000",
+    "name": "Fulmintis",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-fulmintis-handbook.png",
+    "trait": {
+      "name": "Electro Stash",
+      "effect": "Restores X EP when a skill lands a critical hit."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Lightning (0.625\u00d7)",
+        "Light (0.625\u00d7)",
+        "Wind (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Lightning 3",
+        "catch_rate": "22%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fulmintis.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Lightning 4",
+        "catch_rate": "22%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-fulmintis-prismana.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "helion",
+    "dex_num": "000",
+    "name": "Helion",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-helion-handbook.png",
+    "trait": {
+      "name": "**Solar Grace**",
+      "effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-helion.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "irisalis",
+    "dex_num": "000",
+    "name": "Irisalis",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-irisalis-handbook.png",
+    "trait": {
+      "name": "**Bloom Cluster**",
+      "effect": "When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7 \u00b7 Fire 1.6\u00d7 \u00b7 Wind 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Earth 0.625\u00d7 \u00b7 Water 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-irisalis.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "jabster",
+    "dex_num": "000",
+    "name": "Jabster",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-jabster-handbook.png",
+    "trait": {
+      "name": "Knuckle Burst",
+      "effect": "Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s."
+    },
+    "matchups": {
+      "weak_to": [
+        "Lightning (1.6\u00d7)",
+        "Grass (1.6\u00d7)",
+        "Ice (1.6\u00d7)"
+      ],
+      "resists": [
+        "Dark (0.625\u00d7)",
+        "Earth (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-jabster.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "lunara",
+    "dex_num": "000",
+    "name": "Lunara",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-lunara-handbook.png",
+    "trait": {
+      "name": "**Lunar Power**",
+      "effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-lunara.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "morphling",
+    "dex_num": "000",
+    "name": "Morphling",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-morphling-handbook.png",
+    "trait": {
+      "name": "",
+      "effect": ""
+    },
+    "matchups": {
+      "weak_to": [],
+      "resists": []
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-morphling.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "soleon",
+    "dex_num": "000",
+    "name": "Soleon",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-soleon-handbook.png",
+    "trait": {
+      "name": "**Solar Grace**",
+      "effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill."
+    },
+    "matchups": {
+      "weak_to": [
+        "Dark 1.6\u00d7"
+      ],
+      "resists": [
+        "Grass 0.625\u00d7 \u00b7 Light 0.625\u00d7"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form",
+        "elements": "Standard",
+        "catch_rate": "Standard",
+        "regions": "Idyll Native Habitat",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-soleon.png"
+      }
+    ],
+    "spawns": []
+  },
+  {
+    "slug": "sparkelf",
+    "dex_num": "000",
+    "name": "Sparkelf",
+    "handbook_image": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-handbook.png",
+    "trait": {
+      "name": "Reliable Fire Companion",
+      "effect": "When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X."
+    },
+    "matchups": {
+      "weak_to": [
+        "Earth (1.6\u00d7)",
+        "Water (1.6\u00d7)"
+      ],
+      "resists": [
+        "Fire (0.625\u00d7)",
+        "Grass (0.625\u00d7)",
+        "Ice (0.625\u00d7)"
+      ]
+    },
+    "forms": [
+      {
+        "form_name": "Basic Form (base)",
+        "elements": "Fire 3",
+        "catch_rate": "16%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf.png"
+      },
+      {
+        "form_name": "Prismana",
+        "elements": "Fire 4",
+        "catch_rate": "16%",
+        "regions": "\u2014",
+        "art_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-prismana.png"
+      }
+    ],
+    "spawns": []
+  }
+]
