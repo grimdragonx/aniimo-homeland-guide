@@ -294,7 +294,6 @@ In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (F
 | **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | 🍃 Wind Lv.3, ⚡ Lightning Lv.2, 🔨 Artisanship Lv.1 |
 | **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🔨 Artisanship Lv.1 |
 | **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | 🍃 Wind Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.1 |
-| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.1 |
 | **Prismana** | Prismana Form | `Wind 4 / Dark 3` | 28% | Nimbus Fields | 🍃 Wind Lv.4, 🌑 Dark Lv.3, 🔨 Artisanship Lv.2 |
 
 ---

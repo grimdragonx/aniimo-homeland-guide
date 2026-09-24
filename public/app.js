@@ -151,15 +151,23 @@ function renderCards(list) {
     } else {
       navBtns = `<button class="btn-form-tab ${activeTabKey === 'basic' ? 'active' : ''}" onclick="setCardTab('${item.id}', 'basic')">Basic</button>`;
 
+      const seenLabels = new Set(['basic']);
+
       regionalForms.forEach((rf, i) => {
-        const sel = activeTabKey === `regional_${i}`;
         const label = rf.form_name.replace('Form', '').trim();
+        const norm = label.toLowerCase();
+        if (seenLabels.has(norm)) return;
+        seenLabels.add(norm);
+        const sel = activeTabKey === `regional_${i}`;
         navBtns += `<button class="btn-form-tab ${sel ? 'active' : ''}" onclick="setCardTab('${item.id}', 'regional_${i}')">🗺️ ${label}</button>`;
       });
 
       weatherForms.forEach((wf, i) => {
-        const sel = activeTabKey === `weather_${i}`;
         const label = wf.form_name.replace('Form', '').trim();
+        const norm = label.toLowerCase();
+        if (seenLabels.has(norm)) return;
+        seenLabels.add(norm);
+        const sel = activeTabKey === `weather_${i}`;
         navBtns += `<button class="btn-form-tab ${sel ? 'active' : ''}" onclick="setCardTab('${item.id}', 'weather_${i}')">⚡ ${label}</button>`;
       });
 
@@ -263,7 +271,14 @@ window.openDetailModal = function(id) {
   const weatherList = item.forms.weather || [];
   const prismana = (item.id === '030') ? null : item.forms.prismana;
 
-  const allFormsList = [basic, ...regionalList, ...weatherList, prismana].filter(Boolean);
+  const seenModalForms = new Set();
+  const allFormsList = [basic, ...regionalList, ...weatherList, prismana].filter(f => {
+    if (!f) return false;
+    const norm = f.form_name.trim().toLowerCase();
+    if (seenModalForms.has(norm)) return false;
+    seenModalForms.add(norm);
+    return true;
+  });
 
   const formsTableHtml = allFormsList.map(f => {
     const isPris = f.form_name.toLowerCase().includes('prismana');

@@ -1794,25 +1794,6 @@
           "utilities": {
             "Artisanship": 1
           }
-        },
-        {
-          "form_name": "Plateau Form",
-          "element_display": "Wind 3 / Ice 2",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
-            "Wind": 3,
-            "Ice": 2
-          },
-          "image": "images/forms/turbo-plateau-form.png",
-          "abilities": {
-            "Wind": 3,
-            "Ice": 2,
-            "Artisanship": 1
-          },
-          "utilities": {
-            "Artisanship": 1
-          }
         }
       ],
       "prismana": {
@@ -1839,7 +1820,6 @@
       "Basic Form (base)",
       "Rainstorm Form",
       "Cloudmist Form",
-      "Plateau Form",
       "Plateau Form",
       "Prismana"
     ]
