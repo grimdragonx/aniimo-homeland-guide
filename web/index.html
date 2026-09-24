@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniimo Homeland Abilities & Form Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo-area">
+          <span class="logo-badge">CAMP RV</span>
+          <h1>🏡 Aniimo Homeland Database</h1>
+          <p class="subtitle">Complete guide to Basic Forms, Weather Variants, Prismana Forms & Homeland Abilities (Levels 1–5)</p>
+        </div>
+        <div class="stats-bar">
+          <div class="stat-pill"><strong id="stat-species">32</strong> Species</div>
+          <div class="stat-pill"><strong id="stat-forms">75+</strong> Forms</div>
+          <div class="stat-pill"><strong>13</strong> Homeland Jobs</div>
+          <a href="../HOMELAND_GUIDE.md" class="btn-guide" target="_blank">📖 Base Guide</a>
+          <a href="../BEST_WORKERS_TIER_LIST.md" class="btn-tier" target="_blank">🏆 Tier List</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Controls & Filters -->
+    <section class="controls-panel">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search by name, perk, role, or evolution line...">
+        <button id="clearSearch" class="btn-clear" title="Clear search">✕</button>
+      </div>
+
+      <div class="filters-grid">
+        <!-- Stage Filter -->
+        <div class="filter-group">
+          <label>Evolution Stage</label>
+          <select id="stageFilter">
+            <option value="all">All Stages (Lumin, Gamma, Nova)</option>
+            <option value="Lumin">Lumin (Starter / Base)</option>
+            <option value="Gamma">Gamma (Mid-Evolution)</option>
+            <option value="Nova">Nova (Final / Apex)</option>
+          </select>
+        </div>
+
+        <!-- Element Filter -->
+        <div class="filter-group">
+          <label>Primary Element</label>
+          <select id="elementFilter">
+            <option value="all">All Elements</option>
+            <option value="Fire">🔥 Fire</option>
+            <option value="Grass">🌱 Grass</option>
+            <option value="Water">💧 Water</option>
+            <option value="Earth">⛰️ Earth</option>
+            <option value="Lightning">⚡ Lightning</option>
+            <option value="Ice">❄️ Ice</option>
+            <option value="Wind">🍃 Wind</option>
+            <option value="Dark">🌑 Dark</option>
+            <option value="Light">✨ Light</option>
+          </select>
+        </div>
+
+        <!-- Ability Filter -->
+        <div class="filter-group">
+          <label>Homeland Ability</label>
+          <select id="abilityFilter">
+            <option value="all">Any Homeland Ability</option>
+            <optgroup label="Elemental Jobs">
+              <option value="Fire">🔥 Fire (Smelting/Cooking)</option>
+              <option value="Grass">🌱 Grass (Planting/Farming)</option>
+              <option value="Water">💧 Water (Irrigation/Brewing)</option>
+              <option value="Earth">⛰️ Earth (Mining/Quarry)</option>
+              <option value="Lightning">⚡ Lightning (Power Grid)</option>
+              <option value="Ice">❄️ Ice (Cold Storage)</option>
+              <option value="Wind">🍃 Wind (Milling/Flour)</option>
+              <option value="Dark">🌑 Dark (Shadow/Night Shift)</option>
+              <option value="Light">✨ Light (Illumination/Incubation)</option>
+            </optgroup>
+            <optgroup label="General Utility">
+              <option value="Carry">📦 Carry (Hauling/Logistics)</option>
+              <option value="Artisanship">🔨 Artisanship (Crafting/RV)</option>
+              <option value="Leisure">☕ Leisure (Worker Morale)</option>
+              <option value="Perfumery">🌸 Perfumery (Alchemy/Oils)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Minimum Level Filter -->
+        <div class="filter-group">
+          <label>Minimum Ability Level</label>
+          <select id="minLevelFilter">
+            <option value="1">Level 1+ (Any)</option>
+            <option value="2">Level 2+ (Skilled)</option>
+            <option value="3">Level 3+ (Expert)</option>
+            <option value="4">Level 4+ (Master)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Quick Form Tag Filters -->
+      <div class="form-tabs-bar">
+        <span class="filter-label">Quick Form Focus:</span>
+        <button class="tag-btn active" data-form="all">All Forms</button>
+        <button class="tag-btn" data-form="basic">Standard Forms</button>
+        <button class="tag-btn" data-form="weather">⚡ Weather Variants</button>
+        <button class="tag-btn" data-form="prismana">🌈 Prismana Forms</button>
+        <span id="results-count" class="results-badge">Showing 32 Aniimo</span>
+      </div>
+    </section>
+
+    <!-- Aniimo Cards Grid -->
+    <main class="grid-container" id="aniimoGrid">
+      <!-- Injected via JavaScript -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Aniimo Homeland Master Guide & Database • Crafted for open-world explorers and RV base architects.</p>
+    </footer>
+  </div>
+
+  <script src="data_inline.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
