@@ -1,12 +1,12 @@
 # 📖 Aniimo Canonical Homeland Database
 
-> **Status:** Canonical Edition  
+> **Status:** Canonical Fact-Checked Edition  
 > **Numbered Basic Species:** 82 Aniimo (#001–#082)  
-> **Unnumbered Species:** 10 Aniimo (#????)  
+> **Unnumbered Discovered Species:** 10 Aniimo (#????)  
 > **Total Cataloged Species:** 92 Aniimo  
 > **Data Sources:** Verified In-Game Data & Official Creature Handbooks  
 
-In *Aniimo*, Homeland production and workstation assignments are governed directly by **Creature Elements and Elemental Levels** (Fire, Water, Grass, Earth, Lightning, Ice, Wind, Dark, Light).
+In *Aniimo*, Homeland base production is governed by **Elemental Affinities** (Fire, Water, Grass, Earth, Lightning, Ice, Wind, Dark, Light) and **Homeland Utility Roles** (**Carry** 📦, **Artisanship** 🔨, **Leisure** ☕, **Perfumery** 🌸).
 
 ---
 
@@ -41,11 +41,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge | `Fire Lv.1` |
-| **Highland Form** | Regional Variant | `Fire 1 / Earth 1` | 38% | Zephyrus Landbridge, Russet Highlands | `Fire Lv.1, Earth Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Fire 1` | 50% | Beast Fang Ridge | `Fire Lv.1` |
+| **Basic Form (base)** | Base Form | `Fire 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge | 🔥 Fire Lv.1, 📦 Carry Lv.1 |
+| **Highland Form** | Regional Variant | `Fire 1 / Earth 1` | 38% | Zephyrus Landbridge, Russet Highlands | 🔥 Fire Lv.1, ⛰️ Earth Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Fire 1` | 50% | Beast Fang Ridge | 🔥 Fire Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-002-flameruff"></a>#002 — Flameruff
 
@@ -53,11 +55,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 2` | 42% | Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge | `Fire Lv.2` |
-| **Highland Form** | Regional Variant | `Fire 2 / Earth 1` | 29% | Zephyrus Landbridge, Russet Highlands | `Fire Lv.2, Earth Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Fire 2` | 38% | Beast Fang Ridge | `Fire Lv.2` |
+| **Basic Form (base)** | Base Form | `Fire 2` | 42% | Nimbus Fields, The Argent Strait, Echoback Landing, Beast Fang Ridge | 🔥 Fire Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
+| **Highland Form** | Regional Variant | `Fire 2 / Earth 1` | 29% | Zephyrus Landbridge, Russet Highlands | 🔥 Fire Lv.2, ⛰️ Earth Lv.1, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Fire 2` | 38% | Beast Fang Ridge | 🔥 Fire Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-003-scorchhowl"></a>#003 — Scorchhowl
 
@@ -65,13 +69,15 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3` |
-| **Highland Form** | Regional Variant | `Fire 3 / Earth 2` | 19% | Idyll Native Habitat | `Fire Lv.3, Earth Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | `Fire Lv.3` |
-| **Thunderstorm Form** | Weather Variant | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3` |
-| **Prismana** | 🌈 Prismana | `Fire 4` | 28% | Beast Fang Ridge | `Fire Lv.4` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Highland Form** | Regional Variant | `Fire 3 / Earth 2` | 19% | Idyll Native Habitat | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Mountain Woods Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Thunderstorm Form** | Weather Variant | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Prismana** | Prismana Form | `Fire 4` | 28% | Beast Fang Ridge | 🔥 Fire Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-004-inferlupa"></a>#004 — Inferlupa
 
@@ -79,10 +85,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3 / Fire 2` | 28% | Idyll Native Habitat | `Dark Lv.3, Fire Lv.2` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Fire 3` | 25% | Idyll Native Habitat | `Dark Lv.4, Fire Lv.3` |
+| **Basic Form (base)** | Base Form | `Dark 3 / Fire 2` | 28% | Idyll Native Habitat | 🌑 Dark Lv.3, 🔥 Fire Lv.2, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Dark 4 / Fire 3` | 25% | Idyll Native Habitat | 🌑 Dark Lv.4, 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-005-celestis"></a>#005 — Celestis
 
@@ -90,9 +98,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 3` | Standard | Idyll Native Habitat | `Dark Lv.3` |
+| **Basic Form** | Base Form | `Dark 3` | Standard | Idyll Native Habitat | 🌑 Dark Lv.3, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-006-stellarys"></a>#006 — Stellarys
 
@@ -100,11 +110,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 28% | Forest of Falling Stars | `Dark Lv.3` |
-| **Rainstorm Form** | Weather Variant | `Dark 3 / Water 2` | 28% | Forest of Falling Stars | `Dark Lv.3, Water Lv.2` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Ice 3` | 28% | Forest of Falling Stars | `Dark Lv.4, Ice Lv.3` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 28% | Forest of Falling Stars | 🌑 Dark Lv.3, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
+| **Rainstorm Form** | Weather Variant | `Dark 3 / Water 2` | 28% | Forest of Falling Stars | 🌑 Dark Lv.3, 💧 Water Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
+| **Prismana** | Prismana Form | `Dark 4 / Ice 3` | 28% | Forest of Falling Stars | 🌑 Dark Lv.4, ❄️ Ice Lv.3, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-007-chirpi"></a>#007 — Chirpi
 
@@ -112,11 +124,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait, Beast Fang Ridge, Blitzwood | `Wind Lv.1` |
-| **Beach Form** | Regional Variant | `Wind 1 / Water 1` | 50% | Echoback Landing, Forest of Falling Stars | `Wind Lv.1, Water Lv.1` |
-| **Highland Form** | Regional Variant | `Wind 1 / Grass 1` | 38% | Zephyrus Landbridge, Russet Highlands | `Wind Lv.1, Grass Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait, Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
+| **Beach Form** | Regional Variant | `Wind 1 / Water 1` | 50% | Echoback Landing, Forest of Falling Stars | 🍃 Wind Lv.1, 💧 Water Lv.1, 📦 Carry Lv.1 |
+| **Highland Form** | Regional Variant | `Wind 1 / Grass 1` | 38% | Zephyrus Landbridge, Russet Highlands | 🍃 Wind Lv.1, 🌱 Grass Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-008-tromber"></a>#008 — Tromber
 
@@ -124,11 +138,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | `Wind Lv.3` |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Forest of Falling Stars | `Wind Lv.3, Water Lv.2` |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | `Wind Lv.3, Grass Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | 🍃 Wind Lv.3, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Forest of Falling Stars | 🍃 Wind Lv.3, 💧 Water Lv.2, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | 🍃 Wind Lv.3, 🌱 Grass Lv.2, ☕ Leisure Lv.3, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-009-cornet"></a>#009 — Cornet
 
@@ -136,12 +152,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | `Wind Lv.3` |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Echoback Landing, Forest of Falling Stars | `Wind Lv.3, Water Lv.2` |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | `Wind Lv.3, Grass Lv.2` |
-| **Prismana** | 🌈 Prismana | `Wind 4 / Lightning 3` | 28% | The Argent Strait | `Wind Lv.4, Lightning Lv.3` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | 🍃 Wind Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 25% | Echoback Landing, Forest of Falling Stars | 🍃 Wind Lv.3, 💧 Water Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 19% | Zephyrus Landbridge | 🍃 Wind Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Prismana** | Prismana Form | `Wind 4 / Lightning 3` | 28% | The Argent Strait | 🍃 Wind Lv.4, ⚡ Lightning Lv.3, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-010-tubster"></a>#010 — Tubster
 
@@ -149,12 +167,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | `Wind Lv.3` |
-| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 28% | Echoback Landing | `Wind Lv.3, Water Lv.2` |
-| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 28% | Zephyrus Landbridge, Russet Highlands | `Wind Lv.3, Grass Lv.2` |
-| **Basic Form (variant record)** | Regional Variant | `Wind 3` | 25% | Idyll Native Habitat | `Wind Lv.3` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | The Argent Strait | 🍃 Wind Lv.3, 📦 Carry Lv.3 |
+| **Beach Form** | Regional Variant | `Wind 3 / Water 2` | 28% | Echoback Landing | 🍃 Wind Lv.3, 💧 Water Lv.2, 📦 Carry Lv.3 |
+| **Highland Form** | Regional Variant | `Wind 3 / Grass 2` | 28% | Zephyrus Landbridge, Russet Highlands | 🍃 Wind Lv.3, 🌱 Grass Lv.2, 📦 Carry Lv.3 |
+| **Basic Form (variant record)** | Regional Variant | `Wind 3` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-011-iris"></a>#011 — Iris
 
@@ -162,15 +182,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark 1.6× · Fire 1.6× · Wind 1.6× | **Resists:** Grass 0.625× · Earth 0.625× · Water 0.625×
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers | `Grass Lv.1` |
-| **Highland Form** | Regional Variant | `Grass 1` | 56% | Russet Highlands | `Grass Lv.1` |
-| **Forest Form** | Regional Variant | `Grass 1` | 56% | Forest of Falling Stars | `Grass Lv.1` |
-| **Grassland Form** | Regional Variant | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood | `Grass Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Grass 1` | 56% | Berylline Vale, Beast Fang Ridge | `Grass Lv.1` |
-| **Plateau Form** | Weather Variant | `Grass 1` | 56% | Driftwise Meadow | `Grass Lv.1` |
-| **Prismana** | 🌈 Prismana | `Grass 1` | 56% | Idyll Native Habitat | `Grass Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
+| **Highland Form** | Regional Variant | `Grass 1` | 56% | Russet Highlands | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
+| **Forest Form** | Regional Variant | `Grass 1` | 56% | Forest of Falling Stars | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
+| **Grassland Form** | Regional Variant | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Blitzwood | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Grass 1` | 56% | Berylline Vale, Beast Fang Ridge | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
+| **Plateau Form** | Weather Variant | `Grass 1` | 56% | Driftwise Meadow | 🌱 Grass Lv.1, 🌸 Perfumery Lv.1 |
+| **Prismana** | Prismana Form | `Grass 1` | 56% | Idyll Native Habitat | 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
+
+---
 
 ### <a id="-012-irisal"></a>#012 — Irisal
 
@@ -178,15 +200,17 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark 1.6× · Fire 1.6× · Wind 1.6× | **Resists:** Grass 0.625× · Earth 0.625× · Water 0.625×
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Sea of Flowers | `Grass Lv.3` |
-| **Highland Form** | Regional Variant | `Grass 3` | 25% | Russet Highlands | `Grass Lv.3` |
-| **Forest Form** | Regional Variant | `Grass 3` | 25% | Forest of Falling Stars | `Grass Lv.3` |
-| **Grassland Form** | Regional Variant | `Grass 3` | 28% | Blitzwood | `Grass Lv.3` |
-| **Mountain Woods Form** | Regional Variant | `Grass 3` | 25% | Berylline Vale | `Grass Lv.3` |
-| **Plateau Form** | Weather Variant | `Grass 3` | 25% | Driftwise Meadow | `Grass Lv.3` |
-| **Prismana** | 🌈 Prismana | `Grass 4` | 25% | Idyll Native Habitat | `Grass Lv.4` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Sea of Flowers | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
+| **Highland Form** | Regional Variant | `Grass 3` | 25% | Russet Highlands | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
+| **Forest Form** | Regional Variant | `Grass 3` | 25% | Forest of Falling Stars | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
+| **Grassland Form** | Regional Variant | `Grass 3` | 28% | Blitzwood | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Grass 3` | 25% | Berylline Vale | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
+| **Plateau Form** | Weather Variant | `Grass 3` | 25% | Driftwise Meadow | 🌱 Grass Lv.3, 🌸 Perfumery Lv.2, 🔨 Artisanship Lv.1 |
+| **Prismana** | Prismana Form | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, 🌸 Perfumery Lv.3, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-013-skippy"></a>#013 — Skippy
 
@@ -194,11 +218,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 1` | 56% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | `Water Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Water 1` | 50% | Sea of Flowers | `Water Lv.1` |
-| **Snowfield Form** | Regional Variant | `Water 1 / Ice 1` | 38% | Driftwise Meadow | `Water Lv.1, Ice Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 1` | 56% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | 💧 Water Lv.1, 📦 Carry Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Water 1` | 50% | Sea of Flowers | 💧 Water Lv.1, 📦 Carry Lv.1 |
+| **Snowfield Form** | Regional Variant | `Water 1 / Ice 1` | 38% | Driftwise Meadow | 💧 Water Lv.1, ❄️ Ice Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-014-pranky"></a>#014 — Pranky
 
@@ -206,11 +232,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 2` | 42% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | `Water Lv.2` |
-| **Sea of Flowers Form** | Regional Variant | `Water 2` | 42% | Sea of Flowers | `Water Lv.2` |
-| **Snowfield Form** | Regional Variant | `Water 2 / Ice 1` | 42% | Driftwise Meadow | `Water Lv.2, Ice Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 2` | 42% | Nimbus Fields, The Mistwoods, Forest of Falling Stars | 💧 Water Lv.2, 🔨 Artisanship Lv.2 |
+| **Sea of Flowers Form** | Regional Variant | `Water 2` | 42% | Sea of Flowers | 💧 Water Lv.2, 🔨 Artisanship Lv.2 |
+| **Snowfield Form** | Regional Variant | `Water 2 / Ice 1` | 42% | Driftwise Meadow | 💧 Water Lv.2, ❄️ Ice Lv.1, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-015-glacy"></a>#015 — Glacy
 
@@ -218,12 +246,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×) | **Resists:** Dark (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3 / Ice 2` | 28% | Idyll Native Habitat | `Water Lv.3, Ice Lv.2` |
-| **Sea of Flowers Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Sea of Flowers | `Water Lv.3, Ice Lv.2` |
-| **Snowfield Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Driftwise Meadow | `Water Lv.3, Ice Lv.2` |
-| **Prismana** | 🌈 Prismana | `Water 4 / Ice 2` | 28% | Driftwise Meadow | `Water Lv.4, Ice Lv.2` |
+| **Basic Form (base)** | Base Form | `Water 3 / Ice 2` | 28% | Idyll Native Habitat | 💧 Water Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.2 |
+| **Sea of Flowers Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Sea of Flowers | 💧 Water Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.2 |
+| **Snowfield Form** | Regional Variant | `Water 3 / Ice 2` | 28% | Driftwise Meadow | 💧 Water Lv.3, ❄️ Ice Lv.2, ☕ Leisure Lv.2 |
+| **Prismana** | Prismana Form | `Water 4 / Ice 2` | 28% | Driftwise Meadow | 💧 Water Lv.4, ❄️ Ice Lv.2, ☕ Leisure Lv.3 |
+
+---
 
 ### <a id="-016-leafy"></a>#016 — Leafy
 
@@ -231,9 +261,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Ice (1.6×), Wind (1.6×) | **Resists:** Earth (0.391×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 1 / Grass 1` | Standard | Idyll Native Habitat | `Water Lv.1, Grass Lv.1` |
+| **Basic Form** | Base Form | `Water 1 / Grass 1` | Standard | Idyll Native Habitat | 💧 Water Lv.1, 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
+
+---
 
 ### <a id="-017-nimbi"></a>#017 — Nimbi
 
@@ -241,12 +273,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait | `Wind Lv.1` |
-| **Rainstorm Form** | Weather Variant | `Wind 1 / Lightning 1` | 56% | Nimbus Fields | `Wind Lv.1, Lightning Lv.1` |
-| **Cloudmist Form** | Weather Variant | `Wind 1` | 25% | Nimbus Fields | `Wind Lv.1` |
-| **Plateau Form** | Weather Variant | `Wind 1 / Ice 1` | 56% | Driftwise Meadow | `Wind Lv.1, Ice Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Nimbus Fields, The Argent Strait | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
+| **Rainstorm Form** | Weather Variant | `Wind 1 / Lightning 1` | 56% | Nimbus Fields | 🍃 Wind Lv.1, ⚡ Lightning Lv.1, 📦 Carry Lv.1 |
+| **Cloudmist Form** | Weather Variant | `Wind 1` | 25% | Nimbus Fields | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
+| **Plateau Form** | Weather Variant | `Wind 1 / Ice 1` | 56% | Driftwise Meadow | 🍃 Wind Lv.1, ❄️ Ice Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-018-turbo"></a>#018 — Turbo
 
@@ -254,14 +288,16 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Nimbus Fields | `Wind Lv.3` |
-| **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | `Wind Lv.3, Lightning Lv.2` |
-| **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | Idyll Native Habitat | `Wind Lv.3` |
-| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | `Wind Lv.3, Ice Lv.2` |
-| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 25% | Idyll Native Habitat | `Wind Lv.3, Ice Lv.2` |
-| **Prismana** | 🌈 Prismana | `Wind 4 / Dark 3` | 28% | Nimbus Fields | `Wind Lv.4, Dark Lv.3` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Nimbus Fields | 🍃 Wind Lv.3, 🔨 Artisanship Lv.1 |
+| **Rainstorm Form** | Weather Variant | `Wind 3 / Lightning 2` | 28% | Nimbus Fields | 🍃 Wind Lv.3, ⚡ Lightning Lv.2, 🔨 Artisanship Lv.1 |
+| **Cloudmist Form** | Weather Variant | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🔨 Artisanship Lv.1 |
+| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 28% | Driftwise Meadow | 🍃 Wind Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.1 |
+| **Plateau Form** | Weather Variant | `Wind 3 / Ice 2` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.1 |
+| **Prismana** | Prismana Form | `Wind 4 / Dark 3` | 28% | Nimbus Fields | 🍃 Wind Lv.4, 🌑 Dark Lv.3, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-019-dreaple"></a>#019 — Dreaple
 
@@ -269,9 +305,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | `Dark Lv.2` |
+| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | 🌑 Dark Lv.2, 🌸 Perfumery Lv.2 |
+
+---
 
 ### <a id="-020-hummin"></a>#020 — Hummin
 
@@ -279,10 +317,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Forest of Falling Stars, Blitzwood | `Grass Lv.1` |
-| **Mountain Form** | Regional Variant | `Grass 1` | 56% | Sea of Flowers, Berylline Vale | `Grass Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 56% | Nimbus Fields, The Mistwoods, The Argent Strait, Forest of Falling Stars, Blitzwood | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+| **Mountain Form** | Regional Variant | `Grass 1` | 56% | Sea of Flowers, Berylline Vale | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-021-hexxin"></a>#021 — Hexxin
 
@@ -290,11 +330,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Wind (2.56×), Dark (1.6×), Light (1.6×) | **Resists:** Earth (0.391×), Grass (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 2 / Grass 1` | 28% | The Mistwoods | `Dark Lv.2, Grass Lv.1` |
-| **Mountain Form** | Regional Variant | `Dark 2 / Grass 1` | 28% | Sea of Flowers, Berylline Vale | `Dark Lv.2, Grass Lv.1` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Grass 3` | 28% | The Mistwoods | `Dark Lv.4, Grass Lv.3` |
+| **Basic Form (base)** | Base Form | `Dark 2 / Grass 1` | 28% | The Mistwoods | 🌑 Dark Lv.2, 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
+| **Mountain Form** | Regional Variant | `Dark 2 / Grass 1` | 28% | Sea of Flowers, Berylline Vale | 🌑 Dark Lv.2, 🌱 Grass Lv.1, 🌸 Perfumery Lv.2 |
+| **Prismana** | Prismana Form | `Dark 4 / Grass 3` | 28% | The Mistwoods | 🌑 Dark Lv.4, 🌱 Grass Lv.3, 🌸 Perfumery Lv.3 |
+
+---
 
 ### <a id="-022-tuckin"></a>#022 — Tuckin
 
@@ -302,12 +344,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Idyll Native Habitat | `Grass Lv.3` |
-| **Mountain Form** | Regional Variant | `Grass 3 / Earth 2` | 28% | Idyll Native Habitat | `Grass Lv.3, Earth Lv.2` |
-| **Basic Form (variant record)** | Regional Variant | `Grass 3` | 25% | Idyll Native Habitat | `Grass Lv.3` |
-| **Unnamed form** | Regional Variant | `Grass 4` | 25% | Idyll Native Habitat | `Grass Lv.4` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 28% | Idyll Native Habitat | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
+| **Mountain Form** | Regional Variant | `Grass 3 / Earth 2` | 28% | Idyll Native Habitat | 🌱 Grass Lv.3, ⛰️ Earth Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.1 |
+| **Basic Form (variant record)** | Regional Variant | `Grass 3` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
+| **Unnamed form** | Regional Variant | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-023-budclaw"></a>#023 — Budclaw
 
@@ -315,12 +359,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Wind (1.6×) | **Resists:** Earth (0.391×), Lightning (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 1 / Grass 1` | 56% | Zephyrus Landbridge, Nimbus Fields, Berylline Vale, Beast Fang Ridge | `Earth Lv.1, Grass Lv.1` |
-| **Mudflat Form** | Regional Variant | `Earth 1 / Grass 1` | 32% | Tideblossom Coast | `Earth Lv.1, Grass Lv.1` |
-| **Beach Form** | Regional Variant | `Earth 1` | 56% | Echoback Landing | `Earth Lv.1` |
-| **Bay Form** | Regional Variant | `Earth 1 / Grass 1` | 56% | The Argent Strait | `Earth Lv.1, Grass Lv.1` |
+| **Basic Form (base)** | Base Form | `Earth 1 / Grass 1` | 56% | Zephyrus Landbridge, Nimbus Fields, Berylline Vale, Beast Fang Ridge | ⛰️ Earth Lv.1, 🌱 Grass Lv.1, 📦 Carry Lv.1 |
+| **Mudflat Form** | Regional Variant | `Earth 1 / Grass 1` | 32% | Tideblossom Coast | ⛰️ Earth Lv.1, 🌱 Grass Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Beach Form** | Regional Variant | `Earth 1` | 56% | Echoback Landing | ⛰️ Earth Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Bay Form** | Regional Variant | `Earth 1 / Grass 1` | 56% | The Argent Strait | ⛰️ Earth Lv.1, 🌱 Grass Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-024-shrubclaw"></a>#024 — Shrubclaw
 
@@ -328,12 +374,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Wind (1.6×) | **Resists:** Earth (0.391×), Lightning (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 3 / Grass 2` | 28% | Berylline Vale | `Earth Lv.3, Grass Lv.2` |
-| **Mudflat Form** | Regional Variant | `Earth 3` | 28% | Tideblossom Coast | `Earth Lv.3` |
-| **Beach Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | Echoback Landing | `Earth Lv.3, Grass Lv.2` |
-| **Bay Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | The Argent Strait | `Earth Lv.3, Grass Lv.2` |
+| **Basic Form (base)** | Base Form | `Earth 3 / Grass 2` | 28% | Berylline Vale | ⛰️ Earth Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2 |
+| **Mudflat Form** | Regional Variant | `Earth 3` | 28% | Tideblossom Coast | ⛰️ Earth Lv.3, 🔨 Artisanship Lv.2 |
+| **Beach Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | Echoback Landing | ⛰️ Earth Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2 |
+| **Bay Form** | Regional Variant | `Earth 3 / Grass 2` | 28% | The Argent Strait | ⛰️ Earth Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-025-geoclaw"></a>#025 — Geoclaw
 
@@ -341,9 +389,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Ice 2` | Standard | Idyll Native Habitat | `Ice Lv.2` |
+| **Basic Form** | Base Form | `Ice 2` | Standard | Idyll Native Habitat | ❄️ Ice Lv.2, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-026-sparki"></a>#026 — Sparki
 
@@ -351,12 +401,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 1` | 56% | Nimbus Fields, Beast Fang Ridge, Blitzwood | `Fire Lv.1` |
-| **Highland Form** | Regional Variant | `Fire 1` | 56% | Russet Highlands, Berylline Vale | `Fire Lv.1` |
-| **Forest Form** | Regional Variant | `Fire 1` | 50% | The Mistwoods, Berylline Vale, Driftwise Meadow | `Fire Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Fire 1` | 50% | Sea of Flowers | `Fire Lv.1` |
+| **Basic Form (base)** | Base Form | `Fire 1` | 56% | Nimbus Fields, Beast Fang Ridge, Blitzwood | 🔥 Fire Lv.1, 🔨 Artisanship Lv.1 |
+| **Highland Form** | Regional Variant | `Fire 1` | 56% | Russet Highlands, Berylline Vale | 🔥 Fire Lv.1, 🔨 Artisanship Lv.1 |
+| **Forest Form** | Regional Variant | `Fire 1` | 50% | The Mistwoods, Berylline Vale, Driftwise Meadow | 🔥 Fire Lv.1, 🔨 Artisanship Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Fire 1` | 50% | Sea of Flowers | 🔥 Fire Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-027-flamerion"></a>#027 — Flamerion
 
@@ -364,12 +416,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | `Fire Lv.3` |
-| **Highland Form** | Regional Variant | `Fire 3` | 28% | Berylline Vale | `Fire Lv.3` |
-| **Forest Form** | Regional Variant | `Fire 3` | 25% | The Mistwoods, Berylline Vale, Driftwise Meadow | `Fire Lv.3` |
-| **Sea of Flowers Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | `Fire Lv.3` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 28% | Beast Fang Ridge | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+| **Highland Form** | Regional Variant | `Fire 3` | 28% | Berylline Vale | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+| **Forest Form** | Regional Variant | `Fire 3` | 25% | The Mistwoods, Berylline Vale, Driftwise Meadow | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Fire 3` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-028-flutternym"></a>#028 — Flutternym
 
@@ -377,12 +431,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning 1.6× · Light 1.6× | **Resists:** Dark 0.625× · Wind 0.625×
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood | `Wind Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Wind 1 / Grass 1` | 56% | Sea of Flowers | `Wind Lv.1, Grass Lv.1` |
-| **Nighttime Form** | Regional Variant | `Wind 1 / Dark 1` | 56% | Sea of Flowers | `Wind Lv.1, Dark Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Wind 1 / Earth 1` | 56% | Beast Fang Ridge, Blitzwood | `Wind Lv.1, Earth Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 56% | Sea of Flowers, Nimbus Fields, The Mistwoods, Blitzwood | 🍃 Wind Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Wind 1 / Grass 1` | 56% | Sea of Flowers | 🍃 Wind Lv.1, 🌱 Grass Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1, 📦 Carry Lv.1 |
+| **Nighttime Form** | Regional Variant | `Wind 1 / Dark 1` | 56% | Sea of Flowers | 🍃 Wind Lv.1, 🌑 Dark Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1, 📦 Carry Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Wind 1 / Earth 1` | 56% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.1, ⛰️ Earth Lv.1, 🌸 Perfumery Lv.1, ☕ Leisure Lv.1, 🔨 Artisanship Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-029-gracewing"></a>#029 — Gracewing
 
@@ -390,12 +446,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning 1.6× · Light 1.6× | **Resists:** Dark 0.625× · Wind 0.625×
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Idyll Native Habitat | `Wind Lv.3` |
-| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | Idyll Native Habitat | `Wind Lv.3, Grass Lv.2` |
-| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | Idyll Native Habitat | `Wind Lv.3, Dark Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | `Wind Lv.3, Earth Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2 |
+| **Sea of Flowers Form** | Regional Variant | `Wind 3 / Grass 2` | 25% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
+| **Nighttime Form** | Regional Variant | `Wind 3 / Dark 2` | 28% | Idyll Native Habitat | 🍃 Wind Lv.3, 🌑 Dark Lv.2, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Wind 3 / Earth 2` | 25% | Beast Fang Ridge, Blitzwood | 🍃 Wind Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-030-somniwing"></a>#030 — Somniwing
 
@@ -403,9 +461,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning 1.6× · Light 1.6× | **Resists:** Grass 0.625× · Earth 0.625×
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Prismana Form** | 🌈 Prismana | `Grass 3 / Wind 2` | 28% | Idyll Prismana Flow | `Grass Lv.3, Wind Lv.2` |
+| **Prismana Form** | 🌈 Prismana | `Grass 3 / Wind 2` | 28% | Idyll Prismana Flow | 🌱 Grass Lv.3, 🍃 Wind Lv.2, 🌸 Perfumery Lv.3, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-031-eko"></a>#031 — Eko
 
@@ -413,9 +473,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Wind 1` | Standard | Idyll Native Habitat | `Wind Lv.1` |
+| **Basic Form** | Base Form | `Wind 1` | Standard | Idyll Native Habitat | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-032-eklue"></a>#032 — Eklue
 
@@ -423,9 +485,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Wind 2` | Standard | Idyll Native Habitat | `Wind Lv.2` |
+| **Basic Form** | Base Form | `Wind 2` | Standard | Idyll Native Habitat | 🍃 Wind Lv.2, 📦 Carry Lv.2, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-033-budsquire"></a>#033 — Budsquire
 
@@ -433,10 +497,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers, Rosetower Woods | `Grass Lv.1` |
-| **Towerwood Form** | Regional Variant | `Grass 1` | 50% | Rosetower Woods | `Grass Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Sea of Flowers, Rosetower Woods | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+| **Towerwood Form** | Regional Variant | `Grass 1` | 50% | Rosetower Woods | 🌱 Grass Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-034-thornblade"></a>#034 — Thornblade
 
@@ -444,12 +510,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Sea of Flowers | `Grass Lv.3` |
-| **Towerwood Form** | Regional Variant | `Grass 3` | 28% | Rosetower Woods | `Grass Lv.3` |
-| **Thunderstorm Form** | Weather Variant | `Grass 3` | 25% | Sea of Flowers | `Grass Lv.3` |
-| **Prismana** | 🌈 Prismana | `Grass 4 / Water 3` | 25% | Sea of Flowers | `Grass Lv.4, Water Lv.3` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Sea of Flowers | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
+| **Towerwood Form** | Regional Variant | `Grass 3` | 28% | Rosetower Woods | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
+| **Thunderstorm Form** | Weather Variant | `Grass 3` | 25% | Sea of Flowers | 🌱 Grass Lv.3, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Grass 4 / Water 3` | 25% | Sea of Flowers | 🌱 Grass Lv.4, 💧 Water Lv.3, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-035-melloblum"></a>#035 — Melloblum
 
@@ -457,10 +525,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | `Grass Lv.3` |
-| **Prismana** | 🌈 Prismana | `Grass 4` | 25% | Idyll Native Habitat | `Grass Lv.4` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | 🌱 Grass Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
+| **Prismana** | Prismana Form | `Grass 4` | 25% | Idyll Native Habitat | 🌱 Grass Lv.4, 🌸 Perfumery Lv.4, ☕ Leisure Lv.3 |
+
+---
 
 ### <a id="-036-pomegg"></a>#036 — Pomegg
 
@@ -468,12 +538,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Rosetower Woods | `Grass Lv.1` |
-| **Snowfield Form** | Regional Variant | `Grass 1 / Ice 1` | 38% | Rosetower Woods, Driftwise Meadow | `Grass Lv.1, Ice Lv.1` |
-| **Highland Form** | Regional Variant | `Grass 1` | 50% | Zephyrus Landbridge, Beast Fang Ridge | `Grass Lv.1` |
-| **Sea of Flowers Form** | Regional Variant | `Grass 1` | 50% | Tideblossom Coast, Forest of Falling Stars | `Grass Lv.1` |
+| **Basic Form (base)** | Base Form | `Grass 1` | 50% | Rosetower Woods | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Snowfield Form** | Regional Variant | `Grass 1 / Ice 1` | 38% | Rosetower Woods, Driftwise Meadow | 🌱 Grass Lv.1, ❄️ Ice Lv.1, ☕ Leisure Lv.1 |
+| **Highland Form** | Regional Variant | `Grass 1` | 50% | Zephyrus Landbridge, Beast Fang Ridge | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Sea of Flowers Form** | Regional Variant | `Grass 1` | 50% | Tideblossom Coast, Forest of Falling Stars | 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-037-pomawk"></a>#037 — Pomawk
 
@@ -481,12 +553,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Fire (1.6×), Wind (1.6×) | **Resists:** Grass (0.625×), Earth (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | `Grass Lv.3` |
-| **Snowfield Form** | Regional Variant | `Grass 3 / Ice 2` | 25% | Idyll Native Habitat | `Grass Lv.3, Ice Lv.2` |
-| **Highland Form** | Regional Variant | `Grass 3` | 16% | Idyll Native Habitat | `Grass Lv.3` |
-| **Sea of Flowers Form** | Regional Variant | `Grass 3` | 25% | Idyll Native Habitat | `Grass Lv.3` |
+| **Basic Form (base)** | Base Form | `Grass 3` | 25% | Rosetower Woods | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
+| **Snowfield Form** | Regional Variant | `Grass 3 / Ice 2` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.2 |
+| **Highland Form** | Regional Variant | `Grass 3` | 16% | Idyll Native Habitat | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
+| **Sea of Flowers Form** | Regional Variant | `Grass 3` | 25% | Idyll Native Habitat | 🌱 Grass Lv.3, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-038-dewy"></a>#038 — Dewy
 
@@ -494,9 +568,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 1` | Standard | Idyll Native Habitat | `Dark Lv.1` |
+| **Basic Form** | Base Form | `Dark 1` | Standard | Idyll Native Habitat | 🌑 Dark Lv.1, 🌸 Perfumery Lv.1 |
+
+---
 
 ### <a id="-039-fragrancier"></a>#039 — Fragrancier
 
@@ -504,9 +580,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | `Dark Lv.2` |
+| **Basic Form** | Base Form | `Dark 2` | Standard | Idyll Native Habitat | 🌑 Dark Lv.2, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
+
+---
 
 ### <a id="-040-wisptis"></a>#040 — Wisptis
 
@@ -514,11 +592,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 1` | 44% | Berylline Vale | `Dark Lv.1` |
-| **Forest Form** | Regional Variant | `Dark 1 / Grass 1` | 50% | The Mistwoods | `Dark Lv.1, Grass Lv.1` |
-| **Highland Form** | Regional Variant | `Dark 1 / Fire 1` | 44% | Zephyrus Landbridge, Blitzwood | `Dark Lv.1, Fire Lv.1` |
+| **Basic Form (base)** | Base Form | `Dark 1` | 44% | Berylline Vale | 🌑 Dark Lv.1, ☕ Leisure Lv.1 |
+| **Forest Form** | Regional Variant | `Dark 1 / Grass 1` | 50% | The Mistwoods | 🌑 Dark Lv.1, 🌱 Grass Lv.1, ☕ Leisure Lv.1 |
+| **Highland Form** | Regional Variant | `Dark 1 / Fire 1` | 44% | Zephyrus Landbridge, Blitzwood | 🌑 Dark Lv.1, 🔥 Fire Lv.1, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-041-ignitis"></a>#041 — Ignitis
 
@@ -526,12 +606,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 22% | Berylline Vale | `Dark Lv.3` |
-| **Forest Form** | Regional Variant | `Dark 3 / Grass 2` | 25% | The Mistwoods | `Dark Lv.3, Grass Lv.2` |
-| **Highland Form** | Regional Variant | `Dark 3 / Fire 2` | 22% | Zephyrus Landbridge, Blitzwood | `Dark Lv.3, Fire Lv.2` |
-| **Prismana** | 🌈 Prismana | `Dark 4 / Fire 3` | 22% | Berylline Vale | `Dark Lv.4, Fire Lv.3` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 22% | Berylline Vale | 🌑 Dark Lv.3, 🔨 Artisanship Lv.2 |
+| **Forest Form** | Regional Variant | `Dark 3 / Grass 2` | 25% | The Mistwoods | 🌑 Dark Lv.3, 🌱 Grass Lv.2, 🔨 Artisanship Lv.2 |
+| **Highland Form** | Regional Variant | `Dark 3 / Fire 2` | 22% | Zephyrus Landbridge, Blitzwood | 🌑 Dark Lv.3, 🔥 Fire Lv.2, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Dark 4 / Fire 3` | 22% | Berylline Vale | 🌑 Dark Lv.4, 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-042-bonesky"></a>#042 — Bonesky
 
@@ -539,10 +621,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Ice 1` | 50% | Beast Fang Ridge, Driftwise Meadow | `Ice Lv.1` |
-| **Nighttime Form** | Regional Variant | `Ice 1 / Dark 1` | 50% | Rosetower Woods | `Ice Lv.1, Dark Lv.1` |
+| **Basic Form (base)** | Base Form | `Ice 1` | 50% | Beast Fang Ridge, Driftwise Meadow | ❄️ Ice Lv.1, 📦 Carry Lv.1 |
+| **Nighttime Form** | Regional Variant | `Ice 1 / Dark 1` | 50% | Rosetower Woods | ❄️ Ice Lv.1, 🌑 Dark Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-043-fenrier"></a>#043 — Fenrier
 
@@ -550,10 +634,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Ice 2` | 38% | Beast Fang Ridge, Driftwise Meadow | `Ice Lv.2` |
-| **Nighttime Form** | Regional Variant | `Ice 2 / Dark 1` | 38% | Rosetower Woods | `Ice Lv.2, Dark Lv.1` |
+| **Basic Form (base)** | Base Form | `Ice 2` | 38% | Beast Fang Ridge, Driftwise Meadow | ❄️ Ice Lv.2, 📦 Carry Lv.2 |
+| **Nighttime Form** | Regional Variant | `Ice 2 / Dark 1` | 38% | Rosetower Woods | ❄️ Ice Lv.2, 🌑 Dark Lv.1, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-044-glynsera"></a>#044 — Glynsera
 
@@ -561,11 +647,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Fire (1.6×), Earth (1.6×) | **Resists:** Lightning (0.625×), Ice (0.625×), Water (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Ice 3` | 25% | Beast Fang Ridge | `Ice Lv.3` |
-| **Nighttime Form** | Regional Variant | `Ice 3 / Dark 2` | 25% | Rosetower Woods | `Ice Lv.3, Dark Lv.2` |
-| **Prismana** | 🌈 Prismana | `Ice 4` | 25% | Idyll Native Habitat | `Ice Lv.4` |
+| **Basic Form (base)** | Base Form | `Ice 3` | 25% | Beast Fang Ridge | ❄️ Ice Lv.3, 🔨 Artisanship Lv.2 |
+| **Nighttime Form** | Regional Variant | `Ice 3 / Dark 2` | 25% | Rosetower Woods | ❄️ Ice Lv.3, 🌑 Dark Lv.2, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Ice 4` | 25% | Idyll Native Habitat | ❄️ Ice Lv.4, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-045-bolty"></a>#045 — Bolty
 
@@ -573,10 +661,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 1` | 44% | Blitzwood | `Lightning Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Lightning 1` | 50% | Blitzwood | `Lightning Lv.1` |
+| **Basic Form (base)** | Base Form | `Lightning 1` | 44% | Blitzwood | ⚡ Lightning Lv.1, 📦 Carry Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Lightning 1` | 50% | Blitzwood | ⚡ Lightning Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-046-blazen"></a>#046 — Blazen
 
@@ -584,11 +674,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Blitzwood | `Lightning Lv.3` |
-| **Mountain Woods Form** | Regional Variant | `Lightning 3` | 25% | Idyll Native Habitat | `Lightning Lv.3` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 25% | Blitzwood | `Lightning Lv.4` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Blitzwood | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Mountain Woods Form** | Regional Variant | `Lightning 3` | 25% | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Prismana** | Prismana Form | `Lightning 4` | 25% | Blitzwood | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-047-squarrel"></a>#047 — Squarrel
 
@@ -596,9 +688,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Fire 1` | Standard | Idyll Native Habitat | `Fire Lv.1` |
+| **Basic Form** | Base Form | `Fire 1` | Standard | Idyll Native Habitat | 🔥 Fire Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-048-squashel"></a>#048 — Squashel
 
@@ -606,9 +700,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Fire 2` | Standard | Idyll Native Habitat | `Fire Lv.2` |
+| **Basic Form** | Base Form | `Fire 2` | Standard | Idyll Native Habitat | 🔥 Fire Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-049-susuta"></a>#049 — Susuta
 
@@ -616,11 +712,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | `Water Lv.1` |
-| **Nighttime Form** | Regional Variant | `Water 1` | 44% | Echoback Landing | `Water Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | `Water Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | 💧 Water Lv.1, 📦 Carry Lv.1 |
+| **Nighttime Form** | Regional Variant | `Water 1` | 44% | Echoback Landing | 💧 Water Lv.1, 📦 Carry Lv.1 |
+| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | 💧 Water Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-050-popota"></a>#050 — Popota
 
@@ -628,10 +726,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 2` | 29% | Echoback Landing | `Water Lv.2` |
-| **Nighttime Form** | Regional Variant | `Water 2` | 33% | Idyll Native Habitat | `Water Lv.2` |
+| **Basic Form (base)** | Base Form | `Water 2` | 29% | Echoback Landing | 💧 Water Lv.2, 📦 Carry Lv.2, ☕ Leisure Lv.1 |
+| **Nighttime Form** | Regional Variant | `Water 2` | 33% | Idyll Native Habitat | 💧 Water Lv.2, 📦 Carry Lv.2, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-051-piopiota"></a>#051 — Piopiota
 
@@ -639,10 +739,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | `Water Lv.3` |
-| **Nighttime Form** | Regional Variant | `Water 3 / Dark 2` | 22% | Idyll Native Habitat | `Water Lv.3, Dark Lv.2` |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | 💧 Water Lv.3, 🌸 Perfumery Lv.2 |
+| **Nighttime Form** | Regional Variant | `Water 3 / Dark 2` | 22% | Idyll Native Habitat | 💧 Water Lv.3, 🌑 Dark Lv.2, 🌸 Perfumery Lv.2 |
+
+---
 
 ### <a id="-052-panpanta"></a>#052 — Panpanta
 
@@ -650,11 +752,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3` | 19% | Echoback Landing | `Water Lv.3` |
-| **Nighttime Form** | Regional Variant | `Water 3` | 22% | Idyll Native Habitat | `Water Lv.3` |
-| **Prismana** | 🌈 Prismana | `Water 4` | 22% | Echoback Landing | `Water Lv.4` |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Echoback Landing | 💧 Water Lv.3, 📦 Carry Lv.3 |
+| **Nighttime Form** | Regional Variant | `Water 3` | 22% | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Water 4` | 22% | Echoback Landing | 💧 Water Lv.4, 📦 Carry Lv.4 |
+
+---
 
 ### <a id="-053-shelly"></a>#053 — Shelly
 
@@ -662,10 +766,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | `Water Lv.1` |
-| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | `Water Lv.1` |
+| **Basic Form (base)** | Base Form | `Water 1` | 38% | Echoback Landing | 💧 Water Lv.1, 🔨 Artisanship Lv.1 |
+| **Basic Form (variant record)** | Regional Variant | `Water 1` | 25% | Idyll Native Habitat | 💧 Water Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-054-sheldon"></a>#054 — Sheldon
 
@@ -673,9 +779,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | `Water Lv.2` |
+| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | 💧 Water Lv.2, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-055-sherro"></a>#055 — Sherro
 
@@ -683,11 +791,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | `Water Lv.3` |
-| **Thunderstorm Form** | Weather Variant | `Water 3 / Lightning 2` | 22% | Echoback Landing | `Water Lv.3, Lightning Lv.2` |
-| **Prismana** | 🌈 Prismana | `Water 4` | 22% | Idyll Native Habitat | `Water Lv.4` |
+| **Basic Form (base)** | Base Form | `Water 3` | 19% | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.2 |
+| **Thunderstorm Form** | Weather Variant | `Water 3 / Lightning 2` | 22% | Echoback Landing | 💧 Water Lv.3, ⚡ Lightning Lv.2, 📦 Carry Lv.2 |
+| **Prismana** | Prismana Form | `Water 4` | 22% | Idyll Native Habitat | 💧 Water Lv.4, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-056-baleetle"></a>#056 — Baleetle
 
@@ -695,10 +805,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 1` | 38% | Berylline Vale | `Earth Lv.1` |
-| **Snowfield Form** | Regional Variant | `Earth 1 / Ice 1` | 38% | Russet Highlands | `Earth Lv.1, Ice Lv.1` |
+| **Basic Form (base)** | Base Form | `Earth 1` | 38% | Berylline Vale | ⛰️ Earth Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+| **Snowfield Form** | Regional Variant | `Earth 1 / Ice 1` | 38% | Russet Highlands | ⛰️ Earth Lv.1, ❄️ Ice Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-057-waleetle"></a>#057 — Waleetle
 
@@ -706,11 +818,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | `Earth Lv.3` |
-| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Russet Highlands | `Earth Lv.3, Ice Lv.2` |
-| **Prismana** | 🌈 Prismana | `Earth 4` | 19% | Idyll Native Habitat | `Earth Lv.4` |
+| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | ⛰️ Earth Lv.3, 🔨 Artisanship Lv.3, 📦 Carry Lv.2 |
+| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Russet Highlands | ⛰️ Earth Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3, 📦 Carry Lv.2 |
+| **Prismana** | Prismana Form | `Earth 4` | 19% | Idyll Native Habitat | ⛰️ Earth Lv.4, 🔨 Artisanship Lv.4, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-058-bouldus"></a>#058 — Bouldus
 
@@ -718,10 +832,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | `Earth Lv.3` |
-| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Idyll Native Habitat | `Earth Lv.3, Ice Lv.2` |
+| **Basic Form (base)** | Base Form | `Earth 3` | 19% | Berylline Vale | ⛰️ Earth Lv.3, 📦 Carry Lv.3 |
+| **Snowfield Form** | Regional Variant | `Earth 3 / Ice 2` | 19% | Idyll Native Habitat | ⛰️ Earth Lv.3, ❄️ Ice Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-059-fentuft"></a>#059 — Fentuft
 
@@ -729,9 +845,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | `Lightning Lv.1` |
+| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.1, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-060-fenmane"></a>#060 — Fenmane
 
@@ -739,10 +857,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Driftwise Meadow | `Lightning Lv.3` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | Idyll Native Habitat | `Lightning Lv.4` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Driftwise Meadow | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2, 📦 Carry Lv.2 |
+| **Prismana** | Prismana Form | `Lightning 4` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3, 📦 Carry Lv.3 |
+
+---
 
 ### <a id="-061-helmut"></a>#061 — Helmut
 
@@ -750,11 +870,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 1` | 56% | Russet Highlands | `Dark Lv.1` |
-| **Snowfield Form** | Regional Variant | `Dark 1 / Ice 1` | 32% | Russet Highlands | `Dark Lv.1, Ice Lv.1` |
-| **Mountain Woods Form** | Regional Variant | `Dark 1` | 40% | Russet Highlands | `Dark Lv.1` |
+| **Basic Form (base)** | Base Form | `Dark 1` | 56% | Russet Highlands | 🌑 Dark Lv.1, 🔨 Artisanship Lv.1 |
+| **Snowfield Form** | Regional Variant | `Dark 1 / Ice 1` | 32% | Russet Highlands | 🌑 Dark Lv.1, ❄️ Ice Lv.1, 🔨 Artisanship Lv.1 |
+| **Mountain Woods Form** | Regional Variant | `Dark 1` | 40% | Russet Highlands | 🌑 Dark Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-062-pawney"></a>#062 — Pawney
 
@@ -762,12 +884,14 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Idyll Native Habitat | `Dark Lv.3` |
-| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 28% | Idyll Native Habitat | `Dark Lv.3, Ice Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Dark 3` | 16% | Idyll Native Habitat | `Dark Lv.3` |
-| **Prismana** | 🌈 Prismana | `Dark 4` | 28% | Russet Highlands | `Dark Lv.4` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Idyll Native Habitat | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
+| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 28% | Idyll Native Habitat | 🌑 Dark Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Dark 3` | 16% | Idyll Native Habitat | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Dark 4` | 28% | Russet Highlands | 🌑 Dark Lv.4, 🔨 Artisanship Lv.4 |
+
+---
 
 ### <a id="-063-rookey"></a>#063 — Rookey
 
@@ -775,11 +899,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Light (1.6×), Wind (1.6×) | **Resists:** Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Russet Highlands | `Dark Lv.3` |
-| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 19% | Russet Highlands | `Dark Lv.3, Ice Lv.2` |
-| **Mountain Woods Form** | Regional Variant | `Dark 3` | 19% | Russet Highlands | `Dark Lv.3` |
+| **Basic Form (base)** | Base Form | `Dark 3` | 16% | Russet Highlands | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
+| **Snowfield Form** | Regional Variant | `Dark 3 / Ice 2` | 19% | Russet Highlands | 🌑 Dark Lv.3, ❄️ Ice Lv.2, 🔨 Artisanship Lv.3 |
+| **Mountain Woods Form** | Regional Variant | `Dark 3` | 19% | Russet Highlands | 🌑 Dark Lv.3, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-064-jawling"></a>#064 — Jawling
 
@@ -787,10 +913,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 1` | 32% | Russet Highlands | `Wind Lv.1` |
-| **Mountain Form** | Regional Variant | `Wind 1` | 38% | Russet Highlands | `Wind Lv.1` |
+| **Basic Form (base)** | Base Form | `Wind 1` | 32% | Russet Highlands | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
+| **Mountain Form** | Regional Variant | `Wind 1` | 38% | Russet Highlands | 🍃 Wind Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-065-helmwhelp"></a>#065 — Helmwhelp
 
@@ -798,10 +926,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 2` | 42% | Russet Highlands | `Wind Lv.2` |
-| **Mountain Form** | Regional Variant | `Wind 2` | 42% | Russet Highlands | `Wind Lv.2` |
+| **Basic Form (base)** | Base Form | `Wind 2` | 42% | Russet Highlands | 🍃 Wind Lv.2, 📦 Carry Lv.2 |
+| **Mountain Form** | Regional Variant | `Wind 2` | 42% | Russet Highlands | 🍃 Wind Lv.2, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-066-helgon"></a>#066 — Helgon
 
@@ -809,10 +939,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Light (1.6×) | **Resists:** Dark (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Russet Highlands | `Wind Lv.3` |
-| **Mountain Form** | Regional Variant | `Wind 3` | 19% | Russet Highlands | `Wind Lv.3` |
+| **Basic Form (base)** | Base Form | `Wind 3` | 28% | Russet Highlands | 🍃 Wind Lv.3, 📦 Carry Lv.3, 🔨 Artisanship Lv.2 |
+| **Mountain Form** | Regional Variant | `Wind 3` | 19% | Russet Highlands | 🍃 Wind Lv.3, 📦 Carry Lv.3, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-067-infergon"></a>#067 — Infergon
 
@@ -820,10 +952,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 19% | Idyll Native Habitat | `Fire Lv.3` |
-| **Prismana** | 🌈 Prismana | `Fire 4 / Wind 3` | 19% | Idyll Native Habitat | `Fire Lv.4, Wind Lv.3` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 19% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Fire 4 / Wind 3` | 19% | Idyll Native Habitat | 🔥 Fire Lv.4, 🍃 Wind Lv.3, 🔨 Artisanship Lv.4 |
+
+---
 
 ### <a id="-068-cubbo"></a>#068 — Cubbo
 
@@ -831,9 +965,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | `Earth Lv.1` |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-069-grizbo"></a>#069 — Grizbo
 
@@ -841,10 +977,12 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Earth 3` | 16% | Rosetower Woods | `Earth Lv.3` |
-| **Prismana** | 🌈 Prismana | `Earth 4` | 16% | Rosetower Woods | `Earth Lv.4` |
+| **Basic Form (base)** | Base Form | `Earth 3` | 16% | Rosetower Woods | ⛰️ Earth Lv.3, 📦 Carry Lv.3 |
+| **Prismana** | Prismana Form | `Earth 4` | 16% | Rosetower Woods | ⛰️ Earth Lv.4, 📦 Carry Lv.4 |
+
+---
 
 ### <a id="-070-pebbling"></a>#070 — Pebbling
 
@@ -852,9 +990,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | `Earth Lv.1` |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-071-lavazar"></a>#071 — Lavazar
 
@@ -862,9 +1002,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Water (2.56×) | **Resists:** Fire (0.391×), Ice (0.391×), Lightning (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Fire 2 / Earth 2` | Standard | Idyll Native Habitat | `Fire Lv.2, Earth Lv.2` |
+| **Basic Form** | Base Form | `Fire 2 / Earth 2` | Standard | Idyll Native Habitat | 🔥 Fire Lv.2, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-072-magmarex"></a>#072 — Magmarex
 
@@ -872,11 +1014,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Water (2.56×) | **Resists:** Fire (0.391×), Ice (0.391×), Lightning (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3 / Earth 2` | 19% | Zephyrus Landbridge | `Fire Lv.3, Earth Lv.2` |
-| **Basic Form (variant record)** | Regional Variant | `Fire 3 / Earth 2` | 25% | Idyll Native Habitat | `Fire Lv.3, Earth Lv.2` |
-| **Prismana** | 🌈 Prismana | `Fire 4 / Dark 3` | 19% | Zephyrus Landbridge | `Fire Lv.4, Dark Lv.3` |
+| **Basic Form (base)** | Base Form | `Fire 3 / Earth 2` | 19% | Zephyrus Landbridge | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.3 |
+| **Basic Form (variant record)** | Regional Variant | `Fire 3 / Earth 2` | 25% | Idyll Native Habitat | 🔥 Fire Lv.3, ⛰️ Earth Lv.2, 🔨 Artisanship Lv.3 |
+| **Prismana** | Prismana Form | `Fire 4 / Dark 3` | 19% | Zephyrus Landbridge | 🔥 Fire Lv.4, 🌑 Dark Lv.3, 🔨 Artisanship Lv.4 |
+
+---
 
 ### <a id="-073-geodeback"></a>#073 — Geodeback
 
@@ -884,9 +1028,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | `Earth Lv.2` |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 📦 Carry Lv.2, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-074-minespine"></a>#074 — Minespine
 
@@ -894,9 +1040,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | `Earth Lv.2` |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 📦 Carry Lv.3, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-075-cozite"></a>#075 — Cozite
 
@@ -904,9 +1052,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | `Earth Lv.1` |
+| **Basic Form** | Base Form | `Earth 1` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.1, ☕ Leisure Lv.2 |
+
+---
 
 ### <a id="-076-bailite"></a>#076 — Bailite
 
@@ -914,9 +1064,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Grass (1.6×), Water (1.6×) | **Resists:** Lightning (0.625×), Fire (0.625×), Ice (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | `Earth Lv.2` |
+| **Basic Form** | Base Form | `Earth 2` | Standard | Idyll Native Habitat | ⛰️ Earth Lv.2, 🔨 Artisanship Lv.3, ☕ Leisure Lv.2 |
+
+---
 
 ### <a id="-077-bulbly"></a>#077 — Bulbly
 
@@ -924,9 +1076,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | `Lightning Lv.1` |
+| **Basic Form** | Base Form | `Lightning 1` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.1, ☕ Leisure Lv.1 |
+
+---
 
 ### <a id="-078-veilfloat"></a>#078 — Veilfloat
 
@@ -934,9 +1088,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | `Lightning Lv.2` |
+| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.2, 📦 Carry Lv.1, 🔨 Artisanship Lv.1 |
+
+---
 
 ### <a id="-079-luminelle"></a>#079 — Luminelle
 
@@ -944,11 +1100,13 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Tideblossom Coast | `Lightning Lv.3` |
-| **Rainstorm Form** | Weather Variant | `Lightning 3 / Water 2` | 22% | Tideblossom Coast | `Lightning Lv.3, Water Lv.2` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | Tideblossom Coast | `Lightning Lv.4` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Tideblossom Coast | ⚡ Lightning Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
+| **Rainstorm Form** | Weather Variant | `Lightning 3 / Water 2` | 22% | Tideblossom Coast | ⚡ Lightning Lv.3, 💧 Water Lv.2, 🌸 Perfumery Lv.3, ☕ Leisure Lv.2 |
+| **Prismana** | Prismana Form | `Lightning 4` | 22% | Tideblossom Coast | ⚡ Lightning Lv.4, 🌸 Perfumery Lv.4, ☕ Leisure Lv.3 |
+
+---
 
 ### <a id="-080-fahloo"></a>#080 — Fahloo
 
@@ -956,9 +1114,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 1` | Standard | Idyll Native Habitat | `Water Lv.1` |
+| **Basic Form** | Base Form | `Water 1` | Standard | Idyll Native Habitat | 💧 Water Lv.1, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-081-erlath"></a>#081 — Erlath
 
@@ -966,9 +1126,11 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | `Water Lv.2` |
+| **Basic Form** | Base Form | `Water 2` | Standard | Idyll Native Habitat | 💧 Water Lv.2, ☕ Leisure Lv.2, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-082-besauce"></a>#082 — Besauce
 
@@ -976,95 +1138,132 @@ In *Aniimo*, Homeland production and workstation assignments are governed direct
 
 **Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | `Lightning Lv.2` |
+| **Basic Form** | Base Form | `Lightning 2` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.2, 🔨 Artisanship Lv.2 |
 
 ---
 
-## 🔒 Unnumbered Aniimo Species (#????)
+## 🔒 Discovered Species Awaiting Official Dex Numbers (#????)
 
-These 10 species exist in the game and official database, but their official Dex slot number has not been assigned in the current release Dex (which catalogs #001 to #082):
+> These species have been confirmed in game data and official handbooks, but occupy unassigned Pokédex / Aniimodex slots beyond #082.
 
 ### <a id="-unnum-dazmand"></a>#???? — Dazmand
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `dazmand` | **Homeland Tier:** `A-Tier` | **Trait:** **Spotlight Moment** (*The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.*)
+**Slug:** `dazmand` | **Homeland Tier:** `A-Tier` | **Trait:** **Spotlight Moment** (*The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Lightning 3` | Standard | Idyll Native Habitat | `Lightning Lv.3` |
+| **Basic Form** | Base Form | `Lightning 3` | Standard | Idyll Native Habitat | ⚡ Lightning Lv.3, 📦 Carry Lv.2, 🔨 Artisanship Lv.2 |
+
+---
 
 ### <a id="-unnum-fulmintis"></a>#???? — Fulmintis
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `fulmintis` | **Homeland Tier:** `S-Tier` | **Trait:** **Electro Stash** (*Restores X EP when a skill lands a critical hit.*)
+**Slug:** `fulmintis` | **Homeland Tier:** `S-Tier` | **Trait:** **Electro Stash** (*Restores X EP when a skill lands a critical hit.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark (1.6×), Ice (1.6×) | **Resists:** Lightning (0.625×), Light (0.625×), Wind (0.625×)
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Idyll Native Habitat | `Lightning Lv.3` |
-| **Prismana** | 🌈 Prismana | `Lightning 4` | 22% | Idyll Native Habitat | `Lightning Lv.4` |
+| **Basic Form (base)** | Base Form | `Lightning 3` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.3, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Lightning 4` | 22% | Idyll Native Habitat | ⚡ Lightning Lv.4, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-unnum-fennelun"></a>#???? — Fennelun
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `fennelun` | **Homeland Tier:** `B-Tier` | **Trait:** ****Lunar Power**** (*When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.*)
+**Slug:** `fennelun` | **Homeland Tier:** `B-Tier` | **Trait:** ****Lunar Power**** (*When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | `Light Lv.2` |
+| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | ✨ Light Lv.2, ☕ Leisure Lv.2 |
+
+---
 
 ### <a id="-unnum-lunara"></a>#???? — Lunara
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `lunara` | **Homeland Tier:** `A-Tier` | **Trait:** ****Lunar Power**** (*When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.*)
+**Slug:** `lunara` | **Homeland Tier:** `A-Tier` | **Trait:** ****Lunar Power**** (*When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | `Light Lv.3` |
+| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, ☕ Leisure Lv.3 |
+
+---
 
 ### <a id="-unnum-soleon"></a>#???? — Soleon
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `soleon` | **Homeland Tier:** `A-Tier` | **Trait:** ****Solar Grace**** (*When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.*)
+**Slug:** `soleon` | **Homeland Tier:** `A-Tier` | **Trait:** ****Solar Grace**** (*When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | `Light Lv.3` |
+| **Basic Form** | Base Form | `Light 3` | Standard | Idyll Native Habitat | ✨ Light Lv.3, ☕ Leisure Lv.3 |
+
+---
 
 ### <a id="-unnum-helion"></a>#???? — Helion
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `helion` | **Homeland Tier:** `B-Tier` | **Trait:** ****Solar Grace**** (*When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.*)
+**Slug:** `helion` | **Homeland Tier:** `B-Tier` | **Trait:** ****Solar Grace**** (*When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark 1.6× | **Resists:** Grass 0.625× · Light 0.625×
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | `Light Lv.2` |
+| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | ✨ Light Lv.2, ☕ Leisure Lv.2 |
+
+---
 
 ### <a id="-unnum-morphling"></a>#???? — Morphling
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `morphling` | **Homeland Tier:** `B-Tier` | **Trait:** **Elemental Harmony** (*Enhances productivity when working at element-aligned workstations.*)
+**Slug:** `morphling` | **Homeland Tier:** `B-Tier` | **Trait:** **Elemental Harmony** (*Enhances productivity when working at element-aligned workstations.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | `Light Lv.2` |
+| **Basic Form** | Base Form | `Light 2` | Standard | Idyll Native Habitat | ✨ Light Lv.2, 🔨 Artisanship Lv.2, 📦 Carry Lv.1 |
+
+---
 
 ### <a id="-unnum-jabster"></a>#???? — Jabster
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `jabster` | **Homeland Tier:** `A-Tier` | **Trait:** **Knuckle Burst** (*Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s.*)
+**Slug:** `jabster` | **Homeland Tier:** `A-Tier` | **Trait:** **Knuckle Burst** (*Combat skill hits grant 1 [Strike Point]. Charged Combat skill hits grant 2. At 8 [Strike Points], gains 30 EP, and combat skills can be enhanced without charging for 10s.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Lightning (1.6×), Grass (1.6×), Ice (1.6×) | **Resists:** Dark (0.625×), Earth (0.625×)
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Water 3` | Standard | Idyll Native Habitat | `Water Lv.3` |
+| **Basic Form** | Base Form | `Water 3` | Standard | Idyll Native Habitat | 💧 Water Lv.3, 📦 Carry Lv.2 |
+
+---
 
 ### <a id="-unnum-sparkelf"></a>#???? — Sparkelf
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `sparkelf` | **Homeland Tier:** `S-Tier` | **Trait:** **Reliable Fire Companion** (*When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.*)
+**Slug:** `sparkelf` | **Homeland Tier:** `S-Tier` | **Trait:** **Reliable Fire Companion** (*When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Earth (1.6×), Water (1.6×) | **Resists:** Fire (0.625×), Grass (0.625×), Ice (0.625×)
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form (base)** | Base Form | `Fire 3` | 16% | Idyll Native Habitat | `Fire Lv.3` |
-| **Prismana** | 🌈 Prismana | `Fire 4` | 16% | Idyll Native Habitat | `Fire Lv.4` |
+| **Basic Form (base)** | Base Form | `Fire 3` | 16% | Idyll Native Habitat | 🔥 Fire Lv.3, 🔨 Artisanship Lv.2 |
+| **Prismana** | Prismana Form | `Fire 4` | 16% | Idyll Native Habitat | 🔥 Fire Lv.4, 🔨 Artisanship Lv.3 |
+
+---
 
 ### <a id="-unnum-irisalis"></a>#???? — Irisalis
 
-**Dex Number:** `#????` (Unnumbered) | **Slug:** `irisalis` | **Homeland Tier:** `A-Tier` | **Trait:** ****Bloom Cluster**** (*When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.*)
+**Slug:** `irisalis` | **Homeland Tier:** `A-Tier` | **Trait:** ****Bloom Cluster**** (*When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.*)
 
-| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Elemental Proficiencies |
+**Weak To:** Dark 1.6× · Fire 1.6× · Wind 1.6× | **Resists:** Grass 0.625× · Earth 0.625× · Water 0.625×
+
+| Form Name | Form Type | Element(s) | Catch Rate | Native Region / Habitat | Homeland Abilities (Elements & Utilities) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic Form** | Base Form | `Grass 3` | Standard | Idyll Native Habitat | `Grass Lv.3` |
+| **Basic Form** | Base Form | `Grass 3` | Standard | Idyll Native Habitat | 🌱 Grass Lv.3, 🌸 Perfumery Lv.3, ☕ Leisure Lv.1 |
 
+---

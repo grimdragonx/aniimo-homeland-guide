@@ -1,42 +1,55 @@
-# 🏡 Aniimo Homeland Elemental System Guide
+# 🏡 Aniimo Homeland Mechanics & Strategy Guide
 
-## 1. How Homeland Works in Aniimo
-In **Aniimo**, creature assignments at your Homeland camp are determined by **Elemental Affinities**:
-- Every creature's elemental proficiency level (Lv.1 to Lv.4+) determines how fast it completes tasks and which tier of machinery it can operate.
-- **82 basic species** currently have assigned numbers in the active Dex (#001–#082).
-- An additional **10 species** (such as Dazmand, Fulmintis, Soleon, Sparkelf, etc.) are discovered and fully documented with elements and traits, but their Dex number is unassigned (`#????`).
+> **Status:** Canonical Complete Edition • 2026  
+> **Cataloged Species:** 92 Aniimo (82 Numbered `#001`–`#082` + 10 Discovered `#????`)  
 
 ---
 
-## 2. Workplace Stations by Element
+## 🎯 1. Overview of Homeland Base Building
 
-| Element | Icon | Homeland Workstations | Primary Outputs | Top Recommended Aniimo |
-| :--- | :--- | :--- | :--- | :--- |
-| **Fire** | 🔥 | Blast Furnace, Campfire Kitchen, Smelter | Iron/Steel Ingots, Rations, Heated Glass | **#003 Scorchhowl**, **#???? Sparkelf**, **#072 Magmarex** |
-| **Water** | 💧 | Farmland Aqueduct, Water Basin, Brewer | Crop Hydration, Brewed Juices, Purified Water | **#013 Skippy**, **#???? Jabster**, **#007 Chirpi (Beach)** |
-| **Grass** | 🌱 | Farmland Plot, Forestry Logging Grove | Vegetables, Berries, Fiber, Timber Logs | **#034 Thornblade**, **#030 Somniwing**, **#???? Irisalis** |
-| **Earth** | ⛰️ | Stone Quarry, Ore Mine, Masonry Bench | Stone Blocks, Metal Ores, Sculpted Bricks | **#058 Bouldus**, **#070 Pebbling**, **#023 Budclaw** |
-| **Lightning** | ⚡ | Dynamo Generator, Power Grid Terminal | Battery Energy, Electrified Assembly Lines | **#???? Fulmintis**, **#045 Bolty**, **#???? Dazmand** |
-| **Ice** | ❄️ | Walk-in Freezer, Cold Storage Vault | Prevents fresh food and vegetables from decaying | **#044 Glynsera**, **#015 Glacy**, **#025 Geoclaw** |
-| **Wind** | 🍃 | Grain Windmill, Textile Loom, Hauling | Flour, Ground Feed, Weaved Cloth, Fast Logistics | **#017 Nimbi**, **#030 Somniwing**, **#031 Eko** |
-| **Dark** | 🌑 | Nocturnal Shift Post, Night Patrol | Uninterrupted 24/7 production during nighttime | **#044 Glynsera (Nighttime)**, **#005 Celestis**, **#004 Inferlupa** |
-| **Light** | ✨ | Luminary Hearth, Incubator Warmer | Camp Morale, Base Illumination, Egg Hatching | **#???? Soleon**, **#???? Lunara**, **#???? Fennelun** |
+In *Aniimo*, your Homeland acts as your operational sanctuary, crafting hub, and resource generation engine. Aniimo assigned to your Homeland automate tasks based on two complementary systems:
+
+1. **Elemental Affinities:** Drive workstation functions such as furnaces (Fire), irrigation sprinklers (Water), lumber mills (Grass), quarries (Earth), generators (Lightning), and food freezers (Ice).
+2. **Homeland Utility Roles:** Specialize in operational labor:
+   - 📦 **Carry:** Automatically moves materials from work sites and farms into designated storage chests.
+   - 🔨 **Artisanship:** Crafts gear, machines RV parts, and constructs base blueprints.
+   - ☕ **Leisure:** Generates comforting auras that restore worker sanity and prevent exhaustion.
+   - 🌸 **Perfumery:** Synthesizes botanical fertilizers, essential oils, and therapeutic fragrances.
 
 ---
 
-## 3. Notable Form Affinities & Mechanics
+## 🌈 2. Creature Forms & Homeland Synergy
 
-### Regional Variations
-- **Emberpup (Highland Form)**: Acquires `Earth 1` in addition to `Fire 1`, allowing it to chip stone at the quarry when kitchen tasks are finished.
-- **Budclaw (Beach & Mudflat Forms)**: Transitions between pure `Earth 1` and dual `Earth 1 / Grass 1` for combined farming and stonecraft.
-- **Cornet (Beach Form)**: Obtains water capabilities ideal for coastal crop hydration.
+### Standard Forms
+The baseline form encountered across Idyll. Forms establish the foundational elemental affinities and utility proficiencies.
 
-### Weather Variations
-- **Nimbi (Rainstorm Form)**: Gains `Lightning 1` alongside `Wind 1` during rain/storms, powering dynamic energy accumulators.
-- **Nimbi (Plateau Form)**: Combines `Wind 1` and `Ice 1` for cold storage preservation.
+### 🗺️ Regional Variants
+Certain Aniimo adapt to regional biomes (e.g., Emberpup Highland Form gains Earth Lv.1 + Artisanship Lv.1). Regional variants expand workstation versatility.
 
-### Prismana Forms
-- **Somniwing (#030)**: Inherently the radiant **Prismana Form** evolution of the Flutternym line (`Grass 3 / Wind 2`).
-- **Glynsera (Prismana Form)**: Maximizes cooling proficiency to apex **Ice 4**, chilling large walk-in cold storage facilities indefinitely.
-- **Fulmintis (Prismana Form)**: Maximizes electrical generation to apex **Lightning 4**.
-- **Sparkelf (Prismana Form)**: Maximizes thermal heat generation to apex **Fire 4**.
+### ⚡ Weather Variants
+Specific climate phenomena (Rainstorms, Heatwaves, Thunderstorms, Snowstorms) induce temporary or permanent weather morphs that boost relevant elemental work output by +1 level.
+
+### 🌈 Prismana Forms
+Form attained during rare Prismana Flow events. Prismana forms possess enhanced elemental mastery (Lv.3 to Lv.4) and upgraded utility levels, making them pinnacle workers.
+
+*Note on Somniwing (#030):* Somniwing is cataloged exclusively as its authentic **Prismana Form** (`Grass 3 / Wind 2` with `Perfumery 3` and `Leisure 1`).
+
+---
+
+## 🛠️ 3. Full REST API Reference
+
+The application includes an integrated Node.js Express server providing full REST endpoints:
+
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `/api/aniimo` | `GET` | Query all Aniimo with filters (`search`, `element`, `minLevel`, `form`, `tier`, `dexStatus`) |
+| `/api/aniimo/:id` | `GET` | Get detailed creature object by numeric ID, slug, or name |
+| `/api/elements` | `GET` | List all 9 Elemental affinities and 4 Homeland Utility roles with descriptions |
+| `/api/stats` | `GET` | Aggregate database metrics (species counts, forms counts, tier distributions) |
+
+### Launching the Application Locally
+```bash
+npm install
+npm start
+# Open browser at http://localhost:3000
+```

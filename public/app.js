@@ -17,8 +17,9 @@ const detailModal = document.getElementById('detailModal');
 const modalClose = document.getElementById('modalClose');
 const modalBody = document.getElementById('modalBody');
 
-// Element colors and icons
-const elementMeta = {
+// Element & Homeland Utility colors and icons
+const abilityMeta = {
+  // Elements
   Fire: { emoji: '🔥', color1: '#ea580c', color2: '#f97316' },
   Grass: { emoji: '🌱', color1: '#16a34a', color2: '#22c55e' },
   Water: { emoji: '💧', color1: '#0284c7', color2: '#0ea5e9' },
@@ -27,8 +28,14 @@ const elementMeta = {
   Ice: { emoji: '❄️', color1: '#0284c7', color2: '#38bdf8' },
   Wind: { emoji: '🍃', color1: '#0d9488', color2: '#14b8a6' },
   Dark: { emoji: '🌑', color1: '#7e22ce', color2: '#a855f7' },
-  Light: { emoji: '✨', color1: '#d97706', color2: '#fbbf24' }
+  Light: { emoji: '✨', color1: '#d97706', color2: '#fbbf24' },
+  // Homeland Utilities
+  Carry: { emoji: '📦', color1: '#d97706', color2: '#f59e0b' },
+  Artisanship: { emoji: '🔨', color1: '#475569', color2: '#94a3b8' },
+  Leisure: { emoji: '☕', color1: '#059669', color2: '#10b981' },
+  Perfumery: { emoji: '🌸', color1: '#db2777', color2: '#f43f5e' }
 };
+const elementMeta = abilityMeta;
 
 // Fetch Data from Node.js REST API
 async function fetchAniimoData() {
@@ -138,18 +145,20 @@ function renderCards(list) {
       }
     }
 
-    // Build element proficiency pills
-    const elementsHtml = Object.entries(activeData.elements || {}).map(([elemName, lvl]) => {
-      const meta = elementMeta[elemName] || { emoji: '⭐', color1: '#38bdf8' };
+    // Build ability proficiency pills (Elements + Homeland Utilities)
+    const activeAbilities = activeData.abilities || { ...(activeData.elements || {}), ...(activeData.utilities || {}) };
+    const elementsHtml = Object.entries(activeAbilities).map(([abilName, lvl]) => {
+      const meta = abilityMeta[abilName] || { emoji: '⭐', color1: '#38bdf8', color2: '#818cf8' };
       const pct = Math.min((lvl / 5) * 100, 100);
+      const isUtility = ['Carry', 'Artisanship', 'Leisure', 'Perfumery'].includes(abilName);
       return `
-        <div class="abil-pill">
+        <div class="abil-pill ${isUtility ? 'is-utility-pill' : 'is-element-pill'}">
           <div class="abil-pill-top">
-            <span class="abil-pill-name">${meta.emoji} ${elemName}</span>
-            <span class="abil-pill-lvl">Lv.${lvl}</span>
+            <span class="abil-pill-name" style="${isUtility ? 'color: #f8fafc; font-weight: 700;' : ''}">${meta.emoji} ${abilName}</span>
+            <span class="abil-pill-lvl" style="${isUtility ? 'color: #f59e0b;' : ''}">Lv.${lvl}</span>
           </div>
           <div class="abil-progress-bar">
-            <div class="abil-progress-fill lvl-${lvl}" style="width: ${pct}%;"></div>
+            <div class="abil-progress-fill lvl-${lvl}" style="width: ${pct}%; background: linear-gradient(90deg, ${meta.color1}, ${meta.color2});"></div>
           </div>
         </div>
       `;
@@ -166,7 +175,7 @@ function renderCards(list) {
                class="portrait-img" 
                alt="${item.name}" 
                loading="lazy" 
-               onerror="if (!this.dataset.fallback) { this.dataset.fallback='1'; this.src='images/${item.slug}.png'; } else if (this.dataset.fallback==='1') { this.dataset.fallback='2'; this.src='images/${item.id}.png'; }">
+               onerror="if (!this.dataset.fallback) { this.dataset.fallback='1'; this.src='images/${item.slug}.png'; } else if (this.dataset.fallback==='1') { this.dataset.fallback='2'; this.src='images/${item.id}.png'; } else if (this.dataset.fallback==='2') { this.dataset.fallback='3'; this.src='images/unknown.png'; }">
           <div class="portrait-overlay">
             <span class="portrait-badge-id" style="${item.is_unnumbered ? 'background: rgba(234, 88, 12, 0.4); border: 1px solid rgba(234, 88, 12, 0.7);' : ''}">${item.display_id}</span>
             <span class="portrait-badge-stage stage-${item.tier}">${item.tier}</span>
@@ -235,7 +244,11 @@ window.openDetailModal = function(id) {
 
   const formsTableHtml = allFormsList.map(f => {
     const isPris = f.form_name.toLowerCase().includes('prismana');
-    const elemStr = Object.entries(f.elements || {}).map(([k, v]) => `${k} Lv.${v}`).join(' / ');
+    const pool = f.abilities || { ...(f.elements || {}), ...(f.utilities || {}) };
+    const elemStr = Object.entries(pool).map(([k, v]) => {
+      const meta = abilityMeta[k] || { emoji: '' };
+      return `${meta.emoji} ${k} Lv.${v}`;
+    }).join(' • ');
     return `
       <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
         <td style="padding: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -348,7 +361,7 @@ function applyFilters() {
       return false;
     }
 
-    // Element filter
+    // Element & Homeland Utility filter
     if (selectedElement !== 'all') {
       const allForms = [
         item.forms.basic,
@@ -357,15 +370,15 @@ function applyFilters() {
         item.forms.prismana
       ].filter(Boolean);
 
-      const hasElement = allForms.some(f => {
-        if (!f.elements) return false;
-        for (const [k, v] of Object.entries(f.elements)) {
+      const hasMatch = allForms.some(f => {
+        const pool = { ...(f.elements || {}), ...(f.abilities || {}), ...(f.utilities || {}) };
+        for (const [k, v] of Object.entries(pool)) {
           if (k.toLowerCase() === selectedElement.toLowerCase() && v >= minLvl) return true;
         }
         return false;
       });
 
-      if (!hasElement) return false;
+      if (!hasMatch) return false;
     }
 
     return true;

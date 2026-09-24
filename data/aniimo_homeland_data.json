@@ -31,7 +31,14 @@
         "elements": {
           "Fire": 1
         },
-        "image": "images/forms/emberpup-basic-form-base.png"
+        "image": "images/forms/emberpup-basic-form-base.png",
+        "abilities": {
+          "Fire": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -43,7 +50,17 @@
             "Fire": 1,
             "Earth": 1
           },
-          "image": "images/forms/emberpup-highland-form.png"
+          "image": "images/forms/emberpup-highland-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Earth": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -53,7 +70,14 @@
           "elements": {
             "Fire": 1
           },
-          "image": "images/forms/emberpup-mountain-woods-form.png"
+          "image": "images/forms/emberpup-mountain-woods-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -97,7 +121,16 @@
         "elements": {
           "Fire": 2
         },
-        "image": "images/forms/flameruff-basic-form-base.png"
+        "image": "images/forms/flameruff-basic-form-base.png",
+        "abilities": {
+          "Fire": 2,
+          "Carry": 2,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Carry": 2,
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -109,7 +142,17 @@
             "Fire": 2,
             "Earth": 1
           },
-          "image": "images/forms/flameruff-highland-form.png"
+          "image": "images/forms/flameruff-highland-form.png",
+          "abilities": {
+            "Fire": 2,
+            "Earth": 1,
+            "Carry": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 2,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -119,7 +162,16 @@
           "elements": {
             "Fire": 2
           },
-          "image": "images/forms/flameruff-mountain-woods-form.png"
+          "image": "images/forms/flameruff-mountain-woods-form.png",
+          "abilities": {
+            "Fire": 2,
+            "Carry": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 2,
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -163,7 +215,16 @@
         "elements": {
           "Fire": 3
         },
-        "image": "images/forms/scorchhowl-basic-form-base.png"
+        "image": "images/forms/scorchhowl-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Artisanship": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -175,7 +236,17 @@
             "Fire": 3,
             "Earth": 2
           },
-          "image": "images/forms/scorchhowl-highland-form.png"
+          "image": "images/forms/scorchhowl-highland-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Earth": 2,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -185,7 +256,16 @@
           "elements": {
             "Fire": 3
           },
-          "image": "images/forms/scorchhowl-mountain-woods-form.png"
+          "image": "images/forms/scorchhowl-mountain-woods-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         }
       ],
       "weather": [
@@ -197,7 +277,16 @@
           "elements": {
             "Fire": 3
           },
-          "image": "images/forms/scorchhowl-thunderstorm-form.png"
+          "image": "images/forms/scorchhowl-thunderstorm-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         }
       ],
       "prismana": {
@@ -208,7 +297,16 @@
         "elements": {
           "Fire": 4
         },
-        "image": "images/forms/scorchhowl-prismana.png"
+        "image": "images/forms/scorchhowl-prismana.png",
+        "abilities": {
+          "Fire": 4,
+          "Artisanship": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 3
+        }
       }
     },
     "all_form_names": [
@@ -251,7 +349,15 @@
           "Dark": 3,
           "Fire": 2
         },
-        "image": "images/forms/inferlupa-basic-form-base.png"
+        "image": "images/forms/inferlupa-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Fire": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -264,7 +370,15 @@
           "Dark": 4,
           "Fire": 3
         },
-        "image": "images/forms/inferlupa-prismana.png"
+        "image": "images/forms/inferlupa-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Fire": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       }
     },
     "all_form_names": [
@@ -302,7 +416,14 @@
         "elements": {
           "Dark": 3
         },
-        "image": "images/forms/celestis-basic-form.png"
+        "image": "images/forms/celestis-basic-form.png",
+        "abilities": {
+          "Dark": 3,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -342,7 +463,16 @@
         "elements": {
           "Dark": 3
         },
-        "image": "images/forms/stellarys-basic-form-base.png"
+        "image": "images/forms/stellarys-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Leisure": 2,
+          "Carry": 1
+        },
+        "utilities": {
+          "Leisure": 2,
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [
@@ -355,7 +485,17 @@
             "Dark": 3,
             "Water": 2
           },
-          "image": "images/forms/stellarys-rainstorm-form.png"
+          "image": "images/forms/stellarys-rainstorm-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Water": 2,
+            "Leisure": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Leisure": 2,
+            "Carry": 1
+          }
         }
       ],
       "prismana": {
@@ -367,7 +507,17 @@
           "Dark": 4,
           "Ice": 3
         },
-        "image": "images/forms/stellarys-prismana.png"
+        "image": "images/forms/stellarys-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Ice": 3,
+          "Leisure": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Leisure": 3,
+          "Carry": 2
+        }
       }
     },
     "all_form_names": [
@@ -407,7 +557,14 @@
         "elements": {
           "Wind": 1
         },
-        "image": "images/forms/chirpi-basic-form-base.png"
+        "image": "images/forms/chirpi-basic-form-base.png",
+        "abilities": {
+          "Wind": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -419,7 +576,15 @@
             "Wind": 1,
             "Water": 1
           },
-          "image": "images/forms/chirpi-beach-form.png"
+          "image": "images/forms/chirpi-beach-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Water": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         },
         {
           "form_name": "Highland Form",
@@ -430,7 +595,15 @@
             "Wind": 1,
             "Grass": 1
           },
-          "image": "images/forms/chirpi-highland-form.png"
+          "image": "images/forms/chirpi-highland-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Grass": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -473,7 +646,16 @@
         "elements": {
           "Wind": 3
         },
-        "image": "images/forms/tromber-basic-form-base.png"
+        "image": "images/forms/tromber-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Leisure": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Leisure": 3,
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -485,7 +667,17 @@
             "Wind": 3,
             "Water": 2
           },
-          "image": "images/forms/tromber-beach-form.png"
+          "image": "images/forms/tromber-beach-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Water": 2,
+            "Leisure": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Leisure": 3,
+            "Carry": 2
+          }
         },
         {
           "form_name": "Highland Form",
@@ -496,7 +688,17 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "images/forms/tromber-highland-form.png"
+          "image": "images/forms/tromber-highland-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Leisure": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Leisure": 3,
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -539,7 +741,16 @@
         "elements": {
           "Wind": 3
         },
-        "image": "images/forms/cornet-basic-form-base.png"
+        "image": "images/forms/cornet-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Artisanship": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -551,7 +762,17 @@
             "Wind": 3,
             "Water": 2
           },
-          "image": "images/forms/cornet-beach-form.png"
+          "image": "images/forms/cornet-beach-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Water": 2,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         },
         {
           "form_name": "Highland Form",
@@ -562,7 +783,17 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "images/forms/cornet-highland-form.png"
+          "image": "images/forms/cornet-highland-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -575,7 +806,17 @@
           "Wind": 4,
           "Lightning": 3
         },
-        "image": "images/forms/cornet-prismana.png"
+        "image": "images/forms/cornet-prismana.png",
+        "abilities": {
+          "Wind": 4,
+          "Lightning": 3,
+          "Artisanship": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 3
+        }
       }
     },
     "all_form_names": [
@@ -616,7 +857,14 @@
         "elements": {
           "Wind": 3
         },
-        "image": "images/forms/tubster-basic-form-base.png"
+        "image": "images/forms/tubster-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       },
       "regional": [
         {
@@ -628,7 +876,15 @@
             "Wind": 3,
             "Water": 2
           },
-          "image": "images/forms/tubster-beach-form.png"
+          "image": "images/forms/tubster-beach-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Water": 2,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         },
         {
           "form_name": "Highland Form",
@@ -639,7 +895,15 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "images/forms/tubster-highland-form.png"
+          "image": "images/forms/tubster-highland-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         },
         {
           "form_name": "Basic Form (variant record)",
@@ -649,7 +913,14 @@
           "elements": {
             "Wind": 3
           },
-          "image": "images/forms/tubster-basic-form-variant-record.png"
+          "image": "images/forms/tubster-basic-form-variant-record.png",
+          "abilities": {
+            "Wind": 3,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         }
       ],
       "weather": [],
@@ -691,7 +962,14 @@
         "elements": {
           "Grass": 1
         },
-        "image": "images/forms/iris-basic-form-base.png"
+        "image": "images/forms/iris-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Perfumery": 1
+        },
+        "utilities": {
+          "Perfumery": 1
+        }
       },
       "regional": [
         {
@@ -702,7 +980,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/iris-highland-form.png"
+          "image": "images/forms/iris-highland-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Perfumery": 1
+          },
+          "utilities": {
+            "Perfumery": 1
+          }
         },
         {
           "form_name": "Forest Form",
@@ -712,7 +997,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/iris-forest-form.png"
+          "image": "images/forms/iris-forest-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Perfumery": 1
+          },
+          "utilities": {
+            "Perfumery": 1
+          }
         },
         {
           "form_name": "Grassland Form",
@@ -722,7 +1014,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/iris-grassland-form.png"
+          "image": "images/forms/iris-grassland-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Perfumery": 1
+          },
+          "utilities": {
+            "Perfumery": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -732,7 +1031,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/iris-mountain-woods-form.png"
+          "image": "images/forms/iris-mountain-woods-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Perfumery": 1
+          },
+          "utilities": {
+            "Perfumery": 1
+          }
         }
       ],
       "weather": [
@@ -744,7 +1050,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/iris-plateau-form.png"
+          "image": "images/forms/iris-plateau-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Perfumery": 1
+          },
+          "utilities": {
+            "Perfumery": 1
+          }
         }
       ],
       "prismana": {
@@ -755,7 +1068,14 @@
         "elements": {
           "Grass": 1
         },
-        "image": "images/forms/iris-prismana.png"
+        "image": "images/forms/iris-prismana.png",
+        "abilities": {
+          "Grass": 1,
+          "Perfumery": 2
+        },
+        "utilities": {
+          "Perfumery": 2
+        }
       }
     },
     "all_form_names": [
@@ -797,7 +1117,16 @@
         "elements": {
           "Grass": 3
         },
-        "image": "images/forms/irisal-basic-form-base.png"
+        "image": "images/forms/irisal-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Perfumery": 2,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Perfumery": 2,
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -808,7 +1137,16 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/irisal-highland-form.png"
+          "image": "images/forms/irisal-highland-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Perfumery": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Perfumery": 2,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Forest Form",
@@ -818,7 +1156,16 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/irisal-forest-form.png"
+          "image": "images/forms/irisal-forest-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Perfumery": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Perfumery": 2,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Grassland Form",
@@ -828,7 +1175,16 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/irisal-grassland-form.png"
+          "image": "images/forms/irisal-grassland-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Perfumery": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Perfumery": 2,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -838,7 +1194,16 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/irisal-mountain-woods-form.png"
+          "image": "images/forms/irisal-mountain-woods-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Perfumery": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Perfumery": 2,
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [
@@ -850,7 +1215,16 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/irisal-plateau-form.png"
+          "image": "images/forms/irisal-plateau-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Perfumery": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Perfumery": 2,
+            "Artisanship": 1
+          }
         }
       ],
       "prismana": {
@@ -861,7 +1235,16 @@
         "elements": {
           "Grass": 4
         },
-        "image": "images/forms/irisal-prismana.png"
+        "image": "images/forms/irisal-prismana.png",
+        "abilities": {
+          "Grass": 4,
+          "Perfumery": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Artisanship": 2
+        }
       }
     },
     "all_form_names": [
@@ -906,7 +1289,14 @@
         "elements": {
           "Water": 1
         },
-        "image": "images/forms/skippy-basic-form-base.png"
+        "image": "images/forms/skippy-basic-form-base.png",
+        "abilities": {
+          "Water": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -917,7 +1307,14 @@
           "elements": {
             "Water": 1
           },
-          "image": "images/forms/skippy-sea-of-flowers-form.png"
+          "image": "images/forms/skippy-sea-of-flowers-form.png",
+          "abilities": {
+            "Water": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         },
         {
           "form_name": "Snowfield Form",
@@ -928,7 +1325,15 @@
             "Water": 1,
             "Ice": 1
           },
-          "image": "images/forms/skippy-snowfield-form.png"
+          "image": "images/forms/skippy-snowfield-form.png",
+          "abilities": {
+            "Water": 1,
+            "Ice": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -972,7 +1377,14 @@
         "elements": {
           "Water": 2
         },
-        "image": "images/forms/pranky-basic-form-base.png"
+        "image": "images/forms/pranky-basic-form-base.png",
+        "abilities": {
+          "Water": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [
         {
@@ -983,7 +1395,14 @@
           "elements": {
             "Water": 2
           },
-          "image": "images/forms/pranky-sea-of-flowers-form.png"
+          "image": "images/forms/pranky-sea-of-flowers-form.png",
+          "abilities": {
+            "Water": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         },
         {
           "form_name": "Snowfield Form",
@@ -994,7 +1413,15 @@
             "Water": 2,
             "Ice": 1
           },
-          "image": "images/forms/pranky-snowfield-form.png"
+          "image": "images/forms/pranky-snowfield-form.png",
+          "abilities": {
+            "Water": 2,
+            "Ice": 1,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         }
       ],
       "weather": [],
@@ -1036,7 +1463,15 @@
           "Water": 3,
           "Ice": 2
         },
-        "image": "images/forms/glacy-basic-form-base.png"
+        "image": "images/forms/glacy-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Ice": 2,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Leisure": 2
+        }
       },
       "regional": [
         {
@@ -1048,7 +1483,15 @@
             "Water": 3,
             "Ice": 2
           },
-          "image": "images/forms/glacy-sea-of-flowers-form.png"
+          "image": "images/forms/glacy-sea-of-flowers-form.png",
+          "abilities": {
+            "Water": 3,
+            "Ice": 2,
+            "Leisure": 2
+          },
+          "utilities": {
+            "Leisure": 2
+          }
         },
         {
           "form_name": "Snowfield Form",
@@ -1059,7 +1502,15 @@
             "Water": 3,
             "Ice": 2
           },
-          "image": "images/forms/glacy-snowfield-form.png"
+          "image": "images/forms/glacy-snowfield-form.png",
+          "abilities": {
+            "Water": 3,
+            "Ice": 2,
+            "Leisure": 2
+          },
+          "utilities": {
+            "Leisure": 2
+          }
         }
       ],
       "weather": [],
@@ -1072,7 +1523,15 @@
           "Water": 4,
           "Ice": 2
         },
-        "image": "images/forms/glacy-prismana.png"
+        "image": "images/forms/glacy-prismana.png",
+        "abilities": {
+          "Water": 4,
+          "Ice": 2,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
       }
     },
     "all_form_names": [
@@ -1114,7 +1573,15 @@
           "Water": 1,
           "Grass": 1
         },
-        "image": "images/forms/leafy-basic-form.png"
+        "image": "images/forms/leafy-basic-form.png",
+        "abilities": {
+          "Water": 1,
+          "Grass": 1,
+          "Perfumery": 2
+        },
+        "utilities": {
+          "Perfumery": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -1155,7 +1622,14 @@
         "elements": {
           "Wind": 1
         },
-        "image": "images/forms/nimbi-basic-form-base.png"
+        "image": "images/forms/nimbi-basic-form-base.png",
+        "abilities": {
+          "Wind": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [
@@ -1168,7 +1642,15 @@
             "Wind": 1,
             "Lightning": 1
           },
-          "image": "images/forms/nimbi-rainstorm-form.png"
+          "image": "images/forms/nimbi-rainstorm-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Lightning": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         },
         {
           "form_name": "Cloudmist Form",
@@ -1178,7 +1660,14 @@
           "elements": {
             "Wind": 1
           },
-          "image": "images/forms/nimbi-cloudmist-form.png"
+          "image": "images/forms/nimbi-cloudmist-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         },
         {
           "form_name": "Plateau Form",
@@ -1189,7 +1678,15 @@
             "Wind": 1,
             "Ice": 1
           },
-          "image": "images/forms/nimbi-plateau-form.png"
+          "image": "images/forms/nimbi-plateau-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Ice": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "prismana": null
@@ -1232,7 +1729,14 @@
         "elements": {
           "Wind": 3
         },
-        "image": "images/forms/turbo-basic-form-base.png"
+        "image": "images/forms/turbo-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
       },
       "regional": [],
       "weather": [
@@ -1245,7 +1749,15 @@
             "Wind": 3,
             "Lightning": 2
           },
-          "image": "images/forms/turbo-rainstorm-form.png"
+          "image": "images/forms/turbo-rainstorm-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Lightning": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Cloudmist Form",
@@ -1255,7 +1767,14 @@
           "elements": {
             "Wind": 3
           },
-          "image": "images/forms/turbo-cloudmist-form.png"
+          "image": "images/forms/turbo-cloudmist-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Plateau Form",
@@ -1266,7 +1785,15 @@
             "Wind": 3,
             "Ice": 2
           },
-          "image": "images/forms/turbo-plateau-form.png"
+          "image": "images/forms/turbo-plateau-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Ice": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Plateau Form",
@@ -1277,7 +1804,15 @@
             "Wind": 3,
             "Ice": 2
           },
-          "image": "images/forms/turbo-plateau-form.png"
+          "image": "images/forms/turbo-plateau-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Ice": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         }
       ],
       "prismana": {
@@ -1289,7 +1824,15 @@
           "Wind": 4,
           "Dark": 3
         },
-        "image": "images/forms/turbo-prismana.png"
+        "image": "images/forms/turbo-prismana.png",
+        "abilities": {
+          "Wind": 4,
+          "Dark": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       }
     },
     "all_form_names": [
@@ -1331,7 +1874,14 @@
         "elements": {
           "Dark": 2
         },
-        "image": "images/dreaple.png"
+        "image": "images/dreaple.png",
+        "abilities": {
+          "Dark": 2,
+          "Perfumery": 2
+        },
+        "utilities": {
+          "Perfumery": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -1374,7 +1924,14 @@
         "elements": {
           "Grass": 1
         },
-        "image": "images/forms/hummin-basic-form-base.png"
+        "image": "images/forms/hummin-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -1385,7 +1942,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/hummin-mountain-form.png"
+          "image": "images/forms/hummin-mountain-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -1429,7 +1993,15 @@
           "Dark": 2,
           "Grass": 1
         },
-        "image": "images/forms/hexxin-basic-form-base.png"
+        "image": "images/forms/hexxin-basic-form-base.png",
+        "abilities": {
+          "Dark": 2,
+          "Grass": 1,
+          "Perfumery": 2
+        },
+        "utilities": {
+          "Perfumery": 2
+        }
       },
       "regional": [
         {
@@ -1441,7 +2013,15 @@
             "Dark": 2,
             "Grass": 1
           },
-          "image": "images/forms/hexxin-mountain-form.png"
+          "image": "images/forms/hexxin-mountain-form.png",
+          "abilities": {
+            "Dark": 2,
+            "Grass": 1,
+            "Perfumery": 2
+          },
+          "utilities": {
+            "Perfumery": 2
+          }
         }
       ],
       "weather": [],
@@ -1454,7 +2034,15 @@
           "Dark": 4,
           "Grass": 3
         },
-        "image": "images/forms/hexxin-prismana.png"
+        "image": "images/forms/hexxin-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Grass": 3,
+          "Perfumery": 3
+        },
+        "utilities": {
+          "Perfumery": 3
+        }
       }
     },
     "all_form_names": [
@@ -1496,7 +2084,14 @@
         "elements": {
           "Grass": 3
         },
-        "image": "images/forms/tuckin-basic-form-base.png"
+        "image": "images/forms/tuckin-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -1508,7 +2103,17 @@
             "Grass": 3,
             "Earth": 2
           },
-          "image": "images/forms/tuckin-mountain-form.png"
+          "image": "images/forms/tuckin-mountain-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Earth": 2,
+            "Carry": 2,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 2,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Basic Form (variant record)",
@@ -1518,7 +2123,14 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/tuckin-basic-form-variant-record.png"
+          "image": "images/forms/tuckin-basic-form-variant-record.png",
+          "abilities": {
+            "Grass": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         },
         {
           "form_name": "Unnamed form",
@@ -1528,7 +2140,14 @@
           "elements": {
             "Grass": 4
           },
-          "image": "images/forms/tuckin-unnamed-form.png"
+          "image": "images/forms/tuckin-unnamed-form.png",
+          "abilities": {
+            "Grass": 4,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -1574,7 +2193,15 @@
           "Earth": 1,
           "Grass": 1
         },
-        "image": "images/forms/budclaw-basic-form-base.png"
+        "image": "images/forms/budclaw-basic-form-base.png",
+        "abilities": {
+          "Earth": 1,
+          "Grass": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -1586,7 +2213,17 @@
             "Earth": 1,
             "Grass": 1
           },
-          "image": "images/forms/budclaw-mudflat-form.png"
+          "image": "images/forms/budclaw-mudflat-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Grass": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Beach Form",
@@ -1596,7 +2233,16 @@
           "elements": {
             "Earth": 1
           },
-          "image": "images/forms/budclaw-beach-form.png"
+          "image": "images/forms/budclaw-beach-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Bay Form",
@@ -1607,7 +2253,17 @@
             "Earth": 1,
             "Grass": 1
           },
-          "image": "images/forms/budclaw-bay-form.png"
+          "image": "images/forms/budclaw-bay-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Grass": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -1653,7 +2309,15 @@
           "Earth": 3,
           "Grass": 2
         },
-        "image": "images/forms/shrubclaw-basic-form-base.png"
+        "image": "images/forms/shrubclaw-basic-form-base.png",
+        "abilities": {
+          "Earth": 3,
+          "Grass": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [
         {
@@ -1664,7 +2328,14 @@
           "elements": {
             "Earth": 3
           },
-          "image": "images/forms/shrubclaw-mudflat-form.png"
+          "image": "images/forms/shrubclaw-mudflat-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         },
         {
           "form_name": "Beach Form",
@@ -1675,7 +2346,15 @@
             "Earth": 3,
             "Grass": 2
           },
-          "image": "images/forms/shrubclaw-beach-form.png"
+          "image": "images/forms/shrubclaw-beach-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Grass": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         },
         {
           "form_name": "Bay Form",
@@ -1686,7 +2365,15 @@
             "Earth": 3,
             "Grass": 2
           },
-          "image": "images/forms/shrubclaw-bay-form.png"
+          "image": "images/forms/shrubclaw-bay-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Grass": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         }
       ],
       "weather": [],
@@ -1731,7 +2418,14 @@
         "elements": {
           "Ice": 2
         },
-        "image": "images/geoclaw.png"
+        "image": "images/geoclaw.png",
+        "abilities": {
+          "Ice": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -1773,7 +2467,14 @@
         "elements": {
           "Fire": 1
         },
-        "image": "images/forms/sparki-basic-form-base.png"
+        "image": "images/forms/sparki-basic-form-base.png",
+        "abilities": {
+          "Fire": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -1784,7 +2485,14 @@
           "elements": {
             "Fire": 1
           },
-          "image": "images/forms/sparki-highland-form.png"
+          "image": "images/forms/sparki-highland-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Forest Form",
@@ -1794,7 +2502,14 @@
           "elements": {
             "Fire": 1
           },
-          "image": "images/forms/sparki-forest-form.png"
+          "image": "images/forms/sparki-forest-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -1804,7 +2519,14 @@
           "elements": {
             "Fire": 1
           },
-          "image": "images/forms/sparki-sea-of-flowers-form.png"
+          "image": "images/forms/sparki-sea-of-flowers-form.png",
+          "abilities": {
+            "Fire": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -1849,7 +2571,16 @@
         "elements": {
           "Fire": 3
         },
-        "image": "images/forms/flamerion-basic-form-base.png"
+        "image": "images/forms/flamerion-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Artisanship": 2,
+          "Carry": 1
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -1860,7 +2591,16 @@
           "elements": {
             "Fire": 3
           },
-          "image": "images/forms/flamerion-highland-form.png"
+          "image": "images/forms/flamerion-highland-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 1
+          }
         },
         {
           "form_name": "Forest Form",
@@ -1870,7 +2610,16 @@
           "elements": {
             "Fire": 3
           },
-          "image": "images/forms/flamerion-forest-form.png"
+          "image": "images/forms/flamerion-forest-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 1
+          }
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -1880,7 +2629,16 @@
           "elements": {
             "Fire": 3
           },
-          "image": "images/forms/flamerion-sea-of-flowers-form.png"
+          "image": "images/forms/flamerion-sea-of-flowers-form.png",
+          "abilities": {
+            "Fire": 3,
+            "Artisanship": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -1922,7 +2680,16 @@
         "elements": {
           "Wind": 1
         },
-        "image": "images/forms/flutternym-basic-form-base.png"
+        "image": "images/forms/flutternym-basic-form-base.png",
+        "abilities": {
+          "Wind": 1,
+          "Perfumery": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Perfumery": 1,
+          "Leisure": 1
+        }
       },
       "regional": [
         {
@@ -1934,7 +2701,19 @@
             "Wind": 1,
             "Grass": 1
           },
-          "image": "images/forms/flutternym-sea-of-flowers-form.png"
+          "image": "images/forms/flutternym-sea-of-flowers-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Grass": 1,
+            "Perfumery": 1,
+            "Leisure": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Perfumery": 1,
+            "Leisure": 1,
+            "Carry": 1
+          }
         },
         {
           "form_name": "Nighttime Form",
@@ -1945,7 +2724,19 @@
             "Wind": 1,
             "Dark": 1
           },
-          "image": "images/forms/flutternym-nighttime-form.png"
+          "image": "images/forms/flutternym-nighttime-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Dark": 1,
+            "Perfumery": 1,
+            "Leisure": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Perfumery": 1,
+            "Leisure": 1,
+            "Carry": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -1956,7 +2747,21 @@
             "Wind": 1,
             "Earth": 1
           },
-          "image": "images/forms/flutternym-mountain-woods-form.png"
+          "image": "images/forms/flutternym-mountain-woods-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Earth": 1,
+            "Perfumery": 1,
+            "Leisure": 1,
+            "Artisanship": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Perfumery": 1,
+            "Leisure": 1,
+            "Artisanship": 1,
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -1998,7 +2803,16 @@
         "elements": {
           "Wind": 3
         },
-        "image": "images/forms/gracewing-basic-form-base.png"
+        "image": "images/forms/gracewing-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Artisanship": 2,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Leisure": 2
+        }
       },
       "regional": [
         {
@@ -2010,7 +2824,19 @@
             "Wind": 3,
             "Grass": 2
           },
-          "image": "images/forms/gracewing-sea-of-flowers-form.png"
+          "image": "images/forms/gracewing-sea-of-flowers-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Grass": 2,
+            "Artisanship": 2,
+            "Leisure": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Leisure": 2,
+            "Carry": 1
+          }
         },
         {
           "form_name": "Nighttime Form",
@@ -2021,7 +2847,19 @@
             "Wind": 3,
             "Dark": 2
           },
-          "image": "images/forms/gracewing-nighttime-form.png"
+          "image": "images/forms/gracewing-nighttime-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Dark": 2,
+            "Artisanship": 2,
+            "Leisure": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Leisure": 2,
+            "Carry": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -2032,7 +2870,19 @@
             "Wind": 3,
             "Earth": 2
           },
-          "image": "images/forms/gracewing-mountain-woods-form.png"
+          "image": "images/forms/gracewing-mountain-woods-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Earth": 2,
+            "Artisanship": 2,
+            "Leisure": 2,
+            "Carry": 1
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Leisure": 2,
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -2075,7 +2925,17 @@
           "Grass": 3,
           "Wind": 2
         },
-        "image": "images/somniwing.png"
+        "image": "images/somniwing.png",
+        "abilities": {
+          "Grass": 3,
+          "Wind": 2,
+          "Perfumery": 3,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Leisure": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -2088,7 +2948,17 @@
           "Grass": 3,
           "Wind": 2
         },
-        "image": "images/somniwing.png"
+        "image": "images/somniwing.png",
+        "abilities": {
+          "Grass": 3,
+          "Wind": 2,
+          "Perfumery": 4,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Perfumery": 4,
+          "Leisure": 2
+        }
       }
     },
     "all_form_names": [
@@ -2126,7 +2996,14 @@
         "elements": {
           "Wind": 1
         },
-        "image": "images/forms/eko-basic-form.png"
+        "image": "images/forms/eko-basic-form.png",
+        "abilities": {
+          "Wind": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -2167,7 +3044,16 @@
         "elements": {
           "Wind": 2
         },
-        "image": "images/forms/eklue-basic-form.png"
+        "image": "images/forms/eklue-basic-form.png",
+        "abilities": {
+          "Wind": 2,
+          "Carry": 2,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Carry": 2,
+          "Leisure": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -2210,7 +3096,14 @@
         "elements": {
           "Grass": 1
         },
-        "image": "images/forms/budsquire-basic-form-base.png"
+        "image": "images/forms/budsquire-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -2221,7 +3114,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/budsquire-towerwood-form.png"
+          "image": "images/forms/budsquire-towerwood-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -2265,7 +3165,14 @@
         "elements": {
           "Grass": 3
         },
-        "image": "images/forms/thornblade-basic-form-base.png"
+        "image": "images/forms/thornblade-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [
         {
@@ -2276,7 +3183,14 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/thornblade-towerwood-form.png"
+          "image": "images/forms/thornblade-towerwood-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         }
       ],
       "weather": [
@@ -2288,7 +3202,14 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/thornblade-thunderstorm-form.png"
+          "image": "images/forms/thornblade-thunderstorm-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         }
       ],
       "prismana": {
@@ -2300,7 +3221,15 @@
           "Grass": 4,
           "Water": 3
         },
-        "image": "images/forms/thornblade-prismana.png"
+        "image": "images/forms/thornblade-prismana.png",
+        "abilities": {
+          "Grass": 4,
+          "Water": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       }
     },
     "all_form_names": [
@@ -2343,7 +3272,16 @@
         "elements": {
           "Grass": 3
         },
-        "image": "images/forms/melloblum-basic-form-base.png"
+        "image": "images/forms/melloblum-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Perfumery": 3,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -2355,7 +3293,16 @@
         "elements": {
           "Grass": 4
         },
-        "image": "images/forms/melloblum-prismana.png"
+        "image": "images/forms/melloblum-prismana.png",
+        "abilities": {
+          "Grass": 4,
+          "Perfumery": 4,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Perfumery": 4,
+          "Leisure": 3
+        }
       }
     },
     "all_form_names": [
@@ -2396,7 +3343,14 @@
         "elements": {
           "Grass": 1
         },
-        "image": "images/forms/pomegg-basic-form-base.png"
+        "image": "images/forms/pomegg-basic-form-base.png",
+        "abilities": {
+          "Grass": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
       },
       "regional": [
         {
@@ -2408,7 +3362,15 @@
             "Grass": 1,
             "Ice": 1
           },
-          "image": "images/forms/pomegg-snowfield-form.png"
+          "image": "images/forms/pomegg-snowfield-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Ice": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
         },
         {
           "form_name": "Highland Form",
@@ -2418,7 +3380,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/pomegg-highland-form.png"
+          "image": "images/forms/pomegg-highland-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -2428,7 +3397,14 @@
           "elements": {
             "Grass": 1
           },
-          "image": "images/forms/pomegg-sea-of-flowers-form.png"
+          "image": "images/forms/pomegg-sea-of-flowers-form.png",
+          "abilities": {
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
         }
       ],
       "weather": [],
@@ -2474,7 +3450,14 @@
         "elements": {
           "Grass": 3
         },
-        "image": "images/forms/pomawk-basic-form-base.png"
+        "image": "images/forms/pomawk-basic-form-base.png",
+        "abilities": {
+          "Grass": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -2486,7 +3469,15 @@
             "Grass": 3,
             "Ice": 2
           },
-          "image": "images/forms/pomawk-snowfield-form.png"
+          "image": "images/forms/pomawk-snowfield-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Ice": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         },
         {
           "form_name": "Highland Form",
@@ -2496,7 +3487,14 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/pomawk-highland-form.png"
+          "image": "images/forms/pomawk-highland-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -2506,7 +3504,14 @@
           "elements": {
             "Grass": 3
           },
-          "image": "images/forms/pomawk-sea-of-flowers-form.png"
+          "image": "images/forms/pomawk-sea-of-flowers-form.png",
+          "abilities": {
+            "Grass": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -2549,7 +3554,14 @@
         "elements": {
           "Dark": 1
         },
-        "image": "images/forms/dewy-basic-form.png"
+        "image": "images/forms/dewy-basic-form.png",
+        "abilities": {
+          "Dark": 1,
+          "Perfumery": 1
+        },
+        "utilities": {
+          "Perfumery": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -2589,7 +3601,16 @@
         "elements": {
           "Dark": 2
         },
-        "image": "images/forms/fragrancier-basic-form.png"
+        "image": "images/forms/fragrancier-basic-form.png",
+        "abilities": {
+          "Dark": 2,
+          "Perfumery": 3,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -2629,7 +3650,14 @@
         "elements": {
           "Dark": 1
         },
-        "image": "images/forms/wisptis-basic-form-base.png"
+        "image": "images/forms/wisptis-basic-form-base.png",
+        "abilities": {
+          "Dark": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
       },
       "regional": [
         {
@@ -2641,7 +3669,15 @@
             "Dark": 1,
             "Grass": 1
           },
-          "image": "images/forms/wisptis-forest-form.png"
+          "image": "images/forms/wisptis-forest-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Grass": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
         },
         {
           "form_name": "Highland Form",
@@ -2652,7 +3688,15 @@
             "Dark": 1,
             "Fire": 1
           },
-          "image": "images/forms/wisptis-highland-form.png"
+          "image": "images/forms/wisptis-highland-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Fire": 1,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Leisure": 1
+          }
         }
       ],
       "weather": [],
@@ -2694,7 +3738,14 @@
         "elements": {
           "Dark": 3
         },
-        "image": "images/forms/ignitis-basic-form-base.png"
+        "image": "images/forms/ignitis-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [
         {
@@ -2706,7 +3757,15 @@
             "Dark": 3,
             "Grass": 2
           },
-          "image": "images/forms/ignitis-forest-form.png"
+          "image": "images/forms/ignitis-forest-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Grass": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         },
         {
           "form_name": "Highland Form",
@@ -2717,7 +3776,15 @@
             "Dark": 3,
             "Fire": 2
           },
-          "image": "images/forms/ignitis-highland-form.png"
+          "image": "images/forms/ignitis-highland-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Fire": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         }
       ],
       "weather": [],
@@ -2730,7 +3797,15 @@
           "Dark": 4,
           "Fire": 3
         },
-        "image": "images/forms/ignitis-prismana.png"
+        "image": "images/forms/ignitis-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Fire": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       }
     },
     "all_form_names": [
@@ -2772,7 +3847,14 @@
         "elements": {
           "Ice": 1
         },
-        "image": "images/forms/bonesky-basic-form-base.png"
+        "image": "images/forms/bonesky-basic-form-base.png",
+        "abilities": {
+          "Ice": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -2784,7 +3866,15 @@
             "Ice": 1,
             "Dark": 1
           },
-          "image": "images/forms/bonesky-nighttime-form.png"
+          "image": "images/forms/bonesky-nighttime-form.png",
+          "abilities": {
+            "Ice": 1,
+            "Dark": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -2827,7 +3917,14 @@
         "elements": {
           "Ice": 2
         },
-        "image": "images/forms/fenrier-basic-form-base.png"
+        "image": "images/forms/fenrier-basic-form-base.png",
+        "abilities": {
+          "Ice": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -2839,7 +3936,15 @@
             "Ice": 2,
             "Dark": 1
           },
-          "image": "images/forms/fenrier-nighttime-form.png"
+          "image": "images/forms/fenrier-nighttime-form.png",
+          "abilities": {
+            "Ice": 2,
+            "Dark": 1,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -2882,7 +3987,14 @@
         "elements": {
           "Ice": 3
         },
-        "image": "images/forms/glynsera-basic-form-base.png"
+        "image": "images/forms/glynsera-basic-form-base.png",
+        "abilities": {
+          "Ice": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [
         {
@@ -2894,7 +4006,15 @@
             "Ice": 3,
             "Dark": 2
           },
-          "image": "images/forms/glynsera-nighttime-form.png"
+          "image": "images/forms/glynsera-nighttime-form.png",
+          "abilities": {
+            "Ice": 3,
+            "Dark": 2,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Artisanship": 2
+          }
         }
       ],
       "weather": [],
@@ -2906,7 +4026,14 @@
         "elements": {
           "Ice": 4
         },
-        "image": "images/forms/glynsera-prismana.png"
+        "image": "images/forms/glynsera-prismana.png",
+        "abilities": {
+          "Ice": 4,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       }
     },
     "all_form_names": [
@@ -2947,7 +4074,14 @@
         "elements": {
           "Lightning": 1
         },
-        "image": "images/forms/bolty-basic-form-base.png"
+        "image": "images/forms/bolty-basic-form-base.png",
+        "abilities": {
+          "Lightning": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -2958,7 +4092,14 @@
           "elements": {
             "Lightning": 1
           },
-          "image": "images/forms/bolty-mountain-woods-form.png"
+          "image": "images/forms/bolty-mountain-woods-form.png",
+          "abilities": {
+            "Lightning": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -3001,7 +4142,16 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "images/forms/blazen-basic-form-base.png"
+        "image": "images/forms/blazen-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Artisanship": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -3012,7 +4162,16 @@
           "elements": {
             "Lightning": 3
           },
-          "image": "images/forms/blazen-mountain-woods-form.png"
+          "image": "images/forms/blazen-mountain-woods-form.png",
+          "abilities": {
+            "Lightning": 3,
+            "Artisanship": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 2,
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -3024,7 +4183,16 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "images/forms/blazen-prismana.png"
+        "image": "images/forms/blazen-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Artisanship": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 3
+        }
       }
     },
     "all_form_names": [
@@ -3065,7 +4233,14 @@
         "elements": {
           "Fire": 1
         },
-        "image": "images/forms/squarrel-basic-form.png"
+        "image": "images/forms/squarrel-basic-form.png",
+        "abilities": {
+          "Fire": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -3107,7 +4282,16 @@
         "elements": {
           "Fire": 2
         },
-        "image": "images/forms/squashel-basic-form.png"
+        "image": "images/forms/squashel-basic-form.png",
+        "abilities": {
+          "Fire": 2,
+          "Artisanship": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -3149,7 +4333,14 @@
         "elements": {
           "Water": 1
         },
-        "image": "images/forms/susuta-basic-form-base.png"
+        "image": "images/forms/susuta-basic-form-base.png",
+        "abilities": {
+          "Water": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -3160,7 +4351,14 @@
           "elements": {
             "Water": 1
           },
-          "image": "images/forms/susuta-nighttime-form.png"
+          "image": "images/forms/susuta-nighttime-form.png",
+          "abilities": {
+            "Water": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         },
         {
           "form_name": "Basic Form (variant record)",
@@ -3170,7 +4368,14 @@
           "elements": {
             "Water": 1
           },
-          "image": "images/forms/susuta-basic-form-variant-record.png"
+          "image": "images/forms/susuta-basic-form-variant-record.png",
+          "abilities": {
+            "Water": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -3214,7 +4419,16 @@
         "elements": {
           "Water": 2
         },
-        "image": "images/forms/popota-basic-form-base.png"
+        "image": "images/forms/popota-basic-form-base.png",
+        "abilities": {
+          "Water": 2,
+          "Carry": 2,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Carry": 2,
+          "Leisure": 1
+        }
       },
       "regional": [
         {
@@ -3225,7 +4439,16 @@
           "elements": {
             "Water": 2
           },
-          "image": "images/forms/popota-nighttime-form.png"
+          "image": "images/forms/popota-nighttime-form.png",
+          "abilities": {
+            "Water": 2,
+            "Carry": 2,
+            "Leisure": 1
+          },
+          "utilities": {
+            "Carry": 2,
+            "Leisure": 1
+          }
         }
       ],
       "weather": [],
@@ -3268,7 +4491,14 @@
         "elements": {
           "Water": 3
         },
-        "image": "images/forms/piopiota-basic-form-base.png"
+        "image": "images/forms/piopiota-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Perfumery": 2
+        },
+        "utilities": {
+          "Perfumery": 2
+        }
       },
       "regional": [
         {
@@ -3280,7 +4510,15 @@
             "Water": 3,
             "Dark": 2
           },
-          "image": "images/forms/piopiota-nighttime-form.png"
+          "image": "images/forms/piopiota-nighttime-form.png",
+          "abilities": {
+            "Water": 3,
+            "Dark": 2,
+            "Perfumery": 2
+          },
+          "utilities": {
+            "Perfumery": 2
+          }
         }
       ],
       "weather": [],
@@ -3323,7 +4561,14 @@
         "elements": {
           "Water": 3
         },
-        "image": "images/forms/panpanta-basic-form-base.png"
+        "image": "images/forms/panpanta-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       },
       "regional": [
         {
@@ -3334,7 +4579,14 @@
           "elements": {
             "Water": 3
           },
-          "image": "images/forms/panpanta-nighttime-form.png"
+          "image": "images/forms/panpanta-nighttime-form.png",
+          "abilities": {
+            "Water": 3,
+            "Carry": 3
+          },
+          "utilities": {
+            "Carry": 3
+          }
         }
       ],
       "weather": [],
@@ -3346,7 +4598,14 @@
         "elements": {
           "Water": 4
         },
-        "image": "images/forms/panpanta-prismana.png"
+        "image": "images/forms/panpanta-prismana.png",
+        "abilities": {
+          "Water": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
       }
     },
     "all_form_names": [
@@ -3387,7 +4646,14 @@
         "elements": {
           "Water": 1
         },
-        "image": "images/forms/shelly-basic-form-base.png"
+        "image": "images/forms/shelly-basic-form-base.png",
+        "abilities": {
+          "Water": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -3398,7 +4664,14 @@
           "elements": {
             "Water": 1
           },
-          "image": "images/shelly.png"
+          "image": "images/shelly.png",
+          "abilities": {
+            "Water": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -3441,7 +4714,14 @@
         "elements": {
           "Water": 2
         },
-        "image": "images/forms/sheldon-basic-form.png"
+        "image": "images/forms/sheldon-basic-form.png",
+        "abilities": {
+          "Water": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -3483,7 +4763,14 @@
         "elements": {
           "Water": 3
         },
-        "image": "images/forms/sherro-basic-form-base.png"
+        "image": "images/forms/sherro-basic-form-base.png",
+        "abilities": {
+          "Water": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [],
       "weather": [
@@ -3496,7 +4783,15 @@
             "Water": 3,
             "Lightning": 2
           },
-          "image": "images/forms/sherro-thunderstorm-form.png"
+          "image": "images/forms/sherro-thunderstorm-form.png",
+          "abilities": {
+            "Water": 3,
+            "Lightning": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
       "prismana": {
@@ -3507,7 +4802,14 @@
         "elements": {
           "Water": 4
         },
-        "image": "images/forms/sherro-prismana.png"
+        "image": "images/forms/sherro-prismana.png",
+        "abilities": {
+          "Water": 4,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       }
     },
     "all_form_names": [
@@ -3549,7 +4851,16 @@
         "elements": {
           "Earth": 1
         },
-        "image": "images/forms/baleetle-basic-form-base.png"
+        "image": "images/forms/baleetle-basic-form-base.png",
+        "abilities": {
+          "Earth": 1,
+          "Carry": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Carry": 1,
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -3561,7 +4872,17 @@
             "Earth": 1,
             "Ice": 1
           },
-          "image": "images/forms/baleetle-snowfield-form.png"
+          "image": "images/forms/baleetle-snowfield-form.png",
+          "abilities": {
+            "Earth": 1,
+            "Ice": 1,
+            "Carry": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 1,
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -3605,7 +4926,16 @@
         "elements": {
           "Earth": 3
         },
-        "image": "images/forms/waleetle-basic-form-base.png"
+        "image": "images/forms/waleetle-basic-form-base.png",
+        "abilities": {
+          "Earth": 3,
+          "Artisanship": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -3617,7 +4947,17 @@
             "Earth": 3,
             "Ice": 2
           },
-          "image": "images/forms/waleetle-snowfield-form.png"
+          "image": "images/forms/waleetle-snowfield-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Ice": 2,
+            "Artisanship": 3,
+            "Carry": 2
+          },
+          "utilities": {
+            "Artisanship": 3,
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -3629,7 +4969,16 @@
         "elements": {
           "Earth": 4
         },
-        "image": "images/forms/waleetle-prismana.png"
+        "image": "images/forms/waleetle-prismana.png",
+        "abilities": {
+          "Earth": 4,
+          "Artisanship": 4,
+          "Carry": 3
+        },
+        "utilities": {
+          "Artisanship": 4,
+          "Carry": 3
+        }
       }
     },
     "all_form_names": [
@@ -3671,7 +5020,14 @@
         "elements": {
           "Earth": 3
         },
-        "image": "images/forms/bouldus-basic-form-base.png"
+        "image": "images/forms/bouldus-basic-form-base.png",
+        "abilities": {
+          "Earth": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       },
       "regional": [
         {
@@ -3683,7 +5039,17 @@
             "Earth": 3,
             "Ice": 2
           },
-          "image": "images/forms/bouldus-snowfield-form.png"
+          "image": "images/forms/bouldus-snowfield-form.png",
+          "abilities": {
+            "Earth": 3,
+            "Ice": 2,
+            "Carry": 3,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -3726,7 +5092,16 @@
         "elements": {
           "Lightning": 1
         },
-        "image": "images/forms/fentuft-basic-form.png"
+        "image": "images/forms/fentuft-basic-form.png",
+        "abilities": {
+          "Lightning": 1,
+          "Carry": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Carry": 1,
+          "Artisanship": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -3768,7 +5143,16 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "images/forms/fenmane-basic-form-base.png"
+        "image": "images/forms/fenmane-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Artisanship": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -3780,7 +5164,16 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "images/forms/fenmane-prismana.png"
+        "image": "images/forms/fenmane-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Artisanship": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Carry": 3
+        }
       }
     },
     "all_form_names": [
@@ -3818,7 +5211,14 @@
         "elements": {
           "Dark": 1
         },
-        "image": "images/forms/helmut-basic-form-base.png"
+        "image": "images/forms/helmut-basic-form-base.png",
+        "abilities": {
+          "Dark": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Artisanship": 1
+        }
       },
       "regional": [
         {
@@ -3830,7 +5230,15 @@
             "Dark": 1,
             "Ice": 1
           },
-          "image": "images/forms/helmut-snowfield-form.png"
+          "image": "images/forms/helmut-snowfield-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Ice": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -3840,7 +5248,14 @@
           "elements": {
             "Dark": 1
           },
-          "image": "images/forms/helmut-mountain-woods-form.png"
+          "image": "images/forms/helmut-mountain-woods-form.png",
+          "abilities": {
+            "Dark": 1,
+            "Artisanship": 1
+          },
+          "utilities": {
+            "Artisanship": 1
+          }
         }
       ],
       "weather": [],
@@ -3882,7 +5297,14 @@
         "elements": {
           "Dark": 3
         },
-        "image": "images/forms/pawney-basic-form-base.png"
+        "image": "images/forms/pawney-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       },
       "regional": [
         {
@@ -3894,7 +5316,15 @@
             "Dark": 3,
             "Ice": 2
           },
-          "image": "images/forms/pawney-snowfield-form.png"
+          "image": "images/forms/pawney-snowfield-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Ice": 2,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -3904,7 +5334,14 @@
           "elements": {
             "Dark": 3
           },
-          "image": "images/forms/pawney-mountain-woods-form.png"
+          "image": "images/forms/pawney-mountain-woods-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         }
       ],
       "weather": [],
@@ -3916,7 +5353,14 @@
         "elements": {
           "Dark": 4
         },
-        "image": "images/forms/pawney-prismana.png"
+        "image": "images/forms/pawney-prismana.png",
+        "abilities": {
+          "Dark": 4,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
       }
     },
     "all_form_names": [
@@ -3956,7 +5400,14 @@
         "elements": {
           "Dark": 3
         },
-        "image": "images/forms/rookey-basic-form-base.png"
+        "image": "images/forms/rookey-basic-form-base.png",
+        "abilities": {
+          "Dark": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       },
       "regional": [
         {
@@ -3968,7 +5419,15 @@
             "Dark": 3,
             "Ice": 2
           },
-          "image": "images/forms/rookey-snowfield-form.png"
+          "image": "images/forms/rookey-snowfield-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Ice": 2,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         },
         {
           "form_name": "Mountain Woods Form",
@@ -3978,7 +5437,14 @@
           "elements": {
             "Dark": 3
           },
-          "image": "images/forms/rookey-mountain-woods-form.png"
+          "image": "images/forms/rookey-mountain-woods-form.png",
+          "abilities": {
+            "Dark": 3,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         }
       ],
       "weather": [],
@@ -4021,7 +5487,14 @@
         "elements": {
           "Wind": 1
         },
-        "image": "images/forms/jawling-basic-form-base.png"
+        "image": "images/forms/jawling-basic-form-base.png",
+        "abilities": {
+          "Wind": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [
         {
@@ -4032,7 +5505,14 @@
           "elements": {
             "Wind": 1
           },
-          "image": "images/forms/jawling-mountain-form.png"
+          "image": "images/forms/jawling-mountain-form.png",
+          "abilities": {
+            "Wind": 1,
+            "Carry": 1
+          },
+          "utilities": {
+            "Carry": 1
+          }
         }
       ],
       "weather": [],
@@ -4074,7 +5554,14 @@
         "elements": {
           "Wind": 2
         },
-        "image": "images/forms/helmwhelp-basic-form-base.png"
+        "image": "images/forms/helmwhelp-basic-form-base.png",
+        "abilities": {
+          "Wind": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [
         {
@@ -4085,7 +5572,14 @@
           "elements": {
             "Wind": 2
           },
-          "image": "images/forms/helmwhelp-mountain-form.png"
+          "image": "images/forms/helmwhelp-mountain-form.png",
+          "abilities": {
+            "Wind": 2,
+            "Carry": 2
+          },
+          "utilities": {
+            "Carry": 2
+          }
         }
       ],
       "weather": [],
@@ -4127,7 +5621,16 @@
         "elements": {
           "Wind": 3
         },
-        "image": "images/forms/helgon-basic-form-base.png"
+        "image": "images/forms/helgon-basic-form-base.png",
+        "abilities": {
+          "Wind": 3,
+          "Carry": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Carry": 3,
+          "Artisanship": 2
+        }
       },
       "regional": [
         {
@@ -4138,7 +5641,16 @@
           "elements": {
             "Wind": 3
           },
-          "image": "images/forms/helgon-mountain-form.png"
+          "image": "images/forms/helgon-mountain-form.png",
+          "abilities": {
+            "Wind": 3,
+            "Carry": 3,
+            "Artisanship": 2
+          },
+          "utilities": {
+            "Carry": 3,
+            "Artisanship": 2
+          }
         }
       ],
       "weather": [],
@@ -4181,7 +5693,14 @@
         "elements": {
           "Fire": 3
         },
-        "image": "images/forms/infergon-basic-form-base.png"
+        "image": "images/forms/infergon-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       },
       "regional": [],
       "weather": [],
@@ -4194,7 +5713,15 @@
           "Fire": 4,
           "Wind": 3
         },
-        "image": "images/forms/infergon-prismana.png"
+        "image": "images/forms/infergon-prismana.png",
+        "abilities": {
+          "Fire": 4,
+          "Wind": 3,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
       }
     },
     "all_form_names": [
@@ -4235,7 +5762,14 @@
         "elements": {
           "Earth": 1
         },
-        "image": "images/forms/cubbo-basic-form.png"
+        "image": "images/forms/cubbo-basic-form.png",
+        "abilities": {
+          "Earth": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -4278,7 +5812,14 @@
         "elements": {
           "Earth": 3
         },
-        "image": "images/forms/grizbo-basic-form-base.png"
+        "image": "images/forms/grizbo-basic-form-base.png",
+        "abilities": {
+          "Earth": 3,
+          "Carry": 3
+        },
+        "utilities": {
+          "Carry": 3
+        }
       },
       "regional": [],
       "weather": [],
@@ -4290,7 +5831,14 @@
         "elements": {
           "Earth": 4
         },
-        "image": "images/forms/grizbo-prismana.png"
+        "image": "images/forms/grizbo-prismana.png",
+        "abilities": {
+          "Earth": 4,
+          "Carry": 4
+        },
+        "utilities": {
+          "Carry": 4
+        }
       }
     },
     "all_form_names": [
@@ -4331,7 +5879,14 @@
         "elements": {
           "Earth": 1
         },
-        "image": "images/forms/pebbling-basic-form.png"
+        "image": "images/forms/pebbling-basic-form.png",
+        "abilities": {
+          "Earth": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -4373,7 +5928,15 @@
           "Fire": 2,
           "Earth": 2
         },
-        "image": "images/forms/lavazar-basic-form.png"
+        "image": "images/forms/lavazar-basic-form.png",
+        "abilities": {
+          "Fire": 2,
+          "Earth": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4415,7 +5978,15 @@
           "Fire": 3,
           "Earth": 2
         },
-        "image": "images/forms/magmarex-basic-form-base.png"
+        "image": "images/forms/magmarex-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Earth": 2,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       },
       "regional": [
         {
@@ -4427,7 +5998,15 @@
             "Fire": 3,
             "Earth": 2
           },
-          "image": "images/forms/magmarex-basic-form-variant-record.png"
+          "image": "images/forms/magmarex-basic-form-variant-record.png",
+          "abilities": {
+            "Fire": 3,
+            "Earth": 2,
+            "Artisanship": 3
+          },
+          "utilities": {
+            "Artisanship": 3
+          }
         }
       ],
       "weather": [],
@@ -4440,7 +6019,15 @@
           "Fire": 4,
           "Dark": 3
         },
-        "image": "images/forms/magmarex-prismana.png"
+        "image": "images/forms/magmarex-prismana.png",
+        "abilities": {
+          "Fire": 4,
+          "Dark": 3,
+          "Artisanship": 4
+        },
+        "utilities": {
+          "Artisanship": 4
+        }
       }
     },
     "all_form_names": [
@@ -4482,7 +6069,16 @@
         "elements": {
           "Earth": 2
         },
-        "image": "images/geodeback.png"
+        "image": "images/geodeback.png",
+        "abilities": {
+          "Earth": 2,
+          "Carry": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Carry": 2,
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4525,7 +6121,16 @@
         "elements": {
           "Earth": 2
         },
-        "image": "images/minespine.png"
+        "image": "images/minespine.png",
+        "abilities": {
+          "Earth": 2,
+          "Carry": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Carry": 3,
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4568,7 +6173,14 @@
         "elements": {
           "Earth": 1
         },
-        "image": "images/forms/cozite-basic-form.png"
+        "image": "images/forms/cozite-basic-form.png",
+        "abilities": {
+          "Earth": 1,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4611,7 +6223,16 @@
         "elements": {
           "Earth": 2
         },
-        "image": "images/forms/bailite-basic-form.png"
+        "image": "images/forms/bailite-basic-form.png",
+        "abilities": {
+          "Earth": 2,
+          "Artisanship": 3,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Artisanship": 3,
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4653,7 +6274,14 @@
         "elements": {
           "Lightning": 1
         },
-        "image": "images/forms/bulbly-basic-form.png"
+        "image": "images/forms/bulbly-basic-form.png",
+        "abilities": {
+          "Lightning": 1,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Leisure": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -4695,7 +6323,16 @@
         "elements": {
           "Lightning": 2
         },
-        "image": "images/forms/veilfloat-basic-form.png"
+        "image": "images/forms/veilfloat-basic-form.png",
+        "abilities": {
+          "Lightning": 2,
+          "Carry": 1,
+          "Artisanship": 1
+        },
+        "utilities": {
+          "Carry": 1,
+          "Artisanship": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -4737,7 +6374,16 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "images/forms/luminelle-basic-form-base.png"
+        "image": "images/forms/luminelle-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Perfumery": 3,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [
@@ -4750,7 +6396,17 @@
             "Lightning": 3,
             "Water": 2
           },
-          "image": "images/forms/luminelle-rainstorm-form.png"
+          "image": "images/forms/luminelle-rainstorm-form.png",
+          "abilities": {
+            "Lightning": 3,
+            "Water": 2,
+            "Perfumery": 3,
+            "Leisure": 2
+          },
+          "utilities": {
+            "Perfumery": 3,
+            "Leisure": 2
+          }
         }
       ],
       "prismana": {
@@ -4761,7 +6417,16 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "images/forms/luminelle-prismana.png"
+        "image": "images/forms/luminelle-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Perfumery": 4,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Perfumery": 4,
+          "Leisure": 3
+        }
       }
     },
     "all_form_names": [
@@ -4802,7 +6467,14 @@
         "elements": {
           "Water": 1
         },
-        "image": "images/forms/fahloo-basic-form.png"
+        "image": "images/forms/fahloo-basic-form.png",
+        "abilities": {
+          "Water": 1,
+          "Carry": 1
+        },
+        "utilities": {
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -4844,7 +6516,16 @@
         "elements": {
           "Water": 2
         },
-        "image": "images/forms/erlath-basic-form.png"
+        "image": "images/forms/erlath-basic-form.png",
+        "abilities": {
+          "Water": 2,
+          "Leisure": 2,
+          "Carry": 2
+        },
+        "utilities": {
+          "Leisure": 2,
+          "Carry": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4886,7 +6567,14 @@
         "elements": {
           "Lightning": 2
         },
-        "image": "images/besauce.png"
+        "image": "images/besauce.png",
+        "abilities": {
+          "Lightning": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4928,7 +6616,16 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "images/dazmand.png"
+        "image": "images/dazmand.png",
+        "abilities": {
+          "Lightning": 3,
+          "Carry": 2,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Carry": 2,
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4970,7 +6667,14 @@
         "elements": {
           "Lightning": 3
         },
-        "image": "images/forms/fulmintis-basic-form-base.png"
+        "image": "images/forms/fulmintis-basic-form-base.png",
+        "abilities": {
+          "Lightning": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -4982,7 +6686,14 @@
         "elements": {
           "Lightning": 4
         },
-        "image": "images/forms/fulmintis-prismana.png"
+        "image": "images/forms/fulmintis-prismana.png",
+        "abilities": {
+          "Lightning": 4,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       }
     },
     "all_form_names": [
@@ -5019,7 +6730,14 @@
         "elements": {
           "Light": 2
         },
-        "image": "images/fennelun.png"
+        "image": "images/fennelun.png",
+        "abilities": {
+          "Light": 2,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -5058,7 +6776,14 @@
         "elements": {
           "Light": 3
         },
-        "image": "images/lunara.png"
+        "image": "images/lunara.png",
+        "abilities": {
+          "Light": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
       },
       "regional": [],
       "weather": [],
@@ -5097,7 +6822,14 @@
         "elements": {
           "Light": 3
         },
-        "image": "images/soleon.png"
+        "image": "images/soleon.png",
+        "abilities": {
+          "Light": 3,
+          "Leisure": 3
+        },
+        "utilities": {
+          "Leisure": 3
+        }
       },
       "regional": [],
       "weather": [],
@@ -5136,7 +6868,14 @@
         "elements": {
           "Light": 2
         },
-        "image": "images/helion.png"
+        "image": "images/helion.png",
+        "abilities": {
+          "Light": 2,
+          "Leisure": 2
+        },
+        "utilities": {
+          "Leisure": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -5171,7 +6910,16 @@
         "elements": {
           "Light": 2
         },
-        "image": "images/morphling.png"
+        "image": "images/morphling.png",
+        "abilities": {
+          "Light": 2,
+          "Artisanship": 2,
+          "Carry": 1
+        },
+        "utilities": {
+          "Artisanship": 2,
+          "Carry": 1
+        }
       },
       "regional": [],
       "weather": [],
@@ -5213,7 +6961,14 @@
         "elements": {
           "Water": 3
         },
-        "image": "images/jabster.png"
+        "image": "images/jabster.png",
+        "abilities": {
+          "Water": 3,
+          "Carry": 2
+        },
+        "utilities": {
+          "Carry": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -5255,7 +7010,14 @@
         "elements": {
           "Fire": 3
         },
-        "image": "images/forms/sparkelf-basic-form-base.png"
+        "image": "images/forms/sparkelf-basic-form-base.png",
+        "abilities": {
+          "Fire": 3,
+          "Artisanship": 2
+        },
+        "utilities": {
+          "Artisanship": 2
+        }
       },
       "regional": [],
       "weather": [],
@@ -5267,7 +7029,14 @@
         "elements": {
           "Fire": 4
         },
-        "image": "images/forms/sparkelf-prismana.png"
+        "image": "images/forms/sparkelf-prismana.png",
+        "abilities": {
+          "Fire": 4,
+          "Artisanship": 3
+        },
+        "utilities": {
+          "Artisanship": 3
+        }
       }
     },
     "all_form_names": [
@@ -5304,7 +7073,16 @@
         "elements": {
           "Grass": 3
         },
-        "image": "images/irisalis.png"
+        "image": "images/irisalis.png",
+        "abilities": {
+          "Grass": 3,
+          "Perfumery": 3,
+          "Leisure": 1
+        },
+        "utilities": {
+          "Perfumery": 3,
+          "Leisure": 1
+        }
       },
       "regional": [],
       "weather": [],

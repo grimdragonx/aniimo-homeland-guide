@@ -1,77 +1,65 @@
-# 🏡 Aniimo Homeland Master Platform
+# 🐾 Aniimo Homeland Master Guide & Interactive Hub
 
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
-[![Express REST API](https://img.shields.io/badge/express-4.21.2-blue.svg)](https://expressjs.com/)
-[![Verified Species](https://img.shields.io/badge/Aniimodex-92%20Total%20Aniimo-orange.svg)](https://www.dexerto.com/wikis/aniimo/aniimodex/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Aniimo Homeland Banner](public/images/001.png)
 
-A modern, full-stack **Aniimo Homeland Master Platform** built with **Node.js, Express, and modern JavaScript**. Features the complete canonical catalog of all **92 Aniimo species** (82 numbered `#001`–`#082` in active Dex + 10 unnumbered `#????` species), official creature handbook artwork, verified **Basic, Regional, Weather, and Prismana forms**, and elemental workplace proficiencies.
+> **Canonical Edition:** 82 Numbered Species (`#001`–`#082`) + 10 Discovered Species (`#????`) • 200+ Verified Forms • Node.js & Express REST Platform  
+> **Live Repository:** [github.com/grimdragonx/aniimo-homeland-guide](https://github.com/grimdragonx/aniimo-homeland-guide)  
 
 ---
 
-## 🌟 Key Highlights
+## ✨ Highlights & Features
 
-1. **All 92 Aniimo with Real Data (82 Numbered + 10 `#????`):**
-   - Numbered species `#001 Emberpup` to `#082 Besauce` match the current in-game numbered Dex.
-   - Species whose Dex number has not yet been assigned in the release Dex (Dazmand, Fulmintis, Fennelun, Lunara, Soleon, Helion, Morphling, Jabster, Sparkelf, Irisalis) are displayed with their authentic names, images, traits, and forms, marked as **`#????`** so players won't be confused.
-2. **Pure Elemental System:**
-   - Workplace proficiencies are displayed directly as **Elements & Elemental Levels** (`Fire Lv.1`, `Earth Lv.1`, `Ice Lv.3`, `Dark Lv.2`, `Grass Lv.3`, etc.), matching official game mechanics.
-3. **Fact-Checked Forms:**
-   - Zero fictional forms (Emberpup has Basic, Highland, and Mountain Woods; Glynsera has Basic, Nighttime, and Prismana).
-   - **Somniwing (#030)** verified as the authentic Prismana Form evolution of the Flutternym line.
-4. **Official Creature Artwork:**
-   - 296 local high-resolution PNG creature portraits and form images served from `/images/`.
-5. **Interactive Modern Web Dashboard:**
-   - Live search by ID, name, element, trait, or region.
-   - Dynamic form tab switcher that updates artwork, catch rates, and elemental proficiencies in real-time.
-   - Comprehensive creature inspection modal with elemental matchups and complete form comparison tables.
-6. **Express REST API:**
-   - `/api/aniimo`: Query creatures with element, tier, and form filters.
-   - `/api/aniimo/:id`: Retrieve single creature profile (by ID, slug, or name).
-   - `/api/elements`: Canonical element reference.
-   - `/api/stats`: Live aggregate database statistics.
+- **Comprehensive 92-Species Roster:**
+  - **82 Numbered Species (`#001`–`#082`):** Fact-checked with official in-game Pokédex / Aniimodex ordering.
+  - **10 Discovered Species (`#????`):** Discovered species (Dazmand, Fulmintis, Fennelun, Lunara, Soleon, Helion, Morphling, Jabster, Sparkelf, Irisalis) displayed with real handbook artwork, traits, and abilities under `#????`.
+- **Homeland Utility Roles & Elemental Affinities:**
+  - **📦 Carry:** Logistics hauling, material transport, and depot stocking.
+  - **🔨 Artisanship:** Workbench assembly, RV chassis fabrication, and construction.
+  - **☕ Leisure:** Camp morale preservation and worker sanity recovery.
+  - **🌸 Perfumery:** Botanical distillation, scent dispersion, and fertilizer creation.
+  - **Elemental Affinities:** Fire, Water, Grass, Earth, Lightning, Ice, Wind, Dark, Light.
+- **High-Resolution Official Artwork:**
+  - 290+ official creature handbook and form illustrations in `public/images/`.
+  - Automatic resilient fallback mechanism (`slug.png` ➔ `id.png` ➔ `unknown.png`).
+- **Modern Interactive Web Hub:**
+  - Real-time search by name, ID, slug, trait, or native region.
+  - Filter by Homeland Utilities and Elemental Affinities with minimum level selection.
+  - Quick filter buttons (`Standard`, `🗺️ Regional`, `⚡ Weather`, `🌈 Prismana`, `🔒 #???? Unnumbered`).
+  - Interactive modal dialogs with full multi-form breakdown tables.
 
 ---
 
 ## 🚀 Quick Start Guide
 
-### 1. Requirements
-- Node.js (v18.0.0 or higher)
-- npm (v9.0.0 or higher)
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher)
 
-### 2. Installation
+### Installation & Execution
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/grimdragonx/aniimo-homeland-guide.git
-
-# Navigate to project folder
 cd aniimo-homeland-guide
 
-# Install dependencies
+# 2. Install dependencies
 npm install
-```
 
-### 3. Launch Server
-```bash
+# 3. Start the Node.js server
 npm start
+
+# 4. Open in browser
+# http://localhost:3000
 ```
-The server will boot on `http://localhost:3000`:
-- **Web UI:** [http://localhost:3000](http://localhost:3000)
-- **REST API:** [http://localhost:3000/api/aniimo](http://localhost:3000/api/aniimo)
-- **Live Stats:** [http://localhost:3000/api/stats](http://localhost:3000/api/stats)
 
 ---
 
-## 📡 REST API Reference
+## 📂 Documentation Directory
 
-| Endpoint | Method | Query Parameters | Description |
-| :--- | :--- | :--- | :--- |
-| `/api/aniimo` | `GET` | `search`, `tier`, `element`, `minLevel`, `form`, `dexStatus` | Query creatures with elemental filters |
-| `/api/aniimo/:id`| `GET` | `id` (e.g. `001`, `044`, `dazmand`, `fulmintis`) | Retrieve single creature profile |
-| `/api/elements` | `GET` | None | List of elements and Homeland workstations |
-| `/api/stats` | `GET` | None | Live aggregate database statistics |
+- 📖 **[ANIIMO_DATABASE.md](ANIIMO_DATABASE.md):** Complete catalog of all 92 Aniimo with forms, traits, and Homeland abilities.
+- 🏆 **[BEST_WORKERS_TIER_LIST.md](BEST_WORKERS_TIER_LIST.md):** Worker tier rankings for Carry, Artisanship, Leisure, Perfumery, and all Elements.
+- 🏡 **[HOMELAND_GUIDE.md](HOMELAND_GUIDE.md):** Strategic mechanics guide for base layout, weather synergies, and sanity management.
 
 ---
 
-## 📜 License
-Distributed under the MIT License. Data credited to Pawprint Studio and Dexerto Aniimo Wiki.
+## 📄 License & Attribution
+
+Created for the *Aniimo* player community. All creature names, artworks, and handbook data are the intellectual property of their respective creators.

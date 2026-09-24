@@ -77,27 +77,35 @@
         </div>
 
         <div class="filter-col">
-          <label>Element Affinity</label>
+          <label>Homeland Ability / Element</label>
           <select id="elementFilter">
-            <option value="all">All Elements</option>
-            <option value="Fire">🔥 Fire (Smelting & Cooking)</option>
-            <option value="Water">💧 Water (Irrigation & Aquaculture)</option>
-            <option value="Grass">🌱 Grass (Planting & Forestry)</option>
-            <option value="Earth">⛰️ Earth (Mining & Masonry)</option>
-            <option value="Lightning">⚡ Lightning (Power Generation)</option>
-            <option value="Ice">❄️ Ice (Cold Storage & Preservation)</option>
-            <option value="Wind">🍃 Wind (Milling & Transport)</option>
-            <option value="Dark">🌑 Dark (Night Shift Operations)</option>
-            <option value="Light">✨ Light (Base Illumination)</option>
+            <option value="all">All Abilities & Elements</option>
+            <optgroup label="Homeland Utility Roles">
+              <option value="Carry">📦 Carry (Hauling & Depot Logistics)</option>
+              <option value="Artisanship">🔨 Artisanship (Crafting & Assembly)</option>
+              <option value="Leisure">☕ Leisure (Camp Morale & Recovery)</option>
+              <option value="Perfumery">🌸 Perfumery (Aromatics & Alchemy)</option>
+            </optgroup>
+            <optgroup label="Elemental Affinities">
+              <option value="Fire">🔥 Fire (Smelting & Campfire Cooking)</option>
+              <option value="Water">💧 Water (Farmland Irrigation & Brewing)</option>
+              <option value="Grass">🌱 Grass (Crop Planting & Logging)</option>
+              <option value="Earth">⛰️ Earth (Quarry Mining & Masonry)</option>
+              <option value="Lightning">⚡ Lightning (Dynamo Power Grid)</option>
+              <option value="Ice">❄️ Ice (Cold Storage & Food Preservation)</option>
+              <option value="Wind">🍃 Wind (Grain Milling & Logistics)</option>
+              <option value="Dark">🌑 Dark (Night Shift Uninterrupted Labor)</option>
+              <option value="Light">✨ Light (Radiant Illumination & Warmth)</option>
+            </optgroup>
           </select>
         </div>
 
         <div class="filter-col">
-          <label>Min Element Level</label>
+          <label>Min Ability Level</label>
           <select id="minLevelFilter">
             <option value="1">Level 1+ (Any Proficiency)</option>
-            <option value="2">Level 2+ (Skilled)</option>
-            <option value="3">Level 3+ (Expert)</option>
+            <option value="2">Level 2+ (Skilled Worker)</option>
+            <option value="3">Level 3+ (Expert Worker)</option>
             <option value="4">Level 4 (Master / Apex)</option>
           </select>
         </div>

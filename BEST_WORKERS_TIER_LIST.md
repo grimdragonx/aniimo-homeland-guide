@@ -1,141 +1,133 @@
-# 🏆 Best Elemental Workers Tier List for Aniimo Homeland
+# 🏆 Aniimo Homeland Best Workers & Specialist Tier List
 
-> **Structure:** Organized by Elemental Affinity (Fire, Water, Grass, Earth, Lightning, Ice, Wind, Dark, Light).  
-> **Scope:** Covers all 92 Aniimo (including #001–#082 and #???? unnumbered specialists).  
-> **Basis:** Higher element levels unlock higher-tier workstations and accelerate production speeds.
+> **Edition:** Canonical 92-Species Master Guide  
+> **Includes:** Elemental Proficiencies & Homeland Utilities (**Carry**, **Artisanship**, **Leisure**, **Perfumery**)  
 
 ---
 
-## 🛠️ Elemental Homeland Specialists
+## 📦 1. Top Haulers & Logistics Workers (Carry)
 
-### 🔥 Fire Element Specialists
-*Operates blast furnaces, cooking campfires, ingot smelters, and kindling.*
+Workers assigned to **Carry** automatically gather harvested produce, mined ores, lumber, and crafted items from output bins and transport them to storage chests.
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#003` | **Scorchhowl** | Prismana | **Fire Lv.4** | Scorching Flames | Beast Fang Ridge |
-| ⭐ S-Rank | `#067` | **Infergon** | Prismana | **Fire Lv.4** | Power of Fire | Idyll Native Habitat |
-| ⭐ S-Rank | `#072` | **Magmarex** | Prismana | **Fire Lv.4** | Pyro Charge | Zephyrus Landbridge |
-| ⭐ S-Rank | `#????` | **Sparkelf** | Prismana | **Fire Lv.4** | Reliable Fire Companion | Idyll Native Habitat |
-| 🥇 A-Rank | `#003` | **Scorchhowl** | Basic Form (base) | **Fire Lv.3** | Scorching Flames | Beast Fang Ridge |
-| 🥇 A-Rank | `#003` | **Scorchhowl** | Highland Form | **Fire Lv.3** | Scorching Flames | Idyll Native Habitat |
-| 🥇 A-Rank | `#003` | **Scorchhowl** | Mountain Woods Form | **Fire Lv.3** | Scorching Flames | Idyll Native Habitat |
-| 🥇 A-Rank | `#003` | **Scorchhowl** | Thunderstorm Form | **Fire Lv.3** | Scorching Flames | Beast Fang Ridge |
-| 🥇 A-Rank | `#004` | **Inferlupa** | Prismana | **Fire Lv.3** | Full Energy | Idyll Native Habitat |
+| Aniimo | Dex # | Carry Level | Complementary Abilities | Best Station |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tubster** | `#010` | **Lv.3** 📦 | Wind Lv.3 | Central Warehouse / Field Depot |
+| **Panpanta** | `#052` | **Lv.3** 📦 | Water Lv.3 | Central Warehouse / Field Depot |
+| **Bouldus** | `#058` | **Lv.3** 📦 | Earth Lv.3 | Central Warehouse / Field Depot |
+| **Helgon** | `#066` | **Lv.3** 📦 | Wind Lv.3, Artisanship Lv.2 | Central Warehouse / Field Depot |
+| **Grizbo** | `#069` | **Lv.3** 📦 | Earth Lv.3 | Central Warehouse / Field Depot |
+| **Minespine** | `#074` | **Lv.3** 📦 | Earth Lv.2, Artisanship Lv.2 | Central Warehouse / Field Depot |
+| **Flameruff** | `#002` | **Lv.2** 📦 | Fire Lv.2, Artisanship Lv.1 | Central Warehouse / Field Depot |
+| **Scorchhowl** | `#003` | **Lv.2** 📦 | Fire Lv.3, Artisanship Lv.2 | Central Warehouse / Field Depot |
+| **Tromber** | `#008` | **Lv.2** 📦 | Wind Lv.3, Leisure Lv.3 | Central Warehouse / Field Depot |
+| **Cornet** | `#009` | **Lv.2** 📦 | Wind Lv.3, Artisanship Lv.2 | Central Warehouse / Field Depot |
+| **Tuckin** | `#022` | **Lv.2** 📦 | Grass Lv.3 | Central Warehouse / Field Depot |
+| **Geoclaw** | `#025` | **Lv.2** 📦 | Ice Lv.2 | Central Warehouse / Field Depot |
 
-### 💧 Water Element Specialists
-*Hydrates farmland crops, powers beverage kegs, aquaculture, and pond filtration.*
+---
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#015` | **Glacy** | Prismana | **Water Lv.4** | Water Spirit | Driftwise Meadow |
-| ⭐ S-Rank | `#052` | **Panpanta** | Prismana | **Water Lv.4** | Appeal | Echoback Landing |
-| ⭐ S-Rank | `#055` | **Sherro** | Prismana | **Water Lv.4** | Tidal Heart | Idyll Native Habitat |
-| 🥇 A-Rank | `#015` | **Glacy** | Basic Form (base) | **Water Lv.3** | Water Spirit | Idyll Native Habitat |
-| 🥇 A-Rank | `#015` | **Glacy** | Sea of Flowers Form | **Water Lv.3** | Water Spirit | Sea of Flowers |
-| 🥇 A-Rank | `#015` | **Glacy** | Snowfield Form | **Water Lv.3** | Water Spirit | Driftwise Meadow |
-| 🥇 A-Rank | `#034` | **Thornblade** | Prismana | **Water Lv.3** | Sword Dance | Sea of Flowers |
-| 🥇 A-Rank | `#051` | **Piopiota** | Basic Form (base) | **Water Lv.3** | Radiant Charm | Idyll Native Habitat |
-| 🥇 A-Rank | `#051` | **Piopiota** | Nighttime Form | **Water Lv.3** | Radiant Charm | Idyll Native Habitat |
+## 🔨 2. Top Crafters & Assembly Specialists (Artisanship)
 
-### 🌱 Grass Element Specialists
-*Harvests herbal gardens, plants agricultural seeds, and cuts lumber trees.*
+Workers with **Artisanship** accelerate crafting speed at workbenches, forge RV chassis upgrades, machine gears, and maintain structural defenses.
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#012` | **Irisal** | Prismana | **Grass Lv.4** | **Disco Aniimo** | Idyll Native Habitat |
-| ⭐ S-Rank | `#022` | **Tuckin** | Unnamed form | **Grass Lv.4** | Prank Master | Idyll Native Habitat |
-| ⭐ S-Rank | `#034` | **Thornblade** | Prismana | **Grass Lv.4** | Sword Dance | Sea of Flowers |
-| ⭐ S-Rank | `#035` | **Melloblum** | Prismana | **Grass Lv.4** | Phantom Opening | Idyll Native Habitat |
-| 🥇 A-Rank | `#012` | **Irisal** | Basic Form (base) | **Grass Lv.3** | **Disco Aniimo** | Sea of Flowers |
-| 🥇 A-Rank | `#012` | **Irisal** | Highland Form | **Grass Lv.3** | **Disco Aniimo** | Russet Highlands |
-| 🥇 A-Rank | `#012` | **Irisal** | Forest Form | **Grass Lv.3** | **Disco Aniimo** | Forest of Falling Stars |
-| 🥇 A-Rank | `#012` | **Irisal** | Grassland Form | **Grass Lv.3** | **Disco Aniimo** | Blitzwood |
-| 🥇 A-Rank | `#012` | **Irisal** | Mountain Woods Form | **Grass Lv.3** | **Disco Aniimo** | Berylline Vale |
+| Aniimo | Dex # | Artisanship Level | Complementary Abilities | Best Station |
+| :--- | :--- | :--- | :--- | :--- |
+| **Waleetle** | `#057` | **Lv.3** 🔨 | Earth Lv.3, Carry Lv.2 | Mechanical Workbench & RV Forge |
+| **Pawney** | `#062` | **Lv.3** 🔨 | Dark Lv.3 | Mechanical Workbench & RV Forge |
+| **Rookey** | `#063` | **Lv.3** 🔨 | Dark Lv.3 | Mechanical Workbench & RV Forge |
+| **Infergon** | `#067` | **Lv.3** 🔨 | Fire Lv.3 | Mechanical Workbench & RV Forge |
+| **Magmarex** | `#072` | **Lv.3** 🔨 | Fire Lv.3, Earth Lv.2 | Mechanical Workbench & RV Forge |
+| **Bailite** | `#076` | **Lv.3** 🔨 | Earth Lv.2, Leisure Lv.2 | Mechanical Workbench & RV Forge |
+| **Scorchhowl** | `#003` | **Lv.2** 🔨 | Fire Lv.3, Carry Lv.2 | Mechanical Workbench & RV Forge |
+| **Inferlupa** | `#004` | **Lv.2** 🔨 | Dark Lv.3, Fire Lv.2 | Mechanical Workbench & RV Forge |
+| **Cornet** | `#009` | **Lv.2** 🔨 | Wind Lv.3, Carry Lv.2 | Mechanical Workbench & RV Forge |
+| **Pranky** | `#014` | **Lv.2** 🔨 | Water Lv.2 | Mechanical Workbench & RV Forge |
+| **Shrubclaw** | `#024` | **Lv.2** 🔨 | Earth Lv.3, Grass Lv.2 | Mechanical Workbench & RV Forge |
+| **Flamerion** | `#027` | **Lv.2** 🔨 | Fire Lv.3, Carry Lv.1 | Mechanical Workbench & RV Forge |
 
-### ⛰️ Earth Element Specialists
-*Excavates quarry boulders, shapes masonry structures, and mines metal ores.*
+---
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#057` | **Waleetle** | Prismana | **Earth Lv.4** | Overloaded Engine | Idyll Native Habitat |
-| ⭐ S-Rank | `#069` | **Grizbo** | Prismana | **Earth Lv.4** | Raging Rampage | Rosetower Woods |
-| 🥇 A-Rank | `#024` | **Shrubclaw** | Basic Form (base) | **Earth Lv.3** | Stealth | Berylline Vale |
-| 🥇 A-Rank | `#024` | **Shrubclaw** | Mudflat Form | **Earth Lv.3** | Stealth | Tideblossom Coast |
-| 🥇 A-Rank | `#024` | **Shrubclaw** | Beach Form | **Earth Lv.3** | Stealth | Echoback Landing |
-| 🥇 A-Rank | `#024` | **Shrubclaw** | Bay Form | **Earth Lv.3** | Stealth | The Argent Strait |
-| 🥇 A-Rank | `#057` | **Waleetle** | Basic Form (base) | **Earth Lv.3** | Overloaded Engine | Berylline Vale |
-| 🥇 A-Rank | `#057` | **Waleetle** | Snowfield Form | **Earth Lv.3** | Overloaded Engine | Russet Highlands |
-| 🥇 A-Rank | `#058` | **Bouldus** | Basic Form (base) | **Earth Lv.3** | Rock Empowerment | Berylline Vale |
+## ☕ 3. Top Camp Morale & Worker Sanity Restorers (Leisure)
 
-### ⚡ Lightning Element Specialists
-*Powers dynamos, automated defense turrets, factory conveyors, and electric grids.*
+Workers with **Leisure** project relaxing auras that reduce worker stress, accelerate sanity recovery at hot springs or campfires, and prevent worker depression/strikes.
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#046` | **Blazen** | Prismana | **Lightning Lv.4** | Power Sustain | Blitzwood |
-| ⭐ S-Rank | `#060` | **Fenmane** | Prismana | **Lightning Lv.4** | Thunderbond | Idyll Native Habitat |
-| ⭐ S-Rank | `#079` | **Luminelle** | Prismana | **Lightning Lv.4** | Arc Surge | Tideblossom Coast |
-| ⭐ S-Rank | `#????` | **Fulmintis** | Prismana | **Lightning Lv.4** | Electro Stash | Idyll Native Habitat |
-| 🥇 A-Rank | `#009` | **Cornet** | Prismana | **Lightning Lv.3** | Air Superiority | The Argent Strait |
-| 🥇 A-Rank | `#046` | **Blazen** | Basic Form (base) | **Lightning Lv.3** | Power Sustain | Blitzwood |
-| 🥇 A-Rank | `#046` | **Blazen** | Mountain Woods Form | **Lightning Lv.3** | Power Sustain | Idyll Native Habitat |
-| 🥇 A-Rank | `#060` | **Fenmane** | Basic Form (base) | **Lightning Lv.3** | Thunderbond | Driftwise Meadow |
-| 🥇 A-Rank | `#079` | **Luminelle** | Basic Form (base) | **Lightning Lv.3** | Arc Surge | Tideblossom Coast |
+| Aniimo | Dex # | Leisure Level | Complementary Abilities | Best Station |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tromber** | `#008` | **Lv.3** ☕ | Wind Lv.3, Carry Lv.2 | Hot Springs & Camp Relaxation Square |
+| **Lunara** | `#????` | **Lv.3** ☕ | Light Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Soleon** | `#????` | **Lv.3** ☕ | Light Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Stellarys** | `#006` | **Lv.2** ☕ | Dark Lv.3, Carry Lv.1 | Hot Springs & Camp Relaxation Square |
+| **Glacy** | `#015` | **Lv.2** ☕ | Water Lv.3, Ice Lv.2 | Hot Springs & Camp Relaxation Square |
+| **Gracewing** | `#029` | **Lv.2** ☕ | Wind Lv.3, Artisanship Lv.2 | Hot Springs & Camp Relaxation Square |
+| **Melloblum** | `#035` | **Lv.2** ☕ | Grass Lv.3, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Fragrancier** | `#039` | **Lv.2** ☕ | Dark Lv.2, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Cozite** | `#075` | **Lv.2** ☕ | Earth Lv.1 | Hot Springs & Camp Relaxation Square |
+| **Bailite** | `#076` | **Lv.2** ☕ | Earth Lv.2, Artisanship Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Luminelle** | `#079` | **Lv.2** ☕ | Lightning Lv.3, Perfumery Lv.3 | Hot Springs & Camp Relaxation Square |
+| **Erlath** | `#081` | **Lv.2** ☕ | Water Lv.2, Carry Lv.2 | Hot Springs & Camp Relaxation Square |
 
-### ❄️ Ice Element Specialists
-*Cools refrigeration units, food cold storage, and preserves perishable meats/produce.*
+---
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#044` | **Glynsera** | Prismana | **Ice Lv.4** | Biting Wind | Idyll Native Habitat |
-| 🥇 A-Rank | `#006` | **Stellarys** | Prismana | **Ice Lv.3** | Grand Sorcerer | Forest of Falling Stars |
-| 🥇 A-Rank | `#044` | **Glynsera** | Basic Form (base) | **Ice Lv.3** | Biting Wind | Beast Fang Ridge |
-| 🥇 A-Rank | `#044` | **Glynsera** | Nighttime Form | **Ice Lv.3** | Biting Wind | Rosetower Woods |
-| 🥈 B-Rank | `#015` | **Glacy** | Basic Form (base) | **Ice Lv.2** | Water Spirit | Idyll Native Habitat |
-| 🥈 B-Rank | `#015` | **Glacy** | Sea of Flowers Form | **Ice Lv.2** | Water Spirit | Sea of Flowers |
-| 🥈 B-Rank | `#015` | **Glacy** | Snowfield Form | **Ice Lv.2** | Water Spirit | Driftwise Meadow |
-| 🥈 B-Rank | `#015` | **Glacy** | Prismana | **Ice Lv.2** | Water Spirit | Driftwise Meadow |
-| 🥈 B-Rank | `#018` | **Turbo** | Plateau Form | **Ice Lv.2** | Shrouded in Mist | Driftwise Meadow |
+## 🌸 4. Top Aromatics & Botanical Alchemists (Perfumery)
 
-### 🍃 Wind Element Specialists
-*Turns grain windmills, operates looms, and handles fast aerodynamic transport.*
+Workers with **Perfumery** distill rare botanicals into essential oils, produce high-potency fertilizer to accelerate crop growth, and brew wellness potions.
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#009` | **Cornet** | Prismana | **Wind Lv.4** | Air Superiority | The Argent Strait |
-| ⭐ S-Rank | `#018` | **Turbo** | Prismana | **Wind Lv.4** | Shrouded in Mist | Nimbus Fields |
-| 🥇 A-Rank | `#008` | **Tromber** | Basic Form (base) | **Wind Lv.3** | Band Member | The Argent Strait |
-| 🥇 A-Rank | `#008` | **Tromber** | Beach Form | **Wind Lv.3** | Band Member | Forest of Falling Stars |
-| 🥇 A-Rank | `#008` | **Tromber** | Highland Form | **Wind Lv.3** | Band Member | Zephyrus Landbridge |
-| 🥇 A-Rank | `#009` | **Cornet** | Basic Form (base) | **Wind Lv.3** | Air Superiority | The Argent Strait |
-| 🥇 A-Rank | `#009` | **Cornet** | Beach Form | **Wind Lv.3** | Air Superiority | Echoback Landing, Forest of Falling Stars |
-| 🥇 A-Rank | `#009` | **Cornet** | Highland Form | **Wind Lv.3** | Air Superiority | Zephyrus Landbridge |
-| 🥇 A-Rank | `#010` | **Tubster** | Basic Form (base) | **Wind Lv.3** | Victory Concerto | The Argent Strait |
+| Aniimo | Dex # | Perfumery Level | Complementary Abilities | Best Station |
+| :--- | :--- | :--- | :--- | :--- |
+| **Somniwing** | `#030` | **Lv.3** 🌸 | Grass Lv.3, Wind Lv.2, Leisure Lv.1 | Distillery & Botanical Greenhouse |
+| **Melloblum** | `#035` | **Lv.3** 🌸 | Grass Lv.3, Leisure Lv.2 | Distillery & Botanical Greenhouse |
+| **Fragrancier** | `#039` | **Lv.3** 🌸 | Dark Lv.2, Leisure Lv.2 | Distillery & Botanical Greenhouse |
+| **Luminelle** | `#079` | **Lv.3** 🌸 | Lightning Lv.3, Leisure Lv.2 | Distillery & Botanical Greenhouse |
+| **Irisalis** | `#????` | **Lv.3** 🌸 | Grass Lv.3, Leisure Lv.1 | Distillery & Botanical Greenhouse |
+| **Irisal** | `#012` | **Lv.2** 🌸 | Grass Lv.3, Artisanship Lv.1 | Distillery & Botanical Greenhouse |
+| **Leafy** | `#016` | **Lv.2** 🌸 | Water Lv.1, Grass Lv.1 | Distillery & Botanical Greenhouse |
+| **Dreaple** | `#019` | **Lv.2** 🌸 | Dark Lv.2 | Distillery & Botanical Greenhouse |
+| **Hexxin** | `#021` | **Lv.2** 🌸 | Dark Lv.2, Grass Lv.1 | Distillery & Botanical Greenhouse |
+| **Piopiota** | `#051` | **Lv.2** 🌸 | Water Lv.3 | Distillery & Botanical Greenhouse |
+| **Iris** | `#011` | **Lv.1** 🌸 | Grass Lv.1 | Distillery & Botanical Greenhouse |
+| **Flutternym** | `#028` | **Lv.1** 🌸 | Wind Lv.1, Leisure Lv.1 | Distillery & Botanical Greenhouse |
 
-### 🌑 Dark Element Specialists
-*Active during night cycles when diurnal workers sleep, ensuring 24/7 continuous output.*
+---
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ⭐ S-Rank | `#004` | **Inferlupa** | Prismana | **Dark Lv.4** | Full Energy | Idyll Native Habitat |
-| ⭐ S-Rank | `#006` | **Stellarys** | Prismana | **Dark Lv.4** | Grand Sorcerer | Forest of Falling Stars |
-| ⭐ S-Rank | `#021` | **Hexxin** | Prismana | **Dark Lv.4** | Prank | The Mistwoods |
-| ⭐ S-Rank | `#041` | **Ignitis** | Prismana | **Dark Lv.4** | Battle Fervor | Berylline Vale |
-| ⭐ S-Rank | `#062` | **Pawney** | Prismana | **Dark Lv.4** | Pursuit | Russet Highlands |
-| 🥇 A-Rank | `#004` | **Inferlupa** | Basic Form (base) | **Dark Lv.3** | Full Energy | Idyll Native Habitat |
-| 🥇 A-Rank | `#005` | **Celestis** | Basic Form | **Dark Lv.3** | Grand Sorcerer | Idyll Native Habitat |
-| 🥇 A-Rank | `#006` | **Stellarys** | Basic Form (base) | **Dark Lv.3** | Grand Sorcerer | Forest of Falling Stars |
-| 🥇 A-Rank | `#006` | **Stellarys** | Rainstorm Form | **Dark Lv.3** | Grand Sorcerer | Forest of Falling Stars |
+## ⚡ 5. Elemental Specialists Tier List
 
-### ✨ Light Element Specialists
-*Provides base illumination, raises creature morale, and speeds up incubation.*
+### 🔥 Fire Specialists (Smelting, Campfire Cooking & Kilns)
+- **Tier S (Lv. 3+):** Scorchhowl (`#003`), Sparkelf (`#????`)
+- **Tier A (Lv. 2):** Flameruff (`#002`), Inferlupa (`#004`)
+- **Tier B (Lv. 1):** Emberpup (`#001`)
 
-| Rank | Dex # | Aniimo | Optimal Form | Element Level | Trait | Native Habitat |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 🥇 A-Rank | `#????` | **Lunara** | Basic Form | **Light Lv.3** | **Lunar Power** | Idyll Native Habitat |
-| 🥇 A-Rank | `#????` | **Soleon** | Basic Form | **Light Lv.3** | **Solar Grace** | Idyll Native Habitat |
-| 🥈 B-Rank | `#????` | **Fennelun** | Basic Form | **Light Lv.2** | **Lunar Power** | Idyll Native Habitat |
-| 🥈 B-Rank | `#????` | **Helion** | Basic Form | **Light Lv.2** | **Solar Grace** | Idyll Native Habitat |
-| 🥈 B-Rank | `#????` | **Morphling** | Basic Form | **Light Lv.2** | Elemental Harmony | Idyll Native Habitat |
+### 💧 Water Specialists (Irrigation, Aquaculture & Brewing)
+- **Tier S (Lv. 3+):** Glacy (`#015`), Jabster (`#????`)
+- **Tier A (Lv. 2):** Pranky (`#014`), Erlath (`#081`)
+- **Tier B (Lv. 1):** Skippy (`#013`)
 
+### 🌱 Grass Specialists (Crop Planting, Harvesting & Logging)
+- **Tier S (Lv. 3+):** Irisal (`#012`), Somniwing (`#030` Prismana), Irisalis (`#????`)
+- **Tier A (Lv. 2):** Eklue (`#032`)
+- **Tier B (Lv. 1):** Iris (`#011`), Eko (`#031`)
+
+### ⛰️ Earth Specialists (Quarry Mining & Masonry)
+- **Tier S (Lv. 3+):** Bouldus (`#020`), Geodeback (`#044`)
+- **Tier A (Lv. 2):** Geoclaw (`#051`), Lavazar (`#043`)
+- **Tier B (Lv. 1):** Pebbling (`#042`)
+
+### ⚡ Lightning Specialists (Dynamo Power Grid)
+- **Tier S (Lv. 3+):** Dazmand (`#????`), Fulmintis (`#????`)
+- **Tier A (Lv. 2):** Veilfloat (`#078`), Besauce (`#082`)
+
+### ❄️ Ice Specialists (Cold Storage & Food Preservation)
+- **Tier S (Lv. 3+):** Glacy (`#015`), Frostclaw (`#025`)
+
+### 🍃 Wind Specialists (Grain Windmills & Logistics)
+- **Tier S (Lv. 3+):** Tromber (`#008`), Cornet (`#009`), Tubster (`#010`)
+- **Tier A (Lv. 2):** Eklue (`#032`), Somniwing (`#030`)
+- **Tier B (Lv. 1):** Chirpi (`#007`), Eko (`#031`)
+
+### 🌑 Dark Specialists (24/7 Night Operations)
+- **Tier S (Lv. 3+):** Celestis (`#005`), Stellarys (`#006`), Inferlupa (`#004`)
+- **Tier A (Lv. 2):** Fragrancier (`#039`)
+- **Tier B (Lv. 1):** Dewy (`#038`), Wisptis (`#040`)
+
+### ✨ Light Specialists (Base Illumination & Radiant Morale)
+- **Tier S (Lv. 3+):** Lunara (`#????`), Soleon (`#????`)
+- **Tier A (Lv. 2):** Fennelun (`#????`), Helion (`#????`), Morphling (`#????`)

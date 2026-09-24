@@ -40,7 +40,7 @@ app.get('/api/aniimo', (req, res) => {
     results = results.filter(item => item.tier && item.tier.toLowerCase() === tier.toLowerCase());
   }
 
-  // Filter by Element (Fire, Water, Grass, Earth, Wind, Lightning, Ice, Dark, Light)
+  // Filter by Element or Homeland Utility (Carry, Artisanship, Leisure, Perfumery, Fire, Water, etc.)
   if (element && element !== 'all') {
     const elLower = element.toLowerCase();
     const minLvl = parseInt(minLevel, 10) || 1;
@@ -53,8 +53,8 @@ app.get('/api/aniimo', (req, res) => {
       ].filter(Boolean);
 
       return allForms.some(f => {
-        if (!f.elements) return false;
-        for (const [k, v] of Object.entries(f.elements)) {
+        const pool = { ...(f.elements || {}), ...(f.abilities || {}) };
+        for (const [k, v] of Object.entries(pool)) {
           if (k.toLowerCase() === elLower && v >= minLvl) return true;
         }
         return false;
@@ -109,18 +109,22 @@ app.get('/api/aniimo/:id', (req, res) => {
   res.json(item);
 });
 
-// Elements reference
+// Elements & Homeland Utilities reference
 app.get('/api/elements', (req, res) => {
   res.json([
-    { name: 'Fire', emoji: '🔥', homelandRole: 'Smelting, Campfire Cooking & Kindling' },
-    { name: 'Water', emoji: '💧', homelandRole: 'Farmland Irrigation, Aquaculture & Beverage Brewing' },
-    { name: 'Grass', emoji: '🌱', homelandRole: 'Crop Planting, Harvesting & Timber Logging' },
-    { name: 'Earth', emoji: '⛰️', homelandRole: 'Quarry Mining, Masonry Sculpting & Construction' },
-    { name: 'Lightning', emoji: '⚡', homelandRole: 'Dynamo Power Generation & Electrical Grid' },
-    { name: 'Ice', emoji: '❄️', homelandRole: 'Cold Storage, Food Preservation & Freezing' },
-    { name: 'Wind', emoji: '🍃', homelandRole: 'Grain Windmills, Hauling & Material Logistics' },
-    { name: 'Dark', emoji: '🌑', homelandRole: 'Night Operations & 24/7 Uninterrupted Shift Labor' },
-    { name: 'Light', emoji: '✨', homelandRole: 'Base Illumination, Morale Radiant Warming & Hatching' }
+    { name: 'Fire', emoji: '🔥', type: 'element', homelandRole: 'Smelting, Campfire Cooking & Kindling' },
+    { name: 'Water', emoji: '💧', type: 'element', homelandRole: 'Farmland Irrigation, Aquaculture & Beverage Brewing' },
+    { name: 'Grass', emoji: '🌱', type: 'element', homelandRole: 'Crop Planting, Harvesting & Timber Logging' },
+    { name: 'Earth', emoji: '⛰️', type: 'element', homelandRole: 'Quarry Mining, Masonry Sculpting & Construction' },
+    { name: 'Lightning', emoji: '⚡', type: 'element', homelandRole: 'Dynamo Power Generation & Electrical Grid' },
+    { name: 'Ice', emoji: '❄️', type: 'element', homelandRole: 'Cold Storage, Food Preservation & Freezing' },
+    { name: 'Wind', emoji: '🍃', type: 'element', homelandRole: 'Grain Windmills, Hauling & Material Logistics' },
+    { name: 'Dark', emoji: '🌑', type: 'element', homelandRole: 'Night Operations & 24/7 Uninterrupted Shift Labor' },
+    { name: 'Light', emoji: '✨', type: 'element', homelandRole: 'Base Illumination, Morale Radiant Warming & Hatching' },
+    { name: 'Carry', emoji: '📦', type: 'utility', homelandRole: 'Logistics Hauling, Item Transport & Depot Storage' },
+    { name: 'Artisanship', emoji: '🔨', type: 'utility', homelandRole: 'Workbench Crafting, RV Construction & Gear Assembly' },
+    { name: 'Leisure', emoji: '☕', type: 'utility', homelandRole: 'Camp Morale, Hot Spring Resting & Worker Sanity Recovery' },
+    { name: 'Perfumery', emoji: '🌸', type: 'utility', homelandRole: 'Botanical Distillation, Scent Diffusers & Herbal Alchemy' }
   ]);
 });
 
