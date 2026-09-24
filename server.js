@@ -40,28 +40,6 @@ app.get('/api/aniimo', (req, res) => {
     results = results.filter(item => item.tier && item.tier.toLowerCase() === tier.toLowerCase());
   }
 
-  // Filter by Element or Homeland Utility (Carry, Artisanship, Leisure, Perfumery, Fire, Water, etc.)
-  if (element && element !== 'all') {
-    const elLower = element.toLowerCase();
-    const minLvl = parseInt(minLevel, 10) || 1;
-    results = results.filter(item => {
-      const allForms = [
-        item.forms.basic,
-        ...(item.forms.regional || []),
-        ...(item.forms.weather || []),
-        item.forms.prismana
-      ].filter(Boolean);
-
-      return allForms.some(f => {
-        const pool = { ...(f.elements || {}), ...(f.abilities || {}) };
-        for (const [k, v] of Object.entries(pool)) {
-          if (k.toLowerCase() === elLower && v >= minLvl) return true;
-        }
-        return false;
-      });
-    });
-  }
-
   // Filter by Form Type
   if (form && form !== 'all') {
     if (form === 'regional') {
@@ -69,12 +47,53 @@ app.get('/api/aniimo', (req, res) => {
     } else if (form === 'weather') {
       results = results.filter(item => item.forms.weather && item.forms.weather.length > 0);
     } else if (form === 'prismana') {
-      results = results.filter(item => item.forms.prismana !== null && item.forms.prismana !== undefined);
+      results = results.filter(item => (item.id === '030') || (item.forms.prismana !== null && item.forms.prismana !== undefined));
     } else if (form === 'basic') {
       results = results.filter(item => item.forms.basic);
     } else if (form === 'unnumbered') {
       results = results.filter(item => item.is_unnumbered);
     }
+  }
+
+  // Filter by Element or Homeland Utility and/or Min Level
+  const minLvl = parseInt(minLevel, 10) || 1;
+  const hasElement = element && element !== 'all';
+  const hasMinLvl = minLvl > 1;
+
+  if (hasElement || hasMinLvl) {
+    const elLower = hasElement ? element.toLowerCase() : null;
+    results = results.filter(item => {
+      let formsToCheck = [];
+      if (form === 'basic') {
+        if (item.forms.basic) formsToCheck.push(item.forms.basic);
+      } else if (form === 'regional') {
+        formsToCheck = item.forms.regional || [];
+      } else if (form === 'weather') {
+        formsToCheck = item.forms.weather || [];
+      } else if (form === 'prismana') {
+        if (item.id === '030') formsToCheck.push(item.forms.basic);
+        else if (item.forms.prismana) formsToCheck.push(item.forms.prismana);
+      } else {
+        formsToCheck = [
+          item.forms.basic,
+          ...(item.forms.regional || []),
+          ...(item.forms.weather || []),
+          item.forms.prismana
+        ].filter(Boolean);
+      }
+
+      return formsToCheck.some(f => {
+        const pool = { ...(f.elements || {}), ...(f.abilities || {}), ...(f.utilities || {}) };
+        if (elLower) {
+          for (const [k, v] of Object.entries(pool)) {
+            if (k.toLowerCase() === elLower && v >= minLvl) return true;
+          }
+          return false;
+        } else {
+          return Object.values(pool).some(v => v >= minLvl);
+        }
+      });
+    });
   }
 
   // Search across name, id, slug, display_id, trait, region, elements

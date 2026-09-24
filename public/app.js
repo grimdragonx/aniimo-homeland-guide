@@ -381,42 +381,82 @@ function applyFilters() {
       if (!matchText.includes(query)) return false;
     }
 
-    // Quick Form pill
-    if (currentFormFilter === 'regional') {
-      if (!item.forms.regional || item.forms.regional.length === 0) return false;
-    } else if (currentFormFilter === 'weather') {
-      if (!item.forms.weather || item.forms.weather.length === 0) return false;
-    } else if (currentFormFilter === 'prismana') {
-      if (!item.forms.prismana) return false;
-    } else if (currentFormFilter === 'basic') {
-      if (!item.forms.basic) return false;
-    } else if (currentFormFilter === 'unnumbered') {
-      if (!item.is_unnumbered) return false;
-    }
-
     // Tier filter
     if (selectedTier !== 'all' && item.tier !== selectedTier) {
       return false;
     }
 
-    // Element & Homeland Utility filter
-    if (selectedElement !== 'all') {
-      const allForms = [
-        item.forms.basic,
-        ...(item.forms.regional || []),
-        ...(item.forms.weather || []),
-        item.forms.prismana
-      ].filter(Boolean);
+    // Unnumbered form pill
+    if (currentFormFilter === 'unnumbered' && !item.is_unnumbered) {
+      return false;
+    }
 
-      const hasMatch = allForms.some(f => {
-        const pool = { ...(f.elements || {}), ...(f.abilities || {}), ...(f.utilities || {}) };
-        for (const [k, v] of Object.entries(pool)) {
-          if (k.toLowerCase() === selectedElement.toLowerCase() && v >= minLvl) return true;
+    // Determine candidate forms based on currentFormFilter
+    let candidateForms = [];
+    if (currentFormFilter === 'basic') {
+      if (item.forms.basic) candidateForms.push({ key: 'basic', data: item.forms.basic });
+    } else if (currentFormFilter === 'regional') {
+      (item.forms.regional || []).forEach((rf, i) => candidateForms.push({ key: `regional_${i}`, data: rf }));
+    } else if (currentFormFilter === 'weather') {
+      (item.forms.weather || []).forEach((wf, i) => candidateForms.push({ key: `weather_${i}`, data: wf }));
+    } else if (currentFormFilter === 'prismana') {
+      if (item.id === '030') {
+        candidateForms.push({ key: 'basic', data: item.forms.basic });
+      } else if (item.forms.prismana) {
+        candidateForms.push({ key: 'prismana', data: item.forms.prismana });
+      }
+    } else {
+      // 'all' or 'unnumbered'
+      if (item.forms.basic) candidateForms.push({ key: 'basic', data: item.forms.basic });
+      (item.forms.regional || []).forEach((rf, i) => candidateForms.push({ key: `regional_${i}`, data: rf }));
+      (item.forms.weather || []).forEach((wf, i) => candidateForms.push({ key: `weather_${i}`, data: wf }));
+      if (item.forms.prismana && item.id !== '030') {
+        candidateForms.push({ key: 'prismana', data: item.forms.prismana });
+      }
+    }
+
+    if (candidateForms.length === 0) return false;
+
+    // Filter by Element / Utility & Min Level
+    const hasElementFilter = selectedElement !== 'all';
+    const hasMinLvlFilter = minLvl > 1;
+
+    if (hasElementFilter || hasMinLvlFilter) {
+      const elLower = hasElementFilter ? selectedElement.toLowerCase() : null;
+      const matchingForms = candidateForms.filter(cForm => {
+        const pool = { ...(cForm.data.elements || {}), ...(cForm.data.abilities || {}), ...(cForm.data.utilities || {}) };
+        if (elLower) {
+          for (const [k, v] of Object.entries(pool)) {
+            if (k.toLowerCase() === elLower && v >= minLvl) return true;
+          }
+          return false;
+        } else {
+          return Object.values(pool).some(v => v >= minLvl);
         }
-        return false;
       });
 
-      if (!hasMatch) return false;
+      if (matchingForms.length === 0) return false;
+
+      // Auto-switch card to display the matching form
+      const currentActive = cardActiveTabs[item.id] || 'basic';
+      if (!matchingForms.some(m => m.key === currentActive)) {
+        cardActiveTabs[item.id] = matchingForms[0].key;
+      }
+    } else {
+      // If no specific level or element filter, ensure active tab matches form pill if specific
+      if (currentFormFilter === 'basic') {
+        cardActiveTabs[item.id] = 'basic';
+      } else if (currentFormFilter === 'prismana') {
+        cardActiveTabs[item.id] = item.id === '030' ? 'basic' : 'prismana';
+      } else if (currentFormFilter === 'regional') {
+        if (!cardActiveTabs[item.id] || !cardActiveTabs[item.id].startsWith('regional_')) {
+          cardActiveTabs[item.id] = 'regional_0';
+        }
+      } else if (currentFormFilter === 'weather') {
+        if (!cardActiveTabs[item.id] || !cardActiveTabs[item.id].startsWith('weather_')) {
+          cardActiveTabs[item.id] = 'weather_0';
+        }
+      }
     }
 
     return true;
