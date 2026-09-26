@@ -115,7 +115,6 @@ Workers with **Artisanship** create furniture, appearance items, and decorative 
 | **Fenmane** | `#060` | 🌈 Prismana | **Lv.4** 🔨 | Lightning Lv.4, Light Lv.3, Carry Lv.3 | Crafting Workbench |
 | **Luminelle** | `#079` | 🌈 Prismana | **Lv.4** 🔨 | Lightning Lv.4, Light Lv.3 | Crafting Workbench |
 | **Fulmintis** | `#????` | 🌈 Prismana | **Lv.4** 🔨 | Lightning Lv.4, Light Lv.3 | Crafting Workbench |
-| **Sparkelf** | `#????` | 🌈 Prismana | **Lv.4** 🔨 | Fire Lv.4 | Crafting Workbench |
 | **Eklue** | `#032` | Basic | **Lv.3** 🔨 | Wind Lv.3 | Crafting Workbench |
 | **Thornblade** | `#034` | Basic | **Lv.3** 🔨 | Grass Lv.3 | Crafting Workbench |
 | **Thornblade** | `#034` | Towerwood Form | **Lv.3** 🔨 | Grass Lv.3 | Crafting Workbench |
@@ -171,6 +170,7 @@ Workers with **Leisure** produce valuable items while playing and engaging in re
 | **Panpanta** | `#052` | 🌈 Prismana | **Lv.4** ☕ | Water Lv.4 | Homeland Leisure Area |
 | **Sherro** | `#055` | 🌈 Prismana | **Lv.4** ☕ | Water Lv.4, Light Lv.3 | Homeland Leisure Area |
 | **Irisalis** | `#????` | Basic | **Lv.4** ☕ | Grass Lv.4 | Homeland Leisure Area |
+| **Irisalis** | `#????` | 🌈 Prismana | **Lv.4** ☕ | Grass Lv.4 | Homeland Leisure Area |
 | **Stellarys** | `#006` | Basic | **Lv.3** ☕ | Dark Lv.3 | Homeland Leisure Area |
 | **Stellarys** | `#006` | Rainstorm Form | **Lv.3** ☕ | Dark Lv.3, Water Lv.2 | Homeland Leisure Area |
 | **Irisal** | `#012` | Basic | **Lv.3** ☕ | Grass Lv.3 | Homeland Leisure Area |
@@ -235,7 +235,7 @@ Workers with **Perfumery** work effectively at the perfume bench to craft scente
 ## ⚡ 5. Elemental Specialists Tier List
 
 ### 🔥 Fire Specialists (Cooking, Smelting & Supplying Heat)
-- **Tier S (Master Lv. 4):** Scorchhowl [Prismana] (`#003`), Infergon [Prismana] (`#067`), Magmarex [Prismana] (`#072`), Sparkelf [Prismana] (`#????`)
+- **Tier S (Master Lv. 4):** Scorchhowl [Prismana] (`#003`), Infergon [Prismana] (`#067`), Magmarex [Prismana] (`#072`), Little Fire Spirit (Sparkelf) [Prismana] (`#????`)
 - **Tier A (Expert Lv. 3):** Inferlupa (`#004`), Flamerion (`#027`), Ignitis (`#041`)
 - **Tier B (Skilled Lv. 2):** Flameruff (`#002`), Sparki (`#026`), Squashel (`#048`), Lavazar (`#071`)
 

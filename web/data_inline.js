@@ -6555,8 +6555,13 @@ window.ANIIMO_DATA = [
     "trait": "Elemental Harmony",
     "trait_effect": "Enhances productivity when working at element-aligned workstations.",
     "matchups": {
-      "weak_to": [],
-      "resists": []
+      "weak_to": [
+        "Dark (1.6×)"
+      ],
+      "resists": [
+        "Grass (0.625×)",
+        "Light (0.625×)"
+      ]
     },
     "forms": {
       "basic": {
@@ -6639,7 +6644,7 @@ window.ANIIMO_DATA = [
     "id": "091",
     "dex_number": "????",
     "display_id": "#????",
-    "name": "Sparkelf",
+    "name": "Little Fire Spirit (Sparkelf)",
     "slug": "sparkelf",
     "is_unnumbered": true,
     "image": "images/sparkelf.png",
@@ -6685,12 +6690,9 @@ window.ANIIMO_DATA = [
         },
         "image": "images/forms/sparkelf-prismana.png",
         "abilities": {
-          "Fire": 4,
-          "Artisanship": 4
+          "Fire": 4
         },
-        "utilities": {
-          "Artisanship": 4
-        }
+        "utilities": {}
       }
     },
     "all_form_names": [
@@ -6738,10 +6740,27 @@ window.ANIIMO_DATA = [
       },
       "regional": [],
       "weather": [],
-      "prismana": null
+      "prismana": {
+        "form_name": "Prismana Form",
+        "element_display": "Grass 4",
+        "catch_rate": "Standard",
+        "region": "Idyll Native Habitat",
+        "elements": {
+          "Grass": 4
+        },
+        "utilities": {
+          "Leisure": 4
+        },
+        "abilities": {
+          "Grass": 4,
+          "Leisure": 4
+        },
+        "image": "images/irisalis.png"
+      }
     },
     "all_form_names": [
-      "Basic Form"
+      "Basic Form",
+      "Prismana Form"
     ]
   }
 ];
