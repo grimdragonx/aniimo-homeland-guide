@@ -209,7 +209,7 @@ app.get('/sitemap.xml', (req, res) => {
 
 app.get('/ads.txt', (req, res) => {
   res.type('text/plain');
-  res.sendFile(path.join(__dirname, 'public', 'ads.txt'));
+  res.send('google.com, pub-9878478808081344, DIRECT, f08c47fec0942fa0\n');
 });
 
 app.get('/googleb4b043a56c142eb5.html', (req, res) => {
