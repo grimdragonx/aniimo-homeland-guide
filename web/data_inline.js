@@ -43,23 +43,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Highland Form",
-          "element_display": "Fire 1 / Earth 1",
+          "element_display": "Earth 1 / Fire 1",
           "catch_rate": "38%",
           "region": "Zephyrus Landbridge, Russet Highlands",
           "elements": {
-            "Fire": 1,
-            "Earth": 1
+            "Earth": 1,
+            "Fire": 1
           },
           "image": "images/forms/emberpup-highland-form.png",
           "abilities": {
-            "Fire": 1,
             "Earth": 1,
-            "Carry": 1,
-            "Artisanship": 1
+            "Fire": 1,
+            "Carry": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         },
         {
@@ -133,23 +131,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Highland Form",
-          "element_display": "Fire 2 / Earth 1",
+          "element_display": "Earth 1 / Fire 2",
           "catch_rate": "29%",
           "region": "Zephyrus Landbridge, Russet Highlands",
           "elements": {
-            "Fire": 2,
-            "Earth": 1
+            "Earth": 1,
+            "Fire": 2
           },
           "image": "images/forms/flameruff-highland-form.png",
           "abilities": {
-            "Fire": 2,
             "Earth": 1,
-            "Carry": 2,
-            "Artisanship": 1
+            "Fire": 2,
+            "Carry": 2
           },
           "utilities": {
-            "Carry": 2,
-            "Artisanship": 1
+            "Carry": 2
           }
         },
         {
@@ -223,23 +219,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Highland Form",
-          "element_display": "Fire 3 / Earth 2",
+          "element_display": "Earth 2 / Fire 3",
           "catch_rate": "19%",
           "region": "Idyll Native Habitat",
           "elements": {
-            "Fire": 3,
-            "Earth": 2
+            "Earth": 2,
+            "Fire": 3
           },
           "image": "images/forms/scorchhowl-highland-form.png",
           "abilities": {
-            "Fire": 3,
             "Earth": 2,
-            "Carry": 3,
-            "Artisanship": 1
+            "Fire": 3,
+            "Carry": 3
           },
           "utilities": {
-            "Carry": 3,
-            "Artisanship": 1
+            "Carry": 3
           }
         },
         {
@@ -263,14 +257,16 @@ window.ANIIMO_DATA = [
       "weather": [
         {
           "form_name": "Thunderstorm Form",
-          "element_display": "Fire 3",
+          "element_display": "Lightning 2 / Fire 3",
           "catch_rate": "28%",
           "region": "Beast Fang Ridge",
           "elements": {
+            "Lightning": 2,
             "Fire": 3
           },
           "image": "images/forms/scorchhowl-thunderstorm-form.png",
           "abilities": {
+            "Lightning": 2,
             "Fire": 3,
             "Carry": 3
           },
@@ -351,18 +347,18 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Fire 4",
+        "element_display": "Fire 3 / Dark 4",
         "catch_rate": "25%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Dark": 4,
-          "Fire": 4
+          "Fire": 3,
+          "Dark": 4
         },
         "image": "images/forms/inferlupa-prismana.png",
         "abilities": {
-          "Dark": 4,
-          "Fire": 4,
-          "Carry": 4
+          "Carry": 4,
+          "Fire": 3,
+          "Dark": 4
         },
         "utilities": {
           "Carry": 4
@@ -484,18 +480,18 @@ window.ANIIMO_DATA = [
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Ice 4",
+        "element_display": "Ice 3 / Dark 4",
         "catch_rate": "28%",
         "region": "Forest of Falling Stars",
         "elements": {
-          "Dark": 4,
-          "Ice": 4
+          "Ice": 3,
+          "Dark": 4
         },
         "image": "images/forms/stellarys-prismana.png",
         "abilities": {
-          "Dark": 4,
-          "Ice": 4,
-          "Leisure": 4
+          "Ice": 3,
+          "Leisure": 4,
+          "Dark": 4
         },
         "utilities": {
           "Leisure": 4
@@ -558,31 +554,25 @@ window.ANIIMO_DATA = [
           "image": "images/forms/chirpi-beach-form.png",
           "abilities": {
             "Wind": 1,
-            "Water": 1,
-            "Carry": 1
+            "Water": 1
           },
-          "utilities": {
-            "Carry": 1
-          }
+          "utilities": {}
         },
         {
           "form_name": "Highland Form",
-          "element_display": "Wind 1 / Grass 1",
+          "element_display": "Grass 1 / Wind 1",
           "catch_rate": "38%",
           "region": "Zephyrus Landbridge, Russet Highlands",
           "elements": {
-            "Wind": 1,
-            "Grass": 1
+            "Grass": 1,
+            "Wind": 1
           },
           "image": "images/forms/chirpi-highland-form.png",
           "abilities": {
-            "Wind": 1,
             "Grass": 1,
-            "Carry": 1
+            "Wind": 1
           },
-          "utilities": {
-            "Carry": 1
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
@@ -644,31 +634,25 @@ window.ANIIMO_DATA = [
           "image": "images/forms/tromber-beach-form.png",
           "abilities": {
             "Wind": 3,
-            "Water": 2,
-            "Carry": 2
+            "Water": 2
           },
-          "utilities": {
-            "Carry": 2
-          }
+          "utilities": {}
         },
         {
           "form_name": "Highland Form",
-          "element_display": "Wind 3 / Grass 2",
+          "element_display": "Grass 2 / Wind 3",
           "catch_rate": "19%",
           "region": "Zephyrus Landbridge",
           "elements": {
-            "Wind": 3,
-            "Grass": 2
+            "Grass": 2,
+            "Wind": 3
           },
           "image": "images/forms/tromber-highland-form.png",
           "abilities": {
-            "Wind": 3,
             "Grass": 2,
-            "Carry": 2
+            "Wind": 3
           },
-          "utilities": {
-            "Carry": 2
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
@@ -689,7 +673,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/cornet.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-cornet-handbook.png",
-    "tier": "A-Tier",
+    "tier": "S-Tier",
     "trait": "Air Superiority",
     "trait_effect": "Increases Crit Rate by X% while flying.",
     "matchups": {
@@ -730,58 +714,43 @@ window.ANIIMO_DATA = [
           "image": "images/forms/cornet-beach-form.png",
           "abilities": {
             "Wind": 3,
-            "Water": 2,
-            "Artisanship": 2,
-            "Carry": 2
+            "Water": 2
           },
-          "utilities": {
-            "Artisanship": 2,
-            "Carry": 2
-          }
+          "utilities": {}
         },
         {
           "form_name": "Highland Form",
-          "element_display": "Wind 3 / Grass 2",
+          "element_display": "Grass 2 / Wind 3",
           "catch_rate": "19%",
           "region": "Zephyrus Landbridge",
           "elements": {
-            "Wind": 3,
-            "Grass": 2
+            "Grass": 2,
+            "Wind": 3
           },
           "image": "images/forms/cornet-highland-form.png",
           "abilities": {
-            "Wind": 3,
             "Grass": 2,
-            "Artisanship": 2,
-            "Carry": 2
+            "Wind": 3
           },
-          "utilities": {
-            "Artisanship": 2,
-            "Carry": 2
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Wind 4 / Lightning 4",
+        "element_display": "Lightning 3 / Wind 4",
         "catch_rate": "28%",
         "region": "The Argent Strait",
         "elements": {
-          "Wind": 4,
-          "Lightning": 4
+          "Lightning": 3,
+          "Wind": 4
         },
         "image": "images/forms/cornet-prismana.png",
         "abilities": {
-          "Wind": 4,
-          "Lightning": 4,
-          "Artisanship": 3,
-          "Carry": 3
+          "Lightning": 3,
+          "Wind": 4
         },
-        "utilities": {
-          "Artisanship": 3,
-          "Carry": 3
-        }
+        "utilities": {}
       }
     },
     "all_form_names": [
@@ -841,48 +810,25 @@ window.ANIIMO_DATA = [
           "image": "images/forms/tubster-beach-form.png",
           "abilities": {
             "Wind": 3,
-            "Water": 2,
-            "Carry": 3
+            "Water": 2
           },
-          "utilities": {
-            "Carry": 3
-          }
+          "utilities": {}
         },
         {
           "form_name": "Highland Form",
-          "element_display": "Wind 3 / Grass 2",
+          "element_display": "Grass 2 / Wind 3",
           "catch_rate": "28%",
           "region": "Zephyrus Landbridge, Russet Highlands",
           "elements": {
-            "Wind": 3,
-            "Grass": 2
+            "Grass": 2,
+            "Wind": 3
           },
           "image": "images/forms/tubster-highland-form.png",
           "abilities": {
-            "Wind": 3,
             "Grass": 2,
-            "Carry": 3
-          },
-          "utilities": {
-            "Carry": 3
-          }
-        },
-        {
-          "form_name": "Basic Form (variant record)",
-          "element_display": "Wind 3",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
             "Wind": 3
           },
-          "image": "images/forms/tubster-basic-form-variant-record.png",
-          "abilities": {
-            "Wind": 3,
-            "Carry": 3
-          },
-          "utilities": {
-            "Carry": 3
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
@@ -1024,19 +970,19 @@ window.ANIIMO_DATA = [
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Grass 2",
+        "element_display": "Grass 1",
         "catch_rate": "56%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 2
+          "Grass": 1
         },
         "image": "images/forms/iris-prismana.png",
         "abilities": {
-          "Grass": 2,
-          "Leisure": 2
+          "Grass": 1,
+          "Leisure": 1
         },
         "utilities": {
-          "Leisure": 2
+          "Leisure": 1
         }
       }
     },
@@ -1464,17 +1410,17 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Water 4 / Ice 3",
+        "element_display": "Water 4 / Light 3",
         "catch_rate": "28%",
         "region": "Driftwise Meadow",
         "elements": {
           "Water": 4,
-          "Ice": 3
+          "Light": 3
         },
         "image": "images/forms/glacy-prismana.png",
         "abilities": {
           "Water": 4,
-          "Ice": 3,
+          "Light": 3,
           "Carry": 4
         },
         "utilities": {
@@ -1498,7 +1444,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/leafy.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-leafy-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Power of Nature",
     "trait_effect": "While off field, creates a patch of Turf under a teammate after they cast 3 skills.",
     "matchups": {
@@ -1746,18 +1692,18 @@ window.ANIIMO_DATA = [
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Wind 4 / Dark 4",
+        "element_display": "Wind 4 / Dark 3",
         "catch_rate": "28%",
         "region": "Nimbus Fields",
         "elements": {
           "Wind": 4,
-          "Dark": 4
+          "Dark": 3
         },
         "image": "images/forms/turbo-prismana.png",
         "abilities": {
+          "Leisure": 4,
           "Wind": 4,
-          "Dark": 4,
-          "Leisure": 4
+          "Dark": 3
         },
         "utilities": {
           "Leisure": 4
@@ -1781,7 +1727,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/dreaple.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dreaple-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Counting Sheep",
     "trait_effect": "Every Xs, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for Xs. Targets in [Nightmare] have their Dark Resistance reduced by X and cannot move or cast skills for Xs. Taking damage removes the control effect.",
     "matchups": {
@@ -1869,12 +1815,9 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/hummin-mountain-form.png",
           "abilities": {
-            "Grass": 1,
-            "Artisanship": 1
+            "Grass": 1
           },
-          "utilities": {
-            "Artisanship": 1
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
@@ -1952,21 +1895,21 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Grass 4",
+        "element_display": "Grass 3 / Dark 4",
         "catch_rate": "28%",
         "region": "The Mistwoods",
         "elements": {
-          "Dark": 4,
-          "Grass": 4
+          "Grass": 3,
+          "Dark": 4
         },
         "image": "images/forms/hexxin-prismana.png",
         "abilities": {
-          "Dark": 4,
-          "Grass": 4,
-          "Artisanship": 3
+          "Artisanship": 4,
+          "Grass": 3,
+          "Dark": 4
         },
         "utilities": {
-          "Artisanship": 3
+          "Artisanship": 4
         }
       }
     },
@@ -1985,7 +1928,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/tuckin.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-tuckin-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Prank Master",
     "trait_effect": "Increases BREAK damage by % for every X1,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every Xs, up to a maximum of 3.",
     "matchups": {
@@ -2021,57 +1964,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Mountain Form",
-          "element_display": "Grass 3 / Earth 2",
+          "element_display": "Earth 2 / Grass 3",
           "catch_rate": "28%",
           "region": "Idyll Native Habitat",
           "elements": {
-            "Grass": 3,
-            "Earth": 2
+            "Earth": 2,
+            "Grass": 3
           },
           "image": "images/forms/tuckin-mountain-form.png",
           "abilities": {
-            "Grass": 3,
             "Earth": 2,
-            "Carry": 2,
-            "Artisanship": 1
-          },
-          "utilities": {
-            "Carry": 2,
-            "Artisanship": 1
-          }
-        },
-        {
-          "form_name": "Basic Form (variant record)",
-          "element_display": "Grass 3",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
-            "Grass": 3
-          },
-          "image": "images/forms/tuckin-basic-form-variant-record.png",
-          "abilities": {
             "Grass": 3,
-            "Carry": 2
+            "Carry": 3
           },
           "utilities": {
-            "Carry": 2
-          }
-        },
-        {
-          "form_name": "Unnamed form",
-          "element_display": "Grass 4",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
-            "Grass": 4
-          },
-          "image": "images/forms/tuckin-unnamed-form.png",
-          "abilities": {
-            "Grass": 4,
-            "Carry": 2
-          },
-          "utilities": {
-            "Carry": 2
+            "Carry": 3
           }
         }
       ],
@@ -2131,23 +2038,19 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Mudflat Form",
-          "element_display": "Earth 1 / Grass 1",
+          "element_display": "Earth 1",
           "catch_rate": "32%",
           "region": "Tideblossom Coast",
           "elements": {
-            "Earth": 1,
-            "Grass": 1
+            "Earth": 1
           },
           "image": "images/forms/budclaw-mudflat-form.png",
           "abilities": {
-            "Earth": 1,
-            "Grass": 1,
             "Carry": 1,
-            "Artisanship": 1
+            "Earth": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         },
         {
@@ -2160,34 +2063,28 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/budclaw-beach-form.png",
           "abilities": {
-            "Earth": 1,
             "Carry": 1,
-            "Artisanship": 1
+            "Earth": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         },
         {
           "form_name": "Bay Form",
-          "element_display": "Earth 1 / Grass 1",
+          "element_display": "Earth 1",
           "catch_rate": "56%",
           "region": "The Argent Strait",
           "elements": {
-            "Earth": 1,
-            "Grass": 1
+            "Earth": 1
           },
           "image": "images/forms/budclaw-bay-form.png",
           "abilities": {
-            "Earth": 1,
-            "Grass": 1,
             "Carry": 1,
-            "Artisanship": 1
+            "Earth": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         }
       ],
@@ -2210,7 +2107,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/shrubclaw.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-shrubclaw-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Stealth",
     "trait_effect": "Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by X% for Xs.",
     "matchups": {
@@ -2255,49 +2152,45 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/shrubclaw-mudflat-form.png",
           "abilities": {
-            "Earth": 3,
-            "Artisanship": 2
+            "Carry": 3,
+            "Earth": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Carry": 3
           }
         },
         {
           "form_name": "Beach Form",
-          "element_display": "Earth 3 / Grass 2",
+          "element_display": "Earth 3",
           "catch_rate": "28%",
           "region": "Echoback Landing",
           "elements": {
-            "Earth": 3,
-            "Grass": 2
+            "Earth": 3
           },
           "image": "images/forms/shrubclaw-beach-form.png",
           "abilities": {
-            "Earth": 3,
-            "Grass": 2,
-            "Artisanship": 2
+            "Carry": 3,
+            "Earth": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Carry": 3
           }
         },
         {
           "form_name": "Bay Form",
-          "element_display": "Earth 3 / Grass 2",
+          "element_display": "Earth 3",
           "catch_rate": "28%",
           "region": "The Argent Strait",
           "elements": {
-            "Earth": 3,
-            "Grass": 2
+            "Earth": 3
           },
           "image": "images/forms/shrubclaw-bay-form.png",
           "abilities": {
-            "Earth": 3,
-            "Grass": 2,
-            "Artisanship": 2
+            "Carry": 3,
+            "Earth": 3
           },
           "utilities": {
-            "Artisanship": 2
+            "Carry": 3
           }
         }
       ],
@@ -2320,7 +2213,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/geoclaw.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-geoclaw-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Frostbite Sunder",
     "trait_effect": "Basic attacks apply [Ice Debuff]. Deals X% extra BREAK to targets with more than 5 stacks of [Ice Debuff].",
     "matchups": {
@@ -2401,54 +2294,45 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Highland Form",
-          "element_display": "Fire 1",
+          "element_display": "Fire 2",
           "catch_rate": "56%",
           "region": "Russet Highlands, Berylline Vale",
           "elements": {
-            "Fire": 1
+            "Fire": 2
           },
           "image": "images/forms/sparki-highland-form.png",
           "abilities": {
-            "Fire": 1,
-            "Artisanship": 1
+            "Fire": 2
           },
-          "utilities": {
-            "Artisanship": 1
-          }
+          "utilities": {}
         },
         {
           "form_name": "Forest Form",
-          "element_display": "Fire 1",
+          "element_display": "Fire 2",
           "catch_rate": "50%",
           "region": "The Mistwoods, Berylline Vale, Driftwise Meadow",
           "elements": {
-            "Fire": 1
+            "Fire": 2
           },
           "image": "images/forms/sparki-forest-form.png",
           "abilities": {
-            "Fire": 1,
-            "Artisanship": 1
+            "Fire": 2
           },
-          "utilities": {
-            "Artisanship": 1
-          }
+          "utilities": {}
         },
         {
           "form_name": "Sea of Flowers Form",
-          "element_display": "Fire 1",
+          "element_display": "Fire 2",
           "catch_rate": "50%",
           "region": "Sea of Flowers",
           "elements": {
-            "Fire": 1
+            "Fire": 2
           },
           "image": "images/forms/sparki-sea-of-flowers-form.png",
           "abilities": {
-            "Fire": 1,
-            "Artisanship": 1
+            "Fire": 2
           },
-          "utilities": {
-            "Artisanship": 1
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
@@ -2510,12 +2394,9 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/flamerion-highland-form.png",
           "abilities": {
-            "Fire": 3,
-            "Artisanship": 3
+            "Fire": 3
           },
-          "utilities": {
-            "Artisanship": 3
-          }
+          "utilities": {}
         },
         {
           "form_name": "Forest Form",
@@ -2527,12 +2408,9 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/flamerion-forest-form.png",
           "abilities": {
-            "Fire": 3,
-            "Artisanship": 3
+            "Fire": 3
           },
-          "utilities": {
-            "Artisanship": 3
-          }
+          "utilities": {}
         },
         {
           "form_name": "Sea of Flowers Form",
@@ -2544,12 +2422,9 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/flamerion-sea-of-flowers-form.png",
           "abilities": {
-            "Fire": 3,
-            "Artisanship": 3
+            "Fire": 3
           },
-          "utilities": {
-            "Artisanship": 3
-          }
+          "utilities": {}
         }
       ],
       "weather": [],
@@ -2603,23 +2478,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Sea of Flowers Form",
-          "element_display": "Wind 1 / Grass 1",
+          "element_display": "Grass 1 / Wind 1",
           "catch_rate": "56%",
           "region": "Sea of Flowers",
           "elements": {
-            "Wind": 1,
-            "Grass": 1
+            "Grass": 1,
+            "Wind": 1
           },
           "image": "images/forms/flutternym-sea-of-flowers-form.png",
           "abilities": {
-            "Wind": 1,
-            "Grass": 1,
             "Leisure": 1,
-            "Carry": 1
+            "Grass": 1,
+            "Wind": 1
           },
           "utilities": {
-            "Leisure": 1,
-            "Carry": 1
+            "Leisure": 1
           }
         },
         {
@@ -2633,37 +2506,31 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/flutternym-nighttime-form.png",
           "abilities": {
-            "Wind": 1,
-            "Dark": 1,
             "Leisure": 1,
-            "Carry": 1
+            "Wind": 1,
+            "Dark": 1
           },
           "utilities": {
-            "Leisure": 1,
-            "Carry": 1
+            "Leisure": 1
           }
         },
         {
           "form_name": "Mountain Woods Form",
-          "element_display": "Wind 1 / Earth 1",
+          "element_display": "Earth 1 / Wind 1",
           "catch_rate": "56%",
           "region": "Beast Fang Ridge, Blitzwood",
           "elements": {
-            "Wind": 1,
-            "Earth": 1
+            "Earth": 1,
+            "Wind": 1
           },
           "image": "images/forms/flutternym-mountain-woods-form.png",
           "abilities": {
-            "Wind": 1,
             "Earth": 1,
             "Leisure": 1,
-            "Artisanship": 1,
-            "Carry": 1
+            "Wind": 1
           },
           "utilities": {
-            "Leisure": 1,
-            "Artisanship": 1,
-            "Carry": 1
+            "Leisure": 1
           }
         }
       ],
@@ -2907,7 +2774,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/eklue.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-eklue-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Judgment Storm",
     "trait_effect": "When applies a debuff to a target, Wind damage for the whole team increases by X for Xs.",
     "matchups": {
@@ -3000,10 +2867,10 @@ window.ANIIMO_DATA = [
           "image": "images/forms/budsquire-towerwood-form.png",
           "abilities": {
             "Grass": 1,
-            "Artisanship": 2
+            "Artisanship": 1
           },
           "utilities": {
-            "Artisanship": 2
+            "Artisanship": 1
           }
         }
       ],
@@ -3079,14 +2946,16 @@ window.ANIIMO_DATA = [
       "weather": [
         {
           "form_name": "Thunderstorm Form",
-          "element_display": "Grass 3",
+          "element_display": "Lightning 2 / Grass 3",
           "catch_rate": "25%",
           "region": "Sea of Flowers",
           "elements": {
+            "Lightning": 2,
             "Grass": 3
           },
           "image": "images/forms/thornblade-thunderstorm-form.png",
           "abilities": {
+            "Lightning": 2,
             "Grass": 3,
             "Artisanship": 3
           },
@@ -3097,17 +2966,17 @@ window.ANIIMO_DATA = [
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Grass 4 / Water 4",
+        "element_display": "Water 3 / Grass 4",
         "catch_rate": "25%",
         "region": "Sea of Flowers",
         "elements": {
-          "Grass": 4,
-          "Water": 4
+          "Water": 3,
+          "Grass": 4
         },
         "image": "images/forms/thornblade-prismana.png",
         "abilities": {
+          "Water": 3,
           "Grass": 4,
-          "Water": 4,
           "Artisanship": 4
         },
         "utilities": {
@@ -3168,14 +3037,16 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Grass 4",
+        "element_display": "Light 3 / Grass 4",
         "catch_rate": "25%",
         "region": "Idyll Native Habitat",
         "elements": {
+          "Light": 3,
           "Grass": 4
         },
         "image": "images/forms/melloblum-prismana.png",
         "abilities": {
+          "Light": 3,
           "Grass": 4,
           "Artisanship": 4
         },
@@ -3461,7 +3332,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/fragrancier.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fragrancier-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "Dangerous Fragrance",
     "trait_effect": "When deals damage to a target, reduces the target's Dark Resistance by X for Xs.",
     "matchups": {
@@ -3543,40 +3414,40 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Forest Form",
-          "element_display": "Dark 1 / Grass 1",
+          "element_display": "Grass 1 / Dark 1",
           "catch_rate": "50%",
           "region": "The Mistwoods",
           "elements": {
-            "Dark": 1,
-            "Grass": 1
+            "Grass": 1,
+            "Dark": 1
           },
           "image": "images/forms/wisptis-forest-form.png",
           "abilities": {
-            "Dark": 1,
+            "Artisanship": 1,
             "Grass": 1,
-            "Leisure": 1
+            "Dark": 1
           },
           "utilities": {
-            "Leisure": 1
+            "Artisanship": 1
           }
         },
         {
           "form_name": "Highland Form",
-          "element_display": "Dark 1 / Fire 1",
+          "element_display": "Fire 1 / Dark 1",
           "catch_rate": "44%",
           "region": "Zephyrus Landbridge, Blitzwood",
           "elements": {
-            "Dark": 1,
-            "Fire": 1
+            "Fire": 1,
+            "Dark": 1
           },
           "image": "images/forms/wisptis-highland-form.png",
           "abilities": {
-            "Dark": 1,
+            "Artisanship": 1,
             "Fire": 1,
-            "Leisure": 1
+            "Dark": 1
           },
           "utilities": {
-            "Leisure": 1
+            "Artisanship": 1
           }
         }
       ],
@@ -3671,18 +3542,18 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Dark 4 / Fire 4",
+        "element_display": "Fire 3 / Dark 4",
         "catch_rate": "22%",
         "region": "Berylline Vale",
         "elements": {
-          "Dark": 4,
-          "Fire": 4
+          "Fire": 3,
+          "Dark": 4
         },
         "image": "images/forms/ignitis-prismana.png",
         "abilities": {
-          "Dark": 4,
-          "Fire": 4,
-          "Artisanship": 4
+          "Artisanship": 4,
+          "Fire": 3,
+          "Dark": 4
         },
         "utilities": {
           "Artisanship": 4
@@ -3901,15 +3772,17 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Ice 4",
+        "element_display": "Ice 4 / Light 3",
         "catch_rate": "25%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Ice": 4
+          "Ice": 4,
+          "Light": 3
         },
         "image": "images/forms/glynsera-prismana.png",
         "abilities": {
           "Ice": 4,
+          "Light": 3,
           "Carry": 4
         },
         "utilities": {
@@ -3976,10 +3849,10 @@ window.ANIIMO_DATA = [
           "image": "images/forms/bolty-mountain-woods-form.png",
           "abilities": {
             "Lightning": 1,
-            "Carry": 1
+            "Artisanship": 1
           },
           "utilities": {
-            "Carry": 1
+            "Artisanship": 1
           }
         }
       ],
@@ -4054,16 +3927,18 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Lightning 4",
+        "element_display": "Lightning 4 / Dark 3",
         "catch_rate": "25%",
         "region": "Blitzwood",
         "elements": {
-          "Lightning": 4
+          "Lightning": 4,
+          "Dark": 3
         },
         "image": "images/forms/blazen-prismana.png",
         "abilities": {
           "Lightning": 4,
-          "Artisanship": 4
+          "Artisanship": 4,
+          "Dark": 3
         },
         "utilities": {
           "Artisanship": 4
@@ -4225,23 +4100,6 @@ window.ANIIMO_DATA = [
             "Water": 1
           },
           "image": "images/forms/susuta-nighttime-form.png",
-          "abilities": {
-            "Water": 1,
-            "Leisure": 1
-          },
-          "utilities": {
-            "Leisure": 1
-          }
-        },
-        {
-          "form_name": "Basic Form (variant record)",
-          "element_display": "Water 1",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
-            "Water": 1
-          },
-          "image": "images/forms/susuta-basic-form-variant-record.png",
           "abilities": {
             "Water": 1,
             "Leisure": 1
@@ -4524,25 +4382,7 @@ window.ANIIMO_DATA = [
           "Leisure": 1
         }
       },
-      "regional": [
-        {
-          "form_name": "Basic Form (variant record)",
-          "element_display": "Water 1",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
-            "Water": 1
-          },
-          "image": "images/shelly.png",
-          "abilities": {
-            "Water": 1,
-            "Leisure": 1
-          },
-          "utilities": {
-            "Leisure": 1
-          }
-        }
-      ],
+      "regional": [],
       "weather": [],
       "prismana": null
     },
@@ -4665,15 +4505,17 @@ window.ANIIMO_DATA = [
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Water 4",
+        "element_display": "Water 4 / Light 3",
         "catch_rate": "22%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Water": 4
+          "Water": 4,
+          "Light": 3
         },
         "image": "images/forms/sherro-prismana.png",
         "abilities": {
           "Water": 4,
+          "Light": 3,
           "Leisure": 4
         },
         "utilities": {
@@ -4732,23 +4574,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Snowfield Form",
-          "element_display": "Earth 1 / Ice 1",
+          "element_display": "Ice 1 / Earth 1",
           "catch_rate": "38%",
           "region": "Russet Highlands",
           "elements": {
-            "Earth": 1,
-            "Ice": 1
+            "Ice": 1,
+            "Earth": 1
           },
           "image": "images/forms/baleetle-snowfield-form.png",
           "abilities": {
-            "Earth": 1,
             "Ice": 1,
-            "Carry": 1,
-            "Artisanship": 1
+            "Earth": 1,
+            "Carry": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         }
       ],
@@ -4805,39 +4645,39 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Snowfield Form",
-          "element_display": "Earth 3 / Ice 2",
+          "element_display": "Ice 2 / Earth 3",
           "catch_rate": "19%",
           "region": "Russet Highlands",
           "elements": {
-            "Earth": 3,
-            "Ice": 2
+            "Ice": 2,
+            "Earth": 3
           },
           "image": "images/forms/waleetle-snowfield-form.png",
           "abilities": {
-            "Earth": 3,
             "Ice": 2,
-            "Carry": 3,
-            "Artisanship": 1
+            "Earth": 3,
+            "Carry": 3
           },
           "utilities": {
-            "Carry": 3,
-            "Artisanship": 1
+            "Carry": 3
           }
         }
       ],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Earth 4",
+        "element_display": "Earth 4 / Dark 3",
         "catch_rate": "19%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Earth": 4
+          "Earth": 4,
+          "Dark": 3
         },
         "image": "images/forms/waleetle-prismana.png",
         "abilities": {
           "Earth": 4,
-          "Carry": 4
+          "Carry": 4,
+          "Dark": 3
         },
         "utilities": {
           "Carry": 4
@@ -4895,23 +4735,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Snowfield Form",
-          "element_display": "Earth 3 / Ice 2",
+          "element_display": "Ice 2 / Earth 3",
           "catch_rate": "19%",
           "region": "Idyll Native Habitat",
           "elements": {
-            "Earth": 3,
-            "Ice": 2
+            "Ice": 2,
+            "Earth": 3
           },
           "image": "images/forms/bouldus-snowfield-form.png",
           "abilities": {
-            "Earth": 3,
             "Ice": 2,
-            "Carry": 3,
-            "Artisanship": 1
+            "Earth": 3,
+            "Carry": 3
           },
           "utilities": {
-            "Carry": 3,
-            "Artisanship": 1
+            "Carry": 3
           }
         }
       ],
@@ -5017,19 +4855,23 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Lightning 4",
+        "element_display": "Lightning 4 / Light 3",
         "catch_rate": "22%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Lightning": 4
+          "Lightning": 4,
+          "Light": 3
         },
         "image": "images/forms/fenmane-prismana.png",
         "abilities": {
           "Lightning": 4,
-          "Carry": 4
+          "Artisanship": 4,
+          "Light": 3,
+          "Carry": 3
         },
         "utilities": {
-          "Carry": 4
+          "Artisanship": 4,
+          "Carry": 3
         }
       }
     },
@@ -5080,23 +4922,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Snowfield Form",
-          "element_display": "Dark 1 / Ice 1",
+          "element_display": "Ice 1 / Dark 1",
           "catch_rate": "32%",
           "region": "Russet Highlands",
           "elements": {
-            "Dark": 1,
-            "Ice": 1
+            "Ice": 1,
+            "Dark": 1
           },
           "image": "images/forms/helmut-snowfield-form.png",
           "abilities": {
-            "Dark": 1,
             "Ice": 1,
             "Carry": 1,
-            "Artisanship": 1
+            "Dark": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         },
         {
@@ -5109,13 +4949,11 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/helmut-mountain-woods-form.png",
           "abilities": {
-            "Dark": 1,
             "Carry": 1,
-            "Artisanship": 1
+            "Dark": 1
           },
           "utilities": {
-            "Carry": 1,
-            "Artisanship": 1
+            "Carry": 1
           }
         }
       ],
@@ -5240,7 +5078,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/rookey.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-rookey-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Guardbreak Resonance",
     "trait_effect": "Increases BREAK by X.",
     "matchups": {
@@ -5273,23 +5111,21 @@ window.ANIIMO_DATA = [
       "regional": [
         {
           "form_name": "Snowfield Form",
-          "element_display": "Dark 3 / Ice 2",
+          "element_display": "Ice 2 / Dark 3",
           "catch_rate": "19%",
           "region": "Russet Highlands",
           "elements": {
-            "Dark": 3,
-            "Ice": 2
+            "Ice": 2,
+            "Dark": 3
           },
           "image": "images/forms/rookey-snowfield-form.png",
           "abilities": {
-            "Dark": 3,
             "Ice": 2,
             "Carry": 3,
-            "Artisanship": 3
+            "Dark": 3
           },
           "utilities": {
-            "Carry": 3,
-            "Artisanship": 3
+            "Carry": 3
           }
         },
         {
@@ -5302,13 +5138,11 @@ window.ANIIMO_DATA = [
           },
           "image": "images/forms/rookey-mountain-woods-form.png",
           "abilities": {
-            "Dark": 3,
             "Carry": 3,
-            "Artisanship": 3
+            "Dark": 3
           },
           "utilities": {
-            "Carry": 3,
-            "Artisanship": 3
+            "Carry": 3
           }
         }
       ],
@@ -5567,21 +5401,21 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Fire 4 / Wind 4",
+        "element_display": "Fire 4 / Wind 3",
         "catch_rate": "19%",
         "region": "Idyll Native Habitat",
         "elements": {
           "Fire": 4,
-          "Wind": 4
+          "Wind": 3
         },
         "image": "images/forms/infergon-prismana.png",
         "abilities": {
+          "Carry": 4,
           "Fire": 4,
-          "Wind": 4,
-          "Artisanship": 4
+          "Wind": 3
         },
         "utilities": {
-          "Artisanship": 4
+          "Carry": 4
         }
       }
     },
@@ -5686,16 +5520,18 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Earth 4",
+        "element_display": "Earth 4 / Dark 3",
         "catch_rate": "16%",
         "region": "Rosetower Woods",
         "elements": {
-          "Earth": 4
+          "Earth": 4,
+          "Dark": 3
         },
         "image": "images/forms/grizbo-prismana.png",
         "abilities": {
           "Earth": 4,
-          "Carry": 4
+          "Carry": 4,
+          "Dark": 3
         },
         "utilities": {
           "Carry": 4
@@ -5849,44 +5685,22 @@ window.ANIIMO_DATA = [
           "Carry": 3
         }
       },
-      "regional": [
-        {
-          "form_name": "Basic Form (variant record)",
-          "element_display": "Fire 3 / Earth 2",
-          "catch_rate": "25%",
-          "region": "Idyll Native Habitat",
-          "elements": {
-            "Fire": 3,
-            "Earth": 2
-          },
-          "image": "images/forms/magmarex-basic-form-variant-record.png",
-          "abilities": {
-            "Fire": 3,
-            "Earth": 2,
-            "Carry": 3,
-            "Artisanship": 1
-          },
-          "utilities": {
-            "Carry": 3,
-            "Artisanship": 1
-          }
-        }
-      ],
+      "regional": [],
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Fire 4 / Dark 4",
+        "element_display": "Fire 4 / Dark 3",
         "catch_rate": "19%",
         "region": "Zephyrus Landbridge",
         "elements": {
           "Fire": 4,
-          "Dark": 4
+          "Dark": 3
         },
         "image": "images/forms/magmarex-prismana.png",
         "abilities": {
+          "Carry": 4,
           "Fire": 4,
-          "Dark": 4,
-          "Carry": 4
+          "Dark": 3
         },
         "utilities": {
           "Carry": 4
@@ -5958,7 +5772,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/minespine.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-minespine-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "Earth Affinity",
     "trait_effect": "While in [Tunneling] state, can cast skills and deal X% extra BREAK damage.",
     "matchups": {
@@ -6058,7 +5872,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/bailite.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-bailite-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "Potent Erosion",
     "trait_effect": "When a skill or an Ultimate hits a target, reduces the target's Earth Resistance by X for Xs. Stacks up to 10 times.",
     "matchups": {
@@ -6262,15 +6076,17 @@ window.ANIIMO_DATA = [
       ],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Lightning 4",
+        "element_display": "Lightning 4 / Light 3",
         "catch_rate": "22%",
         "region": "Tideblossom Coast",
         "elements": {
-          "Lightning": 4
+          "Lightning": 4,
+          "Light": 3
         },
         "image": "images/forms/luminelle-prismana.png",
         "abilities": {
           "Lightning": 4,
+          "Light": 3,
           "Artisanship": 4
         },
         "utilities": {
@@ -6385,7 +6201,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": false,
     "image": "images/besauce.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-besauce-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "Power Surge",
     "trait_effect": "When casting a skill with less than 20 EP, restores X EP.",
     "matchups": {
@@ -6434,7 +6250,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": true,
     "image": "images/dazmand.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-dazmand-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "Spotlight Moment",
     "trait_effect": "The first skill this Aniimo uses within Xs of entering battle does not consume EP. Cooldown: Xs.",
     "matchups": {
@@ -6519,15 +6335,17 @@ window.ANIIMO_DATA = [
       "weather": [],
       "prismana": {
         "form_name": "Prismana",
-        "element_display": "Lightning 4",
+        "element_display": "Lightning 4 / Light 3",
         "catch_rate": "22%",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Lightning": 4
+          "Lightning": 4,
+          "Light": 3
         },
         "image": "images/forms/fulmintis-prismana.png",
         "abilities": {
           "Lightning": 4,
+          "Light": 3,
           "Artisanship": 4
         },
         "utilities": {
@@ -6549,7 +6367,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": true,
     "image": "images/fennelun.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-fennelun-handbook.png",
-    "tier": "S-Tier",
+    "tier": "A-Tier",
     "trait": "**Lunar Power**",
     "trait_effect": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals X% extra damage, and restores X% HP.",
     "matchups": {
@@ -6687,7 +6505,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": true,
     "image": "images/helion.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-helion-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "**Solar Grace**",
     "trait_effect": "When not attacking with an advantageous element, final damage increases by X%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
     "matchups": {
@@ -6733,7 +6551,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": true,
     "image": "images/morphling.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-morphling-handbook.png",
-    "tier": "B-Tier",
+    "tier": "A-Tier",
     "trait": "Elemental Harmony",
     "trait_effect": "Enhances productivity when working at element-aligned workstations.",
     "matchups": {
@@ -6826,7 +6644,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": true,
     "image": "images/sparkelf.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-sparkelf-handbook.png",
-    "tier": "A-Tier",
+    "tier": "S-Tier",
     "trait": "Reliable Fire Companion",
     "trait_effect": "When in a party, increases party X Fire Elemental Boost. When Energy is above X, the effect increases to X.",
     "matchups": {
@@ -6889,7 +6707,7 @@ window.ANIIMO_DATA = [
     "is_unnumbered": true,
     "image": "images/irisalis.png",
     "handbook_image_url": "https://media.dexerto.com/media/aniimo-creatures-irisalis-handbook.png",
-    "tier": "A-Tier",
+    "tier": "S-Tier",
     "trait": "**Bloom Cluster**",
     "trait_effect": "When casting Whirling Blossom Rain or landing the final hit of a basic attack, all Irisalis clones fire floral beams at the target, each with 15 Might. If an Irisalis clone's attack hits, this Aniimo gains 1 Dance Power. After accumulating 9 Dance Power, the next skill cast costs 50% less EP. When Fainted, it turns back into a flower and blooms again, restoring vitality. Can trigger once every Xs.",
     "matchups": {
@@ -6903,18 +6721,18 @@ window.ANIIMO_DATA = [
     "forms": {
       "basic": {
         "form_name": "Basic Form",
-        "element_display": "Grass 3",
+        "element_display": "Grass 4",
         "catch_rate": "Standard",
         "region": "Idyll Native Habitat",
         "elements": {
-          "Grass": 3
+          "Grass": 4
         },
         "utilities": {
-          "Leisure": 3
+          "Leisure": 4
         },
         "abilities": {
-          "Grass": 3,
-          "Leisure": 3
+          "Grass": 4,
+          "Leisure": 4
         },
         "image": "images/irisalis.png"
       },

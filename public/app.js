@@ -18,6 +18,7 @@ const modalClose = document.getElementById('modalClose');
 const modalBody = document.getElementById('modalBody');
 
 // Element & Homeland Utility colors, icons, and official definitions
+// Element & Homeland Utility colors, icons, and official definitions
 const abilityMeta = {
   // Elemental Roles
   Fire: { emoji: '🔥', color1: '#ea580c', color2: '#f97316', desc: 'Cooking, smelting, and supplying heat' },
@@ -35,6 +36,10 @@ const abilityMeta = {
   Leisure: { emoji: '☕', color1: '#059669', color2: '#10b981', desc: 'Producing items while playing and engaging in leisure activities' },
   Perfumery: { emoji: '🌸', color1: '#db2777', color2: '#f43f5e', desc: 'Working effectively at the perfume bench to craft scented goods' }
 };
+// Aliases for canonical naming compatibility
+abilityMeta.Electric = abilityMeta.Lightning;
+abilityMeta.Holy = abilityMeta.Light;
+abilityMeta.Rock = abilityMeta.Earth;
 const elementMeta = abilityMeta;
 
 // Fetch Data from Node.js REST API
@@ -423,11 +428,21 @@ function applyFilters() {
 
     if (hasElementFilter || hasMinLvlFilter) {
       const elLower = hasElementFilter ? selectedElement.toLowerCase() : null;
+      const aliases = {
+        lightning: ['lightning', 'electric'],
+        electric: ['lightning', 'electric'],
+        light: ['light', 'holy'],
+        holy: ['light', 'holy'],
+        earth: ['earth', 'rock'],
+        rock: ['earth', 'rock']
+      };
+      const targetKeys = elLower ? (aliases[elLower] || [elLower]) : null;
+
       const matchingForms = candidateForms.filter(cForm => {
         const pool = { ...(cForm.data.elements || {}), ...(cForm.data.abilities || {}), ...(cForm.data.utilities || {}) };
-        if (elLower) {
+        if (targetKeys) {
           for (const [k, v] of Object.entries(pool)) {
-            if (k.toLowerCase() === elLower && v >= minLvl) return true;
+            if (targetKeys.includes(k.toLowerCase()) && v >= minLvl) return true;
           }
           return false;
         } else {

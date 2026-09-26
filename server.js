@@ -85,8 +85,17 @@ app.get('/api/aniimo', (req, res) => {
       return formsToCheck.some(f => {
         const pool = { ...(f.elements || {}), ...(f.abilities || {}), ...(f.utilities || {}) };
         if (elLower) {
+          const aliases = {
+            lightning: ['lightning', 'electric'],
+            electric: ['lightning', 'electric'],
+            light: ['light', 'holy'],
+            holy: ['light', 'holy'],
+            earth: ['earth', 'rock'],
+            rock: ['earth', 'rock']
+          };
+          const targetKeys = aliases[elLower] || [elLower];
           for (const [k, v] of Object.entries(pool)) {
-            if (k.toLowerCase() === elLower && v >= minLvl) return true;
+            if (targetKeys.includes(k.toLowerCase()) && v >= minLvl) return true;
           }
           return false;
         } else {
