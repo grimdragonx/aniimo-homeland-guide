@@ -207,6 +207,16 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
 });
 
+app.get('/ads.txt', (req, res) => {
+  res.type('text/plain');
+  res.sendFile(path.join(__dirname, 'public', 'ads.txt'));
+});
+
+app.get('/googleb4b043a56c142eb5.html', (req, res) => {
+  res.type('text/html');
+  res.sendFile(path.join(__dirname, 'public', 'googleb4b043a56c142eb5.html'));
+});
+
 // Serve frontend static assets
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/data', express.static(path.join(__dirname, 'data')));
