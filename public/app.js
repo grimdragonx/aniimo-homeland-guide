@@ -1,4 +1,5 @@
 // Aniimo Homeland Hub Frontend Application (Client-Side)
+const defaultPageTitle = document.title;
 
 let allAniimo = [];
 let currentFormFilter = 'all';
@@ -209,8 +210,11 @@ function renderCards(list) {
         <div class="card-portrait-wrap" onclick="openDetailModal('${item.id}')" style="cursor: pointer;" title="Click for full handbook details">
           <img src="${currentImg}" 
                class="portrait-img" 
-               alt="${item.name}" 
+               alt="${item.name} (${item.display_id}) Handbook Portrait - Aniimo Homeland Guide" 
                loading="lazy" 
+               decoding="async"
+               width="160"
+               height="160"
                onerror="if (!this.dataset.fallback) { this.dataset.fallback='1'; this.src='images/${item.slug}.png'; } else if (this.dataset.fallback==='1') { this.dataset.fallback='2'; this.src='images/${item.id}.png'; } else if (this.dataset.fallback==='2') { this.dataset.fallback='3'; this.src='images/unknown.png'; }">
           <div class="portrait-overlay">
             <span class="portrait-badge-id" style="${item.is_unnumbered ? 'background: rgba(234, 88, 12, 0.4); border: 1px solid rgba(234, 88, 12, 0.7);' : ''}">${item.display_id}</span>
@@ -268,8 +272,13 @@ window.setCardTab = function(id, tab) {
 };
 
 window.openDetailModal = function(id) {
-  const item = allAniimo.find(a => a.id === id || a.slug === id);
+  const item = allAniimo.find(a => a.id === id || a.slug === id || (typeof id === 'string' && id.startsWith(a.id)));
   if (!item) return;
+
+  // Dynamic SEO Title and Deep Link Hash
+  document.title = `${item.name} (${item.display_id}) Homeland Abilities & Forms | Aniimo Guide`;
+  const searchStr = window.location.search || '';
+  history.replaceState(null, null, `${window.location.pathname}${searchStr}#${item.id}-${item.slug}`);
 
   const basic = item.forms.basic;
   const regionalList = item.forms.regional || [];
@@ -297,6 +306,9 @@ window.openDetailModal = function(id) {
         <td style="padding: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
           <img src="${f.image || item.image}" 
                style="width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.3);" 
+               loading="lazy" 
+               decoding="async" 
+               alt="${f.form_name} - ${item.name}" 
                onerror="this.onerror=null; this.src='images/${item.slug}.png';">
           <strong>${f.form_name}</strong>
         </td>
@@ -313,7 +325,11 @@ window.openDetailModal = function(id) {
       <div style="width: 180px; height: 180px; border-radius: 12px; overflow: hidden; background: #0f172a; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);">
         <img src="${item.image}" 
              style="max-width: 90%; max-height: 90%; object-fit: contain;" 
-             alt="${item.name}" 
+             alt="${item.name} (${item.display_id}) Official Handbook Portrait" 
+             loading="lazy" 
+             decoding="async" 
+             width="160" 
+             height="160" 
              onerror="this.onerror=null; this.src='images/${item.slug}.png';">
       </div>
       <div style="flex: 1; min-width: 250px;">
@@ -364,12 +380,21 @@ window.openDetailModal = function(id) {
   detailModal.classList.remove('hidden');
 };
 
-modalClose.addEventListener('click', () => {
+function closeDetailModal() {
   detailModal.classList.add('hidden');
-});
+  document.title = defaultPageTitle;
+  const searchStr = window.location.search || '';
+  history.replaceState(null, null, `${window.location.pathname}${searchStr}`);
+}
 
+modalClose.addEventListener('click', closeDetailModal);
 detailModal.addEventListener('click', (e) => {
-  if (e.target === detailModal) detailModal.classList.add('hidden');
+  if (e.target === detailModal) closeDetailModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !detailModal.classList.contains('hidden')) {
+    closeDetailModal();
+  }
 });
 
 // Filter Engine
@@ -478,6 +503,21 @@ function applyFilters() {
   });
 
   renderCards(filtered);
+  syncUrlParams();
+}
+
+function syncUrlParams() {
+  const params = new URLSearchParams();
+  const q = (searchInput.value || '').trim();
+  if (q) params.set('search', q);
+  if (tierFilter && tierFilter.value !== 'all') params.set('tier', tierFilter.value);
+  if (elementFilter.value !== 'all') params.set('element', elementFilter.value);
+  if (minLevelFilter.value !== '1') params.set('minLevel', minLevelFilter.value);
+  if (currentFormFilter !== 'all') params.set('form', currentFormFilter);
+
+  const searchStr = params.toString() ? '?' + params.toString() : '';
+  const currentHash = window.location.hash || '';
+  history.replaceState(null, null, `${window.location.pathname}${searchStr}${currentHash}`);
 }
 
 // Event Listeners
@@ -502,7 +542,47 @@ pillBtns.forEach(btn => {
 
 // App Initialization
 (async function init() {
+  // Restore filter state from URL search params
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('search')) searchInput.value = params.get('search');
+  if (params.get('tier') && tierFilter) tierFilter.value = params.get('tier');
+  if (params.get('element')) elementFilter.value = params.get('element');
+  if (params.get('minLevel')) minLevelFilter.value = params.get('minLevel');
+  if (params.get('form')) {
+    currentFormFilter = params.get('form');
+    pillBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.form === currentFormFilter);
+    });
+  }
+
   fetchStats();
   allAniimo = await fetchAniimoData();
   applyFilters();
+
+  // Check URL hash or ?aniimo= to auto-open creature modal
+  const hash = window.location.hash.replace('#', '').trim();
+  const aniimoParam = params.get('aniimo');
+  const target = aniimoParam || hash;
+  if (target) {
+    const idMatch = target.match(/^(\d{3}|[a-zA-Z0-9_-]+)/);
+    const targetKey = idMatch ? idMatch[1] : target;
+    const match = allAniimo.find(a => a.id === targetKey || a.slug === targetKey || target.startsWith(a.id));
+    if (match) {
+      openDetailModal(match.id);
+    }
+  }
+
+  // Handle hash changes (back/forward browser navigation)
+  window.addEventListener('hashchange', () => {
+    const h = window.location.hash.replace('#', '').trim();
+    if (!h) {
+      if (!detailModal.classList.contains('hidden')) {
+        detailModal.classList.add('hidden');
+        document.title = defaultPageTitle;
+      }
+    } else {
+      const match = allAniimo.find(a => h.startsWith(a.id) || h === a.slug);
+      if (match) openDetailModal(match.id);
+    }
+  });
 })();

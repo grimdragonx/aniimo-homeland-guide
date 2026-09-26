@@ -26,7 +26,7 @@
   <meta name="twitter:description" content="Search canonical Homeland proficiencies (Levels 1–4), Prismana forms, and best worker tier list for all 92 Aniimo.">
   <meta name="twitter:image" content="https://aniimo-homeland-guide.vercel.app/images/somniwing.png">
 
-  <!-- Structured Data: WebApplication + FAQPage JSON-LD -->
+  <!-- Structured Data: WebApplication, FAQPage, and BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,6 +43,29 @@
           "@type": "Person",
           "name": "grimdragonx"
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://aniimo-homeland-guide.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Homeland Abilities Guide",
+            "item": "https://aniimo-homeland-guide.vercel.app/#homelandGuide"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "92 Species Directory",
+            "item": "https://aniimo-homeland-guide.vercel.app/#creatureDirectory"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -205,6 +228,14 @@
       </div>
     </section>
 
+    <!-- Fallback Notice for Non-JS Clients & Web Crawlers -->
+    <noscript>
+      <div style="background: rgba(30, 41, 59, 0.95); border: 1px solid #38bdf8; color: #f8fafc; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; text-align: center;">
+        <h3 style="color: #38bdf8; margin-bottom: 0.5rem; font-size: 1.3rem;">⚡ JavaScript Recommended</h3>
+        <p style="color: #cbd5e1; max-width: 800px; margin: 0 auto; line-height: 1.5;">This interactive guide features real-time filtering, form switching, and modal popups. If JavaScript is disabled in your browser, please browse the comprehensive pre-rendered <strong>92 Aniimo Directory Table</strong> below.</p>
+      </div>
+    </noscript>
+
     <!-- Cards Grid -->
     <main class="aniimo-grid" id="aniimoGrid">
       <!-- Injected via JavaScript -->
@@ -217,6 +248,766 @@
         <div id="modalBody"></div>
       </div>
     </div>
+
+    <!-- Crawlable Pre-rendered Directory Table for Search Bots & Fast Scanning -->
+    <section class="crawlable-directory-section" id="creatureDirectory">
+      <div class="seo-card">
+        <h2>📑 Complete 92 Aniimo Species & Homeland Abilities Directory</h2>
+        <p class="seo-intro">Comprehensive searchable index of all 92 canonical Aniimo species with their Homeland tier ranking, available forms, standard base proficiencies, and radiant Prismana form abilities.</p>
+        <div class="table-responsive">
+          <table class="crawlable-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Aniimo Name</th>
+                <th>Worker Tier</th>
+                <th>Forms Count</th>
+                <th>Standard Abilities</th>
+                <th>Prismana Form Abilities</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><code>#001</code></td>
+              <td><a href="#001-emberpup" onclick="openDetailModal('001'); return false;">Emberpup</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#002</code></td>
+              <td><a href="#002-flameruff" onclick="openDetailModal('002'); return false;">Flameruff</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#003</code></td>
+              <td><a href="#003-scorchhowl" onclick="openDetailModal('003'); return false;">Scorchhowl</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>5 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#004</code></td>
+              <td><a href="#004-inferlupa" onclick="openDetailModal('004'); return false;">Inferlupa</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#005</code></td>
+              <td><a href="#005-celestis" onclick="openDetailModal('005'); return false;">Celestis</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#006</code></td>
+              <td><a href="#006-stellarys" onclick="openDetailModal('006'); return false;">Stellarys</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#007</code></td>
+              <td><a href="#007-chirpi" onclick="openDetailModal('007'); return false;">Chirpi</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#008</code></td>
+              <td><a href="#008-tromber" onclick="openDetailModal('008'); return false;">Tromber</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#009</code></td>
+              <td><a href="#009-cornet" onclick="openDetailModal('009'); return false;">Cornet</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#010</code></td>
+              <td><a href="#010-tubster" onclick="openDetailModal('010'); return false;">Tubster</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#011</code></td>
+              <td><a href="#011-iris" onclick="openDetailModal('011'); return false;">Iris</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>7 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#012</code></td>
+              <td><a href="#012-irisal" onclick="openDetailModal('012'); return false;">Irisal</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>7 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#013</code></td>
+              <td><a href="#013-skippy" onclick="openDetailModal('013'); return false;">Skippy</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#014</code></td>
+              <td><a href="#014-pranky" onclick="openDetailModal('014'); return false;">Pranky</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#015</code></td>
+              <td><a href="#015-glacy" onclick="openDetailModal('015'); return false;">Glacy</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#016</code></td>
+              <td><a href="#016-leafy" onclick="openDetailModal('016'); return false;">Leafy</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#017</code></td>
+              <td><a href="#017-nimbi" onclick="openDetailModal('017'); return false;">Nimbi</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#018</code></td>
+              <td><a href="#018-turbo" onclick="openDetailModal('018'); return false;">Turbo</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>5 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#019</code></td>
+              <td><a href="#019-dreaple" onclick="openDetailModal('019'); return false;">Dreaple</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#020</code></td>
+              <td><a href="#020-hummin" onclick="openDetailModal('020'); return false;">Hummin</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#021</code></td>
+              <td><a href="#021-hexxin" onclick="openDetailModal('021'); return false;">Witchin</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#022</code></td>
+              <td><a href="#022-tuckin" onclick="openDetailModal('022'); return false;">Tuckin</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#023</code></td>
+              <td><a href="#023-budclaw" onclick="openDetailModal('023'); return false;">Budclaw</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#024</code></td>
+              <td><a href="#024-shrubclaw" onclick="openDetailModal('024'); return false;">Shrubclaw</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#025</code></td>
+              <td><a href="#025-geoclaw" onclick="openDetailModal('025'); return false;">Geoclaw</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#026</code></td>
+              <td><a href="#026-sparki" onclick="openDetailModal('026'); return false;">Sparki</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#027</code></td>
+              <td><a href="#027-flamerion" onclick="openDetailModal('027'); return false;">Flamerion</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#028</code></td>
+              <td><a href="#028-flutternym" onclick="openDetailModal('028'); return false;">Flutternym</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#029</code></td>
+              <td><a href="#029-gracewing" onclick="openDetailModal('029'); return false;">Gracewing</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#030</code></td>
+              <td><a href="#030-somniwing" onclick="openDetailModal('030'); return false;">Somniwing</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#031</code></td>
+              <td><a href="#031-eko" onclick="openDetailModal('031'); return false;">Eko</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#032</code></td>
+              <td><a href="#032-eklue" onclick="openDetailModal('032'); return false;">Eklue</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#033</code></td>
+              <td><a href="#033-budsquire" onclick="openDetailModal('033'); return false;">Budsquire</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#034</code></td>
+              <td><a href="#034-thornblade" onclick="openDetailModal('034'); return false;">Thornblade</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#035</code></td>
+              <td><a href="#035-melloblum" onclick="openDetailModal('035'); return false;">Melloblum</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#036</code></td>
+              <td><a href="#036-pomegg" onclick="openDetailModal('036'); return false;">Pomegg</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#037</code></td>
+              <td><a href="#037-pomawk" onclick="openDetailModal('037'); return false;">Pomawk</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#038</code></td>
+              <td><a href="#038-dewy" onclick="openDetailModal('038'); return false;">Dewy</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#039</code></td>
+              <td><a href="#039-fragrancier" onclick="openDetailModal('039'); return false;">Fragrancier</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#040</code></td>
+              <td><a href="#040-wisptis" onclick="openDetailModal('040'); return false;">Wisptis</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#041</code></td>
+              <td><a href="#041-ignitis" onclick="openDetailModal('041'); return false;">Ignitis</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#042</code></td>
+              <td><a href="#042-bonesky" onclick="openDetailModal('042'); return false;">Bonesky</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#043</code></td>
+              <td><a href="#043-fenrier" onclick="openDetailModal('043'); return false;">Fenrier</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#044</code></td>
+              <td><a href="#044-glynsera" onclick="openDetailModal('044'); return false;">Glynsera</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#045</code></td>
+              <td><a href="#045-bolty" onclick="openDetailModal('045'); return false;">Bolty</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#046</code></td>
+              <td><a href="#046-blazen" onclick="openDetailModal('046'); return false;">Blazen</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#047</code></td>
+              <td><a href="#047-squarrel" onclick="openDetailModal('047'); return false;">Squarrel</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#048</code></td>
+              <td><a href="#048-squashel" onclick="openDetailModal('048'); return false;">Squashel</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#049</code></td>
+              <td><a href="#049-susuta" onclick="openDetailModal('049'); return false;">Susuta</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#050</code></td>
+              <td><a href="#050-popota" onclick="openDetailModal('050'); return false;">Popota</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#051</code></td>
+              <td><a href="#051-piopiota" onclick="openDetailModal('051'); return false;">Piopiota</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#052</code></td>
+              <td><a href="#052-panpanta" onclick="openDetailModal('052'); return false;">Panpanta</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#053</code></td>
+              <td><a href="#053-shelly" onclick="openDetailModal('053'); return false;">Shelly</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#054</code></td>
+              <td><a href="#054-sheldon" onclick="openDetailModal('054'); return false;">Sheldon</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#055</code></td>
+              <td><a href="#055-sherro" onclick="openDetailModal('055'); return false;">Sherro</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#056</code></td>
+              <td><a href="#056-baleetle" onclick="openDetailModal('056'); return false;">Baleetle</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#057</code></td>
+              <td><a href="#057-waleetle" onclick="openDetailModal('057'); return false;">Waleetle</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#058</code></td>
+              <td><a href="#058-bouldus" onclick="openDetailModal('058'); return false;">Bouldus</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#059</code></td>
+              <td><a href="#059-fentuft" onclick="openDetailModal('059'); return false;">Fentuft</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#060</code></td>
+              <td><a href="#060-fenmane" onclick="openDetailModal('060'); return false;">Fenmane</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#061</code></td>
+              <td><a href="#061-helmut" onclick="openDetailModal('061'); return false;">Helmut</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#062</code></td>
+              <td><a href="#062-pawney" onclick="openDetailModal('062'); return false;">Pawney</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>4 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#063</code></td>
+              <td><a href="#063-rookey" onclick="openDetailModal('063'); return false;">Rookey</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#064</code></td>
+              <td><a href="#064-jawling" onclick="openDetailModal('064'); return false;">Jawling</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#065</code></td>
+              <td><a href="#065-helmwhelp" onclick="openDetailModal('065'); return false;">Helmwhelp</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#066</code></td>
+              <td><a href="#066-helgon" onclick="openDetailModal('066'); return false;">Helgon</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#067</code></td>
+              <td><a href="#067-infergon" onclick="openDetailModal('067'); return false;">Infergon</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#068</code></td>
+              <td><a href="#068-cubbo" onclick="openDetailModal('068'); return false;">Cubbo</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#069</code></td>
+              <td><a href="#069-grizbo" onclick="openDetailModal('069'); return false;">Grizbo</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#070</code></td>
+              <td><a href="#070-pebbling" onclick="openDetailModal('070'); return false;">Pebbling</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#071</code></td>
+              <td><a href="#071-lavazar" onclick="openDetailModal('071'); return false;">Lavazar</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#072</code></td>
+              <td><a href="#072-magmarex" onclick="openDetailModal('072'); return false;">Magmarex</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#073</code></td>
+              <td><a href="#073-geodeback" onclick="openDetailModal('073'); return false;">Geodeback</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#074</code></td>
+              <td><a href="#074-minespine" onclick="openDetailModal('074'); return false;">Minespine</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#075</code></td>
+              <td><a href="#075-cozite" onclick="openDetailModal('075'); return false;">Cozite</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#076</code></td>
+              <td><a href="#076-bailite" onclick="openDetailModal('076'); return false;">Bailite</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#077</code></td>
+              <td><a href="#077-bulbly" onclick="openDetailModal('077'); return false;">Bulbly</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#078</code></td>
+              <td><a href="#078-veilfloat" onclick="openDetailModal('078'); return false;">Veilfloat</a></td>
+              <td><span class="badge-b-tier">B-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#079</code></td>
+              <td><a href="#079-luminelle" onclick="openDetailModal('079'); return false;">Luminelle</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>3 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#080</code></td>
+              <td><a href="#080-fahloo" onclick="openDetailModal('080'); return false;">Fahloo</a></td>
+              <td><span class="badge-c-tier">C-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#081</code></td>
+              <td><a href="#081-erlath" onclick="openDetailModal('081'); return false;">Erlath</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#082</code></td>
+              <td><a href="#082-besauce" onclick="openDetailModal('082'); return false;">Besauce</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#083-dazmand" onclick="openDetailModal('083'); return false;">Dazmand</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#084-fulmintis" onclick="openDetailModal('084'); return false;">Fulmintis</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#085-fennelun" onclick="openDetailModal('085'); return false;">Fennelun</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#086-lunara" onclick="openDetailModal('086'); return false;">Lunara</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#087-soleon" onclick="openDetailModal('087'); return false;">Soleon</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#088-helion" onclick="openDetailModal('088'); return false;">Helion</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#089-morphling" onclick="openDetailModal('089'); return false;">Morphling</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#090-jabster" onclick="openDetailModal('090'); return false;">Jabster</a></td>
+              <td><span class="badge-a-tier">A-Tier</span></td>
+              <td>1 form</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#091-sparkelf" onclick="openDetailModal('091'); return false;">Little Fire Spirit (Sparkelf)</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            <tr>
+              <td><code>#????</code></td>
+              <td><a href="#092-irisalis" onclick="openDetailModal('092'); return false;">Irisalis</a></td>
+              <td><span class="badge-s-tier">S-Tier</span></td>
+              <td>2 forms</td>
+              <td>None</td>
+              <td><span style="color:#64748b">None</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
     <!-- Semantic SEO Guide & FAQ Section -->
     <section class="seo-guide-section" id="homelandGuide">
