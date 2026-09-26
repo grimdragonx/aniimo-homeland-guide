@@ -203,13 +203,8 @@ app.get('/robots.txt', (req, res) => {
 });
 
 app.get('/sitemap.xml', (req, res) => {
-  res.type('application/xml');
+  res.type('application/xml; charset=utf-8');
   res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
-});
-
-app.get('/googleb4b043a56c142eb5.html', (req, res) => {
-  res.type('text/html');
-  res.send('google-site-verification: googleb4b043a56c142eb5.html');
 });
 
 // Serve frontend static assets
