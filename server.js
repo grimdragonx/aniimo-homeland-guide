@@ -207,6 +207,11 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
 });
 
+app.get('/googleb4b043a56c142eb5.html', (req, res) => {
+  res.type('text/html');
+  res.send('google-site-verification: googleb4b043a56c142eb5.html');
+});
+
 // Serve frontend static assets
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/data', express.static(path.join(__dirname, 'data')));
