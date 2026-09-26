@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aniimo-homeland-guide.vercel.app/sitemap.xml

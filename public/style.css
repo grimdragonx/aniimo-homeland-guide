@@ -697,6 +697,120 @@ body {
   cursor: pointer;
 }
 
+/* Semantic SEO Guide & FAQ Section */
+.seo-guide-section {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.seo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.seo-card h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+.seo-intro {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.seo-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.seo-feature-box {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.seo-feature-box h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.seo-feature-box p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.seo-feature-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.seo-feature-box li {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.seo-feature-box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.seo-faq-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.seo-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.faq-item {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.faq-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* Footer */
 .app-footer {
   margin-top: 4rem;
