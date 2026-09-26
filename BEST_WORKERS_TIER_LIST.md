@@ -107,7 +107,7 @@ Workers with **Artisanship** create furniture, appearance items, and decorative 
 
 | Aniimo | Dex # | Form | Level | Complementary Abilities | Best Station |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Hexxin** | `#021` | 🌈 Prismana | **Lv.4** 🔨 | Grass Lv.3, Dark Lv.4 | Crafting Workbench |
+| **Witchin** | `#021` | 🌈 Prismana | **Lv.4** 🔨 | Grass Lv.3, Dark Lv.4 | Crafting Workbench |
 | **Thornblade** | `#034` | 🌈 Prismana | **Lv.4** 🔨 | Water Lv.3, Grass Lv.4 | Crafting Workbench |
 | **Melloblum** | `#035` | 🌈 Prismana | **Lv.4** 🔨 | Light Lv.3, Grass Lv.4 | Crafting Workbench |
 | **Ignitis** | `#041` | 🌈 Prismana | **Lv.4** 🔨 | Fire Lv.3, Dark Lv.4 | Crafting Workbench |
@@ -134,8 +134,8 @@ Workers with **Artisanship** create furniture, appearance items, and decorative 
 | **Dazmand** | `#????` | Basic | **Lv.3** 🔨 | Lightning Lv.3 | Crafting Workbench |
 | **Fulmintis** | `#????` | Basic | **Lv.3** 🔨 | Lightning Lv.3 | Crafting Workbench |
 | **Morphling** | `#????` | Basic | **Lv.3** 🔨 | Light Lv.2, Carry Lv.2 | Crafting Workbench |
-| **Hexxin** | `#021` | Basic | Lv.2 🔨 | Grass Lv.1, Dark Lv.2 | Crafting Workbench |
-| **Hexxin** | `#021` | Mountain Form | Lv.2 🔨 | Dark Lv.2, Grass Lv.1 | Crafting Workbench |
+| **Witchin** | `#021` | Basic | Lv.2 🔨 | Grass Lv.1, Dark Lv.2 | Crafting Workbench |
+| **Witchin** | `#021` | Mountain Form | Lv.2 🔨 | Dark Lv.2, Grass Lv.1 | Crafting Workbench |
 | **Squashel** | `#048` | Basic | Lv.2 🔨 | Fire Lv.2 | Crafting Workbench |
 | **Veilfloat** | `#078` | Basic | Lv.2 🔨 | Lightning Lv.2 | Crafting Workbench |
 | **Eko** | `#031` | Basic | Lv.1 🔨 | Wind Lv.1 | Crafting Workbench |
@@ -246,7 +246,7 @@ Workers with **Perfumery** work effectively at the perfume bench to craft scente
 
 ### 🌱 Grass Specialists (Planting Seeds & Gathering Resources)
 - **Tier S (Master Lv. 4):** Irisal [Prismana] (`#012`), Somniwing [Basic] (`#030`), Thornblade [Prismana] (`#034`), Melloblum [Prismana] (`#035`), Irisalis [Basic] (`#????`)
-- **Tier A (Expert Lv. 3):** Leafy (`#016`), Hexxin (`#021`), Tuckin (`#022`), Pomawk (`#037`)
+- **Tier A (Expert Lv. 3):** Leafy (`#016`), Witchin (`#021`), Tuckin (`#022`), Pomawk (`#037`)
 - **Tier B (Skilled Lv. 2):** Tromber (`#008`), Cornet (`#009`), Tubster (`#010`), Shrubclaw (`#024`), Gracewing (`#029`), Ignitis (`#041`)
 
 ### ⛰️ Earth Specialists (Reclaiming Land & Mining Resources)
@@ -270,7 +270,7 @@ Workers with **Perfumery** work effectively at the perfume bench to craft scente
 - **Tier B (Skilled Lv. 2):** Helmwhelp (`#065`)
 
 ### 🌑 Dark Specialists (Harvesting Crops, Cutting Plants & Drying)
-- **Tier S (Master Lv. 4):** Inferlupa [Prismana] (`#004`), Stellarys [Prismana] (`#006`), Hexxin [Prismana] (`#021`), Ignitis [Prismana] (`#041`), Pawney [Prismana] (`#062`)
+- **Tier S (Master Lv. 4):** Inferlupa [Prismana] (`#004`), Stellarys [Prismana] (`#006`), Witchin [Prismana] (`#021`), Ignitis [Prismana] (`#041`), Pawney [Prismana] (`#062`)
 - **Tier A (Expert Lv. 3):** Turbo (`#018`), Dreaple (`#019`), Fragrancier (`#039`), Blazen (`#046`), Waleetle (`#057`), Rookey (`#063`), Grizbo (`#069`), Magmarex (`#072`)
 - **Tier B (Skilled Lv. 2):** Gracewing (`#029`), Glynsera (`#044`), Piopiota (`#051`)
 
