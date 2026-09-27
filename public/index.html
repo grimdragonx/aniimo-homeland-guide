@@ -17,16 +17,6 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9878478808081344"
      crossorigin="anonymous"></script>
 
-  <!-- Vercel Web Analytics & Speed Insights -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
-  <script>
-    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-  </script>
-  <script defer src="https://va.vercel-scripts.com/v1/speed-insights/script.js"></script>
-
   <!-- Open Graph / Facebook / Discord -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aniimo-homeland-guide.vercel.app/">
@@ -174,8 +164,309 @@
       </div>
     </header>
 
+    <!-- Official Homeland Abilities & Roles Guide -->
+    <section class="guide-accordion-section" id="guideAccordionSection">
+      <div class="guide-accordion-card">
+        <div class="guide-accordion-header" id="guideHeader" onclick="toggleGuideAccordion()">
+          <div class="guide-header-title-wrap">
+            <span class="guide-pill-tag">OFFICIAL IN-GAME REFERENCE</span>
+            <h3 class="guide-main-title">📖 Homeland Abilities & Roles Guide</h3>
+            <p class="guide-main-subtitle">Official descriptions and production specializations for all 13 Homeland elements and facilities.</p>
+          </div>
+          <button type="button" class="btn-guide-toggle" id="btnGuideToggle">
+            <span id="guideToggleText">Expand Guide</span>
+            <span class="guide-toggle-arrow" id="guideToggleArrow">▼</span>
+          </button>
+        </div>
+
+        <div class="guide-accordion-body hidden" id="guideBody">
+          <div class="guide-category-block">
+            <h4 class="guide-category-heading">Facility Jobs & Utilities</h4>
+            <div class="guide-grid" id="guideGridFacilities">
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #6366f1;"><span class="pill-icon">🛒</span> Hauling</span>
+                <p class="guide-entry-desc">Aniimo with the Hauling ability can pick up stockpiled produce from facilities and carry it to the Home storage.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #84cc16;"><span class="pill-icon">✂️</span> Artisanship</span>
+                <p class="guide-entry-desc">Crafty Aniimo create a variety of handcrafted goods.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #ec4899;"><span class="pill-icon">🌸</span> Leisure</span>
+                <p class="guide-entry-desc">Playful Aniimo happily produce various items while they play and have fun.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #a855f7;"><span class="pill-icon">🧴</span> Perfumery</span>
+                <p class="guide-entry-desc">Aniimo that specialize in perfumery can work effectively at the perfume station.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-category-block" style="margin-top: 1.25rem;">
+            <h4 class="guide-category-heading">Elemental Roles & Production</h4>
+            <div class="guide-grid" id="guideGridElements">
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #ef4444;"><span class="pill-icon">🔥</span> Fire</span>
+                <p class="guide-entry-desc">Fire Aniimo specialize in cooking, smelting, and supplying heat.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #22c55e;"><span class="pill-icon">🍃</span> Grass</span>
+                <p class="guide-entry-desc">Grass-type Aniimo specialize in planting seeds and gathering resources.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #3b82f6;"><span class="pill-icon">💧</span> Water</span>
+                <p class="guide-entry-desc">Water Aniimo specialize in brewing, fetching water, and watering plants.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #b45309;"><span class="pill-icon">⛰️</span> Earth</span>
+                <p class="guide-entry-desc">Earth-type Aniimo specialize in reclaiming land and mining resources.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #eab308;"><span class="pill-icon">⚡</span> Lightning</span>
+                <p class="guide-entry-desc">Lightning-type Aniimo specialize in manipulating electricity.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #06b6d4;"><span class="pill-icon">❄️</span> Ice</span>
+                <p class="guide-entry-desc">Ice-type Aniimo specialize in cooling your homeland environment.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #14b8a6;"><span class="pill-icon">🌀</span> Wind</span>
+                <p class="guide-entry-desc">Wind-type Aniimo specialize in controlling the wind to process products.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #9333ea;"><span class="pill-icon">🌑</span> Dark</span>
+                <p class="guide-entry-desc">Dark Aniimo specialize in harvesting crops, cutting down plants, pickling, and drying items.</p>
+              </div>
+              <div class="guide-entry">
+                <span class="homeland-pill" style="background-color: #f59e0b;"><span class="pill-icon">✨</span> Light</span>
+                <p class="guide-entry-desc">Light-type Aniimo specialize in illuminating your homeland.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estate Team Optimizer Card (Feature) -->
+    <section class="optimizer-section" id="optimizerSection">
+      <div class="optimizer-card">
+        <div class="optimizer-header-row">
+          <div>
+            <div class="optimizer-tag">⚡ INTELLIGENT ROSTER SOLVER</div>
+            <h2 class="optimizer-title">Homeland Estate Team Optimizer</h2>
+            <p class="optimizer-desc">Configure your worker capacity and desired base priorities. The algorithm calculates the mathematical highest-level team across all 92 species and forms to eliminate production bottlenecks.</p>
+          </div>
+          </div>
+
+        <div class="optimizer-grid-settings">
+          <!-- 1. Team Size -->
+          <div class="settings-box">
+            <label for="optWorkerSlots" class="settings-title">1. Estate Worker Slots</label>
+            <div class="slots-stepper-wrap">
+              <button type="button" class="btn-slot-step" id="btnSlotMinus" aria-label="Decrease slots">−</button>
+              <input type="number" id="optWorkerSlots" class="slots-number-input" min="1" value="8" step="1">
+              <button type="button" class="btn-slot-step" id="btnSlotPlus" aria-label="Increase slots">+</button>
+              <span class="slots-label-badge">Workers</span>
+            </div>
+            <div class="slots-quick-presets">
+              <span class="slots-chip-label">Quick:</span>
+              <button type="button" class="btn-slot-chip" data-slots="4">4</button>
+              <button type="button" class="btn-slot-chip active" data-slots="8">8</button>
+              <button type="button" class="btn-slot-chip" data-slots="12">12</button>
+              <button type="button" class="btn-slot-chip" data-slots="16">16</button>
+              <button type="button" class="btn-slot-chip" data-slots="20">20</button>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <!-- 3. Target Task Priorities -->
+        <div class="roles-selection-wrap">
+          <div class="roles-label-row">
+            <span class="settings-title">2. Selected Target Roles & Facilities</span>
+            <div class="roles-quick-actions">
+              <button type="button" id="btnSelectAllRoles" class="btn-link-action">Select All</button>
+              <span class="dot-sep">•</span>
+              <button type="button" id="btnFacilitiesOnly" class="btn-link-action">Facility Jobs Only</button>
+              <span class="dot-sep">•</span>
+              <button type="button" id="btnClearRoles" class="btn-link-action">Clear</button>
+            </div>
+          </div>
+
+          <div class="roles-checkbox-grid" id="rolesCheckboxGrid">
+            <div class="role-pill-card active" data-role="Carry" style="--role-theme: #6366f1;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Carry" checked>
+                <span class="role-pill-text">🛒 Hauling</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Carry" aria-label="Decrease Carry count">−</button>
+                <input type="number" class="role-qty-num" data-role="Carry" min="1" value="2" aria-label="Target Carry workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Carry" aria-label="Increase Carry count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card active" data-role="Artisanship" style="--role-theme: #84cc16;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Artisanship" checked>
+                <span class="role-pill-text">✂️ Artisanship</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Artisanship" aria-label="Decrease Artisanship count">−</button>
+                <input type="number" class="role-qty-num" data-role="Artisanship" min="1" value="2" aria-label="Target Artisanship workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Artisanship" aria-label="Increase Artisanship count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card active" data-role="Leisure" style="--role-theme: #ec4899;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Leisure" checked>
+                <span class="role-pill-text">🌸 Leisure</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Leisure" aria-label="Decrease Leisure count">−</button>
+                <input type="number" class="role-qty-num" data-role="Leisure" min="1" value="1" aria-label="Target Leisure workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Leisure" aria-label="Increase Leisure count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Perfumery" style="--role-theme: #a855f7;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Perfumery" >
+                <span class="role-pill-text">🧴 Perfumery</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Perfumery" aria-label="Decrease Perfumery count">−</button>
+                <input type="number" class="role-qty-num" data-role="Perfumery" min="1" value="1" aria-label="Target Perfumery workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Perfumery" aria-label="Increase Perfumery count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card active" data-role="Fire" style="--role-theme: #ef4444;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Fire" checked>
+                <span class="role-pill-text">🔥 Fire</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Fire" aria-label="Decrease Fire count">−</button>
+                <input type="number" class="role-qty-num" data-role="Fire" min="1" value="1" aria-label="Target Fire workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Fire" aria-label="Increase Fire count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card active" data-role="Water" style="--role-theme: #3b82f6;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Water" checked>
+                <span class="role-pill-text">💧 Water</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Water" aria-label="Decrease Water count">−</button>
+                <input type="number" class="role-qty-num" data-role="Water" min="1" value="1" aria-label="Target Water workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Water" aria-label="Increase Water count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card active" data-role="Grass" style="--role-theme: #22c55e;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Grass" checked>
+                <span class="role-pill-text">🍃 Grass</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Grass" aria-label="Decrease Grass count">−</button>
+                <input type="number" class="role-qty-num" data-role="Grass" min="1" value="1" aria-label="Target Grass workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Grass" aria-label="Increase Grass count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Dark" style="--role-theme: #9333ea;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Dark" >
+                <span class="role-pill-text">🌑 Dark</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Dark" aria-label="Decrease Dark count">−</button>
+                <input type="number" class="role-qty-num" data-role="Dark" min="1" value="1" aria-label="Target Dark workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Dark" aria-label="Increase Dark count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Earth" style="--role-theme: #b45309;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Earth" >
+                <span class="role-pill-text">⛰️ Earth</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Earth" aria-label="Decrease Earth count">−</button>
+                <input type="number" class="role-qty-num" data-role="Earth" min="1" value="1" aria-label="Target Earth workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Earth" aria-label="Increase Earth count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Wind" style="--role-theme: #14b8a6;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Wind" >
+                <span class="role-pill-text">🌀 Wind</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Wind" aria-label="Decrease Wind count">−</button>
+                <input type="number" class="role-qty-num" data-role="Wind" min="1" value="1" aria-label="Target Wind workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Wind" aria-label="Increase Wind count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Ice" style="--role-theme: #06b6d4;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Ice" >
+                <span class="role-pill-text">❄️ Ice</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Ice" aria-label="Decrease Ice count">−</button>
+                <input type="number" class="role-qty-num" data-role="Ice" min="1" value="1" aria-label="Target Ice workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Ice" aria-label="Increase Ice count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Lightning" style="--role-theme: #eab308;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Lightning" >
+                <span class="role-pill-text">⚡ Lightning</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Lightning" aria-label="Decrease Lightning count">−</button>
+                <input type="number" class="role-qty-num" data-role="Lightning" min="1" value="1" aria-label="Target Lightning workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Lightning" aria-label="Increase Lightning count">+</button>
+              </div>
+            </div>
+            <div class="role-pill-card " data-role="Light" style="--role-theme: #f59e0b;">
+              <label class="role-pill-head">
+                <input type="checkbox" name="optRole" value="Light" >
+                <span class="role-pill-text">✨ Light</span>
+              </label>
+              <div class="role-qty-box">
+                <button type="button" class="btn-role-step" data-action="dec" data-role="Light" aria-label="Decrease Light count">−</button>
+                <input type="number" class="role-qty-num" data-role="Light" min="1" value="1" aria-label="Target Light workers">
+                <button type="button" class="btn-role-step" data-action="inc" data-role="Light" aria-label="Increase Light count">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced Constraints -->
+          <div class="optimizer-options-row">
+            <label class="toggle-option"><input type="checkbox" id="optAllowPrismana" checked> Allow Prismana Mutations</label>
+            <label class="toggle-option"><input type="checkbox" id="optAllowUnnumbered" checked> Allow #???? Unnumbered Species</label>
+          </div>
+        </div>
+
+        <!-- Optimizer Action Button Row (Directly below selected roles) -->
+        <div class="optimizer-action-row">
+          <button id="btnRunOptimizer" type="button" class="btn-optimize-run btn-optimize-main">🚀 Calculate Optimal Team</button>
+        </div>
+
+        <!-- Optimizer Results Dashboard -->
+        <div id="optimizerResults" class="optimizer-results-container">
+          <div class="optimizer-placeholder" id="optimizerPlaceholder">
+            <div class="placeholder-icon">🎯</div>
+            <h3 class="placeholder-title">Ready to Calculate Your Homeland Squad</h3>
+            <p class="placeholder-desc">Configure your worker capacity and target role quantities above, then click <strong>"🚀 Calculate Optimal Team"</strong> to generate your 3 optimized squad options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Main Filter Controls -->
-    <section class="controls-card">
+        
+
+<section class="controls-card">
       <div class="search-row">
         <div class="search-input-wrap">
           <span class="search-icon">🔍</span>
@@ -200,23 +491,34 @@
           <label>Homeland Ability / Element</label>
           <select id="elementFilter">
             <option value="all">All Abilities & Elements</option>
-            <optgroup label="Facility Jobs (Specialized Tasks)">
-              <option value="Carry">📦 Carry (Transport to Home Storage)</option>
-              <option value="Artisanship">🔨 Artisanship (Crafting Furniture & Goods)</option>
-              <option value="Leisure">☕ Leisure (Item Production via Play & Leisure)</option>
-              <option value="Perfumery">🌸 Perfumery (Working at Perfume Bench)</option>
+            <optgroup label="Facility Jobs & Utilities">
+              <option value="Carry">🛒 Hauling — Pick up stockpiled produce from facilities and carry to Home storage</option>
+              <option value="Artisanship">✂️ Artisanship — Create a variety of handcrafted goods</option>
+              <option value="Leisure">🌸 Leisure — Happily produce various items while playing and have fun</option>
+              <option value="Perfumery">🧴 Perfumery — Work effectively at the perfume station</option>
             </optgroup>
-            <optgroup label="Elemental Roles (Production Tasks)">
-              <option value="Fire">🔥 Fire (Cooking, Smelting & Supplying Heat)</option>
-              <option value="Water">💧 Water (Brewing, Fetching Water & Watering Plants)</option>
-              <option value="Grass">🌱 Grass (Planting Seeds & Gathering Resources)</option>
-              <option value="Earth">⛰️ Earth (Reclaiming Land & Mining Resources)</option>
-              <option value="Lightning">⚡ Lightning (Manipulating Electricity)</option>
-              <option value="Ice">❄️ Ice (Cooling Homeland Environment)</option>
-              <option value="Wind">🍃 Wind (Controlling Wind & Product Processing)</option>
-              <option value="Dark">🌑 Dark (Harvesting Crops, Cutting Plants & Drying)</option>
-              <option value="Light">✨ Light (Illuminating the Homeland)</option>
+            <optgroup label="Elemental Roles & Production">
+              <option value="Fire">🔥 Fire — Cooking, smelting, and supplying heat</option>
+              <option value="Grass">🍃 Grass — Planting seeds and gathering resources</option>
+              <option value="Water">💧 Water — Brewing, fetching water, and watering plants</option>
+              <option value="Earth">⛰️ Earth — Reclaiming land and mining resources</option>
+              <option value="Lightning">⚡ Lightning — Manipulating electricity</option>
+              <option value="Ice">❄️ Ice — Cooling your homeland environment</option>
+              <option value="Wind">🌀 Wind — Controlling the wind to process products</option>
+              <option value="Dark">🌑 Dark — Harvesting crops, cutting down plants, pickling, and drying</option>
+              <option value="Light">✨ Light — Illuminating your homeland</option>
             </optgroup>
+          </select>
+        </div>
+
+        <div class="filter-col">
+          <label>Sort By</label>
+          <select id="sortByFilter">
+            <option value="id_asc">🔢 Handbook #ID (#001 → #092)</option>
+            <option value="max_lvl_desc">⭐ Highest Ability Level (Lv.4 → Lv.1)</option>
+            <option value="tier_desc">🏆 Homeland Tier (S → A → B → C)</option>
+            <option value="name_asc">🔤 Creature Name (A → Z)</option>
+            <option value="catch_rate_asc">🎯 Catch Rate (Rarest First)</option>
           </select>
         </div>
 
@@ -241,6 +543,8 @@
         <button class="pill-btn" data-form="prismana">🌈 Prismana Forms</button>
         <button class="pill-btn" data-form="unnumbered">🔒 #???? Unnumbered</button>
         <div id="resultsBadge" class="results-badge">Showing 92 Aniimo</div>
+
+      
       </div>
     </section>
 
