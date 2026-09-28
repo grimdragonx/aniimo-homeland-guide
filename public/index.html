@@ -122,23 +122,42 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=20260928_5">
+  <link rel="stylesheet" href="style.css?v=20260928_10">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="app-layout">
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with View Switcher Tabs -->
     <nav class="navbar">
-      <div class="nav-brand">
+      <div class="nav-brand" onclick="switchMainView('dex')" style="cursor: pointer;" title="Aniimo Homeland Hub Home">
         <span class="brand-pill">CAMP RV v2.6</span>
         <h2>🏡 Aniimo Homeland Hub</h2>
+      </div>
+
+      <div class="nav-tabs-menu" id="mainNavTabs" role="tablist" aria-label="Main Section Tabs">
+        <button type="button" class="btn-nav-tab active" data-view="dex" role="tab" aria-selected="true" onclick="switchMainView('dex')">
+          <span class="nav-tab-icon">📖</span>
+          <span class="nav-tab-label">Aniimo Directory</span>
+        </button>
+        <button type="button" class="btn-nav-tab" data-view="optimizer" role="tab" aria-selected="false" onclick="switchMainView('optimizer')">
+          <span class="nav-tab-icon">🏡</span>
+          <span class="nav-tab-label">Homeland Optimizer</span>
+        </button>
+        <button type="button" class="btn-nav-tab" data-view="squad" role="tab" aria-selected="false" onclick="switchMainView('squad')">
+          <span class="nav-tab-icon">⚔️</span>
+          <span class="nav-tab-label">Squad Card Builder</span>
+        </button>
+        <button type="button" class="btn-nav-tab" data-view="guide" role="tab" aria-selected="false" onclick="switchMainView('guide')">
+          <span class="nav-tab-icon">📚</span>
+          <span class="nav-tab-label">Homeland Guide</span>
+        </button>
       </div>
     </nav>
 
     <!-- Hero / Stats Dashboard -->
-    <header class="hero-section">
+    <header class="hero-section" id="heroSection">
       <div class="hero-text">
         <h1>Aniimo Homeland Elemental Encyclopedia</h1>
         <p>Canonical guide for all <strong>92 Aniimo species</strong> (82 numbered in active Dex + 10 unnumbered <code>#????</code> species). Displays real creature handbook art, strictly fact-checked <strong>Basic</strong>, <strong>Regional</strong>, <strong>Weather</strong>, and radiant <strong>Prismana</strong> forms, with official Elemental proficiencies.</p>
@@ -165,7 +184,7 @@
     </header>
 
     <!-- Official Homeland Abilities & Roles Guide -->
-    <section class="guide-accordion-section" id="guideAccordionSection">
+    <section class="guide-accordion-section view-section-hidden" id="guideAccordionSection">
       <div class="guide-accordion-card">
         <div class="guide-accordion-header" id="guideHeader" onclick="toggleGuideAccordion()">
           <div class="guide-header-title-wrap">
@@ -248,7 +267,7 @@
     </section>
 
     <!-- Estate Team Optimizer Card (Feature) -->
-    <section class="optimizer-section" id="optimizerSection">
+    <section class="optimizer-section view-section-hidden" id="optimizerSection">
       <div class="optimizer-card">
         <div class="optimizer-header-row">
           <div>
@@ -463,10 +482,49 @@
       </div>
     </section>
 
-    <!-- Main Filter Controls -->
-        
+    <!-- 4-Aniimo Battle Squad Card Generator Section -->
+    <section class="squad-builder-section view-section-hidden" id="squadCardSection">
+      <div class="squad-builder-card">
+        <div class="squad-builder-header">
+          <div class="squad-builder-tag">⚔️ BATTLE & ADVENTURE SQUAD MAKER</div>
+          <h2 class="squad-builder-title">4-Aniimo Squad Card Generator</h2>
+          <p class="squad-builder-desc">Build your custom 4-creature battle formation. Select any Aniimo and form to showcase their full 3D illustrations, then export a high-definition 1200×675 graphic card to share with friends!</p>
+        </div>
 
-<section class="controls-card">
+        <div class="squad-controls-bar">
+          <div class="squad-name-input-wrap">
+            <label for="squadCustomName">Squad Name:</label>
+            <input type="text" id="squadCustomName" placeholder="e.g. Thunder & Flame Strike Team" maxlength="40">
+          </div>
+          <div class="squad-actions-group">
+            <button type="button" class="btn-clear-squad" id="btnClearSquad" style="display: none;">Clear All</button>
+            <button type="button" class="btn-generate-squad" id="btnGenerateSquadCard" disabled>✨ Generate Squad Card (0/4 Selected)</button>
+          </div>
+        </div>
+
+        <!-- 4 Slot Boxes -->
+        <div class="squad-slots-grid" id="squadSlotsGrid">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Generated Graphic Card Preview & Download Area -->
+        <div class="squad-card-preview-area hidden" id="squadCardPreviewArea">
+          <div class="preview-header-bar">
+            <span class="preview-title">🎨 Generated HD Squad Card (1200 × 675)</span>
+            <div class="preview-actions">
+              <button type="button" class="btn-download-squad" id="btnDownloadSquadPng">💾 Download PNG Image</button>
+              <button type="button" class="btn-copy-squad" id="btnCopySquadImage">📋 Copy to Clipboard</button>
+            </div>
+          </div>
+          <div class="canvas-wrapper">
+            <canvas id="squadGraphicCanvas" width="1200" height="675"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Filter Controls -->
+    <section class="controls-card" id="controlsCard">
       <div class="search-row">
         <div class="search-input-wrap">
           <span class="search-icon">🔍</span>
@@ -566,6 +624,24 @@
       <div class="modal-card">
         <button id="modalClose" class="modal-close">&times;</button>
         <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Modal for Squad Aniimo Picker -->
+    <div id="squadPickerModal" class="modal-backdrop hidden">
+      <div class="modal-card squad-picker-modal-card">
+        <button id="squadPickerClose" class="modal-close" onclick="closeSquadPicker()">&times;</button>
+        <div class="squad-picker-header">
+          <span class="squad-picker-tag" id="squadPickerTag">SLOT SELECTION</span>
+          <h3 class="squad-picker-title" id="squadPickerTitle">Choose Aniimo for Slot</h3>
+          <div class="squad-picker-search-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="squadPickerSearch" placeholder="Search by name, ID (#001), element, or tier...">
+          </div>
+        </div>
+        <div class="squad-picker-list" id="squadPickerList">
+          <!-- Populated by JS -->
+        </div>
       </div>
     </div>
 
@@ -1330,7 +1406,7 @@
     </section>
 
     <!-- Semantic SEO Guide & FAQ Section -->
-    <section class="seo-guide-section" id="homelandGuide">
+    <section class="seo-guide-section view-section-hidden" id="homelandGuide">
       <div class="seo-card">
         <h2>📚 Complete Aniimo Homeland Abilities & Worker Guide</h2>
         <p class="seo-intro">The Homeland in Aniimo is your personal estate where captured Aniimo contribute their specialized abilities to harvest resources, craft furniture, transport stockpiles, and produce items. Each Aniimo form possesses unique proficiency levels ranging from <strong>Level 1 (Novice)</strong> to <strong>Level 4 (Master / Apex Worker)</strong>.</p>
@@ -1388,6 +1464,6 @@
     <button id="backToTop" class="back-to-top-btn" title="Back to top" aria-label="Back to top">↑</button>
   </div>
 
-  <script src="app.js?v=20260928_9"></script>
+  <script src="app.js?v=20260928_10"></script>
 </body>
 </html>

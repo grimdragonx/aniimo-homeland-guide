@@ -918,6 +918,8 @@ pillBtns.forEach(btn => {
   allAniimo = await fetchAniimoData();
   applyFilters();
   initOptimizer();
+  initSquadBuilder();
+  initMainViewTabs();
 
   // Check URL hash or ?aniimo= to auto-open creature modal
   const hash = window.location.hash.replace('#', '').trim();
@@ -962,6 +964,125 @@ pillBtns.forEach(btn => {
     });
   }
 })();
+
+// ==========================================================================
+// Main View Tab Switcher (Directory / Optimizer / Squad / Guide)
+// ==========================================================================
+let currentMainView = 'dex';
+
+window.switchMainView = function(viewName, shouldScroll = true) {
+  const validViews = ['dex', 'optimizer', 'squad', 'guide'];
+  if (!validViews.includes(viewName)) viewName = 'dex';
+  currentMainView = viewName;
+
+  // 1. Update Tab Buttons
+  const tabButtons = document.querySelectorAll('.btn-nav-tab');
+  tabButtons.forEach(btn => {
+    const isCurrent = btn.getAttribute('data-view') === viewName;
+    btn.classList.toggle('active', isCurrent);
+    btn.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
+  });
+
+  // 2. DOM Elements
+  const heroSection = document.getElementById('heroSection');
+  const controlsCard = document.getElementById('controlsCard');
+  const aniimoGrid = document.getElementById('aniimoGrid');
+  const creatureDirectory = document.getElementById('creatureDirectory');
+  const optimizerSection = document.getElementById('optimizerSection');
+  const squadCardSection = document.getElementById('squadCardSection');
+  const guideAccordionSection = document.getElementById('guideAccordionSection');
+  const homelandGuide = document.getElementById('homelandGuide');
+
+  const toggleEl = (el, show) => {
+    if (!el) return;
+    if (show) {
+      el.classList.remove('view-section-hidden');
+    } else {
+      el.classList.add('view-section-hidden');
+    }
+  };
+
+  // 3. View display mapping
+  if (viewName === 'dex') {
+    toggleEl(heroSection, true);
+    toggleEl(controlsCard, true);
+    toggleEl(aniimoGrid, true);
+    toggleEl(creatureDirectory, true);
+    toggleEl(optimizerSection, false);
+    toggleEl(squadCardSection, false);
+    toggleEl(guideAccordionSection, false);
+    toggleEl(homelandGuide, false);
+  } else if (viewName === 'optimizer') {
+    toggleEl(heroSection, false);
+    toggleEl(controlsCard, false);
+    toggleEl(aniimoGrid, false);
+    toggleEl(creatureDirectory, false);
+    toggleEl(optimizerSection, true);
+    toggleEl(squadCardSection, false);
+    toggleEl(guideAccordionSection, false);
+    toggleEl(homelandGuide, false);
+  } else if (viewName === 'squad') {
+    toggleEl(heroSection, false);
+    toggleEl(controlsCard, false);
+    toggleEl(aniimoGrid, false);
+    toggleEl(creatureDirectory, false);
+    toggleEl(optimizerSection, false);
+    toggleEl(squadCardSection, true);
+    toggleEl(guideAccordionSection, false);
+    toggleEl(homelandGuide, false);
+  } else if (viewName === 'guide') {
+    toggleEl(heroSection, false);
+    toggleEl(controlsCard, false);
+    toggleEl(aniimoGrid, false);
+    toggleEl(creatureDirectory, false);
+    toggleEl(optimizerSection, false);
+    toggleEl(squadCardSection, false);
+    toggleEl(guideAccordionSection, true);
+    toggleEl(homelandGuide, true);
+    // Auto-expand accordion body for fast reading
+    const body = document.getElementById('guideBody');
+    const toggleBtn = document.getElementById('btnGuideToggle');
+    const toggleText = document.getElementById('guideToggleText');
+    if (body && body.classList.contains('hidden')) {
+      body.classList.remove('hidden');
+      if (toggleBtn) toggleBtn.classList.add('expanded');
+      if (toggleText) toggleText.textContent = 'Collapse Guide';
+    }
+  }
+
+  // 4. Update URL parameter without reloading
+  try {
+    const url = new URL(window.location.href);
+    url.searchParams.set('tab', viewName);
+    window.history.replaceState({ tab: viewName }, '', url.toString());
+  } catch (e) {
+    // Ignore URL errors in restricted environments
+  }
+
+  // 5. Scroll to top
+  if (shouldScroll) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+};
+
+function initMainViewTabs() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabParam = urlParams.get('tab');
+  const hash = (window.location.hash || '').toLowerCase();
+
+  if (tabParam && ['dex', 'optimizer', 'squad', 'guide'].includes(tabParam)) {
+    window.switchMainView(tabParam, false);
+  } else if (hash.includes('optimizer')) {
+    window.switchMainView('optimizer', false);
+  } else if (hash.includes('squad')) {
+    window.switchMainView('squad', false);
+  } else if (hash.includes('guide')) {
+    window.switchMainView('guide', false);
+  } else {
+    window.switchMainView('dex', false);
+  }
+}
+
 
 
 // --- Homeland Estate Team Optimizer Logic ---
@@ -1661,6 +1782,9 @@ window.toggleGuideAccordion = function(e) {
 };
 
 window.filterByAbility = function(role) {
+  if (currentMainView !== 'dex') {
+    window.switchMainView('dex', false);
+  }
   const select = document.getElementById('elementFilter');
   if (select) {
     select.value = role;
@@ -1675,3 +1799,744 @@ window.filterByAbility = function(role) {
     searchControls.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 };
+
+
+// ==========================================================================
+// 4-Aniimo Battle & Adventure Squad Card Generator Logic
+// ==========================================================================
+let squadSlots = [null, null, null, null];
+let currentPickingSlotIndex = 0;
+
+function initSquadBuilder() {
+  const slotsGrid = document.getElementById('squadSlotsGrid');
+  const btnGenerate = document.getElementById('btnGenerateSquadCard');
+  const btnClear = document.getElementById('btnClearSquad');
+  const btnDownload = document.getElementById('btnDownloadSquadPng');
+  const btnCopy = document.getElementById('btnCopySquadImage');
+  const pickerModal = document.getElementById('squadPickerModal');
+  const pickerClose = document.getElementById('squadPickerClose');
+  const pickerSearch = document.getElementById('squadPickerSearch');
+
+  if (!slotsGrid) return;
+
+  renderSquadSlots();
+
+  if (pickerClose) {
+    pickerClose.addEventListener('click', closeSquadPicker);
+  }
+  if (pickerModal) {
+    pickerModal.addEventListener('click', (e) => {
+      if (e.target === pickerModal) closeSquadPicker();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && pickerModal && !pickerModal.classList.contains('hidden')) {
+      closeSquadPicker();
+    }
+  });
+
+  if (pickerSearch) {
+    pickerSearch.addEventListener('input', () => {
+      renderSquadPickerList(pickerSearch.value.trim().toLowerCase());
+    });
+  }
+
+  if (btnGenerate) {
+    btnGenerate.addEventListener('click', generateSquadCard);
+  }
+
+  if (btnClear) {
+    btnClear.addEventListener('click', () => {
+      squadSlots = [null, null, null, null];
+      renderSquadSlots();
+      const previewArea = document.getElementById('squadCardPreviewArea');
+      if (previewArea) previewArea.classList.add('hidden');
+    });
+  }
+
+  if (btnDownload) {
+    btnDownload.addEventListener('click', downloadSquadCardPng);
+  }
+
+  if (btnCopy) {
+    btnCopy.addEventListener('click', copySquadCardToClipboard);
+  }
+}
+
+function renderSquadSlots() {
+  const slotsGrid = document.getElementById('squadSlotsGrid');
+  const btnGenerate = document.getElementById('btnGenerateSquadCard');
+  const btnClear = document.getElementById('btnClearSquad');
+  if (!slotsGrid) return;
+
+  const filledCount = squadSlots.filter(Boolean).length;
+
+  const slotsHtml = squadSlots.map((slot, idx) => {
+    if (!slot) {
+      return `
+        <div class="squad-slot-box is-empty" onclick="openSquadPicker(${idx})" title="Click to choose Aniimo for Slot #${idx + 1}">
+          <div class="squad-slot-plus-btn">+</div>
+          <div class="squad-slot-num-tag">Slot #${idx + 1}</div>
+          <div class="squad-slot-cta">Choose Aniimo</div>
+        </div>
+      `;
+    }
+
+    const primaryEl = slot.primaryElement || 'Fire';
+    const meta = abilityMeta[primaryEl] || { emoji: '⭐', color: '#38bdf8' };
+    const glowStyle = `background: radial-gradient(circle at 50% 50%, ${meta.color}25 0%, rgba(15, 23, 42, 0.7) 70%); border: 1.5px solid ${meta.color}66;`;
+
+    return `
+      <div class="squad-slot-box is-filled" style="${glowStyle}" onclick="openSquadPicker(${idx})" title="Click to change Aniimo for Slot #${idx + 1}">
+        <div class="squad-slot-top-row" style="justify-content: flex-end;">
+          <button type="button" class="squad-slot-remove-btn" onclick="event.stopPropagation(); removeSquadMember(${idx})" title="Remove Aniimo">&times;</button>
+        </div>
+        <div class="squad-slot-portrait-wrap">
+          <img src="${slot.imageUrl}" alt="${slot.name}" class="squad-slot-portrait-img" onerror="this.onerror=null; this.src='images/${slot.slug}.png';">
+        </div>
+        <div class="squad-slot-info" style="text-align: center;">
+          <div class="squad-slot-name-row" style="justify-content: center;">
+            <span class="squad-slot-name">${slot.name}</span>
+          </div>
+          <div style="margin-top: 4px;">
+            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.isPris ? '🌈 ' : ''}${slot.formName}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  slotsGrid.innerHTML = slotsHtml;
+
+  if (btnGenerate) {
+    if (filledCount === 4) {
+      btnGenerate.disabled = false;
+      btnGenerate.innerHTML = `✨ Generate Squad Card (Ready!)`;
+    } else {
+      btnGenerate.disabled = true;
+      btnGenerate.innerHTML = `✨ Generate Squad Card (${filledCount}/4 Selected)`;
+    }
+  }
+
+  if (btnClear) {
+    btnClear.style.display = filledCount > 0 ? 'inline-block' : 'none';
+  }
+}
+
+window.openSquadPicker = function(slotIdx) {
+  currentPickingSlotIndex = slotIdx;
+  const pickerModal = document.getElementById('squadPickerModal');
+  const tag = document.getElementById('squadPickerTag');
+  const title = document.getElementById('squadPickerTitle');
+  const searchInput = document.getElementById('squadPickerSearch');
+
+  if (tag) tag.textContent = `SLOT #${slotIdx + 1} SELECTION`;
+  if (title) title.textContent = `Choose Aniimo for Slot #${slotIdx + 1}`;
+  if (searchInput) searchInput.value = '';
+
+  renderSquadPickerList('');
+  if (pickerModal) pickerModal.classList.remove('hidden');
+  if (searchInput) searchInput.focus();
+};
+
+window.closeSquadPicker = function() {
+  const pickerModal = document.getElementById('squadPickerModal');
+  if (pickerModal) pickerModal.classList.add('hidden');
+};
+
+function renderSquadPickerList(filterText) {
+  const listEl = document.getElementById('squadPickerList');
+  if (!listEl) return;
+
+  const query = (filterText || '').toLowerCase().trim();
+
+  let filtered = allAniimo;
+  if (query) {
+    filtered = allAniimo.filter(item => {
+      const matchStr = `${item.id} ${item.display_id} ${item.name} ${item.slug} ${item.tier} ${JSON.stringify(item.forms)}`.toLowerCase();
+      return matchStr.includes(query);
+    });
+  }
+
+  const itemsHtml = filtered.map(item => {
+    const creatureMedia = wikiMediaMap[item.id] || null;
+    const baseImg = creatureMedia?.imageUrl || item.image || `images/${item.slug}.png`;
+
+    // Collect available forms
+    const formsList = [];
+    formsList.push({
+      formKey: 'basic',
+      formName: 'Basic Form',
+      isPris: false,
+      data: item.forms.basic
+    });
+
+    if (item.forms.regional && Array.isArray(item.forms.regional)) {
+      item.forms.regional.forEach((rf, i) => {
+        formsList.push({
+          formKey: `regional_${i}`,
+          formName: rf.form_name || 'Regional Form',
+          isPris: false,
+          data: rf
+        });
+      });
+    }
+
+    if (item.forms.weather && Array.isArray(item.forms.weather)) {
+      item.forms.weather.forEach((wf, i) => {
+        formsList.push({
+          formKey: `weather_${i}`,
+          formName: wf.form_name || 'Weather Form',
+          isPris: false,
+          data: wf
+        });
+      });
+    }
+
+    if (item.forms.prismana) {
+      formsList.push({
+        formKey: 'prismana',
+        formName: 'Prismana Form',
+        isPris: true,
+        data: item.forms.prismana
+      });
+    }
+
+    const formButtonsHtml = formsList.map(f => `
+      <button type="button" class="btn-pick-form ${f.isPris ? 'is-prismana' : ''}" onclick="window.selectSquadMember('${item.id}', '${f.formKey}', '${f.formName.replace(/'/g, "\\'")}')">
+        <span>${f.isPris ? '🌈' : (f.formKey.startsWith('regional') ? '🗺️' : (f.formKey.startsWith('weather') ? '⚡' : '🔹'))} ${f.formName}</span>
+        <span style="font-size: 0.7rem; color: #94a3b8;">Choose &rarr;</span>
+      </button>
+    `).join('');
+
+    return `
+      <div class="squad-picker-item">
+        <div class="squad-picker-item-top">
+          <img src="${baseImg}" alt="${item.name}" class="squad-picker-item-avatar" onerror="this.onerror=null; this.src='images/${item.slug}.png';">
+          <div class="squad-picker-item-info">
+            <div class="squad-picker-item-name">${item.name}</div>
+            <div class="squad-picker-item-meta">${item.display_id} • <span class="stage-${item.tier}">${item.tier}</span></div>
+          </div>
+        </div>
+        <div class="squad-picker-item-forms">
+          ${formButtonsHtml}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  listEl.innerHTML = itemsHtml || '<div style="grid-column: 1/-1; text-align: center; color: #94a3b8; padding: 2rem;">No Aniimo match your search.</div>';
+}
+
+window.selectSquadMember = function(id, formKey, formName) {
+  const item = allAniimo.find(a => a.id === id);
+  if (!item) return;
+
+  const { data: activeForm, isPris } = getActiveFormData(item, formKey);
+
+  // Official 3D illustration media
+  const creatureMedia = wikiMediaMap[item.id] || null;
+  const baseAssetNum = creatureMedia?.assetNum || wikiAssetNums[item.id] || null;
+  const formMedia = creatureMedia?.forms ? (
+    creatureMedia.forms[formKey] ||
+    creatureMedia.forms[formName] ||
+    (formKey === 'basic' ? (creatureMedia.forms['Basic Form'] || creatureMedia.forms['basic']) : null)
+  ) : null;
+
+  const videoUrl = formMedia?.videoUrl || 
+                   (formKey === 'basic' && creatureMedia?.videoUrl) ||
+                   (formKey === 'basic' && baseAssetNum ? `https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/newVFX/${baseAssetNum}00.mp4` : null);
+
+  const imageUrl = formMedia?.imageUrl || creatureMedia?.imageUrl || activeForm.image || item.image || `images/${item.slug}.png`;
+
+  const elements = activeForm.elements || activeForm.abilities || {};
+  const primaryElement = (activeForm.elements && Object.keys(activeForm.elements)[0]) || Object.keys(elements)[0] || 'Fire';
+  const elementDisplay = activeForm.element_display || primaryElement;
+
+  squadSlots[currentPickingSlotIndex] = {
+    id: item.id,
+    display_id: item.display_id,
+    name: item.name,
+    slug: item.slug,
+    tier: item.tier,
+    formKey: formKey,
+    formName: activeForm.form_name || formName,
+    isPris: isPris,
+    primaryElement: primaryElement,
+    elementDisplay: elementDisplay,
+    videoUrl: videoUrl,
+    imageUrl: imageUrl
+  };
+
+  closeSquadPicker();
+  renderSquadSlots();
+};
+
+window.removeSquadMember = function(slotIdx) {
+  squadSlots[slotIdx] = null;
+  renderSquadSlots();
+};
+
+
+function drawAniimoWikiBackground(ctx, width, height) {
+  // 1. Soft Blue Sky Gradient (Aniimo Wiki theme)
+  const skyGrad = ctx.createLinearGradient(0, 0, 0, height);
+  skyGrad.addColorStop(0, '#75b9ea');
+  skyGrad.addColorStop(0.4, '#87c4ee');
+  skyGrad.addColorStop(1, '#9fd3f5');
+  ctx.fillStyle = skyGrad;
+  ctx.fillRect(0, 0, width, height);
+
+  // 2. Translucent Diagonal Watermark Stamp Pattern
+  ctx.save();
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.16)';
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.16)';
+  ctx.lineWidth = 2.5;
+
+  const symbols = ['leaf', 'swirl', 'flower', 'sparkle'];
+  const stepX = 140;
+  const stepY = 120;
+
+  for (let y = -40; y < height + 80; y += stepY) {
+    const rowOffset = (Math.floor(y / stepY) % 2) * (stepX / 2);
+    for (let x = -40; x < width + 80; x += stepX) {
+      const symIdx = (Math.floor((x + y) / 100) % symbols.length + symbols.length) % symbols.length;
+      const sym = symbols[symIdx];
+      const px = x + rowOffset;
+      const py = y;
+
+      ctx.save();
+      ctx.translate(px, py);
+      ctx.rotate(-Math.PI / 12);
+
+      if (sym === 'leaf') {
+        ctx.beginPath();
+        ctx.moveTo(0, -18);
+        ctx.quadraticCurveTo(18, 0, 0, 18);
+        ctx.quadraticCurveTo(-18, 0, 0, -18);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(0, -14);
+        ctx.lineTo(0, 14);
+        ctx.stroke();
+      } else if (sym === 'swirl') {
+        ctx.beginPath();
+        ctx.arc(0, 0, 14, 0, Math.PI * 1.5);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, 7, Math.PI * 0.5, Math.PI * 2);
+        ctx.stroke();
+      } else if (sym === 'flower') {
+        for (let i = 0; i < 5; i++) {
+          ctx.beginPath();
+          const ang = (i * 2 * Math.PI) / 5;
+          ctx.arc(Math.cos(ang) * 9, Math.sin(ang) * 9, 6, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.beginPath();
+        ctx.arc(0, 0, 4, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (sym === 'sparkle') {
+        ctx.beginPath();
+        ctx.moveTo(0, -15);
+        ctx.lineTo(4, -4);
+        ctx.lineTo(15, 0);
+        ctx.lineTo(4, 4);
+        ctx.lineTo(0, 15);
+        ctx.lineTo(-4, 4);
+        ctx.lineTo(-15, 0);
+        ctx.lineTo(-4, -4);
+        ctx.closePath();
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+  }
+  ctx.restore();
+
+  // 3. Ground / Floor Ambient Light
+  const floorLight = ctx.createLinearGradient(0, height * 0.52, 0, height);
+  floorLight.addColorStop(0, 'rgba(255, 255, 255, 0)');
+  floorLight.addColorStop(0.65, 'rgba(255, 255, 255, 0.35)');
+  floorLight.addColorStop(1, 'rgba(255, 255, 255, 0.55)');
+  ctx.fillStyle = floorLight;
+  ctx.fillRect(0, height * 0.52, width, height * 0.48);
+}
+
+function roundRect(ctx, x, y, width, height, radius) {
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.lineTo(x + width - radius, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+  ctx.lineTo(x + width, y + height - radius);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  ctx.lineTo(x + radius, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+  ctx.lineTo(x, y + radius);
+  ctx.quadraticCurveTo(x, y, x + radius, y);
+  ctx.closePath();
+}
+
+async function capture3DModelFrame(videoUrl, fallbackImageUrl) {
+  if (!videoUrl) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => resolve({ canvasOrImg: img, is3D: false, width: img.naturalWidth, height: img.naturalHeight });
+      img.onerror = () => resolve({ canvasOrImg: null, is3D: false, width: 0, height: 0 });
+      img.src = fallbackImageUrl;
+    });
+  }
+
+  return new Promise((resolve) => {
+    const video = document.createElement('video');
+    video.crossOrigin = 'anonymous';
+    video.muted = true;
+    video.playsInline = true;
+    video.preload = 'auto';
+
+    let settled = false;
+    const fallbackToImg = () => {
+      if (settled) return;
+      settled = true;
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => resolve({ canvasOrImg: img, is3D: false, width: img.naturalWidth, height: img.naturalHeight });
+      img.onerror = () => resolve({ canvasOrImg: null, is3D: false, width: 0, height: 0 });
+      img.src = fallbackImageUrl;
+    };
+
+    const timer = setTimeout(fallbackToImg, 5000);
+
+    video.onloadeddata = () => {
+      try {
+        video.currentTime = Math.min(0.2, (video.duration || 1) * 0.1);
+      } catch (e) {
+        fallbackToImg();
+      }
+    };
+
+    video.onseeked = () => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+
+      try {
+        const vw = video.videoWidth || 600;
+        const vh = video.videoHeight || 1200;
+        const outW = vw;
+        const outH = Math.floor(vh / 2);
+
+        const offCanvas = document.createElement('canvas');
+        offCanvas.width = outW;
+        offCanvas.height = outH;
+
+        const gl = offCanvas.getContext('webgl', { alpha: true, premultipliedAlpha: false });
+        if (!gl) {
+          fallbackToImg();
+          return;
+        }
+
+        const vs = `
+          attribute vec2 a_position;
+          attribute vec2 a_texCoord;
+          varying vec2 v_texCoord;
+          void main() {
+            gl_Position = vec4(a_position, 0.0, 1.0);
+            v_texCoord = a_texCoord;
+          }
+        `;
+        const fs = `
+          precision mediump float;
+          uniform sampler2D u_video;
+          varying vec2 v_texCoord;
+          void main() {
+            vec2 colorUv = vec2(v_texCoord.x, v_texCoord.y * 0.5);
+            vec2 alphaUv = vec2(v_texCoord.x, 0.5 + v_texCoord.y * 0.5);
+            vec4 color = texture2D(u_video, colorUv);
+            float alpha = texture2D(u_video, alphaUv).r;
+            alpha = smoothstep(0.04, 0.96, alpha);
+            gl_FragColor = vec4(color.rgb, alpha);
+          }
+        `;
+
+        const compile = (type, src) => {
+          const s = gl.createShader(type);
+          gl.shaderSource(s, src);
+          gl.compileShader(s);
+          return s;
+        };
+
+        const prog = gl.createProgram();
+        gl.attachShader(prog, compile(gl.VERTEX_SHADER, vs));
+        gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, fs));
+        gl.linkProgram(prog);
+        gl.useProgram(prog);
+
+        const posBuf = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, posBuf);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+          -1, -1,   1, -1,  -1,  1,
+          -1,  1,   1, -1,   1,  1
+        ]), gl.STATIC_DRAW);
+
+        const aPos = gl.getAttribLocation(prog, 'a_position');
+        gl.enableVertexAttribArray(aPos);
+        gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+        const texBuf = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, texBuf);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+          0, 1,   1, 1,   0, 0,
+          0, 0,   1, 1,   1, 0
+        ]), gl.STATIC_DRAW);
+
+        const aTex = gl.getAttribLocation(prog, 'a_texCoord');
+        gl.enableVertexAttribArray(aTex);
+        gl.vertexAttribPointer(aTex, 2, gl.FLOAT, false, 0, 0);
+
+        const texture = gl.createTexture();
+        gl.bindTexture(gl.TEXTURE_2D, texture);
+        gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
+
+        gl.viewport(0, 0, outW, outH);
+        gl.clearColor(0, 0, 0, 0);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+        resolve({ canvasOrImg: offCanvas, is3D: true, width: outW, height: outH });
+      } catch (err) {
+        console.warn('Capture 3D error:', err);
+        fallbackToImg();
+      }
+    };
+
+    video.onerror = fallbackToImg;
+    video.src = videoUrl;
+  });
+}
+
+async function generateSquadCard() {
+  const canvas = document.getElementById('squadGraphicCanvas');
+  const previewArea = document.getElementById('squadCardPreviewArea');
+  const customNameInput = document.getElementById('squadCustomName');
+  const btnGenerate = document.getElementById('btnGenerateSquadCard');
+  if (!canvas || squadSlots.filter(Boolean).length < 4) return;
+
+  if (btnGenerate) {
+    btnGenerate.disabled = true;
+    btnGenerate.innerHTML = `⚡ Rendering 3D Models...`;
+  }
+
+  const squadName = (customNameInput?.value || '').trim() || 'Aniimo Adventure Squad';
+  const ctx = canvas.getContext('2d');
+  const width = canvas.width;  // 1200
+  const height = canvas.height; // 675
+
+  // Show preview area immediately
+  if (previewArea) previewArea.classList.remove('hidden');
+
+  // Load all 4 3D models concurrently
+  const loadedModels = await Promise.all(squadSlots.map(async (slot, idx) => {
+    try {
+      const result = await capture3DModelFrame(slot.videoUrl, slot.imageUrl);
+      return { ...result, slot };
+    } catch (e) {
+      console.warn('Failed capturing 3D model for slot', idx, e);
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = () => resolve({ canvasOrImg: img, is3D: false, width: img.naturalWidth, height: img.naturalHeight, slot });
+        img.onerror = () => resolve({ canvasOrImg: null, is3D: false, width: 0, height: 0, slot });
+        img.src = slot.imageUrl;
+      });
+    }
+  }));
+
+  // 1. Draw Aniimo Wiki Soft Sky-Blue Wallpaper Background
+  drawAniimoWikiBackground(ctx, width, height);
+
+  // 2. Header Area
+  ctx.save();
+  // Squad Title in bold Navy
+  ctx.fillStyle = '#0c2340';
+  ctx.font = '800 36px "Outfit", sans-serif';
+  ctx.shadowColor = 'rgba(255, 255, 255, 0.7)';
+  ctx.shadowBlur = 8;
+  ctx.fillText(squadName, 55, 58);
+
+  // Subtitle
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = '#0284c7';
+  ctx.font = '700 15px "Outfit", sans-serif';
+  ctx.fillText('⚔️ 4-ANIIMO BATTLE SQUAD FORMATION', 55, 84);
+
+  // Watermark / Brand on Right
+  ctx.textAlign = 'right';
+  ctx.fillStyle = '#0c2340';
+  ctx.font = '800 16px "Outfit", sans-serif';
+  ctx.fillText('🏡 ANIIMO HOMELAND HUB', width - 55, 56);
+
+  ctx.fillStyle = '#0369a1';
+  ctx.font = '700 13px "JetBrains Mono", monospace';
+  ctx.fillText('aniimo-homeland-guide.vercel.app', width - 55, 78);
+  ctx.restore();
+
+  // 3. Ground & Side-by-Side 3D Aniimo Lineup
+  const groundY = 515;
+  const centers = [180, 445, 735, 1000];
+
+  const elementColors = {
+    Fire: '#ef4444',
+    Water: '#3b82f6',
+    Grass: '#22c55e',
+    Earth: '#d97706',
+    Lightning: '#eab308',
+    Ice: '#06b6d4',
+    Wind: '#14b8a6',
+    Dark: '#a855f7',
+    Light: '#f59e0b'
+  };
+
+  // Step 3A: Draw all 4 floor shadows first so overlapping creatures don't cover shadows
+  loadedModels.forEach((item, i) => {
+    const cx = centers[i];
+    ctx.save();
+    const shadowGrad = ctx.createRadialGradient(cx, groundY + 12, 10, cx, groundY + 12, 140);
+    shadowGrad.addColorStop(0, 'rgba(25, 70, 130, 0.40)');
+    shadowGrad.addColorStop(0.5, 'rgba(35, 90, 150, 0.16)');
+    shadowGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    ctx.fillStyle = shadowGrad;
+    ctx.beginPath();
+    ctx.ellipse(cx, groundY + 12, 140, 24, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  });
+
+  // Step 3B: Draw all 4 3D Aniimo standing side by side
+  loadedModels.forEach((item, i) => {
+    const cx = centers[i];
+    const source = item.canvasOrImg;
+    if (!source) return;
+
+    ctx.save();
+    const maxH = 400;
+    const maxW = 340;
+    const srcW = source.width || source.naturalWidth || 600;
+    const srcH = source.height || source.naturalHeight || 600;
+    const scale = Math.min(maxH / srcH, maxW / srcW);
+    const drawW = srcW * scale;
+    const drawH = srcH * scale;
+    const drawX = cx - drawW / 2;
+    const drawY = groundY - drawH + 18;
+
+    // Draw 3D model
+    ctx.drawImage(source, drawX, drawY, drawW, drawH);
+    ctx.restore();
+  });
+
+  // Step 3C: Draw creature info plates beneath them (Aniimo Name + Form only)
+  loadedModels.forEach((item, i) => {
+    const { slot } = item;
+    const cx = centers[i];
+    const elColor = elementColors[slot.primaryElement] || '#0284c7';
+
+    const plateW = 220;
+    const plateH = 62;
+    const plateX = cx - plateW / 2;
+    const plateY = 566;
+
+    ctx.save();
+    // Frosted glass background
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.94)';
+    ctx.shadowColor = 'rgba(20, 50, 90, 0.16)';
+    ctx.shadowBlur = 12;
+    ctx.shadowOffsetY = 4;
+    roundRect(ctx, plateX, plateY, plateW, plateH, 12);
+    ctx.fill();
+
+    // Border
+    ctx.strokeStyle = elColor + '66';
+    ctx.lineWidth = 1.5;
+    roundRect(ctx, plateX, plateY, plateW, plateH, 12);
+    ctx.stroke();
+
+    // Aniimo Name
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#0f172a';
+    ctx.font = '800 20px "Outfit", sans-serif';
+    ctx.fillText(slot.name, cx, plateY + 27);
+
+    // Form Name Underneath
+    ctx.fillStyle = slot.isPris ? '#db2777' : '#0284c7';
+    ctx.font = '700 13px "Outfit", sans-serif';
+    const formTxt = slot.isPris ? '🌈 ' + slot.formName : slot.formName;
+    ctx.fillText(formTxt, cx, plateY + 48);
+
+    ctx.restore();
+  });
+
+  // Footer text
+  ctx.save();
+  ctx.fillStyle = '#0369a1';
+  ctx.font = '600 11px "Outfit", sans-serif';
+  ctx.fillText('Generated with Aniimo Homeland Guide • Official 3D Visualizer & Lineup Card', 55, height - 12);
+  ctx.restore();
+
+  if (btnGenerate) {
+    btnGenerate.disabled = false;
+    btnGenerate.innerHTML = `✨ Generate Squad Card (Ready!)`;
+  }
+
+  // Scroll preview into view
+  previewArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function downloadSquadCardPng() {
+  const canvas = document.getElementById('squadGraphicCanvas');
+  const customNameInput = document.getElementById('squadCustomName');
+  if (!canvas) return;
+
+  const rawName = (customNameInput?.value || 'aniimo-squad').trim();
+  const slugName = rawName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'aniimo-squad';
+  const filename = `${slugName}.png`;
+
+  const link = document.createElement('a');
+  link.download = filename;
+  link.href = canvas.toDataURL('image/png');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+
+function copySquadCardToClipboard() {
+  const canvas = document.getElementById('squadGraphicCanvas');
+  const btnCopy = document.getElementById('btnCopySquadImage');
+  if (!canvas) return;
+
+  canvas.toBlob(blob => {
+    if (!blob) return;
+    if (navigator.clipboard && navigator.clipboard.write) {
+      navigator.clipboard.write([
+        new ClipboardItem({ 'image/png': blob })
+      ]).then(() => {
+        if (btnCopy) {
+          const orig = btnCopy.innerHTML;
+          btnCopy.innerHTML = `✅ Copied to Clipboard!`;
+          setTimeout(() => { btnCopy.innerHTML = orig; }, 2500);
+        }
+      }).catch(err => {
+        console.warn('Clipboard write failed:', err);
+        downloadSquadCardPng();
+      });
+    } else {
+      downloadSquadCardPng();
+    }
+  }, 'image/png');
+}
