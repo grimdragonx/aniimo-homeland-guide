@@ -1888,7 +1888,7 @@ function renderSquadSlots() {
             <span class="squad-slot-name">${slot.name}</span>
           </div>
           <div style="margin-top: 4px;">
-            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.isPris ? '?? ' : ''}${slot.formName}</span>
+            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.formName}</span>
           </div>
         </div>
       </div>
@@ -1898,12 +1898,12 @@ function renderSquadSlots() {
   slotsGrid.innerHTML = slotsHtml;
 
   if (btnGenerate) {
-    if (filledCount === 4) {
+    if (filledCount >= 1) {
       btnGenerate.disabled = false;
-      btnGenerate.innerHTML = `✨ Generate Squad Card (Ready!)`;
+      btnGenerate.innerHTML = filledCount === 4 ? 'Generate Squad Card (Ready!)' : `Generate Squad Card (${filledCount} Selected)`;
     } else {
       btnGenerate.disabled = true;
-      btnGenerate.innerHTML = `✨ Generate Squad Card (${filledCount}/4 Selected)`;
+      btnGenerate.innerHTML = 'Generate Squad Card (Choose Aniimo)';
     }
   }
 
@@ -2322,7 +2322,7 @@ async function generateSquadCard() {
 
   if (btnGenerate) {
     btnGenerate.disabled = true;
-    btnGenerate.innerHTML = `? Rendering 3D Models...`;
+    btnGenerate.innerHTML = 'Rendering 3D Models...';
   }
 
   const squadName = (customNameInput?.value || '').trim() || (chosenCount === 1 ? `${chosenSlots[0].name} Showcase` : 'Aniimo Adventure Squad');
@@ -2476,7 +2476,7 @@ async function generateSquadCard() {
 
   if (btnGenerate) {
     btnGenerate.disabled = false;
-    btnGenerate.innerHTML = 'Generate Squad Card (Ready!)';
+    btnGenerate.innerHTML = chosenCount === 4 ? 'Generate Squad Card (Ready!)' : `Generate Squad Card (${chosenCount} Selected)`;
   }
 
   // Scroll preview into view
