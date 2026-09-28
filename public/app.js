@@ -987,7 +987,6 @@ window.switchMainView = function(viewName, shouldScroll = true) {
   const heroSection = document.getElementById('heroSection');
   const controlsCard = document.getElementById('controlsCard');
   const aniimoGrid = document.getElementById('aniimoGrid');
-  const creatureDirectory = document.getElementById('creatureDirectory');
   const optimizerSection = document.getElementById('optimizerSection');
   const squadCardSection = document.getElementById('squadCardSection');
   const guideAccordionSection = document.getElementById('guideAccordionSection');
@@ -1007,7 +1006,6 @@ window.switchMainView = function(viewName, shouldScroll = true) {
     toggleEl(heroSection, true);
     toggleEl(controlsCard, true);
     toggleEl(aniimoGrid, true);
-    toggleEl(creatureDirectory, true);
     toggleEl(optimizerSection, false);
     toggleEl(squadCardSection, false);
     toggleEl(guideAccordionSection, false);
@@ -1016,7 +1014,6 @@ window.switchMainView = function(viewName, shouldScroll = true) {
     toggleEl(heroSection, false);
     toggleEl(controlsCard, false);
     toggleEl(aniimoGrid, false);
-    toggleEl(creatureDirectory, false);
     toggleEl(optimizerSection, true);
     toggleEl(squadCardSection, false);
     toggleEl(guideAccordionSection, false);
@@ -1025,7 +1022,6 @@ window.switchMainView = function(viewName, shouldScroll = true) {
     toggleEl(heroSection, false);
     toggleEl(controlsCard, false);
     toggleEl(aniimoGrid, false);
-    toggleEl(creatureDirectory, false);
     toggleEl(optimizerSection, false);
     toggleEl(squadCardSection, true);
     toggleEl(guideAccordionSection, false);
@@ -1034,7 +1030,6 @@ window.switchMainView = function(viewName, shouldScroll = true) {
     toggleEl(heroSection, false);
     toggleEl(controlsCard, false);
     toggleEl(aniimoGrid, false);
-    toggleEl(creatureDirectory, false);
     toggleEl(optimizerSection, false);
     toggleEl(squadCardSection, false);
     toggleEl(guideAccordionSection, true);
@@ -1888,18 +1883,24 @@ function renderSquadSlots() {
 
     return `
       <div class="squad-slot-box is-filled" style="${glowStyle}" onclick="openSquadPicker(${idx})" title="Click to change Aniimo for Slot #${idx + 1}">
-        <div class="squad-slot-top-row" style="justify-content: flex-end;">
+        <div class="squad-slot-top-row">
+          <span class="squad-slot-label">Slot #${idx + 1}</span>
           <button type="button" class="squad-slot-remove-btn" onclick="event.stopPropagation(); removeSquadMember(${idx})" title="Remove Aniimo">&times;</button>
         </div>
         <div class="squad-slot-portrait-wrap">
           <img src="${slot.imageUrl}" alt="${slot.name}" class="squad-slot-portrait-img" onerror="this.onerror=null; this.src='images/${slot.slug}.png';">
         </div>
-        <div class="squad-slot-info" style="text-align: center;">
-          <div class="squad-slot-name-row" style="justify-content: center;">
+        <div class="squad-slot-info">
+          <div class="squad-slot-name-row">
             <span class="squad-slot-name">${slot.name}</span>
+            <span class="portrait-badge-id" style="font-size: 0.7rem; padding: 0.1rem 0.35rem;">${slot.display_id}</span>
           </div>
-          <div style="margin-top: 4px;">
-            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.isPris ? '🌈 ' : ''}${slot.formName}</span>
+          <div>
+            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.formName}</span>
+          </div>
+          <div class="squad-slot-elements-row">
+            <span class="el-badge" style="font-size: 0.72rem; padding: 0.15rem 0.45rem;">${slot.elementDisplay}</span>
+            <span class="portrait-badge-stage stage-${slot.tier}" style="font-size: 0.7rem; padding: 0.1rem 0.35rem;">${slot.tier}</span>
           </div>
         </div>
       </div>
@@ -2440,43 +2441,58 @@ async function generateSquadCard() {
     ctx.restore();
   });
 
-  // Step 3C: Draw creature info plates beneath them (Aniimo Name + Form only)
+  // Step 3C: Draw creature info plates beneath them
   loadedModels.forEach((item, i) => {
     const { slot } = item;
     const cx = centers[i];
     const elColor = elementColors[slot.primaryElement] || '#0284c7';
 
-    const plateW = 220;
-    const plateH = 62;
+    const plateW = 245;
+    const plateH = 88;
     const plateX = cx - plateW / 2;
-    const plateY = 566;
+    const plateY = 555;
 
     ctx.save();
     // Frosted glass background
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.94)';
-    ctx.shadowColor = 'rgba(20, 50, 90, 0.16)';
-    ctx.shadowBlur = 12;
-    ctx.shadowOffsetY = 4;
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+    ctx.shadowColor = 'rgba(20, 50, 90, 0.18)';
+    ctx.shadowBlur = 14;
+    ctx.shadowOffsetY = 5;
     roundRect(ctx, plateX, plateY, plateW, plateH, 12);
     ctx.fill();
 
     // Border
-    ctx.strokeStyle = elColor + '66';
+    ctx.strokeStyle = elColor + '88';
     ctx.lineWidth = 1.5;
     roundRect(ctx, plateX, plateY, plateW, plateH, 12);
     ctx.stroke();
 
-    // Aniimo Name
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#0f172a';
-    ctx.font = '800 20px "Outfit", sans-serif';
-    ctx.fillText(slot.name, cx, plateY + 27);
+    // Top Row: Slot number & Tier
+    ctx.fillStyle = elColor;
+    ctx.font = '800 11px "JetBrains Mono", monospace';
+    ctx.fillText(`SLOT #${i + 1}  •  ${slot.display_id}`, plateX + 14, plateY + 22);
 
-    // Form Name Underneath
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#0f172a';
+    ctx.font = '800 12px "Outfit", sans-serif';
+    ctx.fillText(slot.tier, plateX + plateW - 14, plateY + 22);
+
+    // Middle Row: Creature Name
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#0f172a';
+    ctx.font = '800 19px "Outfit", sans-serif';
+    ctx.fillText(slot.name, plateX + 14, plateY + 48);
+
+    // Bottom Row: Form Name & Element
     ctx.fillStyle = slot.isPris ? '#db2777' : '#0284c7';
-    ctx.font = '700 13px "Outfit", sans-serif';
-    const formTxt = slot.isPris ? '🌈 ' + slot.formName : slot.formName;
-    ctx.fillText(formTxt, cx, plateY + 48);
+    ctx.font = '700 12px "Outfit", sans-serif';
+    const formTxt = (slot.isPris ? '🌈 ' : '🗺️ ') + slot.formName;
+    ctx.fillText(formTxt, plateX + 14, plateY + 72);
+
+    ctx.textAlign = 'right';
+    ctx.fillStyle = elColor;
+    ctx.font = '700 12px "Outfit", sans-serif';
+    ctx.fillText(slot.elementDisplay, plateX + plateW - 14, plateY + 72);
 
     ctx.restore();
   });
