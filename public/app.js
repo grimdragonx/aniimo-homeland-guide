@@ -1323,9 +1323,21 @@ function triggerCalculation(shouldScroll = true) {
   }, 80);
 }
 
+function getRolePriority(role) {
+  const cat = abilityMeta[role]?.category;
+  if (cat === 'element') return 1; // Priority 1: Elemental Roles (Fire, Water, Grass, Earth, Wind, Ice, Lightning, Dark, Light)
+  if (cat === 'facility' && role !== 'Carry') return 2; // Priority 2: Facility Jobs (Artisanship, Leisure, Perfumery)
+  return 3; // Priority 3: Utilities / Hauling (Carry)
+}
+
 // Master Solver supporting Option 1 (Fewest skills first), Option 2 (Always multiple skills), Option 3 (Alternative squad)
 function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeCreatureIds = new Set(), allowPrismana = true, allowUnnumbered = true } = {}) {
-  const targetRoles = Object.keys(targetRolesWithCounts);
+  const targetRoles = Object.keys(targetRolesWithCounts).sort((a, b) => {
+    const pA = getRolePriority(a);
+    const pB = getRolePriority(b);
+    if (pA !== pB) return pA - pB;
+    return a.localeCompare(b);
+  });
   if (targetRoles.length === 0) return null;
 
   // 1. Gather all candidates
@@ -1397,10 +1409,12 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
 
   const selectedTeam = [];
   const roleCoveredCounts = {};
+  const roleAssignedCounts = {};
   const roleCoveredLevels = {};
   const cycleExtraCounts = {};
   targetRoles.forEach(r => {
     roleCoveredCounts[r] = 0;
+    roleAssignedCounts[r] = 0;
     roleCoveredLevels[r] = 0;
     cycleExtraCounts[r] = 0;
   });
@@ -1409,26 +1423,23 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
 
   for (let slot = 0; slot < teamSize; slot++) {
     // === PHASE 1: Base Target Role Fulfillment ===
-    // Check if any role is NOT yet fulfilled
+    // Priority order: Elemental Roles > Facility Jobs > Carry/Hauling
     let unmetRole = null;
     let maxDeficit = 0;
+    let bestPriority = 999;
 
-    // First check non-Carry specialized roles that still have unmet deficit
     for (const r of targetRoles) {
-      if (r === 'Carry') continue;
       const needed = targetRolesWithCounts[r] || 1;
-      const cur = roleCoveredCounts[r] || 0;
-      const def = needed - cur;
-      if (def > maxDeficit) {
-        maxDeficit = def;
-        unmetRole = r;
+      const assigned = roleAssignedCounts[r] || 0;
+      const def = needed - assigned;
+      if (def > 0) {
+        const priority = getRolePriority(r);
+        if (priority < bestPriority || (priority === bestPriority && def > maxDeficit)) {
+          bestPriority = priority;
+          maxDeficit = def;
+          unmetRole = r;
+        }
       }
-    }
-
-    // Only if all specialized roles are fulfilled, check Carry deficit
-    if (!unmetRole && (targetRolesWithCounts['Carry'] || 0) > (roleCoveredCounts['Carry'] || 0)) {
-      unmetRole = 'Carry';
-      maxDeficit = (targetRolesWithCounts['Carry'] || 1) - (roleCoveredCounts['Carry'] || 0);
     }
 
     let isSurplusPhase = false;
@@ -1457,53 +1468,47 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
       const candLvl = cand.relevantAbilities[targetRole];
       if (!candLvl) continue;
 
-      let score = 100000 + candLvl * 5000;
+      let score = 100000;
       const skills = cand.totalSkillsCount;
       const maxAvail = maxLvlByRole[targetRole] || 4;
 
+      // Heavy priority reward for maximizing skill level in the target role!
+      score += (candLvl - maxAvail) * 40000;
+      if (candLvl === maxAvail) score += 30000;
+      score += candLvl * 5000;
+
       if (mode === 'single') {
         const minPossible = minSkillsByRole[targetRole] || 1;
-        if (skills === 1) score += 60000;
-        else if (skills === minPossible) score += 30000;
-        score -= (skills - 1) * 25000;
-
-        if (candLvl === maxAvail) score += 15000;
-        else if (candLvl >= 3) score += 8000;
-        score += candLvl * 2000;
+        if (skills === 1) score += 35000;
+        else if (skills === minPossible) score += 18000;
+        score -= (skills - 1) * 12000;
       } else if (mode === 'multiple') {
-        if (skills >= 3) score += 60000;
-        else if (skills === 2) score += 35000;
-        else if (skills === 1) score -= 80000;
-
-        if (candLvl === maxAvail) score += 20000;
-        else if (candLvl >= 3) score += 10000;
-        score += candLvl * 2000;
+        if (skills >= 3) score += 50000;
+        else if (skills === 2) score += 25000;
+        else if (skills === 1) score -= 60000;
       } else {
-        if (candLvl === maxAvail) score += 40000;
-        else if (candLvl >= 3) score += 20000;
-        score += candLvl * 3000;
+        score += candLvl * 4000;
       }
 
       if (!isSurplusPhase) {
-        // Base phase: Big synergy bonus for covering OTHER currently unmet roles!
+        // Base phase: Synergy bonus for supporting other currently unmet assignments
         for (const [r, l] of Object.entries(cand.relevantAbilities)) {
           if (r !== targetRole) {
-            const def = (targetRolesWithCounts[r] || 1) - (roleCoveredCounts[r] || 0);
-            if (def > 0) score += 35000 + l * 4000;
-            else score += l * 500;
+            const def = (targetRolesWithCounts[r] || 1) - (roleAssignedCounts[r] || 0);
+            if (def > 0) score += 12000 + l * 1500;
+            else score += l * 300;
           }
         }
       } else {
-        // Surplus rotation phase (+1 -> +2 cycle):
-        // Candidate should also have Hauling (Carry) if possible!
+        // Surplus rotation phase: Candidate should also have Hauling (Carry) if possible!
         if (targetRole !== 'Carry' && cand.relevantAbilities['Carry']) {
           score += 25000 + cand.relevantAbilities['Carry'] * 3000;
         }
       }
 
-      // Soft species diversity penalty
+      // Strong species diversity penalty
       const already = teamSpeciesCount[cand.creatureId] || 0;
-      score -= already * 16000;
+      score -= already * 80000;
 
       if (score > bestScore) {
         bestScore = score;
@@ -1511,21 +1516,8 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
       }
     }
 
-    if (bestCand && bestScore > -20000) {
-      let primaryRole = targetRole;
-      if (!isSurplusPhase) {
-        // Find which ability of bestCand had the highest deficit
-        let highestDef = 0;
-        let highestRole = targetRole;
-        for (const [r, l] of Object.entries(bestCand.relevantAbilities)) {
-          const def = (targetRolesWithCounts[r] || 1) - (roleCoveredCounts[r] || 0);
-          if (def > highestDef) {
-            highestDef = def;
-            highestRole = r;
-          }
-        }
-        primaryRole = highestRole;
-      }
+    if (bestCand && bestScore > -50000) {
+      const primaryRole = targetRole;
 
       selectedTeam.push({
         ...bestCand,
@@ -1536,6 +1528,7 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
       });
 
       teamSpeciesCount[bestCand.creatureId] = (teamSpeciesCount[bestCand.creatureId] || 0) + 1;
+      roleAssignedCounts[primaryRole] = (roleAssignedCounts[primaryRole] || 0) + 1;
 
       for (const [r, l] of Object.entries(bestCand.relevantAbilities)) {
         roleCoveredCounts[r] = (roleCoveredCounts[r] || 0) + 1;
@@ -1552,13 +1545,14 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
     }
   }
 
-  const coveredRoles = targetRoles.filter(r => (roleCoveredCounts[r] || 0) >= (targetRolesWithCounts[r] || 1));
+  const coveredRoles = targetRoles.filter(r => (roleAssignedCounts[r] || 0) >= (targetRolesWithCounts[r] || 1));
   const level4Count = selectedTeam.filter(m => m.primaryLvl === 4).length;
   const level3Count = selectedTeam.filter(m => m.primaryLvl === 3).length;
 
   return {
     selectedTeam,
     roleCoveredCounts,
+    roleAssignedCounts,
     roleCoveredLevels,
     coveredRoles,
     coveragePercent: targetRoles.length > 0 ? Math.round((coveredRoles.length / targetRoles.length) * 100) : 100,
@@ -1569,7 +1563,7 @@ function solveSquad(targetRolesWithCounts, teamSize, { mode = 'single', excludeC
 
 function runOptimizer() {
   const targetRolesWithCounts = getSelectedRolesWithCounts();
-  const targetRoles = Object.keys(targetRolesWithCounts);
+  const targetRoles = Object.keys(targetRolesWithCounts).sort((a, b) => getRolePriority(a) - getRolePriority(b));
   const allowPrismana = document.getElementById('optAllowPrismana')?.checked ?? true;
   const allowUnnumbered = document.getElementById('optAllowUnnumbered')?.checked ?? true;
   const resultsContainer = document.getElementById('optimizerResults');
@@ -1636,7 +1630,7 @@ function renderTeamResultsUI() {
 
   const currentOption = cachedTeamOptions[activeTeamOptionIndex] || cachedTeamOptions[0];
   const targetRolesWithCounts = getSelectedRolesWithCounts();
-  const targetRoles = Object.keys(targetRolesWithCounts);
+  const targetRoles = Object.keys(targetRolesWithCounts).sort((a, b) => getRolePriority(a) - getRolePriority(b));
 
   // Tabs for 3 options
   const tabsHtml = cachedTeamOptions.map((opt, idx) => `
@@ -1705,7 +1699,7 @@ function renderTeamResultsUI() {
         </div>
         <div class="team-checklist">
           ${targetRoles.map(r => {
-            const assigned = currentOption.roleCoveredCounts[r] || 0;
+            const assigned = (currentOption.roleAssignedCounts && currentOption.roleAssignedCounts[r] !== undefined) ? currentOption.roleAssignedCounts[r] : (currentOption.roleCoveredCounts[r] || 0);
             const needed = targetRolesWithCounts[r] || 1;
             const isMet = assigned >= needed;
             return `<span class="coverage-pill ${isMet ? 'covered' : 'missing'}">
@@ -1883,24 +1877,18 @@ function renderSquadSlots() {
 
     return `
       <div class="squad-slot-box is-filled" style="${glowStyle}" onclick="openSquadPicker(${idx})" title="Click to change Aniimo for Slot #${idx + 1}">
-        <div class="squad-slot-top-row">
-          <span class="squad-slot-label">Slot #${idx + 1}</span>
+        <div class="squad-slot-top-row" style="justify-content: flex-end;">
           <button type="button" class="squad-slot-remove-btn" onclick="event.stopPropagation(); removeSquadMember(${idx})" title="Remove Aniimo">&times;</button>
         </div>
         <div class="squad-slot-portrait-wrap">
           <img src="${slot.imageUrl}" alt="${slot.name}" class="squad-slot-portrait-img" onerror="this.onerror=null; this.src='images/${slot.slug}.png';">
         </div>
-        <div class="squad-slot-info">
-          <div class="squad-slot-name-row">
+        <div class="squad-slot-info" style="text-align: center;">
+          <div class="squad-slot-name-row" style="justify-content: center;">
             <span class="squad-slot-name">${slot.name}</span>
-            <span class="portrait-badge-id" style="font-size: 0.7rem; padding: 0.1rem 0.35rem;">${slot.display_id}</span>
           </div>
-          <div>
-            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.formName}</span>
-          </div>
-          <div class="squad-slot-elements-row">
-            <span class="el-badge" style="font-size: 0.72rem; padding: 0.15rem 0.45rem;">${slot.elementDisplay}</span>
-            <span class="portrait-badge-stage stage-${slot.tier}" style="font-size: 0.7rem; padding: 0.1rem 0.35rem;">${slot.tier}</span>
+          <div style="margin-top: 4px;">
+            <span class="squad-slot-form-badge" style="${slot.isPris ? 'color: #ec4899; border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.15);' : ''}">${slot.isPris ? '?? ' : ''}${slot.formName}</span>
           </div>
         </div>
       </div>
@@ -2327,14 +2315,17 @@ async function generateSquadCard() {
   const previewArea = document.getElementById('squadCardPreviewArea');
   const customNameInput = document.getElementById('squadCustomName');
   const btnGenerate = document.getElementById('btnGenerateSquadCard');
-  if (!canvas || squadSlots.filter(Boolean).length < 4) return;
+  
+  const chosenSlots = squadSlots.filter(Boolean);
+  const chosenCount = chosenSlots.length;
+  if (!canvas || chosenCount === 0) return;
 
   if (btnGenerate) {
     btnGenerate.disabled = true;
-    btnGenerate.innerHTML = `⚡ Rendering 3D Models...`;
+    btnGenerate.innerHTML = `? Rendering 3D Models...`;
   }
 
-  const squadName = (customNameInput?.value || '').trim() || 'Aniimo Adventure Squad';
+  const squadName = (customNameInput?.value || '').trim() || (chosenCount === 1 ? `${chosenSlots[0].name} Showcase` : 'Aniimo Adventure Squad');
   const ctx = canvas.getContext('2d');
   const width = canvas.width;  // 1200
   const height = canvas.height; // 675
@@ -2342,8 +2333,8 @@ async function generateSquadCard() {
   // Show preview area immediately
   if (previewArea) previewArea.classList.remove('hidden');
 
-  // Load all 4 3D models concurrently
-  const loadedModels = await Promise.all(squadSlots.map(async (slot, idx) => {
+  // Load chosen 3D models concurrently
+  const loadedModels = await Promise.all(chosenSlots.map(async (slot, idx) => {
     try {
       const result = await capture3DModelFrame(slot.videoUrl, slot.imageUrl);
       return { ...result, slot };
@@ -2362,35 +2353,35 @@ async function generateSquadCard() {
   // 1. Draw Aniimo Wiki Soft Sky-Blue Wallpaper Background
   drawAniimoWikiBackground(ctx, width, height);
 
-  // 2. Header Area
+  // 2. Header Area: Centered in the middle (Right side branding completely removed!)
   ctx.save();
-  // Squad Title in bold Navy
+  ctx.textAlign = 'center';
   ctx.fillStyle = '#0c2340';
   ctx.font = '800 36px "Outfit", sans-serif';
   ctx.shadowColor = 'rgba(255, 255, 255, 0.7)';
   ctx.shadowBlur = 8;
-  ctx.fillText(squadName, 55, 58);
+  ctx.fillText(squadName, width / 2, 58);
 
-  // Subtitle
+  // Subtitle centered beneath title (dynamically updates count)
   ctx.shadowBlur = 0;
   ctx.fillStyle = '#0284c7';
   ctx.font = '700 15px "Outfit", sans-serif';
-  ctx.fillText('⚔️ 4-ANIIMO BATTLE SQUAD FORMATION', 55, 84);
-
-  // Watermark / Brand on Right
-  ctx.textAlign = 'right';
-  ctx.fillStyle = '#0c2340';
-  ctx.font = '800 16px "Outfit", sans-serif';
-  ctx.fillText('🏡 ANIIMO HOMELAND HUB', width - 55, 56);
-
-  ctx.fillStyle = '#0369a1';
-  ctx.font = '700 13px "JetBrains Mono", monospace';
-  ctx.fillText('aniimo-homeland-guide.vercel.app', width - 55, 78);
+  const formationSubtitle = chosenCount === 1 ? '1-ANIIMO FORMATION' : `${chosenCount}-ANIIMO BATTLE SQUAD FORMATION`;
+  ctx.fillText(formationSubtitle, width / 2, 85);
   ctx.restore();
 
-  // 3. Ground & Side-by-Side 3D Aniimo Lineup
+  // 3. Ground & Dynamic Center Positions (1, 2, 3, or 4 Aniimo)
   const groundY = 515;
-  const centers = [180, 445, 735, 1000];
+  let centers = [];
+  if (chosenCount === 1) {
+    centers = [width / 2]; // 600 (exact middle!)
+  } else if (chosenCount === 2) {
+    centers = [420, 780]; // duo evenly spaced around center
+  } else if (chosenCount === 3) {
+    centers = [270, 600, 930]; // trio evenly spaced around center
+  } else {
+    centers = [180, 455, 745, 1020]; // 4-Aniimo formation
+  }
 
   const elementColors = {
     Fire: '#ef4444',
@@ -2404,7 +2395,7 @@ async function generateSquadCard() {
     Light: '#f59e0b'
   };
 
-  // Step 3A: Draw all 4 floor shadows first so overlapping creatures don't cover shadows
+  // Step 3A: Draw floor shadows
   loadedModels.forEach((item, i) => {
     const cx = centers[i];
     ctx.save();
@@ -2419,15 +2410,16 @@ async function generateSquadCard() {
     ctx.restore();
   });
 
-  // Step 3B: Draw all 4 3D Aniimo standing side by side
+  // Step 3B: Draw 3D Aniimo standing side by side
+  const maxH = chosenCount === 1 ? 430 : 400;
+  const maxW = chosenCount === 1 ? 400 : 340;
+
   loadedModels.forEach((item, i) => {
     const cx = centers[i];
     const source = item.canvasOrImg;
     if (!source) return;
 
     ctx.save();
-    const maxH = 400;
-    const maxW = 340;
     const srcW = source.width || source.naturalWidth || 600;
     const srcH = source.height || source.naturalHeight || 600;
     const scale = Math.min(maxH / srcH, maxW / srcW);
@@ -2441,72 +2433,50 @@ async function generateSquadCard() {
     ctx.restore();
   });
 
-  // Step 3C: Draw creature info plates beneath them
+  // Step 3C: Draw creature info plates beneath them (Aniimo Name + Form only)
   loadedModels.forEach((item, i) => {
     const { slot } = item;
     const cx = centers[i];
     const elColor = elementColors[slot.primaryElement] || '#0284c7';
 
-    const plateW = 245;
-    const plateH = 88;
+    const plateW = 220;
+    const plateH = 62;
     const plateX = cx - plateW / 2;
-    const plateY = 555;
+    const plateY = 566;
 
     ctx.save();
     // Frosted glass background
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
-    ctx.shadowColor = 'rgba(20, 50, 90, 0.18)';
-    ctx.shadowBlur = 14;
-    ctx.shadowOffsetY = 5;
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.94)';
+    ctx.shadowColor = 'rgba(20, 50, 90, 0.16)';
+    ctx.shadowBlur = 12;
+    ctx.shadowOffsetY = 4;
     roundRect(ctx, plateX, plateY, plateW, plateH, 12);
     ctx.fill();
 
     // Border
-    ctx.strokeStyle = elColor + '88';
+    ctx.strokeStyle = elColor + '66';
     ctx.lineWidth = 1.5;
     roundRect(ctx, plateX, plateY, plateW, plateH, 12);
     ctx.stroke();
 
-    // Top Row: Slot number & Tier
-    ctx.fillStyle = elColor;
-    ctx.font = '800 11px "JetBrains Mono", monospace';
-    ctx.fillText(`SLOT #${i + 1}  •  ${slot.display_id}`, plateX + 14, plateY + 22);
-
-    ctx.textAlign = 'right';
+    // Aniimo Name
+    ctx.textAlign = 'center';
     ctx.fillStyle = '#0f172a';
-    ctx.font = '800 12px "Outfit", sans-serif';
-    ctx.fillText(slot.tier, plateX + plateW - 14, plateY + 22);
+    ctx.font = '800 20px "Outfit", sans-serif';
+    ctx.fillText(slot.name, cx, plateY + 27);
 
-    // Middle Row: Creature Name
-    ctx.textAlign = 'left';
-    ctx.fillStyle = '#0f172a';
-    ctx.font = '800 19px "Outfit", sans-serif';
-    ctx.fillText(slot.name, plateX + 14, plateY + 48);
-
-    // Bottom Row: Form Name & Element
+    // Form Name Underneath
     ctx.fillStyle = slot.isPris ? '#db2777' : '#0284c7';
-    ctx.font = '700 12px "Outfit", sans-serif';
-    const formTxt = (slot.isPris ? '🌈 ' : '🗺️ ') + slot.formName;
-    ctx.fillText(formTxt, plateX + 14, plateY + 72);
-
-    ctx.textAlign = 'right';
-    ctx.fillStyle = elColor;
-    ctx.font = '700 12px "Outfit", sans-serif';
-    ctx.fillText(slot.elementDisplay, plateX + plateW - 14, plateY + 72);
+    ctx.font = '700 13px "Outfit", sans-serif';
+    const formTxt = slot.formName;
+    ctx.fillText(formTxt, cx, plateY + 48);
 
     ctx.restore();
   });
 
-  // Footer text
-  ctx.save();
-  ctx.fillStyle = '#0369a1';
-  ctx.font = '600 11px "Outfit", sans-serif';
-  ctx.fillText('Generated with Aniimo Homeland Guide • Official 3D Visualizer & Lineup Card', 55, height - 12);
-  ctx.restore();
-
   if (btnGenerate) {
     btnGenerate.disabled = false;
-    btnGenerate.innerHTML = `✨ Generate Squad Card (Ready!)`;
+    btnGenerate.innerHTML = 'Generate Squad Card (Ready!)';
   }
 
   // Scroll preview into view
